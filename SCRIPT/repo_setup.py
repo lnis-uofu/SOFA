@@ -29,6 +29,9 @@ print("\nAdapting architecture templates...");
 num_arch_file_processed = 0;
 for root, dirs, files in os.walk(openfpga_arch_template_dirpath):
   for src_file in files:
+    # Only focus on XML file
+    if not src_file.endswith(".xml"):
+      continue;
     # Copy the file
     des_file = openfpga_arch_adapted_dirpath + os.path.basename(src_file); 
     shutil.copy(openfpga_arch_template_dirpath + src_file, des_file);
