@@ -64,7 +64,7 @@ def get_list_of_task_config_files(task_dir, task_conf_file_name):
 #   - Copy the template to the destination folder
 #   - Replace all the ${SKYWATER_OPENFPGA_HOME} with the absolute path
 #####################################################################
-skywater_openfpga_task_dirpath = skywater_openfpga_homepath + "/SCRIPT/openfpga_task/";
+skywater_openfpga_task_dirpath = skywater_openfpga_homepath + "/SCRIPT/skywater_openfpga_task/";
 
 print("\nAdapting openfpga task configuration..."); 
 num_task_config_file_processed = 0;
