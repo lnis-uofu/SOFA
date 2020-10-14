@@ -1,6 +1,15 @@
 # skywater-openfpga
 FPGA tape-outs using the open-source Skywater 130nm PDK and OpenFPGA
 
+## Quick Start
+
+```bash
+#Clone the repository and go inside it
+git clone https://github.com/LNIS-Projects/skywater-openfpga.git
+python3 SCRIPT/repo_setup.py
+```
+
+
 * Keep this folder clean and organized as follows
   - **DOC**: documentation of the project
   - **ARCH**: Architecture XML and other input files which OpenFPGA requires to generate Verilog netlists
