@@ -9,12 +9,39 @@ import os
 from os.path import dirname, abspath
 import shutil
 import re
+import argparse
+import logging
+
+#####################################################################
+# Initialize logger 
+#####################################################################
+logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.DEBUG);
+
+#####################################################################
+# Parse the options
+# - OpenFPGA root path is a manadatory option
+#####################################################################
+parser = argparse.ArgumentParser(description='Setup repository');
+parser.add_argument('--openfpga_root_path',
+                    default='../OpenFPGA',
+                    help='Specify the root directory of OpenFPGA project');
+args = parser.parse_args();
+
+#####################################################################
+# Get the absolute path to the OPENFPGA_ROOT_PATH
+#####################################################################
+openfpga_root_path = abspath(args.openfpga_root_path);
+if (os.path.isdir(openfpga_root_path)):
+  logging.info("OpenFPGA project root directory is " + openfpga_root_path);
+else:
+  logging.error("OpenFPGA project root directory " + openfpga_root_path + " does not exist!");
+  exit(1);
 
 #####################################################################
 # Get the absolute path to the SKYWATER_OPENFPGA_HOME
 #####################################################################
 skywater_openfpga_homepath = dirname(dirname(abspath(__file__)));
-print("\nSet ${SKYWATER_OPENFPGA_HOME} to ", skywater_openfpga_homepath);
+logging.info("Set ${SKYWATER_OPENFPGA_HOME} to " + skywater_openfpga_homepath);
 
 #####################################################################
 # Adapt the architecture template:
@@ -25,7 +52,7 @@ skywater_openfpga_arch_dirpath = skywater_openfpga_homepath + "/ARCH";
 openfpga_arch_template_dirpath = skywater_openfpga_arch_dirpath + "/openfpga_arch_template/";
 openfpga_arch_adapted_dirpath = skywater_openfpga_arch_dirpath + "/openfpga_arch/";
 
-print("\nAdapting architecture templates..."); 
+logging.info("Adapting architecture templates..."); 
 num_arch_file_processed = 0;
 for root, dirs, files in os.walk(openfpga_arch_template_dirpath):
   for src_file in files:
@@ -40,7 +67,7 @@ for root, dirs, files in os.walk(openfpga_arch_template_dirpath):
     os.system(cmd);
     num_arch_file_processed += 1;
 
-print("Processed for ", num_arch_file_processed, "openfpga architecture templates");
+logging.info("Processed for " +  str(num_arch_file_processed) + " openfpga architecture templates");
 
 #####################################################################
 # A funtion to find all the task_template.conf files
@@ -66,7 +93,7 @@ def get_list_of_task_config_files(task_dir, task_conf_file_name):
 #####################################################################
 skywater_openfpga_task_dirpath = skywater_openfpga_homepath + "/SCRIPT/skywater_openfpga_task/";
 
-print("\nAdapting openfpga task configuration..."); 
+logging.info("Adapting openfpga task configuration..."); 
 num_task_config_file_processed = 0;
 
 for task_template_file in get_list_of_task_config_files(skywater_openfpga_task_dirpath, "task_template.conf"):
@@ -78,5 +105,23 @@ for task_template_file in get_list_of_task_config_files(skywater_openfpga_task_d
     os.system(cmd);
     num_task_config_file_processed += 1;
 
-print("Processed for ", num_task_config_file_processed, "openfpga task templates");
+logging.info("Processed for " + str(num_task_config_file_processed) + "openfpga task templates");
 
+#####################################################################
+# Create symbolic link to OpenFPGA flow task directory
+#####################################################################
+openfpga_task_src_dir = skywater_openfpga_homepath + "SCRIPT/skywater_openfpga_task";
+openfpga_task_des_dir = openfpga_root_path + "/openfpga_flow/tasks/skywater_openfpga_task";
+
+if (os.path.isdir(openfpga_task_des_dir) or os.path.isfile(openfpga_task_des_dir)):
+  logging.warning("There is already a skywater_openfpga_task directory/file at " + openfpga_task_des_dir);
+  logging.error("Failed to create symbolic link!");
+  exit(1);
+elif (os.path.islink(openfpga_task_des_dir)):
+  logging.warning("There is already a skywater_openfpga_task symbolic link at " + openfpga_task_des_dir);
+  os.unlink(openfpga_task_des_dir);
+  logging.warning("Removed the symbolic link");
+
+os.symlink(openfpga_task_src_dir, openfpga_task_des_dir);
+
+logging.info("Created OpenFPGA task symbolic link at " + openfpga_task_des_dir);
