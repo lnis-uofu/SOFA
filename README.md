@@ -6,9 +6,17 @@ FPGA tape-outs using the open-source Skywater 130nm PDK and OpenFPGA
 ```bash
 #Clone the repository and go inside it
 git clone https://github.com/LNIS-Projects/skywater-openfpga.git
-python3 SCRIPT/repo_setup.py
+python3 SCRIPT/repo_setup.py --openfpga_root_path ${OPENFPGA_PROJECT_DIRECTORY}
 ```
 
+* If you have openfpga repository cloned in the level of this project, you can simple call
+```bash
+  python3 SCRIPT/repo_setup.py
+``` 
+
+Otherwise, you should provide full path for the --openfpga\root\_path
+
+## Directory Organization
 
 * Keep this folder clean and organized as follows
   - **DOC**: documentation of the project
