@@ -151,4 +151,3 @@ for task_name in openfpga_task_list:
   logging.info("Done");
 
 os.chdir(skywater_openfpga_homepath);
-  
