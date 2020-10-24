@@ -145,6 +145,12 @@ for task_file in get_list_of_task_config_files(skywater_openfpga_task_dirpath, "
 # - Go back 
 os.chdir(openfpga_root_path);
 for task_name in openfpga_task_list: 
+  # Remove all the previous runs in the openfpga task to ensure a clean start
+  logging.info("Clean up previous runs for openfpga task: " + task_name + "...");
+  cmd = "python3 openfpga_flow/scripts/run_fpga_task.py " + task_name +  " --debug --show_thread_logs --remove_run_dir all";
+  os.system(cmd);
+  logging.info("Done");
+  # Execute new task run
   cmd = "python3 openfpga_flow/scripts/run_fpga_task.py " + task_name +  " --debug --show_thread_logs";
   logging.info("Running openfpga task: " + task_name + "...");
   os.system(cmd);
