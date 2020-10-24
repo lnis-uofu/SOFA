@@ -110,7 +110,7 @@ logging.info("Processed for " + str(num_task_config_file_processed) + "openfpga 
 #####################################################################
 # Create symbolic link to OpenFPGA flow task directory
 #####################################################################
-openfpga_task_src_dir = skywater_openfpga_homepath + "SCRIPT/skywater_openfpga_task";
+openfpga_task_src_dir = skywater_openfpga_homepath + "/SCRIPT/skywater_openfpga_task";
 openfpga_task_des_dir = openfpga_root_path + "/openfpga_flow/tasks/skywater_openfpga_task";
 
 if (os.path.isdir(openfpga_task_des_dir) or os.path.isfile(openfpga_task_des_dir)):
@@ -122,6 +122,38 @@ elif (os.path.islink(openfpga_task_des_dir)):
   os.unlink(openfpga_task_des_dir);
   logging.warning("Removed the symbolic link");
 
-os.symlink(openfpga_task_src_dir, openfpga_task_des_dir);
+os.symlink(openfpga_task_src_dir, openfpga_task_des_dir, True);
 
 logging.info("Created OpenFPGA task symbolic link at " + openfpga_task_des_dir);
+
+#####################################################################
+# Execute openfpga task runs
+#####################################################################
+openfpga_task_path_prefix_to_remove = re.sub("/", "\/", skywater_openfpga_homepath + "/SCRIPT/");
+openfpga_task_list = [];
+for task_file in get_list_of_task_config_files(skywater_openfpga_task_dirpath, "task.conf"):
+  # Find all the task.conf and extract task name from the absolute paths: 
+  # - Remove the skywater_openfpga_homepath + "/SCRIPT/" at the beginning
+  # - Remove the config/task.conf at the end
+  task_name = re.sub(openfpga_task_path_prefix_to_remove, "", task_file); 
+  task_name = re.sub("/config\/task.conf$", "", task_name); 
+  openfpga_task_list.append(task_name);
+
+# Execute openfpga task:
+# - Change directory to openfpga root directory
+# - Run openfpga flow task 
+# - Go back 
+os.chdir(openfpga_root_path);
+for task_name in openfpga_task_list: 
+  # Remove all the previous runs in the openfpga task to ensure a clean start
+  logging.info("Clean up previous runs for openfpga task: " + task_name + "...");
+  cmd = "python3 openfpga_flow/scripts/run_fpga_task.py " + task_name +  " --debug --show_thread_logs --remove_run_dir all";
+  os.system(cmd);
+  logging.info("Done");
+  # Execute new task run
+  cmd = "python3 openfpga_flow/scripts/run_fpga_task.py " + task_name +  " --debug --show_thread_logs";
+  logging.info("Running openfpga task: " + task_name + "...");
+  os.system(cmd);
+  logging.info("Done");
+
+os.chdir(skywater_openfpga_homepath);
