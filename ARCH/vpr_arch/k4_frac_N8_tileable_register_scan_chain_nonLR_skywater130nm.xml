@@ -350,13 +350,11 @@
             </pb_type>         
             <interconnect>
               <direct name="direct1" input="fabric.in" output="frac_logic.in"/>
-              <direct name="direct4" input="frac_logic.out[0:0]" output="adder[0:0].a"/>
-              <direct name="direct5" input="frac_logic.out[1:1]" output="adder[0:0].b"/>
-              <direct name="direct6" input="fabric.scin" output="ff[0].DI"/>
-              <direct name="direct7" input="ff[0].Q" output="ff[1].DI"/>
-              <direct name="direct8" input="ff[1].Q" output="fabric.scout"/>
-              <direct name="direct9" input="ff[1].Q" output="fabric.regout"/>
-              <direct name="direct10" input="frac_logic.out[1:1]" output="ff[1:1].D"/>
+              <direct name="direct2" input="fabric.scin" output="ff[0].DI"/>
+              <direct name="direct3" input="ff[0].Q" output="ff[1].DI"/>
+              <direct name="direct4" input="ff[1].Q" output="fabric.scout"/>
+              <direct name="direct5" input="ff[1].Q" output="fabric.regout"/>
+              <direct name="direct6" input="frac_logic.out[1:1]" output="ff[1:1].D"/>
               <complete name="complete1" input="fabric.clk" output="ff[1:0].clk"/>
               <mux name="mux1" input="frac_logic.out[0:0] fabric.regin" output="ff[0:0].D">
                 <delay_constant max="25e-12" in_port="frac_logic.out[0:0]" out_port="ff[0:0].D"/>
@@ -574,13 +572,13 @@
         <direct name="shift_register_in" input="clb.regin" output="fle[0:0].regin">
           <!-- Put all inter-block carry chain delay on this one edge -->
           <delay_constant max="0.16e-9" in_port="clb.regin" out_port="fle[0:0].regin"/>
-          <pack_pattern name="chain" in_port="clb.regin" out_port="fle[0:0].regin"/>
+          <!--pack_pattern name="chain" in_port="clb.regin" out_port="fle[0:0].regin"/-->
         </direct>
         <direct name="shift_register_out" input="fle[7:7].regout" output="clb.regout">
-          <pack_pattern name="chain" in_port="fle[7:7].regout" out_port="clb.regout"/>
+          <!--pack_pattern name="chain" in_port="fle[7:7].regout" out_port="clb.regout"/-->
         </direct>
         <direct name="shift_register_link" input="fle[6:0].regout" output="fle[7:1].regin">
-          <pack_pattern name="chain" in_port="fle[6:0].regout" out_port="fle[7:1].regin"/>
+          <!--pack_pattern name="chain" in_port="fle[6:0].regout" out_port="fle[7:1].regin"/-->
         </direct>
         <!-- Scan chain links -->
         <direct name="scan_chain_in" input="clb.scin" output="fle[0:0].scin">
