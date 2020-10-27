@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<fabric_key>
+  <key id="0" alias="sb_2__2_"/>
+  <key id="1" alias="cbx_2__2_"/>
+  <key id="2" alias="grid_io_top_2__3_"/>
+  <key id="3" alias="sb_1__2_"/>
+  <key id="4" alias="cbx_1__2_"/>
+  <key id="5" alias="grid_io_top_1__3_"/>
+  <key id="6" alias="sb_0__2_"/>
+  <key id="7" alias="cby_0__2_"/>
+  <key id="8" alias="grid_io_left_0__2_"/>
+  <key id="9" alias="grid_clb_1__2_"/>
+  <key id="10" alias="cby_1__2_"/>
+  <key id="11" alias="grid_clb_2__2_"/>
+  <key id="12" alias="cby_2__2_"/>
+  <key id="13" alias="grid_io_right_3__2_"/>
+  <key id="14" alias="sb_2__1_"/>
+  <key id="15" alias="cbx_2__1_"/>
+  <key id="16" alias="sb_1__1_"/>
+  <key id="17" alias="cbx_1__1_"/>
+  <key id="18" alias="sb_0__1_"/>
+  <key id="19" alias="cby_0__1_"/>
+  <key id="20" alias="grid_io_left_0__1_"/>
+  <key id="21" alias="grid_clb_1__1_"/>
+  <key id="22" alias="cby_1__1_"/>
+  <key id="23" alias="grid_clb_2__1_"/>
+  <key id="24" alias="cby_2__1_"/>
+  <key id="25" alias="grid_io_right_3__1_"/>
+  <key id="26" alias="sb_2__0_"/>
+  <key id="27" alias="cbx_2__0_"/>
+  <key id="28" alias="grid_io_bottom_2__0_"/>
+  <key id="29" alias="sb_1__0_"/>
+  <key id="30" alias="cbx_1__0_"/>
+  <key id="31" alias="grid_io_bottom_1__0_"/>
+  <key id="32" alias="sb_0__0_"/>
+</fabric_key>
