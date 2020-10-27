@@ -1,0 +1,55 @@
+commit 48b2bff0d909e2c6d0740d2a5386123eb238349f
+Author: tangxifan <tangxifan@gmail.com>
+Date:   Sun Sep 27 20:08:11 2020 -0600
+
+    [OpenFPGA Tool] Update fabric key data structure to support regions
+
+commit bbdea4a46b7aadd8a6f0fc45abdd39d1cc6d3057
+Author: tangxifan <tangxifan@gmail.com>
+Date:   Sun Sep 27 19:23:13 2020 -0600
+
+    [Regression Test] Remove out-of-update sub modules
+
+commit e95eacfbd9ec5e8d9aecab7572d4bad5265d9590
+Merge: 32c43ffb 94047037
+Author: tangxifan <tangxifan@gmail.com>
+Date:   Sun Sep 27 17:01:57 2020 -0600
+
+    Merge branch 'dev' into ganesh_dev
+
+commit 94047037c570b6a432fea8f363a5147df9bc918d
+Author: tangxifan <tangxifan@gmail.com>
+Date:   Sun Sep 27 14:33:14 2020 -0600
+
+    [OpenFPGA Tool] Streamline codes in openfpga arch parser
+
+commit 94a1324f0527276546c3b2571b1a1b7700a473f7
+Author: tangxifan <tangxifan@gmail.com>
+Date:   Sat Sep 26 14:31:57 2020 -0600
+
+    [Documentation] Remove deprecated XML syntax
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	openfpga/openfpga
+	openfpga_flow/tasks/FPGA128128_FLAT_task
+	openfpga_flow/tasks/FPGA1616_FLAT_task
+	openfpga_flow/tasks/FPGA22_FLAT_task
+	openfpga_flow/tasks/FPGA22_FRAME_task
+	openfpga_flow/tasks/FPGA22_HIER_SKY_task
+	openfpga_flow/tasks/FPGA22_HIER_task
+	openfpga_flow/tasks/FPGA22_MB_task
+	openfpga_flow/tasks/FPGA22_MODULAR_task
+	openfpga_flow/tasks/FPGA22_SPY_task
+	openfpga_flow/tasks/FPGA3232_FLAT_task
+	openfpga_flow/tasks/FPGA44_FLAT_task
+	openfpga_flow/tasks/FPGA6464_FLAT_task
+	openfpga_flow/tasks/FPGA66_FLAT_task
+	openfpga_flow/tasks/FPGA88_FLAT_task
+	openfpga_flow/tasks/routing_test/
+	openfpga_flow/tasks/skywater_openfpga_task
+	vpr/vpr
+
+nothing added to commit but untracked files present (use "git add" to track)
