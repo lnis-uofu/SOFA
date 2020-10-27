@@ -1,210 +1,3 @@
-Warning: Libraries do not have CCS noise model for accurate waveform analysis in advanced waveform propagation mode. (TIM-207)
-Warning: Corner nominal:  0 process number, 2 process label, 0 voltage, and 0 temperature mismatches. (PVT-030)
-Warning: 107582 cells affected for early, 107582 for late. (PVT-031)
-Warning: 0 port driving_cells affected for early, 0 for late. (PVT-034)
-Information: The stitching and editing of coupling caps is turned ON for design 'fpga_core_block.dlib:fpga_core/chip_finish.design'. (TIM-125)
-Information: Design fpga_core has 1351 nets, 0 global routed, 1346 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design grid_io_top has 18 nets, 0 global routed, 16 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design grid_clb has 671 nets, 0 global routed, 669 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design grid_io_right has 16 nets, 0 global routed, 14 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design grid_io_bottom has 19 nets, 0 global routed, 17 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design grid_io_left has 15 nets, 0 global routed, 13 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design sb_0__0_ has 238 nets, 0 global routed, 236 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design sb_0__1_ has 410 nets, 0 global routed, 408 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design sb_0__2_ has 174 nets, 0 global routed, 172 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design sb_1__0_ has 507 nets, 0 global routed, 505 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design sb_1__2_ has 441 nets, 0 global routed, 439 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design sb_1__1_ has 659 nets, 0 global routed, 657 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design sb_2__0_ has 328 nets, 0 global routed, 326 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design sb_2__1_ has 483 nets, 0 global routed, 481 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design sb_2__2_ has 259 nets, 0 global routed, 257 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design cbx_1__0_ has 344 nets, 0 global routed, 342 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design cbx_1__1_ has 338 nets, 0 global routed, 336 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design cbx_1__2_ has 157 nets, 0 global routed, 155 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design cby_0__1_ has 173 nets, 0 global routed, 171 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: Design cby_1__1_ has 351 nets, 0 global routed, 349 detail routed. (NEX-024)
-Information: Orientation ETCH is using reference direction: VERTICAL. (NEX-032)
-Information: The RC mode used is DR for design 'fpga_core'. (NEX-022)
----extraction options---
-Corner: nominal
- late_cap_scale                : 1
- late_res_scale                : 1
- late_ccap_scale               : 1
- early_cap_scale               : 1
- early_res_scale               : 1
- early_ccap_scale              : 1
-Global options:
- late_ccap_threshold       : 0.00051pF
- late_ccap_ratio           : 0.03
- reference_direction       : vertical
- real_metalfill_extraction : none
- virtual_shield_extraction : true
----app options---
- host.max_cores                   : 16
- extract.connect_open           : true
- extract.incremental_extraction : true
- extract.enable_coupling_cap    : true
-Extracting design: fpga_core 
-Begin building search trees for block grid_clb_block.dlib:grid_clb/icv_in_design.frame
-Done building search trees for block grid_clb_block.dlib:grid_clb/icv_in_design.frame (time 0s)
-Begin building search trees for block grid_io_top_block.dlib:grid_io_top/icv_in_design.frame
-Done building search trees for block grid_io_top_block.dlib:grid_io_top/icv_in_design.frame (time 0s)
-Begin building search trees for block grid_io_right_block.dlib:grid_io_right/icv_in_design.frame
-Done building search trees for block grid_io_right_block.dlib:grid_io_right/icv_in_design.frame (time 0s)
-Begin building search trees for block grid_io_bottom_block.dlib:grid_io_bottom/icv_in_design.frame
-Done building search trees for block grid_io_bottom_block.dlib:grid_io_bottom/icv_in_design.frame (time 0s)
-Begin building search trees for block grid_io_left_block.dlib:grid_io_left/icv_in_design.frame
-Done building search trees for block grid_io_left_block.dlib:grid_io_left/icv_in_design.frame (time 0s)
-Begin building search trees for block sb_0__1__block.dlib:sb_0__1_/icv_in_design.frame
-Done building search trees for block sb_0__1__block.dlib:sb_0__1_/icv_in_design.frame (time 0s)
-Begin building search trees for block sb_0__2__block.dlib:sb_0__2_/icv_in_design.frame
-Done building search trees for block sb_0__2__block.dlib:sb_0__2_/icv_in_design.frame (time 0s)
-Begin building search trees for block sb_1__0__block.dlib:sb_1__0_/icv_in_design.frame
-Done building search trees for block sb_1__0__block.dlib:sb_1__0_/icv_in_design.frame (time 0s)
-Begin building search trees for block sb_1__1__block.dlib:sb_1__1_/icv_in_design.frame
-Done building search trees for block sb_1__1__block.dlib:sb_1__1_/icv_in_design.frame (time 0s)
-Begin building search trees for block sb_1__2__block.dlib:sb_1__2_/icv_in_design.frame
-Done building search trees for block sb_1__2__block.dlib:sb_1__2_/icv_in_design.frame (time 0s)
-Begin building search trees for block sb_2__0__block.dlib:sb_2__0_/icv_in_design.frame
-Done building search trees for block sb_2__0__block.dlib:sb_2__0_/icv_in_design.frame (time 0s)
-Begin building search trees for block sb_2__1__block.dlib:sb_2__1_/icv_in_design.frame
-Done building search trees for block sb_2__1__block.dlib:sb_2__1_/icv_in_design.frame (time 0s)
-Begin building search trees for block sb_2__2__block.dlib:sb_2__2_/icv_in_design.frame
-Done building search trees for block sb_2__2__block.dlib:sb_2__2_/icv_in_design.frame (time 0s)
-Begin building search trees for block cbx_1__0__block.dlib:cbx_1__0_/icv_in_design.frame
-Done building search trees for block cbx_1__0__block.dlib:cbx_1__0_/icv_in_design.frame (time 0s)
-Begin building search trees for block cbx_1__1__block.dlib:cbx_1__1_/icv_in_design.frame
-Done building search trees for block cbx_1__1__block.dlib:cbx_1__1_/icv_in_design.frame (time 0s)
-Begin building search trees for block cbx_1__2__block.dlib:cbx_1__2_/icv_in_design.frame
-Done building search trees for block cbx_1__2__block.dlib:cbx_1__2_/icv_in_design.frame (time 0s)
-Begin building search trees for block cby_0__1__block.dlib:cby_0__1_/icv_in_design.frame
-Done building search trees for block cby_0__1__block.dlib:cby_0__1_/icv_in_design.frame (time 0s)
-Begin building search trees for block cby_1__1__block.dlib:cby_1__1_/icv_in_design.frame
-Done building search trees for block cby_1__1__block.dlib:cby_1__1_/icv_in_design.frame (time 0s)
-Begin building search trees for block sb_0__0__block.dlib:sb_0__0_/icv_in_design.frame
-Done building search trees for block sb_0__0__block.dlib:sb_0__0_/icv_in_design.frame (time 0s)
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 1350 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'grid_io_top'. (NEX-022)
-Extracting design: grid_io_top 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 16 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'grid_clb'. (NEX-022)
-Extracting design: grid_clb 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 669 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'grid_io_right'. (NEX-022)
-Extracting design: grid_io_right 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 14 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'grid_io_bottom'. (NEX-022)
-Extracting design: grid_io_bottom 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 17 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'grid_io_left'. (NEX-022)
-Extracting design: grid_io_left 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 13 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'sb_0__0_'. (NEX-022)
-Extracting design: sb_0__0_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 236 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'sb_0__1_'. (NEX-022)
-Extracting design: sb_0__1_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 408 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'sb_0__2_'. (NEX-022)
-Extracting design: sb_0__2_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 172 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'sb_1__0_'. (NEX-022)
-Extracting design: sb_1__0_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 505 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'sb_1__2_'. (NEX-022)
-Extracting design: sb_1__2_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 439 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'sb_1__1_'. (NEX-022)
-Extracting design: sb_1__1_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 657 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'sb_2__0_'. (NEX-022)
-Extracting design: sb_2__0_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 326 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'sb_2__1_'. (NEX-022)
-Extracting design: sb_2__1_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 481 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'sb_2__2_'. (NEX-022)
-Extracting design: sb_2__2_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 257 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'cbx_1__0_'. (NEX-022)
-Extracting design: cbx_1__0_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 342 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'cbx_1__1_'. (NEX-022)
-Extracting design: cbx_1__1_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 336 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'cbx_1__2_'. (NEX-022)
-Extracting design: cbx_1__2_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 155 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'cby_0__1_'. (NEX-022)
-Extracting design: cby_0__1_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 171 nets are successfully extracted. (NEX-028)
-Information: The RC mode used is DR for design 'cby_1__1_'. (NEX-022)
-Extracting design: cby_1__1_ 
-Information: coupling capacitance is created explicitly. (NEX-029)
-Information: 349 nets are successfully extracted. (NEX-028)
-Warning: The aggressor block net 'bottom_right_grid_pin_1_[0]' is not valid and is skipped from crosstalk analysis of victim net 'ropt_mt_inst_755/X' (TIM-107)
-Warning: The aggressor block net 'bottom_right_grid_pin_1_[0]' is not valid and is skipped from crosstalk analysis of victim net 'prog_clk[0]' (TIM-107)
-Warning: The aggressor block net 'cby_0__2_/mux_left_ipin_0/sky130_fd_sc_hd__buf_4_0_/X' is not valid and is skipped from crosstalk analysis of victim net 'ropt_h_inst_7303/X' (TIM-107)
-Warning: The aggressor block net 'bottom_left_grid_pin_1_[0]' is not valid and is skipped from crosstalk analysis of victim net 'prog_clk[0]' (TIM-107)
-Warning: The aggressor block net 'gfpga_pad_GPIO_Y[1]' is not valid and is skipped from crosstalk analysis of victim net 'ropt_h_inst_7305/X' (TIM-107)
-Warning: The aggressor block net 'cby_0__1_/mux_left_ipin_0/sky130_fd_sc_hd__buf_4_0_/X' is not valid and is skipped from crosstalk analysis of victim net 'ropt_h_inst_7307/X' (TIM-107)
-Warning: The aggressor block net 'bottom_right_grid_pin_1_[0]' is not valid and is skipped from crosstalk analysis of victim net 'chany_bottom_in[5]' (TIM-107)
-Warning: The aggressor block net 'bottom_right_grid_pin_1_[0]' is not valid and is skipped from crosstalk analysis of victim net 'chany_bottom_in[15]' (TIM-107)
-Warning: The aggressor block net 'bottom_left_grid_pin_1_[0]' is not valid and is skipped from crosstalk analysis of victim net 'chany_bottom_in[3]' (TIM-107)
-Warning: The aggressor block net 'right_top_grid_pin_1_[0]' is not valid and is skipped from crosstalk analysis of victim net 'chany_bottom_in[2]' (TIM-107)
-Note - message 'TIM-107' limit (10) exceeded. Remainder will be suppressed.
-Information: Coupling cap stitching across physical hierarchy is done
-Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
-Information: Net estimation statistics: timing graph nets = 8381, routed nets = 8380, across physical hierarchy nets = 3706, parasitics cached nets = 8381, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
-Information: Update timing is using PrimeTime delay calculation. (TIM-201)
-************************************************************
-Timer Settings:
-Delay Calculation Style:                   primetime
-Signal Integrity Analysis:                 enabled
-Timing Window Analysis:                    enabled
-Advanced Waveform Propagation:             full_design
-Variation Type:                            fixed_derate
-Clock Reconvergence Pessimism Removal:     enabled
-Advanced Receiver Model:                   disabled
-************************************************************
 ****************************************
 Report : clock timing
         -type latency
@@ -213,7 +6,7 @@ Report : clock timing
         -setup
 Design : fpga_core
 Version: P-2019.03-SP4
-Date   : Tue Oct 27 14:40:32 2020
+Date   : Tue Oct 27 15:48:59 2020
 ****************************************
 Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
 
@@ -223,8 +16,7 @@ Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysi
                                                  --- Latency ---
   Clock Pin                             Trans   Source   Offset  Network    Total            Corner
 ---------------------------------------------------------------------------------------------------
-  grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_5/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfxbp_1_0_/CLK
-                                        0.138    0.000       --    0.084    0.084 rp-+      nominal
+  grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_6/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/sky130_fd_sc_hd__sdfxbp_1_0_/CLK    0.138    0.000       --    0.084    0.084 rp-+  nominal
 ---------------------------------------------------------------------------------------------------
 
   Mode: full_chip
@@ -233,8 +25,7 @@ Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysi
                                                  --- Latency ---
   Clock Pin                             Trans   Source   Offset  Network    Total            Corner
 ---------------------------------------------------------------------------------------------------
-  grid_clb_1__2_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_7/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/mem_fabric_out_0/sky130_fd_sc_hd__dfxbp_1_1_/CLK
-                                        3.543    0.000       --    5.281    5.281 rp-+      nominal
+  grid_clb_1__2_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_6/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/mem_fabric_out_1/sky130_fd_sc_hd__dfxbp_1_1_/CLK    3.437    0.000       --    5.205    5.205 rp-+  nominal
 ---------------------------------------------------------------------------------------------------
 ****************************************
 Report : clock timing
@@ -243,7 +34,7 @@ Report : clock timing
         -setup
 Design : fpga_core
 Version: P-2019.03-SP4
-Date   : Tue Oct 27 14:40:32 2020
+Date   : Tue Oct 27 15:48:59 2020
 ****************************************
 Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
 
@@ -252,10 +43,8 @@ Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysi
 
   Clock Pin                                 Latency      CRP      Skew             Corner
 ---------------------------------------------------------------------------------------------------
-  grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_5/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfxbp_1_0_/CLK
-                                              0.084                       rp-+    nominal
-  grid_clb_2__2_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/sky130_fd_sc_hd__sdfxbp_1_0_/CLK
-                                              0.051    0.000     0.033    rp-+    nominal
+  grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_7/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfxbp_1_0_/CLK    0.083 rp-+  nominal
+  grid_clb_2__2_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/sky130_fd_sc_hd__sdfxbp_1_0_/CLK    0.051    0.000    0.032 rp-+  nominal
 
 ---------------------------------------------------------------------------------------------------
 
@@ -264,10 +53,8 @@ Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysi
 
   Clock Pin                                 Latency      CRP      Skew             Corner
 ---------------------------------------------------------------------------------------------------
-  sb_1__2_/mem_left_track_33/sky130_fd_sc_hd__dfxbp_1_2_/CLK
-                                              4.733                       rp-+    nominal
-  cbx_1__2_/mem_bottom_ipin_0/sky130_fd_sc_hd__dfxbp_1_0_/CLK
-                                              2.007    0.000     2.725    rp-+    nominal
+  sb_1__2_/mem_left_track_33/sky130_fd_sc_hd__dfxbp_1_2_/CLK    4.674     rp-+    nominal
+  cbx_1__2_/mem_bottom_ipin_0/sky130_fd_sc_hd__dfxbp_1_0_/CLK    2.007    0.000    2.666 rp-+  nominal
 
 ---------------------------------------------------------------------------------------------------
 Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
@@ -276,7 +63,7 @@ Report : global timing
         -format { narrow }
 Design : fpga_core
 Version: P-2019.03-SP4
-Date   : Tue Oct 27 14:40:32 2020
+Date   : Tue Oct 27 15:48:59 2020
 ****************************************
 
 No setup violations found.

@@ -1,7 +1,8 @@
 FPGA22_HIER_SKY_PNR
 ====================
 
-2x2 FPGA designed using hierarchical flow and `SKY130_FD_SC_HD`
+2x2 FPGA designed using hierarchical flow and `SKY130_FD_SC_HD`.
+Utilization set to 60%
 
 Directory Structure
 -------------------
