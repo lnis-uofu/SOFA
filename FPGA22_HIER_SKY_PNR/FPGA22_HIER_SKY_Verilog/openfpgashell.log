@@ -65,7 +65,7 @@ Warning 2: Model 'io' output port 'inpad' has no timing specification (no clock 
 Warning 3: Model 'frac_lut4' input port 'in' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
 Warning 4: Model 'frac_lut4' output port 'lut4_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
 Warning 5: Model 'frac_lut4' output port 'lut3_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
-# Loading Architecture Description took 0.01 seconds (max_rss 8.8 MiB, delta_rss +0.4 MiB)
+# Loading Architecture Description took 0.00 seconds (max_rss 8.8 MiB, delta_rss +0.4 MiB)
 # Building complex block graph
 Warning 6: [LINE 546] false logically-equivalent pin clb[0].I0[1].
 Warning 7: [LINE 546] false logically-equivalent pin clb[0].I0[2].
@@ -294,7 +294,7 @@ Warning 34: in check_rr_node: RR node: 139 type: OPIN location: (2,1) pin: 50 pi
 Warning 35: in check_rr_node: RR node: 140 type: OPIN location: (2,1) pin: 51 pin_name: clb.scout[0] capacity: 1 has no out-going edges.
 Warning 36: in check_rr_graph: fringe node 452 CHANX at (1,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build tileable routing resource graph took 0.01 seconds (max_rss 11.1 MiB, delta_rss +0.5 MiB)
+## Build tileable routing resource graph took 0.00 seconds (max_rss 11.1 MiB, delta_rss +0.5 MiB)
   RR Graph Nodes: 684
   RR Graph Edges: 2780
 # Create Device took 0.01 seconds (max_rss 11.1 MiB, delta_rss +0.5 MiB)
@@ -465,7 +465,7 @@ Warning 44: in check_rr_node: RR node: 139 type: OPIN location: (2,1) pin: 50 pi
 Warning 45: in check_rr_node: RR node: 140 type: OPIN location: (2,1) pin: 51 pin_name: clb.scout[0] capacity: 1 has no out-going edges.
 Warning 46: in check_rr_graph: fringe node 452 CHANX at (1,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build tileable routing resource graph took 0.01 seconds (max_rss 11.6 MiB, delta_rss +0.0 MiB)
+## Build tileable routing resource graph took 0.00 seconds (max_rss 11.6 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 684
   RR Graph Edges: 2780
 Confirming router algorithm: TIMING_DRIVEN.
@@ -576,9 +576,9 @@ Setup slack histogram:
 [ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
 [ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
 
-Timing analysis took 0.000535006 seconds (0.000479183 STA, 5.5823e-05 slack) (80 full updates: 78 setup, 0 hold, 2 combined).
+Timing analysis took 0.000488774 seconds (0.000430824 STA, 5.795e-05 slack) (80 full updates: 78 setup, 0 hold, 2 combined).
 VPR suceeded
-The entire flow of VPR took 0.09 seconds (max_rss 11.9 MiB)
+The entire flow of VPR took 0.08 seconds (max_rss 11.9 MiB)
 
 Command line to execute: read_openfpga_arch -f /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA22_HIER_SKY_PNR/FPGA22_HIER_SKY_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/openfpga_arch.xml
 
@@ -706,11 +706,11 @@ Build fabric module graph
 # Build local encoder (for multiplexers) modules
 # Build local encoder (for multiplexers) modules took 0.00 seconds (max_rss 12.6 MiB, delta_rss +0.0 MiB)
 # Building multiplexer modules
-# Building multiplexer modules took 0.00 seconds (max_rss 12.9 MiB, delta_rss +0.3 MiB)
+# Building multiplexer modules took 0.00 seconds (max_rss 12.8 MiB, delta_rss +0.3 MiB)
 # Build Look-Up Table (LUT) modules
-# Build Look-Up Table (LUT) modules took 0.00 seconds (max_rss 12.9 MiB, delta_rss +0.0 MiB)
+# Build Look-Up Table (LUT) modules took 0.00 seconds (max_rss 12.8 MiB, delta_rss +0.0 MiB)
 # Build wire modules
-# Build wire modules took 0.00 seconds (max_rss 12.9 MiB, delta_rss +0.0 MiB)
+# Build wire modules took 0.00 seconds (max_rss 12.8 MiB, delta_rss +0.0 MiB)
 # Build memory modules
 # Build memory modules took 0.00 seconds (max_rss 13.1 MiB, delta_rss +0.3 MiB)
 # Build grid modules
@@ -790,7 +790,7 @@ Confirm selected options when call command 'write_fabric_bitstream':
 --verbose: off
 Warning 53: Directory path is empty and nothing will be created.
 Write 2009 fabric bitstream into plain text file 'fabric_bitstream.bit'
-Write 2009 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.00 seconds (max_rss 17.3 MiB, delta_rss +0.0 MiB)
+Write 2009 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.01 seconds (max_rss 17.3 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_fabric_bitstream --format xml --file fabric_bitstream.xml
 
@@ -862,7 +862,7 @@ Building physical tiles...Done
 Writing Verilog netlist for top-level module of FPGA fabric './SRC/fpga_top.v'...Done
 Written 70 Verilog modules in total
 Write Verilog netlists for FPGA fabric
- took 0.14 seconds (max_rss 17.6 MiB, delta_rss +0.3 MiB)
+ took 0.15 seconds (max_rss 17.6 MiB, delta_rss +0.3 MiB)
 
 Command line to execute: write_verilog_testbench --file ./SRC --reference_benchmark_file_path top_output_verilog.v --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --explicit_port_mapping
 

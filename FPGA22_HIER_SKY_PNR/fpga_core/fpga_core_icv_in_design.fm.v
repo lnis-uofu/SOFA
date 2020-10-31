@@ -69,8 +69,8 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
 sky130_fd_sc_hd__dlygate4sd1_1 FTB_17__56 ( .A ( mem_out[3] ) , 
-    .X ( net_net_75 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_120 ( .A ( net_net_75 ) , 
+    .X ( net_aps_56 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_88 ( .A ( net_aps_56 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -91,7 +91,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_16__55 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_16__55 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -112,7 +112,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_15__54 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_15__54 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -133,7 +133,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_14__53 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_14__53 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -154,7 +154,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_13__52 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_13__52 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -175,7 +175,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_12__51 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_12__51 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -196,7 +196,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_11__50 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_11__50 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -217,7 +217,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_10__49 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_10__49 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -394,12 +394,9 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 
 const1_13_11 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -419,10 +416,9 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_2 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -547,9 +543,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 
 const1_10_11 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -569,9 +568,10 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
 endmodule
 
 
@@ -642,7 +642,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_9__48 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_9__48 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -663,7 +663,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_8__47 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_8__47 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -684,7 +684,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_7__46 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_7__46 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -705,7 +705,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_6__45 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_6__45 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -726,7 +726,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_5__44 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_5__44 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -747,7 +747,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_4__43 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_4__43 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -768,7 +768,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_3__42 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_3__42 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -789,7 +789,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__41 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_2__41 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -810,7 +810,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__40 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_1__40 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -840,6 +840,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_8_11 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -869,10 +871,6 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_60 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( BUF_net_60 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_106 ( .A ( BUF_net_60 ) , 
-    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -1133,9 +1131,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_8_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_3_12 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -1161,9 +1162,10 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_8_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
 endmodule
 
 
@@ -1434,7 +1436,7 @@ mux_tree_tapbuf_size10_0_5 mux_left_ipin_0 (
         chany_top_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) , 
-    .out ( right_grid_pin_52_ ) , .p0 ( optlc_net_131 ) ) ;
+    .out ( right_grid_pin_52_ ) , .p0 ( optlc_net_112 ) ) ;
 mux_tree_tapbuf_size10_1_3 mux_right_ipin_0 (
     .in ( { chany_bottom_in[1] , chany_top_in[1] , chany_bottom_in[3] , 
         chany_top_in[3] , chany_bottom_in[5] , chany_top_in[5] , 
@@ -1442,7 +1444,7 @@ mux_tree_tapbuf_size10_1_3 mux_right_ipin_0 (
         chany_top_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size10_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_1_sram_inv ) , 
-    .out ( left_grid_pin_0_ ) , .p0 ( optlc_net_132 ) ) ;
+    .out ( left_grid_pin_0_ ) , .p0 ( optlc_net_111 ) ) ;
 mux_tree_tapbuf_size10_2_3 mux_right_ipin_1 (
     .in ( { chany_bottom_in[0] , chany_top_in[0] , chany_bottom_in[2] , 
         chany_top_in[2] , chany_bottom_in[6] , chany_top_in[6] , 
@@ -1450,7 +1452,7 @@ mux_tree_tapbuf_size10_2_3 mux_right_ipin_1 (
         chany_top_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size10_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_2_sram_inv ) , 
-    .out ( left_grid_pin_1_ ) , .p0 ( optlc_net_132 ) ) ;
+    .out ( left_grid_pin_1_ ) , .p0 ( optlc_net_111 ) ) ;
 mux_tree_tapbuf_size10_5_3 mux_right_ipin_4 (
     .in ( { chany_bottom_in[1] , chany_top_in[1] , chany_bottom_in[3] , 
         chany_top_in[3] , chany_bottom_in[5] , chany_top_in[5] , 
@@ -1458,7 +1460,7 @@ mux_tree_tapbuf_size10_5_3 mux_right_ipin_4 (
         chany_top_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size10_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_3_sram_inv ) , 
-    .out ( left_grid_pin_4_ ) , .p0 ( optlc_net_132 ) ) ;
+    .out ( left_grid_pin_4_ ) , .p0 ( optlc_net_111 ) ) ;
 mux_tree_tapbuf_size10_6_3 mux_right_ipin_5 (
     .in ( { chany_bottom_in[0] , chany_top_in[0] , chany_bottom_in[2] , 
         chany_top_in[2] , chany_bottom_in[6] , chany_top_in[6] , 
@@ -1466,7 +1468,7 @@ mux_tree_tapbuf_size10_6_3 mux_right_ipin_5 (
         chany_top_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_4_sram_inv ) , 
-    .out ( left_grid_pin_5_ ) , .p0 ( optlc_net_131 ) ) ;
+    .out ( left_grid_pin_5_ ) , .p0 ( optlc_net_109 ) ) ;
 mux_tree_tapbuf_size10_7_2 mux_right_ipin_8 (
     .in ( { chany_bottom_in[1] , chany_top_in[1] , chany_bottom_in[3] , 
         chany_top_in[3] , chany_bottom_in[9] , chany_top_in[9] , 
@@ -1474,7 +1476,7 @@ mux_tree_tapbuf_size10_7_2 mux_right_ipin_8 (
         chany_top_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size10_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_5_sram_inv ) , 
-    .out ( left_grid_pin_8_ ) , .p0 ( optlc_net_133 ) ) ;
+    .out ( left_grid_pin_8_ ) , .p0 ( optlc_net_111 ) ) ;
 mux_tree_tapbuf_size10_16 mux_right_ipin_9 (
     .in ( { chany_bottom_in[0] , chany_top_in[0] , chany_bottom_in[2] , 
         chany_top_in[2] , chany_bottom_in[4] , chany_top_in[4] , 
@@ -1482,7 +1484,7 @@ mux_tree_tapbuf_size10_16 mux_right_ipin_9 (
         chany_top_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size10_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_6_sram_inv ) , 
-    .out ( left_grid_pin_9_ ) , .p0 ( optlc_net_133 ) ) ;
+    .out ( left_grid_pin_9_ ) , .p0 ( optlc_net_109 ) ) ;
 mux_tree_tapbuf_size10_3_3 mux_right_ipin_12 (
     .in ( { chany_bottom_in[1] , chany_top_in[1] , chany_bottom_in[3] , 
         chany_top_in[3] , chany_bottom_in[7] , chany_top_in[7] , 
@@ -1490,16 +1492,15 @@ mux_tree_tapbuf_size10_3_3 mux_right_ipin_12 (
         chany_top_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size10_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_7_sram_inv ) , 
-    .out ( left_grid_pin_12_ ) , .p0 ( optlc_net_133 ) ) ;
+    .out ( left_grid_pin_12_ ) , .p0 ( optlc_net_110 ) ) ;
 mux_tree_tapbuf_size10_4_3 mux_right_ipin_13 (
     .in ( { chany_bottom_in[0] , chany_top_in[0] , chany_bottom_in[2] , 
         chany_top_in[2] , chany_bottom_in[8] , chany_top_in[8] , 
         chany_bottom_in[14] , chany_top_in[14] , chany_bottom_in[18] , 
         chany_top_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size10_8_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size10_8_sram_inv ) ,
-    .out ( { ropt_net_141 } ) ,
-    .p0 ( optlc_net_133 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size10_8_sram_inv ) , 
+    .out ( left_grid_pin_13_ ) , .p0 ( optlc_net_109 ) ) ;
 mux_tree_tapbuf_size10_mem_0_5 mem_left_ipin_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size10_mem_0_ccff_tail ) , 
@@ -1551,56 +1552,56 @@ mux_tree_tapbuf_size8_4_2 mux_right_ipin_2 (
         chany_bottom_in[15] , chany_top_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size8_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_0_sram_inv ) , 
-    .out ( left_grid_pin_2_ ) , .p0 ( optlc_net_132 ) ) ;
+    .out ( left_grid_pin_2_ ) , .p0 ( optlc_net_111 ) ) ;
 mux_tree_tapbuf_size8_5_2 mux_right_ipin_3 (
     .in ( { chany_bottom_in[0] , chany_top_in[0] , chany_bottom_in[2] , 
         chany_top_in[2] , chany_bottom_in[8] , chany_top_in[8] , 
         chany_bottom_in[16] , chany_top_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size8_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_1_sram_inv ) , 
-    .out ( left_grid_pin_3_ ) , .p0 ( optlc_net_133 ) ) ;
+    .out ( left_grid_pin_3_ ) , .p0 ( optlc_net_112 ) ) ;
 mux_tree_tapbuf_size8_6_2 mux_right_ipin_6 (
     .in ( { chany_bottom_in[1] , chany_top_in[1] , chany_bottom_in[3] , 
         chany_top_in[3] , chany_bottom_in[11] , chany_top_in[11] , 
         chany_bottom_in[19] , chany_top_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size8_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_2_sram_inv ) , 
-    .out ( left_grid_pin_6_ ) , .p0 ( optlc_net_133 ) ) ;
+    .out ( left_grid_pin_6_ ) , .p0 ( optlc_net_110 ) ) ;
 mux_tree_tapbuf_size8_9 mux_right_ipin_7 (
     .in ( { chany_bottom_in[0] , chany_top_in[0] , chany_bottom_in[2] , 
         chany_top_in[2] , chany_bottom_in[4] , chany_top_in[4] , 
         chany_bottom_in[12] , chany_top_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size8_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_3_sram_inv ) , 
-    .out ( left_grid_pin_7_ ) , .p0 ( optlc_net_131 ) ) ;
+    .out ( left_grid_pin_7_ ) , .p0 ( optlc_net_112 ) ) ;
 mux_tree_tapbuf_size8_0_4 mux_right_ipin_10 (
     .in ( { chany_bottom_in[1] , chany_top_in[1] , chany_bottom_in[3] , 
         chany_top_in[3] , chany_bottom_in[7] , chany_top_in[7] , 
         chany_bottom_in[15] , chany_top_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size8_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_4_sram_inv ) , 
-    .out ( left_grid_pin_10_ ) , .p0 ( optlc_net_130 ) ) ;
+    .out ( left_grid_pin_10_ ) , .p0 ( optlc_net_109 ) ) ;
 mux_tree_tapbuf_size8_1_4 mux_right_ipin_11 (
     .in ( { chany_bottom_in[0] , chany_top_in[0] , chany_bottom_in[2] , 
         chany_top_in[2] , chany_bottom_in[8] , chany_top_in[8] , 
         chany_bottom_in[16] , chany_top_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size8_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_5_sram_inv ) , 
-    .out ( left_grid_pin_11_ ) , .p0 ( optlc_net_133 ) ) ;
+    .out ( left_grid_pin_11_ ) , .p0 ( optlc_net_109 ) ) ;
 mux_tree_tapbuf_size8_2_3 mux_right_ipin_14 (
     .in ( { chany_bottom_in[1] , chany_top_in[1] , chany_bottom_in[3] , 
         chany_top_in[3] , chany_bottom_in[11] , chany_top_in[11] , 
         chany_bottom_in[19] , chany_top_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size8_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_6_sram_inv ) , 
-    .out ( left_grid_pin_14_ ) , .p0 ( optlc_net_133 ) ) ;
+    .out ( left_grid_pin_14_ ) , .p0 ( optlc_net_110 ) ) ;
 mux_tree_tapbuf_size8_3_2 mux_right_ipin_15 (
     .in ( { chany_bottom_in[0] , chany_top_in[0] , chany_bottom_in[2] , 
         chany_top_in[2] , chany_bottom_in[4] , chany_top_in[4] , 
         chany_bottom_in[12] , chany_top_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size8_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_7_sram_inv ) , 
-    .out ( left_grid_pin_15_ ) , .p0 ( optlc_net_131 ) ) ;
+    .out ( left_grid_pin_15_ ) , .p0 ( optlc_net_112 ) ) ;
 mux_tree_tapbuf_size8_mem_4_2 mem_right_ipin_2 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size10_mem_2_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size8_mem_0_ccff_tail ) , 
@@ -1637,180 +1638,111 @@ mux_tree_tapbuf_size8_mem_2_3 mem_right_ipin_14 ( .prog_clk ( prog_clk ) ,
     .mem_out ( mux_tree_tapbuf_size8_6_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size8_6_sram_inv ) ) ;
 mux_tree_tapbuf_size8_mem_3_2 mem_right_ipin_15 ( .prog_clk ( prog_clk ) , 
-    .ccff_head ( mux_tree_tapbuf_size8_mem_6_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_159 } ) ,
-    .mem_out ( mux_tree_tapbuf_size8_7_sram ) , 
+    .ccff_head ( mux_tree_tapbuf_size8_mem_6_ccff_tail ) , 
+    .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_tapbuf_size8_7_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size8_7_sram_inv ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_122 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_130 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_777 ( .A ( ropt_net_168 ) , 
-    .X ( chany_top_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_3__2 ( .A ( chany_bottom_in[2] ) , 
-    .X ( ropt_net_153 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_4__3 ( .A ( chany_bottom_in[3] ) , 
-    .X ( chany_top_out[3] ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_124 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_131 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_6__5 ( .A ( chany_bottom_in[5] ) , 
-    .X ( ropt_net_147 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_7__6 ( .A ( chany_bottom_in[6] ) , 
-    .X ( ropt_net_164 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_126 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_132 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_128 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_133 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_733 ( .A ( chany_bottom_in[4] ) , 
-    .X ( chany_top_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_734 ( 
-    .A ( chany_bottom_in[16] ) , .X ( chany_top_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_735 ( .A ( chany_top_in[10] ) , 
-    .X ( chany_bottom_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_13__12 ( .A ( chany_bottom_in[12] ) , 
-    .X ( chany_top_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_736 ( .A ( chany_bottom_in[8] ) , 
-    .X ( ropt_net_169 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_737 ( 
-    .A ( chany_bottom_in[11] ) , .X ( ropt_net_175 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_16__15 ( .A ( chany_bottom_in[15] ) , 
-    .X ( ropt_net_160 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_738 ( .A ( chany_bottom_in[1] ) , 
-    .X ( chany_top_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_18__17 ( .A ( chany_bottom_in[17] ) , 
-    .X ( ropt_net_165 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_19__18 ( .A ( chany_bottom_in[18] ) , 
-    .X ( ropt_net_163 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_778 ( .A ( ropt_net_169 ) , 
-    .X ( chany_top_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_739 ( .A ( chany_top_in[7] ) , 
-    .X ( chany_bottom_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_22__21 ( .A ( chany_top_in[1] ) , 
-    .X ( chany_bottom_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_740 ( .A ( ropt_net_141 ) , 
-    .X ( left_grid_pin_13_[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_779 ( .A ( ropt_net_170 ) , 
-    .X ( chany_bottom_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_741 ( .A ( ropt_net_142 ) , 
-    .X ( chany_bottom_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_742 ( .A ( ropt_net_143 ) , 
-    .X ( chany_top_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_27__26 ( .A ( chany_top_in[6] ) , 
-    .X ( chany_bottom_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_743 ( .A ( chany_top_in[14] ) , 
-    .X ( chany_bottom_out[14] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_29__28 ( .A ( chany_top_in[8] ) , 
-    .X ( ropt_net_156 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_30__29 ( .A ( chany_top_in[9] ) , 
-    .X ( ropt_net_154 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_744 ( .A ( ropt_net_145 ) , 
-    .X ( ropt_net_182 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_32__31 ( .A ( chany_top_in[11] ) , 
-    .X ( chany_bottom_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_745 ( .A ( chany_top_in[16] ) , 
-    .X ( ropt_net_171 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_34__33 ( .A ( chany_top_in[13] ) , 
-    .X ( chany_bottom_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_746 ( .A ( ropt_net_147 ) , 
-    .X ( ropt_net_172 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_36__35 ( .A ( chany_top_in[15] ) , 
-    .X ( ropt_net_155 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_747 ( 
-    .A ( chany_bottom_in[14] ) , .X ( ropt_net_168 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_780 ( .A ( ropt_net_171 ) , 
-    .X ( chany_bottom_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_39__38 ( .A ( chany_top_in[18] ) , 
-    .X ( ropt_net_162 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_40__39 ( .A ( chany_top_in[19] ) , 
-    .X ( ropt_net_187 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_63 ( .A ( chany_bottom_in[0] ) , 
-    .X ( ropt_net_166 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_748 ( .A ( ropt_net_149 ) , 
-    .X ( ropt_net_178 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_781 ( .A ( ropt_net_172 ) , 
-    .X ( chany_top_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_782 ( .A ( ropt_net_173 ) , 
-    .X ( chany_top_out[19] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_67 ( .A ( chany_bottom_in[13] ) , 
-    .X ( BUF_net_67 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_783 ( .A ( ropt_net_174 ) , 
-    .X ( chany_bottom_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_784 ( .A ( ropt_net_175 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_689 ( .A ( ropt_net_113 ) , 
     .X ( chany_top_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_785 ( .A ( ropt_net_176 ) , 
-    .X ( chany_bottom_out[2] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_71 ( .A ( chany_top_in[5] ) , 
-    .X ( ropt_net_157 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_786 ( .A ( ropt_net_177 ) , 
-    .X ( chany_bottom_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_749 ( 
-    .A ( chany_bottom_in[19] ) , .X ( ropt_net_173 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_788 ( .A ( ropt_net_178 ) , 
-    .X ( chany_bottom_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_750 ( .A ( chany_top_in[3] ) , 
-    .X ( chany_bottom_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_751 ( .A ( chany_top_in[17] ) , 
-    .X ( chany_bottom_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_752 ( .A ( ropt_net_153 ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_2__1 ( .A ( chany_bottom_in[1] ) , 
+    .X ( chany_top_out[1] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_3__2 ( .A ( chany_bottom_in[2] ) , 
     .X ( chany_top_out[2] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_753 ( .A ( ropt_net_154 ) , 
-    .X ( ropt_net_174 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_84 ( .A ( BUF_net_67 ) , 
-    .X ( ropt_net_180 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_754 ( .A ( ropt_net_155 ) , 
-    .X ( ropt_net_170 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_755 ( .A ( ropt_net_156 ) , 
-    .X ( ropt_net_177 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_756 ( .A ( ropt_net_157 ) , 
-    .X ( ropt_net_179 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_757 ( .A ( chany_top_in[0] ) , 
-    .X ( ropt_net_181 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_758 ( .A ( ropt_net_159 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_760 ( .A ( ropt_net_160 ) , 
-    .X ( ropt_net_183 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_761 ( .A ( ropt_net_161 ) , 
-    .X ( ropt_net_176 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_789 ( .A ( ropt_net_179 ) , 
-    .X ( chany_bottom_out[5] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_98 ( .A ( chany_bottom_in[10] ) , 
-    .X ( ropt_net_167 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_791 ( .A ( ropt_net_180 ) , 
-    .X ( chany_top_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_792 ( .A ( ropt_net_181 ) , 
-    .X ( chany_bottom_out[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_101 ( .A ( chany_top_in[2] ) , 
-    .X ( ropt_net_161 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_797 ( .A ( ropt_net_182 ) , 
-    .X ( chany_top_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_799 ( .A ( ropt_net_183 ) , 
-    .X ( chany_top_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_762 ( .A ( ropt_net_162 ) , 
-    .X ( chany_bottom_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_800 ( .A ( ropt_net_184 ) , 
-    .X ( chany_top_out[10] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_110 ( .A ( chany_bottom_in[7] ) , 
-    .X ( ropt_net_145 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_111 ( .A ( chany_bottom_in[9] ) , 
-    .X ( ropt_net_143 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_763 ( .A ( ropt_net_163 ) , 
-    .X ( chany_top_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_768 ( .A ( ropt_net_164 ) , 
-    .X ( ropt_net_185 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_769 ( .A ( ropt_net_165 ) , 
-    .X ( chany_top_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_115 ( .A ( chany_top_in[4] ) , 
-    .X ( ropt_net_142 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_770 ( .A ( ropt_net_166 ) , 
-    .X ( ropt_net_186 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_772 ( .A ( ropt_net_167 ) , 
-    .X ( ropt_net_184 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_118 ( .A ( chany_top_in[12] ) , 
-    .X ( ropt_net_149 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_801 ( .A ( ropt_net_185 ) , 
+sky130_fd_sc_hd__conb_1 optlc_104 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_109 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_5__4 ( .A ( chany_bottom_in[4] ) , 
+    .X ( chany_top_out[4] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_6__5 ( .A ( chany_bottom_in[5] ) , 
+    .X ( chany_top_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_7__6 ( .A ( chany_bottom_in[6] ) , 
     .X ( chany_top_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_804 ( .A ( ropt_net_186 ) , 
-    .X ( chany_top_out[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_808 ( .A ( ropt_net_187 ) , 
+sky130_fd_sc_hd__conb_1 optlc_106 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_110 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_9__8 ( .A ( chany_bottom_in[8] ) , 
+    .X ( chany_top_out[8] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_10__9 ( .A ( chany_bottom_in[9] ) , 
+    .X ( aps_rename_1_ ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_108 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
+    .HI ( optlc_net_111 ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_12__11 ( .A ( chany_bottom_in[11] ) , 
+    .X ( ropt_net_113 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_110 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
+    .HI ( optlc_net_112 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_14__13 ( .A ( chany_bottom_in[13] ) , 
+    .X ( aps_rename_2_ ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_16__15 ( .A ( chany_bottom_in[15] ) , 
+    .X ( chany_top_out[15] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_17__16 ( .A ( chany_bottom_in[16] ) , 
+    .X ( aps_rename_4_ ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_18__17 ( .A ( chany_bottom_in[17] ) , 
+    .X ( aps_rename_5_ ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_21__20 ( .A ( chany_top_in[0] ) , 
+    .X ( chany_bottom_out[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_22__21 ( .A ( chany_top_in[1] ) , 
+    .X ( chany_bottom_out[1] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_23__22 ( .A ( chany_top_in[2] ) , 
+    .X ( chany_bottom_out[2] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_24__23 ( .A ( chany_top_in[3] ) , 
+    .X ( chany_bottom_out[3] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_25__24 ( .A ( chany_top_in[4] ) , 
+    .X ( chany_bottom_out[4] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_27__26 ( .A ( chany_top_in[6] ) , 
+    .X ( chany_bottom_out[6] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_28__27 ( .A ( chany_top_in[7] ) , 
+    .X ( chany_bottom_out[7] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_29__28 ( .A ( chany_top_in[8] ) , 
+    .X ( chany_bottom_out[8] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_33__32 ( .A ( chany_top_in[12] ) , 
+    .X ( chany_bottom_out[12] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_34__33 ( .A ( chany_top_in[13] ) , 
+    .X ( chany_bottom_out[13] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_35__34 ( .A ( chany_top_in[14] ) , 
+    .X ( chany_bottom_out[14] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_36__35 ( .A ( chany_top_in[15] ) , 
+    .X ( chany_bottom_out[15] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_38__37 ( .A ( chany_top_in[17] ) , 
+    .X ( chany_bottom_out[17] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_40__39 ( .A ( chany_top_in[19] ) , 
     .X ( chany_bottom_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_61 ( .A ( chany_bottom_in[3] ) , 
+    .X ( chany_top_out[3] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_68 ( .A ( chany_bottom_in[19] ) , 
+    .X ( BUF_net_68 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_71 ( .A ( chany_top_in[16] ) , 
+    .X ( BUF_net_71 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_73 ( .A ( chany_bottom_in[7] ) , 
+    .X ( chany_top_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_74 ( .A ( chany_bottom_in[10] ) , 
+    .X ( chany_top_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_77 ( .A ( chany_bottom_in[0] ) , 
+    .X ( chany_top_out[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_78 ( .A ( aps_rename_1_ ) , 
+    .X ( chany_top_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_79 ( .A ( aps_rename_2_ ) , 
+    .X ( chany_top_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_80 ( .A ( chany_bottom_in[14] ) , 
+    .X ( chany_top_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_81 ( .A ( aps_rename_4_ ) , 
+    .X ( chany_top_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_82 ( .A ( aps_rename_5_ ) , 
+    .X ( chany_top_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_86 ( .A ( chany_top_in[9] ) , 
+    .X ( chany_bottom_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_93 ( .A ( chany_bottom_in[12] ) , 
+    .X ( chany_top_out[12] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_94 ( .A ( chany_top_in[10] ) , 
+    .X ( chany_bottom_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_95 ( .A ( chany_top_in[11] ) , 
+    .X ( chany_bottom_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_96 ( .A ( chany_top_in[18] ) , 
+    .X ( chany_bottom_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_97 ( .A ( chany_bottom_in[18] ) , 
+    .X ( chany_top_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_98 ( .A ( BUF_net_68 ) , 
+    .X ( chany_top_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_99 ( .A ( chany_top_in[5] ) , 
+    .X ( chany_bottom_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_101 ( .A ( BUF_net_71 ) , 
+    .X ( chany_bottom_out[16] ) ) ;
 endmodule
 
 
@@ -1830,9 +1762,9 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd1_1 FTB_2__41 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__41 ( .A ( mem_out[3] ) , 
     .X ( net_net_76 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_142 ( .A ( net_net_76 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_114 ( .A ( net_net_76 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -1879,65 +1811,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_8_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_43 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
-    .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
-    .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l1_in_2_ ( .A0 ( in[5] ) , .A1 ( in[4] ) , 
-    .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( 
-    .A0 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_3_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ ( .A0 ( in[6] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[1] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_2_ ( .A0 ( in[8] ) , .A1 ( in[7] ) , 
-    .S ( sram[1] ) , .X ( sky130_fd_sc_hd__mux2_1_5_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_3_ ( .A0 ( p0 ) , .A1 ( in[9] ) , 
-    .S ( sram[1] ) , .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
-    .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ ( 
-    .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[2] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_8_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l4_in_0_ ( 
-    .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
-endmodule
-
-
-module const1_0_12 ( const1 ) ;
-output [0:0] const1 ;
-endmodule
-
-
-module mux_tree_tapbuf_size10_0_4 ( in , sram , sram_inv , out , p0 ) ;
-input  [0:9] in ;
-input  [0:3] sram ;
-input  [0:3] sram_inv ;
-output [0:0] out ;
-input  p0 ;
-
-wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_8_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
-
-const1_0_12 const1_0_ (
-    .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -1967,8 +1846,65 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_42 ( 
+endmodule
+
+
+module const1_0_12 ( const1 ) ;
+output [0:0] const1 ;
+endmodule
+
+
+module mux_tree_tapbuf_size10_0_4 ( in , sram , sram_inv , out , p0 ) ;
+input  [0:9] in ;
+input  [0:3] sram ;
+input  [0:3] sram_inv ;
+output [0:0] out ;
+input  p0 ;
+
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_8_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
+
+const1_0_12 const1_0_ (
+    .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
+    .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
+    .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l1_in_2_ ( .A0 ( in[5] ) , .A1 ( in[4] ) , 
+    .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( 
+    .A0 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_3_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ ( .A0 ( in[6] ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[1] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l2_in_2_ ( .A0 ( in[8] ) , .A1 ( in[7] ) , 
+    .S ( sram[1] ) , .X ( sky130_fd_sc_hd__mux2_1_5_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l2_in_3_ ( .A0 ( p0 ) , .A1 ( in[9] ) , 
+    .S ( sram[1] ) , .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
+    .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ ( 
+    .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[2] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_8_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
+    .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
 endmodule
 
 
@@ -1997,9 +1933,8 @@ mux_tree_tapbuf_size10_0_4 mux_left_ipin_0 (
         chany_bottom_in[10] , chany_top_in[10] , chany_bottom_in[16] , 
         chany_top_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) ,
-    .out ( { ropt_net_154 } ) ,
-    .p0 ( optlc_net_144 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) , 
+    .out ( right_grid_pin_52_ ) , .p0 ( optlc_net_144 ) ) ;
 mux_tree_tapbuf_size10_15 mux_right_ipin_0 (
     .in ( { chany_bottom_in[1] , chany_top_in[1] , chany_bottom_in[3] , 
         chany_top_in[3] , chany_bottom_in[5] , chany_top_in[5] , 
@@ -2014,210 +1949,201 @@ mux_tree_tapbuf_size10_mem_0_4 mem_left_ipin_0 ( .prog_clk ( prog_clk ) ,
     .mem_out ( mux_tree_tapbuf_size10_0_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size10_0_sram_inv ) ) ;
 mux_tree_tapbuf_size10_mem_15 mem_right_ipin_0 ( .prog_clk ( prog_clk ) , 
-    .ccff_head ( mux_tree_tapbuf_size10_mem_0_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_176 } ) ,
-    .mem_out ( mux_tree_tapbuf_size10_1_sram ) , 
+    .ccff_head ( mux_tree_tapbuf_size10_mem_0_ccff_tail ) , 
+    .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_tapbuf_size10_1_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size10_1_sram_inv ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__0 ( .A ( chany_bottom_in[0] ) , 
-    .X ( ropt_net_177 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_1__0 ( .A ( chany_bottom_in[0] ) , 
+    .X ( chany_top_out[0] ) ) ;
 sky130_fd_sc_hd__conb_1 optlc_144 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
     .HI ( optlc_net_144 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_3__2 ( .A ( chany_bottom_in[2] ) , 
+    .X ( ropt_net_173 ) ) ;
 sky130_fd_sc_hd__conb_1 optlc_145 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
     .HI ( optlc_net_145 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_750 ( 
-    .A ( chany_bottom_in[16] ) , .X ( ropt_net_220 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_751 ( .A ( ropt_net_147 ) , 
-    .X ( ropt_net_210 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_789 ( .A ( ropt_net_186 ) , 
-    .X ( chany_top_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_790 ( .A ( ropt_net_187 ) , 
-    .X ( chany_top_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_752 ( 
-    .A ( chany_bottom_in[14] ) , .X ( ropt_net_193 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_753 ( .A ( chany_bottom_in[5] ) , 
-    .X ( ropt_net_189 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_754 ( .A ( chany_top_in[4] ) , 
-    .X ( ropt_net_214 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_791 ( .A ( ropt_net_188 ) , 
-    .X ( chany_bottom_out[6] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_12__11 ( .A ( chany_bottom_in[11] ) , 
-    .X ( ropt_net_181 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_792 ( .A ( ropt_net_189 ) , 
-    .X ( chany_top_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_755 ( .A ( chany_top_in[14] ) , 
-    .X ( chany_bottom_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_756 ( 
-    .A ( chany_bottom_in[18] ) , .X ( ropt_net_187 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_757 ( 
-    .A ( chany_bottom_in[12] ) , .X ( ropt_net_217 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_793 ( .A ( ropt_net_190 ) , 
-    .X ( chany_bottom_out[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_18__17 ( .A ( chany_bottom_in[17] ) , 
-    .X ( ropt_net_183 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_758 ( .A ( ropt_net_154 ) , 
-    .X ( ropt_net_206 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_759 ( .A ( chany_top_in[19] ) , 
-    .X ( ropt_net_216 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_760 ( .A ( chany_top_in[1] ) , 
-    .X ( ropt_net_219 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_794 ( .A ( ropt_net_191 ) , 
-    .X ( chany_bottom_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_761 ( .A ( chany_top_in[18] ) , 
-    .X ( chany_bottom_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_762 ( .A ( chany_top_in[10] ) , 
-    .X ( ropt_net_215 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_763 ( .A ( chany_top_in[9] ) , 
-    .X ( ropt_net_191 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_764 ( .A ( chany_top_in[12] ) , 
-    .X ( ropt_net_194 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_765 ( .A ( chany_bottom_in[9] ) , 
-    .X ( ropt_net_218 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_766 ( .A ( chany_top_in[13] ) , 
-    .X ( chany_bottom_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_767 ( .A ( ropt_net_163 ) , 
-    .X ( ropt_net_197 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_768 ( .A ( ropt_net_164 ) , 
-    .X ( ropt_net_188 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_769 ( .A ( ropt_net_165 ) , 
-    .X ( ropt_net_190 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_770 ( .A ( ropt_net_166 ) , 
-    .X ( ropt_net_196 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_771 ( .A ( ropt_net_167 ) , 
-    .X ( ropt_net_198 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_772 ( .A ( chany_top_in[15] ) , 
-    .X ( chany_bottom_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_773 ( .A ( chany_top_in[16] ) , 
-    .X ( chany_bottom_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_774 ( .A ( ropt_net_170 ) , 
-    .X ( ropt_net_195 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_775 ( .A ( ropt_net_171 ) , 
-    .X ( ropt_net_204 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_776 ( 
-    .A ( chany_bottom_in[10] ) , .X ( ropt_net_186 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_777 ( .A ( ropt_net_173 ) , 
-    .X ( ropt_net_199 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_795 ( .A ( ropt_net_192 ) , 
-    .X ( chany_top_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_778 ( .A ( ropt_net_174 ) , 
-    .X ( ropt_net_207 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_779 ( .A ( ropt_net_175 ) , 
-    .X ( ropt_net_209 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_796 ( .A ( ropt_net_193 ) , 
-    .X ( chany_top_out[14] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_47 ( .A ( chany_bottom_in[7] ) , 
-    .X ( BUF_net_47 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_48 ( .A ( chany_bottom_in[8] ) , 
-    .X ( ropt_net_173 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_780 ( .A ( ropt_net_176 ) , 
-    .X ( ropt_net_211 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_797 ( .A ( ropt_net_194 ) , 
-    .X ( chany_bottom_out[12] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_51 ( .A ( chany_bottom_in[13] ) , 
-    .X ( BUF_net_51 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_781 ( .A ( ropt_net_177 ) , 
-    .X ( ropt_net_203 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_53 ( .A ( chany_bottom_in[15] ) , 
-    .X ( ropt_net_171 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_782 ( .A ( ropt_net_178 ) , 
-    .X ( ropt_net_205 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_55 ( .A ( chany_bottom_in[19] ) , 
-    .X ( ropt_net_184 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_783 ( .A ( ropt_net_179 ) , 
-    .X ( ropt_net_212 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_798 ( .A ( ropt_net_195 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_724 ( .A ( chany_bottom_in[8] ) , 
+    .X ( ropt_net_202 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_758 ( .A ( ropt_net_177 ) , 
+    .X ( chany_bottom_out[1] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_759 ( .A ( ropt_net_178 ) , 
     .X ( chany_bottom_out[2] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_58 ( .A ( chany_top_in[2] ) , 
-    .X ( ropt_net_170 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_59 ( .A ( chany_top_in[3] ) , 
-    .X ( ropt_net_165 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_799 ( .A ( ropt_net_196 ) , 
-    .X ( chany_bottom_out[5] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_61 ( .A ( chany_top_in[5] ) , 
-    .X ( ropt_net_166 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_62 ( .A ( chany_top_in[6] ) , 
-    .X ( ropt_net_164 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_63 ( .A ( chany_top_in[7] ) , 
-    .X ( ropt_net_175 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_64 ( .A ( chany_top_in[8] ) , 
-    .X ( ropt_net_167 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_800 ( .A ( ropt_net_197 ) , 
-    .X ( chany_bottom_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_801 ( .A ( ropt_net_198 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_8__7 ( .A ( chany_bottom_in[7] ) , 
+    .X ( chany_top_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_725 ( .A ( chany_bottom_in[6] ) , 
+    .X ( ropt_net_201 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_726 ( .A ( chany_bottom_in[5] ) , 
+    .X ( ropt_net_182 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_727 ( .A ( chany_top_in[18] ) , 
+    .X ( chany_bottom_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_728 ( .A ( chany_top_in[5] ) , 
+    .X ( ropt_net_200 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_729 ( .A ( ropt_net_151 ) , 
     .X ( chany_bottom_out[8] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_67 ( .A ( chany_top_in[11] ) , 
-    .X ( ropt_net_163 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_802 ( .A ( ropt_net_199 ) , 
-    .X ( chany_top_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_803 ( .A ( ropt_net_200 ) , 
-    .X ( chany_top_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_804 ( .A ( ropt_net_201 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_730 ( .A ( chany_top_in[13] ) , 
+    .X ( ropt_net_199 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_731 ( .A ( ropt_net_153 ) , 
+    .X ( ropt_net_178 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_732 ( .A ( ropt_net_154 ) , 
+    .X ( ropt_net_177 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_733 ( .A ( ropt_net_155 ) , 
+    .X ( ropt_net_181 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_734 ( .A ( ropt_net_156 ) , 
+    .X ( ropt_net_187 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_735 ( .A ( ropt_net_157 ) , 
+    .X ( ropt_net_186 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_736 ( .A ( ropt_net_158 ) , 
+    .X ( ropt_net_184 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_21__20 ( .A ( chany_top_in[0] ) , 
+    .X ( ropt_net_204 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_737 ( .A ( ropt_net_159 ) , 
+    .X ( ropt_net_198 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_738 ( .A ( ropt_net_160 ) , 
+    .X ( chany_bottom_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_739 ( .A ( ropt_net_161 ) , 
+    .X ( ropt_net_189 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_25__24 ( .A ( chany_top_in[4] ) , 
+    .X ( ropt_net_169 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_740 ( .A ( ropt_net_162 ) , 
+    .X ( chany_bottom_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_741 ( .A ( ropt_net_163 ) , 
+    .X ( chany_bottom_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_742 ( .A ( ropt_net_164 ) , 
+    .X ( ropt_net_195 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_743 ( .A ( ropt_net_165 ) , 
+    .X ( ropt_net_193 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_744 ( .A ( ropt_net_166 ) , 
+    .X ( ropt_net_190 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_745 ( .A ( ropt_net_167 ) , 
+    .X ( ropt_net_183 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_746 ( .A ( ropt_net_168 ) , 
+    .X ( ropt_net_179 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_747 ( .A ( ropt_net_169 ) , 
+    .X ( ropt_net_192 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_748 ( .A ( ropt_net_170 ) , 
+    .X ( ropt_net_185 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_749 ( .A ( ropt_net_171 ) , 
+    .X ( ropt_net_191 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_750 ( .A ( ropt_net_172 ) , 
+    .X ( ropt_net_196 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_751 ( .A ( ropt_net_173 ) , 
+    .X ( ropt_net_180 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_752 ( .A ( ropt_net_174 ) , 
+    .X ( ropt_net_194 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_754 ( .A ( ropt_net_175 ) , 
+    .X ( ropt_net_188 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_755 ( .A ( ropt_net_176 ) , 
+    .X ( ropt_net_197 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_760 ( .A ( ropt_net_179 ) , 
+    .X ( chany_bottom_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_761 ( .A ( ropt_net_180 ) , 
+    .X ( chany_top_out[2] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_762 ( .A ( ropt_net_181 ) , 
+    .X ( chany_top_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_45 ( .A ( chany_bottom_in[3] ) , 
     .X ( chany_top_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_805 ( .A ( ropt_net_202 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_763 ( .A ( ropt_net_182 ) , 
+    .X ( chany_top_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_764 ( .A ( ropt_net_183 ) , 
+    .X ( chany_top_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_765 ( .A ( ropt_net_184 ) , 
+    .X ( chany_bottom_out[12] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_766 ( .A ( ropt_net_185 ) , 
+    .X ( chany_bottom_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_767 ( .A ( ropt_net_186 ) , 
+    .X ( chany_top_out[19] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_51 ( .A ( chany_bottom_in[10] ) , 
+    .X ( ropt_net_175 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_769 ( .A ( ropt_net_187 ) , 
+    .X ( chany_top_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_770 ( .A ( ropt_net_188 ) , 
+    .X ( chany_top_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_771 ( .A ( ropt_net_189 ) , 
+    .X ( chany_top_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_772 ( .A ( ropt_net_190 ) , 
+    .X ( chany_top_out[4] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_773 ( .A ( ropt_net_191 ) , 
+    .X ( chany_bottom_out[3] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_57 ( .A ( chany_bottom_in[17] ) , 
+    .X ( ropt_net_165 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_58 ( .A ( chany_bottom_in[19] ) , 
+    .X ( ropt_net_157 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_59 ( .A ( chany_top_in[1] ) , 
+    .X ( ropt_net_154 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_60 ( .A ( chany_top_in[2] ) , 
+    .X ( ropt_net_153 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_774 ( .A ( ropt_net_192 ) , 
+    .X ( chany_bottom_out[4] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_775 ( .A ( ropt_net_193 ) , 
     .X ( chany_top_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_806 ( .A ( ropt_net_203 ) , 
-    .X ( chany_top_out[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_776 ( .A ( ropt_net_194 ) , 
+    .X ( chany_top_out[12] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_64 ( .A ( chany_top_in[7] ) , 
+    .X ( ropt_net_164 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_65 ( .A ( chany_top_in[8] ) , 
+    .X ( ropt_net_151 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_66 ( .A ( chany_top_in[9] ) , 
+    .X ( BUF_net_66 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_777 ( .A ( ropt_net_195 ) , 
+    .X ( chany_bottom_out[7] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_68 ( .A ( chany_top_in[11] ) , 
+    .X ( ropt_net_170 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_69 ( .A ( chany_top_in[12] ) , 
+    .X ( ropt_net_158 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_778 ( .A ( ropt_net_196 ) , 
+    .X ( chany_top_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_779 ( .A ( ropt_net_197 ) , 
+    .X ( chany_top_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_780 ( .A ( ropt_net_198 ) , 
+    .X ( chany_top_out[9] ) ) ;
 sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_73 ( .A ( chany_top_in[17] ) , 
     .X ( chany_bottom_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_807 ( .A ( ropt_net_204 ) , 
-    .X ( chany_top_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_808 ( .A ( ropt_net_205 ) , 
-    .X ( chany_top_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_784 ( .A ( ropt_net_180 ) , 
-    .X ( ropt_net_201 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_785 ( .A ( ropt_net_181 ) , 
-    .X ( ropt_net_192 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_786 ( .A ( ropt_net_182 ) , 
-    .X ( ropt_net_213 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_809 ( .A ( ropt_net_206 ) , 
-    .X ( right_grid_pin_52_[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_810 ( .A ( ropt_net_207 ) , 
-    .X ( chany_top_out[2] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_787 ( .A ( ropt_net_183 ) , 
-    .X ( ropt_net_202 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_788 ( .A ( ropt_net_184 ) , 
-    .X ( ropt_net_200 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_811 ( .A ( ropt_net_208 ) , 
-    .X ( chany_top_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_812 ( .A ( ropt_net_209 ) , 
-    .X ( chany_bottom_out[7] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_88 ( .A ( chany_top_in[0] ) , 
-    .X ( ropt_net_182 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_813 ( .A ( ropt_net_210 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_783 ( .A ( ropt_net_199 ) , 
+    .X ( chany_bottom_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_787 ( .A ( ropt_net_200 ) , 
+    .X ( chany_bottom_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_789 ( .A ( ropt_net_201 ) , 
     .X ( chany_top_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_814 ( .A ( ropt_net_211 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_815 ( .A ( ropt_net_212 ) , 
-    .X ( chany_top_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_816 ( .A ( ropt_net_213 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_790 ( .A ( ropt_net_202 ) , 
+    .X ( chany_top_out[8] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_792 ( .A ( ropt_net_203 ) , 
+    .X ( chany_bottom_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_794 ( .A ( ropt_net_204 ) , 
     .X ( chany_bottom_out[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_817 ( .A ( ropt_net_214 ) , 
-    .X ( chany_bottom_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_818 ( .A ( ropt_net_215 ) , 
-    .X ( chany_bottom_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_819 ( .A ( ropt_net_216 ) , 
-    .X ( chany_bottom_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_820 ( .A ( ropt_net_217 ) , 
-    .X ( chany_top_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_821 ( .A ( ropt_net_218 ) , 
-    .X ( chany_top_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_822 ( .A ( ropt_net_219 ) , 
-    .X ( chany_bottom_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_823 ( .A ( ropt_net_220 ) , 
-    .X ( chany_top_out[16] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_107 ( .A ( chany_bottom_in[2] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_95 ( .A ( chany_top_in[3] ) , 
+    .X ( ropt_net_171 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_101 ( .A ( chany_top_in[10] ) , 
+    .X ( ropt_net_163 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_110 ( .A ( chany_bottom_in[16] ) , 
+    .X ( ropt_net_155 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_111 ( .A ( chany_bottom_in[18] ) , 
+    .X ( ropt_net_161 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_112 ( .A ( chany_top_in[16] ) , 
+    .X ( ropt_net_203 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_113 ( .A ( chany_top_in[19] ) , 
+    .X ( ropt_net_162 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_115 ( .A ( chany_bottom_in[1] ) , 
+    .X ( chany_top_out[1] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_117 ( .A ( chany_bottom_in[4] ) , 
+    .X ( ropt_net_166 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_119 ( .A ( chany_bottom_in[9] ) , 
+    .X ( ropt_net_159 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_120 ( .A ( chany_bottom_in[11] ) , 
+    .X ( ropt_net_172 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_121 ( .A ( chany_bottom_in[12] ) , 
     .X ( ropt_net_174 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_108 ( .A ( chany_bottom_in[4] ) , 
-    .X ( ropt_net_179 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_109 ( .A ( chany_bottom_in[3] ) , 
-    .X ( ropt_net_180 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_110 ( .A ( chany_bottom_in[6] ) , 
-    .X ( ropt_net_147 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_116 ( .A ( chany_bottom_in[1] ) , 
-    .X ( ropt_net_178 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_117 ( .A ( BUF_net_47 ) , 
-    .X ( chany_top_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_120 ( .A ( BUF_net_51 ) , 
-    .X ( ropt_net_208 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_122 ( .A ( chany_bottom_in[13] ) , 
+    .X ( ropt_net_167 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_123 ( .A ( chany_bottom_in[14] ) , 
+    .X ( ropt_net_176 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_124 ( .A ( chany_bottom_in[15] ) , 
+    .X ( ropt_net_156 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_131 ( .A ( chany_top_in[6] ) , 
+    .X ( ropt_net_168 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_134 ( .A ( BUF_net_66 ) , 
+    .X ( chany_bottom_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_139 ( .A ( chany_top_in[14] ) , 
+    .X ( chany_bottom_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_140 ( .A ( chany_top_in[15] ) , 
+    .X ( ropt_net_160 ) ) ;
 endmodule
 
 
@@ -2238,8 +2164,8 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__40 ( .A ( mem_out[3] ) , 
-    .X ( net_net_83 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_125 ( .A ( net_net_83 ) , 
+    .X ( net_net_74 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_115 ( .A ( net_net_74 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -2265,9 +2191,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_8_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_42 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -2293,9 +2222,10 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_8_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
 endmodule
 
 
@@ -2320,204 +2250,204 @@ mux_tree_tapbuf_size10_14 mux_bottom_ipin_0 (
         chanx_right_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) , 
-    .out ( top_grid_pin_0_ ) , .p0 ( optlc_net_161 ) ) ;
+    .out ( top_grid_pin_0_ ) , .p0 ( optlc_net_143 ) ) ;
 mux_tree_tapbuf_size10_mem_14 mem_bottom_ipin_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) ,
-    .ccff_tail ( { ropt_net_196 } ) ,
+    .ccff_tail ( { ropt_net_181 } ) ,
     .mem_out ( mux_tree_tapbuf_size10_0_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size10_0_sram_inv ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_161 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_161 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_758 ( .A ( chanx_right_in[17] ) , 
-    .X ( ropt_net_220 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_759 ( .A ( chanx_left_in[7] ) , 
-    .X ( ropt_net_222 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_760 ( .A ( ropt_net_165 ) , 
-    .X ( ropt_net_203 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_761 ( .A ( ropt_net_166 ) , 
-    .X ( chanx_left_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_762 ( .A ( ropt_net_167 ) , 
-    .X ( ropt_net_202 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_763 ( .A ( ropt_net_168 ) , 
-    .X ( ropt_net_206 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_764 ( .A ( ropt_net_169 ) , 
-    .X ( ropt_net_209 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_765 ( .A ( ropt_net_170 ) , 
-    .X ( ropt_net_204 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_766 ( .A ( ropt_net_171 ) , 
-    .X ( ropt_net_208 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_767 ( .A ( chanx_left_in[18] ) , 
-    .X ( ropt_net_226 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_768 ( .A ( ropt_net_173 ) , 
-    .X ( ropt_net_201 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_769 ( .A ( chanx_left_in[5] ) , 
-    .X ( ropt_net_227 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_770 ( .A ( ropt_net_175 ) , 
+sky130_fd_sc_hd__conb_1 optlc_143 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_143 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_722 ( .A ( ropt_net_144 ) , 
+    .X ( ropt_net_196 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_723 ( .A ( chanx_right_in[4] ) , 
     .X ( ropt_net_207 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_771 ( .A ( ropt_net_176 ) , 
-    .X ( ropt_net_213 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_772 ( .A ( chanx_left_in[2] ) , 
-    .X ( ropt_net_217 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_773 ( .A ( chanx_right_in[7] ) , 
-    .X ( ropt_net_224 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_774 ( .A ( chanx_right_in[12] ) , 
-    .X ( ropt_net_223 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_775 ( .A ( chanx_right_in[16] ) , 
-    .X ( ropt_net_216 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_776 ( .A ( chanx_right_in[5] ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_724 ( .A ( chanx_left_in[13] ) , 
     .X ( ropt_net_215 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_777 ( .A ( chanx_right_in[1] ) , 
-    .X ( ropt_net_221 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_778 ( .A ( chanx_right_in[10] ) , 
-    .X ( ropt_net_219 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_779 ( .A ( ropt_net_184 ) , 
-    .X ( ropt_net_205 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_780 ( .A ( chanx_left_in[6] ) , 
-    .X ( ropt_net_228 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_781 ( .A ( chanx_right_in[19] ) , 
-    .X ( ropt_net_218 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_782 ( .A ( chanx_right_in[3] ) , 
-    .X ( ropt_net_225 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_27__26 ( .A ( chanx_right_in[6] ) , 
-    .X ( aps_rename_1_ ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_783 ( .A ( chanx_left_in[15] ) , 
-    .X ( ropt_net_230 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_784 ( .A ( chanx_left_in[19] ) , 
-    .X ( ropt_net_229 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_785 ( .A ( ropt_net_190 ) , 
-    .X ( ropt_net_211 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_786 ( .A ( ropt_net_191 ) , 
-    .X ( chanx_right_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_796 ( .A ( ropt_net_201 ) , 
-    .X ( chanx_left_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_787 ( .A ( ropt_net_192 ) , 
-    .X ( chanx_right_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_797 ( .A ( ropt_net_202 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_725 ( .A ( ropt_net_147 ) , 
     .X ( chanx_left_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_798 ( .A ( ropt_net_203 ) , 
-    .X ( chanx_left_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_799 ( .A ( ropt_net_204 ) , 
-    .X ( chanx_left_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_788 ( .A ( ropt_net_193 ) , 
-    .X ( chanx_right_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_789 ( .A ( ropt_net_194 ) , 
-    .X ( chanx_right_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_800 ( .A ( ropt_net_205 ) , 
-    .X ( chanx_right_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_790 ( .A ( ropt_net_195 ) , 
-    .X ( ropt_net_214 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_791 ( .A ( ropt_net_196 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_792 ( .A ( ropt_net_197 ) , 
-    .X ( ropt_net_212 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_801 ( .A ( ropt_net_206 ) , 
-    .X ( chanx_left_out[2] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_45 ( .A ( chanx_left_in[3] ) , 
-    .X ( ropt_net_193 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_793 ( .A ( ropt_net_198 ) , 
-    .X ( ropt_net_210 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_802 ( .A ( ropt_net_207 ) , 
-    .X ( chanx_left_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_794 ( .A ( ropt_net_199 ) , 
-    .X ( chanx_right_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_795 ( .A ( ropt_net_200 ) , 
-    .X ( chanx_right_out[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_803 ( .A ( ropt_net_208 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_762 ( .A ( ropt_net_184 ) , 
     .X ( chanx_left_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_804 ( .A ( ropt_net_209 ) , 
-    .X ( chanx_left_out[11] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_52 ( .A ( chanx_left_in[10] ) , 
-    .X ( BUF_net_52 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_53 ( .A ( chanx_left_in[11] ) , 
-    .X ( ropt_net_191 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_805 ( .A ( ropt_net_210 ) , 
-    .X ( chanx_right_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_806 ( .A ( ropt_net_211 ) , 
-    .X ( chanx_right_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_807 ( .A ( ropt_net_212 ) , 
-    .X ( chanx_right_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_808 ( .A ( ropt_net_213 ) , 
-    .X ( chanx_right_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_809 ( .A ( ropt_net_214 ) , 
-    .X ( chanx_right_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_810 ( .A ( ropt_net_215 ) , 
-    .X ( chanx_left_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_811 ( .A ( ropt_net_216 ) , 
-    .X ( chanx_left_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_812 ( .A ( ropt_net_217 ) , 
-    .X ( chanx_right_out[2] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_62 ( .A ( chanx_right_in[0] ) , 
-    .X ( BUF_net_62 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_813 ( .A ( ropt_net_218 ) , 
-    .X ( chanx_left_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_814 ( .A ( ropt_net_219 ) , 
-    .X ( chanx_left_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_815 ( .A ( ropt_net_220 ) , 
-    .X ( chanx_left_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_816 ( .A ( ropt_net_221 ) , 
-    .X ( chanx_left_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_817 ( .A ( ropt_net_222 ) , 
-    .X ( chanx_right_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_68 ( .A ( aps_rename_1_ ) , 
-    .X ( chanx_left_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_818 ( .A ( ropt_net_223 ) , 
-    .X ( chanx_left_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_819 ( .A ( ropt_net_224 ) , 
-    .X ( chanx_left_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_820 ( .A ( ropt_net_225 ) , 
-    .X ( chanx_left_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_821 ( .A ( ropt_net_226 ) , 
-    .X ( chanx_right_out[18] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_73 ( .A ( chanx_right_in[11] ) , 
-    .X ( ropt_net_169 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_822 ( .A ( ropt_net_227 ) , 
-    .X ( chanx_right_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_823 ( .A ( ropt_net_228 ) , 
-    .X ( chanx_right_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_824 ( .A ( ropt_net_229 ) , 
-    .X ( chanx_right_out[19] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_77 ( .A ( chanx_right_in[15] ) , 
-    .X ( ropt_net_175 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_825 ( .A ( ropt_net_230 ) , 
-    .X ( chanx_right_out[15] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_121 ( .A ( chanx_right_in[13] ) , 
-    .X ( ropt_net_173 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_122 ( .A ( chanx_right_in[14] ) , 
-    .X ( ropt_net_166 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_124 ( .A ( chanx_right_in[18] ) , 
-    .X ( ropt_net_165 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_127 ( .A ( chanx_left_in[0] ) , 
-    .X ( ropt_net_200 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_128 ( .A ( chanx_left_in[1] ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_726 ( .A ( ropt_net_148 ) , 
     .X ( ropt_net_192 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_131 ( .A ( chanx_left_in[4] ) , 
-    .X ( ropt_net_199 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_135 ( .A ( chanx_left_in[8] ) , 
-    .X ( ropt_net_176 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_136 ( .A ( chanx_left_in[9] ) , 
-    .X ( ropt_net_194 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_137 ( .A ( BUF_net_52 ) , 
-    .X ( chanx_right_out[10] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_139 ( .A ( chanx_left_in[12] ) , 
-    .X ( ropt_net_190 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_140 ( .A ( chanx_left_in[13] ) , 
-    .X ( ropt_net_195 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_141 ( .A ( chanx_left_in[14] ) , 
-    .X ( ropt_net_198 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_143 ( .A ( chanx_left_in[16] ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_727 ( .A ( ropt_net_149 ) , 
+    .X ( ropt_net_191 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_728 ( .A ( chanx_left_in[18] ) , 
+    .X ( ropt_net_210 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_729 ( .A ( chanx_right_in[5] ) , 
+    .X ( ropt_net_208 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_730 ( .A ( ropt_net_152 ) , 
+    .X ( ropt_net_185 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_731 ( .A ( chanx_right_in[18] ) , 
+    .X ( ropt_net_213 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_732 ( .A ( chanx_right_in[13] ) , 
+    .X ( ropt_net_209 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_733 ( .A ( ropt_net_155 ) , 
+    .X ( ropt_net_193 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_734 ( .A ( chanx_left_in[17] ) , 
+    .X ( ropt_net_202 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_735 ( .A ( chanx_left_in[16] ) , 
+    .X ( ropt_net_201 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_736 ( .A ( chanx_right_in[14] ) , 
+    .X ( ropt_net_200 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_737 ( .A ( chanx_left_in[14] ) , 
+    .X ( ropt_net_204 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_738 ( .A ( chanx_left_in[6] ) , 
+    .X ( ropt_net_214 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_739 ( .A ( chanx_right_in[17] ) , 
+    .X ( ropt_net_203 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_740 ( .A ( chanx_left_in[19] ) , 
+    .X ( ropt_net_212 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_741 ( .A ( chanx_right_in[15] ) , 
+    .X ( ropt_net_206 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_763 ( .A ( ropt_net_185 ) , 
+    .X ( chanx_left_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_742 ( .A ( chanx_left_in[12] ) , 
+    .X ( ropt_net_216 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_743 ( .A ( chanx_right_in[16] ) , 
+    .X ( ropt_net_205 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_744 ( .A ( chanx_right_in[10] ) , 
+    .X ( ropt_net_188 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_745 ( .A ( ropt_net_167 ) , 
     .X ( ropt_net_184 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_144 ( .A ( chanx_left_in[17] ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_746 ( .A ( chanx_left_in[5] ) , 
+    .X ( ropt_net_211 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_747 ( .A ( chanx_right_in[0] ) , 
+    .X ( ropt_net_187 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_748 ( .A ( ropt_net_170 ) , 
+    .X ( chanx_right_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_749 ( .A ( ropt_net_171 ) , 
+    .X ( ropt_net_195 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_750 ( .A ( ropt_net_172 ) , 
     .X ( ropt_net_197 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_147 ( .A ( BUF_net_62 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_751 ( .A ( ropt_net_173 ) , 
+    .X ( ropt_net_190 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_752 ( .A ( ropt_net_174 ) , 
+    .X ( ropt_net_189 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_753 ( .A ( ropt_net_175 ) , 
+    .X ( ropt_net_186 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_754 ( .A ( ropt_net_176 ) , 
+    .X ( chanx_right_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_755 ( .A ( ropt_net_177 ) , 
+    .X ( ropt_net_194 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_756 ( .A ( ropt_net_178 ) , 
+    .X ( chanx_right_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_757 ( .A ( ropt_net_179 ) , 
+    .X ( ropt_net_198 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_758 ( .A ( ropt_net_180 ) , 
+    .X ( chanx_right_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_764 ( .A ( ropt_net_186 ) , 
+    .X ( chanx_left_out[1] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_759 ( .A ( ropt_net_181 ) , 
+    .X ( ropt_net_199 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_765 ( .A ( ropt_net_187 ) , 
     .X ( chanx_left_out[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_148 ( .A ( chanx_right_in[2] ) , 
-    .X ( ropt_net_168 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_150 ( .A ( chanx_right_in[4] ) , 
-    .X ( ropt_net_170 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_153 ( .A ( chanx_right_in[8] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_44 ( .A ( chanx_left_in[8] ) , 
+    .X ( BUF_net_44 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_760 ( .A ( ropt_net_182 ) , 
+    .X ( chanx_right_out[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_761 ( .A ( ropt_net_183 ) , 
+    .X ( chanx_right_out[4] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_766 ( .A ( ropt_net_188 ) , 
+    .X ( chanx_left_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_767 ( .A ( ropt_net_189 ) , 
+    .X ( chanx_left_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_768 ( .A ( ropt_net_190 ) , 
+    .X ( chanx_left_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_769 ( .A ( ropt_net_191 ) , 
+    .X ( chanx_left_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_770 ( .A ( ropt_net_192 ) , 
+    .X ( chanx_right_out[1] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_771 ( .A ( ropt_net_193 ) , 
+    .X ( chanx_left_out[12] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_772 ( .A ( ropt_net_194 ) , 
+    .X ( chanx_left_out[19] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_54 ( .A ( chanx_right_in[1] ) , 
+    .X ( ropt_net_175 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_773 ( .A ( ropt_net_195 ) , 
+    .X ( chanx_right_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_774 ( .A ( ropt_net_196 ) , 
+    .X ( chanx_left_out[2] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_775 ( .A ( ropt_net_197 ) , 
+    .X ( chanx_right_out[2] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_776 ( .A ( ropt_net_198 ) , 
+    .X ( chanx_right_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_777 ( .A ( ropt_net_199 ) , 
+    .X ( ccff_tail[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_60 ( .A ( chanx_right_in[7] ) , 
+    .X ( ropt_net_173 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_778 ( .A ( ropt_net_200 ) , 
+    .X ( chanx_left_out[14] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_62 ( .A ( chanx_right_in[9] ) , 
     .X ( ropt_net_167 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_154 ( .A ( chanx_right_in[9] ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_779 ( .A ( ropt_net_201 ) , 
+    .X ( chanx_right_out[16] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_64 ( .A ( chanx_right_in[11] ) , 
+    .X ( ropt_net_174 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_780 ( .A ( ropt_net_202 ) , 
+    .X ( chanx_right_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_781 ( .A ( ropt_net_203 ) , 
+    .X ( chanx_left_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_782 ( .A ( ropt_net_204 ) , 
+    .X ( chanx_right_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_783 ( .A ( ropt_net_205 ) , 
+    .X ( chanx_left_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_784 ( .A ( ropt_net_206 ) , 
+    .X ( chanx_left_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_785 ( .A ( ropt_net_207 ) , 
+    .X ( chanx_left_out[4] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_786 ( .A ( ropt_net_208 ) , 
+    .X ( chanx_left_out[5] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_72 ( .A ( chanx_right_in[19] ) , 
+    .X ( ropt_net_177 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_787 ( .A ( ropt_net_209 ) , 
+    .X ( chanx_left_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_788 ( .A ( ropt_net_210 ) , 
+    .X ( chanx_right_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_789 ( .A ( ropt_net_211 ) , 
+    .X ( chanx_right_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_790 ( .A ( ropt_net_212 ) , 
+    .X ( chanx_right_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_791 ( .A ( ropt_net_213 ) , 
+    .X ( chanx_left_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_792 ( .A ( ropt_net_214 ) , 
+    .X ( chanx_right_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_793 ( .A ( ropt_net_215 ) , 
+    .X ( chanx_right_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_794 ( .A ( ropt_net_216 ) , 
+    .X ( chanx_right_out[12] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_102 ( .A ( chanx_left_in[0] ) , 
+    .X ( ropt_net_182 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_103 ( .A ( chanx_left_in[2] ) , 
+    .X ( ropt_net_172 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_104 ( .A ( chanx_left_in[3] ) , 
+    .X ( ropt_net_179 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_105 ( .A ( chanx_left_in[7] ) , 
+    .X ( ropt_net_170 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_106 ( .A ( chanx_left_in[11] ) , 
+    .X ( ropt_net_176 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_108 ( .A ( chanx_left_in[15] ) , 
+    .X ( ropt_net_178 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_110 ( .A ( chanx_right_in[2] ) , 
+    .X ( ropt_net_144 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_116 ( .A ( chanx_left_in[1] ) , 
+    .X ( ropt_net_148 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_117 ( .A ( chanx_left_in[4] ) , 
+    .X ( ropt_net_183 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_119 ( .A ( BUF_net_44 ) , 
+    .X ( chanx_right_out[8] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_120 ( .A ( chanx_left_in[9] ) , 
+    .X ( ropt_net_180 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_121 ( .A ( chanx_left_in[10] ) , 
     .X ( ropt_net_171 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_129 ( .A ( chanx_right_in[3] ) , 
+    .X ( ropt_net_149 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_132 ( .A ( chanx_right_in[6] ) , 
+    .X ( ropt_net_152 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_133 ( .A ( chanx_right_in[8] ) , 
+    .X ( ropt_net_147 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_136 ( .A ( chanx_right_in[12] ) , 
+    .X ( ropt_net_155 ) ) ;
 endmodule
 
 
@@ -2538,10 +2468,8 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 FTB_16__55 ( .A ( mem_out[3] ) , 
-    .X ( net_net_75 ) ) ;
-sky130_fd_sc_hd__dlygate4sd1_1 BUFT_RR_75 ( .A ( net_net_75 ) , 
-    .X ( net_net_74 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_105 ( .A ( net_net_74 ) , 
+    .X ( net_net_72 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_71 ( .A ( net_net_72 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -2562,7 +2490,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_15__54 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_15__54 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -2583,7 +2511,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_14__53 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_14__53 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -2604,7 +2532,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_13__52 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_13__52 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -2625,7 +2553,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_12__51 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_12__51 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -2646,7 +2574,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_11__50 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_11__50 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -2667,7 +2595,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_10__49 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_10__49 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -2688,7 +2616,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_9__48 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_9__48 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -2916,12 +2844,9 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 
 const1_11_10 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -2941,10 +2866,9 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_8 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -2971,6 +2895,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 
 const1_10_10 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -2994,8 +2920,6 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_58 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -3117,7 +3041,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_8__47 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_8__47 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -3138,7 +3062,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_7__46 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_7__46 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -3159,7 +3083,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_6__45 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_6__45 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -3180,7 +3104,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_5__44 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_5__44 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -3201,7 +3125,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_4__43 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_4__43 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -3222,7 +3146,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_3__42 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_3__42 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -3243,7 +3167,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__41 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_2__41 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -3264,7 +3188,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__40 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__40 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -3526,9 +3450,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_8_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_3_11 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -3556,7 +3483,8 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .X ( sky130_fd_sc_hd__mux2_1_8_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
 endmodule
 
 
@@ -3703,6 +3631,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_0_11 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -3732,8 +3662,6 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_56 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -3822,9 +3750,8 @@ mux_tree_tapbuf_size10_0_3 mux_bottom_ipin_0 (
         chanx_left_in[10] , chanx_right_in[10] , chanx_left_in[16] , 
         chanx_right_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) ,
-    .out ( { ropt_net_134 } ) ,
-    .p0 ( optlc_net_126 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) , 
+    .out ( top_grid_pin_16_ ) , .p0 ( optlc_net_94 ) ) ;
 mux_tree_tapbuf_size10_1_2 mux_bottom_ipin_1 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[5] , chanx_right_in[5] , 
@@ -3832,7 +3759,7 @@ mux_tree_tapbuf_size10_1_2 mux_bottom_ipin_1 (
         chanx_right_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size10_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_1_sram_inv ) , 
-    .out ( top_grid_pin_17_ ) , .p0 ( optlc_net_125 ) ) ;
+    .out ( top_grid_pin_17_ ) , .p0 ( optlc_net_95 ) ) ;
 mux_tree_tapbuf_size10_4_2 mux_bottom_ipin_4 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[4] , chanx_right_in[4] , 
@@ -3840,16 +3767,15 @@ mux_tree_tapbuf_size10_4_2 mux_bottom_ipin_4 (
         chanx_right_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size10_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_2_sram_inv ) , 
-    .out ( top_grid_pin_20_ ) , .p0 ( optlc_net_126 ) ) ;
+    .out ( top_grid_pin_20_ ) , .p0 ( optlc_net_94 ) ) ;
 mux_tree_tapbuf_size10_5_2 mux_bottom_ipin_5 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[5] , chanx_right_in[5] , 
         chanx_left_in[9] , chanx_right_in[9] , chanx_left_in[15] , 
         chanx_right_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size10_3_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size10_3_sram_inv ) ,
-    .out ( { ropt_net_132 } ) ,
-    .p0 ( optlc_net_125 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size10_3_sram_inv ) , 
+    .out ( top_grid_pin_21_ ) , .p0 ( optlc_net_94 ) ) ;
 mux_tree_tapbuf_size10_6_2 mux_bottom_ipin_8 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[8] , chanx_right_in[8] , 
@@ -3857,7 +3783,7 @@ mux_tree_tapbuf_size10_6_2 mux_bottom_ipin_8 (
         chanx_right_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size10_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_4_sram_inv ) , 
-    .out ( top_grid_pin_24_ ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( top_grid_pin_24_ ) , .p0 ( optlc_net_94 ) ) ;
 mux_tree_tapbuf_size10_13 mux_bottom_ipin_9 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[9] , chanx_right_in[9] , 
@@ -3865,7 +3791,7 @@ mux_tree_tapbuf_size10_13 mux_bottom_ipin_9 (
         chanx_right_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size10_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_5_sram_inv ) , 
-    .out ( top_grid_pin_25_ ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( top_grid_pin_25_ ) , .p0 ( optlc_net_95 ) ) ;
 mux_tree_tapbuf_size10_2_2 mux_bottom_ipin_12 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[6] , chanx_right_in[6] , 
@@ -3873,7 +3799,7 @@ mux_tree_tapbuf_size10_2_2 mux_bottom_ipin_12 (
         chanx_right_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_6_sram_inv ) , 
-    .out ( top_grid_pin_28_ ) , .p0 ( optlc_net_126 ) ) ;
+    .out ( top_grid_pin_28_ ) , .p0 ( optlc_net_94 ) ) ;
 mux_tree_tapbuf_size10_3_2 mux_bottom_ipin_13 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[7] , chanx_right_in[7] , 
@@ -3881,7 +3807,7 @@ mux_tree_tapbuf_size10_3_2 mux_bottom_ipin_13 (
         chanx_right_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size10_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_7_sram_inv ) , 
-    .out ( top_grid_pin_29_ ) , .p0 ( optlc_net_127 ) ) ;
+    .out ( top_grid_pin_29_ ) , .p0 ( optlc_net_95 ) ) ;
 mux_tree_tapbuf_size10_mem_0_3 mem_bottom_ipin_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size10_mem_0_ccff_tail ) , 
@@ -3928,57 +3854,56 @@ mux_tree_tapbuf_size8_4_1 mux_bottom_ipin_2 (
         chanx_left_in[14] , chanx_right_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size8_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_0_sram_inv ) , 
-    .out ( top_grid_pin_18_ ) , .p0 ( optlc_net_126 ) ) ;
+    .out ( top_grid_pin_18_ ) , .p0 ( optlc_net_94 ) ) ;
 mux_tree_tapbuf_size8_5_1 mux_bottom_ipin_3 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[7] , chanx_right_in[7] , 
         chanx_left_in[15] , chanx_right_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size8_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_1_sram_inv ) , 
-    .out ( top_grid_pin_19_ ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( top_grid_pin_19_ ) , .p0 ( optlc_net_95 ) ) ;
 mux_tree_tapbuf_size8_6_1 mux_bottom_ipin_6 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[10] , chanx_right_in[10] , 
         chanx_left_in[18] , chanx_right_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size8_2_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size8_2_sram_inv ) ,
-    .out ( { ropt_net_135 } ) ,
-    .p0 ( optlc_net_127 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size8_2_sram_inv ) , 
+    .out ( top_grid_pin_22_ ) , .p0 ( optlc_net_95 ) ) ;
 mux_tree_tapbuf_size8_8 mux_bottom_ipin_7 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[11] , chanx_right_in[11] , 
         chanx_left_in[19] , chanx_right_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size8_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_3_sram_inv ) , 
-    .out ( top_grid_pin_23_ ) , .p0 ( optlc_net_125 ) ) ;
+    .out ( top_grid_pin_23_ ) , .p0 ( optlc_net_95 ) ) ;
 mux_tree_tapbuf_size8_0_3 mux_bottom_ipin_10 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[6] , chanx_right_in[6] , 
         chanx_left_in[14] , chanx_right_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size8_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_4_sram_inv ) , 
-    .out ( top_grid_pin_26_ ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( top_grid_pin_26_ ) , .p0 ( optlc_net_94 ) ) ;
 mux_tree_tapbuf_size8_1_3 mux_bottom_ipin_11 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[7] , chanx_right_in[7] , 
         chanx_left_in[15] , chanx_right_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size8_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_5_sram_inv ) , 
-    .out ( top_grid_pin_27_ ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( top_grid_pin_27_ ) , .p0 ( optlc_net_94 ) ) ;
 mux_tree_tapbuf_size8_2_2 mux_bottom_ipin_14 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[10] , chanx_right_in[10] , 
         chanx_left_in[18] , chanx_right_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size8_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_6_sram_inv ) , 
-    .out ( top_grid_pin_30_ ) , .p0 ( optlc_net_127 ) ) ;
+    .out ( top_grid_pin_30_ ) , .p0 ( optlc_net_95 ) ) ;
 mux_tree_tapbuf_size8_3_1 mux_bottom_ipin_15 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[11] , chanx_right_in[11] , 
         chanx_left_in[19] , chanx_right_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size8_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_7_sram_inv ) , 
-    .out ( top_grid_pin_31_ ) , .p0 ( optlc_net_125 ) ) ;
+    .out ( top_grid_pin_31_ ) , .p0 ( optlc_net_95 ) ) ;
 mux_tree_tapbuf_size8_mem_4_1 mem_bottom_ipin_2 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size10_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size8_mem_0_ccff_tail ) , 
@@ -4015,197 +3940,118 @@ mux_tree_tapbuf_size8_mem_2_2 mem_bottom_ipin_14 ( .prog_clk ( prog_clk ) ,
     .mem_out ( mux_tree_tapbuf_size8_6_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size8_6_sram_inv ) ) ;
 mux_tree_tapbuf_size8_mem_3_1 mem_bottom_ipin_15 ( .prog_clk ( prog_clk ) , 
-    .ccff_head ( mux_tree_tapbuf_size8_mem_6_ccff_tail ) , 
-    .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_tapbuf_size8_7_sram ) , 
+    .ccff_head ( mux_tree_tapbuf_size8_mem_6_ccff_tail ) ,
+    .ccff_tail ( { ropt_net_97 } ) ,
+    .mem_out ( mux_tree_tapbuf_size8_7_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size8_7_sram_inv ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_122 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_124 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_124 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_125 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_126 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_126 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_773 ( .A ( ropt_net_169 ) , 
+sky130_fd_sc_hd__conb_1 optlc_92 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_94 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_2__1 ( .A ( chanx_left_in[1] ) , 
+    .X ( chanx_right_out[1] ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_94 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_95 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_4__3 ( .A ( chanx_left_in[3] ) , 
+    .X ( chanx_right_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_684 ( .A ( ropt_net_105 ) , 
+    .X ( chanx_right_out[8] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_6__5 ( .A ( chanx_left_in[5] ) , 
+    .X ( chanx_right_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_7__6 ( .A ( chanx_left_in[6] ) , 
+    .X ( chanx_right_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_8__7 ( .A ( chanx_left_in[7] ) , 
+    .X ( chanx_right_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_673 ( .A ( chanx_left_in[15] ) , 
+    .X ( chanx_right_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_685 ( .A ( ropt_net_106 ) , 
     .X ( chanx_right_out[12] ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_128 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_127 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_6__5 ( .A ( chanx_left_in[5] ) , 
-    .X ( ropt_net_151 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_725 ( .A ( chanx_right_in[4] ) , 
-    .X ( ropt_net_173 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_8__7 ( .A ( chanx_left_in[7] ) , 
-    .X ( ropt_net_143 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_726 ( .A ( ropt_net_129 ) , 
-    .X ( ropt_net_179 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_727 ( .A ( chanx_right_in[6] ) , 
-    .X ( ropt_net_172 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_11__10 ( .A ( chanx_left_in[10] ) , 
-    .X ( ropt_net_164 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_728 ( .A ( chanx_left_in[4] ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_11__10 ( .A ( chanx_left_in[10] ) , 
+    .X ( chanx_right_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_12__11 ( .A ( chanx_left_in[11] ) , 
+    .X ( chanx_right_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_686 ( .A ( ropt_net_107 ) , 
+    .X ( chanx_left_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_14__13 ( .A ( chanx_left_in[13] ) , 
+    .X ( chanx_right_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_675 ( .A ( ropt_net_97 ) , 
+    .X ( ropt_net_108 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_687 ( .A ( ropt_net_108 ) , 
+    .X ( ccff_tail[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_17__16 ( .A ( chanx_left_in[16] ) , 
+    .X ( chanx_right_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_676 ( .A ( ropt_net_98 ) , 
     .X ( chanx_right_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_729 ( .A ( ropt_net_132 ) , 
-    .X ( ropt_net_180 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_14__13 ( .A ( chanx_left_in[13] ) , 
-    .X ( ropt_net_157 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_15__14 ( .A ( chanx_left_in[14] ) , 
-    .X ( ropt_net_149 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_730 ( .A ( ropt_net_133 ) , 
-    .X ( chanx_left_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_731 ( .A ( ropt_net_134 ) , 
-    .X ( top_grid_pin_16_[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_18__17 ( .A ( chanx_left_in[17] ) , 
-    .X ( ropt_net_154 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_19__18 ( .A ( chanx_left_in[18] ) , 
-    .X ( ropt_net_159 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_732 ( .A ( ropt_net_135 ) , 
-    .X ( ropt_net_187 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_678 ( .A ( chanx_right_in[4] ) , 
+    .X ( chanx_left_out[4] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_679 ( .A ( chanx_left_in[12] ) , 
+    .X ( ropt_net_106 ) ) ;
 sky130_fd_sc_hd__dlymetal6s2s_1 FTB_21__20 ( .A ( chanx_right_in[0] ) , 
     .X ( chanx_left_out[0] ) ) ;
 sky130_fd_sc_hd__dlymetal6s2s_1 FTB_22__21 ( .A ( chanx_right_in[1] ) , 
     .X ( chanx_left_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_733 ( .A ( chanx_left_in[8] ) , 
-    .X ( ropt_net_191 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_24__23 ( .A ( chanx_right_in[3] ) , 
-    .X ( ropt_net_190 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_734 ( .A ( ropt_net_137 ) , 
-    .X ( ropt_net_169 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_735 ( .A ( chanx_right_in[11] ) , 
-    .X ( chanx_left_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_736 ( .A ( chanx_right_in[9] ) , 
-    .X ( ropt_net_192 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_737 ( .A ( chanx_right_in[5] ) , 
-    .X ( chanx_left_out[5] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_29__28 ( .A ( chanx_right_in[8] ) , 
-    .X ( ropt_net_165 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_774 ( .A ( ropt_net_170 ) , 
-    .X ( chanx_left_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_775 ( .A ( ropt_net_171 ) , 
-    .X ( chanx_left_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_738 ( .A ( chanx_left_in[19] ) , 
-    .X ( chanx_right_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_739 ( .A ( chanx_left_in[3] ) , 
-    .X ( chanx_right_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_740 ( .A ( ropt_net_143 ) , 
-    .X ( ropt_net_186 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_741 ( .A ( chanx_right_in[12] ) , 
-    .X ( ropt_net_170 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_36__35 ( .A ( chanx_right_in[15] ) , 
-    .X ( ropt_net_163 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_776 ( .A ( ropt_net_172 ) , 
-    .X ( chanx_left_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_742 ( .A ( chanx_left_in[0] ) , 
-    .X ( chanx_right_out[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_39__38 ( .A ( chanx_right_in[18] ) , 
-    .X ( chanx_left_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_40__39 ( .A ( chanx_right_in[19] ) , 
-    .X ( ropt_net_147 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_59 ( .A ( chanx_left_in[1] ) , 
-    .X ( ropt_net_150 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_743 ( .A ( chanx_left_in[11] ) , 
-    .X ( chanx_right_out[11] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_61 ( .A ( chanx_left_in[6] ) , 
-    .X ( ropt_net_162 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_777 ( .A ( ropt_net_173 ) , 
-    .X ( chanx_left_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_744 ( .A ( ropt_net_147 ) , 
-    .X ( chanx_left_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_778 ( .A ( ropt_net_174 ) , 
-    .X ( chanx_left_out[7] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_65 ( .A ( chanx_left_in[15] ) , 
-    .X ( ropt_net_156 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_745 ( .A ( ropt_net_148 ) , 
-    .X ( ropt_net_184 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_779 ( .A ( ropt_net_175 ) , 
-    .X ( chanx_left_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_780 ( .A ( ropt_net_176 ) , 
-    .X ( chanx_right_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_782 ( .A ( ropt_net_177 ) , 
-    .X ( chanx_right_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_70 ( .A ( chanx_right_in[10] ) , 
-    .X ( ropt_net_133 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_746 ( .A ( ropt_net_149 ) , 
-    .X ( ropt_net_176 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_785 ( .A ( ropt_net_178 ) , 
-    .X ( chanx_left_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_747 ( .A ( ropt_net_150 ) , 
-    .X ( ropt_net_188 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_748 ( .A ( ropt_net_151 ) , 
-    .X ( ropt_net_183 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_749 ( .A ( ropt_net_152 ) , 
-    .X ( chanx_left_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_750 ( .A ( ropt_net_153 ) , 
-    .X ( ropt_net_175 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_751 ( .A ( ropt_net_154 ) , 
-    .X ( chanx_right_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_752 ( .A ( ropt_net_155 ) , 
-    .X ( ropt_net_189 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_754 ( .A ( ropt_net_156 ) , 
-    .X ( ropt_net_177 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_755 ( .A ( ropt_net_157 ) , 
-    .X ( ropt_net_182 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_757 ( .A ( ropt_net_158 ) , 
-    .X ( chanx_right_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_759 ( .A ( ropt_net_159 ) , 
-    .X ( chanx_right_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_761 ( .A ( ropt_net_160 ) , 
-    .X ( chanx_right_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_762 ( .A ( ropt_net_161 ) , 
-    .X ( ropt_net_174 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_786 ( .A ( ropt_net_179 ) , 
-    .X ( chanx_left_out[16] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_95 ( .A ( chanx_left_in[2] ) , 
-    .X ( ropt_net_148 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_96 ( .A ( chanx_left_in[9] ) , 
-    .X ( ropt_net_160 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_97 ( .A ( chanx_left_in[16] ) , 
-    .X ( ropt_net_158 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_98 ( .A ( chanx_right_in[2] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_23__22 ( .A ( chanx_right_in[2] ) , 
     .X ( chanx_left_out[2] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_99 ( .A ( chanx_right_in[7] ) , 
-    .X ( ropt_net_161 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_787 ( .A ( ropt_net_180 ) , 
-    .X ( top_grid_pin_21_[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_101 ( .A ( chanx_right_in[13] ) , 
-    .X ( ropt_net_155 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_102 ( .A ( chanx_right_in[14] ) , 
-    .X ( ropt_net_152 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_763 ( .A ( ropt_net_162 ) , 
-    .X ( ropt_net_181 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_104 ( .A ( chanx_right_in[16] ) , 
-    .X ( ropt_net_129 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_764 ( .A ( ropt_net_163 ) , 
-    .X ( ropt_net_178 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_788 ( .A ( ropt_net_181 ) , 
-    .X ( chanx_right_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_789 ( .A ( ropt_net_182 ) , 
-    .X ( chanx_right_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_790 ( .A ( ropt_net_183 ) , 
-    .X ( chanx_right_out[5] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_113 ( .A ( chanx_left_in[12] ) , 
-    .X ( ropt_net_137 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_791 ( .A ( ropt_net_184 ) , 
-    .X ( chanx_right_out[2] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_765 ( .A ( ropt_net_164 ) , 
-    .X ( ropt_net_185 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_766 ( .A ( ropt_net_165 ) , 
-    .X ( ropt_net_171 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_792 ( .A ( ropt_net_185 ) , 
-    .X ( chanx_right_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_793 ( .A ( ropt_net_186 ) , 
-    .X ( chanx_right_out[7] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_119 ( .A ( chanx_right_in[17] ) , 
-    .X ( ropt_net_153 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_794 ( .A ( ropt_net_187 ) , 
-    .X ( top_grid_pin_22_[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_795 ( .A ( ropt_net_188 ) , 
-    .X ( chanx_right_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_796 ( .A ( ropt_net_189 ) , 
-    .X ( chanx_left_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_799 ( .A ( ropt_net_190 ) , 
-    .X ( chanx_left_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_800 ( .A ( ropt_net_191 ) , 
-    .X ( chanx_right_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_801 ( .A ( ropt_net_192 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_680 ( .A ( chanx_right_in[16] ) , 
+    .X ( chanx_left_out[16] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_26__25 ( .A ( chanx_right_in[5] ) , 
+    .X ( aps_rename_2_ ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_681 ( .A ( ropt_net_102 ) , 
+    .X ( chanx_left_out[12] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_28__27 ( .A ( chanx_right_in[7] ) , 
+    .X ( chanx_left_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_682 ( .A ( ropt_net_103 ) , 
+    .X ( chanx_left_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_30__29 ( .A ( chanx_right_in[9] ) , 
     .X ( chanx_left_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_31__30 ( .A ( chanx_right_in[10] ) , 
+    .X ( ropt_net_104 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_32__31 ( .A ( chanx_right_in[11] ) , 
+    .X ( aps_rename_3_ ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_683 ( .A ( ropt_net_104 ) , 
+    .X ( chanx_left_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_34__33 ( .A ( chanx_right_in[13] ) , 
+    .X ( ropt_net_107 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_35__34 ( .A ( chanx_right_in[14] ) , 
+    .X ( chanx_left_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_36__35 ( .A ( chanx_right_in[15] ) , 
+    .X ( chanx_left_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_38__37 ( .A ( chanx_right_in[17] ) , 
+    .X ( chanx_left_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_39__38 ( .A ( chanx_right_in[18] ) , 
+    .X ( ropt_net_103 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_40__39 ( .A ( chanx_right_in[19] ) , 
+    .X ( chanx_left_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_59 ( .A ( chanx_left_in[4] ) , 
+    .X ( ropt_net_98 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_60 ( .A ( chanx_left_in[8] ) , 
+    .X ( ropt_net_105 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_61 ( .A ( chanx_left_in[9] ) , 
+    .X ( BUF_net_61 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_64 ( .A ( chanx_left_in[19] ) , 
+    .X ( chanx_right_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_67 ( .A ( chanx_right_in[8] ) , 
+    .X ( chanx_left_out[8] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_76 ( .A ( BUF_net_61 ) , 
+    .X ( chanx_right_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_78 ( .A ( chanx_left_in[14] ) , 
+    .X ( chanx_right_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_79 ( .A ( aps_rename_3_ ) , 
+    .X ( chanx_left_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_80 ( .A ( chanx_right_in[12] ) , 
+    .X ( ropt_net_102 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_82 ( .A ( chanx_left_in[0] ) , 
+    .X ( chanx_right_out[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_83 ( .A ( chanx_left_in[2] ) , 
+    .X ( chanx_right_out[2] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_84 ( .A ( chanx_left_in[17] ) , 
+    .X ( chanx_right_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_85 ( .A ( chanx_left_in[18] ) , 
+    .X ( chanx_right_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_86 ( .A ( chanx_right_in[3] ) , 
+    .X ( chanx_left_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_87 ( .A ( chanx_right_in[6] ) , 
+    .X ( chanx_left_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_89 ( .A ( aps_rename_2_ ) , 
+    .X ( chanx_left_out[5] ) ) ;
 endmodule
 
 
@@ -4225,7 +4071,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_17__56 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_17__56 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4246,7 +4092,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_16__55 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_16__55 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4267,7 +4113,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_15__54 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_15__54 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4288,7 +4134,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_14__53 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_14__53 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4309,7 +4155,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_13__52 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_13__52 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4330,7 +4176,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_12__51 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_12__51 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4351,7 +4197,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_11__50 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_11__50 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4372,7 +4218,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_10__49 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_10__49 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4600,12 +4446,9 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 
 const1_12_9 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -4625,10 +4468,9 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_4 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -4702,12 +4544,9 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 
 const1_10_9 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -4727,10 +4566,9 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_4 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -4801,9 +4639,9 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_9__48 ( .A ( mem_out[3] ) , 
-    .X ( net_net_72 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_93 ( .A ( net_net_72 ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_9__48 ( .A ( mem_out[3] ) , 
+    .X ( net_net_69 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_86 ( .A ( net_net_69 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4824,7 +4662,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_8__47 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_8__47 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4845,7 +4683,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_7__46 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_7__46 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4866,7 +4704,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_6__45 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_6__45 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4887,7 +4725,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_5__44 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_5__44 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4908,7 +4746,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_4__43 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_4__43 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4929,7 +4767,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_3__42 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_3__42 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4950,7 +4788,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__41 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_2__41 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -4971,7 +4809,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__40 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__40 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -5473,6 +5311,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_0_10 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -5502,8 +5342,6 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_57 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -5596,9 +5434,8 @@ mux_tree_tapbuf_size10_0_2 mux_bottom_ipin_0 (
         chanx_left_in[10] , chanx_right_in[10] , chanx_left_in[16] , 
         chanx_right_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) ,
-    .out ( { ropt_net_112 } ) ,
-    .p0 ( optlc_net_108 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) , 
+    .out ( top_grid_pin_16_ ) , .p0 ( optlc_net_90 ) ) ;
 mux_tree_tapbuf_size10_1_1 mux_bottom_ipin_1 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[5] , chanx_right_in[5] , 
@@ -5606,7 +5443,7 @@ mux_tree_tapbuf_size10_1_1 mux_bottom_ipin_1 (
         chanx_right_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size10_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_1_sram_inv ) , 
-    .out ( top_grid_pin_17_ ) , .p0 ( optlc_net_106 ) ) ;
+    .out ( top_grid_pin_17_ ) , .p0 ( optlc_net_91 ) ) ;
 mux_tree_tapbuf_size10_4_1 mux_bottom_ipin_4 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[4] , chanx_right_in[4] , 
@@ -5614,7 +5451,7 @@ mux_tree_tapbuf_size10_4_1 mux_bottom_ipin_4 (
         chanx_right_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size10_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_2_sram_inv ) , 
-    .out ( top_grid_pin_20_ ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( top_grid_pin_20_ ) , .p0 ( optlc_net_91 ) ) ;
 mux_tree_tapbuf_size10_5_1 mux_bottom_ipin_5 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[5] , chanx_right_in[5] , 
@@ -5622,7 +5459,7 @@ mux_tree_tapbuf_size10_5_1 mux_bottom_ipin_5 (
         chanx_right_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size10_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_3_sram_inv ) , 
-    .out ( top_grid_pin_21_ ) , .p0 ( optlc_net_106 ) ) ;
+    .out ( top_grid_pin_21_ ) , .p0 ( optlc_net_91 ) ) ;
 mux_tree_tapbuf_size10_6_1 mux_bottom_ipin_8 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[8] , chanx_right_in[8] , 
@@ -5630,7 +5467,7 @@ mux_tree_tapbuf_size10_6_1 mux_bottom_ipin_8 (
         chanx_right_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size10_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_4_sram_inv ) , 
-    .out ( top_grid_pin_24_ ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( top_grid_pin_24_ ) , .p0 ( optlc_net_91 ) ) ;
 mux_tree_tapbuf_size10_7_1 mux_bottom_ipin_9 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[9] , chanx_right_in[9] , 
@@ -5638,7 +5475,7 @@ mux_tree_tapbuf_size10_7_1 mux_bottom_ipin_9 (
         chanx_right_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size10_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_5_sram_inv ) , 
-    .out ( top_grid_pin_25_ ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( top_grid_pin_25_ ) , .p0 ( optlc_net_91 ) ) ;
 mux_tree_tapbuf_size10_2_1 mux_bottom_ipin_12 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[6] , chanx_right_in[6] , 
@@ -5646,7 +5483,7 @@ mux_tree_tapbuf_size10_2_1 mux_bottom_ipin_12 (
         chanx_right_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_6_sram_inv ) , 
-    .out ( top_grid_pin_28_ ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( top_grid_pin_28_ ) , .p0 ( optlc_net_90 ) ) ;
 mux_tree_tapbuf_size10_3_1 mux_bottom_ipin_13 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[7] , chanx_right_in[7] , 
@@ -5654,7 +5491,7 @@ mux_tree_tapbuf_size10_3_1 mux_bottom_ipin_13 (
         chanx_right_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size10_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_7_sram_inv ) , 
-    .out ( top_grid_pin_29_ ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( top_grid_pin_29_ ) , .p0 ( optlc_net_90 ) ) ;
 mux_tree_tapbuf_size10_12 mux_top_ipin_0 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[4] , chanx_right_in[4] , 
@@ -5662,7 +5499,7 @@ mux_tree_tapbuf_size10_12 mux_top_ipin_0 (
         chanx_right_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_8_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_8_sram_inv ) , 
-    .out ( bottom_grid_pin_0_ ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( bottom_grid_pin_0_ ) , .p0 ( optlc_net_90 ) ) ;
 mux_tree_tapbuf_size10_mem_0_2 mem_bottom_ipin_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size10_mem_0_ccff_tail ) , 
@@ -5704,9 +5541,8 @@ mux_tree_tapbuf_size10_mem_3_1 mem_bottom_ipin_13 ( .prog_clk ( prog_clk ) ,
     .mem_out ( mux_tree_tapbuf_size10_7_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size10_7_sram_inv ) ) ;
 mux_tree_tapbuf_size10_mem_12 mem_top_ipin_0 ( .prog_clk ( prog_clk ) , 
-    .ccff_head ( mux_tree_tapbuf_size8_mem_7_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_128 } ) ,
-    .mem_out ( mux_tree_tapbuf_size10_8_sram ) , 
+    .ccff_head ( mux_tree_tapbuf_size8_mem_7_ccff_tail ) , 
+    .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_tapbuf_size10_8_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size10_8_sram_inv ) ) ;
 mux_tree_tapbuf_size8_4 mux_bottom_ipin_2 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
@@ -5714,56 +5550,56 @@ mux_tree_tapbuf_size8_4 mux_bottom_ipin_2 (
         chanx_left_in[14] , chanx_right_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size8_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_0_sram_inv ) , 
-    .out ( top_grid_pin_18_ ) , .p0 ( optlc_net_109 ) ) ;
+    .out ( top_grid_pin_18_ ) , .p0 ( optlc_net_90 ) ) ;
 mux_tree_tapbuf_size8_5 mux_bottom_ipin_3 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[7] , chanx_right_in[7] , 
         chanx_left_in[15] , chanx_right_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size8_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_1_sram_inv ) , 
-    .out ( top_grid_pin_19_ ) , .p0 ( optlc_net_106 ) ) ;
+    .out ( top_grid_pin_19_ ) , .p0 ( optlc_net_91 ) ) ;
 mux_tree_tapbuf_size8_6 mux_bottom_ipin_6 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[10] , chanx_right_in[10] , 
         chanx_left_in[18] , chanx_right_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size8_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_2_sram_inv ) , 
-    .out ( top_grid_pin_22_ ) , .p0 ( optlc_net_109 ) ) ;
+    .out ( top_grid_pin_22_ ) , .p0 ( optlc_net_90 ) ) ;
 mux_tree_tapbuf_size8_7 mux_bottom_ipin_7 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[11] , chanx_right_in[11] , 
         chanx_left_in[19] , chanx_right_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size8_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_3_sram_inv ) , 
-    .out ( top_grid_pin_23_ ) , .p0 ( optlc_net_106 ) ) ;
+    .out ( top_grid_pin_23_ ) , .p0 ( optlc_net_91 ) ) ;
 mux_tree_tapbuf_size8_0_2 mux_bottom_ipin_10 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[6] , chanx_right_in[6] , 
         chanx_left_in[14] , chanx_right_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size8_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_4_sram_inv ) , 
-    .out ( top_grid_pin_26_ ) , .p0 ( optlc_net_109 ) ) ;
+    .out ( top_grid_pin_26_ ) , .p0 ( optlc_net_91 ) ) ;
 mux_tree_tapbuf_size8_1_2 mux_bottom_ipin_11 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[7] , chanx_right_in[7] , 
         chanx_left_in[15] , chanx_right_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size8_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_5_sram_inv ) , 
-    .out ( top_grid_pin_27_ ) , .p0 ( optlc_net_106 ) ) ;
+    .out ( top_grid_pin_27_ ) , .p0 ( optlc_net_91 ) ) ;
 mux_tree_tapbuf_size8_2_1 mux_bottom_ipin_14 (
     .in ( { chanx_left_in[0] , chanx_right_in[0] , chanx_left_in[2] , 
         chanx_right_in[2] , chanx_left_in[10] , chanx_right_in[10] , 
         chanx_left_in[18] , chanx_right_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size8_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_6_sram_inv ) , 
-    .out ( top_grid_pin_30_ ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( top_grid_pin_30_ ) , .p0 ( optlc_net_90 ) ) ;
 mux_tree_tapbuf_size8_3 mux_bottom_ipin_15 (
     .in ( { chanx_left_in[1] , chanx_right_in[1] , chanx_left_in[3] , 
         chanx_right_in[3] , chanx_left_in[11] , chanx_right_in[11] , 
         chanx_left_in[19] , chanx_right_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size8_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_7_sram_inv ) , 
-    .out ( top_grid_pin_31_ ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( top_grid_pin_31_ ) , .p0 ( optlc_net_90 ) ) ;
 mux_tree_tapbuf_size8_mem_4 mem_bottom_ipin_2 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size10_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size8_mem_0_ccff_tail ) , 
@@ -5804,198 +5640,96 @@ mux_tree_tapbuf_size8_mem_3 mem_bottom_ipin_15 ( .prog_clk ( prog_clk ) ,
     .ccff_tail ( mux_tree_tapbuf_size8_mem_7_ccff_tail ) , 
     .mem_out ( mux_tree_tapbuf_size8_7_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size8_7_sram_inv ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_106 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_106 ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_1__0 ( .A ( chanx_left_in[0] ) , 
+    .X ( chanx_right_out[0] ) ) ;
 sky130_fd_sc_hd__dlymetal6s2s_1 FTB_2__1 ( .A ( chanx_left_in[1] ) , 
-    .X ( ropt_net_138 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_108 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_107 ) ) ;
+    .X ( chanx_right_out[1] ) ) ;
 sky130_fd_sc_hd__dlymetal6s2s_1 FTB_4__3 ( .A ( chanx_left_in[3] ) , 
     .X ( chanx_right_out[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_5__4 ( .A ( chanx_left_in[4] ) , 
-    .X ( ropt_net_123 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_6__5 ( .A ( chanx_left_in[5] ) , 
-    .X ( ropt_net_140 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_110 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_108 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_112 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_109 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_9__8 ( .A ( chanx_left_in[8] ) , 
-    .X ( ropt_net_146 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_709 ( .A ( chanx_right_in[11] ) , 
-    .X ( ropt_net_167 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_11__10 ( .A ( chanx_left_in[10] ) , 
-    .X ( ropt_net_116 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_710 ( .A ( ropt_net_111 ) , 
-    .X ( chanx_left_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_711 ( .A ( ropt_net_112 ) , 
-    .X ( ropt_net_161 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_14__13 ( .A ( chanx_left_in[13] ) , 
-    .X ( ropt_net_143 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_712 ( .A ( ropt_net_113 ) , 
-    .X ( ropt_net_153 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_713 ( .A ( chanx_left_in[9] ) , 
-    .X ( chanx_right_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_714 ( .A ( chanx_left_in[12] ) , 
-    .X ( chanx_right_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_715 ( .A ( ropt_net_116 ) , 
-    .X ( ropt_net_154 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_19__18 ( .A ( chanx_left_in[18] ) , 
-    .X ( ropt_net_139 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_20__19 ( .A ( chanx_left_in[19] ) , 
-    .X ( ropt_net_145 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_716 ( .A ( chanx_left_in[16] ) , 
-    .X ( chanx_right_out[16] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_22__21 ( .A ( chanx_right_in[1] ) , 
-    .X ( ropt_net_124 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_23__22 ( .A ( chanx_right_in[2] ) , 
-    .X ( ropt_net_148 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_24__23 ( .A ( chanx_right_in[3] ) , 
-    .X ( ropt_net_147 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_25__24 ( .A ( chanx_right_in[4] ) , 
-    .X ( ropt_net_132 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_749 ( .A ( ropt_net_150 ) , 
-    .X ( chanx_left_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_717 ( .A ( ropt_net_118 ) , 
-    .X ( chanx_right_out[11] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_28__27 ( .A ( chanx_right_in[7] ) , 
-    .X ( ropt_net_129 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_718 ( .A ( chanx_right_in[14] ) , 
-    .X ( ropt_net_156 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_719 ( .A ( chanx_right_in[16] ) , 
-    .X ( chanx_left_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_720 ( .A ( chanx_left_in[6] ) , 
-    .X ( ropt_net_169 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_721 ( .A ( chanx_right_in[0] ) , 
-    .X ( ropt_net_168 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_33__32 ( .A ( chanx_right_in[12] ) , 
-    .X ( ropt_net_130 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_34__33 ( .A ( chanx_right_in[13] ) , 
-    .X ( ropt_net_125 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_750 ( .A ( ropt_net_151 ) , 
-    .X ( chanx_left_out[6] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_36__35 ( .A ( chanx_right_in[15] ) , 
-    .X ( ropt_net_141 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_751 ( .A ( ropt_net_152 ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_5__4 ( .A ( chanx_left_in[4] ) , 
     .X ( chanx_right_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_38__37 ( .A ( chanx_right_in[17] ) , 
-    .X ( ropt_net_137 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_722 ( .A ( ropt_net_123 ) , 
-    .X ( ropt_net_152 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_40__39 ( .A ( chanx_right_in[19] ) , 
-    .X ( ropt_net_142 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_58 ( .A ( chanx_left_in[0] ) , 
-    .X ( BUF_net_58 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_752 ( .A ( ropt_net_153 ) , 
-    .X ( chanx_right_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_723 ( .A ( ropt_net_124 ) , 
-    .X ( ropt_net_162 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_753 ( .A ( ropt_net_154 ) , 
-    .X ( chanx_right_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_754 ( .A ( ropt_net_155 ) , 
-    .X ( chanx_left_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_724 ( .A ( ropt_net_125 ) , 
-    .X ( ropt_net_158 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_725 ( .A ( ropt_net_126 ) , 
+sky130_fd_sc_hd__conb_1 optlc_89 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_90 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_8__7 ( .A ( chanx_left_in[7] ) , 
     .X ( chanx_right_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_726 ( .A ( ropt_net_127 ) , 
-    .X ( ropt_net_150 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_755 ( .A ( ropt_net_156 ) , 
-    .X ( chanx_left_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_757 ( .A ( ropt_net_157 ) , 
-    .X ( chanx_left_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_68 ( .A ( chanx_right_in[10] ) , 
-    .X ( ropt_net_136 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_760 ( .A ( ropt_net_158 ) , 
-    .X ( chanx_left_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_70 ( .A ( chanx_right_in[18] ) , 
-    .X ( chanx_left_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_727 ( .A ( ropt_net_128 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_728 ( .A ( ropt_net_129 ) , 
-    .X ( ropt_net_155 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_729 ( .A ( ropt_net_130 ) , 
-    .X ( ropt_net_165 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_730 ( .A ( ropt_net_131 ) , 
-    .X ( ropt_net_159 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_731 ( .A ( ropt_net_132 ) , 
-    .X ( ropt_net_166 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_732 ( .A ( ropt_net_133 ) , 
-    .X ( chanx_left_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_733 ( .A ( ropt_net_134 ) , 
-    .X ( ropt_net_151 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_734 ( .A ( ropt_net_135 ) , 
-    .X ( ropt_net_164 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_735 ( .A ( ropt_net_136 ) , 
-    .X ( chanx_left_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_85 ( .A ( chanx_left_in[7] ) , 
-    .X ( ropt_net_126 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_86 ( .A ( chanx_left_in[11] ) , 
-    .X ( ropt_net_118 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_761 ( .A ( ropt_net_159 ) , 
-    .X ( chanx_right_out[2] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_88 ( .A ( chanx_right_in[6] ) , 
-    .X ( ropt_net_134 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_89 ( .A ( chanx_right_in[8] ) , 
-    .X ( ropt_net_127 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_90 ( .A ( chanx_right_in[9] ) , 
-    .X ( ropt_net_133 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_91 ( .A ( chanx_left_in[15] ) , 
-    .X ( ropt_net_144 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_92 ( .A ( chanx_right_in[5] ) , 
-    .X ( ropt_net_111 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_95 ( .A ( BUF_net_58 ) , 
-    .X ( chanx_right_out[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_96 ( .A ( chanx_left_in[2] ) , 
-    .X ( ropt_net_131 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_762 ( .A ( ropt_net_160 ) , 
-    .X ( chanx_left_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_764 ( .A ( ropt_net_161 ) , 
-    .X ( top_grid_pin_16_[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_736 ( .A ( ropt_net_137 ) , 
-    .X ( chanx_left_out[17] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_100 ( .A ( chanx_left_in[14] ) , 
-    .X ( ropt_net_135 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_765 ( .A ( ropt_net_162 ) , 
-    .X ( chanx_left_out[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_102 ( .A ( chanx_left_in[17] ) , 
-    .X ( ropt_net_113 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_737 ( .A ( ropt_net_138 ) , 
-    .X ( chanx_right_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_738 ( .A ( ropt_net_139 ) , 
-    .X ( chanx_right_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_740 ( .A ( ropt_net_140 ) , 
-    .X ( chanx_right_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_741 ( .A ( ropt_net_141 ) , 
-    .X ( ropt_net_163 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_742 ( .A ( ropt_net_142 ) , 
-    .X ( ropt_net_157 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_743 ( .A ( ropt_net_143 ) , 
-    .X ( chanx_right_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_744 ( .A ( ropt_net_144 ) , 
-    .X ( chanx_right_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_745 ( .A ( ropt_net_145 ) , 
-    .X ( chanx_right_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_746 ( .A ( ropt_net_146 ) , 
-    .X ( chanx_right_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_747 ( .A ( ropt_net_147 ) , 
-    .X ( ropt_net_160 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_748 ( .A ( ropt_net_148 ) , 
-    .X ( chanx_left_out[2] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_769 ( .A ( ropt_net_163 ) , 
-    .X ( chanx_left_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_770 ( .A ( ropt_net_164 ) , 
-    .X ( chanx_right_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_771 ( .A ( ropt_net_165 ) , 
-    .X ( chanx_left_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_772 ( .A ( ropt_net_166 ) , 
+sky130_fd_sc_hd__conb_1 optlc_91 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_91 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_670 ( .A ( ropt_net_92 ) , 
     .X ( chanx_left_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_776 ( .A ( ropt_net_167 ) , 
-    .X ( chanx_left_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_779 ( .A ( ropt_net_168 ) , 
-    .X ( chanx_left_out[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_781 ( .A ( ropt_net_169 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_672 ( .A ( chanx_left_in[2] ) , 
+    .X ( chanx_right_out[2] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_12__11 ( .A ( chanx_left_in[11] ) , 
+    .X ( chanx_right_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_13__12 ( .A ( chanx_left_in[12] ) , 
+    .X ( chanx_right_out[12] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_673 ( .A ( chanx_left_in[6] ) , 
     .X ( chanx_right_out[6] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_15__14 ( .A ( chanx_left_in[14] ) , 
+    .X ( chanx_right_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_16__15 ( .A ( chanx_left_in[15] ) , 
+    .X ( chanx_right_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_679 ( .A ( chanx_right_in[1] ) , 
+    .X ( chanx_left_out[1] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_18__17 ( .A ( chanx_left_in[17] ) , 
+    .X ( aps_rename_2_ ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_20__19 ( .A ( chanx_left_in[19] ) , 
+    .X ( chanx_right_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_23__22 ( .A ( chanx_right_in[2] ) , 
+    .X ( chanx_left_out[2] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_24__23 ( .A ( chanx_right_in[3] ) , 
+    .X ( chanx_left_out[3] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_25__24 ( .A ( chanx_right_in[4] ) , 
+    .X ( ropt_net_92 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_26__25 ( .A ( chanx_right_in[5] ) , 
+    .X ( chanx_left_out[5] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_27__26 ( .A ( chanx_right_in[6] ) , 
+    .X ( chanx_left_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_28__27 ( .A ( chanx_right_in[7] ) , 
+    .X ( chanx_left_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_29__28 ( .A ( chanx_right_in[8] ) , 
+    .X ( chanx_left_out[8] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_30__29 ( .A ( chanx_right_in[9] ) , 
+    .X ( chanx_left_out[9] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_33__32 ( .A ( chanx_right_in[12] ) , 
+    .X ( chanx_left_out[12] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_34__33 ( .A ( chanx_right_in[13] ) , 
+    .X ( chanx_left_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_35__34 ( .A ( chanx_right_in[14] ) , 
+    .X ( chanx_left_out[14] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_36__35 ( .A ( chanx_right_in[15] ) , 
+    .X ( chanx_left_out[15] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_37__36 ( .A ( chanx_right_in[16] ) , 
+    .X ( aps_rename_1_ ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_40__39 ( .A ( chanx_right_in[19] ) , 
+    .X ( chanx_left_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_60 ( .A ( chanx_left_in[5] ) , 
+    .X ( chanx_right_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_61 ( .A ( chanx_left_in[8] ) , 
+    .X ( chanx_right_out[8] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_62 ( .A ( chanx_left_in[9] ) , 
+    .X ( chanx_right_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_68 ( .A ( chanx_right_in[18] ) , 
+    .X ( chanx_left_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_70 ( .A ( chanx_left_in[16] ) , 
+    .X ( chanx_right_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_71 ( .A ( chanx_left_in[18] ) , 
+    .X ( chanx_right_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_73 ( .A ( aps_rename_1_ ) , 
+    .X ( chanx_left_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_76 ( .A ( chanx_right_in[0] ) , 
+    .X ( chanx_left_out[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_77 ( .A ( chanx_right_in[10] ) , 
+    .X ( chanx_left_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_78 ( .A ( chanx_right_in[11] ) , 
+    .X ( chanx_left_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_81 ( .A ( chanx_left_in[10] ) , 
+    .X ( chanx_right_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_82 ( .A ( chanx_left_in[13] ) , 
+    .X ( chanx_right_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_83 ( .A ( aps_rename_2_ ) , 
+    .X ( chanx_right_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_85 ( .A ( chanx_right_in[17] ) , 
+    .X ( chanx_left_out[17] ) ) ;
 endmodule
 
 
@@ -6011,9 +5745,9 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( mem_outb[0] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_24__39 ( .A ( mem_out[1] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_24__39 ( .A ( mem_out[1] ) , 
     .X ( net_net_59 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_97 ( .A ( net_net_59 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_86 ( .A ( net_net_59 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -6455,17 +6189,13 @@ output [0:0] out ;
 input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_18_7 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_8 mux_l2_in_0_ ( .A0 ( p0 ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -6540,13 +6270,13 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_15_8 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_42 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -6567,14 +6297,13 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_14_8 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_44 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( BUF_net_44 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_84 ( .A ( BUF_net_44 ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -6846,8 +6575,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 
 const1_5_9 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( p0 ) , .A1 ( in[2] ) , 
@@ -6856,6 +6583,10 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_41 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( BUF_net_41 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_88 ( .A ( BUF_net_41 ) , 
+    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -6877,6 +6608,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 
 const1_4_9 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( p0 ) , .A1 ( in[2] ) , 
@@ -6885,10 +6618,6 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_41 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( BUF_net_41 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_83 ( .A ( BUF_net_41 ) , 
-    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -6989,8 +6718,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 
 const1_2_9 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -7005,6 +6732,8 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_87 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -7110,6 +6839,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 
 const1_0_9 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -7127,8 +6858,6 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_5_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_82 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -7234,16 +6963,15 @@ mux_tree_tapbuf_size6_0_6 mux_bottom_track_1 (
         bottom_left_grid_pin_37_[0] , bottom_left_grid_pin_39_[0] , 
         bottom_left_grid_pin_41_[0] , chanx_left_in[1] } ) ,
     .sram ( mux_tree_tapbuf_size6_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size6_0_sram_inv ) ,
-    .out ( { ropt_net_115 } ) ,
-    .p0 ( optlc_net_109 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size6_0_sram_inv ) , 
+    .out ( chany_bottom_out[0] ) , .p0 ( optlc_net_114 ) ) ;
 mux_tree_tapbuf_size6_10 mux_bottom_track_5 (
     .in ( { bottom_right_grid_pin_1_[0] , bottom_left_grid_pin_35_[0] , 
         bottom_left_grid_pin_37_[0] , bottom_left_grid_pin_39_[0] , 
         bottom_left_grid_pin_41_[0] , chanx_left_in[3] } ) ,
     .sram ( mux_tree_tapbuf_size6_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_1_sram_inv ) , 
-    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_109 ) ) ;
+    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_114 ) ) ;
 mux_tree_tapbuf_size6_mem_0_6 mem_bottom_track_1 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
@@ -7259,15 +6987,16 @@ mux_tree_tapbuf_size5_0_4 mux_bottom_track_3 (
         bottom_left_grid_pin_38_[0] , bottom_left_grid_pin_40_[0] , 
         chanx_left_in[2] } ) ,
     .sram ( mux_tree_tapbuf_size5_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size5_0_sram_inv ) , 
-    .out ( chany_bottom_out[1] ) , .p0 ( optlc_net_109 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size5_0_sram_inv ) ,
+    .out ( { ropt_net_123 } ) ,
+    .p0 ( optlc_net_114 ) ) ;
 mux_tree_tapbuf_size5_8 mux_bottom_track_7 (
     .in ( { bottom_left_grid_pin_34_[0] , bottom_left_grid_pin_36_[0] , 
         bottom_left_grid_pin_38_[0] , bottom_left_grid_pin_40_[0] , 
         chanx_left_in[4] } ) ,
     .sram ( mux_tree_tapbuf_size5_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_1_sram_inv ) , 
-    .out ( chany_bottom_out[3] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chany_bottom_out[3] ) , .p0 ( optlc_net_114 ) ) ;
 mux_tree_tapbuf_size5_mem_0_4 mem_bottom_track_3 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size5_mem_0_ccff_tail ) , 
@@ -7282,15 +7011,15 @@ mux_tree_tapbuf_size3_11 mux_bottom_track_9 (
     .in ( { bottom_right_grid_pin_1_[0] , bottom_left_grid_pin_41_[0] , 
         chanx_left_in[5] } ) ,
     .sram ( mux_tree_tapbuf_size3_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size3_0_sram_inv ) ,
-    .out ( { ropt_net_122 } ) ,
-    .p0 ( optlc_net_107 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size3_0_sram_inv ) , 
+    .out ( chany_bottom_out[4] ) , .p0 ( optlc_net_114 ) ) ;
 mux_tree_tapbuf_size3_0_6 mux_bottom_track_25 (
     .in ( { bottom_right_grid_pin_1_[0] , bottom_left_grid_pin_41_[0] , 
         chanx_left_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size3_1_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size3_1_sram_inv ) , 
-    .out ( chany_bottom_out[12] ) , .p0 ( optlc_net_106 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size3_1_sram_inv ) ,
+    .out ( { ropt_net_130 } ) ,
+    .p0 ( optlc_net_115 ) ) ;
 mux_tree_tapbuf_size3_mem_11 mem_bottom_track_9 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size5_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size3_mem_0_ccff_tail ) , 
@@ -7305,93 +7034,93 @@ mux_tree_tapbuf_size2_0_5 mux_bottom_track_11 (
     .in ( { bottom_left_grid_pin_34_[0] , chanx_left_in[6] } ) ,
     .sram ( mux_tree_tapbuf_size2_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_0_sram_inv ) , 
-    .out ( chany_bottom_out[5] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chany_bottom_out[5] ) , .p0 ( optlc_net_114 ) ) ;
 mux_tree_tapbuf_size2_1_5 mux_bottom_track_13 (
     .in ( { bottom_left_grid_pin_35_[0] , chanx_left_in[7] } ) ,
     .sram ( mux_tree_tapbuf_size2_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_1_sram_inv ) , 
-    .out ( chany_bottom_out[6] ) , .p0 ( optlc_net_106 ) ) ;
+    .out ( chany_bottom_out[6] ) , .p0 ( optlc_net_115 ) ) ;
 mux_tree_tapbuf_size2_2_5 mux_bottom_track_15 (
     .in ( { bottom_left_grid_pin_36_[0] , chanx_left_in[8] } ) ,
     .sram ( mux_tree_tapbuf_size2_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_2_sram_inv ) , 
-    .out ( chany_bottom_out[7] ) , .p0 ( optlc_net_106 ) ) ;
+    .out ( chany_bottom_out[7] ) , .p0 ( optlc_net_115 ) ) ;
 mux_tree_tapbuf_size2_3_5 mux_bottom_track_17 (
     .in ( { bottom_left_grid_pin_37_[0] , chanx_left_in[9] } ) ,
     .sram ( mux_tree_tapbuf_size2_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_3_sram_inv ) , 
-    .out ( chany_bottom_out[8] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_bottom_out[8] ) , .p0 ( optlc_net_112 ) ) ;
 mux_tree_tapbuf_size2_4_4 mux_bottom_track_19 (
     .in ( { bottom_left_grid_pin_38_[0] , chanx_left_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size2_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_4_sram_inv ) , 
-    .out ( chany_bottom_out[9] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_bottom_out[9] ) , .p0 ( optlc_net_114 ) ) ;
 mux_tree_tapbuf_size2_5_4 mux_bottom_track_21 (
     .in ( { bottom_left_grid_pin_39_[0] , chanx_left_in[11] } ) ,
     .sram ( mux_tree_tapbuf_size2_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_5_sram_inv ) , 
-    .out ( chany_bottom_out[10] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chany_bottom_out[10] ) , .p0 ( optlc_net_115 ) ) ;
 mux_tree_tapbuf_size2_6_3 mux_bottom_track_23 (
     .in ( { bottom_left_grid_pin_40_[0] , chanx_left_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size2_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_6_sram_inv ) , 
-    .out ( chany_bottom_out[11] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chany_bottom_out[11] ) , .p0 ( optlc_net_113 ) ) ;
 mux_tree_tapbuf_size2_7_2 mux_bottom_track_27 (
     .in ( { bottom_left_grid_pin_34_[0] , chanx_left_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size2_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_7_sram_inv ) , 
-    .out ( chany_bottom_out[13] ) , .p0 ( optlc_net_106 ) ) ;
+    .out ( chany_bottom_out[13] ) , .p0 ( optlc_net_114 ) ) ;
 mux_tree_tapbuf_size2_8_2 mux_bottom_track_29 (
     .in ( { bottom_left_grid_pin_35_[0] , chanx_left_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size2_8_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size2_8_sram_inv ) ,
-    .out ( { ropt_net_111 } ) ,
-    .p0 ( optlc_net_106 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size2_8_sram_inv ) , 
+    .out ( chany_bottom_out[14] ) , .p0 ( optlc_net_115 ) ) ;
 mux_tree_tapbuf_size2_9_2 mux_bottom_track_31 (
     .in ( { bottom_left_grid_pin_36_[0] , chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size2_9_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size2_9_sram_inv ) , 
-    .out ( chany_bottom_out[15] ) , .p0 ( optlc_net_106 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size2_9_sram_inv ) ,
+    .out ( { ropt_net_120 } ) ,
+    .p0 ( optlc_net_115 ) ) ;
 mux_tree_tapbuf_size2_10_2 mux_bottom_track_33 (
     .in ( { bottom_left_grid_pin_37_[0] , chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size2_10_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_10_sram_inv ) , 
-    .out ( chany_bottom_out[16] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_bottom_out[16] ) , .p0 ( optlc_net_112 ) ) ;
 mux_tree_tapbuf_size2_11_1 mux_bottom_track_35 (
     .in ( { bottom_left_grid_pin_38_[0] , chanx_left_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size2_11_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_11_sram_inv ) , 
-    .out ( chany_bottom_out[17] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_bottom_out[17] ) , .p0 ( optlc_net_112 ) ) ;
 mux_tree_tapbuf_size2_12_1 mux_bottom_track_37 (
     .in ( { bottom_left_grid_pin_39_[0] , chanx_left_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size2_12_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_12_sram_inv ) , 
-    .out ( chany_bottom_out[18] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chany_bottom_out[18] ) , .p0 ( optlc_net_115 ) ) ;
 mux_tree_tapbuf_size2_13_1 mux_bottom_track_39 (
     .in ( { bottom_left_grid_pin_40_[0] , chanx_left_in[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_13_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_13_sram_inv ) , 
-    .out ( chany_bottom_out[19] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chany_bottom_out[19] ) , .p0 ( optlc_net_114 ) ) ;
 mux_tree_tapbuf_size2_14_1 mux_left_track_1 (
     .in ( { chany_bottom_in[19] , left_top_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_14_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_14_sram_inv ) , 
-    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_105 ) ) ;
+    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_113 ) ) ;
 mux_tree_tapbuf_size2_16_1 mux_left_track_5 (
     .in ( { chany_bottom_in[1] , left_top_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_15_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_15_sram_inv ) , 
-    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_113 ) ) ;
 mux_tree_tapbuf_size2_22 mux_left_track_9 (
     .in ( { chany_bottom_in[3] , left_top_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_16_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_16_sram_inv ) , 
-    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_106 ) ) ;
+    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_113 ) ) ;
 mux_tree_tapbuf_size2_15_1 mux_left_track_25 (
     .in ( { chany_bottom_in[11] , left_top_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_17_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_17_sram_inv ) , 
-    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_106 ) ) ;
+    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_113 ) ) ;
 mux_tree_tapbuf_size2_mem_0_5 mem_bottom_track_11 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size3_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size2_mem_0_ccff_tail ) , 
@@ -7479,111 +7208,89 @@ mux_tree_tapbuf_size2_mem_22 mem_left_track_9 ( .prog_clk ( prog_clk ) ,
     .mem_outb ( mux_tree_tapbuf_size2_16_sram_inv ) ) ;
 mux_tree_tapbuf_size2_mem_15_1 mem_left_track_25 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size2_mem_16_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_112 } ) ,
+    .ccff_tail ( { ropt_net_128 } ) ,
     .mem_out ( mux_tree_tapbuf_size2_17_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size2_17_sram_inv ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_100 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_105 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_102 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_106 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_104 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_107 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_106 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_108 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_108 ( .LO ( SYNOPSYS_UNCONNECTED_5 ) , 
-    .HI ( optlc_net_109 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_725 ( 
-    .A ( chany_bottom_in[10] ) , .X ( ropt_net_134 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_745 ( .A ( ropt_net_130 ) , 
-    .X ( chanx_left_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_726 ( .A ( ropt_net_111 ) , 
-    .X ( ropt_net_139 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_727 ( .A ( ropt_net_112 ) , 
-    .X ( ropt_net_144 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_728 ( .A ( ropt_net_113 ) , 
-    .X ( ropt_net_138 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_729 ( .A ( ropt_net_114 ) , 
-    .X ( ropt_net_140 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_730 ( .A ( ropt_net_115 ) , 
-    .X ( ropt_net_145 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_731 ( .A ( chany_bottom_in[7] ) , 
-    .X ( ropt_net_147 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_732 ( 
-    .A ( chany_bottom_in[16] ) , .X ( ropt_net_132 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_733 ( .A ( chany_bottom_in[4] ) , 
-    .X ( ropt_net_143 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_734 ( .A ( chany_bottom_in[9] ) , 
-    .X ( ropt_net_146 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_746 ( .A ( ropt_net_131 ) , 
+sky130_fd_sc_hd__conb_1 optlc_107 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_112 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_109 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_113 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_111 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
+    .HI ( optlc_net_114 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_113 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
+    .HI ( optlc_net_115 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_703 ( .A ( chany_bottom_in[2] ) , 
     .X ( chanx_left_out[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_46 ( .A ( chany_bottom_in[2] ) , 
-    .X ( ropt_net_129 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_747 ( .A ( ropt_net_132 ) , 
-    .X ( chanx_left_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_748 ( .A ( ropt_net_133 ) , 
-    .X ( chanx_left_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_749 ( .A ( ropt_net_134 ) , 
-    .X ( chanx_left_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_750 ( .A ( ropt_net_135 ) , 
-    .X ( chanx_left_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_751 ( .A ( ropt_net_136 ) , 
-    .X ( chanx_left_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_735 ( .A ( chany_bottom_in[8] ) , 
-    .X ( ropt_net_133 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_53 ( .A ( chany_bottom_in[13] ) , 
-    .X ( ropt_net_125 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_54 ( .A ( chany_bottom_in[14] ) , 
-    .X ( ropt_net_128 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_55 ( .A ( chany_bottom_in[15] ) , 
-    .X ( ropt_net_126 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_736 ( .A ( chany_bottom_in[6] ) , 
-    .X ( ropt_net_135 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_752 ( .A ( ropt_net_137 ) , 
-    .X ( chanx_left_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_754 ( .A ( ropt_net_138 ) , 
-    .X ( chanx_left_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_737 ( .A ( ropt_net_122 ) , 
-    .X ( chany_bottom_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_738 ( 
-    .A ( chany_bottom_in[17] ) , .X ( ropt_net_142 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_739 ( .A ( ropt_net_124 ) , 
-    .X ( chanx_left_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_755 ( .A ( ropt_net_139 ) , 
-    .X ( chany_bottom_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_740 ( .A ( ropt_net_125 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_704 ( .A ( chany_bottom_in[7] ) , 
+    .X ( ropt_net_138 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_705 ( 
+    .A ( chany_bottom_in[16] ) , .X ( chanx_left_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_706 ( .A ( ropt_net_120 ) , 
     .X ( ropt_net_137 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_741 ( .A ( ropt_net_126 ) , 
-    .X ( ropt_net_136 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_742 ( .A ( ropt_net_127 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_707 ( 
+    .A ( chany_bottom_in[17] ) , .X ( chanx_left_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_708 ( .A ( chany_bottom_in[8] ) , 
+    .X ( chanx_left_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_709 ( .A ( ropt_net_123 ) , 
     .X ( ropt_net_141 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_743 ( .A ( ropt_net_128 ) , 
-    .X ( ropt_net_130 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_744 ( .A ( ropt_net_129 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_710 ( 
+    .A ( chany_bottom_in[15] ) , .X ( ropt_net_135 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_711 ( .A ( chany_bottom_in[0] ) , 
+    .X ( chanx_left_out[1] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_712 ( 
+    .A ( chany_bottom_in[12] ) , .X ( ropt_net_134 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_719 ( .A ( ropt_net_133 ) , 
+    .X ( chanx_left_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_713 ( 
+    .A ( chany_bottom_in[18] ) , .X ( chanx_left_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_714 ( .A ( ropt_net_128 ) , 
+    .X ( ropt_net_140 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_715 ( .A ( ropt_net_129 ) , 
+    .X ( ropt_net_136 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_46 ( .A ( chany_bottom_in[4] ) , 
+    .X ( BUF_net_46 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_47 ( .A ( chany_bottom_in[5] ) , 
     .X ( ropt_net_131 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_756 ( .A ( ropt_net_140 ) , 
-    .X ( chanx_left_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_757 ( .A ( ropt_net_141 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_716 ( .A ( ropt_net_130 ) , 
+    .X ( chany_bottom_out[12] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_720 ( .A ( ropt_net_134 ) , 
     .X ( chanx_left_out[13] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_74 ( .A ( chany_bottom_in[18] ) , 
-    .X ( ropt_net_114 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_81 ( .A ( chany_bottom_in[5] ) , 
-    .X ( ropt_net_124 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_85 ( .A ( chany_bottom_in[0] ) , 
-    .X ( ropt_net_113 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_761 ( .A ( ropt_net_142 ) , 
-    .X ( chanx_left_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_762 ( .A ( ropt_net_143 ) , 
-    .X ( chanx_left_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_763 ( .A ( ropt_net_144 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_764 ( .A ( ropt_net_145 ) , 
-    .X ( chany_bottom_out[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_765 ( .A ( ropt_net_146 ) , 
-    .X ( chanx_left_out[10] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_91 ( .A ( chany_bottom_in[12] ) , 
-    .X ( ropt_net_127 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_766 ( .A ( ropt_net_147 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_721 ( .A ( ropt_net_135 ) , 
+    .X ( chanx_left_out[16] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_51 ( .A ( chany_bottom_in[9] ) , 
+    .X ( BUF_net_51 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_52 ( .A ( chany_bottom_in[10] ) , 
+    .X ( BUF_net_52 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_722 ( .A ( ropt_net_136 ) , 
+    .X ( chanx_left_out[7] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_54 ( .A ( chany_bottom_in[13] ) , 
+    .X ( BUF_net_54 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_55 ( .A ( chany_bottom_in[14] ) , 
+    .X ( BUF_net_55 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_718 ( .A ( ropt_net_131 ) , 
+    .X ( ropt_net_133 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_723 ( .A ( ropt_net_137 ) , 
+    .X ( chany_bottom_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_724 ( .A ( ropt_net_138 ) , 
     .X ( chanx_left_out[8] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_725 ( .A ( ropt_net_139 ) , 
+    .X ( chanx_left_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_726 ( .A ( ropt_net_140 ) , 
+    .X ( ccff_tail[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_727 ( .A ( ropt_net_141 ) , 
+    .X ( chany_bottom_out[1] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_93 ( .A ( BUF_net_46 ) , 
+    .X ( ropt_net_139 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_95 ( .A ( chany_bottom_in[6] ) , 
+    .X ( ropt_net_129 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_98 ( .A ( BUF_net_51 ) , 
+    .X ( chanx_left_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_99 ( .A ( BUF_net_52 ) , 
+    .X ( chanx_left_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_101 ( .A ( BUF_net_54 ) , 
+    .X ( chanx_left_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_102 ( .A ( BUF_net_55 ) , 
+    .X ( chanx_left_out[15] ) ) ;
 endmodule
 
 
@@ -7600,10 +7307,8 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 FTB_27__59 ( .A ( mem_out[1] ) , 
-    .X ( net_net_84 ) ) ;
-sky130_fd_sc_hd__dlygate4sd1_1 BUFT_RR_84 ( .A ( net_net_84 ) , 
-    .X ( net_net_83 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_112 ( .A ( net_net_83 ) , 
+    .X ( net_net_80 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_79 ( .A ( net_net_80 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -7725,6 +7430,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 
 const1_25_6 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( p0 ) , .A1 ( in[2] ) , 
@@ -7733,8 +7440,6 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_68 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -7996,8 +7701,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 
 const1_19_6 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -8009,6 +7712,8 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_3_X[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_105 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -8092,8 +7797,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_8_X ;
 
 const1_17_6 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -8120,6 +7823,8 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_8_X[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_104 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -8699,6 +8404,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
 
 const1_8_7 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -8719,8 +8426,6 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_117 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -8742,9 +8447,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
 
 const1_7_7 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -8761,9 +8469,10 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_5_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l3_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .S ( sram[2] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .S ( sram[2] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
 endmodule
 
 
@@ -9041,9 +8750,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 
 const1_4_8 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -9063,9 +8775,10 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
 endmodule
 
 
@@ -9088,9 +8801,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 
 const1_3_8 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -9110,9 +8826,10 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
 endmodule
 
 
@@ -9234,6 +8951,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_1_8 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -9263,10 +8982,6 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_60 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( BUF_net_60 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_113 ( .A ( BUF_net_60 ) , 
-    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -9466,16 +9181,15 @@ mux_tree_tapbuf_size10_11 mux_top_track_0 (
         chanx_left_in[0] , chanx_left_in[7] , chanx_left_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size10_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) , 
-    .out ( chany_top_out[0] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chany_top_out[0] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size10_0_1 mux_bottom_track_1 (
     .in ( { chany_top_in[2] , chany_top_in[12] , bottom_right_grid_pin_1_[0] , 
         bottom_left_grid_pin_35_[0] , bottom_left_grid_pin_37_[0] , 
         bottom_left_grid_pin_39_[0] , bottom_left_grid_pin_41_[0] , 
         chanx_left_in[1] , chanx_left_in[8] , chanx_left_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size10_1_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size10_1_sram_inv ) ,
-    .out ( { ropt_net_147 } ) ,
-    .p0 ( optlc_net_137 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size10_1_sram_inv ) , 
+    .out ( chany_bottom_out[0] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size10_mem_11 mem_top_track_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size10_mem_0_ccff_tail ) , 
@@ -9493,21 +9207,21 @@ mux_tree_tapbuf_size8_1_1 mux_top_track_2 (
         chanx_left_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size8_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_0_sram_inv ) , 
-    .out ( chany_top_out[1] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chany_top_out[1] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size8_3 mux_top_track_8 (
     .in ( { top_left_grid_pin_34_[0] , top_left_grid_pin_38_[0] , 
         top_right_grid_pin_1_[0] , chany_bottom_in[6] , chany_bottom_in[16] , 
         chanx_left_in[4] , chanx_left_in[11] , chanx_left_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size8_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_1_sram_inv ) , 
-    .out ( chany_top_out[4] ) , .p0 ( optlc_net_138 ) ) ;
+    .out ( chany_top_out[4] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size8_0_1 mux_bottom_track_9 (
     .in ( { chany_top_in[6] , chany_top_in[16] , bottom_right_grid_pin_1_[0] , 
         bottom_left_grid_pin_37_[0] , bottom_left_grid_pin_41_[0] , 
         chanx_left_in[4] , chanx_left_in[11] , chanx_left_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size8_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_2_sram_inv ) , 
-    .out ( chany_bottom_out[4] ) , .p0 ( optlc_net_140 ) ) ;
+    .out ( chany_bottom_out[4] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size8_mem_1_1 mem_top_track_2 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size10_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size8_mem_0_ccff_tail ) , 
@@ -9532,7 +9246,7 @@ mux_tree_tapbuf_size14_1 mux_top_track_4 (
         chanx_left_in[5] , chanx_left_in[12] , chanx_left_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size14_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size14_0_sram_inv ) , 
-    .out ( chany_top_out[2] ) , .p0 ( optlc_net_138 ) ) ;
+    .out ( chany_top_out[2] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size14_0_1 mux_bottom_track_5 (
     .in ( { chany_top_in[5] , chany_top_in[14] , bottom_right_grid_pin_1_[0] , 
         bottom_left_grid_pin_34_[0] , bottom_left_grid_pin_35_[0] , 
@@ -9542,7 +9256,7 @@ mux_tree_tapbuf_size14_0_1 mux_bottom_track_5 (
         chanx_left_in[3] , chanx_left_in[10] , chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size14_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size14_1_sram_inv ) , 
-    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_137 ) ) ;
+    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size14_mem_1 mem_top_track_4 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size8_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size14_mem_0_ccff_tail ) , 
@@ -9559,50 +9273,49 @@ mux_tree_tapbuf_size7_5_1 mux_top_track_16 (
         chanx_left_in[10] , chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size7_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_0_sram_inv ) , 
-    .out ( chany_top_out[8] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chany_top_out[8] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size7_8 mux_top_track_24 (
     .in ( { top_left_grid_pin_36_[0] , top_left_grid_pin_40_[0] , 
         chany_bottom_in[9] , chany_bottom_in[18] , chanx_left_in[2] , 
         chanx_left_in[9] , chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size7_1_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size7_1_sram_inv ) ,
-    .out ( { ropt_net_148 } ) ,
-    .p0 ( optlc_net_139 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size7_1_sram_inv ) , 
+    .out ( chany_top_out[12] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size7_0_4 mux_bottom_track_17 (
     .in ( { chany_top_in[8] , chany_top_in[17] , bottom_left_grid_pin_34_[0] , 
         bottom_left_grid_pin_38_[0] , chanx_left_in[5] , chanx_left_in[12] , 
         chanx_left_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size7_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_2_sram_inv ) , 
-    .out ( chany_bottom_out[8] ) , .p0 ( optlc_net_137 ) ) ;
+    .out ( chany_bottom_out[8] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size7_1_4 mux_left_track_1 (
     .in ( { chany_top_in[0] , chany_top_in[2] , chany_bottom_in[2] , 
         left_top_grid_pin_42_[0] , left_top_grid_pin_44_[0] , 
         left_top_grid_pin_46_[0] , left_top_grid_pin_48_[0] } ) ,
     .sram ( mux_tree_tapbuf_size7_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_3_sram_inv ) , 
-    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size7_2_3 mux_left_track_3 (
     .in ( { chany_top_in[4] , chany_bottom_in[0] , chany_bottom_in[4] , 
         left_top_grid_pin_43_[0] , left_top_grid_pin_45_[0] , 
         left_top_grid_pin_47_[0] , left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size7_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_4_sram_inv ) , 
-    .out ( chanx_left_out[1] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chanx_left_out[1] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size7_3_1 mux_left_track_5 (
     .in ( { chany_top_in[5] , chany_bottom_in[1] , chany_bottom_in[5] , 
         left_top_grid_pin_42_[0] , left_top_grid_pin_44_[0] , 
         left_top_grid_pin_46_[0] , left_top_grid_pin_48_[0] } ) ,
     .sram ( mux_tree_tapbuf_size7_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_5_sram_inv ) , 
-    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size7_4_1 mux_left_track_7 (
     .in ( { chany_top_in[6] , chany_bottom_in[3] , chany_bottom_in[6] , 
         left_top_grid_pin_43_[0] , left_top_grid_pin_45_[0] , 
         left_top_grid_pin_47_[0] , left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size7_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_6_sram_inv ) , 
-    .out ( chanx_left_out[3] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chanx_left_out[3] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size7_mem_5_1 mem_top_track_16 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size8_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size7_mem_0_ccff_tail ) , 
@@ -9644,20 +9357,20 @@ mux_tree_tapbuf_size6_9 mux_top_track_32 (
         chanx_left_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size6_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_0_sram_inv ) , 
-    .out ( chany_top_out[16] ) , .p0 ( optlc_net_138 ) ) ;
+    .out ( chany_top_out[16] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size6_0_5 mux_bottom_track_25 (
     .in ( { chany_top_in[9] , chany_top_in[18] , bottom_left_grid_pin_35_[0] , 
         bottom_left_grid_pin_39_[0] , chanx_left_in[6] , chanx_left_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size6_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_1_sram_inv ) , 
-    .out ( chany_bottom_out[12] ) , .p0 ( optlc_net_140 ) ) ;
+    .out ( chany_bottom_out[12] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size6_1_3 mux_bottom_track_33 (
     .in ( { chany_top_in[10] , bottom_left_grid_pin_36_[0] , 
         bottom_left_grid_pin_40_[0] , chanx_left_in[0] , chanx_left_in[7] , 
         chanx_left_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size6_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_2_sram_inv ) , 
-    .out ( chany_bottom_out[16] ) , .p0 ( optlc_net_137 ) ) ;
+    .out ( chany_bottom_out[16] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size6_mem_9 mem_top_track_32 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size7_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
@@ -9679,8 +9392,9 @@ mux_tree_tapbuf_size9_1 mux_bottom_track_3 (
         bottom_left_grid_pin_40_[0] , chanx_left_in[2] , chanx_left_in[9] , 
         chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size9_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size9_0_sram_inv ) , 
-    .out ( chany_bottom_out[1] ) , .p0 ( optlc_net_139 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size9_0_sram_inv ) ,
+    .out ( { ropt_net_130 } ) ,
+    .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size9_mem_1 mem_bottom_track_3 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size10_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size9_mem_0_ccff_tail ) , 
@@ -9691,25 +9405,26 @@ mux_tree_tapbuf_size4_8 mux_left_track_9 (
         left_top_grid_pin_42_[0] } ) ,
     .sram ( mux_tree_tapbuf_size4_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_0_sram_inv ) , 
-    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_138 ) ) ;
+    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size4_0_3 mux_left_track_11 (
     .in ( { chany_top_in[9] , chany_bottom_in[9] , chany_bottom_in[11] , 
         left_top_grid_pin_43_[0] } ) ,
     .sram ( mux_tree_tapbuf_size4_1_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size4_1_sram_inv ) , 
-    .out ( chanx_left_out[5] ) , .p0 ( optlc_net_140 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size4_1_sram_inv ) ,
+    .out ( { ropt_net_129 } ) ,
+    .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size4_1_2 mux_left_track_13 (
     .in ( { chany_top_in[10] , chany_bottom_in[10] , chany_bottom_in[15] , 
         left_top_grid_pin_44_[0] } ) ,
     .sram ( mux_tree_tapbuf_size4_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_2_sram_inv ) , 
-    .out ( chanx_left_out[6] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chanx_left_out[6] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size4_2_2 mux_left_track_15 (
     .in ( { chany_top_in[12] , chany_bottom_in[12] , chany_bottom_in[19] , 
         left_top_grid_pin_45_[0] } ) ,
     .sram ( mux_tree_tapbuf_size4_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_3_sram_inv ) , 
-    .out ( chanx_left_out[7] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chanx_left_out[7] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size4_mem_8 mem_left_track_9 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size7_mem_6_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size4_mem_0_ccff_tail ) , 
@@ -9735,32 +9450,31 @@ mux_tree_tapbuf_size3_0_5 mux_left_track_17 (
         left_top_grid_pin_46_[0] } ) ,
     .sram ( mux_tree_tapbuf_size3_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_0_sram_inv ) , 
-    .out ( chanx_left_out[8] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chanx_left_out[8] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size3_1_4 mux_left_track_19 (
     .in ( { chany_top_in[14] , chany_bottom_in[14] , 
         left_top_grid_pin_47_[0] } ) ,
     .sram ( mux_tree_tapbuf_size3_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_1_sram_inv ) , 
-    .out ( chanx_left_out[9] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chanx_left_out[9] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size3_2_4 mux_left_track_21 (
     .in ( { chany_top_in[16] , chany_bottom_in[16] , 
         left_top_grid_pin_48_[0] } ) ,
     .sram ( mux_tree_tapbuf_size3_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_2_sram_inv ) , 
-    .out ( chanx_left_out[10] ) , .p0 ( optlc_net_139 ) ) ;
+    .out ( chanx_left_out[10] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size3_3_3 mux_left_track_23 (
     .in ( { chany_top_in[17] , chany_bottom_in[17] , 
         left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size3_3_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size3_3_sram_inv ) ,
-    .out ( { ropt_net_145 } ) ,
-    .p0 ( optlc_net_139 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size3_3_sram_inv ) , 
+    .out ( chanx_left_out[11] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size3_10 mux_left_track_25 (
     .in ( { chany_top_in[18] , chany_bottom_in[18] , 
         left_top_grid_pin_42_[0] } ) ,
     .sram ( mux_tree_tapbuf_size3_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_4_sram_inv ) , 
-    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_138 ) ) ;
+    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size3_mem_0_5 mem_left_track_17 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size4_mem_3_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size3_mem_0_ccff_tail ) , 
@@ -9783,199 +9497,159 @@ mux_tree_tapbuf_size3_mem_3_3 mem_left_track_23 ( .prog_clk ( prog_clk ) ,
     .mem_outb ( mux_tree_tapbuf_size3_3_sram_inv ) ) ;
 mux_tree_tapbuf_size3_mem_10 mem_left_track_25 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size3_mem_3_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_164 } ) ,
+    .ccff_tail ( { ropt_net_127 } ) ,
     .mem_out ( mux_tree_tapbuf_size3_4_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size3_4_sram_inv ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__0 ( .A ( chany_top_in[1] ) , 
-    .X ( ropt_net_169 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_2__1 ( .A ( chany_top_in[2] ) , 
-    .X ( ropt_net_162 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_132 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_137 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_4__3 ( .A ( chany_top_in[4] ) , 
-    .X ( ropt_net_158 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_111 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_122 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_113 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_123 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_758 ( .A ( ropt_net_154 ) , 
+    .X ( chany_bottom_out[3] ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_115 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
+    .HI ( optlc_net_124 ) ) ;
 sky130_fd_sc_hd__dlygate4sd2_1 FTB_5__4 ( .A ( chany_top_in[5] ) , 
-    .X ( ropt_net_173 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_6__5 ( .A ( chany_top_in[6] ) , 
-    .X ( ropt_net_166 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_807 ( .A ( ropt_net_180 ) , 
-    .X ( chany_bottom_out[11] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_8__7 ( .A ( chany_top_in[8] ) , 
-    .X ( ropt_net_171 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_134 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_138 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_136 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_139 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_11__10 ( .A ( chany_top_in[11] ) , 
-    .X ( ropt_net_161 ) ) ;
+    .X ( ropt_net_146 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_117 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
+    .HI ( optlc_net_125 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_760 ( .A ( ropt_net_155 ) , 
+    .X ( chany_top_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_761 ( .A ( ropt_net_156 ) , 
+    .X ( chany_top_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_719 ( .A ( ropt_net_126 ) , 
+    .X ( ropt_net_164 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_720 ( .A ( ropt_net_127 ) , 
+    .X ( ropt_net_170 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_721 ( .A ( chany_top_in[1] ) , 
+    .X ( chanx_left_out[19] ) ) ;
 sky130_fd_sc_hd__dlymetal6s2s_1 FTB_12__11 ( .A ( chany_top_in[12] ) , 
-    .X ( ropt_net_175 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_138 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_140 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_14__13 ( .A ( chany_top_in[14] ) , 
-    .X ( ropt_net_176 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_769 ( .A ( chany_bottom_in[6] ) , 
-    .X ( ropt_net_206 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_16__15 ( .A ( chany_top_in[16] ) , 
-    .X ( ropt_net_165 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_770 ( .A ( ropt_net_145 ) , 
-    .X ( chanx_left_out[11] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_18__17 ( .A ( chany_top_in[18] ) , 
-    .X ( ropt_net_157 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_808 ( .A ( ropt_net_181 ) , 
+    .X ( ropt_net_150 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_722 ( .A ( ropt_net_129 ) , 
+    .X ( ropt_net_169 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_14__13 ( .A ( chany_top_in[14] ) , 
+    .X ( chany_bottom_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_15__14 ( .A ( chany_top_in[15] ) , 
+    .X ( ropt_net_167 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_16__15 ( .A ( chany_top_in[16] ) , 
     .X ( chany_bottom_out[17] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_20__19 ( .A ( chany_bottom_in[2] ) , 
-    .X ( ropt_net_178 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_809 ( .A ( ropt_net_182 ) , 
-    .X ( chany_bottom_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_771 ( .A ( chany_bottom_in[4] ) , 
-    .X ( ropt_net_205 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_772 ( .A ( ropt_net_147 ) , 
-    .X ( chany_bottom_out[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_24__23 ( .A ( chany_bottom_in[8] ) , 
-    .X ( ropt_net_172 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_773 ( .A ( ropt_net_148 ) , 
-    .X ( ropt_net_197 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_774 ( .A ( ropt_net_149 ) , 
-    .X ( ropt_net_188 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_723 ( .A ( ropt_net_130 ) , 
+    .X ( chany_bottom_out[1] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_18__17 ( .A ( chany_top_in[18] ) , 
+    .X ( ropt_net_138 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_765 ( .A ( ropt_net_157 ) , 
+    .X ( chany_top_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_724 ( .A ( chany_top_in[4] ) , 
+    .X ( chany_bottom_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_21__20 ( .A ( chany_bottom_in[4] ) , 
+    .X ( ropt_net_141 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_725 ( .A ( chany_top_in[13] ) , 
+    .X ( ropt_net_160 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_726 ( 
+    .A ( chany_bottom_in[13] ) , .X ( chany_top_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_24__23 ( .A ( chany_bottom_in[8] ) , 
+    .X ( ropt_net_148 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_727 ( .A ( chany_top_in[8] ) , 
+    .X ( chany_bottom_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_728 ( .A ( chany_top_in[3] ) , 
+    .X ( ropt_net_159 ) ) ;
 sky130_fd_sc_hd__dlygate4sd2_1 FTB_27__26 ( .A ( chany_bottom_in[12] ) , 
-    .X ( ropt_net_174 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_775 ( 
-    .A ( chany_bottom_in[13] ) , .X ( ropt_net_207 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_29__28 ( .A ( chany_bottom_in[14] ) , 
-    .X ( ropt_net_177 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_776 ( .A ( chany_top_in[13] ) , 
-    .X ( ropt_net_208 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_777 ( .A ( chany_top_in[17] ) , 
-    .X ( ropt_net_203 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_778 ( .A ( chany_top_in[15] ) , 
-    .X ( ropt_net_204 ) ) ;
+    .X ( ropt_net_149 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_729 ( .A ( ropt_net_136 ) , 
+    .X ( ropt_net_158 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_730 ( 
+    .A ( chany_bottom_in[16] ) , .X ( chany_top_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_731 ( .A ( ropt_net_138 ) , 
+    .X ( chany_bottom_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_732 ( .A ( chany_top_in[19] ) , 
+    .X ( ropt_net_171 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_32__31 ( .A ( chany_bottom_in[18] ) , 
+    .X ( ropt_net_147 ) ) ;
 sky130_fd_sc_hd__dlymetal6s2s_1 FTB_33__32 ( .A ( left_top_grid_pin_43_[0] ) , 
     .X ( chanx_left_out[13] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_69 ( .A ( chany_top_in[3] ) , 
-    .X ( BUF_net_69 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_70 ( .A ( chany_top_in[10] ) , 
-    .X ( ropt_net_154 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_810 ( .A ( ropt_net_183 ) , 
-    .X ( chany_top_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_812 ( .A ( ropt_net_184 ) , 
-    .X ( chanx_left_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_814 ( .A ( ropt_net_185 ) , 
-    .X ( chany_bottom_out[7] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_74 ( .A ( chany_top_in[19] ) , 
-    .X ( ropt_net_149 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_779 ( .A ( ropt_net_154 ) , 
-    .X ( ropt_net_180 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_780 ( .A ( ropt_net_155 ) , 
-    .X ( ropt_net_183 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_781 ( .A ( chany_top_in[7] ) , 
-    .X ( ropt_net_202 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_782 ( .A ( ropt_net_157 ) , 
-    .X ( ropt_net_201 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_783 ( .A ( ropt_net_158 ) , 
-    .X ( ropt_net_200 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_815 ( .A ( ropt_net_186 ) , 
-    .X ( chany_top_out[9] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_81 ( .A ( chany_bottom_in[16] ) , 
-    .X ( ropt_net_155 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_784 ( .A ( ropt_net_159 ) , 
-    .X ( ropt_net_189 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_785 ( .A ( ropt_net_160 ) , 
-    .X ( ropt_net_195 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_786 ( .A ( ropt_net_161 ) , 
-    .X ( ropt_net_191 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_787 ( .A ( ropt_net_162 ) , 
-    .X ( chany_bottom_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_788 ( .A ( ropt_net_163 ) , 
-    .X ( ropt_net_193 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_816 ( .A ( ropt_net_187 ) , 
-    .X ( chany_top_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_789 ( .A ( ropt_net_164 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_790 ( .A ( ropt_net_165 ) , 
-    .X ( ropt_net_181 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_791 ( .A ( ropt_net_166 ) , 
-    .X ( ropt_net_185 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_792 ( .A ( ropt_net_167 ) , 
-    .X ( ropt_net_192 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_794 ( .A ( ropt_net_168 ) , 
-    .X ( chany_top_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_795 ( .A ( ropt_net_169 ) , 
-    .X ( ropt_net_184 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_796 ( .A ( ropt_net_170 ) , 
-    .X ( ropt_net_199 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_108 ( .A ( chany_top_in[9] ) , 
-    .X ( ropt_net_163 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_109 ( .A ( chany_bottom_in[18] ) , 
-    .X ( ropt_net_159 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_797 ( .A ( ropt_net_171 ) , 
-    .X ( ropt_net_198 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_798 ( .A ( ropt_net_172 ) , 
-    .X ( ropt_net_186 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_119 ( .A ( BUF_net_69 ) , 
-    .X ( chanx_left_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_799 ( .A ( ropt_net_173 ) , 
-    .X ( ropt_net_182 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_817 ( .A ( ropt_net_188 ) , 
-    .X ( chanx_left_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_800 ( .A ( ropt_net_174 ) , 
-    .X ( ropt_net_187 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_123 ( .A ( chany_bottom_in[5] ) , 
-    .X ( ropt_net_168 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_819 ( .A ( ropt_net_189 ) , 
-    .X ( chany_top_out[19] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_125 ( .A ( chany_bottom_in[9] ) , 
-    .X ( ropt_net_160 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_126 ( .A ( chany_bottom_in[10] ) , 
-    .X ( ropt_net_170 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_821 ( .A ( ropt_net_190 ) , 
-    .X ( chany_top_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_801 ( .A ( ropt_net_175 ) , 
-    .X ( chany_bottom_out[13] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_129 ( .A ( chany_bottom_in[17] ) , 
-    .X ( ropt_net_167 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_802 ( .A ( ropt_net_176 ) , 
-    .X ( ropt_net_196 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_803 ( .A ( ropt_net_177 ) , 
-    .X ( ropt_net_194 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_804 ( .A ( ropt_net_178 ) , 
-    .X ( ropt_net_190 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_823 ( .A ( ropt_net_191 ) , 
-    .X ( chanx_left_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_824 ( .A ( ropt_net_192 ) , 
-    .X ( chany_top_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_825 ( .A ( ropt_net_193 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_766 ( .A ( ropt_net_158 ) , 
     .X ( chany_bottom_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_826 ( .A ( ropt_net_194 ) , 
-    .X ( chany_top_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_827 ( .A ( ropt_net_195 ) , 
-    .X ( chany_top_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_828 ( .A ( ropt_net_196 ) , 
-    .X ( chany_bottom_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_830 ( .A ( ropt_net_197 ) , 
-    .X ( chany_top_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_831 ( .A ( ropt_net_198 ) , 
-    .X ( chany_bottom_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_833 ( .A ( ropt_net_199 ) , 
-    .X ( chany_top_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_834 ( .A ( ropt_net_200 ) , 
-    .X ( chany_bottom_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_835 ( .A ( ropt_net_201 ) , 
-    .X ( chany_bottom_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_840 ( .A ( ropt_net_202 ) , 
-    .X ( chanx_left_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_841 ( .A ( ropt_net_203 ) , 
-    .X ( chany_bottom_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_842 ( .A ( ropt_net_204 ) , 
-    .X ( chanx_left_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_843 ( .A ( ropt_net_205 ) , 
-    .X ( chany_top_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_844 ( .A ( ropt_net_206 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_767 ( .A ( ropt_net_159 ) , 
+    .X ( chanx_left_out[18] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_67 ( .A ( chany_top_in[7] ) , 
+    .X ( ropt_net_126 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_68 ( .A ( chany_top_in[9] ) , 
+    .X ( ropt_net_136 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_734 ( .A ( ropt_net_140 ) , 
+    .X ( ropt_net_155 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_70 ( .A ( chany_bottom_in[2] ) , 
+    .X ( ropt_net_145 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_71 ( .A ( chany_bottom_in[5] ) , 
+    .X ( ropt_net_143 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_72 ( .A ( chany_bottom_in[6] ) , 
     .X ( chany_top_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_845 ( .A ( ropt_net_207 ) , 
-    .X ( chany_top_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_846 ( .A ( ropt_net_208 ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_73 ( .A ( chany_bottom_in[9] ) , 
+    .X ( ropt_net_142 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_74 ( .A ( chany_bottom_in[10] ) , 
+    .X ( chany_top_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_768 ( .A ( ropt_net_160 ) , 
     .X ( chany_bottom_out[14] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_76 ( .A ( chany_bottom_in[14] ) , 
+    .X ( ropt_net_140 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_770 ( .A ( ropt_net_161 ) , 
+    .X ( chanx_left_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_78 ( .A ( chany_bottom_in[17] ) , 
+    .X ( chany_top_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_735 ( .A ( ropt_net_141 ) , 
+    .X ( chany_top_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_736 ( .A ( ropt_net_142 ) , 
+    .X ( ropt_net_162 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_737 ( .A ( ropt_net_143 ) , 
+    .X ( chany_top_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_738 ( .A ( ropt_net_144 ) , 
+    .X ( ropt_net_161 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_97 ( .A ( chany_top_in[2] ) , 
+    .X ( ropt_net_153 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_98 ( .A ( chany_top_in[6] ) , 
+    .X ( chany_bottom_out[7] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_99 ( .A ( chany_top_in[10] ) , 
+    .X ( ropt_net_151 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_100 ( .A ( chany_top_in[11] ) , 
+    .X ( ropt_net_144 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_772 ( .A ( ropt_net_162 ) , 
+    .X ( chany_top_out[10] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_102 ( .A ( chany_top_in[17] ) , 
+    .X ( ropt_net_152 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_739 ( .A ( ropt_net_145 ) , 
+    .X ( ropt_net_157 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_775 ( .A ( ropt_net_163 ) , 
+    .X ( chany_top_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_741 ( .A ( ropt_net_146 ) , 
+    .X ( ropt_net_168 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_743 ( .A ( ropt_net_147 ) , 
+    .X ( ropt_net_156 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_745 ( .A ( ropt_net_148 ) , 
+    .X ( chany_top_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_746 ( .A ( ropt_net_149 ) , 
+    .X ( ropt_net_163 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_750 ( .A ( ropt_net_150 ) , 
+    .X ( chany_bottom_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_753 ( .A ( ropt_net_151 ) , 
+    .X ( ropt_net_165 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_754 ( .A ( ropt_net_152 ) , 
+    .X ( ropt_net_166 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_755 ( .A ( ropt_net_153 ) , 
+    .X ( ropt_net_154 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_776 ( .A ( ropt_net_164 ) , 
+    .X ( chanx_left_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_778 ( .A ( ropt_net_165 ) , 
+    .X ( chany_bottom_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_779 ( .A ( ropt_net_166 ) , 
+    .X ( chany_bottom_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_781 ( .A ( ropt_net_167 ) , 
+    .X ( chanx_left_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_782 ( .A ( ropt_net_168 ) , 
+    .X ( chany_bottom_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_783 ( .A ( ropt_net_169 ) , 
+    .X ( chanx_left_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_784 ( .A ( ropt_net_170 ) , 
+    .X ( ccff_tail[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_786 ( .A ( ropt_net_171 ) , 
+    .X ( chanx_left_out[14] ) ) ;
 endmodule
 
 
@@ -9992,10 +9666,10 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 FTB_34__39 ( .A ( mem_out[1] ) , 
-    .X ( net_net_60 ) ) ;
-sky130_fd_sc_hd__dlygate4sd1_1 BUFT_RR_60 ( .A ( net_net_60 ) , 
-    .X ( net_net_59 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_84 ( .A ( net_net_59 ) , 
+    .X ( net_net_49 ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 BUFT_RR_49 ( .A ( net_net_49 ) , 
+    .X ( net_net_48 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_69 ( .A ( net_net_48 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -10613,13 +10287,17 @@ output [0:0] out ;
 input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_24_5 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l2_in_0_ ( .A0 ( p0 ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
 endmodule
 
 
@@ -10690,13 +10368,17 @@ output [0:0] out ;
 input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_21_5 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l2_in_0_ ( .A0 ( p0 ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
 endmodule
 
 
@@ -10875,13 +10557,17 @@ output [0:0] out ;
 input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_14_6 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l2_in_0_ ( .A0 ( p0 ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
 endmodule
 
 
@@ -11025,6 +10711,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 
 const1_11_6 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( p0 ) , .A1 ( in[2] ) , 
@@ -11033,8 +10721,6 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_45 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -11052,16 +10738,20 @@ input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 
 const1_10_6 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( p0 ) , .A1 ( in[2] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l2_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
 endmodule
 
 
@@ -11122,9 +10812,10 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_43 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( BUF_net_43 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_88 ( .A ( BUF_net_43 ) , .X ( out[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_41 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( BUF_net_41 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_65 ( .A ( BUF_net_41 ) , 
+    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -11302,6 +10993,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 
 const1_5_7 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -11316,10 +11009,6 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_42 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( BUF_net_42 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_87 ( .A ( BUF_net_42 ) , 
-    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -11541,9 +11230,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 
 const1_1_7 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -11557,9 +11249,10 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
 sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l3_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_5_X[0] ) ) ;
 endmodule
 
 
@@ -11596,7 +11289,7 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
 sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
+sky130_fd_sc_hd__mux2_8 mux_l3_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , .X ( out[0] ) ) ;
 endmodule
@@ -11743,30 +11436,29 @@ mux_tree_tapbuf_size6_2_2 mux_top_track_0 (
         top_left_grid_pin_38_[0] , top_left_grid_pin_40_[0] , 
         top_right_grid_pin_1_[0] , chanx_left_in[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size6_0_sram_inv ) ,
-    .out ( { ropt_net_116 } ) ,
-    .p0 ( optlc_net_108 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size6_0_sram_inv ) , 
+    .out ( chany_top_out[0] ) , .p0 ( optlc_net_81 ) ) ;
 mux_tree_tapbuf_size6_8 mux_top_track_4 (
     .in ( { top_left_grid_pin_34_[0] , top_left_grid_pin_36_[0] , 
         top_left_grid_pin_38_[0] , top_left_grid_pin_40_[0] , 
         top_right_grid_pin_1_[0] , chanx_left_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size6_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_1_sram_inv ) , 
-    .out ( chany_top_out[2] ) , .p0 ( optlc_net_110 ) ) ;
+    .out ( chany_top_out[2] ) , .p0 ( optlc_net_81 ) ) ;
 mux_tree_tapbuf_size6_0_4 mux_left_track_1 (
     .in ( { chany_top_in[0] , left_top_grid_pin_42_[0] , 
         left_top_grid_pin_44_[0] , left_top_grid_pin_46_[0] , 
         left_top_grid_pin_48_[0] , left_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_2_sram_inv ) , 
-    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_78 ) ) ;
 mux_tree_tapbuf_size6_1_2 mux_left_track_5 (
     .in ( { chany_top_in[18] , left_top_grid_pin_42_[0] , 
         left_top_grid_pin_44_[0] , left_top_grid_pin_46_[0] , 
         left_top_grid_pin_48_[0] , left_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_3_sram_inv ) , 
-    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_78 ) ) ;
 mux_tree_tapbuf_size6_mem_2_2 mem_top_track_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
@@ -11793,28 +11485,28 @@ mux_tree_tapbuf_size5_2_2 mux_top_track_2 (
         chanx_left_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size5_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_0_sram_inv ) , 
-    .out ( chany_top_out[1] ) , .p0 ( optlc_net_110 ) ) ;
+    .out ( chany_top_out[1] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size5_7 mux_top_track_6 (
     .in ( { top_left_grid_pin_35_[0] , top_left_grid_pin_37_[0] , 
         top_left_grid_pin_39_[0] , top_left_grid_pin_41_[0] , 
         chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size5_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_1_sram_inv ) , 
-    .out ( chany_top_out[3] ) , .p0 ( optlc_net_110 ) ) ;
+    .out ( chany_top_out[3] ) , .p0 ( optlc_net_81 ) ) ;
 mux_tree_tapbuf_size5_0_3 mux_left_track_3 (
     .in ( { chany_top_in[19] , left_top_grid_pin_43_[0] , 
         left_top_grid_pin_45_[0] , left_top_grid_pin_47_[0] , 
         left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size5_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_2_sram_inv ) , 
-    .out ( chanx_left_out[1] ) , .p0 ( optlc_net_109 ) ) ;
+    .out ( chanx_left_out[1] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size5_1_2 mux_left_track_7 (
     .in ( { chany_top_in[17] , left_top_grid_pin_43_[0] , 
         left_top_grid_pin_45_[0] , left_top_grid_pin_47_[0] , 
         left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size5_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_3_sram_inv ) , 
-    .out ( chanx_left_out[3] ) , .p0 ( optlc_net_109 ) ) ;
+    .out ( chanx_left_out[3] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size5_mem_2_2 mem_top_track_2 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size5_mem_0_ccff_tail ) , 
@@ -11840,27 +11532,26 @@ mux_tree_tapbuf_size3_9 mux_top_track_8 (
         chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size3_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_0_sram_inv ) ,
-    .out ( { ropt_net_121 } ) ,
-    .p0 ( optlc_net_110 ) ) ;
+    .out ( { ropt_net_89 } ) ,
+    .p0 ( optlc_net_81 ) ) ;
 mux_tree_tapbuf_size3_2_3 mux_top_track_24 (
     .in ( { top_left_grid_pin_34_[0] , top_right_grid_pin_1_[0] , 
         chanx_left_in[8] } ) ,
     .sram ( mux_tree_tapbuf_size3_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_1_sram_inv ) , 
-    .out ( chany_top_out[12] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[12] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size3_1_3 mux_left_track_9 (
     .in ( { chany_top_in[16] , left_top_grid_pin_42_[0] , 
         left_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size3_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_2_sram_inv ) , 
-    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_78 ) ) ;
 mux_tree_tapbuf_size3_0_4 mux_left_track_25 (
     .in ( { chany_top_in[8] , left_top_grid_pin_42_[0] , 
         left_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size3_3_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size3_3_sram_inv ) ,
-    .out ( { ropt_net_117 } ) ,
-    .p0 ( optlc_net_107 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size3_3_sram_inv ) , 
+    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_81 ) ) ;
 mux_tree_tapbuf_size3_mem_9 mem_top_track_8 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size5_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size3_mem_0_ccff_tail ) , 
@@ -11885,112 +11576,112 @@ mux_tree_tapbuf_size2_8_1 mux_top_track_10 (
     .in ( { top_left_grid_pin_35_[0] , chanx_left_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size2_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_0_sram_inv ) , 
-    .out ( chany_top_out[5] ) , .p0 ( optlc_net_110 ) ) ;
+    .out ( chany_top_out[5] ) , .p0 ( optlc_net_81 ) ) ;
 mux_tree_tapbuf_size2_9_1 mux_top_track_12 (
     .in ( { top_left_grid_pin_36_[0] , chanx_left_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size2_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_1_sram_inv ) , 
-    .out ( chany_top_out[6] ) , .p0 ( optlc_net_110 ) ) ;
+    .out ( chany_top_out[6] ) , .p0 ( optlc_net_81 ) ) ;
 mux_tree_tapbuf_size2_10_1 mux_top_track_14 (
     .in ( { top_left_grid_pin_37_[0] , chanx_left_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size2_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_2_sram_inv ) , 
-    .out ( chany_top_out[7] ) , .p0 ( optlc_net_110 ) ) ;
+    .out ( chany_top_out[7] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_11 mux_top_track_16 (
     .in ( { top_left_grid_pin_38_[0] , chanx_left_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size2_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_3_sram_inv ) , 
-    .out ( chany_top_out[8] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[8] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_12 mux_top_track_18 (
     .in ( { top_left_grid_pin_39_[0] , chanx_left_in[11] } ) ,
     .sram ( mux_tree_tapbuf_size2_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_4_sram_inv ) , 
-    .out ( chany_top_out[9] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[9] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_13 mux_top_track_20 (
     .in ( { top_left_grid_pin_40_[0] , chanx_left_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size2_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_5_sram_inv ) , 
-    .out ( chany_top_out[10] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[10] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_14 mux_top_track_22 (
     .in ( { top_left_grid_pin_41_[0] , chanx_left_in[9] } ) ,
     .sram ( mux_tree_tapbuf_size2_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_6_sram_inv ) , 
-    .out ( chany_top_out[11] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[11] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_15 mux_top_track_26 (
     .in ( { top_left_grid_pin_35_[0] , chanx_left_in[7] } ) ,
     .sram ( mux_tree_tapbuf_size2_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_7_sram_inv ) , 
-    .out ( chany_top_out[13] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[13] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size2_16 mux_top_track_28 (
     .in ( { top_left_grid_pin_36_[0] , chanx_left_in[6] } ) ,
     .sram ( mux_tree_tapbuf_size2_8_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_8_sram_inv ) , 
-    .out ( chany_top_out[14] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[14] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_17 mux_top_track_30 (
     .in ( { top_left_grid_pin_37_[0] , chanx_left_in[5] } ) ,
     .sram ( mux_tree_tapbuf_size2_9_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_9_sram_inv ) , 
-    .out ( chany_top_out[15] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[15] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_18 mux_top_track_32 (
     .in ( { top_left_grid_pin_38_[0] , chanx_left_in[4] } ) ,
     .sram ( mux_tree_tapbuf_size2_10_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_10_sram_inv ) , 
-    .out ( chany_top_out[16] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[16] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_19 mux_top_track_34 (
     .in ( { top_left_grid_pin_39_[0] , chanx_left_in[3] } ) ,
     .sram ( mux_tree_tapbuf_size2_11_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_11_sram_inv ) , 
-    .out ( chany_top_out[17] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[17] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_20 mux_top_track_36 (
     .in ( { top_left_grid_pin_40_[0] , chanx_left_in[2] } ) ,
     .sram ( mux_tree_tapbuf_size2_12_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_12_sram_inv ) , 
-    .out ( chany_top_out[18] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[18] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_21 mux_top_track_38 (
     .in ( { top_left_grid_pin_41_[0] , chanx_left_in[1] } ) ,
     .sram ( mux_tree_tapbuf_size2_13_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_13_sram_inv ) , 
-    .out ( chany_top_out[19] ) , .p0 ( optlc_net_108 ) ) ;
+    .out ( chany_top_out[19] ) , .p0 ( optlc_net_79 ) ) ;
 mux_tree_tapbuf_size2_0_4 mux_left_track_11 (
     .in ( { chany_top_in[15] , left_top_grid_pin_43_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_14_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_14_sram_inv ) , 
-    .out ( chanx_left_out[5] ) , .p0 ( optlc_net_109 ) ) ;
+    .out ( chanx_left_out[5] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size2_1_4 mux_left_track_13 (
     .in ( { chany_top_in[14] , left_top_grid_pin_44_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_15_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_15_sram_inv ) , 
-    .out ( chanx_left_out[6] ) , .p0 ( optlc_net_109 ) ) ;
+    .out ( chanx_left_out[6] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size2_2_4 mux_left_track_15 (
     .in ( { chany_top_in[13] , left_top_grid_pin_45_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_16_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_16_sram_inv ) , 
-    .out ( chanx_left_out[7] ) , .p0 ( optlc_net_109 ) ) ;
+    .out ( chanx_left_out[7] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size2_3_4 mux_left_track_17 (
     .in ( { chany_top_in[12] , left_top_grid_pin_46_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_17_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_17_sram_inv ) , 
-    .out ( chanx_left_out[8] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chanx_left_out[8] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size2_4_3 mux_left_track_19 (
     .in ( { chany_top_in[11] , left_top_grid_pin_47_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_18_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_18_sram_inv ) , 
-    .out ( chanx_left_out[9] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chanx_left_out[9] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size2_5_3 mux_left_track_21 (
     .in ( { chany_top_in[10] , left_top_grid_pin_48_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_19_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_19_sram_inv ) , 
-    .out ( chanx_left_out[10] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chanx_left_out[10] ) , .p0 ( optlc_net_78 ) ) ;
 mux_tree_tapbuf_size2_6_2 mux_left_track_23 (
     .in ( { chany_top_in[9] , left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_20_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_20_sram_inv ) , 
-    .out ( chanx_left_out[11] ) , .p0 ( optlc_net_107 ) ) ;
+    .out ( chanx_left_out[11] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size2_7_1 mux_left_track_27 (
     .in ( { chany_top_in[7] , left_top_grid_pin_43_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_21_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_21_sram_inv ) , 
-    .out ( chanx_left_out[13] ) , .p0 ( optlc_net_109 ) ) ;
+    .out ( chanx_left_out[13] ) , .p0 ( optlc_net_80 ) ) ;
 mux_tree_tapbuf_size2_mem_8_1 mem_top_track_10 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size3_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size2_mem_0_ccff_tail ) , 
@@ -12098,59 +11789,49 @@ mux_tree_tapbuf_size2_mem_6_2 mem_left_track_23 ( .prog_clk ( prog_clk ) ,
     .mem_outb ( mux_tree_tapbuf_size2_20_sram_inv ) ) ;
 mux_tree_tapbuf_size2_mem_7_1 mem_left_track_27 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size3_mem_3_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_124 } ) ,
+    .ccff_tail ( { ropt_net_88 } ) ,
     .mem_out ( mux_tree_tapbuf_size2_21_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size2_21_sram_inv ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_732 ( .A ( ropt_net_127 ) , 
-    .X ( chanx_left_out[19] ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_99 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_107 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_101 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_108 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_733 ( .A ( ropt_net_128 ) , 
-    .X ( chanx_left_out[12] ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_103 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_109 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_105 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_110 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_722 ( .A ( ropt_net_115 ) , 
-    .X ( ropt_net_129 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_723 ( .A ( ropt_net_116 ) , 
-    .X ( ropt_net_130 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_734 ( .A ( ropt_net_129 ) , 
-    .X ( chanx_left_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_735 ( .A ( ropt_net_130 ) , 
-    .X ( chany_top_out[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_736 ( .A ( ropt_net_131 ) , 
-    .X ( chany_top_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_737 ( .A ( ropt_net_132 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_676 ( .A ( ropt_net_91 ) , 
     .X ( chanx_left_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_724 ( .A ( ropt_net_117 ) , 
-    .X ( ropt_net_128 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_725 ( .A ( ropt_net_118 ) , 
-    .X ( ropt_net_127 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_726 ( .A ( chany_top_in[3] ) , 
-    .X ( ropt_net_133 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_727 ( .A ( chany_top_in[5] ) , 
-    .X ( ropt_net_134 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_82 ( .A ( chany_top_in[1] ) , 
-    .X ( ropt_net_118 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_83 ( .A ( chany_top_in[4] ) , 
-    .X ( ropt_net_115 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_738 ( .A ( ropt_net_133 ) , 
-    .X ( chanx_left_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_728 ( .A ( ropt_net_121 ) , 
-    .X ( ropt_net_131 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_729 ( .A ( chany_top_in[6] ) , 
-    .X ( ropt_net_132 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_730 ( .A ( chany_top_in[2] ) , 
-    .X ( ropt_net_135 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_731 ( .A ( ropt_net_124 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_677 ( .A ( ropt_net_92 ) , 
     .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_739 ( .A ( ropt_net_134 ) , 
+sky130_fd_sc_hd__conb_1 optlc_72 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_78 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_74 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_79 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_76 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
+    .HI ( optlc_net_80 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_6__5 ( .A ( chany_top_in[6] ) , 
+    .X ( ropt_net_90 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_678 ( .A ( ropt_net_93 ) , 
     .X ( chanx_left_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_740 ( .A ( ropt_net_135 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_679 ( .A ( ropt_net_94 ) , 
     .X ( chanx_left_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_680 ( .A ( ropt_net_95 ) , 
+    .X ( chanx_left_out[17] ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_78 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
+    .HI ( optlc_net_81 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_668 ( .A ( chany_top_in[5] ) , 
+    .X ( ropt_net_93 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_669 ( .A ( ropt_net_84 ) , 
+    .X ( chanx_left_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_63 ( .A ( chany_top_in[1] ) , 
+    .X ( ropt_net_85 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_670 ( .A ( ropt_net_85 ) , 
+    .X ( chanx_left_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_67 ( .A ( chany_top_in[4] ) , 
+    .X ( ropt_net_84 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_671 ( .A ( chany_top_in[3] ) , 
+    .X ( ropt_net_95 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_672 ( .A ( chany_top_in[2] ) , 
+    .X ( ropt_net_94 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_673 ( .A ( ropt_net_88 ) , 
+    .X ( ropt_net_92 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_674 ( .A ( ropt_net_89 ) , 
+    .X ( chany_top_out[4] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_675 ( .A ( ropt_net_90 ) , 
+    .X ( ropt_net_91 ) ) ;
 endmodule
 
 
@@ -12421,17 +12102,13 @@ output [0:0] out ;
 input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_28_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_8 mux_l2_in_0_ ( .A0 ( p0 ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -12448,13 +12125,17 @@ output [0:0] out ;
 input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_27_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l2_in_0_ ( .A0 ( p0 ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_73 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -12473,10 +12154,10 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) ,
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 FTB_27__52 ( .A ( mem_out[2] ) , 
-    .X ( net_net_98 ) ) ;
-sky130_fd_sc_hd__dlygate4sd1_1 BUFT_RR_98 ( .A ( net_net_98 ) , 
-    .X ( net_net_97 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_148 ( .A ( net_net_97 ) , 
+    .X ( net_net_95 ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 BUFT_RR_95 ( .A ( net_net_95 ) , 
+    .X ( net_net_94 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_130 ( .A ( net_net_94 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -12588,9 +12269,12 @@ input  p0 ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 
 const1_25_4 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -12598,9 +12282,10 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) ,
     .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ ( .A0 ( p0 ) , .A1 ( in[3] ) , 
     .S ( sram[1] ) , .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l3_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .S ( sram[2] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .S ( sram[2] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_3_X[0] ) ) ;
 endmodule
 
 
@@ -12634,7 +12319,7 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_3_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_136 ( 
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_137 ( 
     .A ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -12658,6 +12343,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 
 const1_23_4 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -12669,10 +12356,6 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_3_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_72 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .X ( BUF_net_72 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_135 ( .A ( BUF_net_72 ) , 
-    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -12794,8 +12477,10 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_71 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .X ( out[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_69 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .X ( BUF_net_69 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_136 ( .A ( BUF_net_69 ) , 
+    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -12821,8 +12506,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
 
 const1_21_4 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -12843,6 +12526,10 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_68 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .X ( BUF_net_68 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_135 ( .A ( BUF_net_68 ) , 
+    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -12864,12 +12551,9 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
 
 const1_20_4 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -12886,10 +12570,9 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_5_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
+sky130_fd_sc_hd__mux2_8 mux_l3_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .S ( sram[2] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .S ( sram[2] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -13507,6 +13190,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 
 const1_9_5 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -13521,8 +13206,6 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_132 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -13663,8 +13346,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 
 const1_5_6 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -13679,6 +13360,8 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_62 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -13935,7 +13618,7 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
 sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_2 mux_l3_in_0_ ( 
+sky130_fd_sc_hd__mux2_8 mux_l3_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , .X ( out[0] ) ) ;
 endmodule
@@ -14119,34 +13802,33 @@ mux_tree_tapbuf_size6_2_1 mux_right_track_0 (
         chanx_left_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size6_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_0_sram_inv ) , 
-    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_164 ) ) ;
+    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_163 ) ) ;
 mux_tree_tapbuf_size6_3_1 mux_right_track_4 (
     .in ( { right_top_grid_pin_1_[0] , chany_bottom_in[3] , 
         chany_bottom_in[10] , chany_bottom_in[17] , chanx_left_in[5] , 
         chanx_left_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size6_1_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size6_1_sram_inv ) ,
-    .out ( { ropt_net_175 } ) ,
-    .p0 ( optlc_net_164 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size6_1_sram_inv ) , 
+    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_163 ) ) ;
 mux_tree_tapbuf_size6_7 mux_right_track_8 (
     .in ( { right_top_grid_pin_1_[0] , chany_bottom_in[2] , 
         chany_bottom_in[9] , chany_bottom_in[16] , chanx_left_in[6] , 
         chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size6_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_2_sram_inv ) , 
-    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_167 ) ) ;
+    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_163 ) ) ;
 mux_tree_tapbuf_size6_0_3 mux_left_track_5 (
     .in ( { chanx_right_in[5] , chanx_right_in[14] , chany_bottom_in[1] , 
         chany_bottom_in[8] , chany_bottom_in[15] , left_top_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_3_sram_inv ) , 
-    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_165 ) ) ;
+    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_162 ) ) ;
 mux_tree_tapbuf_size6_1_1 mux_left_track_9 (
     .in ( { chanx_right_in[6] , chanx_right_in[16] , chany_bottom_in[2] , 
         chany_bottom_in[9] , chany_bottom_in[16] , left_top_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_4_sram_inv ) , 
-    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_164 ) ) ;
+    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_162 ) ) ;
 mux_tree_tapbuf_size6_mem_2_1 mem_right_track_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
@@ -14176,45 +13858,45 @@ mux_tree_tapbuf_size5_5 mux_right_track_2 (
     .in ( { chany_bottom_in[4] , chany_bottom_in[11] , chany_bottom_in[18] , 
         chanx_left_in[4] , chanx_left_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size5_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size5_0_sram_inv ) , 
-    .out ( chanx_right_out[1] ) , .p0 ( optlc_net_164 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size5_0_sram_inv ) ,
+    .out ( { ropt_net_172 } ) ,
+    .p0 ( optlc_net_163 ) ) ;
 mux_tree_tapbuf_size5_4 mux_right_track_16 (
     .in ( { chany_bottom_in[1] , chany_bottom_in[8] , chany_bottom_in[15] , 
         chanx_left_in[8] , chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size5_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_1_sram_inv ) , 
-    .out ( chanx_right_out[8] ) , .p0 ( optlc_net_164 ) ) ;
+    .out ( chanx_right_out[8] ) , .p0 ( optlc_net_165 ) ) ;
 mux_tree_tapbuf_size5_6 mux_right_track_24 (
     .in ( { chany_bottom_in[0] , chany_bottom_in[7] , chany_bottom_in[14] , 
         chanx_left_in[9] , chanx_left_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size5_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_2_sram_inv ) , 
-    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_167 ) ) ;
+    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_165 ) ) ;
 mux_tree_tapbuf_size5_0_2 mux_left_track_1 (
     .in ( { chanx_right_in[2] , chanx_right_in[12] , chany_bottom_in[6] , 
         chany_bottom_in[13] , left_top_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size5_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_3_sram_inv ) , 
-    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_165 ) ) ;
+    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_162 ) ) ;
 mux_tree_tapbuf_size5_3_1 mux_left_track_3 (
     .in ( { chanx_right_in[4] , chanx_right_in[13] , chany_bottom_in[0] , 
         chany_bottom_in[7] , chany_bottom_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size5_4_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size5_4_sram_inv ) ,
-    .out ( { ropt_net_174 } ) ,
-    .p0 ( optlc_net_164 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size5_4_sram_inv ) , 
+    .out ( chanx_left_out[1] ) , .p0 ( optlc_net_162 ) ) ;
 mux_tree_tapbuf_size5_1_1 mux_left_track_17 (
     .in ( { chanx_right_in[8] , chanx_right_in[17] , chany_bottom_in[3] , 
         chany_bottom_in[10] , chany_bottom_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size5_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_5_sram_inv ) , 
-    .out ( chanx_left_out[8] ) , .p0 ( optlc_net_168 ) ) ;
+    .out ( chanx_left_out[8] ) , .p0 ( optlc_net_164 ) ) ;
 mux_tree_tapbuf_size5_2_1 mux_left_track_25 (
     .in ( { chanx_right_in[9] , chanx_right_in[18] , chany_bottom_in[4] , 
         chany_bottom_in[11] , chany_bottom_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size5_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_6_sram_inv ) , 
-    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_168 ) ) ;
+    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_164 ) ) ;
 mux_tree_tapbuf_size5_mem_5 mem_right_track_2 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size5_mem_0_ccff_tail ) , 
@@ -14254,43 +13936,43 @@ mux_tree_tapbuf_size3_8 mux_right_track_32 (
     .in ( { chany_bottom_in[6] , chany_bottom_in[13] , chanx_left_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size3_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_0_sram_inv ) , 
-    .out ( chanx_right_out[16] ) , .p0 ( optlc_net_167 ) ) ;
+    .out ( chanx_right_out[16] ) , .p0 ( optlc_net_165 ) ) ;
 mux_tree_tapbuf_size3_0_3 mux_bottom_track_13 (
     .in ( { chanx_right_in[10] , bottom_left_grid_pin_36_[0] , 
         chanx_left_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size3_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_1_sram_inv ) , 
-    .out ( chany_bottom_out[6] ) , .p0 ( optlc_net_165 ) ) ;
+    .out ( chany_bottom_out[6] ) , .p0 ( optlc_net_164 ) ) ;
 mux_tree_tapbuf_size3_1_2 mux_bottom_track_15 (
     .in ( { chanx_right_in[12] , bottom_left_grid_pin_37_[0] , 
         chanx_left_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size3_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_2_sram_inv ) , 
-    .out ( chany_bottom_out[7] ) , .p0 ( optlc_net_165 ) ) ;
+    .out ( chany_bottom_out[7] ) , .p0 ( optlc_net_164 ) ) ;
 mux_tree_tapbuf_size3_2_2 mux_bottom_track_17 (
     .in ( { chanx_right_in[13] , bottom_left_grid_pin_38_[0] , 
         chanx_left_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size3_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_3_sram_inv ) , 
-    .out ( chany_bottom_out[8] ) , .p0 ( optlc_net_165 ) ) ;
+    .out ( chany_bottom_out[8] ) , .p0 ( optlc_net_163 ) ) ;
 mux_tree_tapbuf_size3_3_2 mux_bottom_track_19 (
     .in ( { chanx_right_in[14] , bottom_left_grid_pin_39_[0] , 
         chanx_left_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size3_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_4_sram_inv ) , 
-    .out ( chany_bottom_out[9] ) , .p0 ( optlc_net_165 ) ) ;
+    .out ( chany_bottom_out[9] ) , .p0 ( optlc_net_162 ) ) ;
 mux_tree_tapbuf_size3_4_1 mux_bottom_track_21 (
     .in ( { chanx_right_in[16] , bottom_left_grid_pin_40_[0] , 
         chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size3_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_5_sram_inv ) , 
-    .out ( chany_bottom_out[10] ) , .p0 ( optlc_net_163 ) ) ;
+    .out ( chany_bottom_out[10] ) , .p0 ( optlc_net_162 ) ) ;
 mux_tree_tapbuf_size3_5_1 mux_bottom_track_23 (
     .in ( { chanx_right_in[17] , bottom_left_grid_pin_41_[0] , 
         chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size3_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_6_sram_inv ) , 
-    .out ( chany_bottom_out[11] ) , .p0 ( optlc_net_163 ) ) ;
+    .out ( chany_bottom_out[11] ) , .p0 ( optlc_net_162 ) ) ;
 mux_tree_tapbuf_size3_mem_8 mem_right_track_32 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size5_mem_2_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size3_mem_0_ccff_tail ) , 
@@ -14332,30 +14014,30 @@ mux_tree_tapbuf_size7_0_3 mux_bottom_track_1 (
         bottom_left_grid_pin_40_[0] , chanx_left_in[1] , chanx_left_in[2] } ) ,
     .sram ( mux_tree_tapbuf_size7_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_0_sram_inv ) ,
-    .out ( { ropt_net_179 } ) ,
-    .p0 ( optlc_net_165 ) ) ;
+    .out ( { ropt_net_175 } ) ,
+    .p0 ( optlc_net_162 ) ) ;
 mux_tree_tapbuf_size7_1_3 mux_bottom_track_3 (
     .in ( { chanx_right_in[4] , bottom_left_grid_pin_35_[0] , 
         bottom_left_grid_pin_37_[0] , bottom_left_grid_pin_39_[0] , 
         bottom_left_grid_pin_41_[0] , chanx_left_in[3] , chanx_left_in[4] } ) ,
     .sram ( mux_tree_tapbuf_size7_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_1_sram_inv ) , 
-    .out ( chany_bottom_out[1] ) , .p0 ( optlc_net_168 ) ) ;
+    .out ( chany_bottom_out[1] ) , .p0 ( optlc_net_164 ) ) ;
 mux_tree_tapbuf_size7_2_2 mux_bottom_track_5 (
     .in ( { chanx_right_in[5] , bottom_left_grid_pin_34_[0] , 
         bottom_left_grid_pin_36_[0] , bottom_left_grid_pin_38_[0] , 
         bottom_left_grid_pin_40_[0] , chanx_left_in[5] , chanx_left_in[7] } ) ,
     .sram ( mux_tree_tapbuf_size7_2_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size7_2_sram_inv ) , 
-    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_168 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size7_2_sram_inv ) ,
+    .out ( { ropt_net_207 } ) ,
+    .p0 ( optlc_net_164 ) ) ;
 mux_tree_tapbuf_size7_7 mux_bottom_track_7 (
     .in ( { chanx_right_in[6] , bottom_left_grid_pin_35_[0] , 
         bottom_left_grid_pin_37_[0] , bottom_left_grid_pin_39_[0] , 
         bottom_left_grid_pin_41_[0] , chanx_left_in[6] , chanx_left_in[11] } ) ,
     .sram ( mux_tree_tapbuf_size7_3_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size7_3_sram_inv ) ,
-    .out ( { ropt_net_172 } ) ,
-    .p0 ( optlc_net_168 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size7_3_sram_inv ) , 
+    .out ( chany_bottom_out[3] ) , .p0 ( optlc_net_164 ) ) ;
 mux_tree_tapbuf_size7_mem_0_3 mem_bottom_track_1 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size3_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size7_mem_0_ccff_tail ) , 
@@ -14381,20 +14063,20 @@ mux_tree_tapbuf_size4_2_1 mux_bottom_track_9 (
         chanx_left_in[8] , chanx_left_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size4_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_0_sram_inv ) , 
-    .out ( chany_bottom_out[4] ) , .p0 ( optlc_net_168 ) ) ;
+    .out ( chany_bottom_out[4] ) , .p0 ( optlc_net_164 ) ) ;
 mux_tree_tapbuf_size4_0_2 mux_bottom_track_11 (
     .in ( { chanx_right_in[9] , bottom_left_grid_pin_35_[0] , 
         chanx_left_in[9] , chanx_left_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size4_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_1_sram_inv ) ,
-    .out ( { ropt_net_180 } ) ,
-    .p0 ( optlc_net_168 ) ) ;
+    .out ( { ropt_net_176 } ) ,
+    .p0 ( optlc_net_164 ) ) ;
 mux_tree_tapbuf_size4_1_1 mux_bottom_track_25 (
     .in ( { chanx_right_in[18] , chanx_right_in[19] , 
         bottom_left_grid_pin_34_[0] , chanx_left_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size4_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_2_sram_inv ) , 
-    .out ( chany_bottom_out[12] ) , .p0 ( optlc_net_167 ) ) ;
+    .out ( chany_bottom_out[12] ) , .p0 ( optlc_net_165 ) ) ;
 mux_tree_tapbuf_size4_7 mux_left_track_33 (
     .in ( { chanx_right_in[10] , chany_bottom_in[5] , chany_bottom_in[12] , 
         chany_bottom_in[19] } ) ,
@@ -14417,45 +14099,45 @@ mux_tree_tapbuf_size4_mem_1_1 mem_bottom_track_25 ( .prog_clk ( prog_clk ) ,
     .mem_out ( mux_tree_tapbuf_size4_2_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size4_2_sram_inv ) ) ;
 mux_tree_tapbuf_size4_mem_7 mem_left_track_33 ( .prog_clk ( prog_clk ) , 
-    .ccff_head ( mux_tree_tapbuf_size5_mem_6_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_194 } ) ,
-    .mem_out ( mux_tree_tapbuf_size4_3_sram ) , 
+    .ccff_head ( mux_tree_tapbuf_size5_mem_6_ccff_tail ) , 
+    .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_tapbuf_size4_3_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size4_3_sram_inv ) ) ;
 mux_tree_tapbuf_size2_0_3 mux_bottom_track_27 (
     .in ( { chanx_right_in[15] , bottom_left_grid_pin_35_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size2_0_sram_inv ) , 
-    .out ( chany_bottom_out[13] ) , .p0 ( optlc_net_166 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size2_0_sram_inv ) ,
+    .out ( { ropt_net_169 } ) ,
+    .p0 ( optlc_net_165 ) ) ;
 mux_tree_tapbuf_size2_1_3 mux_bottom_track_29 (
     .in ( { chanx_right_in[11] , bottom_left_grid_pin_36_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_1_sram_inv ) , 
-    .out ( chany_bottom_out[14] ) , .p0 ( optlc_net_167 ) ) ;
+    .out ( chany_bottom_out[14] ) , .p0 ( optlc_net_165 ) ) ;
 mux_tree_tapbuf_size2_2_3 mux_bottom_track_31 (
     .in ( { chanx_right_in[7] , bottom_left_grid_pin_37_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_2_sram_inv ) , 
-    .out ( chany_bottom_out[15] ) , .p0 ( optlc_net_166 ) ) ;
+    .out ( chany_bottom_out[15] ) , .p0 ( optlc_net_163 ) ) ;
 mux_tree_tapbuf_size2_3_3 mux_bottom_track_33 (
     .in ( { chanx_right_in[3] , bottom_left_grid_pin_38_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_3_sram_inv ) , 
-    .out ( chany_bottom_out[16] ) , .p0 ( optlc_net_166 ) ) ;
+    .out ( chany_bottom_out[16] ) , .p0 ( optlc_net_163 ) ) ;
 mux_tree_tapbuf_size2_4_2 mux_bottom_track_35 (
     .in ( { chanx_right_in[1] , bottom_left_grid_pin_39_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_4_sram_inv ) , 
-    .out ( chany_bottom_out[17] ) , .p0 ( optlc_net_166 ) ) ;
+    .out ( chany_bottom_out[17] ) , .p0 ( optlc_net_163 ) ) ;
 mux_tree_tapbuf_size2_5_2 mux_bottom_track_37 (
     .in ( { chanx_right_in[0] , bottom_left_grid_pin_40_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_5_sram_inv ) , 
-    .out ( chany_bottom_out[18] ) , .p0 ( optlc_net_166 ) ) ;
+    .out ( chany_bottom_out[18] ) , .p0 ( optlc_net_162 ) ) ;
 mux_tree_tapbuf_size2_14 mux_bottom_track_39 (
     .in ( { bottom_left_grid_pin_41_[0] , chanx_left_in[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_6_sram_inv ) , 
-    .out ( chany_bottom_out[19] ) , .p0 ( optlc_net_165 ) ) ;
+    .out ( chany_bottom_out[19] ) , .p0 ( optlc_net_162 ) ) ;
 mux_tree_tapbuf_size2_mem_0_3 mem_bottom_track_27 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size4_mem_2_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size2_mem_0_ccff_tail ) , 
@@ -14492,139 +14174,139 @@ mux_tree_tapbuf_size2_mem_14 mem_bottom_track_39 ( .prog_clk ( prog_clk ) ,
     .mem_out ( mux_tree_tapbuf_size2_6_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size2_6_sram_inv ) ) ;
 sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__0 ( .A ( chanx_right_in[2] ) , 
-    .X ( ropt_net_196 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_151 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .X ( ropt_net_192 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_2__1 ( .A ( chanx_right_in[4] ) , 
+    .X ( ropt_net_185 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_3__2 ( .A ( chanx_right_in[5] ) , 
+    .X ( ropt_net_189 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_150 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_162 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_152 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
     .HI ( optlc_net_163 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_3__2 ( .A ( chanx_right_in[5] ) , 
-    .X ( ropt_net_199 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_4__3 ( .A ( chanx_right_in[6] ) , 
-    .X ( ropt_net_198 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_5__4 ( .A ( chanx_right_in[8] ) , 
-    .X ( ropt_net_197 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_153 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_164 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_155 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_165 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_820 ( .A ( ropt_net_202 ) , 
-    .X ( chanx_left_out[19] ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_157 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_166 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_159 ( .LO ( SYNOPSYS_UNCONNECTED_5 ) , 
-    .HI ( optlc_net_167 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_161 ( .LO ( SYNOPSYS_UNCONNECTED_6 ) , 
-    .HI ( optlc_net_168 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_790 ( .A ( chanx_right_in[9] ) , 
-    .X ( ropt_net_217 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_791 ( .A ( chanx_right_in[10] ) , 
-    .X ( ropt_net_214 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_792 ( .A ( ropt_net_172 ) , 
-    .X ( ropt_net_208 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_793 ( .A ( chanx_left_in[16] ) , 
-    .X ( ropt_net_218 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_794 ( .A ( ropt_net_174 ) , 
-    .X ( chanx_left_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_795 ( .A ( ropt_net_175 ) , 
-    .X ( chanx_right_out[2] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_796 ( .A ( ropt_net_176 ) , 
-    .X ( ropt_net_205 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_797 ( .A ( ropt_net_177 ) , 
-    .X ( chanx_left_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_798 ( .A ( chanx_left_in[9] ) , 
-    .X ( ropt_net_219 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_799 ( .A ( ropt_net_179 ) , 
-    .X ( ropt_net_204 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_800 ( .A ( ropt_net_180 ) , 
-    .X ( ropt_net_213 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_801 ( .A ( chanx_right_in[13] ) , 
-    .X ( ropt_net_215 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_802 ( .A ( chanx_left_in[17] ) , 
-    .X ( chanx_right_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_803 ( .A ( ropt_net_183 ) , 
-    .X ( ropt_net_206 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_804 ( .A ( chanx_left_in[4] ) , 
-    .X ( chanx_right_out[5] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_76 ( .A ( chanx_right_in[4] ) , 
-    .X ( BUF_net_76 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_821 ( .A ( ropt_net_203 ) , 
-    .X ( chanx_left_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_822 ( .A ( ropt_net_204 ) , 
-    .X ( chany_bottom_out[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_805 ( .A ( chanx_left_in[13] ) , 
-    .X ( chanx_right_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_823 ( .A ( ropt_net_205 ) , 
-    .X ( chanx_left_out[13] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_81 ( .A ( chanx_right_in[14] ) , 
-    .X ( ropt_net_195 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_824 ( .A ( ropt_net_206 ) , 
-    .X ( chanx_right_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_825 ( .A ( ropt_net_207 ) , 
-    .X ( chanx_left_out[15] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_84 ( .A ( chanx_right_in[18] ) , 
-    .X ( ropt_net_188 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_85 ( .A ( chanx_left_in[2] ) , 
-    .X ( ropt_net_183 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_826 ( .A ( ropt_net_208 ) , 
-    .X ( chany_bottom_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_827 ( .A ( ropt_net_209 ) , 
-    .X ( chanx_left_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_828 ( .A ( ropt_net_210 ) , 
-    .X ( chanx_left_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_829 ( .A ( ropt_net_211 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_830 ( .A ( ropt_net_212 ) , 
-    .X ( chanx_left_out[6] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_91 ( .A ( chanx_left_in[12] ) , 
-    .X ( BUF_net_91 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_831 ( .A ( ropt_net_213 ) , 
-    .X ( chany_bottom_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_832 ( .A ( ropt_net_214 ) , 
-    .X ( chanx_left_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_833 ( .A ( ropt_net_215 ) , 
-    .X ( chanx_left_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_834 ( .A ( ropt_net_216 ) , 
-    .X ( chanx_left_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_835 ( .A ( ropt_net_217 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_6__5 ( .A ( chanx_right_in[9] ) , 
     .X ( chanx_left_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_806 ( .A ( chanx_left_in[14] ) , 
-    .X ( chanx_right_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_807 ( .A ( chanx_left_in[5] ) , 
-    .X ( chanx_right_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_808 ( .A ( ropt_net_188 ) , 
-    .X ( ropt_net_202 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_809 ( .A ( chanx_left_in[10] ) , 
-    .X ( chanx_right_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_810 ( .A ( chanx_left_in[6] ) , 
-    .X ( chanx_right_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_811 ( .A ( chanx_left_in[18] ) , 
-    .X ( chanx_right_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_812 ( .A ( chanx_right_in[17] ) , 
-    .X ( ropt_net_216 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_813 ( .A ( chanx_left_in[8] ) , 
-    .X ( chanx_right_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_814 ( .A ( ropt_net_194 ) , 
-    .X ( ropt_net_211 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_815 ( .A ( ropt_net_195 ) , 
-    .X ( ropt_net_207 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_836 ( .A ( ropt_net_218 ) , 
-    .X ( chanx_right_out[17] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_129 ( .A ( chanx_right_in[12] ) , 
-    .X ( ropt_net_176 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_138 ( .A ( BUF_net_76 ) , 
-    .X ( chanx_left_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_816 ( .A ( ropt_net_196 ) , 
+sky130_fd_sc_hd__conb_1 optlc_154 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
+    .HI ( optlc_net_164 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_156 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
+    .HI ( optlc_net_165 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_9__8 ( .A ( chanx_right_in[13] ) , 
+    .X ( chanx_left_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_751 ( .A ( chanx_right_in[10] ) , 
     .X ( ropt_net_210 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_817 ( .A ( ropt_net_197 ) , 
-    .X ( ropt_net_209 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_818 ( .A ( ropt_net_198 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_752 ( .A ( ropt_net_169 ) , 
     .X ( ropt_net_203 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_819 ( .A ( ropt_net_199 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_753 ( .A ( chanx_right_in[16] ) , 
+    .X ( ropt_net_197 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_754 ( .A ( chanx_right_in[12] ) , 
+    .X ( ropt_net_208 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_755 ( .A ( ropt_net_172 ) , 
+    .X ( ropt_net_202 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_779 ( .A ( ropt_net_195 ) , 
+    .X ( chany_bottom_out[5] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_16__15 ( .A ( chanx_left_in[5] ) , 
+    .X ( aps_rename_2_ ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_756 ( .A ( ropt_net_173 ) , 
+    .X ( ropt_net_196 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_757 ( .A ( chanx_left_in[9] ) , 
     .X ( ropt_net_212 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_143 ( .A ( chanx_right_in[16] ) , 
-    .X ( ropt_net_177 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_837 ( .A ( ropt_net_219 ) , 
-    .X ( chanx_right_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_147 ( .A ( BUF_net_91 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_758 ( .A ( ropt_net_175 ) , 
+    .X ( ropt_net_211 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_759 ( .A ( ropt_net_176 ) , 
+    .X ( ropt_net_195 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_760 ( .A ( chanx_right_in[14] ) , 
+    .X ( chanx_left_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_761 ( .A ( chanx_left_in[14] ) , 
+    .X ( ropt_net_213 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_762 ( .A ( chanx_left_in[12] ) , 
+    .X ( ropt_net_209 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_763 ( .A ( chanx_left_in[17] ) , 
+    .X ( chanx_right_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_780 ( .A ( ropt_net_196 ) , 
+    .X ( chanx_left_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_764 ( .A ( chanx_right_in[18] ) , 
+    .X ( chanx_left_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_76 ( .A ( chanx_right_in[8] ) , 
+    .X ( ropt_net_184 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_765 ( .A ( chanx_left_in[8] ) , 
+    .X ( chanx_right_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_766 ( .A ( chanx_left_in[10] ) , 
+    .X ( ropt_net_214 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_781 ( .A ( ropt_net_197 ) , 
+    .X ( chanx_left_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_782 ( .A ( ropt_net_198 ) , 
+    .X ( chanx_left_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_785 ( .A ( ropt_net_199 ) , 
+    .X ( chanx_left_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_768 ( .A ( ropt_net_184 ) , 
+    .X ( chanx_left_out[9] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_83 ( .A ( chanx_left_in[4] ) , 
+    .X ( BUF_net_83 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_769 ( .A ( ropt_net_185 ) , 
+    .X ( ropt_net_198 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_770 ( .A ( ropt_net_186 ) , 
+    .X ( chanx_right_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_786 ( .A ( ropt_net_200 ) , 
+    .X ( chanx_right_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_787 ( .A ( ropt_net_201 ) , 
+    .X ( chanx_right_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_771 ( .A ( ropt_net_187 ) , 
+    .X ( ropt_net_200 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_788 ( .A ( ropt_net_202 ) , 
+    .X ( chanx_right_out[1] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_90 ( .A ( chanx_left_in[13] ) , 
+    .X ( ropt_net_188 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_790 ( .A ( ropt_net_203 ) , 
+    .X ( chany_bottom_out[13] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_92 ( .A ( chanx_left_in[16] ) , 
+    .X ( BUF_net_92 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_93 ( .A ( chanx_left_in[18] ) , 
+    .X ( ropt_net_191 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_772 ( .A ( ropt_net_188 ) , 
+    .X ( ropt_net_204 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_773 ( .A ( ropt_net_189 ) , 
+    .X ( chanx_left_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_775 ( .A ( ropt_net_190 ) , 
+    .X ( chanx_left_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_777 ( .A ( ropt_net_191 ) , 
+    .X ( chanx_right_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_778 ( .A ( ropt_net_192 ) , 
+    .X ( ropt_net_199 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_792 ( .A ( ropt_net_204 ) , 
+    .X ( chanx_right_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_114 ( .A ( BUF_net_83 ) , 
+    .X ( ropt_net_206 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_115 ( .A ( aps_rename_2_ ) , 
+    .X ( ropt_net_201 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_116 ( .A ( chanx_left_in[6] ) , 
+    .X ( ropt_net_187 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_793 ( .A ( ropt_net_205 ) , 
+    .X ( chanx_right_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_794 ( .A ( ropt_net_206 ) , 
+    .X ( chanx_right_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_796 ( .A ( ropt_net_207 ) , 
+    .X ( chany_bottom_out[2] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_126 ( .A ( chanx_right_in[6] ) , 
+    .X ( ropt_net_190 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_127 ( .A ( chanx_left_in[2] ) , 
+    .X ( ropt_net_186 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_802 ( .A ( ropt_net_208 ) , 
+    .X ( chanx_left_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_804 ( .A ( ropt_net_209 ) , 
     .X ( chanx_right_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_805 ( .A ( ropt_net_210 ) , 
+    .X ( chanx_left_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_806 ( .A ( ropt_net_211 ) , 
+    .X ( chany_bottom_out[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_144 ( .A ( chanx_right_in[17] ) , 
+    .X ( ropt_net_173 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_807 ( .A ( ropt_net_212 ) , 
+    .X ( chanx_right_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_808 ( .A ( ropt_net_213 ) , 
+    .X ( chanx_right_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_147 ( .A ( BUF_net_92 ) , 
+    .X ( ropt_net_205 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_809 ( .A ( ropt_net_214 ) , 
+    .X ( chanx_right_out[11] ) ) ;
 endmodule
 
 
@@ -14661,7 +14343,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_27__78 ( .A ( mem_out[2] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_27__78 ( .A ( mem_out[2] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -14680,7 +14362,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_26__77 ( .A ( mem_out[2] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_26__77 ( .A ( mem_out[2] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -14699,7 +14381,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_25__76 ( .A ( mem_out[2] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_25__76 ( .A ( mem_out[2] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -14908,7 +14590,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_24__75 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_24__75 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -14929,7 +14611,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_23__74 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_23__74 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -14950,7 +14632,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_22__73 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_22__73 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -14971,7 +14653,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_21__72 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_21__72 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -14992,7 +14674,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_20__71 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_20__71 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15013,7 +14695,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_19__70 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_19__70 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15034,7 +14716,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_18__69 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_18__69 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15055,7 +14737,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_17__68 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_17__68 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15076,7 +14758,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_16__67 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_16__67 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15097,7 +14779,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_15__66 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_15__66 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15118,7 +14800,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_14__65 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_14__65 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15139,7 +14821,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_13__64 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_13__64 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15637,9 +15319,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_8_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_15_4 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -15665,9 +15350,10 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_8_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_2 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
 endmodule
 
 
@@ -15755,6 +15441,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_13_4 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -15784,8 +15472,6 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_80 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -15866,7 +15552,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_4_ ( .D ( mem_out[3] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[4] ) , .Q_N ( mem_outb[4] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_12__63 ( .A ( mem_out[4] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_12__63 ( .A ( mem_out[4] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15889,7 +15575,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_4_ ( .D ( mem_out[3] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[4] ) , .Q_N ( mem_outb[4] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_11__62 ( .A ( mem_out[4] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_11__62 ( .A ( mem_out[4] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15912,7 +15598,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_4_ ( .D ( mem_out[3] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[4] ) , .Q_N ( mem_outb[4] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_10__61 ( .A ( mem_out[4] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_10__61 ( .A ( mem_out[4] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -15935,7 +15621,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_4_ ( .D ( mem_out[3] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[4] ) , .Q_N ( mem_outb[4] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_9__60 ( .A ( mem_out[4] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_9__60 ( .A ( mem_out[4] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -16041,7 +15727,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_11_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_12_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_13_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_14_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_15_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
@@ -16054,8 +15739,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_10_4 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_15_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -16099,10 +15782,9 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_12_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_11_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_14_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l5_in_0_ ( 
+sky130_fd_sc_hd__mux2_4 mux_l5_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_14_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_13_X[0] ) , .S ( sram[4] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_15_X[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_13_X[0] ) , .S ( sram[4] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -16288,7 +15970,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_8__59 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_8__59 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -16309,7 +15991,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_7__58 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_7__58 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -16330,7 +16012,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_6__57 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_6__57 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -16351,7 +16033,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_5__56 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_5__56 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -16372,7 +16054,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_4__55 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_4__55 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -16393,7 +16075,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_3__54 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_3__54 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -16414,7 +16096,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__53 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_2__53 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -16435,7 +16117,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .Q_N ( mem_outb[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__52 ( .A ( mem_out[3] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__52 ( .A ( mem_out[3] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -16856,7 +16538,6 @@ input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_10_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_11_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
@@ -16869,8 +16550,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_1_5 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_11_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -16902,10 +16581,9 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_10_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_8 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_10_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .S ( sram[3] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_11_X[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -17127,7 +16805,7 @@ mux_tree_tapbuf_size12_6 mux_top_track_0 (
         chanx_left_in[2] , chanx_left_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size12_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size12_0_sram_inv ) , 
-    .out ( chany_top_out[0] ) , .p0 ( optlc_net_151 ) ) ;
+    .out ( chany_top_out[0] ) , .p0 ( optlc_net_147 ) ) ;
 mux_tree_tapbuf_size12 mux_top_track_2 (
     .in ( { top_left_grid_pin_35_[0] , top_left_grid_pin_37_[0] , 
         top_left_grid_pin_39_[0] , top_left_grid_pin_41_[0] , 
@@ -17136,7 +16814,7 @@ mux_tree_tapbuf_size12 mux_top_track_2 (
         chanx_left_in[13] , chanx_left_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size12_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size12_1_sram_inv ) , 
-    .out ( chany_top_out[1] ) , .p0 ( optlc_net_148 ) ) ;
+    .out ( chany_top_out[1] ) , .p0 ( optlc_net_145 ) ) ;
 mux_tree_tapbuf_size12_4 mux_right_track_0 (
     .in ( { chany_top_in[2] , chany_top_in[12] , chany_top_in[19] , 
         right_top_grid_pin_42_[0] , right_top_grid_pin_44_[0] , 
@@ -17145,7 +16823,7 @@ mux_tree_tapbuf_size12_4 mux_right_track_0 (
         chanx_left_in[2] , chanx_left_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size12_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size12_2_sram_inv ) , 
-    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_151 ) ) ;
+    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_145 ) ) ;
 mux_tree_tapbuf_size12_5 mux_right_track_2 (
     .in ( { chany_top_in[0] , chany_top_in[4] , chany_top_in[13] , 
         right_top_grid_pin_43_[0] , right_top_grid_pin_45_[0] , 
@@ -17154,7 +16832,7 @@ mux_tree_tapbuf_size12_5 mux_right_track_2 (
         chanx_left_in[4] , chanx_left_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size12_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size12_3_sram_inv ) , 
-    .out ( chanx_right_out[1] ) , .p0 ( optlc_net_151 ) ) ;
+    .out ( chanx_right_out[1] ) , .p0 ( optlc_net_145 ) ) ;
 mux_tree_tapbuf_size12_0 mux_bottom_track_1 (
     .in ( { chany_top_in[2] , chany_top_in[12] , chanx_right_in[2] , 
         chanx_right_in[12] , chanx_right_in[15] , 
@@ -17163,7 +16841,7 @@ mux_tree_tapbuf_size12_0 mux_bottom_track_1 (
         chanx_left_in[1] , chanx_left_in[2] , chanx_left_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size12_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size12_4_sram_inv ) , 
-    .out ( chany_bottom_out[0] ) , .p0 ( optlc_net_152 ) ) ;
+    .out ( chany_bottom_out[0] ) , .p0 ( optlc_net_144 ) ) ;
 mux_tree_tapbuf_size12_1 mux_bottom_track_3 (
     .in ( { chany_top_in[4] , chany_top_in[13] , chanx_right_in[4] , 
         chanx_right_in[11] , chanx_right_in[13] , 
@@ -17172,7 +16850,7 @@ mux_tree_tapbuf_size12_1 mux_bottom_track_3 (
         chanx_left_in[3] , chanx_left_in[4] , chanx_left_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size12_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size12_5_sram_inv ) , 
-    .out ( chany_bottom_out[1] ) , .p0 ( optlc_net_149 ) ) ;
+    .out ( chany_bottom_out[1] ) , .p0 ( optlc_net_146 ) ) ;
 mux_tree_tapbuf_size12_2 mux_left_track_1 (
     .in ( { chany_top_in[0] , chany_top_in[2] , chany_top_in[12] , 
         chanx_right_in[2] , chanx_right_in[12] , chany_bottom_in[2] , 
@@ -17181,7 +16859,7 @@ mux_tree_tapbuf_size12_2 mux_left_track_1 (
         left_top_grid_pin_48_[0] } ) ,
     .sram ( mux_tree_tapbuf_size12_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size12_6_sram_inv ) , 
-    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_150 ) ) ;
+    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_147 ) ) ;
 mux_tree_tapbuf_size12_3 mux_left_track_3 (
     .in ( { chany_top_in[4] , chany_top_in[13] , chany_top_in[19] , 
         chanx_right_in[4] , chanx_right_in[13] , chany_bottom_in[0] , 
@@ -17190,7 +16868,7 @@ mux_tree_tapbuf_size12_3 mux_left_track_3 (
         left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size12_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size12_7_sram_inv ) , 
-    .out ( chanx_left_out[1] ) , .p0 ( optlc_net_150 ) ) ;
+    .out ( chanx_left_out[1] ) , .p0 ( optlc_net_147 ) ) ;
 mux_tree_tapbuf_size12_mem_6 mem_top_track_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size12_mem_0_ccff_tail ) , 
@@ -17241,7 +16919,7 @@ mux_tree_tapbuf_size16 mux_top_track_4 (
         chanx_left_in[14] , chanx_left_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size16_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size16_0_sram_inv ) , 
-    .out ( chany_top_out[2] ) , .p0 ( optlc_net_148 ) ) ;
+    .out ( chany_top_out[2] ) , .p0 ( optlc_net_147 ) ) ;
 mux_tree_tapbuf_size16_2 mux_right_track_4 (
     .in ( { chany_top_in[1] , chany_top_in[5] , chany_top_in[14] , 
         right_top_grid_pin_42_[0] , right_top_grid_pin_43_[0] , 
@@ -17252,7 +16930,7 @@ mux_tree_tapbuf_size16_2 mux_right_track_4 (
         chanx_left_in[5] , chanx_left_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size16_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size16_1_sram_inv ) , 
-    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_151 ) ) ;
+    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_145 ) ) ;
 mux_tree_tapbuf_size16_0 mux_bottom_track_5 (
     .in ( { chany_top_in[5] , chany_top_in[14] , chanx_right_in[5] , 
         chanx_right_in[7] , chanx_right_in[14] , bottom_left_grid_pin_34_[0] , 
@@ -17263,7 +16941,7 @@ mux_tree_tapbuf_size16_0 mux_bottom_track_5 (
         chanx_left_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size16_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size16_2_sram_inv ) , 
-    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_147 ) ) ;
+    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_144 ) ) ;
 mux_tree_tapbuf_size16_1 mux_left_track_5 (
     .in ( { chany_top_in[5] , chany_top_in[14] , chany_top_in[15] , 
         chanx_right_in[5] , chanx_right_in[14] , chany_bottom_in[1] , 
@@ -17274,7 +16952,7 @@ mux_tree_tapbuf_size16_1 mux_left_track_5 (
         left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size16_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size16_3_sram_inv ) , 
-    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_150 ) ) ;
+    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_147 ) ) ;
 mux_tree_tapbuf_size16_mem mem_top_track_4 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size12_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size16_mem_0_ccff_tail ) , 
@@ -17302,16 +16980,15 @@ mux_tree_tapbuf_size10_1 mux_top_track_8 (
         chanx_left_in[11] , chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) , 
-    .out ( chany_top_out[4] ) , .p0 ( optlc_net_152 ) ) ;
+    .out ( chany_top_out[4] ) , .p0 ( optlc_net_144 ) ) ;
 mux_tree_tapbuf_size10_9 mux_top_track_16 (
     .in ( { top_left_grid_pin_35_[0] , top_left_grid_pin_39_[0] , 
         chanx_right_in[8] , chanx_right_in[15] , chanx_right_in[17] , 
         chany_bottom_in[8] , chany_bottom_in[17] , chanx_left_in[7] , 
         chanx_left_in[8] , chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size10_1_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size10_1_sram_inv ) ,
-    .out ( { ropt_net_154 } ) ,
-    .p0 ( optlc_net_147 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size10_1_sram_inv ) , 
+    .out ( chany_top_out[8] ) , .p0 ( optlc_net_144 ) ) ;
 mux_tree_tapbuf_size10_10 mux_top_track_24 (
     .in ( { top_left_grid_pin_36_[0] , top_left_grid_pin_40_[0] , 
         chanx_right_in[9] , chanx_right_in[18] , chanx_right_in[19] , 
@@ -17319,16 +16996,15 @@ mux_tree_tapbuf_size10_10 mux_top_track_24 (
         chanx_left_in[9] , chanx_left_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size10_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_2_sram_inv ) , 
-    .out ( chany_top_out[12] ) , .p0 ( optlc_net_148 ) ) ;
+    .out ( chany_top_out[12] ) , .p0 ( optlc_net_145 ) ) ;
 mux_tree_tapbuf_size10_8 mux_right_track_8 (
     .in ( { chany_top_in[3] , chany_top_in[6] , chany_top_in[16] , 
         right_top_grid_pin_42_[0] , right_top_grid_pin_46_[0] , 
         chany_bottom_in[3] , chany_bottom_in[6] , chany_bottom_in[16] , 
         chanx_left_in[6] , chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_3_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size10_3_sram_inv ) ,
-    .out ( { ropt_net_153 } ) ,
-    .p0 ( optlc_net_152 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size10_3_sram_inv ) , 
+    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_144 ) ) ;
 mux_tree_tapbuf_size10_6 mux_right_track_16 (
     .in ( { chany_top_in[7] , chany_top_in[8] , chany_top_in[17] , 
         right_top_grid_pin_43_[0] , right_top_grid_pin_47_[0] , 
@@ -17336,7 +17012,7 @@ mux_tree_tapbuf_size10_6 mux_right_track_16 (
         chanx_left_in[8] , chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size10_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_4_sram_inv ) , 
-    .out ( chanx_right_out[8] ) , .p0 ( optlc_net_152 ) ) ;
+    .out ( chanx_right_out[8] ) , .p0 ( optlc_net_144 ) ) ;
 mux_tree_tapbuf_size10_7 mux_right_track_24 (
     .in ( { chany_top_in[9] , chany_top_in[11] , chany_top_in[18] , 
         right_top_grid_pin_44_[0] , right_top_grid_pin_48_[0] , 
@@ -17344,7 +17020,7 @@ mux_tree_tapbuf_size10_7 mux_right_track_24 (
         chanx_left_in[9] , chanx_left_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size10_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_5_sram_inv ) , 
-    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_151 ) ) ;
+    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_145 ) ) ;
 mux_tree_tapbuf_size10_2 mux_bottom_track_9 (
     .in ( { chany_top_in[6] , chany_top_in[16] , chanx_right_in[3] , 
         chanx_right_in[6] , chanx_right_in[16] , bottom_left_grid_pin_34_[0] , 
@@ -17352,7 +17028,7 @@ mux_tree_tapbuf_size10_2 mux_bottom_track_9 (
         chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size10_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_6_sram_inv ) , 
-    .out ( chany_bottom_out[4] ) , .p0 ( optlc_net_152 ) ) ;
+    .out ( chany_bottom_out[4] ) , .p0 ( optlc_net_144 ) ) ;
 mux_tree_tapbuf_size10_0 mux_bottom_track_17 (
     .in ( { chany_top_in[8] , chany_top_in[17] , chanx_right_in[1] , 
         chanx_right_in[8] , chanx_right_in[17] , bottom_left_grid_pin_35_[0] , 
@@ -17360,7 +17036,7 @@ mux_tree_tapbuf_size10_0 mux_bottom_track_17 (
         chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size10_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_7_sram_inv ) , 
-    .out ( chany_bottom_out[8] ) , .p0 ( optlc_net_147 ) ) ;
+    .out ( chany_bottom_out[8] ) , .p0 ( optlc_net_146 ) ) ;
 mux_tree_tapbuf_size10_1 mux_bottom_track_25 (
     .in ( { chany_top_in[9] , chany_top_in[18] , chanx_right_in[0] , 
         chanx_right_in[9] , chanx_right_in[18] , bottom_left_grid_pin_36_[0] , 
@@ -17368,7 +17044,7 @@ mux_tree_tapbuf_size10_1 mux_bottom_track_25 (
         chanx_left_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size10_8_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_8_sram_inv ) , 
-    .out ( chany_bottom_out[12] ) , .p0 ( optlc_net_147 ) ) ;
+    .out ( chany_bottom_out[12] ) , .p0 ( optlc_net_145 ) ) ;
 mux_tree_tapbuf_size10_5 mux_left_track_9 (
     .in ( { chany_top_in[6] , chany_top_in[11] , chany_top_in[16] , 
         chanx_right_in[6] , chanx_right_in[16] , chany_bottom_in[3] , 
@@ -17376,7 +17052,7 @@ mux_tree_tapbuf_size10_5 mux_left_track_9 (
         left_top_grid_pin_46_[0] } ) ,
     .sram ( mux_tree_tapbuf_size10_9_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_9_sram_inv ) , 
-    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_150 ) ) ;
+    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_147 ) ) ;
 mux_tree_tapbuf_size10_3 mux_left_track_17 (
     .in ( { chany_top_in[7] , chany_top_in[8] , chany_top_in[17] , 
         chanx_right_in[8] , chanx_right_in[17] , chany_bottom_in[7] , 
@@ -17384,7 +17060,7 @@ mux_tree_tapbuf_size10_3 mux_left_track_17 (
         left_top_grid_pin_47_[0] } ) ,
     .sram ( mux_tree_tapbuf_size10_10_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_10_sram_inv ) , 
-    .out ( chanx_left_out[8] ) , .p0 ( optlc_net_150 ) ) ;
+    .out ( chanx_left_out[8] ) , .p0 ( optlc_net_146 ) ) ;
 mux_tree_tapbuf_size10_4 mux_left_track_25 (
     .in ( { chany_top_in[3] , chany_top_in[9] , chany_top_in[18] , 
         chanx_right_in[9] , chanx_right_in[18] , chany_bottom_in[9] , 
@@ -17392,7 +17068,7 @@ mux_tree_tapbuf_size10_4 mux_left_track_25 (
         left_top_grid_pin_48_[0] } ) ,
     .sram ( mux_tree_tapbuf_size10_11_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_11_sram_inv ) , 
-    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_150 ) ) ;
+    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_147 ) ) ;
 mux_tree_tapbuf_size10_mem_1 mem_top_track_8 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size16_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size10_mem_0_ccff_tail ) , 
@@ -17459,28 +17135,28 @@ mux_tree_tapbuf_size7_6 mux_top_track_32 (
         chanx_left_in[1] , chanx_left_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size7_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_0_sram_inv ) , 
-    .out ( chany_top_out[16] ) , .p0 ( optlc_net_151 ) ) ;
+    .out ( chany_top_out[16] ) , .p0 ( optlc_net_145 ) ) ;
 mux_tree_tapbuf_size7_2_1 mux_right_track_32 (
     .in ( { chany_top_in[10] , chany_top_in[15] , right_top_grid_pin_45_[0] , 
         right_top_grid_pin_49_[0] , chany_bottom_in[10] , 
         chany_bottom_in[19] , chanx_left_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size7_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_1_sram_inv ) , 
-    .out ( chanx_right_out[16] ) , .p0 ( optlc_net_151 ) ) ;
+    .out ( chanx_right_out[16] ) , .p0 ( optlc_net_145 ) ) ;
 mux_tree_tapbuf_size7_0_2 mux_bottom_track_33 (
     .in ( { chany_top_in[10] , chanx_right_in[10] , chanx_right_in[19] , 
         bottom_left_grid_pin_37_[0] , bottom_left_grid_pin_41_[0] , 
         chanx_left_in[0] , chanx_left_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size7_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_2_sram_inv ) , 
-    .out ( chany_bottom_out[16] ) , .p0 ( optlc_net_147 ) ) ;
+    .out ( chany_bottom_out[16] ) , .p0 ( optlc_net_146 ) ) ;
 mux_tree_tapbuf_size7_1_2 mux_left_track_33 (
     .in ( { chany_top_in[1] , chany_top_in[10] , chanx_right_in[10] , 
         chany_bottom_in[10] , chany_bottom_in[15] , left_top_grid_pin_45_[0] , 
         left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size7_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_3_sram_inv ) , 
-    .out ( chanx_left_out[16] ) , .p0 ( optlc_net_150 ) ) ;
+    .out ( chanx_left_out[16] ) , .p0 ( optlc_net_146 ) ) ;
 mux_tree_tapbuf_size7_mem_6 mem_top_track_32 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size10_mem_2_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size7_mem_0_ccff_tail ) , 
@@ -17497,286 +17173,147 @@ mux_tree_tapbuf_size7_mem_0_2 mem_bottom_track_33 ( .prog_clk ( prog_clk ) ,
     .mem_out ( mux_tree_tapbuf_size7_2_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size7_2_sram_inv ) ) ;
 mux_tree_tapbuf_size7_mem_1_2 mem_left_track_33 ( .prog_clk ( prog_clk ) , 
-    .ccff_head ( mux_tree_tapbuf_size10_mem_11_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_155 } ) ,
-    .mem_out ( mux_tree_tapbuf_size7_3_sram ) , 
+    .ccff_head ( mux_tree_tapbuf_size10_mem_11_ccff_tail ) , 
+    .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_tapbuf_size7_3_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size7_3_sram_inv ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_845 ( .A ( ropt_net_206 ) , 
-    .X ( chanx_left_out[18] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_2__1 ( .A ( chany_top_in[4] ) , 
-    .X ( ropt_net_202 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_139 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_147 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_4__3 ( .A ( chany_top_in[6] ) , 
-    .X ( ropt_net_162 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_5__4 ( .A ( chany_top_in[8] ) , 
-    .X ( ropt_net_199 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_846 ( .A ( ropt_net_207 ) , 
-    .X ( chany_bottom_out[13] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_7__6 ( .A ( chany_top_in[10] ) , 
-    .X ( ropt_net_200 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_141 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_148 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_142 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_149 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_144 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_150 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_11__10 ( .A ( chany_top_in[16] ) , 
-    .X ( ropt_net_171 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_12__11 ( .A ( chany_top_in[17] ) , 
-    .X ( ropt_net_203 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_13__12 ( .A ( chany_top_in[18] ) , 
-    .X ( ropt_net_239 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_14__13 ( .A ( chanx_right_in[2] ) , 
-    .X ( ropt_net_187 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_15__14 ( .A ( chanx_right_in[4] ) , 
-    .X ( ropt_net_180 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_146 ( .LO ( SYNOPSYS_UNCONNECTED_5 ) , 
-    .HI ( optlc_net_151 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_148 ( .LO ( SYNOPSYS_UNCONNECTED_6 ) , 
-    .HI ( optlc_net_152 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_791 ( .A ( ropt_net_153 ) , 
-    .X ( chanx_right_out[4] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_19__18 ( .A ( chanx_right_in[9] ) , 
-    .X ( ropt_net_190 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_20__19 ( .A ( chanx_right_in[10] ) , 
-    .X ( ropt_net_183 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_21__20 ( .A ( chanx_right_in[12] ) , 
-    .X ( ropt_net_194 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_792 ( .A ( ropt_net_154 ) , 
-    .X ( ropt_net_221 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_793 ( .A ( ropt_net_155 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_794 ( .A ( chanx_left_in[17] ) , 
-    .X ( ropt_net_242 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_795 ( .A ( chanx_left_in[16] ) , 
-    .X ( ropt_net_244 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_796 ( .A ( chanx_left_in[4] ) , 
-    .X ( chanx_right_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_847 ( .A ( ropt_net_208 ) , 
-    .X ( chany_top_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_797 ( .A ( chany_top_in[2] ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_1__0 ( .A ( chany_top_in[2] ) , 
     .X ( chany_bottom_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_798 ( .A ( chanx_right_in[13] ) , 
-    .X ( ropt_net_240 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_30__29 ( .A ( chany_bottom_in[6] ) , 
-    .X ( ropt_net_185 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_31__30 ( .A ( chany_bottom_in[8] ) , 
-    .X ( ropt_net_201 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_32__31 ( .A ( chany_bottom_in[9] ) , 
-    .X ( ropt_net_198 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_33__32 ( .A ( chany_bottom_in[10] ) , 
-    .X ( ropt_net_195 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_34__33 ( .A ( chany_bottom_in[12] ) , 
-    .X ( ropt_net_186 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_35__34 ( .A ( chany_bottom_in[13] ) , 
-    .X ( ropt_net_196 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_36__35 ( .A ( chany_bottom_in[14] ) , 
-    .X ( ropt_net_191 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_799 ( .A ( chanx_left_in[8] ) , 
-    .X ( ropt_net_241 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_800 ( .A ( ropt_net_162 ) , 
-    .X ( chany_bottom_out[7] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_39__38 ( .A ( chany_bottom_in[18] ) , 
-    .X ( ropt_net_197 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_801 ( .A ( ropt_net_163 ) , 
-    .X ( ropt_net_212 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_848 ( .A ( ropt_net_209 ) , 
-    .X ( chany_bottom_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_802 ( .A ( chanx_left_in[18] ) , 
-    .X ( chanx_right_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_803 ( .A ( chany_bottom_in[2] ) , 
-    .X ( ropt_net_208 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_849 ( .A ( ropt_net_210 ) , 
-    .X ( chany_top_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_851 ( .A ( ropt_net_211 ) , 
-    .X ( chanx_left_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_804 ( .A ( chanx_right_in[8] ) , 
-    .X ( chanx_left_out[9] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_47__46 ( .A ( chanx_left_in[12] ) , 
-    .X ( ropt_net_178 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_805 ( .A ( chany_top_in[9] ) , 
-    .X ( ropt_net_243 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_49__48 ( .A ( chanx_left_in[14] ) , 
-    .X ( ropt_net_179 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_806 ( .A ( chanx_left_in[6] ) , 
-    .X ( chanx_right_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_852 ( .A ( ropt_net_212 ) , 
-    .X ( chanx_left_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_854 ( .A ( ropt_net_213 ) , 
-    .X ( chany_top_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_807 ( .A ( chany_top_in[12] ) , 
-    .X ( ropt_net_207 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_86 ( .A ( chanx_right_in[5] ) , 
-    .X ( ropt_net_163 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_808 ( .A ( ropt_net_170 ) , 
-    .X ( ropt_net_209 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_809 ( .A ( ropt_net_171 ) , 
-    .X ( ropt_net_237 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_89 ( .A ( chanx_right_in[18] ) , 
-    .X ( BUF_net_89 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_90 ( .A ( chany_bottom_in[4] ) , 
-    .X ( BUF_net_90 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_810 ( .A ( ropt_net_172 ) , 
-    .X ( chany_top_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_92 ( .A ( chany_bottom_in[16] ) , 
-    .X ( ropt_net_172 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_811 ( .A ( chanx_left_in[9] ) , 
-    .X ( chanx_right_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_856 ( .A ( ropt_net_214 ) , 
-    .X ( chanx_left_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_857 ( .A ( ropt_net_215 ) , 
-    .X ( chany_top_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_812 ( .A ( ropt_net_174 ) , 
-    .X ( ropt_net_220 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_813 ( .A ( ropt_net_175 ) , 
-    .X ( ropt_net_216 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_814 ( .A ( ropt_net_176 ) , 
-    .X ( ropt_net_206 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_815 ( .A ( ropt_net_177 ) , 
-    .X ( ropt_net_234 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_816 ( .A ( ropt_net_178 ) , 
-    .X ( ropt_net_223 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_818 ( .A ( ropt_net_179 ) , 
-    .X ( ropt_net_233 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_819 ( .A ( ropt_net_180 ) , 
-    .X ( ropt_net_214 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_820 ( .A ( ropt_net_181 ) , 
-    .X ( ropt_net_225 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_115 ( .A ( chany_top_in[5] ) , 
-    .X ( ropt_net_170 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_858 ( .A ( ropt_net_216 ) , 
-    .X ( chanx_left_out[17] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_117 ( .A ( chany_top_in[14] ) , 
-    .X ( ropt_net_192 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_118 ( .A ( chanx_right_in[6] ) , 
-    .X ( ropt_net_193 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_859 ( .A ( ropt_net_217 ) , 
-    .X ( chanx_left_out[15] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_120 ( .A ( chanx_right_in[14] ) , 
-    .X ( ropt_net_184 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_121 ( .A ( chanx_right_in[16] ) , 
-    .X ( ropt_net_175 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_122 ( .A ( chany_bottom_in[5] ) , 
-    .X ( ropt_net_182 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_123 ( .A ( chanx_left_in[2] ) , 
-    .X ( ropt_net_177 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_124 ( .A ( chanx_left_in[5] ) , 
-    .X ( ropt_net_181 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_125 ( .A ( chanx_left_in[10] ) , 
-    .X ( ropt_net_188 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_126 ( .A ( chanx_left_in[13] ) , 
-    .X ( ropt_net_174 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_127 ( .A ( chany_bottom_in[17] ) , 
-    .X ( ropt_net_245 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_861 ( .A ( ropt_net_218 ) , 
-    .X ( chany_bottom_out[11] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_131 ( .A ( chany_top_in[13] ) , 
-    .X ( ropt_net_189 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_862 ( .A ( ropt_net_219 ) , 
-    .X ( chany_top_out[7] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_133 ( .A ( chanx_right_in[17] ) , 
-    .X ( ropt_net_176 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_134 ( .A ( BUF_net_89 ) , 
-    .X ( ropt_net_232 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_135 ( .A ( BUF_net_90 ) , 
-    .X ( chany_top_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_863 ( .A ( ropt_net_220 ) , 
-    .X ( chanx_right_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_821 ( .A ( ropt_net_182 ) , 
-    .X ( ropt_net_213 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_822 ( .A ( ropt_net_183 ) , 
-    .X ( chanx_left_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_823 ( .A ( ropt_net_184 ) , 
-    .X ( ropt_net_217 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_824 ( .A ( ropt_net_185 ) , 
-    .X ( ropt_net_219 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_825 ( .A ( ropt_net_186 ) , 
-    .X ( ropt_net_210 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_826 ( .A ( ropt_net_187 ) , 
-    .X ( ropt_net_235 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_827 ( .A ( ropt_net_188 ) , 
-    .X ( chanx_right_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_828 ( .A ( ropt_net_189 ) , 
-    .X ( ropt_net_228 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_829 ( .A ( ropt_net_190 ) , 
-    .X ( ropt_net_211 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_830 ( .A ( ropt_net_191 ) , 
-    .X ( ropt_net_215 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_831 ( .A ( ropt_net_192 ) , 
-    .X ( ropt_net_230 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_832 ( .A ( ropt_net_193 ) , 
-    .X ( ropt_net_222 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_834 ( .A ( ropt_net_194 ) , 
-    .X ( chanx_left_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_835 ( .A ( ropt_net_195 ) , 
-    .X ( ropt_net_227 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_837 ( .A ( ropt_net_196 ) , 
-    .X ( ropt_net_224 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_838 ( .A ( ropt_net_197 ) , 
-    .X ( ropt_net_226 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_839 ( .A ( ropt_net_198 ) , 
-    .X ( ropt_net_231 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_840 ( .A ( ropt_net_199 ) , 
-    .X ( ropt_net_229 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_841 ( .A ( ropt_net_200 ) , 
-    .X ( ropt_net_218 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_842 ( .A ( ropt_net_201 ) , 
-    .X ( chany_top_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_843 ( .A ( ropt_net_202 ) , 
-    .X ( ropt_net_236 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_844 ( .A ( ropt_net_203 ) , 
-    .X ( ropt_net_238 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_865 ( .A ( ropt_net_221 ) , 
-    .X ( chany_top_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_866 ( .A ( ropt_net_222 ) , 
-    .X ( chanx_left_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_869 ( .A ( ropt_net_223 ) , 
-    .X ( chanx_right_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_871 ( .A ( ropt_net_224 ) , 
-    .X ( chany_top_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_872 ( .A ( ropt_net_225 ) , 
-    .X ( chanx_right_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_873 ( .A ( ropt_net_226 ) , 
-    .X ( chany_top_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_874 ( .A ( ropt_net_227 ) , 
-    .X ( chany_top_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_875 ( .A ( ropt_net_228 ) , 
-    .X ( chany_bottom_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_876 ( .A ( ropt_net_229 ) , 
-    .X ( chany_bottom_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_877 ( .A ( ropt_net_230 ) , 
-    .X ( chany_bottom_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_879 ( .A ( ropt_net_231 ) , 
-    .X ( chany_top_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_880 ( .A ( ropt_net_232 ) , 
-    .X ( chanx_left_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_881 ( .A ( ropt_net_233 ) , 
-    .X ( chanx_right_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_882 ( .A ( ropt_net_234 ) , 
-    .X ( chanx_right_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_883 ( .A ( ropt_net_235 ) , 
-    .X ( chanx_left_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_884 ( .A ( ropt_net_236 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_2__1 ( .A ( chany_top_in[4] ) , 
     .X ( chany_bottom_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_885 ( .A ( ropt_net_237 ) , 
-    .X ( chany_bottom_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_888 ( .A ( ropt_net_238 ) , 
-    .X ( chany_bottom_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_893 ( .A ( ropt_net_239 ) , 
-    .X ( chany_bottom_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_894 ( .A ( ropt_net_240 ) , 
-    .X ( chanx_left_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_895 ( .A ( ropt_net_241 ) , 
-    .X ( chanx_right_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_896 ( .A ( ropt_net_242 ) , 
-    .X ( chanx_right_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_897 ( .A ( ropt_net_243 ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_3__2 ( .A ( chany_top_in[5] ) , 
+    .X ( chany_bottom_out[6] ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_133 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_144 ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_5__4 ( .A ( chany_top_in[8] ) , 
+    .X ( ropt_net_148 ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_6__5 ( .A ( chany_top_in[9] ) , 
     .X ( chany_bottom_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_898 ( .A ( ropt_net_244 ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_7__6 ( .A ( chany_top_in[10] ) , 
+    .X ( chany_bottom_out[11] ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_135 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_145 ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_9__8 ( .A ( chany_top_in[13] ) , 
+    .X ( chany_bottom_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_10__9 ( .A ( chany_top_in[14] ) , 
+    .X ( chany_bottom_out[15] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_11__10 ( .A ( chany_top_in[16] ) , 
+    .X ( chany_bottom_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_12__11 ( .A ( chany_top_in[17] ) , 
+    .X ( chany_bottom_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_746 ( .A ( ropt_net_148 ) , 
+    .X ( chany_bottom_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_14__13 ( .A ( chanx_right_in[2] ) , 
+    .X ( chanx_left_out[3] ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_137 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
+    .HI ( optlc_net_146 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_16__15 ( .A ( chanx_right_in[5] ) , 
+    .X ( chanx_left_out[6] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_17__16 ( .A ( chanx_right_in[6] ) , 
+    .X ( aps_rename_2_ ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_18__17 ( .A ( chanx_right_in[8] ) , 
+    .X ( aps_rename_3_ ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_19__18 ( .A ( chanx_right_in[9] ) , 
+    .X ( chanx_left_out[10] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_20__19 ( .A ( chanx_right_in[10] ) , 
+    .X ( chanx_left_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_21__20 ( .A ( chanx_right_in[12] ) , 
+    .X ( chanx_left_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_22__21 ( .A ( chanx_right_in[13] ) , 
+    .X ( chanx_left_out[14] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_23__22 ( .A ( chanx_right_in[14] ) , 
+    .X ( chanx_left_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_748 ( .A ( ropt_net_149 ) , 
+    .X ( chanx_left_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_753 ( .A ( chanx_left_in[16] ) , 
     .X ( chanx_right_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_899 ( .A ( ropt_net_245 ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_26__25 ( .A ( chanx_right_in[18] ) , 
+    .X ( ropt_net_149 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_139 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
+    .HI ( optlc_net_147 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_28__27 ( .A ( chany_bottom_in[4] ) , 
+    .X ( chany_top_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_754 ( .A ( chanx_left_in[8] ) , 
+    .X ( ropt_net_159 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_30__29 ( .A ( chany_bottom_in[6] ) , 
+    .X ( chany_top_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_31__30 ( .A ( chany_bottom_in[8] ) , 
+    .X ( chany_top_out[9] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_32__31 ( .A ( chany_bottom_in[9] ) , 
+    .X ( chany_top_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_33__32 ( .A ( chany_bottom_in[10] ) , 
+    .X ( chany_top_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_761 ( .A ( ropt_net_152 ) , 
+    .X ( ropt_net_157 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_35__34 ( .A ( chany_bottom_in[13] ) , 
+    .X ( chany_top_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_762 ( .A ( ropt_net_153 ) , 
+    .X ( ropt_net_155 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_763 ( .A ( ropt_net_154 ) , 
+    .X ( chanx_right_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_767 ( .A ( ropt_net_155 ) , 
+    .X ( chanx_right_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_39__38 ( .A ( chany_bottom_in[18] ) , 
+    .X ( chany_top_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_768 ( .A ( ropt_net_156 ) , 
+    .X ( chanx_right_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_769 ( .A ( ropt_net_157 ) , 
+    .X ( chanx_right_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_42__41 ( .A ( chanx_left_in[5] ) , 
+    .X ( chanx_right_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_774 ( .A ( ropt_net_158 ) , 
+    .X ( chanx_right_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_775 ( .A ( ropt_net_159 ) , 
+    .X ( chanx_right_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_45__44 ( .A ( chanx_left_in[9] ) , 
+    .X ( chanx_right_out[10] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_46__45 ( .A ( chanx_left_in[10] ) , 
+    .X ( ropt_net_152 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_48__47 ( .A ( chanx_left_in[13] ) , 
+    .X ( chanx_right_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_49__48 ( .A ( chanx_left_in[14] ) , 
+    .X ( ropt_net_154 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_87 ( .A ( chanx_right_in[16] ) , 
+    .X ( chanx_left_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_89 ( .A ( chany_bottom_in[17] ) , 
     .X ( chany_top_out[18] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_90 ( .A ( chanx_left_in[6] ) , 
+    .X ( BUF_net_90 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_92 ( .A ( chanx_left_in[12] ) , 
+    .X ( chanx_right_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_95 ( .A ( chanx_left_in[18] ) , 
+    .X ( chanx_right_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_100 ( .A ( chany_top_in[6] ) , 
+    .X ( chany_bottom_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_101 ( .A ( chanx_left_in[2] ) , 
+    .X ( chanx_right_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_105 ( .A ( chany_top_in[18] ) , 
+    .X ( chany_bottom_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_106 ( .A ( BUF_net_90 ) , 
+    .X ( ropt_net_156 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_109 ( .A ( chanx_left_in[17] ) , 
+    .X ( ropt_net_153 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_115 ( .A ( chany_top_in[12] ) , 
+    .X ( chany_bottom_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_116 ( .A ( chanx_right_in[4] ) , 
+    .X ( chanx_left_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_117 ( .A ( chany_bottom_in[2] ) , 
+    .X ( chany_top_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_118 ( .A ( chany_bottom_in[5] ) , 
+    .X ( chany_top_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_119 ( .A ( chany_bottom_in[12] ) , 
+    .X ( chany_top_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_120 ( .A ( chany_bottom_in[14] ) , 
+    .X ( chany_top_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_121 ( .A ( chany_bottom_in[16] ) , 
+    .X ( chany_top_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_122 ( .A ( aps_rename_2_ ) , 
+    .X ( chanx_left_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_123 ( .A ( aps_rename_3_ ) , 
+    .X ( chanx_left_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_125 ( .A ( chanx_right_in[17] ) , 
+    .X ( chanx_left_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_127 ( .A ( chanx_left_in[4] ) , 
+    .X ( ropt_net_158 ) ) ;
 endmodule
 
 
@@ -17875,8 +17412,6 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) ,
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ ( .D ( mem_out[1] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[2] ) , .Q_N ( mem_outb[2] ) ) ;
 sky130_fd_sc_hd__dlygate4sd1_1 FTB_32__58 ( .A ( mem_out[2] ) , 
-    .X ( net_net_98 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_98 ( .A ( net_net_98 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -17964,8 +17499,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 
 const1_30_1 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -17983,6 +17516,8 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_5_X[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_69 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -18119,7 +17654,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_10_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_11_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_12_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_13_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
@@ -18132,8 +17666,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 const1_28_1 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_13_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -18171,10 +17703,9 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_10_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_12_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_8 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_12_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_11_X[0] ) , .S ( sram[3] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_13_X[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_11_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -18428,13 +17959,17 @@ output [0:0] out ;
 input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_25_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l2_in_0_ ( .A0 ( p0 ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
 endmodule
 
 
@@ -18482,13 +18017,13 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_23_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_66 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -18801,10 +18336,8 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_62 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( BUF_net_62 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_101 ( .A ( BUF_net_62 ) , 
-    .X ( out[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_105 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -19383,8 +18916,6 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
 
 const1_6_4 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -19405,6 +18936,10 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_61 ( 
+    .A ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , .X ( BUF_net_61 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_104 ( .A ( BUF_net_61 ) , 
+    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -19605,9 +19140,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_6_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 
 const1_3_4 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -19627,9 +19165,10 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_1_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_6_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l4_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_6_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .S ( sram[3] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_7_X[0] ) ) ;
 endmodule
 
 
@@ -19939,14 +19478,14 @@ mux_tree_tapbuf_size8 mux_top_track_0 (
         chanx_left_in[2] } ) ,
     .sram ( mux_tree_tapbuf_size8_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_0_sram_inv ) , 
-    .out ( chany_top_out[0] ) , .p0 ( optlc_net_125 ) ) ;
+    .out ( chany_top_out[0] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size8_2 mux_right_track_8 (
     .in ( { chany_top_in[2] , chany_top_in[9] , chany_top_in[16] , 
         right_top_grid_pin_42_[0] , right_top_grid_pin_46_[0] , 
         right_bottom_grid_pin_1_[0] , chanx_left_in[6] , chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size8_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_1_sram_inv ) , 
-    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_127 ) ) ;
 mux_tree_tapbuf_size8_0 mux_left_track_3 (
     .in ( { chany_top_in[6] , chany_top_in[13] , chanx_right_in[4] , 
         chanx_right_in[13] , left_top_grid_pin_43_[0] , 
@@ -19954,14 +19493,14 @@ mux_tree_tapbuf_size8_0 mux_left_track_3 (
         left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size8_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_2_sram_inv ) , 
-    .out ( chanx_left_out[1] ) , .p0 ( optlc_net_123 ) ) ;
+    .out ( chanx_left_out[1] ) , .p0 ( optlc_net_126 ) ) ;
 mux_tree_tapbuf_size8_1 mux_left_track_9 (
     .in ( { chany_top_in[4] , chany_top_in[11] , chany_top_in[18] , 
         chanx_right_in[6] , chanx_right_in[16] , left_top_grid_pin_42_[0] , 
         left_top_grid_pin_46_[0] , left_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size8_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size8_3_sram_inv ) , 
-    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_121 ) ) ;
+    .out ( chanx_left_out[4] ) , .p0 ( optlc_net_126 ) ) ;
 mux_tree_tapbuf_size8_mem mem_top_track_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size8_mem_0_ccff_tail ) , 
@@ -19988,49 +19527,50 @@ mux_tree_tapbuf_size7_4 mux_top_track_2 (
         chanx_right_in[3] , chanx_right_in[4] , chanx_left_in[4] } ) ,
     .sram ( mux_tree_tapbuf_size7_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_0_sram_inv ) , 
-    .out ( chany_top_out[1] ) , .p0 ( optlc_net_122 ) ) ;
+    .out ( chany_top_out[1] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size7_5 mux_top_track_4 (
     .in ( { top_left_grid_pin_34_[0] , top_left_grid_pin_36_[0] , 
         top_left_grid_pin_38_[0] , top_left_grid_pin_40_[0] , 
         chanx_right_in[5] , chanx_right_in[7] , chanx_left_in[5] } ) ,
     .sram ( mux_tree_tapbuf_size7_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_1_sram_inv ) , 
-    .out ( chany_top_out[2] ) , .p0 ( optlc_net_126 ) ) ;
+    .out ( chany_top_out[2] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size7_2 mux_top_track_6 (
     .in ( { top_left_grid_pin_35_[0] , top_left_grid_pin_37_[0] , 
         top_left_grid_pin_39_[0] , top_left_grid_pin_41_[0] , 
         chanx_right_in[6] , chanx_right_in[11] , chanx_left_in[6] } ) ,
     .sram ( mux_tree_tapbuf_size7_2_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size7_2_sram_inv ) , 
-    .out ( chany_top_out[3] ) , .p0 ( optlc_net_126 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size7_2_sram_inv ) ,
+    .out ( { ropt_net_169 } ) ,
+    .p0 ( optlc_net_127 ) ) ;
 mux_tree_tapbuf_size7_2 mux_right_track_16 (
     .in ( { chany_top_in[3] , chany_top_in[10] , chany_top_in[17] , 
         right_top_grid_pin_43_[0] , right_top_grid_pin_47_[0] , 
         chanx_left_in[8] , chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size7_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_3_sram_inv ) , 
-    .out ( chanx_right_out[8] ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( chanx_right_out[8] ) , .p0 ( optlc_net_127 ) ) ;
 mux_tree_tapbuf_size7_3 mux_right_track_24 (
     .in ( { chany_top_in[4] , chany_top_in[11] , chany_top_in[18] , 
         right_top_grid_pin_44_[0] , right_top_grid_pin_48_[0] , 
         chanx_left_in[9] , chanx_left_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size7_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_4_sram_inv ) , 
-    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_127 ) ) ;
 mux_tree_tapbuf_size7_0_1 mux_left_track_17 (
     .in ( { chany_top_in[3] , chany_top_in[10] , chany_top_in[17] , 
         chanx_right_in[8] , chanx_right_in[17] , left_top_grid_pin_43_[0] , 
         left_top_grid_pin_47_[0] } ) ,
     .sram ( mux_tree_tapbuf_size7_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_5_sram_inv ) , 
-    .out ( chanx_left_out[8] ) , .p0 ( optlc_net_121 ) ) ;
+    .out ( chanx_left_out[8] ) , .p0 ( optlc_net_126 ) ) ;
 mux_tree_tapbuf_size7_1_1 mux_left_track_25 (
     .in ( { chany_top_in[2] , chany_top_in[9] , chany_top_in[16] , 
         chanx_right_in[9] , chanx_right_in[18] , left_top_grid_pin_44_[0] , 
         left_top_grid_pin_48_[0] } ) ,
     .sram ( mux_tree_tapbuf_size7_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_6_sram_inv ) , 
-    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_121 ) ) ;
+    .out ( chanx_left_out[12] ) , .p0 ( optlc_net_126 ) ) ;
 mux_tree_tapbuf_size7_mem_4 mem_top_track_2 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size8_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size7_mem_0_ccff_tail ) , 
@@ -20071,13 +19611,13 @@ mux_tree_tapbuf_size4_6 mux_top_track_8 (
         chanx_right_in[15] , chanx_left_in[8] } ) ,
     .sram ( mux_tree_tapbuf_size4_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_0_sram_inv ) , 
-    .out ( chany_top_out[4] ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( chany_top_out[4] ) , .p0 ( optlc_net_127 ) ) ;
 mux_tree_tapbuf_size4_0_1 mux_top_track_10 (
     .in ( { top_left_grid_pin_35_[0] , chanx_right_in[9] , 
         chanx_right_in[19] , chanx_left_in[9] } ) ,
     .sram ( mux_tree_tapbuf_size4_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_1_sram_inv ) , 
-    .out ( chany_top_out[5] ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( chany_top_out[5] ) , .p0 ( optlc_net_127 ) ) ;
 mux_tree_tapbuf_size4_mem_6 mem_top_track_8 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size7_mem_2_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size4_mem_0_ccff_tail ) , 
@@ -20093,49 +19633,49 @@ mux_tree_tapbuf_size3_0_2 mux_top_track_12 (
         chanx_left_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size3_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_0_sram_inv ) , 
-    .out ( chany_top_out[6] ) , .p0 ( optlc_net_122 ) ) ;
+    .out ( chany_top_out[6] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size3_1_1 mux_top_track_14 (
     .in ( { top_left_grid_pin_37_[0] , chanx_right_in[12] , 
         chanx_left_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size3_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_1_sram_inv ) , 
-    .out ( chany_top_out[7] ) , .p0 ( optlc_net_126 ) ) ;
+    .out ( chany_top_out[7] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size3_2_1 mux_top_track_16 (
     .in ( { top_left_grid_pin_38_[0] , chanx_right_in[13] , 
         chanx_left_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size3_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_2_sram_inv ) , 
-    .out ( chany_top_out[8] ) , .p0 ( optlc_net_126 ) ) ;
+    .out ( chany_top_out[8] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size3_3_1 mux_top_track_18 (
     .in ( { top_left_grid_pin_39_[0] , chanx_right_in[14] , 
         chanx_left_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size3_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_3_sram_inv ) , 
-    .out ( chany_top_out[9] ) , .p0 ( optlc_net_126 ) ) ;
+    .out ( chany_top_out[9] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size3_4 mux_top_track_20 (
     .in ( { top_left_grid_pin_40_[0] , chanx_right_in[16] , 
         chanx_left_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size3_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_4_sram_inv ) ,
-    .out ( { ropt_net_132 } ) ,
-    .p0 ( optlc_net_126 ) ) ;
+    .out ( { ropt_net_134 } ) ,
+    .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size3_5 mux_top_track_22 (
     .in ( { top_left_grid_pin_41_[0] , chanx_right_in[17] , 
         chanx_left_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size3_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_5_sram_inv ) , 
-    .out ( chany_top_out[11] ) , .p0 ( optlc_net_126 ) ) ;
+    .out ( chany_top_out[11] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size3_6 mux_top_track_24 (
     .in ( { top_left_grid_pin_34_[0] , chanx_right_in[18] , 
         chanx_left_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size3_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_6_sram_inv ) , 
-    .out ( chany_top_out[12] ) , .p0 ( optlc_net_126 ) ) ;
+    .out ( chany_top_out[12] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size3_7 mux_top_track_38 (
     .in ( { top_left_grid_pin_41_[0] , chanx_right_in[0] , chanx_left_in[1] } ) ,
     .sram ( mux_tree_tapbuf_size3_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_7_sram_inv ) , 
-    .out ( chany_top_out[19] ) , .p0 ( optlc_net_122 ) ) ;
+    .out ( chany_top_out[19] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size3_mem_0_2 mem_top_track_12 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size4_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size3_mem_0_ccff_tail ) , 
@@ -20180,7 +19720,7 @@ mux_tree_tapbuf_size2_0_2 mux_top_track_28 (
     .in ( { top_left_grid_pin_36_[0] , chanx_left_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size2_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_0_sram_inv ) , 
-    .out ( chany_top_out[14] ) , .p0 ( optlc_net_126 ) ) ;
+    .out ( chany_top_out[14] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size2_1_2 mux_top_track_30 (
     .in ( { top_left_grid_pin_37_[0] , chanx_left_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size2_1_sram ) , 
@@ -20189,8 +19729,9 @@ mux_tree_tapbuf_size2_1_2 mux_top_track_30 (
 mux_tree_tapbuf_size2_2_2 mux_top_track_32 (
     .in ( { top_left_grid_pin_38_[0] , chanx_left_in[11] } ) ,
     .sram ( mux_tree_tapbuf_size2_2_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size2_2_sram_inv ) , 
-    .out ( chany_top_out[16] ) , .p0 ( optlc_net_125 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size2_2_sram_inv ) ,
+    .out ( { ropt_net_130 } ) ,
+    .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size2_3_2 mux_top_track_34 (
     .in ( { top_left_grid_pin_39_[0] , chanx_left_in[7] } ) ,
     .sram ( mux_tree_tapbuf_size2_3_sram ) , 
@@ -20200,7 +19741,7 @@ mux_tree_tapbuf_size2_13 mux_top_track_36 (
     .in ( { top_left_grid_pin_40_[0] , chanx_left_in[3] } ) ,
     .sram ( mux_tree_tapbuf_size2_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_4_sram_inv ) , 
-    .out ( chany_top_out[18] ) , .p0 ( optlc_net_122 ) ) ;
+    .out ( chany_top_out[18] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size2_mem_0_2 mem_top_track_28 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size3_mem_6_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size2_mem_0_ccff_tail ) , 
@@ -20233,7 +19774,7 @@ mux_tree_tapbuf_size9_0 mux_right_track_0 (
         chanx_left_in[2] , chanx_left_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size9_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size9_0_sram_inv ) , 
-    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_127 ) ) ;
 mux_tree_tapbuf_size9 mux_right_track_2 (
     .in ( { chany_top_in[0] , chany_top_in[7] , chany_top_in[14] , 
         right_top_grid_pin_43_[0] , right_top_grid_pin_45_[0] , 
@@ -20241,7 +19782,7 @@ mux_tree_tapbuf_size9 mux_right_track_2 (
         chanx_left_in[4] , chanx_left_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size9_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size9_1_sram_inv ) , 
-    .out ( chanx_right_out[1] ) , .p0 ( optlc_net_122 ) ) ;
+    .out ( chanx_right_out[1] ) , .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size9_mem_0 mem_right_track_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size3_mem_7_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size9_mem_0_ccff_tail ) , 
@@ -20261,7 +19802,7 @@ mux_tree_tapbuf_size14 mux_right_track_4 (
         right_bottom_grid_pin_1_[0] , chanx_left_in[5] , chanx_left_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size14_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size14_0_sram_inv ) , 
-    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_124 ) ) ;
+    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_127 ) ) ;
 mux_tree_tapbuf_size14_0 mux_left_track_5 (
     .in ( { chany_top_in[5] , chany_top_in[12] , chany_top_in[19] , 
         chanx_right_in[5] , chanx_right_in[14] , left_top_grid_pin_42_[0] , 
@@ -20271,7 +19812,7 @@ mux_tree_tapbuf_size14_0 mux_left_track_5 (
         left_top_grid_pin_49_[0] , left_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size14_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size14_1_sram_inv ) , 
-    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_123 ) ) ;
+    .out ( chanx_left_out[2] ) , .p0 ( optlc_net_126 ) ) ;
 mux_tree_tapbuf_size14_mem mem_right_track_4 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size9_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size14_mem_0_ccff_tail ) , 
@@ -20287,15 +19828,16 @@ mux_tree_tapbuf_size6_6 mux_right_track_32 (
         right_top_grid_pin_45_[0] , right_top_grid_pin_49_[0] , 
         chanx_left_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size6_0_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size6_0_sram_inv ) , 
-    .out ( chanx_right_out[16] ) , .p0 ( optlc_net_122 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size6_0_sram_inv ) ,
+    .out ( { ropt_net_129 } ) ,
+    .p0 ( optlc_net_125 ) ) ;
 mux_tree_tapbuf_size6_0_2 mux_left_track_33 (
     .in ( { chany_top_in[1] , chany_top_in[8] , chany_top_in[15] , 
         chanx_right_in[10] , left_top_grid_pin_45_[0] , 
         left_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_1_sram_inv ) , 
-    .out ( chanx_left_out[16] ) , .p0 ( optlc_net_123 ) ) ;
+    .out ( chanx_left_out[16] ) , .p0 ( optlc_net_126 ) ) ;
 mux_tree_tapbuf_size6_mem_6 mem_right_track_32 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size7_mem_4_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
@@ -20313,164 +19855,142 @@ mux_tree_tapbuf_size10 mux_left_track_1 (
         left_top_grid_pin_48_[0] , left_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size10_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size10_0_sram_inv ) , 
-    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_123 ) ) ;
+    .out ( chanx_left_out[0] ) , .p0 ( optlc_net_126 ) ) ;
 mux_tree_tapbuf_size10_mem mem_left_track_1 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size10_mem_0_ccff_tail ) , 
     .mem_out ( mux_tree_tapbuf_size10_0_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size10_0_sram_inv ) ) ;
 sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__0 ( .A ( top_left_grid_pin_35_[0] ) , 
-    .X ( ropt_net_140 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_2__1 ( .A ( chanx_right_in[2] ) , 
-    .X ( ropt_net_153 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_3__2 ( .A ( chanx_right_in[4] ) , 
-    .X ( chanx_left_out[5] ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_112 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_121 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_114 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_122 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_116 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_123 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_118 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_124 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_120 ( .LO ( SYNOPSYS_UNCONNECTED_5 ) , 
-    .HI ( optlc_net_125 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_9__8 ( .A ( chanx_right_in[12] ) , 
     .X ( ropt_net_150 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_122 ( .LO ( SYNOPSYS_UNCONNECTED_6 ) , 
-    .HI ( optlc_net_126 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_11__10 ( .A ( chanx_right_in[14] ) , 
-    .X ( ropt_net_145 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_12__11 ( .A ( chanx_right_in[16] ) , 
-    .X ( ropt_net_143 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_751 ( .A ( chanx_right_in[5] ) , 
-    .X ( ropt_net_175 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_781 ( .A ( ropt_net_155 ) , 
-    .X ( chanx_right_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_752 ( .A ( ropt_net_129 ) , 
-    .X ( ropt_net_163 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_16__15 ( .A ( chanx_left_in[4] ) , 
-    .X ( ropt_net_154 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_782 ( .A ( ropt_net_156 ) , 
-    .X ( chanx_left_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_18__17 ( .A ( chanx_left_in[6] ) , 
-    .X ( ropt_net_152 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_753 ( .A ( chanx_right_in[10] ) , 
-    .X ( ropt_net_156 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_20__19 ( .A ( chanx_left_in[9] ) , 
-    .X ( ropt_net_144 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_754 ( .A ( ropt_net_131 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_22__21 ( .A ( chanx_left_in[12] ) , 
-    .X ( ropt_net_173 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_755 ( .A ( ropt_net_132 ) , 
-    .X ( chany_top_out[10] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_24__23 ( .A ( chanx_left_in[14] ) , 
-    .X ( ropt_net_148 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_756 ( .A ( ropt_net_133 ) , 
-    .X ( ropt_net_158 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_757 ( .A ( ropt_net_134 ) , 
-    .X ( ropt_net_159 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_758 ( .A ( ropt_net_135 ) , 
-    .X ( ropt_net_155 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_783 ( .A ( ropt_net_157 ) , 
-    .X ( chanx_left_out[17] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_67 ( .A ( chanx_right_in[8] ) , 
-    .X ( ropt_net_149 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_784 ( .A ( ropt_net_158 ) , 
-    .X ( chanx_left_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_785 ( .A ( ropt_net_159 ) , 
-    .X ( chanx_left_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_786 ( .A ( ropt_net_160 ) , 
-    .X ( chanx_left_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_787 ( .A ( ropt_net_161 ) , 
-    .X ( chanx_left_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_759 ( .A ( chanx_left_in[16] ) , 
-    .X ( chanx_right_out[17] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_73 ( .A ( chanx_left_in[10] ) , 
-    .X ( ropt_net_146 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_788 ( .A ( ropt_net_162 ) , 
-    .X ( chanx_left_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_789 ( .A ( ropt_net_163 ) , 
-    .X ( chanx_left_out[19] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_76 ( .A ( chanx_left_in[17] ) , 
-    .X ( ropt_net_142 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_760 ( .A ( ropt_net_137 ) , 
-    .X ( ropt_net_167 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_761 ( .A ( chanx_right_in[9] ) , 
-    .X ( ropt_net_174 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_762 ( .A ( chanx_left_in[5] ) , 
-    .X ( chanx_right_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_763 ( .A ( ropt_net_140 ) , 
-    .X ( ropt_net_166 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_764 ( .A ( ropt_net_141 ) , 
-    .X ( ropt_net_161 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_765 ( .A ( ropt_net_142 ) , 
-    .X ( ropt_net_168 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_766 ( .A ( ropt_net_143 ) , 
-    .X ( ropt_net_157 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_94 ( .A ( chanx_right_in[6] ) , 
-    .X ( ropt_net_141 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_95 ( .A ( chanx_left_in[2] ) , 
-    .X ( ropt_net_151 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_96 ( .A ( chanx_left_in[8] ) , 
-    .X ( ropt_net_147 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_97 ( .A ( chanx_left_in[18] ) , 
-    .X ( ropt_net_137 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_99 ( .A ( chanx_right_in[18] ) , 
-    .X ( ropt_net_129 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_767 ( .A ( ropt_net_144 ) , 
-    .X ( ropt_net_169 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_768 ( .A ( ropt_net_145 ) , 
-    .X ( ropt_net_160 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_769 ( .A ( ropt_net_146 ) , 
-    .X ( ropt_net_171 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_770 ( .A ( ropt_net_147 ) , 
-    .X ( ropt_net_165 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_107 ( .A ( chanx_right_in[13] ) , 
-    .X ( ropt_net_133 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_108 ( .A ( chanx_right_in[17] ) , 
-    .X ( ropt_net_134 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_109 ( .A ( chanx_left_in[13] ) , 
-    .X ( ropt_net_135 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_771 ( .A ( ropt_net_148 ) , 
-    .X ( ropt_net_170 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_772 ( .A ( ropt_net_149 ) , 
-    .X ( ropt_net_164 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_773 ( .A ( ropt_net_150 ) , 
-    .X ( chanx_left_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_774 ( .A ( ropt_net_151 ) , 
-    .X ( chanx_right_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_775 ( .A ( ropt_net_152 ) , 
-    .X ( chanx_right_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_776 ( .A ( ropt_net_153 ) , 
-    .X ( ropt_net_162 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_778 ( .A ( ropt_net_154 ) , 
-    .X ( ropt_net_172 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_790 ( .A ( ropt_net_164 ) , 
-    .X ( chanx_left_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_791 ( .A ( ropt_net_165 ) , 
-    .X ( chanx_right_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_792 ( .A ( ropt_net_166 ) , 
-    .X ( chany_top_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_794 ( .A ( ropt_net_167 ) , 
-    .X ( chanx_right_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_795 ( .A ( ropt_net_168 ) , 
-    .X ( chanx_right_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_796 ( .A ( ropt_net_169 ) , 
-    .X ( chanx_right_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_797 ( .A ( ropt_net_170 ) , 
-    .X ( chanx_right_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_798 ( .A ( ropt_net_171 ) , 
-    .X ( chanx_right_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_799 ( .A ( ropt_net_172 ) , 
-    .X ( chanx_right_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_802 ( .A ( ropt_net_173 ) , 
-    .X ( chanx_right_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_804 ( .A ( ropt_net_174 ) , 
-    .X ( chanx_left_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_805 ( .A ( ropt_net_175 ) , 
+sky130_fd_sc_hd__conb_1 optlc_115 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_124 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_745 ( .A ( ropt_net_155 ) , 
     .X ( chanx_left_out[6] ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_117 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_125 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_119 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
+    .HI ( optlc_net_126 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_6__5 ( .A ( chanx_right_in[8] ) , 
+    .X ( ropt_net_136 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_121 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
+    .HI ( optlc_net_127 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_716 ( .A ( chanx_right_in[16] ) , 
+    .X ( chanx_left_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_9__8 ( .A ( chanx_right_in[12] ) , 
+    .X ( chanx_left_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_717 ( .A ( ropt_net_129 ) , 
+    .X ( ropt_net_161 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_11__10 ( .A ( chanx_right_in[14] ) , 
+    .X ( chanx_left_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_718 ( .A ( ropt_net_130 ) , 
+    .X ( ropt_net_167 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_13__12 ( .A ( chanx_right_in[17] ) , 
+    .X ( chanx_left_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_14__13 ( .A ( chanx_right_in[18] ) , 
+    .X ( chanx_left_out[19] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_15__14 ( .A ( chanx_left_in[2] ) , 
+    .X ( ropt_net_149 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_16__15 ( .A ( chanx_left_in[4] ) , 
+    .X ( ropt_net_145 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_17__16 ( .A ( chanx_left_in[5] ) , 
+    .X ( chanx_right_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_719 ( .A ( ropt_net_131 ) , 
+    .X ( ropt_net_157 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_746 ( .A ( ropt_net_156 ) , 
+    .X ( chanx_left_out[9] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_20__19 ( .A ( chanx_left_in[9] ) , 
+    .X ( ropt_net_141 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_21__20 ( .A ( chanx_left_in[10] ) , 
+    .X ( chanx_right_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_720 ( .A ( ropt_net_132 ) , 
+    .X ( chanx_right_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_721 ( .A ( chanx_right_in[2] ) , 
+    .X ( chanx_left_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_747 ( .A ( ropt_net_157 ) , 
+    .X ( ccff_tail[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_722 ( .A ( ropt_net_134 ) , 
+    .X ( ropt_net_170 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_723 ( .A ( chanx_right_in[6] ) , 
+    .X ( ropt_net_172 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_724 ( .A ( ropt_net_136 ) , 
+    .X ( ropt_net_156 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_748 ( .A ( ropt_net_158 ) , 
+    .X ( chanx_left_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_749 ( .A ( ropt_net_159 ) , 
+    .X ( chanx_right_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_750 ( .A ( ropt_net_160 ) , 
+    .X ( chanx_right_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_751 ( .A ( ropt_net_161 ) , 
+    .X ( chanx_right_out[16] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_74 ( .A ( chanx_right_in[13] ) , 
+    .X ( ropt_net_148 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_752 ( .A ( ropt_net_162 ) , 
+    .X ( chanx_right_out[7] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_76 ( .A ( chanx_left_in[6] ) , 
+    .X ( ropt_net_140 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_77 ( .A ( chanx_left_in[8] ) , 
+    .X ( ropt_net_132 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_725 ( .A ( chanx_left_in[13] ) , 
+    .X ( ropt_net_159 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_79 ( .A ( chanx_left_in[16] ) , 
+    .X ( ropt_net_142 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_80 ( .A ( chanx_left_in[17] ) , 
+    .X ( ropt_net_147 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_726 ( .A ( chanx_right_in[9] ) , 
+    .X ( chanx_left_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_83 ( .A ( chanx_left_in[12] ) , 
+    .X ( ropt_net_146 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_84 ( .A ( chanx_left_in[18] ) , 
+    .X ( ropt_net_144 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_727 ( .A ( chanx_left_in[14] ) , 
+    .X ( ropt_net_160 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_728 ( .A ( ropt_net_140 ) , 
+    .X ( ropt_net_162 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_729 ( .A ( ropt_net_141 ) , 
+    .X ( ropt_net_168 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_730 ( .A ( ropt_net_142 ) , 
+    .X ( chanx_right_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_731 ( .A ( chanx_right_in[4] ) , 
+    .X ( ropt_net_158 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_100 ( .A ( chanx_right_in[10] ) , 
+    .X ( ropt_net_171 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_733 ( .A ( ropt_net_144 ) , 
+    .X ( chanx_right_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_753 ( .A ( ropt_net_163 ) , 
+    .X ( chanx_right_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_755 ( .A ( ropt_net_164 ) , 
+    .X ( chany_top_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_735 ( .A ( ropt_net_145 ) , 
+    .X ( chanx_right_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_756 ( .A ( ropt_net_165 ) , 
+    .X ( chanx_right_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_737 ( .A ( ropt_net_146 ) , 
+    .X ( chanx_right_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_738 ( .A ( ropt_net_147 ) , 
+    .X ( ropt_net_163 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_739 ( .A ( ropt_net_148 ) , 
+    .X ( ropt_net_166 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_741 ( .A ( ropt_net_149 ) , 
+    .X ( ropt_net_165 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_743 ( .A ( ropt_net_150 ) , 
+    .X ( ropt_net_164 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_744 ( .A ( chanx_right_in[5] ) , 
+    .X ( ropt_net_155 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_759 ( .A ( ropt_net_166 ) , 
+    .X ( chanx_left_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_760 ( .A ( ropt_net_167 ) , 
+    .X ( chany_top_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_761 ( .A ( ropt_net_168 ) , 
+    .X ( chanx_right_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_762 ( .A ( ropt_net_169 ) , 
+    .X ( chany_top_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_763 ( .A ( ropt_net_170 ) , 
+    .X ( chany_top_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_764 ( .A ( ropt_net_171 ) , 
+    .X ( chanx_left_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_765 ( .A ( ropt_net_172 ) , 
+    .X ( chanx_left_out[7] ) ) ;
 endmodule
 
 
@@ -20487,8 +20007,8 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 FTB_8__39 ( .A ( mem_out[1] ) , 
-    .X ( net_net_74 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_88 ( .A ( net_net_74 ) , 
+    .X ( net_net_71 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_90 ( .A ( net_net_71 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -20760,13 +20280,17 @@ output [0:0] out ;
 input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_2_3 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l2_in_0_ ( .A0 ( p0 ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
 endmodule
 
 
@@ -20865,42 +20389,42 @@ mux_tree_tapbuf_size2_4_1 mux_right_track_0 (
     .in ( { right_top_grid_pin_1_[0] , chany_bottom_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size2_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_0_sram_inv ) , 
-    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_111 ) ) ;
+    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_98 ) ) ;
 mux_tree_tapbuf_size2_6_1 mux_right_track_4 (
     .in ( { right_top_grid_pin_1_[0] , chany_bottom_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size2_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_1_sram_inv ) , 
-    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_111 ) ) ;
+    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_98 ) ) ;
 mux_tree_tapbuf_size2_12 mux_right_track_8 (
     .in ( { right_top_grid_pin_1_[0] , chany_bottom_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size2_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_2_sram_inv ) , 
-    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_111 ) ) ;
+    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_98 ) ) ;
 mux_tree_tapbuf_size2_5_1 mux_right_track_24 (
     .in ( { right_top_grid_pin_1_[0] , chany_bottom_in[6] } ) ,
     .sram ( mux_tree_tapbuf_size2_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_3_sram_inv ) , 
-    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_111 ) ) ;
+    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_98 ) ) ;
 mux_tree_tapbuf_size2_0_1 mux_bottom_track_1 (
     .in ( { chanx_right_in[18] , bottom_left_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_4_sram_inv ) , 
-    .out ( chany_bottom_out[0] ) , .p0 ( optlc_net_112 ) ) ;
+    .out ( chany_bottom_out[0] ) , .p0 ( optlc_net_97 ) ) ;
 mux_tree_tapbuf_size2_2_1 mux_bottom_track_5 (
     .in ( { chanx_right_in[16] , bottom_left_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_5_sram_inv ) , 
-    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_110 ) ) ;
+    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_97 ) ) ;
 mux_tree_tapbuf_size2_3_1 mux_bottom_track_9 (
     .in ( { chanx_right_in[14] , bottom_left_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_6_sram_inv ) , 
-    .out ( chany_bottom_out[4] ) , .p0 ( optlc_net_112 ) ) ;
+    .out ( chany_bottom_out[4] ) , .p0 ( optlc_net_97 ) ) ;
 mux_tree_tapbuf_size2_1_1 mux_bottom_track_25 (
     .in ( { chanx_right_in[6] , bottom_left_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_7_sram_inv ) , 
-    .out ( chany_bottom_out[12] ) , .p0 ( optlc_net_110 ) ) ;
+    .out ( chany_bottom_out[12] ) , .p0 ( optlc_net_97 ) ) ;
 mux_tree_tapbuf_size2_mem_4_1 mem_right_track_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size2_mem_0_ccff_tail ) , 
@@ -20938,171 +20462,167 @@ mux_tree_tapbuf_size2_mem_3_1 mem_bottom_track_9 ( .prog_clk ( prog_clk ) ,
     .mem_outb ( mux_tree_tapbuf_size2_6_sram_inv ) ) ;
 mux_tree_tapbuf_size2_mem_1_1 mem_bottom_track_25 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size2_mem_6_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_139 } ) ,
+    .ccff_tail ( { ropt_net_103 } ) ,
     .mem_out ( mux_tree_tapbuf_size2_7_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size2_7_sram_inv ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_109 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_110 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_757 ( .A ( ropt_net_141 ) , 
+sky130_fd_sc_hd__conb_1 optlc_99 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_97 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_101 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_98 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_722 ( .A ( ropt_net_130 ) , 
     .X ( chany_bottom_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_758 ( .A ( ropt_net_142 ) , 
-    .X ( chany_bottom_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_759 ( .A ( ropt_net_143 ) , 
-    .X ( chany_bottom_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_760 ( .A ( ropt_net_144 ) , 
-    .X ( chany_bottom_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_761 ( .A ( ropt_net_145 ) , 
-    .X ( chany_bottom_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_762 ( .A ( ropt_net_146 ) , 
-    .X ( chany_bottom_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_763 ( .A ( ropt_net_147 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_723 ( .A ( ropt_net_131 ) , 
     .X ( chany_bottom_out[5] ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_111 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_111 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_113 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_112 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_730 ( .A ( chanx_right_in[12] ) , 
-    .X ( ropt_net_144 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_731 ( .A ( ropt_net_115 ) , 
-    .X ( ropt_net_143 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_732 ( .A ( chanx_right_in[15] ) , 
-    .X ( ropt_net_158 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_764 ( .A ( ropt_net_148 ) , 
-    .X ( chany_bottom_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_765 ( .A ( ropt_net_149 ) , 
-    .X ( chanx_right_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_733 ( .A ( ropt_net_117 ) , 
-    .X ( ropt_net_141 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_734 ( .A ( ropt_net_118 ) , 
-    .X ( ropt_net_153 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_735 ( .A ( chanx_right_in[17] ) , 
-    .X ( ropt_net_163 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_736 ( .A ( chanx_right_in[1] ) , 
-    .X ( ropt_net_157 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_737 ( .A ( chany_bottom_in[1] ) , 
-    .X ( ropt_net_164 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_738 ( .A ( ropt_net_122 ) , 
-    .X ( ropt_net_145 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_739 ( .A ( chany_bottom_in[3] ) , 
-    .X ( ropt_net_166 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_740 ( .A ( ropt_net_124 ) , 
-    .X ( ropt_net_146 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_741 ( .A ( chany_bottom_in[9] ) , 
-    .X ( ropt_net_167 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_742 ( .A ( chanx_right_in[9] ) , 
-    .X ( ropt_net_159 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_743 ( .A ( chanx_right_in[19] ) , 
-    .X ( ropt_net_155 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_744 ( 
-    .A ( chany_bottom_in[15] ) , .X ( ropt_net_156 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_745 ( .A ( ropt_net_129 ) , 
-    .X ( ropt_net_147 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_746 ( 
-    .A ( chany_bottom_in[10] ) , .X ( ropt_net_160 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_747 ( .A ( chany_bottom_in[2] ) , 
-    .X ( ropt_net_168 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_748 ( 
-    .A ( chany_bottom_in[12] ) , .X ( ropt_net_162 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_749 ( .A ( chany_bottom_in[0] ) , 
-    .X ( ropt_net_165 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_42 ( .A ( chanx_right_in[0] ) , 
-    .X ( BUF_net_42 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_766 ( .A ( ropt_net_150 ) , 
-    .X ( chanx_right_out[10] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_44 ( .A ( chanx_right_in[2] ) , 
-    .X ( BUF_net_44 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_45 ( .A ( chanx_right_in[3] ) , 
-    .X ( BUF_net_45 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_750 ( .A ( chany_bottom_in[5] ) , 
-    .X ( ropt_net_169 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_767 ( .A ( ropt_net_151 ) , 
-    .X ( chanx_right_out[14] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_48 ( .A ( chanx_right_in[7] ) , 
-    .X ( BUF_net_48 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_768 ( .A ( ropt_net_152 ) , 
-    .X ( chanx_right_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_751 ( .A ( ropt_net_135 ) , 
-    .X ( ropt_net_151 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_51 ( .A ( chanx_right_in[10] ) , 
-    .X ( ropt_net_124 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_52 ( .A ( chanx_right_in[11] ) , 
-    .X ( ropt_net_122 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_769 ( .A ( ropt_net_153 ) , 
-    .X ( chany_bottom_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_752 ( 
-    .A ( chany_bottom_in[19] ) , .X ( ropt_net_161 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_770 ( .A ( ropt_net_154 ) , 
-    .X ( chanx_right_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_771 ( .A ( ropt_net_155 ) , 
-    .X ( chany_bottom_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_753 ( .A ( ropt_net_137 ) , 
-    .X ( ropt_net_152 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_772 ( .A ( ropt_net_156 ) , 
-    .X ( chanx_right_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_773 ( .A ( ropt_net_157 ) , 
-    .X ( chany_bottom_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_774 ( .A ( ropt_net_158 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_724 ( .A ( ropt_net_132 ) , 
     .X ( chany_bottom_out[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_61 ( .A ( chany_bottom_in[4] ) , 
-    .X ( ropt_net_135 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_775 ( .A ( ropt_net_159 ) , 
-    .X ( chany_bottom_out[9] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_63 ( .A ( chany_bottom_in[7] ) , 
-    .X ( ropt_net_137 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_64 ( .A ( chany_bottom_in[8] ) , 
-    .X ( BUF_net_64 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_776 ( .A ( ropt_net_160 ) , 
-    .X ( chanx_right_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_777 ( .A ( ropt_net_161 ) , 
-    .X ( chanx_right_out[19] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_67 ( .A ( chany_bottom_in[11] ) , 
-    .X ( BUF_net_67 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_778 ( .A ( ropt_net_162 ) , 
-    .X ( chanx_right_out[6] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_69 ( .A ( chany_bottom_in[13] ) , 
-    .X ( ropt_net_138 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_779 ( .A ( ropt_net_163 ) , 
-    .X ( chany_bottom_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_71 ( .A ( chany_bottom_in[17] ) , 
-    .X ( ropt_net_140 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_780 ( .A ( ropt_net_164 ) , 
-    .X ( chanx_right_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_754 ( .A ( ropt_net_138 ) , 
-    .X ( ropt_net_154 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_781 ( .A ( ropt_net_165 ) , 
-    .X ( chanx_right_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_78 ( .A ( BUF_net_45 ) , 
-    .X ( ropt_net_142 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_79 ( .A ( chanx_right_in[5] ) , 
-    .X ( ropt_net_117 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_80 ( .A ( BUF_net_48 ) , 
-    .X ( ropt_net_148 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_755 ( .A ( ropt_net_139 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_725 ( .A ( ropt_net_133 ) , 
+    .X ( chany_bottom_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_726 ( .A ( ropt_net_134 ) , 
     .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_756 ( .A ( ropt_net_140 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_690 ( .A ( chanx_right_in[15] ) , 
+    .X ( ropt_net_132 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_691 ( .A ( chanx_right_in[19] ) , 
+    .X ( ropt_net_133 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_727 ( .A ( ropt_net_135 ) , 
+    .X ( chany_bottom_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_692 ( 
+    .A ( chany_bottom_in[13] ) , .X ( ropt_net_154 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_728 ( .A ( ropt_net_136 ) , 
+    .X ( chanx_right_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_693 ( .A ( ropt_net_102 ) , 
+    .X ( ropt_net_130 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_694 ( .A ( ropt_net_103 ) , 
+    .X ( ropt_net_134 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_729 ( .A ( ropt_net_137 ) , 
     .X ( chanx_right_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_782 ( .A ( ropt_net_166 ) , 
-    .X ( chanx_right_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_783 ( .A ( ropt_net_167 ) , 
-    .X ( chanx_right_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_784 ( .A ( ropt_net_168 ) , 
-    .X ( chanx_right_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_785 ( .A ( ropt_net_169 ) , 
-    .X ( chanx_right_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_92 ( .A ( BUF_net_44 ) , 
-    .X ( chany_bottom_out[16] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_93 ( .A ( chanx_right_in[4] ) , 
-    .X ( ropt_net_115 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_94 ( .A ( chanx_right_in[8] ) , 
-    .X ( ropt_net_118 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_95 ( .A ( chanx_right_in[13] ) , 
-    .X ( ropt_net_129 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_99 ( .A ( BUF_net_42 ) , 
-    .X ( chany_bottom_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_105 ( .A ( BUF_net_64 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_695 ( .A ( chanx_right_in[4] ) , 
+    .X ( ropt_net_155 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_696 ( .A ( chanx_right_in[10] ) , 
     .X ( ropt_net_150 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_106 ( .A ( BUF_net_67 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_697 ( .A ( chanx_right_in[12] ) , 
+    .X ( ropt_net_151 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_698 ( .A ( chanx_right_in[3] ) , 
+    .X ( chany_bottom_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_699 ( .A ( chanx_right_in[17] ) , 
+    .X ( chany_bottom_out[1] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_700 ( .A ( chanx_right_in[7] ) , 
+    .X ( chany_bottom_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_701 ( .A ( chany_bottom_in[4] ) , 
+    .X ( ropt_net_153 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_702 ( 
+    .A ( chany_bottom_in[11] ) , .X ( ropt_net_152 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_703 ( .A ( chany_bottom_in[5] ) , 
+    .X ( chanx_right_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_704 ( .A ( ropt_net_113 ) , 
+    .X ( ropt_net_140 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_705 ( .A ( ropt_net_114 ) , 
+    .X ( ropt_net_136 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_706 ( .A ( chanx_right_in[9] ) , 
+    .X ( ropt_net_135 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_707 ( .A ( ropt_net_116 ) , 
+    .X ( chanx_right_out[8] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_708 ( .A ( ropt_net_117 ) , 
+    .X ( ropt_net_137 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_709 ( .A ( ropt_net_118 ) , 
+    .X ( chanx_right_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_710 ( .A ( ropt_net_119 ) , 
+    .X ( chanx_right_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_712 ( .A ( ropt_net_120 ) , 
+    .X ( ropt_net_143 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_713 ( .A ( ropt_net_121 ) , 
+    .X ( ropt_net_131 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_714 ( .A ( ropt_net_122 ) , 
+    .X ( ropt_net_142 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_42 ( .A ( chanx_right_in[2] ) , 
+    .X ( BUF_net_42 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_730 ( .A ( ropt_net_138 ) , 
+    .X ( chany_bottom_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_731 ( .A ( ropt_net_139 ) , 
+    .X ( chanx_right_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_732 ( .A ( ropt_net_140 ) , 
+    .X ( chanx_right_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_733 ( .A ( ropt_net_141 ) , 
+    .X ( chany_bottom_out[17] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_47 ( .A ( chanx_right_in[8] ) , 
+    .X ( ropt_net_125 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_734 ( .A ( ropt_net_142 ) , 
+    .X ( chanx_right_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_715 ( .A ( ropt_net_123 ) , 
+    .X ( ropt_net_144 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_735 ( .A ( ropt_net_143 ) , 
+    .X ( chanx_right_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_716 ( .A ( ropt_net_124 ) , 
+    .X ( ropt_net_145 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_736 ( .A ( ropt_net_144 ) , 
+    .X ( chanx_right_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_737 ( .A ( ropt_net_145 ) , 
+    .X ( chany_bottom_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_738 ( .A ( ropt_net_146 ) , 
+    .X ( chanx_right_out[15] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_55 ( .A ( chany_bottom_in[0] ) , 
+    .X ( ropt_net_113 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_56 ( .A ( chany_bottom_in[1] ) , 
+    .X ( ropt_net_118 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_57 ( .A ( chany_bottom_in[2] ) , 
+    .X ( ropt_net_119 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_58 ( .A ( chany_bottom_in[3] ) , 
+    .X ( ropt_net_127 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_739 ( .A ( ropt_net_147 ) , 
+    .X ( chanx_right_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_740 ( .A ( ropt_net_148 ) , 
+    .X ( chany_bottom_out[10] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_61 ( .A ( chany_bottom_in[7] ) , 
+    .X ( ropt_net_123 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_62 ( .A ( chany_bottom_in[8] ) , 
+    .X ( ropt_net_114 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_63 ( .A ( chany_bottom_in[9] ) , 
+    .X ( ropt_net_128 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_64 ( .A ( chany_bottom_in[10] ) , 
+    .X ( ropt_net_116 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_741 ( .A ( ropt_net_149 ) , 
+    .X ( chany_bottom_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_717 ( .A ( ropt_net_125 ) , 
+    .X ( ropt_net_148 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_67 ( .A ( chany_bottom_in[15] ) , 
+    .X ( ropt_net_120 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_68 ( .A ( chany_bottom_in[17] ) , 
+    .X ( ropt_net_117 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_718 ( .A ( ropt_net_126 ) , 
+    .X ( ropt_net_139 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_719 ( .A ( ropt_net_127 ) , 
+    .X ( ropt_net_146 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_720 ( .A ( ropt_net_128 ) , 
+    .X ( ropt_net_147 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_721 ( .A ( ropt_net_129 ) , 
+    .X ( ropt_net_141 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_742 ( .A ( ropt_net_150 ) , 
+    .X ( chany_bottom_out[8] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_744 ( .A ( ropt_net_151 ) , 
+    .X ( chany_bottom_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_745 ( .A ( ropt_net_152 ) , 
+    .X ( chanx_right_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_746 ( .A ( ropt_net_153 ) , 
+    .X ( chanx_right_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_748 ( .A ( ropt_net_154 ) , 
+    .X ( chanx_right_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_80 ( .A ( BUF_net_42 ) , 
+    .X ( ropt_net_138 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_751 ( .A ( ropt_net_155 ) , 
+    .X ( chany_bottom_out[14] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_83 ( .A ( chanx_right_in[5] ) , 
+    .X ( ropt_net_102 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_86 ( .A ( chanx_right_in[11] ) , 
     .X ( ropt_net_149 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_88 ( .A ( chanx_right_in[13] ) , 
+    .X ( ropt_net_121 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_91 ( .A ( chanx_right_in[0] ) , 
+    .X ( ropt_net_124 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_92 ( .A ( chanx_right_in[1] ) , 
+    .X ( ropt_net_129 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_95 ( .A ( chany_bottom_in[12] ) , 
+    .X ( ropt_net_122 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_96 ( .A ( chany_bottom_in[19] ) , 
+    .X ( ropt_net_126 ) ) ;
 endmodule
 
 
@@ -21162,9 +20682,9 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( mem_outb[0] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_27__57 ( .A ( mem_out[1] ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_27__57 ( .A ( mem_out[1] ) , 
     .X ( net_net_101 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_168 ( .A ( net_net_101 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_101 ( .A ( net_net_101 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -21948,9 +21468,12 @@ input  p0 ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 
 const1_12_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) , 
@@ -21958,9 +21481,10 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( in[2] ) ,
     .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ ( .A0 ( p0 ) , .A1 ( in[3] ) , 
     .S ( sram[1] ) , .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l3_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .S ( sram[2] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .S ( sram[2] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_3_X[0] ) ) ;
 endmodule
 
 
@@ -22079,6 +21603,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 
 const1_11_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -22093,10 +21619,6 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_66 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( BUF_net_66 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_147 ( .A ( BUF_net_66 ) , 
-    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -22116,9 +21638,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 
 const1_10_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -22129,9 +21654,10 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
     .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ ( .A0 ( p0 ) , .A1 ( in[4] ) , 
     .S ( sram[1] ) , .X ( sky130_fd_sc_hd__mux2_1_3_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l3_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[2] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[2] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
 endmodule
 
 
@@ -22155,6 +21681,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 
 const1_9_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -22169,8 +21697,6 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_145 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -22190,9 +21716,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
 
 const1_8_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -22203,9 +21732,10 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
     .X ( sky130_fd_sc_hd__mux2_1_2_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ ( .A0 ( p0 ) , .A1 ( in[4] ) , 
     .S ( sram[1] ) , .X ( sky130_fd_sc_hd__mux2_1_3_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l3_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[2] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[2] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
 endmodule
 
 
@@ -22402,6 +21932,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 
 const1_6_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -22419,8 +21951,6 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_5_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_143 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -22441,9 +21971,12 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_2_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_3_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_4_X ;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 
 const1_5_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -22457,9 +21990,10 @@ sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ (
 sky130_fd_sc_hd__mux2_1 mux_l2_in_1_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_2_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_4_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_8 mux_l3_in_0_ ( 
+sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ ( 
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , .X ( out[0] ) ) ;
+    .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
+    .X ( sky130_fd_sc_hd__mux2_1_5_X[0] ) ) ;
 endmodule
 
 
@@ -22570,6 +22104,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_5_X ;
 
 const1_2_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -22587,8 +22123,6 @@ sky130_fd_sc_hd__mux2_1 mux_l3_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_4_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_3_X[0] ) , .S ( sram[2] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_5_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_59 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_5_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -22793,46 +22327,44 @@ mux_tree_tapbuf_size6_4 mux_top_track_0 (
         chanx_right_in[15] , chany_bottom_in[2] , chany_bottom_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size6_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_0_sram_inv ) , 
-    .out ( chany_top_out[0] ) , .p0 ( optlc_net_187 ) ) ;
+    .out ( chany_top_out[0] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size6_5 mux_top_track_4 (
     .in ( { top_left_grid_pin_1_[0] , chanx_right_in[3] , chanx_right_in[10] , 
         chanx_right_in[17] , chany_bottom_in[5] , chany_bottom_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size6_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_1_sram_inv ) , 
-    .out ( chany_top_out[2] ) , .p0 ( optlc_net_187 ) ) ;
+    .out ( chany_top_out[2] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size6_1 mux_top_track_8 (
     .in ( { top_left_grid_pin_1_[0] , chanx_right_in[4] , chanx_right_in[11] , 
         chanx_right_in[18] , chany_bottom_in[6] , chany_bottom_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size6_2_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size6_2_sram_inv ) ,
-    .out ( { ropt_net_190 } ) ,
-    .p0 ( optlc_net_187 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size6_2_sram_inv ) , 
+    .out ( chany_top_out[4] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size6_3 mux_right_track_0 (
     .in ( { chany_top_in[2] , right_top_grid_pin_42_[0] , 
         right_top_grid_pin_44_[0] , right_top_grid_pin_46_[0] , 
         right_top_grid_pin_48_[0] , chany_bottom_in[2] } ) ,
     .sram ( mux_tree_tapbuf_size6_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_3_sram_inv ) , 
-    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_186 ) ) ;
+    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size6_0_1 mux_bottom_track_1 (
     .in ( { chany_top_in[2] , chany_top_in[12] , chanx_right_in[5] , 
         chanx_right_in[12] , chanx_right_in[19] , bottom_left_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_4_sram_inv ) , 
-    .out ( chany_bottom_out[0] ) , .p0 ( optlc_net_185 ) ) ;
+    .out ( chany_bottom_out[0] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size6_1 mux_bottom_track_5 (
     .in ( { chany_top_in[5] , chany_top_in[14] , chanx_right_in[3] , 
         chanx_right_in[10] , chanx_right_in[17] , bottom_left_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_5_sram_inv ) , 
-    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_183 ) ) ;
+    .out ( chany_bottom_out[2] ) , .p0 ( optlc_net_121 ) ) ;
 mux_tree_tapbuf_size6_2 mux_bottom_track_9 (
     .in ( { chany_top_in[6] , chany_top_in[16] , chanx_right_in[2] , 
         chanx_right_in[9] , chanx_right_in[16] , bottom_left_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_6_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size6_6_sram_inv ) ,
-    .out ( { ropt_net_194 } ) ,
-    .p0 ( optlc_net_183 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size6_6_sram_inv ) , 
+    .out ( chany_bottom_out[4] ) , .p0 ( optlc_net_121 ) ) ;
 mux_tree_tapbuf_size6_mem_4 mem_top_track_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
@@ -22873,33 +22405,31 @@ mux_tree_tapbuf_size5_1 mux_top_track_2 (
         chany_bottom_in[4] , chany_bottom_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size5_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_0_sram_inv ) , 
-    .out ( chany_top_out[1] ) , .p0 ( optlc_net_187 ) ) ;
+    .out ( chany_top_out[1] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size5_3 mux_top_track_16 (
     .in ( { chanx_right_in[5] , chanx_right_in[12] , chanx_right_in[19] , 
         chany_bottom_in[8] , chany_bottom_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size5_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_1_sram_inv ) , 
-    .out ( chany_top_out[8] ) , .p0 ( optlc_net_184 ) ) ;
+    .out ( chany_top_out[8] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size5_2 mux_bottom_track_3 (
     .in ( { chany_top_in[4] , chany_top_in[13] , chanx_right_in[4] , 
         chanx_right_in[11] , chanx_right_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size5_2_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size5_2_sram_inv ) ,
-    .out ( { ropt_net_192 } ) ,
-    .p0 ( optlc_net_185 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size5_2_sram_inv ) , 
+    .out ( chany_bottom_out[1] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size5_0_1 mux_bottom_track_17 (
     .in ( { chany_top_in[8] , chany_top_in[17] , chanx_right_in[1] , 
         chanx_right_in[8] , chanx_right_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size5_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_3_sram_inv ) , 
-    .out ( chany_bottom_out[8] ) , .p0 ( optlc_net_187 ) ) ;
+    .out ( chany_bottom_out[8] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size5_1 mux_bottom_track_25 (
     .in ( { chany_top_in[9] , chany_top_in[18] , chanx_right_in[0] , 
         chanx_right_in[7] , chanx_right_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size5_4_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size5_4_sram_inv ) ,
-    .out ( { ropt_net_191 } ) ,
-    .p0 ( optlc_net_185 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size5_4_sram_inv ) , 
+    .out ( chany_bottom_out[12] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size5_mem_1 mem_top_track_2 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size5_mem_0_ccff_tail ) , 
@@ -22930,43 +22460,43 @@ mux_tree_tapbuf_size4_5 mux_top_track_24 (
         chany_bottom_in[18] } ) ,
     .sram ( mux_tree_tapbuf_size4_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_0_sram_inv ) , 
-    .out ( chany_top_out[12] ) , .p0 ( optlc_net_184 ) ) ;
+    .out ( chany_top_out[12] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size4 mux_top_track_32 (
     .in ( { chanx_right_in[0] , chanx_right_in[7] , chanx_right_in[14] , 
         chany_bottom_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size4_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_1_sram_inv ) , 
-    .out ( chany_top_out[16] ) , .p0 ( optlc_net_184 ) ) ;
+    .out ( chany_top_out[16] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size4_4 mux_right_track_8 (
     .in ( { chany_top_in[7] , chany_top_in[8] , right_top_grid_pin_42_[0] , 
         chany_bottom_in[8] } ) ,
     .sram ( mux_tree_tapbuf_size4_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_2_sram_inv ) , 
-    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_184 ) ) ;
+    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size4_0 mux_right_track_10 (
     .in ( { chany_top_in[9] , chany_top_in[11] , right_top_grid_pin_43_[0] , 
         chany_bottom_in[9] } ) ,
     .sram ( mux_tree_tapbuf_size4_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_3_sram_inv ) , 
-    .out ( chanx_right_out[5] ) , .p0 ( optlc_net_184 ) ) ;
+    .out ( chanx_right_out[5] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size4_1 mux_right_track_12 (
     .in ( { chany_top_in[10] , chany_top_in[15] , right_top_grid_pin_44_[0] , 
         chany_bottom_in[10] } ) ,
     .sram ( mux_tree_tapbuf_size4_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_4_sram_inv ) , 
-    .out ( chanx_right_out[6] ) , .p0 ( optlc_net_184 ) ) ;
+    .out ( chanx_right_out[6] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size4_2 mux_right_track_14 (
     .in ( { chany_top_in[12] , chany_top_in[19] , right_top_grid_pin_45_[0] , 
         chany_bottom_in[12] } ) ,
     .sram ( mux_tree_tapbuf_size4_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_5_sram_inv ) , 
-    .out ( chanx_right_out[7] ) , .p0 ( optlc_net_186 ) ) ;
+    .out ( chanx_right_out[7] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size4_3 mux_right_track_24 (
     .in ( { chany_top_in[18] , right_top_grid_pin_42_[0] , 
         chany_bottom_in[18] , chany_bottom_in[19] } ) ,
     .sram ( mux_tree_tapbuf_size4_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size4_6_sram_inv ) , 
-    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_185 ) ) ;
+    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size4_mem_5 mem_top_track_24 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size5_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size4_mem_0_ccff_tail ) , 
@@ -23008,21 +22538,21 @@ mux_tree_tapbuf_size7_0 mux_right_track_2 (
         right_top_grid_pin_49_[0] , chany_bottom_in[4] } ) ,
     .sram ( mux_tree_tapbuf_size7_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_0_sram_inv ) , 
-    .out ( chanx_right_out[1] ) , .p0 ( optlc_net_186 ) ) ;
+    .out ( chanx_right_out[1] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size7_1 mux_right_track_4 (
     .in ( { chany_top_in[1] , chany_top_in[5] , right_top_grid_pin_42_[0] , 
         right_top_grid_pin_44_[0] , right_top_grid_pin_46_[0] , 
         right_top_grid_pin_48_[0] , chany_bottom_in[5] } ) ,
     .sram ( mux_tree_tapbuf_size7_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_1_sram_inv ) , 
-    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_186 ) ) ;
+    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size7 mux_right_track_6 (
     .in ( { chany_top_in[3] , chany_top_in[6] , right_top_grid_pin_43_[0] , 
         right_top_grid_pin_45_[0] , right_top_grid_pin_47_[0] , 
         right_top_grid_pin_49_[0] , chany_bottom_in[6] } ) ,
     .sram ( mux_tree_tapbuf_size7_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size7_2_sram_inv ) , 
-    .out ( chanx_right_out[3] ) , .p0 ( optlc_net_186 ) ) ;
+    .out ( chanx_right_out[3] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size7_mem_0 mem_right_track_2 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size6_mem_3_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size7_mem_0_ccff_tail ) , 
@@ -23043,30 +22573,30 @@ mux_tree_tapbuf_size3_1 mux_right_track_16 (
         chany_bottom_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size3_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_0_sram_inv ) , 
-    .out ( chanx_right_out[8] ) , .p0 ( optlc_net_186 ) ) ;
+    .out ( chanx_right_out[8] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size3_2 mux_right_track_18 (
     .in ( { chany_top_in[14] , right_top_grid_pin_47_[0] , 
         chany_bottom_in[14] } ) ,
     .sram ( mux_tree_tapbuf_size3_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_1_sram_inv ) , 
-    .out ( chanx_right_out[9] ) , .p0 ( optlc_net_187 ) ) ;
+    .out ( chanx_right_out[9] ) , .p0 ( optlc_net_122 ) ) ;
 mux_tree_tapbuf_size3_3 mux_right_track_20 (
     .in ( { chany_top_in[16] , right_top_grid_pin_48_[0] , 
         chany_bottom_in[16] } ) ,
     .sram ( mux_tree_tapbuf_size3_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_2_sram_inv ) , 
-    .out ( chanx_right_out[10] ) , .p0 ( optlc_net_187 ) ) ;
+    .out ( chanx_right_out[10] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size3_4 mux_right_track_22 (
     .in ( { chany_top_in[17] , right_top_grid_pin_49_[0] , 
         chany_bottom_in[17] } ) ,
     .sram ( mux_tree_tapbuf_size3_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_3_sram_inv ) , 
-    .out ( chanx_right_out[11] ) , .p0 ( optlc_net_184 ) ) ;
+    .out ( chanx_right_out[11] ) , .p0 ( optlc_net_124 ) ) ;
 mux_tree_tapbuf_size3_0_1 mux_bottom_track_33 (
     .in ( { chany_top_in[10] , chanx_right_in[6] , chanx_right_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size3_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_4_sram_inv ) , 
-    .out ( chany_bottom_out[16] ) , .p0 ( optlc_net_185 ) ) ;
+    .out ( chany_bottom_out[16] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size3_mem_1 mem_right_track_16 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size4_mem_5_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size3_mem_0_ccff_tail ) , 
@@ -23089,177 +22619,155 @@ mux_tree_tapbuf_size3_mem_4 mem_right_track_22 ( .prog_clk ( prog_clk ) ,
     .mem_outb ( mux_tree_tapbuf_size3_3_sram_inv ) ) ;
 mux_tree_tapbuf_size3_mem_0_1 mem_bottom_track_33 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size5_mem_4_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_197 } ) ,
+    .ccff_tail ( { ropt_net_127 } ) ,
     .mem_out ( mux_tree_tapbuf_size3_4_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size3_4_sram_inv ) ) ;
 mux_tree_tapbuf_size2_11 mux_right_track_26 (
     .in ( { right_top_grid_pin_43_[0] , chany_bottom_in[15] } ) ,
     .sram ( mux_tree_tapbuf_size2_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_0_sram_inv ) , 
-    .out ( chanx_right_out[13] ) , .p0 ( optlc_net_184 ) ) ;
+    .out ( chanx_right_out[13] ) , .p0 ( optlc_net_123 ) ) ;
 mux_tree_tapbuf_size2_mem_11 mem_right_track_26 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size4_mem_6_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size2_mem_0_ccff_tail ) , 
     .mem_out ( mux_tree_tapbuf_size2_0_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size2_0_sram_inv ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_171 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_183 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_173 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_184 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_175 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_185 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_177 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_186 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_179 ( .LO ( SYNOPSYS_UNCONNECTED_5 ) , 
-    .HI ( optlc_net_187 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_810 ( 
+sky130_fd_sc_hd__conb_1 optlc_110 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_121 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_2__1 ( .A ( chany_top_in[4] ) , 
+    .X ( ropt_net_142 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_3__2 ( .A ( chany_top_in[5] ) , 
+    .X ( ropt_net_149 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_112 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_122 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_114 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
+    .HI ( optlc_net_123 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_116 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
+    .HI ( optlc_net_124 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_715 ( .A ( chany_bottom_in[9] ) , 
+    .X ( ropt_net_153 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_8__7 ( .A ( chany_top_in[12] ) , 
+    .X ( ropt_net_147 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_9__8 ( .A ( chany_top_in[13] ) , 
+    .X ( ropt_net_133 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_716 ( 
+    .A ( chany_bottom_in[16] ) , .X ( ropt_net_164 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_717 ( .A ( ropt_net_127 ) , 
+    .X ( ropt_net_152 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_718 ( .A ( chany_bottom_in[0] ) , 
+    .X ( ropt_net_163 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_719 ( .A ( ropt_net_129 ) , 
+    .X ( ropt_net_154 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_720 ( .A ( chany_bottom_in[7] ) , 
+    .X ( ropt_net_161 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_721 ( 
     .A ( chany_bottom_in[17] ) , .X ( chany_top_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_811 ( .A ( ropt_net_190 ) , 
-    .X ( ropt_net_228 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_812 ( .A ( ropt_net_191 ) , 
-    .X ( ropt_net_226 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_813 ( .A ( ropt_net_192 ) , 
-    .X ( ropt_net_237 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_814 ( 
-    .A ( chany_bottom_in[12] ) , .X ( chany_top_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_815 ( .A ( ropt_net_194 ) , 
-    .X ( ropt_net_220 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_816 ( .A ( chany_top_in[6] ) , 
-    .X ( ropt_net_240 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_817 ( .A ( chany_bottom_in[0] ) , 
-    .X ( ropt_net_241 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_818 ( .A ( ropt_net_197 ) , 
-    .X ( ropt_net_227 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_819 ( .A ( chany_top_in[2] ) , 
-    .X ( ropt_net_242 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_820 ( 
-    .A ( chany_bottom_in[16] ) , .X ( ropt_net_238 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_821 ( .A ( chany_top_in[13] ) , 
-    .X ( chany_bottom_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_822 ( .A ( chany_bottom_in[8] ) , 
-    .X ( chany_top_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_823 ( .A ( chany_top_in[17] ) , 
-    .X ( chany_bottom_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_824 ( .A ( ropt_net_203 ) , 
-    .X ( ropt_net_229 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_825 ( .A ( chany_top_in[16] ) , 
-    .X ( ropt_net_219 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_826 ( .A ( ropt_net_205 ) , 
-    .X ( ropt_net_222 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_827 ( .A ( chany_top_in[12] ) , 
-    .X ( ropt_net_236 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_24__23 ( .A ( chany_bottom_in[10] ) , 
-    .X ( ropt_net_216 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_828 ( .A ( chany_top_in[8] ) , 
-    .X ( ropt_net_223 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_839 ( .A ( ropt_net_219 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_722 ( .A ( chany_top_in[16] ) , 
     .X ( chany_bottom_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_829 ( 
-    .A ( chany_bottom_in[11] ) , .X ( ropt_net_239 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_830 ( .A ( ropt_net_209 ) , 
-    .X ( ropt_net_234 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_831 ( .A ( ropt_net_210 ) , 
-    .X ( ropt_net_221 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_832 ( .A ( ropt_net_211 ) , 
-    .X ( ropt_net_233 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_31__30 ( .A ( chany_bottom_in[18] ) , 
-    .X ( aps_rename_2_ ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_840 ( .A ( ropt_net_220 ) , 
-    .X ( chany_bottom_out[4] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_75 ( .A ( chany_top_in[4] ) , 
-    .X ( ropt_net_205 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_76 ( .A ( chany_top_in[5] ) , 
-    .X ( ropt_net_214 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_841 ( .A ( ropt_net_221 ) , 
-    .X ( chany_top_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_833 ( .A ( ropt_net_212 ) , 
-    .X ( ropt_net_235 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_79 ( .A ( chany_top_in[9] ) , 
-    .X ( ropt_net_203 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_842 ( .A ( ropt_net_222 ) , 
-    .X ( chany_bottom_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_843 ( .A ( ropt_net_223 ) , 
-    .X ( chany_bottom_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_844 ( .A ( ropt_net_224 ) , 
-    .X ( chany_bottom_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_834 ( .A ( ropt_net_213 ) , 
-    .X ( ropt_net_230 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_845 ( .A ( ropt_net_225 ) , 
-    .X ( chany_top_out[11] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_85 ( .A ( chany_bottom_in[1] ) , 
-    .X ( ropt_net_211 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_86 ( .A ( chany_bottom_in[2] ) , 
-    .X ( BUF_net_86 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_87 ( .A ( chany_bottom_in[3] ) , 
-    .X ( ropt_net_213 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_835 ( .A ( ropt_net_214 ) , 
-    .X ( ropt_net_224 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_89 ( .A ( chany_bottom_in[5] ) , 
-    .X ( BUF_net_89 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_90 ( .A ( chany_bottom_in[7] ) , 
-    .X ( ropt_net_212 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_846 ( .A ( ropt_net_226 ) , 
-    .X ( chany_bottom_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_836 ( .A ( ropt_net_215 ) , 
-    .X ( ropt_net_231 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_847 ( .A ( ropt_net_227 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_848 ( .A ( ropt_net_228 ) , 
-    .X ( chany_top_out[4] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_849 ( .A ( ropt_net_229 ) , 
-    .X ( chany_bottom_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_96 ( .A ( chany_bottom_in[14] ) , 
-    .X ( chany_top_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_850 ( .A ( ropt_net_230 ) , 
-    .X ( chanx_right_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_851 ( .A ( ropt_net_231 ) , 
-    .X ( chany_bottom_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_99 ( .A ( aps_rename_2_ ) , 
-    .X ( chany_top_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_852 ( .A ( ropt_net_232 ) , 
-    .X ( chany_top_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_837 ( .A ( ropt_net_216 ) , 
-    .X ( ropt_net_225 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_838 ( .A ( ropt_net_217 ) , 
-    .X ( ropt_net_232 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_853 ( .A ( ropt_net_233 ) , 
-    .X ( chanx_right_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_854 ( .A ( ropt_net_234 ) , 
-    .X ( chany_top_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_855 ( .A ( ropt_net_235 ) , 
-    .X ( chanx_right_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_856 ( .A ( ropt_net_236 ) , 
-    .X ( chany_bottom_out[13] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_857 ( .A ( ropt_net_237 ) , 
-    .X ( chany_bottom_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_858 ( .A ( ropt_net_238 ) , 
-    .X ( chany_top_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_859 ( .A ( ropt_net_239 ) , 
-    .X ( chanx_right_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_860 ( .A ( ropt_net_240 ) , 
-    .X ( chany_bottom_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_861 ( .A ( ropt_net_241 ) , 
-    .X ( chanx_right_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_862 ( .A ( ropt_net_242 ) , 
-    .X ( chany_bottom_out[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_136 ( .A ( chany_top_in[10] ) , 
-    .X ( ropt_net_215 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_138 ( .A ( chany_top_in[14] ) , 
-    .X ( chany_bottom_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_139 ( .A ( chany_bottom_in[6] ) , 
-    .X ( chany_top_out[7] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_140 ( .A ( chany_bottom_in[9] ) , 
-    .X ( ropt_net_209 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_158 ( .A ( chany_top_in[18] ) , 
-    .X ( chany_bottom_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_160 ( .A ( BUF_net_86 ) , 
-    .X ( chany_top_out[3] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_161 ( .A ( chany_bottom_in[4] ) , 
-    .X ( ropt_net_217 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_162 ( .A ( BUF_net_89 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_723 ( .A ( ropt_net_133 ) , 
+    .X ( ropt_net_150 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_18__17 ( .A ( chany_bottom_in[4] ) , 
+    .X ( ropt_net_144 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_19__18 ( .A ( chany_bottom_in[5] ) , 
     .X ( chany_top_out[6] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_164 ( .A ( chany_bottom_in[13] ) , 
-    .X ( ropt_net_210 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_724 ( .A ( ropt_net_134 ) , 
+    .X ( ropt_net_151 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_725 ( .A ( ropt_net_135 ) , 
+    .X ( ropt_net_155 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_726 ( .A ( chany_bottom_in[6] ) , 
+    .X ( chany_top_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_727 ( .A ( chany_bottom_in[1] ) , 
+    .X ( ropt_net_162 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_24__23 ( .A ( chany_bottom_in[10] ) , 
+    .X ( ropt_net_145 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_728 ( .A ( ropt_net_138 ) , 
+    .X ( ropt_net_158 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_26__25 ( .A ( chany_bottom_in[12] ) , 
+    .X ( chany_top_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_729 ( .A ( ropt_net_139 ) , 
+    .X ( chany_bottom_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_730 ( .A ( ropt_net_140 ) , 
+    .X ( ropt_net_157 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_731 ( .A ( ropt_net_141 ) , 
+    .X ( chany_bottom_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_732 ( .A ( ropt_net_142 ) , 
+    .X ( chany_bottom_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_733 ( .A ( ropt_net_143 ) , 
+    .X ( ropt_net_156 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_65 ( .A ( chany_top_in[6] ) , 
+    .X ( ropt_net_148 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_66 ( .A ( chany_top_in[8] ) , 
+    .X ( ropt_net_134 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_67 ( .A ( chany_top_in[9] ) , 
+    .X ( ropt_net_129 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_741 ( .A ( ropt_net_150 ) , 
+    .X ( chany_bottom_out[14] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_69 ( .A ( chany_top_in[17] ) , 
+    .X ( BUF_net_69 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_743 ( .A ( ropt_net_151 ) , 
+    .X ( chany_bottom_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_744 ( .A ( ropt_net_152 ) , 
+    .X ( ccff_tail[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_72 ( .A ( chany_bottom_in[2] ) , 
+    .X ( ropt_net_135 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_73 ( .A ( chany_bottom_in[3] ) , 
+    .X ( ropt_net_138 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_745 ( .A ( ropt_net_153 ) , 
+    .X ( chany_top_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_746 ( .A ( ropt_net_154 ) , 
+    .X ( chany_bottom_out[10] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_747 ( .A ( ropt_net_155 ) , 
+    .X ( chany_top_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_734 ( .A ( ropt_net_144 ) , 
+    .X ( chany_top_out[5] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_78 ( .A ( chany_bottom_in[13] ) , 
+    .X ( ropt_net_140 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_79 ( .A ( chany_bottom_in[14] ) , 
+    .X ( ropt_net_160 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_749 ( .A ( ropt_net_156 ) , 
+    .X ( chanx_right_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_755 ( .A ( ropt_net_157 ) , 
+    .X ( chany_top_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_82 ( .A ( chany_bottom_in[18] ) , 
+    .X ( chany_top_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_735 ( .A ( ropt_net_145 ) , 
+    .X ( chany_top_out[11] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_736 ( .A ( ropt_net_146 ) , 
+    .X ( chany_bottom_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_737 ( .A ( ropt_net_147 ) , 
+    .X ( chany_bottom_out[13] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_738 ( .A ( ropt_net_148 ) , 
+    .X ( ropt_net_159 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_87 ( .A ( BUF_net_69 ) , 
+    .X ( chany_bottom_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_739 ( .A ( ropt_net_149 ) , 
+    .X ( chany_bottom_out[6] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_96 ( .A ( chany_top_in[2] ) , 
+    .X ( chany_bottom_out[3] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_97 ( .A ( chany_top_in[10] ) , 
+    .X ( ropt_net_141 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_98 ( .A ( chany_top_in[14] ) , 
+    .X ( ropt_net_139 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_99 ( .A ( chany_top_in[18] ) , 
+    .X ( ropt_net_146 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_100 ( .A ( chany_bottom_in[8] ) , 
+    .X ( chany_top_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_758 ( .A ( ropt_net_158 ) , 
+    .X ( chanx_right_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_759 ( .A ( ropt_net_159 ) , 
+    .X ( chany_bottom_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_762 ( .A ( ropt_net_160 ) , 
+    .X ( chany_top_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_765 ( .A ( ropt_net_161 ) , 
+    .X ( chanx_right_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_766 ( .A ( ropt_net_162 ) , 
+    .X ( chanx_right_out[17] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_107 ( .A ( chany_bottom_in[11] ) , 
+    .X ( ropt_net_143 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_767 ( .A ( ropt_net_163 ) , 
+    .X ( chanx_right_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_768 ( .A ( ropt_net_164 ) , 
+    .X ( chany_top_out[17] ) ) ;
 endmodule
 
 
@@ -23613,7 +23121,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 FTB_12__33 ( .A ( mem_out[1] ) , 
     .X ( net_aps_33 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_65 ( .A ( net_aps_33 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_71 ( .A ( net_aps_33 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -24043,7 +23551,7 @@ sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) ,
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_43 ( 
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_81 ( 
     .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -24061,17 +23569,13 @@ output [0:0] out ;
 input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
-wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_2_1 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
-sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
-    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
-    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
-    .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
+sky130_fd_sc_hd__mux2_8 mux_l2_in_0_ ( .A0 ( p0 ) , 
+    .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -24092,13 +23596,13 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_1_X ;
 
 const1_1_1 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
+sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_1_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_41 ( 
-    .A ( sky130_fd_sc_hd__mux2_1_1_X[0] ) , .X ( out[0] ) ) ;
 endmodule
 
 
@@ -24211,64 +23715,63 @@ mux_tree_tapbuf_size2_8 mux_top_track_0 (
     .in ( { top_left_grid_pin_1_[0] , chanx_right_in[1] } ) ,
     .sram ( mux_tree_tapbuf_size2_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_0_sram_inv ) , 
-    .out ( chany_top_out[0] ) , .p0 ( optlc_net_115 ) ) ;
+    .out ( chany_top_out[0] ) , .p0 ( optlc_net_99 ) ) ;
 mux_tree_tapbuf_size2_10 mux_top_track_4 (
     .in ( { top_left_grid_pin_1_[0] , chanx_right_in[3] } ) ,
     .sram ( mux_tree_tapbuf_size2_1_sram ) , 
-    .sram_inv ( mux_tree_tapbuf_size2_1_sram_inv ) ,
-    .out ( { ropt_net_116 } ) ,
-    .p0 ( optlc_net_115 ) ) ;
+    .sram_inv ( mux_tree_tapbuf_size2_1_sram_inv ) , 
+    .out ( chany_top_out[2] ) , .p0 ( optlc_net_99 ) ) ;
 mux_tree_tapbuf_size2 mux_top_track_8 (
     .in ( { top_left_grid_pin_1_[0] , chanx_right_in[5] } ) ,
     .sram ( mux_tree_tapbuf_size2_2_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_2_sram_inv ) , 
-    .out ( chany_top_out[4] ) , .p0 ( optlc_net_113 ) ) ;
+    .out ( chany_top_out[4] ) , .p0 ( optlc_net_100 ) ) ;
 mux_tree_tapbuf_size2_9 mux_top_track_24 (
     .in ( { top_left_grid_pin_1_[0] , chanx_right_in[13] } ) ,
     .sram ( mux_tree_tapbuf_size2_3_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_3_sram_inv ) ,
-    .out ( { ropt_net_119 } ) ,
-    .p0 ( optlc_net_113 ) ) ;
+    .out ( { ropt_net_107 } ) ,
+    .p0 ( optlc_net_100 ) ) ;
 mux_tree_tapbuf_size2_0 mux_right_track_10 (
     .in ( { chany_top_in[4] , right_top_grid_pin_43_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_4_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_4_sram_inv ) , 
-    .out ( chanx_right_out[5] ) , .p0 ( optlc_net_114 ) ) ;
+    .out ( chanx_right_out[5] ) , .p0 ( optlc_net_100 ) ) ;
 mux_tree_tapbuf_size2_1 mux_right_track_12 (
     .in ( { chany_top_in[5] , right_top_grid_pin_44_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_5_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_5_sram_inv ) , 
-    .out ( chanx_right_out[6] ) , .p0 ( optlc_net_113 ) ) ;
+    .out ( chanx_right_out[6] ) , .p0 ( optlc_net_99 ) ) ;
 mux_tree_tapbuf_size2_2 mux_right_track_14 (
     .in ( { chany_top_in[6] , right_top_grid_pin_45_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_6_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_6_sram_inv ) , 
-    .out ( chanx_right_out[7] ) , .p0 ( optlc_net_112 ) ) ;
+    .out ( chanx_right_out[7] ) , .p0 ( optlc_net_99 ) ) ;
 mux_tree_tapbuf_size2_3 mux_right_track_16 (
     .in ( { chany_top_in[7] , right_top_grid_pin_46_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_7_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_7_sram_inv ) , 
-    .out ( chanx_right_out[8] ) , .p0 ( optlc_net_115 ) ) ;
+    .out ( chanx_right_out[8] ) , .p0 ( optlc_net_102 ) ) ;
 mux_tree_tapbuf_size2_4 mux_right_track_18 (
     .in ( { chany_top_in[8] , right_top_grid_pin_47_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_8_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_8_sram_inv ) , 
-    .out ( chanx_right_out[9] ) , .p0 ( optlc_net_115 ) ) ;
+    .out ( chanx_right_out[9] ) , .p0 ( optlc_net_102 ) ) ;
 mux_tree_tapbuf_size2_5 mux_right_track_20 (
     .in ( { chany_top_in[9] , right_top_grid_pin_48_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_9_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_9_sram_inv ) , 
-    .out ( chanx_right_out[10] ) , .p0 ( optlc_net_115 ) ) ;
+    .out ( chanx_right_out[10] ) , .p0 ( optlc_net_102 ) ) ;
 mux_tree_tapbuf_size2_6 mux_right_track_22 (
     .in ( { chany_top_in[10] , right_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_10_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_10_sram_inv ) , 
-    .out ( chanx_right_out[11] ) , .p0 ( optlc_net_112 ) ) ;
+    .out ( chanx_right_out[11] ) , .p0 ( optlc_net_101 ) ) ;
 mux_tree_tapbuf_size2_7 mux_right_track_26 (
     .in ( { chany_top_in[12] , right_top_grid_pin_43_[0] } ) ,
     .sram ( mux_tree_tapbuf_size2_11_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size2_11_sram_inv ) , 
-    .out ( chanx_right_out[13] ) , .p0 ( optlc_net_112 ) ) ;
+    .out ( chanx_right_out[13] ) , .p0 ( optlc_net_101 ) ) ;
 mux_tree_tapbuf_size2_mem_8 mem_top_track_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size2_mem_0_ccff_tail ) , 
@@ -24326,7 +23829,7 @@ mux_tree_tapbuf_size2_mem_6 mem_right_track_22 ( .prog_clk ( prog_clk ) ,
     .mem_outb ( mux_tree_tapbuf_size2_10_sram_inv ) ) ;
 mux_tree_tapbuf_size2_mem_7 mem_right_track_26 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size3_mem_1_ccff_tail ) ,
-    .ccff_tail ( { ropt_net_117 } ) ,
+    .ccff_tail ( { ropt_net_105 } ) ,
     .mem_out ( mux_tree_tapbuf_size2_11_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size2_11_sram_inv ) ) ;
 mux_tree_tapbuf_size6_0 mux_right_track_0 (
@@ -24335,14 +23838,14 @@ mux_tree_tapbuf_size6_0 mux_right_track_0 (
         right_top_grid_pin_48_[0] , right_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_0_sram_inv ) , 
-    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_114 ) ) ;
+    .out ( chanx_right_out[0] ) , .p0 ( optlc_net_99 ) ) ;
 mux_tree_tapbuf_size6 mux_right_track_4 (
     .in ( { chany_top_in[1] , right_top_grid_pin_42_[0] , 
         right_top_grid_pin_44_[0] , right_top_grid_pin_46_[0] , 
         right_top_grid_pin_48_[0] , right_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size6_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size6_1_sram_inv ) , 
-    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_115 ) ) ;
+    .out ( chanx_right_out[2] ) , .p0 ( optlc_net_102 ) ) ;
 mux_tree_tapbuf_size6_mem_0 mem_right_track_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size2_mem_3_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
@@ -24359,14 +23862,14 @@ mux_tree_tapbuf_size5_0 mux_right_track_2 (
         right_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size5_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_0_sram_inv ) , 
-    .out ( chanx_right_out[1] ) , .p0 ( optlc_net_112 ) ) ;
+    .out ( chanx_right_out[1] ) , .p0 ( optlc_net_101 ) ) ;
 mux_tree_tapbuf_size5 mux_right_track_6 (
     .in ( { chany_top_in[2] , right_top_grid_pin_43_[0] , 
         right_top_grid_pin_45_[0] , right_top_grid_pin_47_[0] , 
         right_top_grid_pin_49_[0] } ) ,
     .sram ( mux_tree_tapbuf_size5_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size5_1_sram_inv ) , 
-    .out ( chanx_right_out[3] ) , .p0 ( optlc_net_112 ) ) ;
+    .out ( chanx_right_out[3] ) , .p0 ( optlc_net_101 ) ) ;
 mux_tree_tapbuf_size5_mem_0 mem_right_track_2 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size6_mem_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size5_mem_0_ccff_tail ) , 
@@ -24382,13 +23885,13 @@ mux_tree_tapbuf_size3 mux_right_track_8 (
         right_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size3_0_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_0_sram_inv ) , 
-    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_114 ) ) ;
+    .out ( chanx_right_out[4] ) , .p0 ( optlc_net_100 ) ) ;
 mux_tree_tapbuf_size3_0 mux_right_track_24 (
     .in ( { chany_top_in[11] , right_top_grid_pin_42_[0] , 
         right_bottom_grid_pin_1_[0] } ) ,
     .sram ( mux_tree_tapbuf_size3_1_sram ) , 
     .sram_inv ( mux_tree_tapbuf_size3_1_sram_inv ) , 
-    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_112 ) ) ;
+    .out ( chanx_right_out[12] ) , .p0 ( optlc_net_100 ) ) ;
 mux_tree_tapbuf_size3_mem mem_right_track_8 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size5_mem_1_ccff_tail ) , 
     .ccff_tail ( mux_tree_tapbuf_size3_mem_0_ccff_tail ) , 
@@ -24399,96 +23902,118 @@ mux_tree_tapbuf_size3_mem_0 mem_right_track_24 ( .prog_clk ( prog_clk ) ,
     .ccff_tail ( mux_tree_tapbuf_size3_mem_1_ccff_tail ) , 
     .mem_out ( mux_tree_tapbuf_size3_1_sram ) , 
     .mem_outb ( mux_tree_tapbuf_size3_1_sram_inv ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_105 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_112 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_107 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_113 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_109 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_114 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_111 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_115 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_728 ( .A ( ropt_net_116 ) , 
-    .X ( ropt_net_141 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 FTB_6__5 ( .A ( chany_top_in[18] ) , 
-    .X ( ropt_net_134 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_757 ( .A ( ropt_net_139 ) , 
-    .X ( chany_top_out[5] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_758 ( .A ( ropt_net_140 ) , 
-    .X ( chany_top_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_759 ( .A ( ropt_net_141 ) , 
-    .X ( chany_top_out[2] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_761 ( .A ( ropt_net_142 ) , 
-    .X ( chanx_right_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_729 ( .A ( ropt_net_117 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_730 ( .A ( chanx_right_in[0] ) , 
-    .X ( chany_top_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_731 ( .A ( ropt_net_119 ) , 
-    .X ( chany_top_out[12] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_732 ( .A ( ropt_net_120 ) , 
-    .X ( chany_top_out[15] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_765 ( .A ( ropt_net_143 ) , 
-    .X ( chany_top_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_767 ( .A ( ropt_net_144 ) , 
-    .X ( chany_top_out[1] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_768 ( .A ( ropt_net_145 ) , 
-    .X ( chany_top_out[3] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_733 ( .A ( chanx_right_in[12] ) , 
-    .X ( chany_top_out[11] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_771 ( .A ( ropt_net_146 ) , 
-    .X ( chanx_right_out[16] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_772 ( .A ( ropt_net_147 ) , 
-    .X ( chanx_right_out[17] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_734 ( .A ( chanx_right_in[2] ) , 
-    .X ( ropt_net_144 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_735 ( .A ( chanx_right_in[14] ) , 
+sky130_fd_sc_hd__conb_1 optlc_93 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_99 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_95 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_100 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_97 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
+    .HI ( optlc_net_101 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_99 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
+    .HI ( optlc_net_102 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_688 ( .A ( ropt_net_104 ) , 
     .X ( chany_top_out[13] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_57 ( .A ( chanx_right_in[11] ) , 
-    .X ( BUF_net_57 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_736 ( .A ( chanx_right_in[18] ) , 
-    .X ( chany_top_out[17] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_62 ( .A ( chanx_right_in[17] ) , 
-    .X ( BUF_net_62 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_64 ( .A ( chanx_right_in[19] ) , 
-    .X ( BUF_net_64 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_737 ( .A ( ropt_net_125 ) , 
-    .X ( ropt_net_139 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_73 ( .A ( chanx_right_in[6] ) , 
-    .X ( ropt_net_125 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_739 ( .A ( chanx_right_in[4] ) , 
-    .X ( ropt_net_145 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_742 ( .A ( chanx_right_in[8] ) , 
-    .X ( chany_top_out[7] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_743 ( .A ( chany_top_in[15] ) , 
-    .X ( ropt_net_146 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_744 ( .A ( chanx_right_in[10] ) , 
-    .X ( chany_top_out[9] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_78 ( .A ( BUF_net_57 ) , 
-    .X ( chany_top_out[10] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_745 ( .A ( chany_top_in[16] ) , 
-    .X ( ropt_net_147 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_82 ( .A ( chanx_right_in[16] ) , 
-    .X ( ropt_net_120 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_83 ( .A ( BUF_net_62 ) , 
-    .X ( ropt_net_140 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_85 ( .A ( BUF_net_64 ) , 
-    .X ( chany_top_out[18] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_97 ( .A ( chany_top_in[14] ) , 
-    .X ( ropt_net_135 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_98 ( .A ( chanx_right_in[7] ) , 
-    .X ( chany_top_out[6] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_746 ( .A ( chanx_right_in[9] ) , 
-    .X ( chany_top_out[8] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_747 ( .A ( chany_top_in[17] ) , 
-    .X ( chanx_right_out[18] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_101 ( .A ( chanx_right_in[15] ) , 
-    .X ( ropt_net_143 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_748 ( .A ( chany_top_in[13] ) , 
-    .X ( chanx_right_out[14] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_750 ( .A ( ropt_net_134 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_689 ( .A ( ropt_net_105 ) , 
+    .X ( ropt_net_131 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_690 ( .A ( ropt_net_106 ) , 
+    .X ( ropt_net_122 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_691 ( .A ( ropt_net_107 ) , 
+    .X ( ropt_net_132 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_692 ( .A ( chanx_right_in[11] ) , 
+    .X ( ropt_net_133 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_705 ( .A ( ropt_net_121 ) , 
+    .X ( chany_top_out[1] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_11__10 ( .A ( chanx_right_in[7] ) , 
+    .X ( aps_rename_2_ ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_693 ( .A ( ropt_net_109 ) , 
+    .X ( ropt_net_128 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_694 ( .A ( chanx_right_in[2] ) , 
+    .X ( ropt_net_121 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_695 ( .A ( ropt_net_111 ) , 
+    .X ( ropt_net_124 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_696 ( .A ( chanx_right_in[16] ) , 
+    .X ( chany_top_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_697 ( .A ( ropt_net_113 ) , 
     .X ( chanx_right_out[19] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_752 ( .A ( ropt_net_135 ) , 
-    .X ( ropt_net_142 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_706 ( .A ( ropt_net_122 ) , 
+    .X ( chany_top_out[19] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_698 ( .A ( ropt_net_114 ) , 
+    .X ( ropt_net_126 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_707 ( .A ( ropt_net_123 ) , 
+    .X ( chanx_right_out[17] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_20__19 ( .A ( chanx_right_in[17] ) , 
+    .X ( ropt_net_111 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_21__20 ( .A ( chanx_right_in[18] ) , 
+    .X ( ropt_net_120 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 FTB_22__21 ( .A ( chanx_right_in[19] ) , 
+    .X ( chany_top_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_44 ( .A ( chany_top_in[14] ) , 
+    .X ( ropt_net_119 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_45 ( .A ( chany_top_in[16] ) , 
+    .X ( ropt_net_116 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_46 ( .A ( chany_top_in[17] ) , 
+    .X ( ropt_net_115 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_47 ( .A ( chany_top_in[18] ) , 
+    .X ( ropt_net_113 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_708 ( .A ( ropt_net_124 ) , 
+    .X ( chany_top_out[16] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_49 ( .A ( chanx_right_in[4] ) , 
+    .X ( BUF_net_49 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_709 ( .A ( ropt_net_125 ) , 
+    .X ( chany_top_out[17] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_699 ( .A ( ropt_net_115 ) , 
+    .X ( chanx_right_out[18] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_700 ( .A ( ropt_net_116 ) , 
+    .X ( ropt_net_123 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_701 ( .A ( ropt_net_117 ) , 
+    .X ( ropt_net_129 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_702 ( .A ( ropt_net_118 ) , 
+    .X ( chanx_right_out[16] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_710 ( .A ( ropt_net_126 ) , 
+    .X ( chany_top_out[14] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_56 ( .A ( chanx_right_in[12] ) , 
+    .X ( BUF_net_56 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_711 ( .A ( ropt_net_127 ) , 
+    .X ( chany_top_out[3] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_58 ( .A ( chanx_right_in[15] ) , 
+    .X ( ropt_net_114 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_703 ( .A ( ropt_net_119 ) , 
+    .X ( chanx_right_out[15] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_704 ( .A ( ropt_net_120 ) , 
+    .X ( ropt_net_125 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_63 ( .A ( chanx_right_in[6] ) , 
+    .X ( ropt_net_109 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_712 ( .A ( ropt_net_128 ) , 
+    .X ( chany_top_out[5] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_713 ( .A ( ropt_net_129 ) , 
+    .X ( chanx_right_out[14] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_714 ( .A ( ropt_net_130 ) , 
+    .X ( chany_top_out[8] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_715 ( .A ( ropt_net_131 ) , 
+    .X ( ccff_tail[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_716 ( .A ( ropt_net_132 ) , 
+    .X ( chany_top_out[12] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_69 ( .A ( chanx_right_in[14] ) , 
+    .X ( ropt_net_104 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_717 ( .A ( ropt_net_133 ) , 
+    .X ( chany_top_out[10] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_76 ( .A ( chany_top_in[13] ) , 
+    .X ( ropt_net_117 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_77 ( .A ( chany_top_in[15] ) , 
+    .X ( ropt_net_118 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_80 ( .A ( aps_rename_2_ ) , 
+    .X ( chany_top_out[6] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_82 ( .A ( chanx_right_in[0] ) , 
+    .X ( ropt_net_106 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_83 ( .A ( BUF_net_49 ) , 
+    .X ( ropt_net_127 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_84 ( .A ( chanx_right_in[8] ) , 
+    .X ( chany_top_out[7] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_85 ( .A ( chanx_right_in[9] ) , 
+    .X ( ropt_net_130 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_86 ( .A ( chanx_right_in[10] ) , 
+    .X ( chany_top_out[9] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_88 ( .A ( BUF_net_56 ) , 
+    .X ( chany_top_out[11] ) ) ;
 endmodule
 
 
@@ -24510,9 +24035,7 @@ output [0:0] mem_outb ;
 
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( \_gOb0_mem_outb[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd1_1 FTB_2__2 ( .A ( mem_out[0] ) , 
-    .X ( net_aps_2 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_11 ( .A ( net_aps_2 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__2 ( .A ( mem_out[0] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -24531,10 +24054,10 @@ wire aps_rename_1_ ;
 assign A = in ;
 assign out = Y ;
 
-sky130_fd_sc_hd__inv_1 ie_oe_inv ( .A ( aps_rename_1_ ) , .Y ( OE ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__1 ( .A ( mem_out ) , 
+sky130_fd_sc_hd__inv_1 ie_oe_inv ( .A ( IE ) , .Y ( OE ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__1 ( .A ( mem_out ) , 
     .X ( aps_rename_1_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_5 ( .A ( aps_rename_1_ ) , .X ( IE ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_3 ( .A ( aps_rename_1_ ) , .X ( IE ) ) ;
 endmodule
 
 
@@ -24609,20 +24132,20 @@ output [0:0] right_width_0_height_0__pin_1_lower ;
 output [0:0] ccff_tail ;
 
 logical_tile_io_mode_io__3 logical_tile_io_mode_io__0 ( 
-    .prog_clk ( prog_clk ) , .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A ) ,
-    .gfpga_pad_GPIO_IE ( { ropt_net_14 } ) ,
+    .prog_clk ( prog_clk ) , .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A ) , 
+    .gfpga_pad_GPIO_IE ( gfpga_pad_GPIO_IE ) , 
     .gfpga_pad_GPIO_OE ( gfpga_pad_GPIO_OE ) , 
     .gfpga_pad_GPIO_Y ( gfpga_pad_GPIO_Y ) , 
     .io_outpad ( right_width_0_height_0__pin_0_ ) , .ccff_head ( ccff_head ) , 
     .io_inpad ( right_width_0_height_0__pin_1_upper ) ,
-    .ccff_tail ( { ropt_net_15 } ) ) ;
+    .ccff_tail ( { ropt_net_9 } ) ) ;
 sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__0 ( 
     .A ( right_width_0_height_0__pin_1_upper[0] ) , .X ( aps_rename_2_ ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_8 ( .A ( aps_rename_2_ ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_RR_5 ( .A ( aps_rename_2_ ) , 
     .X ( right_width_0_height_0__pin_1_lower[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_577 ( .A ( ropt_net_14 ) , 
-    .X ( gfpga_pad_GPIO_IE[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_578 ( .A ( ropt_net_15 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_569 ( .A ( ropt_net_9 ) , 
+    .X ( ropt_net_11 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_570 ( .A ( ropt_net_11 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -24645,7 +24168,9 @@ output [0:0] mem_outb ;
 
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( \_gOb0_mem_outb[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_2__2 ( .A ( mem_out[0] ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__2 ( .A ( mem_out[0] ) , 
+    .X ( net_net_8 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_13 ( .A ( net_net_8 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -24667,7 +24192,7 @@ assign out = Y ;
 sky130_fd_sc_hd__inv_1 ie_oe_inv ( .A ( aps_rename_1_ ) , .Y ( OE ) ) ;
 sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__1 ( .A ( mem_out ) , 
     .X ( aps_rename_1_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_9 ( .A ( aps_rename_1_ ) , .X ( IE ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_5 ( .A ( aps_rename_1_ ) , .X ( IE ) ) ;
 endmodule
 
 
@@ -24753,14 +24278,16 @@ sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__0 (
     .A ( top_width_0_height_0__pin_1_upper[0] ) , .X ( aps_rename_2_ ) ) ;
 sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_6 ( .A ( aps_rename_2_ ) , 
     .X ( BUF_net_6 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_578 ( .A ( BUF_net_6 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_574 ( .A ( BUF_net_6 ) , 
+    .X ( ropt_net_18 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_577 ( .A ( ropt_net_18 ) , 
     .X ( top_width_0_height_0__pin_1_lower[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_581 ( .A ( ropt_net_19 ) , 
-    .X ( gfpga_pad_GPIO_IE[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_579 ( .A ( ropt_net_16 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_575 ( .A ( ropt_net_16 ) , 
     .X ( ropt_net_19 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_580 ( .A ( ropt_net_17 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_576 ( .A ( ropt_net_17 ) , 
     .X ( ccff_tail[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_578 ( .A ( ropt_net_19 ) , 
+    .X ( gfpga_pad_GPIO_IE[0] ) ) ;
 endmodule
 
 
@@ -24782,7 +24309,9 @@ output [0:0] mem_outb ;
 
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( \_gOb0_mem_outb[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 FTB_2__2 ( .A ( mem_out[0] ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__2 ( .A ( mem_out[0] ) , 
+    .X ( net_net_7 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_9 ( .A ( net_net_7 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -24796,17 +24325,11 @@ input  in ;
 output out ;
 input  mem_out ;
 
-wire aps_rename_1_ ;
-
 assign A = in ;
 assign out = Y ;
 
-sky130_fd_sc_hd__inv_1 ie_oe_inv ( .A ( aps_rename_1_ ) , .Y ( OE ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__1 ( .A ( mem_out ) , 
-    .X ( aps_rename_1_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_8 ( .A ( aps_rename_1_ ) , 
-    .X ( BUF_net_8 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_11 ( .A ( BUF_net_8 ) , .X ( IE ) ) ;
+sky130_fd_sc_hd__inv_1 ie_oe_inv ( .A ( IE ) , .Y ( OE ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 FTB_1__1 ( .A ( mem_out ) , .X ( IE ) ) ;
 endmodule
 
 
@@ -24887,16 +24410,16 @@ logical_tile_io_mode_io__1 logical_tile_io_mode_io__0 (
     .gfpga_pad_GPIO_Y ( gfpga_pad_GPIO_Y ) , 
     .io_outpad ( left_width_0_height_0__pin_0_ ) , .ccff_head ( ccff_head ) , 
     .io_inpad ( left_width_0_height_0__pin_1_upper ) ,
-    .ccff_tail ( { ropt_net_13 } ) ) ;
+    .ccff_tail ( { ropt_net_11 } ) ) ;
 sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__0 ( 
-    .A ( left_width_0_height_0__pin_1_upper[0] ) , .X ( aps_rename_2_ ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_578 ( .A ( ropt_net_15 ) , 
+    .A ( left_width_0_height_0__pin_1_upper[0] ) , .X ( aps_rename_1_ ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_572 ( .A ( ropt_net_12 ) , 
     .X ( left_width_0_height_0__pin_1_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_9 ( .A ( aps_rename_2_ ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_8 ( .A ( aps_rename_1_ ) , 
+    .X ( ropt_net_10 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_570 ( .A ( ropt_net_10 ) , 
     .X ( ropt_net_12 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_576 ( .A ( ropt_net_12 ) , 
-    .X ( ropt_net_15 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_577 ( .A ( ropt_net_13 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_571 ( .A ( ropt_net_11 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -24921,9 +24444,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( \_gOb0_mem_outb[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__2 ( .A ( mem_out[0] ) , 
     .X ( net_net_7 ) ) ;
-sky130_fd_sc_hd__dlygate4sd1_1 BUFT_RR_7 ( .A ( net_net_7 ) , 
-    .X ( net_net_6 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_10 ( .A ( net_net_6 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_13 ( .A ( net_net_7 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -24943,11 +24464,9 @@ assign A = in ;
 assign out = Y ;
 
 sky130_fd_sc_hd__inv_1 ie_oe_inv ( .A ( aps_rename_1_ ) , .Y ( OE ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__1 ( .A ( mem_out ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__1 ( .A ( mem_out ) , 
     .X ( aps_rename_1_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_9 ( .A ( aps_rename_1_ ) , 
-    .X ( BUF_net_9 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_12 ( .A ( BUF_net_9 ) , .X ( IE ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 BUFT_P_12 ( .A ( aps_rename_1_ ) , .X ( IE ) ) ;
 endmodule
 
 
@@ -25022,21 +24541,25 @@ output [0:0] bottom_width_0_height_0__pin_1_lower ;
 output [0:0] ccff_tail ;
 
 logical_tile_io_mode_io_ logical_tile_io_mode_io__0 ( .prog_clk ( prog_clk ) , 
-    .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A ) , 
-    .gfpga_pad_GPIO_IE ( gfpga_pad_GPIO_IE ) , 
+    .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A ) ,
+    .gfpga_pad_GPIO_IE ( { ropt_net_16 } ) ,
     .gfpga_pad_GPIO_OE ( gfpga_pad_GPIO_OE ) , 
     .gfpga_pad_GPIO_Y ( gfpga_pad_GPIO_Y ) , 
     .io_outpad ( bottom_width_0_height_0__pin_0_ ) , 
     .ccff_head ( ccff_head ) , 
     .io_inpad ( bottom_width_0_height_0__pin_1_upper ) ,
-    .ccff_tail ( { ropt_net_14 } ) ) ;
+    .ccff_tail ( { ropt_net_15 } ) ) ;
 sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__0 ( 
     .A ( bottom_width_0_height_0__pin_1_upper[0] ) , .X ( aps_rename_2_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd1_1 BUFT_RR_5 ( .A ( aps_rename_2_ ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_5 ( .A ( aps_rename_2_ ) , 
     .X ( BUF_net_5 ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_577 ( .A ( BUF_net_5 ) , 
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_574 ( .A ( BUF_net_5 ) , 
     .X ( bottom_width_0_height_0__pin_1_lower[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_578 ( .A ( ropt_net_14 ) , 
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_576 ( .A ( ropt_net_16 ) , 
+    .X ( gfpga_pad_GPIO_IE[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_575 ( .A ( ropt_net_15 ) , 
+    .X ( ropt_net_17 ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_577 ( .A ( ropt_net_17 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -25054,6 +24577,8 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 FTB_40__55 ( .A ( mem_out[1] ) , 
+    .X ( net_aps_55 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_109 ( .A ( net_aps_55 ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -25162,22 +24687,19 @@ endmodule
 
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff ( 
-    Test_en , clk , ff_D , ff_DI , ff_Q , ff_clk , p_abuf1 ) ;
+    Test_en , clk , ff_D , ff_DI , ff_Q , ff_clk , p_abuf2 ) ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
 input  [0:0] ff_D ;
 input  [0:0] ff_DI ;
 output [0:0] ff_Q ;
 input  [0:0] ff_clk ;
-output p_abuf1 ;
+output p_abuf2 ;
 
 sky130_fd_sc_hd__sdfxbp_1 sky130_fd_sc_hd__sdfxbp_1_0_ ( .D ( ff_D[0] ) , 
     .SCD ( ff_DI[0] ) , .SCE ( Test_en[0] ) , .CLK ( clk[0] ) , 
-    .Q ( p_abuf1 ) , .Q_N ( SYNOPSYS_UNCONNECTED_1 ) ) ;
-sky130_fd_sc_hd__dlygate4sd1_1 BUFT_RR_108 ( .A ( p_abuf1 ) , 
-    .X ( net_net_133 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_RR_133 ( .A ( net_net_133 ) , 
-    .X ( ff_Q[0] ) ) ;
+    .Q ( p_abuf2 ) , .Q_N ( SYNOPSYS_UNCONNECTED_1 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 BUFT_P_114 ( .A ( p_abuf2 ) , .X ( ff_Q[0] ) ) ;
 endmodule
 
 
@@ -25404,7 +24926,7 @@ sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_2_ ( .A ( in[2] ) ,
 sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_3_ ( 
     .A ( sky130_fd_sc_hd__or2_1_0_X[0] ) , 
     .Y ( sky130_fd_sc_hd__inv_1_3_Y[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_0_ ( .A ( in[0] ) , 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_0_ ( .A ( in[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_0_X[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ ( .A ( in[1] ) , 
     .X ( sky130_fd_sc_hd__buf_2_1_X[0] ) ) ;
@@ -25519,7 +25041,7 @@ endmodule
 module logical_tile_clb_mode_default__fle_mode_physical__fabric ( prog_clk , 
     Test_en , clk , fabric_in , fabric_regin , fabric_scin , fabric_clk , 
     ccff_head , fabric_out , fabric_regout , fabric_scout , ccff_tail , 
-    p_abuf0 , p_abuf1 , p2 ) ;
+    p_abuf1 , p_abuf2 , p2 ) ;
 input  [0:0] prog_clk ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
@@ -25532,8 +25054,8 @@ output [0:1] fabric_out ;
 output [0:0] fabric_regout ;
 output [0:0] fabric_scout ;
 output [0:0] ccff_tail ;
-output p_abuf0 ;
 output p_abuf1 ;
+output p_abuf2 ;
 input  p2 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q ;
@@ -25549,7 +25071,7 @@ wire [0:1] mux_tree_size2_2_sram_inv ;
 wire [0:0] mux_tree_size2_mem_0_ccff_tail ;
 wire [0:0] mux_tree_size2_mem_1_ccff_tail ;
 
-assign p_abuf0 = p_abuf1 ;
+assign p_abuf1 = p_abuf2 ;
 
 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0 ( 
     .prog_clk ( prog_clk ) , .frac_logic_in ( fabric_in ) , 
@@ -25566,9 +25088,9 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff logica
     .Test_en ( Test_en ) , .clk ( clk ) , 
     .ff_D ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[1] ) , 
     .ff_DI ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q ) , 
-    .ff_Q ( fabric_scout ) ,
+    .ff_Q ( fabric_regout ) ,
     .ff_clk ( { SYNOPSYS_UNCONNECTED_2 } ) ,
-    .p_abuf1 ( p_abuf1 ) ) ;
+    .p_abuf2 ( p_abuf2 ) ) ;
 mux_tree_size2_21 mux_fabric_out_0 (
     .in ( { 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q[0] , 
@@ -25578,7 +25100,7 @@ mux_tree_size2_21 mux_fabric_out_0 (
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( fabric_out[0] ) , 
     .p2 ( p2 ) ) ;
 mux_tree_size2_22 mux_fabric_out_1 (
-    .in ( { p_abuf1 , 
+    .in ( { fabric_regout[0] , 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[1]
          } ) ,
     .sram ( mux_tree_size2_1_sram ) , 
@@ -25607,10 +25129,10 @@ mux_tree_size2_mem_23 mem_ff_0_D_0 ( .prog_clk ( prog_clk ) ,
     .mem_outb ( mux_tree_size2_2_sram_inv ) ) ;
 direct_interc direct_interc_0_ (
     .in ( { SYNOPSYS_UNCONNECTED_3 } ) ,
-    .out ( { p_abuf1 } ) ) ;
+    .out ( { p_abuf2 } ) ) ;
 direct_interc direct_interc_1_ (
     .in ( { SYNOPSYS_UNCONNECTED_4 } ) ,
-    .out ( { p_abuf1 } ) ) ;
+    .out ( { p_abuf2 } ) ) ;
 direct_interc direct_interc_2_ (
     .in ( { SYNOPSYS_UNCONNECTED_5 } ) ,
     .out ( fabric_in[0] ) ) ;
@@ -25640,8 +25162,8 @@ direct_interc direct_interc_9_ (
 direct_interc direct_interc_10_ (
     .in ( { SYNOPSYS_UNCONNECTED_13 } ) ,
     .out ( fabric_clk ) ) ;
-sky130_fd_sc_hd__dlygate4sd1_1 FTB_1__269 ( .A ( fabric_scout[0] ) , 
-    .X ( fabric_regout[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd1_1 FTB_1__256 ( .A ( fabric_regout[0] ) , 
+    .X ( fabric_scout[0] ) ) ;
 endmodule
 
 
@@ -25670,7 +25192,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric logical_tile_clb_mode_d
     .fabric_scin ( fle_scin ) , .fabric_clk ( fle_clk ) , 
     .ccff_head ( ccff_head ) , .fabric_out ( fle_out ) , 
     .fabric_regout ( fle_regout ) , .fabric_scout ( fle_scout ) , 
-    .ccff_tail ( ccff_tail ) , .p_abuf0 ( p_abuf0 ) , .p_abuf1 ( p_abuf1 ) , 
+    .ccff_tail ( ccff_tail ) , .p_abuf1 ( p_abuf0 ) , .p_abuf2 ( p_abuf1 ) , 
     .p2 ( p2 ) ) ;
 direct_interc direct_interc_0_ (
     .in ( { SYNOPSYS_UNCONNECTED_1 } ) ,
@@ -25764,12 +25286,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_20 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_20 ( in , sram , sram_inv , out , p1 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -25777,7 +25299,7 @@ const1_27 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -25787,12 +25309,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_19 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_19 ( in , sram , sram_inv , out , p1 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -25800,7 +25322,7 @@ const1_26 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -25810,12 +25332,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_18 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_18 ( in , sram , sram_inv , out , p1 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -25823,7 +25345,7 @@ const1_25 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -25880,12 +25402,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_30 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_30 ( in , sram , sram_inv , out , p1 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -25893,7 +25415,7 @@ const1_24 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -25940,7 +25462,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_15_ ( .D ( mem_out[14] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[15] ) , .Q_N ( mem_outb[15] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_16_ ( .D ( mem_out[15] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[16] ) , .Q_N ( \_gOb6_mem_outb[16] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_31__46 ( .A ( mem_out[16] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_31__46 ( .A ( mem_out[16] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -25972,11 +25494,11 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_8_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_0_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_0_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_12_X[0] ) , .X ( lut3_out[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_13_X[0] ) , .X ( lut3_out[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_2_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_14_X[0] ) , .X ( lut4_out[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_3_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
@@ -26066,11 +25588,11 @@ sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_2_ ( .A ( in[2] ) ,
 sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_3_ ( 
     .A ( sky130_fd_sc_hd__or2_1_0_X[0] ) , 
     .Y ( sky130_fd_sc_hd__inv_1_3_Y[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_0_ ( .A ( in[0] ) , 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_0_ ( .A ( in[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_0_X[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ ( .A ( in[1] ) , 
     .X ( sky130_fd_sc_hd__buf_2_1_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ ( .A ( in[2] ) , 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_2_ ( .A ( in[2] ) , 
     .X ( sky130_fd_sc_hd__buf_2_2_X[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_3_ ( 
     .A ( sky130_fd_sc_hd__or2_1_0_X[0] ) , 
@@ -26125,13 +25647,13 @@ endmodule
 
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_6 ( 
-    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p0 ) ;
+    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p1 ) ;
 input  [0:0] prog_clk ;
 input  [0:3] frac_logic_in ;
 input  [0:0] ccff_head ;
 output [0:1] frac_logic_out ;
 output [0:0] ccff_tail ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ;
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_frac_lut4_lut3_out ;
@@ -26155,7 +25677,7 @@ mux_tree_size2_30 mux_frac_logic_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( frac_logic_out[0] ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 mux_tree_size2_mem_30 mem_frac_logic_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ) , 
     .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_size2_0_sram ) , 
@@ -26180,7 +25702,7 @@ endmodule
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_6 ( prog_clk , 
     Test_en , clk , fabric_in , fabric_regin , fabric_scin , fabric_clk , 
-    ccff_head , fabric_out , fabric_regout , fabric_scout , ccff_tail , p0 ) ;
+    ccff_head , fabric_out , fabric_regout , fabric_scout , ccff_tail , p1 ) ;
 input  [0:0] prog_clk ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
@@ -26193,7 +25715,7 @@ output [0:1] fabric_out ;
 output [0:0] fabric_regout ;
 output [0:0] fabric_scout ;
 output [0:0] ccff_tail ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q ;
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ;
@@ -26215,7 +25737,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logi
     .ccff_head ( ccff_head ) , 
     .frac_logic_out ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_12 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0 ( 
     .Test_en ( Test_en ) , .clk ( clk ) , .ff_D ( mux_tree_size2_2_out ) , 
     .ff_DI ( fabric_scin ) , 
@@ -26234,21 +25756,21 @@ mux_tree_size2_18 mux_fabric_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( fabric_out[0] ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 mux_tree_size2_19 mux_fabric_out_1 (
     .in ( { fabric_scout[0] , 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[1]
          } ) ,
     .sram ( mux_tree_size2_1_sram ) , 
     .sram_inv ( mux_tree_size2_1_sram_inv ) , .out ( fabric_out[1] ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 mux_tree_size2_20 mux_ff_0_D_0 (
     .in ( { 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[0] , 
         fabric_regin[0] } ) ,
     .sram ( mux_tree_size2_2_sram ) , 
     .sram_inv ( mux_tree_size2_2_sram_inv ) , .out ( mux_tree_size2_2_out ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 mux_tree_size2_mem_18 mem_fabric_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_size2_mem_0_ccff_tail ) , 
@@ -26303,7 +25825,7 @@ endmodule
 
 module logical_tile_clb_mode_default__fle_6 ( prog_clk , Test_en , clk , 
     fle_in , fle_regin , fle_scin , fle_clk , ccff_head , fle_out , 
-    fle_regout , fle_scout , ccff_tail , p0 ) ;
+    fle_regout , fle_scout , ccff_tail , p1 ) ;
 input  [0:0] prog_clk ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
@@ -26316,7 +25838,7 @@ output [0:1] fle_out ;
 output [0:0] fle_regout ;
 output [0:0] fle_scout ;
 output [0:0] ccff_tail ;
-input  p0 ;
+input  p1 ;
 
 logical_tile_clb_mode_default__fle_mode_physical__fabric_6 logical_tile_clb_mode_default__fle_mode_physical__fabric_0 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) , 
@@ -26324,7 +25846,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_6 logical_tile_clb_mode
     .fabric_scin ( fle_scin ) , .fabric_clk ( fle_clk ) , 
     .ccff_head ( ccff_head ) , .fabric_out ( fle_out ) , 
     .fabric_regout ( fle_regout ) , .fabric_scout ( fle_scout ) , 
-    .ccff_tail ( ccff_tail ) , .p0 ( p0 ) ) ;
+    .ccff_tail ( ccff_tail ) , .p1 ( p1 ) ) ;
 direct_interc direct_interc_0_ (
     .in ( { SYNOPSYS_UNCONNECTED_1 } ) ,
     .out ( fle_out[0] ) ) ;
@@ -26373,7 +25895,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( mem_outb[0] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_30__45 ( .A ( mem_out[1] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_30__45 ( .A ( mem_out[1] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -26390,7 +25912,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( mem_outb[0] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_29__44 ( .A ( mem_out[1] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_29__44 ( .A ( mem_out[1] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -26417,12 +25939,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_17 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_17 ( in , sram , sram_inv , out , p1 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -26430,7 +25952,7 @@ const1_23 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -26440,12 +25962,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_16 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_16 ( in , sram , sram_inv , out , p1 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -26453,7 +25975,7 @@ const1_22 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -26463,12 +25985,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_15 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_15 ( in , sram , sram_inv , out , p1 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -26476,7 +25998,7 @@ const1_21 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -26523,7 +26045,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( mem_outb[0] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_27__42 ( .A ( mem_out[1] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_27__42 ( .A ( mem_out[1] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -26533,12 +26055,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_29 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_29 ( in , sram , sram_inv , out , p1 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -26546,7 +26068,7 @@ const1_20 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -26593,7 +26115,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_15_ ( .D ( mem_out[14] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[15] ) , .Q_N ( mem_outb[15] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_16_ ( .D ( mem_out[15] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[16] ) , .Q_N ( \_gOb5_mem_outb[16] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_26__41 ( .A ( mem_out[16] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_26__41 ( .A ( mem_out[16] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -26719,9 +26241,9 @@ sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_2_ ( .A ( in[2] ) ,
 sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_3_ ( 
     .A ( sky130_fd_sc_hd__or2_1_0_X[0] ) , 
     .Y ( sky130_fd_sc_hd__inv_1_3_Y[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_0_ ( .A ( in[0] ) , 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_0_ ( .A ( in[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_0_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ ( .A ( in[1] ) , 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_1_ ( .A ( in[1] ) , 
     .X ( sky130_fd_sc_hd__buf_2_1_X[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ ( .A ( in[2] ) , 
     .X ( sky130_fd_sc_hd__buf_2_2_X[0] ) ) ;
@@ -26778,13 +26300,13 @@ endmodule
 
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_5 ( 
-    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p0 ) ;
+    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p1 ) ;
 input  [0:0] prog_clk ;
 input  [0:3] frac_logic_in ;
 input  [0:0] ccff_head ;
 output [0:1] frac_logic_out ;
 output [0:0] ccff_tail ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ;
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_frac_lut4_lut3_out ;
@@ -26808,7 +26330,7 @@ mux_tree_size2_29 mux_frac_logic_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( frac_logic_out[0] ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 mux_tree_size2_mem_29 mem_frac_logic_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ) , 
     .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_size2_0_sram ) , 
@@ -26833,7 +26355,7 @@ endmodule
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_5 ( prog_clk , 
     Test_en , clk , fabric_in , fabric_regin , fabric_scin , fabric_clk , 
-    ccff_head , fabric_out , fabric_regout , fabric_scout , ccff_tail , p0 ) ;
+    ccff_head , fabric_out , fabric_regout , fabric_scout , ccff_tail , p1 ) ;
 input  [0:0] prog_clk ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
@@ -26846,7 +26368,7 @@ output [0:1] fabric_out ;
 output [0:0] fabric_regout ;
 output [0:0] fabric_scout ;
 output [0:0] ccff_tail ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q ;
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ;
@@ -26868,7 +26390,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logi
     .ccff_head ( ccff_head ) , 
     .frac_logic_out ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_10 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0 ( 
     .Test_en ( Test_en ) , .clk ( clk ) , .ff_D ( mux_tree_size2_2_out ) , 
     .ff_DI ( fabric_scin ) , 
@@ -26887,21 +26409,21 @@ mux_tree_size2_15 mux_fabric_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( fabric_out[0] ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 mux_tree_size2_16 mux_fabric_out_1 (
     .in ( { fabric_scout[0] , 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[1]
          } ) ,
     .sram ( mux_tree_size2_1_sram ) , 
     .sram_inv ( mux_tree_size2_1_sram_inv ) , .out ( fabric_out[1] ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 mux_tree_size2_17 mux_ff_0_D_0 (
     .in ( { 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[0] , 
         fabric_regin[0] } ) ,
     .sram ( mux_tree_size2_2_sram ) , 
     .sram_inv ( mux_tree_size2_2_sram_inv ) , .out ( mux_tree_size2_2_out ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 mux_tree_size2_mem_15 mem_fabric_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_size2_mem_0_ccff_tail ) , 
@@ -26956,7 +26478,7 @@ endmodule
 
 module logical_tile_clb_mode_default__fle_5 ( prog_clk , Test_en , clk , 
     fle_in , fle_regin , fle_scin , fle_clk , ccff_head , fle_out , 
-    fle_regout , fle_scout , ccff_tail , p0 ) ;
+    fle_regout , fle_scout , ccff_tail , p1 ) ;
 input  [0:0] prog_clk ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
@@ -26969,7 +26491,7 @@ output [0:1] fle_out ;
 output [0:0] fle_regout ;
 output [0:0] fle_scout ;
 output [0:0] ccff_tail ;
-input  p0 ;
+input  p1 ;
 
 logical_tile_clb_mode_default__fle_mode_physical__fabric_5 logical_tile_clb_mode_default__fle_mode_physical__fabric_0 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) , 
@@ -26977,7 +26499,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_5 logical_tile_clb_mode
     .fabric_scin ( fle_scin ) , .fabric_clk ( fle_clk ) , 
     .ccff_head ( ccff_head ) , .fabric_out ( fle_out ) , 
     .fabric_regout ( fle_regout ) , .fabric_scout ( fle_scout ) , 
-    .ccff_tail ( ccff_tail ) , .p0 ( p0 ) ) ;
+    .ccff_tail ( ccff_tail ) , .p1 ( p1 ) ) ;
 direct_interc direct_interc_0_ (
     .in ( { SYNOPSYS_UNCONNECTED_1 } ) ,
     .out ( fle_out[0] ) ) ;
@@ -27070,12 +26592,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_14 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_14 ( in , sram , sram_inv , out , p3 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p3 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -27083,7 +26605,7 @@ const1_19 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p3 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -27093,12 +26615,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_13 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_13 ( in , sram , sram_inv , out , p3 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p3 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -27106,7 +26628,7 @@ const1_18 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p3 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -27116,12 +26638,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_12 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_12 ( in , sram , sram_inv , out , p1 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p1 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -27129,7 +26651,7 @@ const1_17 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -27186,12 +26708,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_28 ( in , sram , sram_inv , out , p0 ) ;
+module mux_tree_size2_28 ( in , sram , sram_inv , out , p3 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p0 ;
+input  p3 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -27199,7 +26721,7 @@ const1_16 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p3 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -27246,7 +26768,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_15_ ( .D ( mem_out[14] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[15] ) , .Q_N ( mem_outb[15] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_16_ ( .D ( mem_out[15] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[16] ) , .Q_N ( \_gOb4_mem_outb[16] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_21__36 ( .A ( mem_out[16] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_21__36 ( .A ( mem_out[16] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -27287,13 +26809,13 @@ sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ (
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_3_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_3_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_4_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_4_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_4_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_5_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_5_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_10_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_5_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_6_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_6_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_11_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_6_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
@@ -27378,7 +26900,7 @@ sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ ( .A ( in[1] ) ,
     .X ( sky130_fd_sc_hd__buf_2_1_X[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ ( .A ( in[2] ) , 
     .X ( sky130_fd_sc_hd__buf_2_2_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_3_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_3_ ( 
     .A ( sky130_fd_sc_hd__or2_1_0_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_3_X[0] ) ) ;
 frac_lut4_mux_4 frac_lut4_mux_0_ ( .in ( sram ) ,
@@ -27431,13 +26953,13 @@ endmodule
 
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_4 ( 
-    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p0 ) ;
+    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p3 ) ;
 input  [0:0] prog_clk ;
 input  [0:3] frac_logic_in ;
 input  [0:0] ccff_head ;
 output [0:1] frac_logic_out ;
 output [0:0] ccff_tail ;
-input  p0 ;
+input  p3 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ;
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_frac_lut4_lut3_out ;
@@ -27461,7 +26983,7 @@ mux_tree_size2_28 mux_frac_logic_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( frac_logic_out[0] ) , 
-    .p0 ( p0 ) ) ;
+    .p3 ( p3 ) ) ;
 mux_tree_size2_mem_28 mem_frac_logic_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ) , 
     .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_size2_0_sram ) , 
@@ -27486,7 +27008,8 @@ endmodule
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_4 ( prog_clk , 
     Test_en , clk , fabric_in , fabric_regin , fabric_scin , fabric_clk , 
-    ccff_head , fabric_out , fabric_regout , fabric_scout , ccff_tail , p0 ) ;
+    ccff_head , fabric_out , fabric_regout , fabric_scout , ccff_tail , p1 , 
+    p3 ) ;
 input  [0:0] prog_clk ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
@@ -27499,7 +27022,8 @@ output [0:1] fabric_out ;
 output [0:0] fabric_regout ;
 output [0:0] fabric_scout ;
 output [0:0] ccff_tail ;
-input  p0 ;
+input  p1 ;
+input  p3 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q ;
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ;
@@ -27521,7 +27045,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logi
     .ccff_head ( ccff_head ) , 
     .frac_logic_out ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
-    .p0 ( p0 ) ) ;
+    .p3 ( p3 ) ) ;
 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_8 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0 ( 
     .Test_en ( Test_en ) , .clk ( clk ) , .ff_D ( mux_tree_size2_2_out ) , 
     .ff_DI ( fabric_scin ) , 
@@ -27540,21 +27064,21 @@ mux_tree_size2_12 mux_fabric_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( fabric_out[0] ) , 
-    .p0 ( p0 ) ) ;
+    .p1 ( p1 ) ) ;
 mux_tree_size2_13 mux_fabric_out_1 (
     .in ( { fabric_scout[0] , 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[1]
          } ) ,
     .sram ( mux_tree_size2_1_sram ) , 
     .sram_inv ( mux_tree_size2_1_sram_inv ) , .out ( fabric_out[1] ) , 
-    .p0 ( p0 ) ) ;
+    .p3 ( p3 ) ) ;
 mux_tree_size2_14 mux_ff_0_D_0 (
     .in ( { 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[0] , 
         fabric_regin[0] } ) ,
     .sram ( mux_tree_size2_2_sram ) , 
     .sram_inv ( mux_tree_size2_2_sram_inv ) , .out ( mux_tree_size2_2_out ) , 
-    .p0 ( p0 ) ) ;
+    .p3 ( p3 ) ) ;
 mux_tree_size2_mem_12 mem_fabric_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_size2_mem_0_ccff_tail ) , 
@@ -27609,7 +27133,7 @@ endmodule
 
 module logical_tile_clb_mode_default__fle_4 ( prog_clk , Test_en , clk , 
     fle_in , fle_regin , fle_scin , fle_clk , ccff_head , fle_out , 
-    fle_regout , fle_scout , ccff_tail , p0 ) ;
+    fle_regout , fle_scout , ccff_tail , p1 , p3 ) ;
 input  [0:0] prog_clk ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
@@ -27622,7 +27146,8 @@ output [0:1] fle_out ;
 output [0:0] fle_regout ;
 output [0:0] fle_scout ;
 output [0:0] ccff_tail ;
-input  p0 ;
+input  p1 ;
+input  p3 ;
 
 logical_tile_clb_mode_default__fle_mode_physical__fabric_4 logical_tile_clb_mode_default__fle_mode_physical__fabric_0 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) , 
@@ -27630,7 +27155,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_4 logical_tile_clb_mode
     .fabric_scin ( fle_scin ) , .fabric_clk ( fle_clk ) , 
     .ccff_head ( ccff_head ) , .fabric_out ( fle_out ) , 
     .fabric_regout ( fle_regout ) , .fabric_scout ( fle_scout ) , 
-    .ccff_tail ( ccff_tail ) , .p0 ( p0 ) ) ;
+    .ccff_tail ( ccff_tail ) , .p1 ( p1 ) , .p3 ( p3 ) ) ;
 direct_interc direct_interc_0_ (
     .in ( { SYNOPSYS_UNCONNECTED_1 } ) ,
     .out ( fle_out[0] ) ) ;
@@ -27723,12 +27248,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_11 ( in , sram , sram_inv , out , p2 ) ;
+module mux_tree_size2_11 ( in , sram , sram_inv , out , p3 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p2 ;
+input  p3 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -27736,7 +27261,7 @@ const1_15 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p2 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p3 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -27746,12 +27271,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_10 ( in , sram , sram_inv , out , p2 ) ;
+module mux_tree_size2_10 ( in , sram , sram_inv , out , p3 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p2 ;
+input  p3 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -27759,7 +27284,7 @@ const1_14 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p2 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p3 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -27769,12 +27294,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_9 ( in , sram , sram_inv , out , p2 ) ;
+module mux_tree_size2_9 ( in , sram , sram_inv , out , p3 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p2 ;
+input  p3 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -27782,7 +27307,7 @@ const1_13 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p2 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p3 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -27839,12 +27364,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_27 ( in , sram , sram_inv , out , p2 ) ;
+module mux_tree_size2_27 ( in , sram , sram_inv , out , p0 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p2 ;
+input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -27852,7 +27377,7 @@ const1_12 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p2 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -27937,7 +27462,7 @@ sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ (
     .A ( sky130_fd_sc_hd__mux2_1_13_X[0] ) , .X ( lut3_out[1] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_14_X[0] ) , .X ( lut4_out[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_3_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_3_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_3_X[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_4_ ( 
@@ -28084,13 +27609,13 @@ endmodule
 
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_3 ( 
-    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p2 ) ;
+    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p0 ) ;
 input  [0:0] prog_clk ;
 input  [0:3] frac_logic_in ;
 input  [0:0] ccff_head ;
 output [0:1] frac_logic_out ;
 output [0:0] ccff_tail ;
-input  p2 ;
+input  p0 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ;
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_frac_lut4_lut3_out ;
@@ -28114,7 +27639,7 @@ mux_tree_size2_27 mux_frac_logic_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( frac_logic_out[0] ) , 
-    .p2 ( p2 ) ) ;
+    .p0 ( p0 ) ) ;
 mux_tree_size2_mem_27 mem_frac_logic_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ) , 
     .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_size2_0_sram ) , 
@@ -28139,7 +27664,8 @@ endmodule
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_3 ( prog_clk , 
     Test_en , clk , fabric_in , fabric_regin , fabric_scin , fabric_clk , 
-    ccff_head , fabric_out , fabric_regout , fabric_scout , ccff_tail , p2 ) ;
+    ccff_head , fabric_out , fabric_regout , fabric_scout , ccff_tail , p0 , 
+    p3 ) ;
 input  [0:0] prog_clk ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
@@ -28152,7 +27678,8 @@ output [0:1] fabric_out ;
 output [0:0] fabric_regout ;
 output [0:0] fabric_scout ;
 output [0:0] ccff_tail ;
-input  p2 ;
+input  p0 ;
+input  p3 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q ;
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ;
@@ -28174,7 +27701,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logi
     .ccff_head ( ccff_head ) , 
     .frac_logic_out ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
-    .p2 ( p2 ) ) ;
+    .p0 ( p0 ) ) ;
 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_6 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0 ( 
     .Test_en ( Test_en ) , .clk ( clk ) , .ff_D ( mux_tree_size2_2_out ) , 
     .ff_DI ( fabric_scin ) , 
@@ -28193,21 +27720,21 @@ mux_tree_size2_9 mux_fabric_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( fabric_out[0] ) , 
-    .p2 ( p2 ) ) ;
+    .p3 ( p3 ) ) ;
 mux_tree_size2_10 mux_fabric_out_1 (
     .in ( { fabric_scout[0] , 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[1]
          } ) ,
     .sram ( mux_tree_size2_1_sram ) , 
     .sram_inv ( mux_tree_size2_1_sram_inv ) , .out ( fabric_out[1] ) , 
-    .p2 ( p2 ) ) ;
+    .p3 ( p3 ) ) ;
 mux_tree_size2_11 mux_ff_0_D_0 (
     .in ( { 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[0] , 
         fabric_regin[0] } ) ,
     .sram ( mux_tree_size2_2_sram ) , 
     .sram_inv ( mux_tree_size2_2_sram_inv ) , .out ( mux_tree_size2_2_out ) , 
-    .p2 ( p2 ) ) ;
+    .p3 ( p3 ) ) ;
 mux_tree_size2_mem_9 mem_fabric_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_size2_mem_0_ccff_tail ) , 
@@ -28262,7 +27789,7 @@ endmodule
 
 module logical_tile_clb_mode_default__fle_3 ( prog_clk , Test_en , clk , 
     fle_in , fle_regin , fle_scin , fle_clk , ccff_head , fle_out , 
-    fle_regout , fle_scout , ccff_tail , p2 ) ;
+    fle_regout , fle_scout , ccff_tail , p0 , p3 ) ;
 input  [0:0] prog_clk ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
@@ -28275,7 +27802,8 @@ output [0:1] fle_out ;
 output [0:0] fle_regout ;
 output [0:0] fle_scout ;
 output [0:0] ccff_tail ;
-input  p2 ;
+input  p0 ;
+input  p3 ;
 
 logical_tile_clb_mode_default__fle_mode_physical__fabric_3 logical_tile_clb_mode_default__fle_mode_physical__fabric_0 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) , 
@@ -28283,7 +27811,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_3 logical_tile_clb_mode
     .fabric_scin ( fle_scin ) , .fabric_clk ( fle_clk ) , 
     .ccff_head ( ccff_head ) , .fabric_out ( fle_out ) , 
     .fabric_regout ( fle_regout ) , .fabric_scout ( fle_scout ) , 
-    .ccff_tail ( ccff_tail ) , .p2 ( p2 ) ) ;
+    .ccff_tail ( ccff_tail ) , .p0 ( p0 ) , .p3 ( p3 ) ) ;
 direct_interc direct_interc_0_ (
     .in ( { SYNOPSYS_UNCONNECTED_1 } ) ,
     .out ( fle_out[0] ) ) ;
@@ -28678,9 +28206,9 @@ sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_2_ ( .A ( in[2] ) ,
 sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_3_ ( 
     .A ( sky130_fd_sc_hd__or2_1_0_X[0] ) , 
     .Y ( sky130_fd_sc_hd__inv_1_3_Y[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_0_ ( .A ( in[0] ) , 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_0_ ( .A ( in[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_0_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ ( .A ( in[1] ) , 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_1_ ( .A ( in[1] ) , 
     .X ( sky130_fd_sc_hd__buf_2_1_X[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ ( .A ( in[2] ) , 
     .X ( sky130_fd_sc_hd__buf_2_2_X[0] ) ) ;
@@ -29029,12 +28557,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_5 ( in , sram , sram_inv , out , p1 ) ;
+module mux_tree_size2_5 ( in , sram , sram_inv , out , p0 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p1 ;
+input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -29042,7 +28570,7 @@ const1_7 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -29145,12 +28673,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_25 ( in , sram , sram_inv , out , p1 ) ;
+module mux_tree_size2_25 ( in , sram , sram_inv , out , p0 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p1 ;
+input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -29158,7 +28686,7 @@ const1_4 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -29205,7 +28733,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_15_ ( .D ( mem_out[14] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[15] ) , .Q_N ( mem_outb[15] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_16_ ( .D ( mem_out[15] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[16] ) , .Q_N ( \_gOb1_mem_outb[16] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_6__21 ( .A ( mem_out[16] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_6__21 ( .A ( mem_out[16] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -29243,16 +28771,16 @@ sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ (
     .A ( sky130_fd_sc_hd__mux2_1_13_X[0] ) , .X ( lut3_out[1] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_14_X[0] ) , .X ( lut4_out[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_3_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_3_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_3_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_4_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_4_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_4_X[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_5_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_10_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_5_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_6_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_6_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_11_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_6_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
@@ -29331,9 +28859,9 @@ sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_2_ ( .A ( in[2] ) ,
 sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_3_ ( 
     .A ( sky130_fd_sc_hd__or2_1_0_X[0] ) , 
     .Y ( sky130_fd_sc_hd__inv_1_3_Y[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_0_ ( .A ( in[0] ) , 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_0_ ( .A ( in[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_0_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ ( .A ( in[1] ) , 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_1_ ( .A ( in[1] ) , 
     .X ( sky130_fd_sc_hd__buf_2_1_X[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ ( .A ( in[2] ) , 
     .X ( sky130_fd_sc_hd__buf_2_2_X[0] ) ) ;
@@ -29390,13 +28918,13 @@ endmodule
 
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_1 ( 
-    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p1 ) ;
+    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p0 ) ;
 input  [0:0] prog_clk ;
 input  [0:3] frac_logic_in ;
 input  [0:0] ccff_head ;
 output [0:1] frac_logic_out ;
 output [0:0] ccff_tail ;
-input  p1 ;
+input  p0 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ;
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_frac_lut4_lut3_out ;
@@ -29420,7 +28948,7 @@ mux_tree_size2_25 mux_frac_logic_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( frac_logic_out[0] ) , 
-    .p1 ( p1 ) ) ;
+    .p0 ( p0 ) ) ;
 mux_tree_size2_mem_25 mem_frac_logic_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ) , 
     .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_size2_0_sram ) , 
@@ -29482,7 +29010,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logi
     .ccff_head ( ccff_head ) , 
     .frac_logic_out ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
-    .p1 ( p1 ) ) ;
+    .p0 ( p0 ) ) ;
 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_2 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0 ( 
     .Test_en ( Test_en ) , .clk ( clk ) , .ff_D ( mux_tree_size2_2_out ) , 
     .ff_DI ( fabric_scin ) , 
@@ -29515,7 +29043,7 @@ mux_tree_size2_5 mux_ff_0_D_0 (
         fabric_regin[0] } ) ,
     .sram ( mux_tree_size2_2_sram ) , 
     .sram_inv ( mux_tree_size2_2_sram_inv ) , .out ( mux_tree_size2_2_out ) , 
-    .p1 ( p1 ) ) ;
+    .p0 ( p1 ) ) ;
 mux_tree_size2_mem_3 mem_fabric_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_size2_mem_0_ccff_tail ) , 
@@ -29641,7 +29169,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( mem_outb[0] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_5__20 ( .A ( mem_out[1] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_5__20 ( .A ( mem_out[1] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -29658,7 +29186,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( mem_outb[0] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_4__19 ( .A ( mem_out[1] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_4__19 ( .A ( mem_out[1] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -29685,12 +29213,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_2 ( in , sram , sram_inv , out , p1 ) ;
+module mux_tree_size2_2 ( in , sram , sram_inv , out , p0 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p1 ;
+input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -29698,7 +29226,7 @@ const1_3 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -29708,12 +29236,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_1 ( in , sram , sram_inv , out , p1 ) ;
+module mux_tree_size2_1 ( in , sram , sram_inv , out , p0 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p1 ;
+input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -29721,7 +29249,7 @@ const1_2 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -29731,12 +29259,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_0 ( in , sram , sram_inv , out , p1 ) ;
+module mux_tree_size2_0 ( in , sram , sram_inv , out , p0 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p1 ;
+input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -29744,7 +29272,7 @@ const1_1 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -29799,7 +29327,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ ( .D ( ccff_head[0] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) , .Q_N ( mem_outb[0] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) , .Q_N ( mem_outb[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__17 ( .A ( mem_out[1] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_2__17 ( .A ( mem_out[1] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -29809,12 +29337,12 @@ output [0:0] const1 ;
 endmodule
 
 
-module mux_tree_size2_24 ( in , sram , sram_inv , out , p1 ) ;
+module mux_tree_size2_24 ( in , sram , sram_inv , out , p0 ) ;
 input  [0:1] in ;
 input  [0:1] sram ;
 input  [0:1] sram_inv ;
 output [0:0] out ;
-input  p1 ;
+input  p0 ;
 
 wire [0:0] sky130_fd_sc_hd__mux2_1_0_X ;
 
@@ -29822,7 +29350,7 @@ const1_0 const1_0_ (
     .const1 ( { SYNOPSYS_UNCONNECTED_1 } ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
-sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p1 ) , 
+sky130_fd_sc_hd__mux2_1 mux_l2_in_0_ ( .A0 ( p0 ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_0_X[0] ) , .S ( sram[1] ) , .X ( out[0] ) ) ;
 endmodule
 
@@ -29869,7 +29397,7 @@ sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_15_ ( .D ( mem_out[14] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[15] ) , .Q_N ( mem_outb[15] ) ) ;
 sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_16_ ( .D ( mem_out[15] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[16] ) , .Q_N ( \_gOb0_mem_outb[16] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__16 ( .A ( mem_out[16] ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_1__16 ( .A ( mem_out[16] ) , 
     .X ( ccff_tail[0] ) ) ;
 endmodule
 
@@ -29903,9 +29431,9 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_0_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_12_X[0] ) , .X ( lut3_out[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_1_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_13_X[0] ) , .X ( lut3_out[1] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_2_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_14_X[0] ) , .X ( lut4_out[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_3_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
@@ -29916,7 +29444,7 @@ sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_4_ (
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_5_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_10_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_5_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_6_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_6_ ( 
     .A ( sky130_fd_sc_hd__mux2_1_11_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_6_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
@@ -30001,7 +29529,7 @@ sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_1_ ( .A ( in[1] ) ,
     .X ( sky130_fd_sc_hd__buf_2_1_X[0] ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_2_ ( .A ( in[2] ) , 
     .X ( sky130_fd_sc_hd__buf_2_2_X[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__buf_2_3_ ( 
+sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_3_ ( 
     .A ( sky130_fd_sc_hd__or2_1_0_X[0] ) , 
     .X ( sky130_fd_sc_hd__buf_2_3_X[0] ) ) ;
 frac_lut4_mux_0 frac_lut4_mux_0_ ( .in ( sram ) ,
@@ -30054,13 +29582,13 @@ endmodule
 
 
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0 ( 
-    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p1 ) ;
+    prog_clk , frac_logic_in , ccff_head , frac_logic_out , ccff_tail , p0 ) ;
 input  [0:0] prog_clk ;
 input  [0:3] frac_logic_in ;
 input  [0:0] ccff_head ;
 output [0:1] frac_logic_out ;
 output [0:0] ccff_tail ;
-input  p1 ;
+input  p0 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ;
 wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_frac_lut4_lut3_out ;
@@ -30084,7 +29612,7 @@ mux_tree_size2_24 mux_frac_logic_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( frac_logic_out[0] ) , 
-    .p1 ( p1 ) ) ;
+    .p0 ( p0 ) ) ;
 mux_tree_size2_mem_24 mem_frac_logic_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail ) , 
     .ccff_tail ( ccff_tail ) , .mem_out ( mux_tree_size2_0_sram ) , 
@@ -30144,7 +29672,7 @@ logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logi
     .ccff_head ( ccff_head ) , 
     .frac_logic_out ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
-    .p1 ( p1 ) ) ;
+    .p0 ( p1 ) ) ;
 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0 ( 
     .Test_en ( Test_en ) , .clk ( clk ) , .ff_D ( mux_tree_size2_2_out ) , 
     .ff_DI ( fabric_scin ) , 
@@ -30163,21 +29691,21 @@ mux_tree_size2_0 mux_fabric_out_0 (
          } ) ,
     .sram ( mux_tree_size2_0_sram ) , 
     .sram_inv ( mux_tree_size2_0_sram_inv ) , .out ( fabric_out[0] ) , 
-    .p1 ( p1 ) ) ;
+    .p0 ( p1 ) ) ;
 mux_tree_size2_1 mux_fabric_out_1 (
     .in ( { fabric_scout[0] , 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[1]
          } ) ,
     .sram ( mux_tree_size2_1_sram ) , 
     .sram_inv ( mux_tree_size2_1_sram_inv ) , .out ( fabric_out[1] ) , 
-    .p1 ( p1 ) ) ;
+    .p0 ( p1 ) ) ;
 mux_tree_size2_2 mux_ff_0_D_0 (
     .in ( { 
         logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[0] , 
         fabric_regin[0] } ) ,
     .sram ( mux_tree_size2_2_sram ) , 
     .sram_inv ( mux_tree_size2_2_sram_inv ) , .out ( mux_tree_size2_2_out ) , 
-    .p1 ( p1 ) ) ;
+    .p0 ( p1 ) ) ;
 mux_tree_size2_mem_0 mem_fabric_out_0 ( .prog_clk ( prog_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail ) , 
     .ccff_tail ( mux_tree_size2_mem_0_ccff_tail ) , 
@@ -30295,7 +29823,7 @@ module logical_tile_clb_mode_clb_ ( prog_clk , Test_en , clk , clb_I0 ,
     clb_scin , clb_clk , ccff_head , clb_O , clb_regout , clb_scout , 
     ccff_tail , p_abuf0 , p_abuf1 , p_abuf2 , p_abuf3 , p_abuf4 , p_abuf5 , 
     p_abuf6 , p_abuf7 , p_abuf8 , p_abuf9 , p_abuf10 , p_abuf11 , p_abuf12 , 
-    p_abuf13 , p_abuf14 , p_abuf15 , p0 , p1 , p2 , p3 ) ;
+    p_abuf13 , p_abuf14 , p_abuf15 , p0 , p1 , p2 , p3 , p4 ) ;
 input  [0:0] prog_clk ;
 input  [0:0] Test_en ;
 input  [0:0] clk ;
@@ -30335,20 +29863,21 @@ input  p0 ;
 input  p1 ;
 input  p2 ;
 input  p3 ;
+input  p4 ;
 
 wire [0:0] logical_tile_clb_mode_default__fle_0_ccff_tail ;
 wire [1:1] logical_tile_clb_mode_default__fle_0_fle_out ;
 wire [0:0] logical_tile_clb_mode_default__fle_0_fle_regout ;
 wire [0:0] logical_tile_clb_mode_default__fle_0_fle_scout ;
 wire [0:0] logical_tile_clb_mode_default__fle_1_ccff_tail ;
+wire [1:1] logical_tile_clb_mode_default__fle_1_fle_out ;
 wire [0:0] logical_tile_clb_mode_default__fle_1_fle_regout ;
 wire [0:0] logical_tile_clb_mode_default__fle_1_fle_scout ;
 wire [0:0] logical_tile_clb_mode_default__fle_2_ccff_tail ;
-wire [1:1] logical_tile_clb_mode_default__fle_2_fle_out ;
 wire [0:0] logical_tile_clb_mode_default__fle_2_fle_regout ;
 wire [0:0] logical_tile_clb_mode_default__fle_2_fle_scout ;
 wire [0:0] logical_tile_clb_mode_default__fle_3_ccff_tail ;
-wire [1:1] logical_tile_clb_mode_default__fle_3_fle_out ;
+wire [0:1] logical_tile_clb_mode_default__fle_3_fle_out ;
 wire [0:0] logical_tile_clb_mode_default__fle_3_fle_regout ;
 wire [0:0] logical_tile_clb_mode_default__fle_3_fle_scout ;
 wire [0:0] logical_tile_clb_mode_default__fle_4_ccff_tail ;
@@ -30372,7 +29901,7 @@ logical_tile_clb_mode_default__fle_0 logical_tile_clb_mode_default__fle_0 (
     .fle_regout ( logical_tile_clb_mode_default__fle_0_fle_regout ) , 
     .fle_scout ( logical_tile_clb_mode_default__fle_0_fle_scout ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_0_ccff_tail ) , 
-    .p1 ( p2 ) ) ;
+    .p1 ( p1 ) ) ;
 logical_tile_clb_mode_default__fle_1 logical_tile_clb_mode_default__fle_1 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) , 
     .fle_in ( clb_I1 ) , 
@@ -30380,11 +29909,11 @@ logical_tile_clb_mode_default__fle_1 logical_tile_clb_mode_default__fle_1 (
     .fle_scin ( logical_tile_clb_mode_default__fle_0_fle_scout ) , 
     .fle_clk ( clb_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_0_ccff_tail ) ,
-    .fle_out ( { clb_O[3] , clb_O[2] } ) ,
+    .fle_out ( { clb_O[3] , logical_tile_clb_mode_default__fle_1_fle_out[1] } ) ,
     .fle_regout ( logical_tile_clb_mode_default__fle_1_fle_regout ) , 
     .fle_scout ( logical_tile_clb_mode_default__fle_1_fle_scout ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_1_ccff_tail ) , 
-    .p0 ( p0 ) , .p1 ( p2 ) ) ;
+    .p0 ( p0 ) , .p1 ( p1 ) ) ;
 logical_tile_clb_mode_default__fle_2 logical_tile_clb_mode_default__fle_2 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) , 
     .fle_in ( clb_I2 ) , 
@@ -30392,7 +29921,7 @@ logical_tile_clb_mode_default__fle_2 logical_tile_clb_mode_default__fle_2 (
     .fle_scin ( logical_tile_clb_mode_default__fle_1_fle_scout ) , 
     .fle_clk ( clb_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_1_ccff_tail ) ,
-    .fle_out ( { p_abuf4 , logical_tile_clb_mode_default__fle_2_fle_out[1] } ) ,
+    .fle_out ( { clb_O[5] , clb_O[4] } ) ,
     .fle_regout ( logical_tile_clb_mode_default__fle_2_fle_regout ) , 
     .fle_scout ( logical_tile_clb_mode_default__fle_2_fle_scout ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_2_ccff_tail ) , 
@@ -30403,12 +29932,12 @@ logical_tile_clb_mode_default__fle_3 logical_tile_clb_mode_default__fle_3 (
     .fle_regin ( logical_tile_clb_mode_default__fle_2_fle_regout ) , 
     .fle_scin ( logical_tile_clb_mode_default__fle_2_fle_scout ) , 
     .fle_clk ( clb_clk ) , 
-    .ccff_head ( logical_tile_clb_mode_default__fle_2_ccff_tail ) ,
-    .fle_out ( { clb_O[7] , logical_tile_clb_mode_default__fle_3_fle_out[1] } ) ,
+    .ccff_head ( logical_tile_clb_mode_default__fle_2_ccff_tail ) , 
+    .fle_out ( logical_tile_clb_mode_default__fle_3_fle_out ) , 
     .fle_regout ( logical_tile_clb_mode_default__fle_3_fle_regout ) , 
     .fle_scout ( logical_tile_clb_mode_default__fle_3_fle_scout ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_3_ccff_tail ) , 
-    .p2 ( p3 ) ) ;
+    .p0 ( p0 ) , .p3 ( p4 ) ) ;
 logical_tile_clb_mode_default__fle_4 logical_tile_clb_mode_default__fle_4 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) , 
     .fle_in ( clb_I4 ) , 
@@ -30420,7 +29949,7 @@ logical_tile_clb_mode_default__fle_4 logical_tile_clb_mode_default__fle_4 (
     .fle_regout ( logical_tile_clb_mode_default__fle_4_fle_regout ) , 
     .fle_scout ( logical_tile_clb_mode_default__fle_4_fle_scout ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_4_ccff_tail ) , 
-    .p0 ( p1 ) ) ;
+    .p1 ( p2 ) , .p3 ( p4 ) ) ;
 logical_tile_clb_mode_default__fle_5 logical_tile_clb_mode_default__fle_5 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) , 
     .fle_in ( clb_I5 ) , 
@@ -30432,7 +29961,7 @@ logical_tile_clb_mode_default__fle_5 logical_tile_clb_mode_default__fle_5 (
     .fle_regout ( logical_tile_clb_mode_default__fle_5_fle_regout ) , 
     .fle_scout ( logical_tile_clb_mode_default__fle_5_fle_scout ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_5_ccff_tail ) , 
-    .p0 ( p1 ) ) ;
+    .p1 ( p2 ) ) ;
 logical_tile_clb_mode_default__fle_6 logical_tile_clb_mode_default__fle_6 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) , 
     .fle_in ( clb_I6 ) , 
@@ -30444,7 +29973,7 @@ logical_tile_clb_mode_default__fle_6 logical_tile_clb_mode_default__fle_6 (
     .fle_regout ( logical_tile_clb_mode_default__fle_6_fle_regout ) , 
     .fle_scout ( logical_tile_clb_mode_default__fle_6_fle_scout ) , 
     .ccff_tail ( logical_tile_clb_mode_default__fle_6_ccff_tail ) , 
-    .p0 ( p1 ) ) ;
+    .p1 ( p2 ) ) ;
 logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_7 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) , 
     .fle_in ( clb_I7 ) , 
@@ -30452,7 +29981,7 @@ logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_7 (
     .fle_scin ( logical_tile_clb_mode_default__fle_6_fle_scout ) , 
     .fle_clk ( clb_clk ) , 
     .ccff_head ( logical_tile_clb_mode_default__fle_6_ccff_tail ) ,
-    .fle_out ( { clb_O[15] , clb_O[14] } ) ,
+    .fle_out ( { p_abuf14 , clb_O[14] } ) ,
     .fle_regout ( clb_regout ) , .fle_scout ( clb_scout ) , 
     .ccff_tail ( ccff_tail ) , .p_abuf0 ( p_abuf16 ) , .p_abuf1 ( p_abuf17 ) , 
     .p2 ( p3 ) ) ;
@@ -30464,22 +29993,22 @@ direct_interc direct_interc_1_ (
     .out ( clb_O[1] ) ) ;
 direct_interc direct_interc_2_ (
     .in ( { SYNOPSYS_UNCONNECTED_3 } ) ,
-    .out ( clb_O[2] ) ) ;
+    .out ( logical_tile_clb_mode_default__fle_1_fle_out ) ) ;
 direct_interc direct_interc_3_ (
     .in ( { SYNOPSYS_UNCONNECTED_4 } ) ,
     .out ( clb_O[3] ) ) ;
 direct_interc direct_interc_4_ (
     .in ( { SYNOPSYS_UNCONNECTED_5 } ) ,
-    .out ( logical_tile_clb_mode_default__fle_2_fle_out ) ) ;
+    .out ( clb_O[4] ) ) ;
 direct_interc direct_interc_5_ (
     .in ( { SYNOPSYS_UNCONNECTED_6 } ) ,
-    .out ( { p_abuf4 } ) ) ;
+    .out ( clb_O[5] ) ) ;
 direct_interc direct_interc_6_ (
     .in ( { SYNOPSYS_UNCONNECTED_7 } ) ,
-    .out ( logical_tile_clb_mode_default__fle_3_fle_out ) ) ;
+    .out ( logical_tile_clb_mode_default__fle_3_fle_out[1] ) ) ;
 direct_interc direct_interc_7_ (
     .in ( { SYNOPSYS_UNCONNECTED_8 } ) ,
-    .out ( clb_O[7] ) ) ;
+    .out ( logical_tile_clb_mode_default__fle_3_fle_out[0] ) ) ;
 direct_interc direct_interc_8_ (
     .in ( { SYNOPSYS_UNCONNECTED_9 } ) ,
     .out ( logical_tile_clb_mode_default__fle_4_fle_out ) ) ;
@@ -30503,7 +30032,7 @@ direct_interc direct_interc_14_ (
     .out ( clb_O[14] ) ) ;
 direct_interc direct_interc_15_ (
     .in ( { SYNOPSYS_UNCONNECTED_16 } ) ,
-    .out ( clb_O[15] ) ) ;
+    .out ( { p_abuf14 } ) ) ;
 direct_interc direct_interc_16_ (
     .in ( { SYNOPSYS_UNCONNECTED_17 } ) ,
     .out ( { p_abuf16 } ) ) ;
@@ -30678,92 +30207,69 @@ direct_interc direct_interc_72_ (
 direct_interc direct_interc_73_ (
     .in ( { SYNOPSYS_UNCONNECTED_74 } ) ,
     .out ( clb_clk ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_59 ( 
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_59 ( 
     .A ( logical_tile_clb_mode_default__fle_0_fle_out[1] ) , .X ( clb_O[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_58 ( .A ( clb_O[1] ) , 
-    .X ( BUF_net_58 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_60 ( 
-    .A ( logical_tile_clb_mode_default__fle_0_fle_out[1] ) , 
-    .X ( BUF_net_60 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_65 ( .A ( p_abuf4 ) , 
-    .X ( BUF_net_65 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_62 ( .A ( clb_O[3] ) , 
-    .X ( BUF_net_62 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_64 ( .A ( clb_O[2] ) , 
-    .X ( BUF_net_64 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_66 ( 
-    .A ( logical_tile_clb_mode_default__fle_2_fle_out[1] ) , .X ( clb_O[4] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_67 ( 
-    .A ( logical_tile_clb_mode_default__fle_2_fle_out[1] ) , 
-    .X ( BUF_net_67 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_58 ( .A ( clb_O[1] ) , .X ( p_abuf0 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_60 ( 
+    .A ( logical_tile_clb_mode_default__fle_0_fle_out[1] ) , .X ( p_abuf1 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_63 ( 
+    .A ( logical_tile_clb_mode_default__fle_1_fle_out[1] ) , .X ( clb_O[2] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_62 ( .A ( clb_O[3] ) , .X ( p_abuf2 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_64 ( 
+    .A ( logical_tile_clb_mode_default__fle_1_fle_out[1] ) , .X ( p_abuf3 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_69 ( 
+    .A ( logical_tile_clb_mode_default__fle_3_fle_out[0] ) , .X ( clb_O[7] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_66 ( .A ( clb_O[5] ) , .X ( p_abuf4 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_68 ( .A ( clb_O[4] ) , .X ( p_abuf5 ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_70 ( 
-    .A ( logical_tile_clb_mode_default__fle_3_fle_out[1] ) , .X ( clb_O[6] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_69 ( .A ( clb_O[7] ) , 
-    .X ( BUF_net_69 ) ) ;
+    .A ( logical_tile_clb_mode_default__fle_3_fle_out[0] ) , .X ( p_abuf6 ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_71 ( 
-    .A ( logical_tile_clb_mode_default__fle_3_fle_out[1] ) , 
-    .X ( BUF_net_71 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_74 ( 
-    .A ( logical_tile_clb_mode_default__fle_4_fle_out[1] ) , .X ( clb_O[8] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_73 ( .A ( clb_O[9] ) , 
-    .X ( BUF_net_73 ) ) ;
+    .A ( logical_tile_clb_mode_default__fle_3_fle_out[1] ) , .X ( clb_O[6] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_72 ( 
+    .A ( logical_tile_clb_mode_default__fle_3_fle_out[1] ) , .X ( p_abuf7 ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_75 ( 
+    .A ( logical_tile_clb_mode_default__fle_4_fle_out[1] ) , .X ( clb_O[8] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_74 ( .A ( clb_O[9] ) , 
+    .X ( BUF_net_74 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_76 ( 
     .A ( logical_tile_clb_mode_default__fle_4_fle_out[1] ) , 
-    .X ( BUF_net_75 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_76 ( 
+    .X ( BUF_net_76 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_77 ( 
     .A ( logical_tile_clb_mode_default__fle_5_fle_out[0] ) , 
     .X ( clb_O[11] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_77 ( 
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_78 ( 
     .A ( logical_tile_clb_mode_default__fle_5_fle_out[0] ) , 
-    .X ( BUF_net_77 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_80 ( 
-    .A ( logical_tile_clb_mode_default__fle_6_fle_out[0] ) , 
-    .X ( clb_O[13] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_79 ( .A ( clb_O[10] ) , 
-    .X ( BUF_net_79 ) ) ;
+    .X ( BUF_net_78 ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_81 ( 
     .A ( logical_tile_clb_mode_default__fle_6_fle_out[0] ) , 
-    .X ( BUF_net_81 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_103 ( .A ( BUF_net_62 ) , 
-    .X ( p_abuf2 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_83 ( .A ( clb_O[12] ) , 
-    .X ( BUF_net_83 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_85 ( .A ( clb_O[15] ) , 
+    .X ( clb_O[13] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_80 ( .A ( clb_O[10] ) , 
+    .X ( BUF_net_80 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_82 ( 
+    .A ( logical_tile_clb_mode_default__fle_6_fle_out[0] ) , 
+    .X ( BUF_net_82 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_85 ( .A ( p_abuf14 ) , 
     .X ( BUF_net_85 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_84 ( .A ( clb_O[12] ) , 
+    .X ( BUF_net_84 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_101 ( .A ( BUF_net_74 ) , 
+    .X ( p_abuf8 ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_87 ( .A ( clb_O[14] ) , 
     .X ( BUF_net_87 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_104 ( .A ( BUF_net_64 ) , 
-    .X ( p_abuf3 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_105 ( .A ( BUF_net_67 ) , 
-    .X ( p_abuf5 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_106 ( .A ( BUF_net_69 ) , 
-    .X ( BUF_net_106 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_111 ( .A ( BUF_net_58 ) , 
-    .X ( p_abuf0 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_112 ( .A ( BUF_net_60 ) , 
-    .X ( p_abuf1 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_113 ( .A ( BUF_net_65 ) , 
-    .X ( clb_O[5] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_114 ( .A ( BUF_net_71 ) , 
-    .X ( p_abuf7 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_115 ( .A ( BUF_net_73 ) , 
-    .X ( p_abuf8 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_116 ( .A ( BUF_net_75 ) , 
-    .X ( p_abuf9 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_117 ( .A ( BUF_net_77 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_102 ( .A ( BUF_net_78 ) , 
     .X ( p_abuf10 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_118 ( .A ( BUF_net_79 ) , 
-    .X ( p_abuf11 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_119 ( .A ( BUF_net_81 ) , 
-    .X ( p_abuf12 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_120 ( .A ( BUF_net_83 ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_103 ( .A ( BUF_net_85 ) , 
+    .X ( clb_O[15] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_104 ( .A ( BUF_net_84 ) , 
     .X ( p_abuf13 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_121 ( .A ( BUF_net_85 ) , 
-    .X ( p_abuf14 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_122 ( .A ( BUF_net_87 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_105 ( .A ( BUF_net_87 ) , 
     .X ( p_abuf15 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_131 ( .A ( BUF_net_106 ) , 
-    .X ( p_abuf6 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_106 ( .A ( BUF_net_76 ) , 
+    .X ( p_abuf9 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_107 ( .A ( BUF_net_80 ) , 
+    .X ( p_abuf11 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_108 ( .A ( BUF_net_82 ) , 
+    .X ( p_abuf12 ) ) ;
 endmodule
 
 
@@ -30893,20 +30399,16 @@ output [0:0] bottom_width_0_height_0__pin_50_ ;
 output [0:0] bottom_width_0_height_0__pin_51_ ;
 output [0:0] ccff_tail ;
 
-wire ropt_net_161 ;
-wire ropt_net_160 ;
-wire ropt_net_157 ;
-wire ropt_net_151 ;
-wire ropt_net_152 ;
-wire p_abuf4 ;
-wire ropt_net_148 ;
-wire ropt_net_156 ;
-wire ropt_net_145 ;
-wire ropt_net_159 ;
-wire ropt_net_165 ;
-wire ropt_net_167 ;
-wire ropt_net_184 ;
-wire ropt_net_163 ;
+wire ropt_net_128 ;
+wire ropt_net_134 ;
+wire ropt_net_136 ;
+wire ropt_net_147 ;
+wire ropt_net_133 ;
+wire ropt_net_144 ;
+wire ropt_net_126 ;
+wire ropt_net_130 ;
+wire ropt_net_135 ;
+wire p_abuf14 ;
 
 logical_tile_clb_mode_clb_ logical_tile_clb_mode_clb__0 ( 
     .prog_clk ( prog_clk ) , .Test_en ( Test_en ) , .clk ( clk ) ,
@@ -30945,200 +30447,151 @@ logical_tile_clb_mode_clb_ logical_tile_clb_mode_clb__0 (
     .clb_regin ( top_width_0_height_0__pin_32_ ) , 
     .clb_scin ( top_width_0_height_0__pin_33_ ) , 
     .clb_clk ( left_width_0_height_0__pin_52_ ) , .ccff_head ( ccff_head ) ,
-    .clb_O ( { aps_rename_130_ , aps_rename_132_ , aps_rename_134_ , 
-        aps_rename_136_ , aps_rename_138_ , 
-        right_width_0_height_0__pin_39_upper[0] , aps_rename_141_ , 
-        aps_rename_143_ , aps_rename_145_ , aps_rename_147_ , 
-        aps_rename_149_ , aps_rename_151_ , aps_rename_153_ , 
-        aps_rename_155_ , aps_rename_157_ , aps_rename_158_ } ) ,
+    .clb_O ( { aps_rename_129_ , aps_rename_130_ , aps_rename_132_ , 
+        aps_rename_134_ , aps_rename_136_ , aps_rename_138_ , 
+        aps_rename_140_ , aps_rename_141_ , aps_rename_143_ , 
+        aps_rename_145_ , aps_rename_147_ , aps_rename_149_ , 
+        aps_rename_151_ , aps_rename_153_ , aps_rename_155_ , 
+        bottom_width_0_height_0__pin_49_upper[0] } ) ,
     .clb_regout ( bottom_width_0_height_0__pin_50_ ) , 
     .clb_scout ( bottom_width_0_height_0__pin_51_ ) ,
-    .ccff_tail ( { ropt_net_168 } ) ,
-    .p_abuf0 ( ropt_net_160 ) , .p_abuf1 ( ropt_net_161 ) , 
-    .p_abuf2 ( ropt_net_151 ) , .p_abuf3 ( ropt_net_157 ) , 
-    .p_abuf4 ( p_abuf4 ) , .p_abuf5 ( ropt_net_152 ) , 
-    .p_abuf6 ( ropt_net_148 ) , 
-    .p_abuf7 ( right_width_0_height_0__pin_40_upper[0] ) , 
-    .p_abuf8 ( bottom_width_0_height_0__pin_43_upper[0] ) , 
-    .p_abuf9 ( ropt_net_156 ) , .p_abuf10 ( ropt_net_159 ) , 
-    .p_abuf11 ( ropt_net_145 ) , .p_abuf12 ( ropt_net_167 ) , 
-    .p_abuf13 ( ropt_net_165 ) , .p_abuf14 ( ropt_net_163 ) , 
-    .p_abuf15 ( ropt_net_184 ) , .p0 ( optlc_net_135 ) , 
-    .p1 ( optlc_net_136 ) , .p2 ( optlc_net_137 ) , .p3 ( optlc_net_138 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__0 ( .A ( aps_rename_130_ ) , 
+    .ccff_tail ( { ropt_net_124 } ) ,
+    .p_abuf0 ( right_width_0_height_0__pin_35_upper[0] ) , 
+    .p_abuf1 ( right_width_0_height_0__pin_34_upper[0] ) , 
+    .p_abuf2 ( ropt_net_134 ) , .p_abuf3 ( ropt_net_128 ) , 
+    .p_abuf4 ( right_width_0_height_0__pin_39_upper[0] ) , 
+    .p_abuf5 ( ropt_net_136 ) , .p_abuf6 ( ropt_net_133 ) , 
+    .p_abuf7 ( ropt_net_147 ) , .p_abuf8 ( ropt_net_144 ) , 
+    .p_abuf9 ( bottom_width_0_height_0__pin_42_upper[0] ) , 
+    .p_abuf10 ( ropt_net_126 ) , 
+    .p_abuf11 ( bottom_width_0_height_0__pin_44_upper[0] ) , 
+    .p_abuf12 ( bottom_width_0_height_0__pin_47_upper[0] ) , 
+    .p_abuf13 ( ropt_net_130 ) , .p_abuf14 ( p_abuf14 ) , 
+    .p_abuf15 ( ropt_net_135 ) , .p0 ( optlc_net_118 ) , 
+    .p1 ( optlc_net_119 ) , .p2 ( optlc_net_120 ) , .p3 ( optlc_net_121 ) , 
+    .p4 ( optlc_net_122 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_1__0 ( .A ( aps_rename_129_ ) , 
+    .X ( ropt_net_129 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_2__1 ( .A ( aps_rename_130_ ) , 
     .X ( aps_rename_131_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_2__1 ( .A ( aps_rename_132_ ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_3__2 ( .A ( aps_rename_132_ ) , 
     .X ( aps_rename_133_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_3__2 ( .A ( aps_rename_134_ ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_4__3 ( .A ( aps_rename_134_ ) , 
     .X ( aps_rename_135_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_4__3 ( .A ( aps_rename_136_ ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_5__4 ( .A ( aps_rename_136_ ) , 
     .X ( aps_rename_137_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_5__4 ( .A ( aps_rename_138_ ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_6__5 ( .A ( aps_rename_138_ ) , 
     .X ( aps_rename_139_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_6__5 ( .A ( p_abuf4 ) , 
-    .X ( aps_rename_140_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_7__6 ( .A ( aps_rename_141_ ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_7__6 ( .A ( aps_rename_140_ ) , 
+    .X ( ropt_net_131 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_8__7 ( .A ( aps_rename_141_ ) , 
     .X ( aps_rename_142_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_8__7 ( .A ( aps_rename_143_ ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_9__8 ( .A ( aps_rename_143_ ) , 
     .X ( aps_rename_144_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_9__8 ( .A ( aps_rename_145_ ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_10__9 ( .A ( aps_rename_145_ ) , 
     .X ( aps_rename_146_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_10__9 ( .A ( aps_rename_147_ ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_11__10 ( .A ( aps_rename_147_ ) , 
     .X ( aps_rename_148_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_11__10 ( .A ( aps_rename_149_ ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_12__11 ( .A ( aps_rename_149_ ) , 
     .X ( aps_rename_150_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_12__11 ( .A ( aps_rename_151_ ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_13__12 ( .A ( aps_rename_151_ ) , 
     .X ( aps_rename_152_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_13__12 ( .A ( aps_rename_153_ ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 FTB_14__13 ( .A ( aps_rename_153_ ) , 
     .X ( aps_rename_154_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_14__13 ( .A ( aps_rename_155_ ) , 
-    .X ( aps_rename_156_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_15__14 ( .A ( aps_rename_157_ ) , 
-    .X ( ropt_net_166 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 FTB_16__15 ( .A ( aps_rename_158_ ) , 
-    .X ( aps_rename_159_ ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_89 ( .A ( aps_rename_131_ ) , 
-    .X ( ropt_net_150 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_90 ( .A ( aps_rename_133_ ) , 
-    .X ( ropt_net_155 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_91 ( .A ( aps_rename_135_ ) , 
-    .X ( ropt_net_153 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_92 ( .A ( aps_rename_137_ ) , 
-    .X ( ropt_net_147 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_93 ( .A ( aps_rename_139_ ) , 
-    .X ( BUF_net_93 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_94 ( .A ( aps_rename_140_ ) , 
-    .X ( ropt_net_154 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_95 ( .A ( aps_rename_142_ ) , 
-    .X ( BUF_net_95 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_96 ( .A ( aps_rename_144_ ) , 
-    .X ( BUF_net_96 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_97 ( .A ( aps_rename_146_ ) , 
-    .X ( ropt_net_143 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_98 ( .A ( aps_rename_148_ ) , 
-    .X ( BUF_net_98 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_99 ( .A ( aps_rename_150_ ) , 
-    .X ( BUF_net_99 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_100 ( .A ( aps_rename_152_ ) , 
-    .X ( ropt_net_146 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_101 ( .A ( aps_rename_154_ ) , 
-    .X ( BUF_net_101 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_102 ( .A ( aps_rename_156_ ) , 
-    .X ( BUF_net_102 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_110 ( .A ( aps_rename_159_ ) , 
-    .X ( bottom_width_0_height_0__pin_49_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_123 ( .A ( BUF_net_93 ) , 
-    .X ( ropt_net_164 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_124 ( .A ( BUF_net_95 ) , 
-    .X ( ropt_net_162 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_125 ( .A ( BUF_net_126 ) , 
-    .X ( ropt_net_187 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_126 ( .A ( BUF_net_96 ) , 
-    .X ( BUF_net_126 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_127 ( .A ( BUF_net_98 ) , 
-    .X ( bottom_width_0_height_0__pin_43_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_128 ( .A ( BUF_net_99 ) , 
-    .X ( ropt_net_158 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_129 ( .A ( BUF_net_101 ) , 
-    .X ( ropt_net_144 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_130 ( .A ( BUF_net_102 ) , 
-    .X ( ropt_net_149 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_136 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
-    .HI ( optlc_net_135 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_138 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
-    .HI ( optlc_net_136 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_140 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
-    .HI ( optlc_net_137 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_142 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
-    .HI ( optlc_net_138 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_963 ( .A ( ropt_net_143 ) , 
-    .X ( bottom_width_0_height_0__pin_42_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_964 ( .A ( ropt_net_144 ) , 
-    .X ( bottom_width_0_height_0__pin_46_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_965 ( .A ( ropt_net_145 ) , 
-    .X ( ropt_net_173 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_966 ( .A ( ropt_net_146 ) , 
-    .X ( ropt_net_182 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_967 ( .A ( ropt_net_147 ) , 
-    .X ( right_width_0_height_0__pin_37_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_968 ( .A ( ropt_net_148 ) , 
-    .X ( ropt_net_172 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_969 ( .A ( ropt_net_149 ) , 
-    .X ( bottom_width_0_height_0__pin_47_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_970 ( .A ( ropt_net_150 ) , 
-    .X ( ropt_net_178 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_971 ( .A ( ropt_net_151 ) , 
-    .X ( ropt_net_186 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_972 ( .A ( ropt_net_152 ) , 
-    .X ( ropt_net_179 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_973 ( .A ( ropt_net_153 ) , 
-    .X ( right_width_0_height_0__pin_36_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_974 ( .A ( ropt_net_154 ) , 
-    .X ( right_width_0_height_0__pin_39_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_975 ( .A ( ropt_net_155 ) , 
-    .X ( ropt_net_183 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_976 ( .A ( ropt_net_156 ) , 
-    .X ( ropt_net_171 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_977 ( .A ( ropt_net_157 ) , 
-    .X ( ropt_net_185 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_978 ( .A ( ropt_net_158 ) , 
-    .X ( ropt_net_180 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_979 ( .A ( ropt_net_159 ) , 
-    .X ( ropt_net_174 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_980 ( .A ( ropt_net_160 ) , 
-    .X ( right_width_0_height_0__pin_35_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_981 ( .A ( ropt_net_161 ) , 
-    .X ( right_width_0_height_0__pin_34_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_982 ( .A ( ropt_net_162 ) , 
-    .X ( right_width_0_height_0__pin_40_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_983 ( .A ( ropt_net_163 ) , 
-    .X ( ropt_net_175 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_984 ( .A ( ropt_net_164 ) , 
-    .X ( ropt_net_176 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_986 ( .A ( ropt_net_165 ) , 
-    .X ( ropt_net_181 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_989 ( .A ( ropt_net_166 ) , 
-    .X ( ropt_net_177 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_990 ( .A ( ropt_net_167 ) , 
-    .X ( bottom_width_0_height_0__pin_47_upper[0] ) ) ;
-sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_993 ( .A ( ropt_net_168 ) , 
-    .X ( ropt_net_170 ) ) ;
-sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_997 ( .A ( ropt_net_170 ) , 
-    .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_998 ( .A ( ropt_net_171 ) , 
-    .X ( bottom_width_0_height_0__pin_42_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_999 ( .A ( ropt_net_172 ) , 
-    .X ( right_width_0_height_0__pin_41_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1000 ( .A ( ropt_net_173 ) , 
-    .X ( bottom_width_0_height_0__pin_44_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1001 ( .A ( ropt_net_174 ) , 
-    .X ( bottom_width_0_height_0__pin_45_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1002 ( .A ( ropt_net_175 ) , 
-    .X ( bottom_width_0_height_0__pin_49_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1004 ( .A ( ropt_net_176 ) , 
-    .X ( right_width_0_height_0__pin_38_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1005 ( .A ( ropt_net_177 ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_15__14 ( .A ( aps_rename_155_ ) , 
     .X ( bottom_width_0_height_0__pin_48_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1006 ( .A ( ropt_net_178 ) , 
-    .X ( right_width_0_height_0__pin_34_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1007 ( .A ( ropt_net_179 ) , 
-    .X ( right_width_0_height_0__pin_38_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1009 ( .A ( ropt_net_180 ) , 
-    .X ( bottom_width_0_height_0__pin_44_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1012 ( .A ( ropt_net_181 ) , 
-    .X ( bottom_width_0_height_0__pin_46_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1013 ( .A ( ropt_net_182 ) , 
-    .X ( bottom_width_0_height_0__pin_45_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1015 ( .A ( ropt_net_183 ) , 
-    .X ( right_width_0_height_0__pin_35_lower[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1016 ( .A ( ropt_net_184 ) , 
-    .X ( bottom_width_0_height_0__pin_48_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1020 ( .A ( ropt_net_185 ) , 
-    .X ( right_width_0_height_0__pin_36_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1022 ( .A ( ropt_net_186 ) , 
-    .X ( right_width_0_height_0__pin_37_upper[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_1027 ( .A ( ropt_net_187 ) , 
+sky130_fd_sc_hd__dlygate4sd2_1 FTB_16__15 ( .A ( p_abuf14 ) , 
+    .X ( bottom_width_0_height_0__pin_49_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_89 ( .A ( aps_rename_131_ ) , 
+    .X ( BUF_net_89 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_90 ( .A ( aps_rename_133_ ) , 
+    .X ( ropt_net_132 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_91 ( .A ( aps_rename_135_ ) , 
+    .X ( ropt_net_125 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_92 ( .A ( aps_rename_137_ ) , 
+    .X ( right_width_0_height_0__pin_38_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_93 ( .A ( aps_rename_139_ ) , 
+    .X ( ropt_net_137 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_94 ( .A ( aps_rename_142_ ) , 
     .X ( right_width_0_height_0__pin_41_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_RR_95 ( .A ( aps_rename_144_ ) , 
+    .X ( bottom_width_0_height_0__pin_42_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_96 ( .A ( aps_rename_146_ ) , 
+    .X ( BUF_net_96 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_97 ( .A ( aps_rename_148_ ) , 
+    .X ( BUF_net_97 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_98 ( .A ( aps_rename_150_ ) , 
+    .X ( ropt_net_138 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_99 ( .A ( aps_rename_152_ ) , 
+    .X ( BUF_net_99 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_RR_100 ( .A ( aps_rename_154_ ) , 
+    .X ( ropt_net_127 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_110 ( .A ( BUF_net_89 ) , 
+    .X ( ropt_net_146 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_111 ( .A ( BUF_net_96 ) , 
+    .X ( bottom_width_0_height_0__pin_43_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_112 ( .A ( BUF_net_97 ) , 
+    .X ( bottom_width_0_height_0__pin_44_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 BUFT_P_113 ( .A ( BUF_net_99 ) , 
+    .X ( bottom_width_0_height_0__pin_46_lower[0] ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_119 ( .LO ( SYNOPSYS_UNCONNECTED_1 ) , 
+    .HI ( optlc_net_118 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_122 ( .LO ( SYNOPSYS_UNCONNECTED_2 ) , 
+    .HI ( optlc_net_119 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_125 ( .LO ( SYNOPSYS_UNCONNECTED_3 ) , 
+    .HI ( optlc_net_120 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_127 ( .LO ( SYNOPSYS_UNCONNECTED_4 ) , 
+    .HI ( optlc_net_121 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_129 ( .LO ( SYNOPSYS_UNCONNECTED_5 ) , 
+    .HI ( optlc_net_122 ) ) ;
+sky130_fd_sc_hd__dlymetal6s2s_1 ropt_mt_inst_878 ( .A ( ropt_net_124 ) , 
+    .X ( ropt_net_139 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_879 ( .A ( ropt_net_125 ) , 
+    .X ( right_width_0_height_0__pin_37_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_880 ( .A ( ropt_net_126 ) , 
+    .X ( ropt_net_140 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_881 ( .A ( ropt_net_127 ) , 
+    .X ( bottom_width_0_height_0__pin_47_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_882 ( .A ( ropt_net_128 ) , 
+    .X ( right_width_0_height_0__pin_36_upper[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_884 ( .A ( ropt_net_129 ) , 
+    .X ( ropt_net_143 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_885 ( .A ( ropt_net_130 ) , 
+    .X ( bottom_width_0_height_0__pin_46_upper[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_886 ( .A ( ropt_net_131 ) , 
+    .X ( right_width_0_height_0__pin_40_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_887 ( .A ( ropt_net_132 ) , 
+    .X ( ropt_net_142 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_888 ( .A ( ropt_net_133 ) , 
+    .X ( right_width_0_height_0__pin_41_upper[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_890 ( .A ( ropt_net_134 ) , 
+    .X ( right_width_0_height_0__pin_37_upper[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_892 ( .A ( ropt_net_135 ) , 
+    .X ( bottom_width_0_height_0__pin_48_upper[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_895 ( .A ( ropt_net_136 ) , 
+    .X ( ropt_net_145 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_mt_inst_898 ( .A ( ropt_net_137 ) , 
+    .X ( ropt_net_141 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_909 ( .A ( ropt_net_138 ) , 
+    .X ( bottom_width_0_height_0__pin_45_lower[0] ) ) ;
+sky130_fd_sc_hd__dlymetal6s6s_1 ropt_mt_inst_913 ( .A ( ropt_net_139 ) , 
+    .X ( ccff_tail[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_914 ( .A ( ropt_net_140 ) , 
+    .X ( bottom_width_0_height_0__pin_45_upper[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_915 ( .A ( ropt_net_141 ) , 
+    .X ( right_width_0_height_0__pin_39_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_916 ( .A ( ropt_net_142 ) , 
+    .X ( right_width_0_height_0__pin_36_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_917 ( .A ( ropt_net_143 ) , 
+    .X ( right_width_0_height_0__pin_34_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_918 ( .A ( ropt_net_144 ) , 
+    .X ( bottom_width_0_height_0__pin_43_upper[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_919 ( .A ( ropt_net_145 ) , 
+    .X ( right_width_0_height_0__pin_38_upper[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_920 ( .A ( ropt_net_146 ) , 
+    .X ( right_width_0_height_0__pin_35_lower[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_mt_inst_921 ( .A ( ropt_net_147 ) , 
+    .X ( right_width_0_height_0__pin_40_upper[0] ) ) ;
 endmodule
 
 
@@ -31538,9 +30991,9 @@ wire [0:19] sb_2__2__0_chany_bottom_out ;
 //
 
 grid_clb grid_clb_1__1_ (
-    .prog_clk ( { ctsbuf_net_1827 } ) ,
-    .Test_en ( { BUF_net_9 } ) ,
-    .clk ( clk ) , .top_width_0_height_0__pin_32_ ( direct_interc_0_out ) , 
+    .prog_clk ( { ctsbuf_net_1722 } ) ,
+    .Test_en ( Test_en ) , .clk ( clk ) , 
+    .top_width_0_height_0__pin_32_ ( direct_interc_0_out ) , 
     .top_width_0_height_0__pin_33_ ( direct_interc_3_out ) , 
     .right_width_0_height_0__pin_0_ ( cby_1__1__0_left_grid_pin_0_ ) , 
     .right_width_0_height_0__pin_1_ ( cby_1__1__0_left_grid_pin_1_ ) , 
@@ -31575,7 +31028,7 @@ grid_clb grid_clb_1__1_ (
     .bottom_width_0_height_0__pin_30_ ( cbx_1__0__0_top_grid_pin_30_ ) , 
     .bottom_width_0_height_0__pin_31_ ( cbx_1__0__0_top_grid_pin_31_ ) , 
     .left_width_0_height_0__pin_52_ ( cby_0__1__0_right_grid_pin_52_ ) ,
-    .ccff_head ( { ropt_net_33 } ) ,
+    .ccff_head ( { ropt_net_31 } ) ,
     
     .right_width_0_height_0__pin_34_upper ( grid_clb_0_right_width_0_height_0__pin_34_upper ) , 
     .right_width_0_height_0__pin_34_lower ( grid_clb_0_right_width_0_height_0__pin_34_lower ) , 
@@ -31613,7 +31066,7 @@ grid_clb grid_clb_1__1_ (
     .bottom_width_0_height_0__pin_51_ ( grid_clb_0_bottom_width_0_height_0__pin_51_ ) , 
     .ccff_tail ( grid_clb_0_ccff_tail ) ) ;
 grid_clb grid_clb_1__2_ (
-    .prog_clk ( { ctsbuf_net_1322 } ) ,
+    .prog_clk ( { ctsbuf_net_1318 } ) ,
     .Test_en ( Test_en ) , .clk ( clk ) , 
     .top_width_0_height_0__pin_32_ ( grid_clb_1__2__undriven_top_width_0_height_0__pin_32_ ) , 
     .top_width_0_height_0__pin_33_ ( grid_clb_1__2__undriven_top_width_0_height_0__pin_33_ ) , 
@@ -31650,7 +31103,7 @@ grid_clb grid_clb_1__2_ (
     .bottom_width_0_height_0__pin_30_ ( cbx_1__1__0_top_grid_pin_30_ ) , 
     .bottom_width_0_height_0__pin_31_ ( cbx_1__1__0_top_grid_pin_31_ ) , 
     .left_width_0_height_0__pin_52_ ( cby_0__1__1_right_grid_pin_52_ ) ,
-    .ccff_head ( { ropt_net_40 } ) ,
+    .ccff_head ( { ropt_net_27 } ) ,
     
     .right_width_0_height_0__pin_34_upper ( grid_clb_1_right_width_0_height_0__pin_34_upper ) , 
     .right_width_0_height_0__pin_34_lower ( grid_clb_1_right_width_0_height_0__pin_34_lower ) , 
@@ -31688,7 +31141,7 @@ grid_clb grid_clb_1__2_ (
     .bottom_width_0_height_0__pin_51_ ( grid_clb_1_bottom_width_0_height_0__pin_51_ ) , 
     .ccff_tail ( grid_clb_1_ccff_tail ) ) ;
 grid_clb grid_clb_2__1_ (
-    .prog_clk ( { ctsbuf_net_413 } ) ,
+    .prog_clk ( { ctsbuf_net_1116 } ) ,
     .Test_en ( Test_en ) , .clk ( clk ) , 
     .top_width_0_height_0__pin_32_ ( direct_interc_1_out ) , 
     .top_width_0_height_0__pin_33_ ( direct_interc_4_out ) , 
@@ -31762,7 +31215,7 @@ grid_clb grid_clb_2__1_ (
     .bottom_width_0_height_0__pin_51_ ( grid_clb_2__1__undriven_bottom_width_0_height_0__pin_51_ ) , 
     .ccff_tail ( grid_clb_2_ccff_tail ) ) ;
 grid_clb grid_clb_2__2_ (
-    .prog_clk ( { ctsbuf_net_615 } ) ,
+    .prog_clk ( { ctsbuf_net_510 } ) ,
     .Test_en ( Test_en ) , .clk ( clk ) , 
     .top_width_0_height_0__pin_32_ ( direct_interc_2_out ) , 
     .top_width_0_height_0__pin_33_ ( direct_interc_5_out ) , 
@@ -31836,7 +31289,7 @@ grid_clb grid_clb_2__2_ (
     .bottom_width_0_height_0__pin_51_ ( grid_clb_3_bottom_width_0_height_0__pin_51_ ) , 
     .ccff_tail ( grid_clb_3_ccff_tail ) ) ;
 grid_io_top grid_io_top_1__3_ (
-    .prog_clk ( { ctsbuf_net_918 } ) ,
+    .prog_clk ( { ctsbuf_net_914 } ) ,
     .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A[0] ) , 
     .gfpga_pad_GPIO_IE ( gfpga_pad_GPIO_IE[0] ) , 
     .gfpga_pad_GPIO_OE ( gfpga_pad_GPIO_OE[0] ) , 
@@ -31847,7 +31300,7 @@ grid_io_top grid_io_top_1__3_ (
     .bottom_width_0_height_0__pin_1_lower ( grid_io_top_0_bottom_width_0_height_0__pin_1_lower ) , 
     .ccff_tail ( grid_io_top_0_ccff_tail ) ) ;
 grid_io_top grid_io_top_2__3_ (
-    .prog_clk ( { ctsbuf_net_514 } ) ,
+    .prog_clk ( { ctsbuf_net_38 } ) ,
     .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A[1] ) , 
     .gfpga_pad_GPIO_IE ( gfpga_pad_GPIO_IE[1] ) , 
     .gfpga_pad_GPIO_OE ( gfpga_pad_GPIO_OE[1] ) , 
@@ -31858,7 +31311,7 @@ grid_io_top grid_io_top_2__3_ (
     .bottom_width_0_height_0__pin_1_lower ( grid_io_top_1_bottom_width_0_height_0__pin_1_lower ) , 
     .ccff_tail ( grid_io_top_1_ccff_tail ) ) ;
 grid_io_right grid_io_right_3__1_ (
-    .prog_clk ( { ctsbuf_net_110 } ) ,
+    .prog_clk ( { ctsbuf_net_49 } ) ,
     .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A[2] ) , 
     .gfpga_pad_GPIO_IE ( gfpga_pad_GPIO_IE[2] ) , 
     .gfpga_pad_GPIO_OE ( gfpga_pad_GPIO_OE[2] ) , 
@@ -31869,7 +31322,7 @@ grid_io_right grid_io_right_3__1_ (
     .left_width_0_height_0__pin_1_lower ( grid_io_right_0_left_width_0_height_0__pin_1_lower ) , 
     .ccff_tail ( grid_io_right_0_ccff_tail ) ) ;
 grid_io_right grid_io_right_3__2_ (
-    .prog_clk ( { ctsbuf_net_1221 } ) ,
+    .prog_clk ( { ctsbuf_net_16 } ) ,
     .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A[3] ) , 
     .gfpga_pad_GPIO_IE ( gfpga_pad_GPIO_IE[3] ) , 
     .gfpga_pad_GPIO_OE ( gfpga_pad_GPIO_OE[3] ) , 
@@ -31880,7 +31333,7 @@ grid_io_right grid_io_right_3__2_ (
     .left_width_0_height_0__pin_1_lower ( grid_io_right_1_left_width_0_height_0__pin_1_lower ) , 
     .ccff_tail ( grid_io_right_1_ccff_tail ) ) ;
 grid_io_bottom grid_io_bottom_1__0_ (
-    .prog_clk ( { ctsbuf_net_211 } ) ,
+    .prog_clk ( { ctsbuf_net_611 } ) ,
     .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A[4] ) , 
     .gfpga_pad_GPIO_IE ( gfpga_pad_GPIO_IE[4] ) , 
     .gfpga_pad_GPIO_OE ( gfpga_pad_GPIO_OE[4] ) , 
@@ -31891,7 +31344,7 @@ grid_io_bottom grid_io_bottom_1__0_ (
     .top_width_0_height_0__pin_1_lower ( grid_io_bottom_0_top_width_0_height_0__pin_1_lower ) , 
     .ccff_tail ( grid_io_bottom_0_ccff_tail ) ) ;
 grid_io_bottom grid_io_bottom_2__0_ (
-    .prog_clk ( { ctsbuf_net_817 } ) ,
+    .prog_clk ( { ctsbuf_net_27 } ) ,
     .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A[5] ) , 
     .gfpga_pad_GPIO_IE ( gfpga_pad_GPIO_IE[5] ) , 
     .gfpga_pad_GPIO_OE ( gfpga_pad_GPIO_OE[5] ) , 
@@ -31902,7 +31355,7 @@ grid_io_bottom grid_io_bottom_2__0_ (
     .top_width_0_height_0__pin_1_lower ( grid_io_bottom_1_top_width_0_height_0__pin_1_lower ) , 
     .ccff_tail ( grid_io_bottom_1_ccff_tail ) ) ;
 grid_io_left grid_io_left_0__1_ (
-    .prog_clk ( { ctsbuf_net_1625 } ) ,
+    .prog_clk ( { ctsbuf_net_1520 } ) ,
     .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A[6] ) , 
     .gfpga_pad_GPIO_IE ( gfpga_pad_GPIO_IE[6] ) , 
     .gfpga_pad_GPIO_OE ( gfpga_pad_GPIO_OE[6] ) , 
@@ -31913,7 +31366,7 @@ grid_io_left grid_io_left_0__1_ (
     .right_width_0_height_0__pin_1_lower ( grid_io_left_0_right_width_0_height_0__pin_1_lower ) , 
     .ccff_tail ( grid_io_left_0_ccff_tail ) ) ;
 grid_io_left grid_io_left_0__2_ (
-    .prog_clk ( { ctsbuf_net_1524 } ) ,
+    .prog_clk ( { ctsbuf_net_1419 } ) ,
     .gfpga_pad_GPIO_A ( gfpga_pad_GPIO_A[7] ) , 
     .gfpga_pad_GPIO_IE ( gfpga_pad_GPIO_IE[7] ) , 
     .gfpga_pad_GPIO_OE ( gfpga_pad_GPIO_OE[7] ) , 
@@ -31924,7 +31377,7 @@ grid_io_left grid_io_left_0__2_ (
     .right_width_0_height_0__pin_1_lower ( grid_io_left_1_right_width_0_height_0__pin_1_lower ) , 
     .ccff_tail ( grid_io_left_1_ccff_tail ) ) ;
 sb_0__0_ sb_0__0_ (
-    .prog_clk ( { ctsbuf_net_1625 } ) ,
+    .prog_clk ( { ctsbuf_net_1520 } ) ,
     .chany_top_in ( cby_0__1__0_chany_bottom_out ) , 
     .top_left_grid_pin_1_ ( grid_io_left_0_right_width_0_height_0__pin_1_lower ) , 
     .chanx_right_in ( cbx_1__0__0_chanx_left_out ) , 
@@ -31942,7 +31395,7 @@ sb_0__0_ sb_0__0_ (
     .chanx_right_out ( sb_0__0__0_chanx_right_out ) , 
     .ccff_tail ( ccff_tail ) ) ;
 sb_0__1_ sb_0__1_ (
-    .prog_clk ( { ctsbuf_net_1524 } ) ,
+    .prog_clk ( { p_abuf0 } ) ,
     .chany_top_in ( cby_0__1__1_chany_bottom_out ) , 
     .top_left_grid_pin_1_ ( grid_io_left_1_right_width_0_height_0__pin_1_lower ) , 
     .chanx_right_in ( cbx_1__1__0_chanx_left_out ) , 
@@ -31962,17 +31415,17 @@ sb_0__1_ sb_0__1_ (
     .chany_bottom_out ( sb_0__1__0_chany_bottom_out ) , 
     .ccff_tail ( sb_0__1__0_ccff_tail ) ) ;
 sb_0__2_ sb_0__2_ (
-    .prog_clk ( { ctsbuf_net_1524 } ) ,
+    .prog_clk ( { ctsbuf_net_1419 } ) ,
     .chanx_right_in ( cbx_1__2__0_chanx_left_out ) , 
     .right_top_grid_pin_1_ ( grid_io_top_0_bottom_width_0_height_0__pin_1_upper ) , 
     .chany_bottom_in ( cby_0__1__1_chany_top_out ) , 
-    .bottom_left_grid_pin_1_ ( grid_io_left_1_right_width_0_height_0__pin_1_upper ) ,
-    .ccff_head ( { ropt_net_38 } ) ,
+    .bottom_left_grid_pin_1_ ( grid_io_left_1_right_width_0_height_0__pin_1_upper ) , 
+    .ccff_head ( grid_io_top_0_ccff_tail ) , 
     .chanx_right_out ( sb_0__2__0_chanx_right_out ) , 
     .chany_bottom_out ( sb_0__2__0_chany_bottom_out ) , 
     .ccff_tail ( sb_0__2__0_ccff_tail ) ) ;
 sb_1__0_ sb_1__0_ (
-    .prog_clk ( { ctsbuf_net_211 } ) ,
+    .prog_clk ( { ctsbuf_net_813 } ) ,
     .chany_top_in ( cby_1__1__0_chany_bottom_out ) , 
     .top_left_grid_pin_34_ ( grid_clb_0_right_width_0_height_0__pin_34_lower ) , 
     .top_left_grid_pin_35_ ( grid_clb_0_right_width_0_height_0__pin_35_lower ) , 
@@ -32008,7 +31461,7 @@ sb_1__0_ sb_1__0_ (
     .chanx_left_out ( sb_1__0__0_chanx_left_out ) , 
     .ccff_tail ( sb_1__0__0_ccff_tail ) ) ;
 sb_1__1_ sb_1__1_ (
-    .prog_clk ( { ctsbuf_net_1423 } ) ,
+    .prog_clk ( { ctsbuf_net_1217 } ) ,
     .chany_top_in ( cby_1__1__1_chany_bottom_out ) , 
     .top_left_grid_pin_34_ ( grid_clb_1_right_width_0_height_0__pin_34_lower ) , 
     .top_left_grid_pin_35_ ( grid_clb_1_right_width_0_height_0__pin_35_lower ) , 
@@ -32052,7 +31505,7 @@ sb_1__1_ sb_1__1_ (
     .chanx_left_out ( sb_1__1__0_chanx_left_out ) , 
     .ccff_tail ( sb_1__1__0_ccff_tail ) ) ;
 sb_1__2_ sb_1__2_ (
-    .prog_clk ( { ctsbuf_net_716 } ) ,
+    .prog_clk ( { ctsbuf_net_712 } ) ,
     .chanx_right_in ( cbx_1__2__1_chanx_left_out ) , 
     .right_top_grid_pin_1_ ( grid_io_top_1_bottom_width_0_height_0__pin_1_upper ) , 
     .chany_bottom_in ( cby_1__1__1_chany_top_out ) , 
@@ -32066,13 +31519,13 @@ sb_1__2_ sb_1__2_ (
     .bottom_left_grid_pin_41_ ( grid_clb_1_right_width_0_height_0__pin_41_upper ) , 
     .chanx_left_in ( cbx_1__2__0_chanx_right_out ) , 
     .left_top_grid_pin_1_ ( grid_io_top_0_bottom_width_0_height_0__pin_1_lower ) ,
-    .ccff_head ( { ropt_net_36 } ) ,
+    .ccff_head ( { ropt_net_29 } ) ,
     .chanx_right_out ( sb_1__2__0_chanx_right_out ) , 
     .chany_bottom_out ( sb_1__2__0_chany_bottom_out ) , 
     .chanx_left_out ( sb_1__2__0_chanx_left_out ) , 
     .ccff_tail ( sb_1__2__0_ccff_tail ) ) ;
 sb_2__0_ sb_2__0_ (
-    .prog_clk ( { ctsbuf_net_110 } ) ,
+    .prog_clk ( { ctsbuf_net_27 } ) ,
     .chany_top_in ( cby_1__1__2_chany_bottom_out ) , 
     .top_left_grid_pin_34_ ( grid_clb_2_right_width_0_height_0__pin_34_lower ) , 
     .top_left_grid_pin_35_ ( grid_clb_2_right_width_0_height_0__pin_35_lower ) , 
@@ -32098,7 +31551,7 @@ sb_2__0_ sb_2__0_ (
     .chanx_left_out ( sb_2__0__0_chanx_left_out ) , 
     .ccff_tail ( sb_2__0__0_ccff_tail ) ) ;
 sb_2__1_ sb_2__1_ (
-    .prog_clk ( { ctsbuf_net_1221 } ) ,
+    .prog_clk ( { ctsbuf_net_49 } ) ,
     .chany_top_in ( cby_1__1__3_chany_bottom_out ) , 
     .top_left_grid_pin_34_ ( grid_clb_3_right_width_0_height_0__pin_34_lower ) , 
     .top_left_grid_pin_35_ ( grid_clb_3_right_width_0_height_0__pin_35_lower ) , 
@@ -32134,7 +31587,7 @@ sb_2__1_ sb_2__1_ (
     .chanx_left_out ( sb_2__1__0_chanx_left_out ) , 
     .ccff_tail ( sb_2__1__0_ccff_tail ) ) ;
 sb_2__2_ sb_2__2_ (
-    .prog_clk ( { ctsbuf_net_312 } ) ,
+    .prog_clk ( { ctsbuf_net_16 } ) ,
     .chany_bottom_in ( cby_1__1__3_chany_top_out ) , 
     .bottom_right_grid_pin_1_ ( grid_io_right_1_left_width_0_height_0__pin_1_upper ) , 
     .bottom_left_grid_pin_34_ ( grid_clb_3_right_width_0_height_0__pin_34_upper ) , 
@@ -32152,7 +31605,7 @@ sb_2__2_ sb_2__2_ (
     .chanx_left_out ( sb_2__2__0_chanx_left_out ) , 
     .ccff_tail ( sb_2__2__0_ccff_tail ) ) ;
 cbx_1__0_ cbx_1__0_ (
-    .prog_clk ( { ctsbuf_net_1019 } ) ,
+    .prog_clk ( { ctsbuf_net_611 } ) ,
     .chanx_left_in ( sb_0__0__0_chanx_right_out ) , 
     .chanx_right_in ( sb_1__0__0_chanx_left_out ) , 
     .ccff_head ( sb_1__0__0_ccff_tail ) , 
@@ -32177,7 +31630,7 @@ cbx_1__0_ cbx_1__0_ (
     .bottom_grid_pin_0_ ( cbx_1__0__0_bottom_grid_pin_0_ ) , 
     .ccff_tail ( cbx_1__0__0_ccff_tail ) ) ;
 cbx_1__0_ cbx_2__0_ (
-    .prog_clk ( { ctsbuf_net_817 } ) ,
+    .prog_clk ( { ctsbuf_net_27 } ) ,
     .chanx_left_in ( sb_1__0__0_chanx_right_out ) , 
     .chanx_right_in ( sb_2__0__0_chanx_left_out ) , 
     .ccff_head ( sb_2__0__0_ccff_tail ) , 
@@ -32202,7 +31655,7 @@ cbx_1__0_ cbx_2__0_ (
     .bottom_grid_pin_0_ ( cbx_1__0__1_bottom_grid_pin_0_ ) , 
     .ccff_tail ( cbx_1__0__1_ccff_tail ) ) ;
 cbx_1__1_ cbx_1__1_ (
-    .prog_clk ( { ctsbuf_net_1726 } ) ,
+    .prog_clk ( { ctsbuf_net_1621 } ) ,
     .chanx_left_in ( sb_0__1__0_chanx_right_out ) , 
     .chanx_right_in ( sb_1__1__0_chanx_left_out ) , 
     .ccff_head ( sb_1__1__0_ccff_tail ) , 
@@ -32226,7 +31679,7 @@ cbx_1__1_ cbx_1__1_ (
     .top_grid_pin_31_ ( cbx_1__1__0_top_grid_pin_31_ ) , 
     .ccff_tail ( cbx_1__1__0_ccff_tail ) ) ;
 cbx_1__1_ cbx_2__1_ (
-    .prog_clk ( { ctsbuf_net_1120 } ) ,
+    .prog_clk ( { ctsbuf_net_1015 } ) ,
     .chanx_left_in ( sb_1__1__0_chanx_right_out ) , 
     .chanx_right_in ( sb_2__1__0_chanx_left_out ) , 
     .ccff_head ( sb_2__1__0_ccff_tail ) , 
@@ -32250,7 +31703,7 @@ cbx_1__1_ cbx_2__1_ (
     .top_grid_pin_31_ ( cbx_1__1__1_top_grid_pin_31_ ) , 
     .ccff_tail ( cbx_1__1__1_ccff_tail ) ) ;
 cbx_1__2_ cbx_1__2_ (
-    .prog_clk ( { ctsbuf_net_1322 } ) ,
+    .prog_clk ( { ctsbuf_net_914 } ) ,
     .chanx_left_in ( sb_0__2__0_chanx_right_out ) , 
     .chanx_right_in ( sb_1__2__0_chanx_left_out ) , 
     .ccff_head ( sb_1__2__0_ccff_tail ) , 
@@ -32259,7 +31712,7 @@ cbx_1__2_ cbx_1__2_ (
     .top_grid_pin_0_ ( cbx_1__2__0_top_grid_pin_0_ ) , 
     .ccff_tail ( cbx_1__2__0_ccff_tail ) ) ;
 cbx_1__2_ cbx_2__2_ (
-    .prog_clk ( { ctsbuf_net_312 } ) ,
+    .prog_clk ( { ctsbuf_net_16 } ) ,
     .chanx_left_in ( sb_1__2__0_chanx_right_out ) , 
     .chanx_right_in ( sb_2__2__0_chanx_left_out ) , 
     .ccff_head ( sb_2__2__0_ccff_tail ) , 
@@ -32268,7 +31721,7 @@ cbx_1__2_ cbx_2__2_ (
     .top_grid_pin_0_ ( cbx_1__2__1_top_grid_pin_0_ ) , 
     .ccff_tail ( cbx_1__2__1_ccff_tail ) ) ;
 cby_0__1_ cby_0__1_ (
-    .prog_clk ( { ctsbuf_net_1625 } ) ,
+    .prog_clk ( { ctsbuf_net_1520 } ) ,
     .chany_bottom_in ( sb_0__0__0_chany_top_out ) , 
     .chany_top_in ( sb_0__1__0_chany_bottom_out ) , 
     .ccff_head ( sb_0__1__0_ccff_tail ) , 
@@ -32278,7 +31731,7 @@ cby_0__1_ cby_0__1_ (
     .left_grid_pin_0_ ( cby_0__1__0_left_grid_pin_0_ ) , 
     .ccff_tail ( cby_0__1__0_ccff_tail ) ) ;
 cby_0__1_ cby_0__2_ (
-    .prog_clk ( { ctsbuf_net_1524 } ) ,
+    .prog_clk ( { ctsbuf_net_1419 } ) ,
     .chany_bottom_in ( sb_0__1__0_chany_top_out ) , 
     .chany_top_in ( sb_0__2__0_chany_bottom_out ) , 
     .ccff_head ( sb_0__2__0_ccff_tail ) , 
@@ -32288,7 +31741,7 @@ cby_0__1_ cby_0__2_ (
     .left_grid_pin_0_ ( cby_0__1__1_left_grid_pin_0_ ) , 
     .ccff_tail ( cby_0__1__1_ccff_tail ) ) ;
 cby_1__1_ cby_1__1_ (
-    .prog_clk ( { ctsbuf_net_1019 } ) ,
+    .prog_clk ( { ctsbuf_net_1217 } ) ,
     .chany_bottom_in ( sb_1__0__0_chany_top_out ) , 
     .chany_top_in ( sb_1__1__0_chany_bottom_out ) , 
     .ccff_head ( grid_clb_0_ccff_tail ) , 
@@ -32313,7 +31766,7 @@ cby_1__1_ cby_1__1_ (
     .left_grid_pin_15_ ( cby_1__1__0_left_grid_pin_15_ ) , 
     .ccff_tail ( cby_1__1__0_ccff_tail ) ) ;
 cby_1__1_ cby_1__2_ (
-    .prog_clk ( { ctsbuf_net_716 } ) ,
+    .prog_clk ( { ctsbuf_net_712 } ) ,
     .chany_bottom_in ( sb_1__1__0_chany_top_out ) , 
     .chany_top_in ( sb_1__2__0_chany_bottom_out ) , 
     .ccff_head ( grid_clb_1_ccff_tail ) , 
@@ -32338,7 +31791,7 @@ cby_1__1_ cby_1__2_ (
     .left_grid_pin_15_ ( cby_1__1__1_left_grid_pin_15_ ) , 
     .ccff_tail ( cby_1__1__1_ccff_tail ) ) ;
 cby_1__1_ cby_2__1_ (
-    .prog_clk ( { ctsbuf_net_110 } ) ,
+    .prog_clk ( { ctsbuf_net_49 } ) ,
     .chany_bottom_in ( sb_2__0__0_chany_top_out ) , 
     .chany_top_in ( sb_2__1__0_chany_bottom_out ) , 
     .ccff_head ( grid_clb_2_ccff_tail ) , 
@@ -32363,7 +31816,7 @@ cby_1__1_ cby_2__1_ (
     .left_grid_pin_15_ ( cby_1__1__2_left_grid_pin_15_ ) , 
     .ccff_tail ( cby_1__1__2_ccff_tail ) ) ;
 cby_1__1_ cby_2__2_ (
-    .prog_clk ( { ctsbuf_net_312 } ) ,
+    .prog_clk ( { ctsbuf_net_16 } ) ,
     .chany_bottom_in ( sb_2__1__0_chany_top_out ) , 
     .chany_top_in ( sb_2__2__0_chany_bottom_out ) , 
     .ccff_head ( grid_clb_3_ccff_tail ) , 
@@ -32405,68 +31858,58 @@ direct_interc_4 direct_interc_4_ (
 direct_interc_5 direct_interc_5_ ( 
     .in ( grid_clb_0_bottom_width_0_height_0__pin_51_ ) , 
     .out ( direct_interc_5_out ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7749 ( 
-    .A ( grid_io_left_0_ccff_tail[0] ) , .X ( ropt_net_31 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7750 ( .A ( ropt_net_31 ) , 
-    .X ( ropt_net_32 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7751 ( .A ( ropt_net_32 ) , 
-    .X ( ropt_net_33 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 BUFT_P_9 ( .A ( Test_en[0] ) , 
-    .X ( BUF_net_9 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7752 ( 
-    .A ( grid_io_top_1_ccff_tail[0] ) , .X ( ropt_net_34 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73507625 ( .A ( ctsbuf_net_1928 ) , 
-    .Y ( ctsbuf_net_110 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73517626 ( .A ( ctsbuf_net_2029 ) , 
-    .Y ( ctsbuf_net_211 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73527627 ( .A ( ctsbuf_net_2130 ) , 
-    .Y ( ctsbuf_net_312 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73537628 ( .A ( ctsbuf_net_2029 ) , 
-    .Y ( ctsbuf_net_413 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73547629 ( .A ( ctsbuf_net_2130 ) , 
-    .Y ( ctsbuf_net_514 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73557630 ( .A ( ctsbuf_net_2130 ) , 
-    .Y ( ctsbuf_net_615 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73567631 ( .A ( ctsbuf_net_2130 ) , 
-    .Y ( ctsbuf_net_716 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73577632 ( .A ( ctsbuf_net_2029 ) , 
-    .Y ( ctsbuf_net_817 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73587633 ( .A ( ctsbuf_net_2130 ) , 
-    .Y ( ctsbuf_net_918 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73597634 ( .A ( ctsbuf_net_2029 ) , 
-    .Y ( ctsbuf_net_1019 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7753 ( .A ( ropt_net_34 ) , 
-    .X ( ropt_net_35 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73617636 ( .A ( ctsbuf_net_1928 ) , 
-    .Y ( ctsbuf_net_1221 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73627637 ( .A ( ctsbuf_net_2130 ) , 
-    .Y ( ctsbuf_net_1322 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_h_inst_7754 ( .A ( ropt_net_35 ) , 
-    .X ( ropt_net_36 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73647639 ( .A ( ctsbuf_net_2130 ) , 
-    .Y ( ctsbuf_net_1524 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73657640 ( .A ( ctsbuf_net_2029 ) , 
-    .Y ( ctsbuf_net_1625 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7755 ( 
-    .A ( grid_io_top_0_ccff_tail[0] ) , .X ( ropt_net_37 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73677642 ( .A ( ctsbuf_net_1928 ) , 
-    .Y ( ctsbuf_net_1827 ) ) ;
-sky130_fd_sc_hd__clkinv_16 cts_inv_73667641_73687643 ( 
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7301 ( 
+    .A ( grid_io_left_1_ccff_tail[0] ) , .X ( ropt_net_25 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69097180 ( .A ( ctsbuf_net_1924 ) , 
+    .Y ( ctsbuf_net_16 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69107181 ( .A ( ctsbuf_net_1924 ) , 
+    .Y ( ctsbuf_net_27 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69117182 ( .A ( ctsbuf_net_1823 ) , 
+    .Y ( ctsbuf_net_38 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69127183 ( .A ( ctsbuf_net_1924 ) , 
+    .Y ( ctsbuf_net_49 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69137184 ( .A ( ctsbuf_net_1924 ) , 
+    .Y ( ctsbuf_net_510 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69147185 ( .A ( ctsbuf_net_1823 ) , 
+    .Y ( ctsbuf_net_611 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69157186 ( .A ( ctsbuf_net_1823 ) , 
+    .Y ( ctsbuf_net_712 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69167187 ( .A ( ctsbuf_net_1924 ) , 
+    .Y ( ctsbuf_net_813 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69177188 ( .A ( ctsbuf_net_1823 ) , 
+    .Y ( ctsbuf_net_914 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7302 ( .A ( ropt_net_25 ) , 
+    .X ( ropt_net_26 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69197190 ( .A ( ctsbuf_net_1924 ) , 
+    .Y ( ctsbuf_net_1116 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69207191 ( .A ( ctsbuf_net_1924 ) , 
+    .Y ( ctsbuf_net_1217 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69217192 ( .A ( ctsbuf_net_1823 ) , 
+    .Y ( ctsbuf_net_1318 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69227193 ( .A ( ctsbuf_net_1823 ) , 
+    .Y ( ctsbuf_net_1419 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69237194 ( .A ( ctsbuf_net_1823 ) , 
+    .Y ( ctsbuf_net_1520 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7303 ( .A ( ropt_net_26 ) , 
+    .X ( ropt_net_27 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69257196 ( .A ( ctsbuf_net_1924 ) , 
+    .Y ( ctsbuf_net_1722 ) ) ;
+sky130_fd_sc_hd__bufinv_8 cts_inv_69247195_69267197 ( 
     .A ( SYNOPSYS_UNCONNECTED_1 ) , .Y ( SYNOPSYS_UNCONNECTED_2 ) ) ;
-sky130_fd_sc_hd__bufinv_16 cts_inv_73607635_73697644 ( 
-    .A ( SYNOPSYS_UNCONNECTED_3 ) , .Y ( SYNOPSYS_UNCONNECTED_4 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7756 ( .A ( ropt_net_37 ) , 
-    .X ( ropt_net_38 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73827657 ( .A ( prog_clk[0] ) , 
-    .Y ( ctsbuf_net_1928 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73837658 ( .A ( prog_clk[0] ) , 
-    .Y ( ctsbuf_net_2029 ) ) ;
-sky130_fd_sc_hd__clkinvlp_2 cts_inv_73847659 ( .A ( prog_clk[0] ) , 
-    .Y ( ctsbuf_net_2130 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7757 ( 
-    .A ( grid_io_left_1_ccff_tail[0] ) , .X ( ropt_net_39 ) ) ;
-sky130_fd_sc_hd__dlygate4sd2_1 ropt_h_inst_7758 ( .A ( ropt_net_39 ) , 
-    .X ( ropt_net_40 ) ) ;
+sky130_fd_sc_hd__clkinv_16 cts_inv_69187189_69277198 ( 
+    .A ( SYNOPSYS_UNCONNECTED_3 ) , .Y ( p_abuf0 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69397210 ( .A ( prog_clk[0] ) , 
+    .Y ( ctsbuf_net_1823 ) ) ;
+sky130_fd_sc_hd__clkinvlp_2 cts_inv_69407211 ( .A ( prog_clk[0] ) , 
+    .Y ( ctsbuf_net_1924 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7304 ( 
+    .A ( grid_io_top_1_ccff_tail[0] ) , .X ( ropt_net_28 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_h_inst_7305 ( .A ( ropt_net_28 ) , 
+    .X ( ropt_net_29 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_7306 ( 
+    .A ( grid_io_left_0_ccff_tail[0] ) , .X ( ropt_net_30 ) ) ;
+sky130_fd_sc_hd__dlygate4sd2_1 ropt_h_inst_7307 ( .A ( ropt_net_30 ) , 
+    .X ( ropt_net_31 ) ) ;
 endmodule
 
 
