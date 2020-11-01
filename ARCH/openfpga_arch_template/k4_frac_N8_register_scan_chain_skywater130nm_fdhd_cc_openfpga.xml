@@ -31,7 +31,7 @@
     </variation_library>
   </technology_library>
   <circuit_library>
-    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__inv_1" prefix="sky130_fd_sc_hd__inv_1" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater/libraries/sky130_fd_sc_hd/latest/cells/inv/sky130_fd_sc_hd__inv_1.v">
+    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__inv_1" prefix="sky130_fd_sc_hd__inv_1" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/inv/sky130_fd_sc_hd__inv_1.v">
       <design_technology type="cmos" topology="inverter" size="1"/>
       <device_technology device_model_name="logic"/>
       <port type="input" prefix="in" lib_name="A" size="1"/>
@@ -43,7 +43,7 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__buf_2" prefix="sky130_fd_sc_hd__buf_2" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_2.v">
+    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__buf_2" prefix="sky130_fd_sc_hd__buf_2" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_2.v">
       <design_technology type="cmos" topology="buffer" size="1" num_level="2" f_per_stage="2"/>
       <device_technology device_model_name="logic"/>
       <port type="input" prefix="in" lib_name="A" size="1"/>
@@ -55,7 +55,7 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__buf_4" prefix="sky130_fd_sc_hd__buf_4" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_4.v">
+    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__buf_4" prefix="sky130_fd_sc_hd__buf_4" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_4.v">
       <design_technology type="cmos" topology="buffer" size="1" num_level="2" f_per_stage="4"/>
       <device_technology device_model_name="logic"/>
       <port type="input" prefix="in" lib_name="A" size="1"/>
@@ -67,7 +67,7 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__inv_2" prefix="sky130_fd_sc_hd__inv_2" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater/libraries/sky130_fd_sc_hd/latest/cells/inv/sky130_fd_sc_hd__inv_2.v">
+    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__inv_2" prefix="sky130_fd_sc_hd__inv_2" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/inv/sky130_fd_sc_hd__inv_2.v">
       <design_technology type="cmos" topology="buffer" size="1"/>
       <device_technology device_model_name="logic"/>
       <port type="input" prefix="in" lib_name="A" size="1"/>
@@ -79,7 +79,7 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-    <circuit_model type="gate" name="sky130_fd_sc_hd__or2_1" prefix="sky130_fd_sc_hd__or2_1" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater/libraries/sky130_fd_sc_hd/latest/cells/or2/sky130_fd_sc_hd__or2_1.v">
+    <circuit_model type="gate" name="sky130_fd_sc_hd__or2_1" prefix="sky130_fd_sc_hd__or2_1" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/or2/sky130_fd_sc_hd__or2_1.v">
       <design_technology type="cmos" topology="OR"/>
       <device_technology device_model_name="logic"/>
       <input_buffer exist="false"/>
@@ -101,7 +101,7 @@
          If your standard cell provider does not offer the exact truth table,
          you can simply swap the inputs as shown in the example below
       -->
-    <circuit_model type="gate" name="sky130_fd_sc_hd__mux2_1" prefix="sky130_fd_sc_hd__mux2_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater/libraries/sky130_fd_sc_hd/latest/cells/mux2/sky130_fd_sc_hd__mux2_1.v">
+    <circuit_model type="gate" name="sky130_fd_sc_hd__mux2_1" prefix="sky130_fd_sc_hd__mux2_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/mux2/sky130_fd_sc_hd__mux2_1.v">
       <design_technology type="cmos" topology="MUX2"/>
       <device_technology device_model_name="logic"/>
       <input_buffer exist="false"/>
@@ -148,7 +148,7 @@
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <!--DFF subckt ports should be defined as <D> <Q> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ff" name="sky130_fd_sc_hd__sdfxbp_1" prefix="sky130_fd_sc_hd__sdfxbp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater/libraries/sky130_fd_sc_hd/latest/cells/sdfxbp/sky130_fd_sc_hd__sdfxbp_1.v">
+    <circuit_model type="ff" name="sky130_fd_sc_hd__sdfxbp_1" prefix="sky130_fd_sc_hd__sdfxbp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/sdfxbp/sky130_fd_sc_hd__sdfxbp_1.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
@@ -174,7 +174,7 @@
       <port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="sky130_fd_sc_hd__dfxbp_1" default_val="1"/>
     </circuit_model>
     <!--Scan-chain DFF subckt ports should be defined as <D> <Q> <Qb> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ccff" name="sky130_fd_sc_hd__dfxbp_1" prefix="sky130_fd_sc_hd__dfxbp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater/libraries/sky130_fd_sc_hd/latest/cells/dfrbp/sky130_fd_sc_hd__dfxbp_1.v">
+    <circuit_model type="ccff" name="sky130_fd_sc_hd__dfxbp_1" prefix="sky130_fd_sc_hd__dfxbp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/dfrbp/sky130_fd_sc_hd__dfxbp_1.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
