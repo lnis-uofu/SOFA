@@ -174,7 +174,7 @@
       <port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="sky130_fd_sc_hd__dfxbp_1" default_val="1"/>
     </circuit_model>
     <!--Scan-chain DFF subckt ports should be defined as <D> <Q> <Qb> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ccff" name="sky130_fd_sc_hd__dfxbp_1" prefix="sky130_fd_sc_hd__dfxbp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/dfrbp/sky130_fd_sc_hd__dfxbp_1.v">
+    <circuit_model type="ccff" name="sky130_fd_sc_hd__dfxbp_1" prefix="sky130_fd_sc_hd__dfxbp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/dfxbp/sky130_fd_sc_hd__dfxbp_1.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
