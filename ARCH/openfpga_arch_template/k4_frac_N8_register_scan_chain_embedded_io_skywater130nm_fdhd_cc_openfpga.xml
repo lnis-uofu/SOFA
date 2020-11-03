@@ -148,7 +148,7 @@
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <!--DFF subckt ports should be defined as <D> <Q> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ff" name="sky130_fd_sc_hd__sdfxbp_1" prefix="sky130_fd_sc_hd__sdfxbp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/sdfxbp/sky130_fd_sc_hd__sdfxbp_1.v">
+    <circuit_model type="ff" name="sky130_fd_sc_hd__sdfxtp_1" prefix="sky130_fd_sc_hd__sdfxtp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/sdfxbp/sky130_fd_sc_hd__sdfxtp_1.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
@@ -181,7 +181,7 @@
       <port type="input" prefix="D" size="1"/>
       <port type="output" prefix="Q" size="1"/>
       <port type="output" prefix="Q_N" size="1"/>
-      <port type="clock" prefix="prog_clk" lib_name="CK" size="1" is_global="true" default_val="0" is_prog="true"/>
+      <port type="clock" prefix="prog_clk" lib_name="CLK" size="1" is_global="true" default_val="0" is_prog="true"/>
     </circuit_model>
     <circuit_model type="iopad" name="GPIN" prefix="GPIN" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/digital_io_hd.v">
       <design_technology type="cmos"/>
@@ -228,7 +228,7 @@
     <!-- physical mode will be the default mode if not specified -->
     <pb_type name="clb.fle" physical_mode_name="physical"/>
     <pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4" mode_bits="0"/>
-    <pb_type name="clb.fle[physical].fabric.ff" circuit_model_name="sky130_fd_sc_hd__sdfxbp_1"/>
+    <pb_type name="clb.fle[physical].fabric.ff" circuit_model_name="sky130_fd_sc_hd__sdfxtp_1"/>
     <!-- Binding operating pb_type to physical pb_type -->
     <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.lut3" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="1" physical_pb_type_index_factor="0.5">
       <!-- Binding the lut3 to the first 3 inputs of fracturable lut4 -->
