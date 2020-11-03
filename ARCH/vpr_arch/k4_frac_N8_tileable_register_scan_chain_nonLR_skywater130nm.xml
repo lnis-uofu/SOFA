@@ -78,14 +78,22 @@
       <equivalent_sites>
         <site pb_type="clb"/>
       </equivalent_sites>
-      <input name="I0" num_pins="4" equivalent="full"/>
-      <input name="I1" num_pins="4" equivalent="full"/>
-      <input name="I2" num_pins="4" equivalent="full"/>
-      <input name="I3" num_pins="4" equivalent="full"/>
-      <input name="I4" num_pins="4" equivalent="full"/>
-      <input name="I5" num_pins="4" equivalent="full"/>
-      <input name="I6" num_pins="4" equivalent="full"/>
-      <input name="I7" num_pins="4" equivalent="full"/>
+      <input name="I0" num_pins="3" equivalent="full"/>
+      <input name="I0i" num_pins="1" equivalent="none"/>
+      <input name="I1" num_pins="3" equivalent="full"/>
+      <input name="I1i" num_pins="1" equivalent="none"/>
+      <input name="I2" num_pins="3" equivalent="full"/>
+      <input name="I2i" num_pins="1" equivalent="none"/>
+      <input name="I3" num_pins="3" equivalent="full"/>
+      <input name="I3i" num_pins="1" equivalent="none"/>
+      <input name="I4" num_pins="3" equivalent="full"/>
+      <input name="I4i" num_pins="1" equivalent="none"/>
+      <input name="I5" num_pins="3" equivalent="full"/>
+      <input name="I5i" num_pins="1" equivalent="none"/>
+      <input name="I6" num_pins="3" equivalent="full"/>
+      <input name="I6i" num_pins="1" equivalent="none"/>
+      <input name="I7" num_pins="3" equivalent="full"/>
+      <input name="I7i" num_pins="1" equivalent="none"/>
       <input name="regin" num_pins="1"/>
       <input name="scin" num_pins="1"/>
       <output name="O" num_pins="16" equivalent="none"/>
@@ -102,8 +110,8 @@
       <pinlocations pattern="custom">
         <loc side="left">clb.clk</loc>
         <loc side="top">clb.regin clb.scin</loc>
-        <loc side="right">clb.O[7:0] clb.I0 clb.I1 clb.I2 clb.I3</loc>
-        <loc side="bottom">clb.regout clb.scout clb.O[15:8] clb.I4 clb.I5 clb.I6 clb.I7</loc>
+        <loc side="right">clb.O[7:0] clb.I0 clb.I0i clb.I1 clb.I1i clb.I2 clb.I2i clb.I3 clb.I3i </loc>
+        <loc side="bottom">clb.regout clb.scout clb.O[15:8] clb.I4 clb.I4i clb.I5 clb.I5i clb.I6 clb.I6i clb.I7 clb.I7i</loc>
       </pinlocations>
     </tile>
   </tiles>
@@ -276,24 +284,28 @@
     </pb_type>
     <!-- Define I/O pads ends -->
     <!-- Define general purpose logic block (CLB) begin -->
-    <!--- Area calculation: Total Stratix IV tile area is about 8100 um^2, and a minimum width transistor 
-	   area is 60 L^2 yields a tile area of 84375 MWTAs.
-	   Routing at W=300 is 30481 MWTAs, leaving us with a total of 53000 MWTAs for logic block area 
-	   This means that only 37% of our area is in the general routing, and 63% is inside the logic
-	   block. Note that the crossbar / local interconnect is considered part of the logic block
-	   area in this analysis. That is a lower proportion of of routing area than most academics
-	   assume, but note that the total routing area really includes the crossbar, which would push
-	   routing area up significantly, we estimate into the ~70% range. 
-	   -->
+    <!-- -Due to the absence of local routing, 
+         the 4 inputs of fracturable LUT4 are no longer equivalent, 
+         because the 4th input can not be switched when the dual-LUT3 modes are used.
+         So pin equivalence should be applied to the first 3 inputs only
+	  -->
     <pb_type name="clb">
-      <input name="I0" num_pins="4" equivalent="full"/>
-      <input name="I1" num_pins="4" equivalent="full"/>
-      <input name="I2" num_pins="4" equivalent="full"/>
-      <input name="I3" num_pins="4" equivalent="full"/>
-      <input name="I4" num_pins="4" equivalent="full"/>
-      <input name="I5" num_pins="4" equivalent="full"/>
-      <input name="I6" num_pins="4" equivalent="full"/>
-      <input name="I7" num_pins="4" equivalent="full"/>
+      <input name="I0" num_pins="3" equivalent="full"/>
+      <input name="I0i" num_pins="1" equivalent="none"/>
+      <input name="I1" num_pins="3" equivalent="full"/>
+      <input name="I1i" num_pins="1" equivalent="none"/>
+      <input name="I2" num_pins="3" equivalent="full"/>
+      <input name="I2i" num_pins="1" equivalent="none"/>
+      <input name="I3" num_pins="3" equivalent="full"/>
+      <input name="I3i" num_pins="1" equivalent="none"/>
+      <input name="I4" num_pins="3" equivalent="full"/>
+      <input name="I4i" num_pins="1" equivalent="none"/>
+      <input name="I5" num_pins="3" equivalent="full"/>
+      <input name="I5i" num_pins="1" equivalent="none"/>
+      <input name="I6" num_pins="3" equivalent="full"/>
+      <input name="I6i" num_pins="1" equivalent="none"/>
+      <input name="I7" num_pins="3" equivalent="full"/>
+      <input name="I7i" num_pins="1" equivalent="none"/>
       <input name="regin" num_pins="1"/>
       <input name="scin" num_pins="1"/>
       <output name="O" num_pins="16" equivalent="none"/>
@@ -534,30 +546,56 @@
         <!-- Define shift register end --> 
       </pb_type>
       <interconnect>
-        <!-- We use a full crossbar to get logical equivalence at inputs of CLB 
-		     The delays below come from Stratix IV. the delay through a connection block
-		     input mux + the crossbar in Stratix IV is 167 ps. We already have a 72 ps 
-		     delay on the connection block input mux (modeled by Ian Kuon), so the remaining
-		     delay within the crossbar is 95 ps. 
-		     The delays of cluster feedbacks in Stratix IV is 100 ps, when driven by a LUT.
-		     Since all our outputs LUT outputs go to a BLE output, and have a delay of 
-		     25 ps to do so, we subtract 25 ps from the 100 ps delay of a feedback
-		     to get the part that should be marked on the crossbar.	 -->
-        <direct name="direct_fle0" input="clb.I0" output="fle[0:0].in">
+        <!-- We use direct connections to reduce the area to the most
+             The global local routing is going to compensate the loss in routability
+          -->
+        <direct name="direct_fle0" input="clb.I0" output="fle[0:0].in[0:2]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle1" input="clb.I1" output="fle[1:1].in">
+        <direct name="direct_fle0i" input="clb.I0i" output="fle[0:0].in[3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle2" input="clb.I2" output="fle[2:2].in">
+        <direct name="direct_fle1" input="clb.I1" output="fle[1:1].in[0:2]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle3" input="clb.I3" output="fle[3:3].in">
+        <direct name="direct_fle1i" input="clb.I1i" output="fle[1:1].in[3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle4" input="clb.I4" output="fle[4:4].in">
+        <direct name="direct_fle2" input="clb.I2" output="fle[2:2].in[0:2]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle5" input="clb.I5" output="fle[5:5].in">
+        <direct name="direct_fle2i" input="clb.I2i" output="fle[2:2].in[3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle6" input="clb.I6" output="fle[6:6].in">
+        <direct name="direct_fle3" input="clb.I3" output="fle[3:3].in[0:2]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle7" input="clb.I7" output="fle[7:7].in">
+        <direct name="direct_fle3i" input="clb.I3i" output="fle[3:3].in[3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle4" input="clb.I4" output="fle[4:4].in[0:2]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle4i" input="clb.I4i" output="fle[4:4].in[3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle5" input="clb.I5" output="fle[5:5].in[0:2]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle5i" input="clb.I5i" output="fle[5:5].in[3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle6" input="clb.I6" output="fle[6:6].in[0:2]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle6i" input="clb.I6i" output="fle[6:6].in[3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle7" input="clb.I7" output="fle[7:7].in[0:2]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle7i" input="clb.I7i" output="fle[7:7].in[3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <complete name="clks" input="clb.clk" output="fle[7:0].clk">
         </complete>
