@@ -148,7 +148,7 @@
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <!--DFF subckt ports should be defined as <D> <Q> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ff" name="sky130_fd_sc_hd__sdfxtp_1" prefix="sky130_fd_sc_hd__sdfxtp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/sdfxbp/sky130_fd_sc_hd__sdfxtp_1.v">
+    <circuit_model type="ff" name="sky130_fd_sc_hd__sdfxtp_1" prefix="sky130_fd_sc_hd__sdfxtp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/sdfxtp/sky130_fd_sc_hd__sdfxtp_1.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
