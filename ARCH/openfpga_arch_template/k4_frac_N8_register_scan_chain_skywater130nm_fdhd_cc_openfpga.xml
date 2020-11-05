@@ -188,11 +188,11 @@
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
-      <port type="inout" prefix="Y" lib_name="Y" size="1" is_global="true" is_io="true" />
-      <port type="output" prefix="A" lib_name="A" size="1" is_global="true" is_io="true" />
+      <port type="inout" prefix="Y" lib_name="Y" size="1" is_global="true" is_io="true" is_data_io="true"/>
+      <port type="output" prefix="A" lib_name="A" size="1" is_global="true" is_io="true"/>
       <port type="sram" prefix="en" lib_name="mem_out" size="1" mode_select="true" circuit_model_name="sky130_fd_sc_hd__dfxbp_1" default_val="1"/>
-      <port type="output" prefix="IE" lib_name="IE" size="1" is_global="true" is_io="true" />
-      <port type="output" prefix="OE" lib_name="OE" size="1" is_global="true" is_io="true" />
+      <port type="output" prefix="IE" lib_name="IE" size="1" is_global="true" is_io="true"/>
+      <port type="output" prefix="OE" lib_name="OE" size="1" is_global="true" is_io="true"/>
       <port type="input" prefix="outpad" lib_name="in" size="1"/>
       <port type="output" prefix="inpad" lib_name="out" size="1"/>
     </circuit_model>
