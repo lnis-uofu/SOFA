@@ -140,13 +140,14 @@
         <fc_override port_name="regout" fc_type="frac" fc_val="0"/>
         <fc_override port_name="scin" fc_type="frac" fc_val="0"/>
         <fc_override port_name="scout" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="clk" fc_type="frac" fc_val="0"/>
       </fc>
       <!--pinlocations pattern="spread"/-->
       <pinlocations pattern="custom">
-        <loc side="left"></loc>
+        <loc side="left">clb.clk</loc>
         <loc side="top">clb.regin clb.scin clb.O[7:0] clb.I0 clb.I0i clb.I1 clb.I1i clb.I2 clb.I2i clb.I3 clb.I3i </loc>
         <loc side="right">clb.O[15:8] clb.I4 clb.I4i clb.I5 clb.I5i clb.I6 clb.I6i clb.I7 clb.I7i</loc>
-        <loc side="bottom">clb.regout clb.scout clb.clk</loc>
+        <loc side="bottom">clb.regout clb.scout</loc>
       </pinlocations>
     </tile>
   </tiles>
