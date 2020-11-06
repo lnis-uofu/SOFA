@@ -135,7 +135,7 @@
       <output name="regout" num_pins="1"/>
       <output name="scout" num_pins="1"/>
       <clock name="clk" num_pins="1"/>
-      <fc in_type="frac" in_val="0.2" out_type="frac" out_val="0.10">
+      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
         <fc_override port_name="regin" fc_type="frac" fc_val="0"/>
         <fc_override port_name="regout" fc_type="frac" fc_val="0"/>
         <fc_override port_name="scin" fc_type="frac" fc_val="0"/>
