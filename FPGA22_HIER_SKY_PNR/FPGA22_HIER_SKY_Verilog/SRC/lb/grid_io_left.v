@@ -11,25 +11,22 @@
 //
 //
 module grid_io_left(prog_clk,
-                    gfpga_pad_GPIO_A,
-                    gfpga_pad_GPIO_IE,
-                    gfpga_pad_GPIO_OE,
-                    gfpga_pad_GPIO_Y,
-                    right_width_0_height_0__pin_0_,
-                    ccff_head,
-                    right_width_0_height_0__pin_1_upper,
-                    right_width_0_height_0__pin_1_lower,
-                    ccff_tail);
+                         gfpga_pad_EMBEDDED_IO_SOC_IN,
+                         gfpga_pad_EMBEDDED_IO_SOC_OUT,
+                         gfpga_pad_EMBEDDED_IO_SOC_DIR,
+                         right_width_0_height_0__pin_0_,
+                         ccff_head,
+                         right_width_0_height_0__pin_1_upper,
+                         right_width_0_height_0__pin_1_lower,
+                         ccff_tail);
 //
 input [0:0] prog_clk;
 //
-output [0:0] gfpga_pad_GPIO_A;
+input [0:0] gfpga_pad_EMBEDDED_IO_SOC_IN;
 //
-output [0:0] gfpga_pad_GPIO_IE;
+output [0:0] gfpga_pad_EMBEDDED_IO_SOC_OUT;
 //
-output [0:0] gfpga_pad_GPIO_OE;
-//
-inout [0:0] gfpga_pad_GPIO_Y;
+output [0:0] gfpga_pad_EMBEDDED_IO_SOC_DIR;
 //
 input [0:0] right_width_0_height_0__pin_0_;
 //
@@ -58,10 +55,9 @@ output [0:0] ccff_tail;
 
 	logical_tile_io_mode_io_ logical_tile_io_mode_io__0 (
 		.prog_clk(prog_clk[0]),
-		.gfpga_pad_GPIO_A(gfpga_pad_GPIO_A[0]),
-		.gfpga_pad_GPIO_IE(gfpga_pad_GPIO_IE[0]),
-		.gfpga_pad_GPIO_OE(gfpga_pad_GPIO_OE[0]),
-		.gfpga_pad_GPIO_Y(gfpga_pad_GPIO_Y[0]),
+		.gfpga_pad_EMBEDDED_IO_SOC_IN(gfpga_pad_EMBEDDED_IO_SOC_IN[0]),
+		.gfpga_pad_EMBEDDED_IO_SOC_OUT(gfpga_pad_EMBEDDED_IO_SOC_OUT[0]),
+		.gfpga_pad_EMBEDDED_IO_SOC_DIR(gfpga_pad_EMBEDDED_IO_SOC_DIR[0]),
 		.io_outpad(right_width_0_height_0__pin_0_[0]),
 		.ccff_head(ccff_head[0]),
 		.io_inpad(right_width_0_height_0__pin_1_upper[0]),
