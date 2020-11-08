@@ -1,18 +1,17 @@
 
 
 module fpga_core
-(
-  input [0:0] prog_clk,
-  input [0:0] Test_en,
-  input [0:0] clk,
-  input [0:17] gfpga_pad_EMBEDDED_IO_SOC_IN,
-  output [0:17] gfpga_pad_EMBEDDED_IO_SOC_OUT,
-  output [0:17] gfpga_pad_EMBEDDED_IO_SOC_DIR,
-  input [0:0] ccff_head,
-  output [0:0] ccff_tail,
-  input sc_head,
-  output sc_tail
-);
+( prog_clk, Test_en, clk, gfpga_pad_EMBEDDED_IO_SOC_IN, gfpga_pad_EMBEDDED_IO_SOC_OUT, gfpga_pad_EMBEDDED_IO_SOC_DIR, ccff_head, ccff_tail, sc_head, sc_tail ); 
+  input [0:0] prog_clk;
+  input [0:0] Test_en;
+  input [0:0] clk;
+  input [0:17] gfpga_pad_EMBEDDED_IO_SOC_IN;
+  output [0:17] gfpga_pad_EMBEDDED_IO_SOC_OUT;
+  output [0:17] gfpga_pad_EMBEDDED_IO_SOC_DIR;
+  input [0:0] ccff_head;
+  output [0:0] ccff_tail;
+  input sc_head;
+  output sc_tail;
 
   wire [0:0] cbx_1__0__0_bottom_grid_pin_0_;
   wire [0:0] cbx_1__0__0_bottom_grid_pin_10_;
@@ -425,8 +424,6 @@ module fpga_core
   wire [0:19] sb_2__2__0_chanx_left_out;
   wire [0:19] sb_2__2__0_chany_bottom_out;
   wire [1:0] UNCONN;
-  wire [2:0] sc_out_wires;
-  wire [2:0] sc_in_wires;
   wire [12:0] scff_Wires;
 
   grid_clb
@@ -434,7 +431,6 @@ module fpga_core
   (
     .SC_OUT_BOT(scff_Wires[5]),
     .SC_IN_TOP(scff_Wires[3]),
-    .top_width_0_height_0__pin_33_(sc_in_wires[0]),
     .prog_clk(prog_clk[0]),
     .Test_en(Test_en[0]),
     .clk(clk[0]),
@@ -506,7 +502,6 @@ module fpga_core
     .right_width_0_height_0__pin_49_upper(grid_clb_0_right_width_0_height_0__pin_49_upper[0]),
     .right_width_0_height_0__pin_49_lower(grid_clb_0_right_width_0_height_0__pin_49_lower[0]),
     .bottom_width_0_height_0__pin_50_(grid_clb_0_bottom_width_0_height_0__pin_50_[0]),
-    .bottom_width_0_height_0__pin_51_(grid_clb_0_bottom_width_0_height_0__pin_51_[0]),
     .ccff_tail(grid_clb_0_ccff_tail[0])
   );
 
@@ -516,7 +511,6 @@ module fpga_core
   (
     .SC_OUT_BOT(scff_Wires[2]),
     .SC_IN_TOP(scff_Wires[1]),
-    .bottom_width_0_height_0__pin_51_(sc_out_wires[0]),
     .prog_clk(prog_clk[0]),
     .Test_en(Test_en[0]),
     .clk(clk[0]),
@@ -537,7 +531,6 @@ module fpga_core
     .top_width_0_height_0__pin_14_(cbx_1__2__0_bottom_grid_pin_14_[0]),
     .top_width_0_height_0__pin_15_(cbx_1__2__0_bottom_grid_pin_15_[0]),
     .top_width_0_height_0__pin_32_(grid_clb_1__2__undriven_top_width_0_height_0__pin_32_[0]),
-    .top_width_0_height_0__pin_33_(grid_clb_1__2__undriven_top_width_0_height_0__pin_33_[0]),
     .right_width_0_height_0__pin_16_(cby_1__1__1_left_grid_pin_16_[0]),
     .right_width_0_height_0__pin_17_(cby_1__1__1_left_grid_pin_17_[0]),
     .right_width_0_height_0__pin_18_(cby_1__1__1_left_grid_pin_18_[0]),
@@ -598,7 +591,6 @@ module fpga_core
   (
     .SC_OUT_TOP(scff_Wires[9]),
     .SC_IN_BOT(scff_Wires[8]),
-    .top_width_0_height_0__pin_33_(sc_in_wires[1]),
     .prog_clk(prog_clk[0]),
     .Test_en(Test_en[0]),
     .clk(clk[0]),
@@ -670,7 +662,6 @@ module fpga_core
     .right_width_0_height_0__pin_49_upper(grid_clb_2_right_width_0_height_0__pin_49_upper[0]),
     .right_width_0_height_0__pin_49_lower(grid_clb_2_right_width_0_height_0__pin_49_lower[0]),
     .bottom_width_0_height_0__pin_50_(grid_clb_2__1__undriven_bottom_width_0_height_0__pin_50_[0]),
-    .bottom_width_0_height_0__pin_51_(grid_clb_2__1__undriven_bottom_width_0_height_0__pin_51_[0]),
     .ccff_tail(grid_clb_2_ccff_tail[0])
   );
 
@@ -680,7 +671,6 @@ module fpga_core
   (
     .SC_OUT_TOP(scff_Wires[11]),
     .SC_IN_BOT(scff_Wires[10]),
-    .bottom_width_0_height_0__pin_51_(sc_out_wires[1]),
     .prog_clk(prog_clk[0]),
     .Test_en(Test_en[0]),
     .clk(clk[0]),
@@ -701,7 +691,6 @@ module fpga_core
     .top_width_0_height_0__pin_14_(cbx_1__2__1_bottom_grid_pin_14_[0]),
     .top_width_0_height_0__pin_15_(cbx_1__2__1_bottom_grid_pin_15_[0]),
     .top_width_0_height_0__pin_32_(direct_interc_2_out[0]),
-    .top_width_0_height_0__pin_33_(direct_interc_5_out[0]),
     .right_width_0_height_0__pin_16_(cby_2__1__1_left_grid_pin_16_[0]),
     .right_width_0_height_0__pin_17_(cby_2__1__1_left_grid_pin_17_[0]),
     .right_width_0_height_0__pin_18_(cby_2__1__1_left_grid_pin_18_[0]),
@@ -1145,8 +1134,6 @@ module fpga_core
   (
     .SC_OUT_BOT(scff_Wires[3]),
     .SC_IN_TOP(scff_Wires[2]),
-    .CLB_SC_OUT(sc_in_wires[0]),
-    .CLB_SC_IN(sc_out_wires[0]),
     .prog_clk(prog_clk[0]),
     .chanx_left_in(sb_0__1__0_chanx_right_out[0:19]),
     .chanx_right_in(sb_1__1__0_chanx_left_out[0:19]),
@@ -1178,8 +1165,6 @@ module fpga_core
   (
     .SC_OUT_TOP(scff_Wires[10]),
     .SC_IN_BOT(scff_Wires[9]),
-    .CLB_SC_OUT(sc_in_wires[1]),
-    .CLB_SC_IN(sc_out_wires[1]),
     .prog_clk(prog_clk[0]),
     .chanx_left_in(sb_1__1__0_chanx_right_out[0:19]),
     .chanx_right_in(sb_2__1__0_chanx_left_out[0:19]),

@@ -1,30 +1,29 @@
 
 
 module sb_2__0_
-(
-  input [0:0] prog_clk,
-  input [0:19] chany_top_in,
-  input [0:0] top_left_grid_pin_42_,
-  input [0:0] top_left_grid_pin_43_,
-  input [0:0] top_left_grid_pin_44_,
-  input [0:0] top_left_grid_pin_45_,
-  input [0:0] top_left_grid_pin_46_,
-  input [0:0] top_left_grid_pin_47_,
-  input [0:0] top_left_grid_pin_48_,
-  input [0:0] top_left_grid_pin_49_,
-  input [0:0] top_right_grid_pin_1_,
-  input [0:19] chanx_left_in,
-  input [0:0] left_bottom_grid_pin_1_,
-  input [0:0] left_bottom_grid_pin_3_,
-  input [0:0] left_bottom_grid_pin_5_,
-  input [0:0] left_bottom_grid_pin_7_,
-  input [0:0] left_bottom_grid_pin_9_,
-  input [0:0] left_bottom_grid_pin_11_,
-  input [0:0] ccff_head,
-  output [0:19] chany_top_out,
-  output [0:19] chanx_left_out,
-  output [0:0] ccff_tail
-);
+( prog_clk, chany_top_in, top_left_grid_pin_42_, top_left_grid_pin_43_, top_left_grid_pin_44_, top_left_grid_pin_45_, top_left_grid_pin_46_, top_left_grid_pin_47_, top_left_grid_pin_48_, top_left_grid_pin_49_, top_right_grid_pin_1_, chanx_left_in, left_bottom_grid_pin_1_, left_bottom_grid_pin_3_, left_bottom_grid_pin_5_, left_bottom_grid_pin_7_, left_bottom_grid_pin_9_, left_bottom_grid_pin_11_, ccff_head, chany_top_out, chanx_left_out, ccff_tail ); 
+  input [0:0] prog_clk;
+  input [0:19] chany_top_in;
+  input [0:0] top_left_grid_pin_42_;
+  input [0:0] top_left_grid_pin_43_;
+  input [0:0] top_left_grid_pin_44_;
+  input [0:0] top_left_grid_pin_45_;
+  input [0:0] top_left_grid_pin_46_;
+  input [0:0] top_left_grid_pin_47_;
+  input [0:0] top_left_grid_pin_48_;
+  input [0:0] top_left_grid_pin_49_;
+  input [0:0] top_right_grid_pin_1_;
+  input [0:19] chanx_left_in;
+  input [0:0] left_bottom_grid_pin_1_;
+  input [0:0] left_bottom_grid_pin_3_;
+  input [0:0] left_bottom_grid_pin_5_;
+  input [0:0] left_bottom_grid_pin_7_;
+  input [0:0] left_bottom_grid_pin_9_;
+  input [0:0] left_bottom_grid_pin_11_;
+  input [0:0] ccff_head;
+  output [0:19] chany_top_out;
+  output [0:19] chanx_left_out;
+  output [0:0] ccff_tail;
 
   wire [0:1] mux_tree_tapbuf_size2_0_sram;
   wire [0:1] mux_tree_tapbuf_size2_0_sram_inv;

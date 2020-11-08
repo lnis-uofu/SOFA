@@ -1,22 +1,21 @@
 
 
 module cby_0__1_
-(
-  input [0:0] prog_clk,
-  input [0:19] chany_bottom_in,
-  input [0:19] chany_top_in,
-  input [0:0] ccff_head,
-  output [0:19] chany_bottom_out,
-  output [0:19] chany_top_out,
-  output [0:0] left_grid_pin_0_,
-  output [0:0] ccff_tail,
-  input [0:0] gfpga_pad_EMBEDDED_IO_SOC_IN,
-  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_OUT,
-  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_DIR,
-  input [0:0] right_width_0_height_0__pin_0_,
-  output [0:0] right_width_0_height_0__pin_1_upper,
-  output [0:0] right_width_0_height_0__pin_1_lower
-);
+( prog_clk, chany_bottom_in, chany_top_in, ccff_head, chany_bottom_out, chany_top_out, left_grid_pin_0_, ccff_tail, gfpga_pad_EMBEDDED_IO_SOC_IN, gfpga_pad_EMBEDDED_IO_SOC_OUT, gfpga_pad_EMBEDDED_IO_SOC_DIR, right_width_0_height_0__pin_0_, right_width_0_height_0__pin_1_upper, right_width_0_height_0__pin_1_lower ); 
+  input [0:0] prog_clk;
+  input [0:19] chany_bottom_in;
+  input [0:19] chany_top_in;
+  input [0:0] ccff_head;
+  output [0:19] chany_bottom_out;
+  output [0:19] chany_top_out;
+  output [0:0] left_grid_pin_0_;
+  output [0:0] ccff_tail;
+  input [0:0] gfpga_pad_EMBEDDED_IO_SOC_IN;
+  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_OUT;
+  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_DIR;
+  input [0:0] right_width_0_height_0__pin_0_;
+  output [0:0] right_width_0_height_0__pin_1_upper;
+  output [0:0] right_width_0_height_0__pin_1_lower;
 
   wire [0:3] mux_tree_tapbuf_size10_0_sram;
   wire [0:3] mux_tree_tapbuf_size10_0_sram_inv;

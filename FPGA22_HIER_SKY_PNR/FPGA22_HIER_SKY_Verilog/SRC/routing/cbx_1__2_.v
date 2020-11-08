@@ -1,42 +1,41 @@
 
 
 module cbx_1__2_
-(
-  input [0:0] prog_clk,
-  input [0:19] chanx_left_in,
-  input [0:19] chanx_right_in,
-  input [0:0] ccff_head,
-  output [0:19] chanx_left_out,
-  output [0:19] chanx_right_out,
-  output [0:0] top_grid_pin_0_,
-  output [0:0] bottom_grid_pin_0_,
-  output [0:0] bottom_grid_pin_1_,
-  output [0:0] bottom_grid_pin_2_,
-  output [0:0] bottom_grid_pin_3_,
-  output [0:0] bottom_grid_pin_4_,
-  output [0:0] bottom_grid_pin_5_,
-  output [0:0] bottom_grid_pin_6_,
-  output [0:0] bottom_grid_pin_7_,
-  output [0:0] bottom_grid_pin_8_,
-  output [0:0] bottom_grid_pin_9_,
-  output [0:0] bottom_grid_pin_10_,
-  output [0:0] bottom_grid_pin_11_,
-  output [0:0] bottom_grid_pin_12_,
-  output [0:0] bottom_grid_pin_13_,
-  output [0:0] bottom_grid_pin_14_,
-  output [0:0] bottom_grid_pin_15_,
-  output [0:0] ccff_tail,
-  input [0:0] gfpga_pad_EMBEDDED_IO_SOC_IN,
-  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_OUT,
-  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_DIR,
-  input [0:0] bottom_width_0_height_0__pin_0_,
-  output [0:0] bottom_width_0_height_0__pin_1_upper,
-  output [0:0] bottom_width_0_height_0__pin_1_lower,
-  input SC_IN_TOP,
-  input SC_IN_BOT,
-  output SC_OUT_TOP,
-  output SC_OUT_BOT
-);
+( prog_clk, chanx_left_in, chanx_right_in, ccff_head, chanx_left_out, chanx_right_out, top_grid_pin_0_, bottom_grid_pin_0_, bottom_grid_pin_1_, bottom_grid_pin_2_, bottom_grid_pin_3_, bottom_grid_pin_4_, bottom_grid_pin_5_, bottom_grid_pin_6_, bottom_grid_pin_7_, bottom_grid_pin_8_, bottom_grid_pin_9_, bottom_grid_pin_10_, bottom_grid_pin_11_, bottom_grid_pin_12_, bottom_grid_pin_13_, bottom_grid_pin_14_, bottom_grid_pin_15_, ccff_tail, gfpga_pad_EMBEDDED_IO_SOC_IN, gfpga_pad_EMBEDDED_IO_SOC_OUT, gfpga_pad_EMBEDDED_IO_SOC_DIR, bottom_width_0_height_0__pin_0_, bottom_width_0_height_0__pin_1_upper, bottom_width_0_height_0__pin_1_lower, SC_IN_TOP, SC_IN_BOT, SC_OUT_TOP, SC_OUT_BOT ); 
+  input [0:0] prog_clk;
+  input [0:19] chanx_left_in;
+  input [0:19] chanx_right_in;
+  input [0:0] ccff_head;
+  output [0:19] chanx_left_out;
+  output [0:19] chanx_right_out;
+  output [0:0] top_grid_pin_0_;
+  output [0:0] bottom_grid_pin_0_;
+  output [0:0] bottom_grid_pin_1_;
+  output [0:0] bottom_grid_pin_2_;
+  output [0:0] bottom_grid_pin_3_;
+  output [0:0] bottom_grid_pin_4_;
+  output [0:0] bottom_grid_pin_5_;
+  output [0:0] bottom_grid_pin_6_;
+  output [0:0] bottom_grid_pin_7_;
+  output [0:0] bottom_grid_pin_8_;
+  output [0:0] bottom_grid_pin_9_;
+  output [0:0] bottom_grid_pin_10_;
+  output [0:0] bottom_grid_pin_11_;
+  output [0:0] bottom_grid_pin_12_;
+  output [0:0] bottom_grid_pin_13_;
+  output [0:0] bottom_grid_pin_14_;
+  output [0:0] bottom_grid_pin_15_;
+  output [0:0] ccff_tail;
+  input [0:0] gfpga_pad_EMBEDDED_IO_SOC_IN;
+  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_OUT;
+  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_DIR;
+  input [0:0] bottom_width_0_height_0__pin_0_;
+  output [0:0] bottom_width_0_height_0__pin_1_upper;
+  output [0:0] bottom_width_0_height_0__pin_1_lower;
+  input SC_IN_TOP;
+  input SC_IN_BOT;
+  output SC_OUT_TOP;
+  output SC_OUT_BOT;
 
   wire [0:3] mux_tree_tapbuf_size10_0_sram;
   wire [0:3] mux_tree_tapbuf_size10_0_sram_inv;

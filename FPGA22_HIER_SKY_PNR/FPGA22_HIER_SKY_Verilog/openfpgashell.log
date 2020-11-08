@@ -65,7 +65,7 @@ Warning 2: Model 'io' output port 'inpad' has no timing specification (no clock 
 Warning 3: Model 'frac_lut4' input port 'in' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
 Warning 4: Model 'frac_lut4' output port 'lut4_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
 Warning 5: Model 'frac_lut4' output port 'lut3_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
-# Loading Architecture Description took 0.00 seconds (max_rss 9.0 MiB, delta_rss +0.6 MiB)
+# Loading Architecture Description took 0.01 seconds (max_rss 9.0 MiB, delta_rss +0.6 MiB)
 # Building complex block graph
 Warning 6: [LINE 582] false logically-equivalent pin clb[0].I0[1].
 Warning 7: [LINE 582] false logically-equivalent pin clb[0].I0[2].
@@ -255,9 +255,9 @@ Netlist conversion complete.
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'top.net'.
 Detected 0 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.01 seconds).
+Finished loading packed FPGA netlist file (took 0.02 seconds).
 Warning 34: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
-# Load Packing took 0.01 seconds (max_rss 10.6 MiB, delta_rss +0.1 MiB)
+# Load Packing took 0.02 seconds (max_rss 10.6 MiB, delta_rss +0.1 MiB)
 Warning 35: Netlist contains 0 global net to non-global architecture pin connections
 
 Netlist num_nets: 3
@@ -326,7 +326,7 @@ Warning 47: in check_rr_node: RR node: 328 type: OPIN location: (2,1) pin: 51 pi
   RR Graph Edges: 2428
 ### Computing delta delays
 ### Computing delta delays took 0.00 seconds (max_rss 11.5 MiB, delta_rss +0.0 MiB)
-## Computing placement delta delay look-up took 0.00 seconds (max_rss 11.5 MiB, delta_rss +0.3 MiB)
+## Computing placement delta delay look-up took 0.01 seconds (max_rss 11.5 MiB, delta_rss +0.3 MiB)
 
 There are 3 point to point connections in this circuit.
 
@@ -562,9 +562,9 @@ Setup slack histogram:
 [ -8.7e-10: -8.7e-10) 0 ( 0.0%) |
 [ -8.7e-10: -8.7e-10) 0 ( 0.0%) |
 
-Timing analysis took 0.000428495 seconds (0.000379131 STA, 4.9364e-05 slack) (54 full updates: 51 setup, 0 hold, 3 combined).
+Timing analysis took 0.000465 seconds (0.000410914 STA, 5.4086e-05 slack) (54 full updates: 51 setup, 0 hold, 3 combined).
 VPR suceeded
-The entire flow of VPR took 0.09 seconds (max_rss 11.9 MiB)
+The entire flow of VPR took 0.10 seconds (max_rss 11.9 MiB)
 
 Command line to execute: read_openfpga_arch -f /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA22_HIER_SKY_PNR/FPGA22_HIER_SKY_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/openfpga_arch.xml
 
@@ -729,13 +729,13 @@ Command line to execute: repack
 Confirm selected options when call command 'repack':
 --verbose: off
 Build routing resource graph for the physical implementation of logical tile
-Build routing resource graph for the physical implementation of logical tile took 0.00 seconds (max_rss 17.6 MiB, delta_rss +0.3 MiB)
+Build routing resource graph for the physical implementation of logical tile took 0.00 seconds (max_rss 17.5 MiB, delta_rss +0.3 MiB)
 Repack clustered blocks to physical implementation of logical tile
 Repack clustered block 'c'...Done
 Repack clustered block 'out:c'...Done
 Repack clustered block 'a'...Done
 Repack clustered block 'b'...Done
-Repack clustered blocks to physical implementation of logical tile took 0.00 seconds (max_rss 17.6 MiB, delta_rss +0.0 MiB)
+Repack clustered blocks to physical implementation of logical tile took 0.00 seconds (max_rss 17.5 MiB, delta_rss +0.0 MiB)
 Build truth tables for physical LUTs
 Build truth tables for physical LUTs took 0.00 seconds (max_rss 17.8 MiB, delta_rss +0.3 MiB)
 
@@ -777,7 +777,7 @@ Confirm selected options when call command 'write_fabric_bitstream':
 --verbose: off
 Warning 57: Directory path is empty and nothing will be created.
 Write 2106 fabric bitstream into plain text file 'fabric_bitstream.bit'
-Write 2106 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.00 seconds (max_rss 18.1 MiB, delta_rss +0.0 MiB)
+Write 2106 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.01 seconds (max_rss 18.1 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_fabric_bitstream --format xml --file fabric_bitstream.xml
 
@@ -849,7 +849,7 @@ Building physical tiles...Done
 Writing Verilog netlist for top-level module of FPGA fabric './SRC/fpga_top.v'...Done
 Written 73 Verilog modules in total
 Write Verilog netlists for FPGA fabric
- took 0.16 seconds (max_rss 18.3 MiB, delta_rss +0.2 MiB)
+ took 0.19 seconds (max_rss 18.3 MiB, delta_rss +0.2 MiB)
 
 Command line to execute: write_verilog_testbench --file ./SRC --reference_benchmark_file_path top_output_verilog.v --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --explicit_port_mapping
 
@@ -869,7 +869,7 @@ Write Verilog testbenches for FPGA fabric
 
 Warning 60: Directory './SRC' already exists. Will overwrite contents
 # Write pre-configured FPGA top-level Verilog netlist for design 'top'
-# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 0.01 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
+# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 0.02 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
 # Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top'
 # Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top' took 0.00 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
 # Write autocheck testbench for FPGA top-level Verilog netlist for 'top'
@@ -879,7 +879,7 @@ Succeed to create directory './SimulationDeck'
 # Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini'
 # Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini' took 0.00 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
 Write Verilog testbenches for FPGA fabric
- took 0.04 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
+ took 0.05 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: exit
 
@@ -887,6 +887,6 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 0.25 seconds
+The entire OpenFPGA flow took 0.29 seconds
 
 Thank you for using OpenFPGA!

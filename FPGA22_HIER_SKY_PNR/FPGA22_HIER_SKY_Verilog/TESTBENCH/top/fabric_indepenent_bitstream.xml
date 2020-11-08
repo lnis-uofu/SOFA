@@ -2,7 +2,7 @@
 	- Architecture independent bitstream
 	- Author: Xifan TANG
 	- Organization: University of Utah
-	- Date: Fri Nov  6 14:45:09 2020
+	- Date: Sat Nov  7 21:20:25 2020
 -->
 
 <bitstream_block name="fpga_top" hierarchy_level="0">

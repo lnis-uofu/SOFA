@@ -1,37 +1,34 @@
 
 
 module cbx_1__1_
-(
-  input [0:0] prog_clk,
-  input [0:19] chanx_left_in,
-  input [0:19] chanx_right_in,
-  input [0:0] ccff_head,
-  output [0:19] chanx_left_out,
-  output [0:19] chanx_right_out,
-  output [0:0] bottom_grid_pin_0_,
-  output [0:0] bottom_grid_pin_1_,
-  output [0:0] bottom_grid_pin_2_,
-  output [0:0] bottom_grid_pin_3_,
-  output [0:0] bottom_grid_pin_4_,
-  output [0:0] bottom_grid_pin_5_,
-  output [0:0] bottom_grid_pin_6_,
-  output [0:0] bottom_grid_pin_7_,
-  output [0:0] bottom_grid_pin_8_,
-  output [0:0] bottom_grid_pin_9_,
-  output [0:0] bottom_grid_pin_10_,
-  output [0:0] bottom_grid_pin_11_,
-  output [0:0] bottom_grid_pin_12_,
-  output [0:0] bottom_grid_pin_13_,
-  output [0:0] bottom_grid_pin_14_,
-  output [0:0] bottom_grid_pin_15_,
-  output [0:0] ccff_tail,
-  input CLB_SC_IN,
-  output CLB_SC_OUT,
-  input SC_IN_TOP,
-  input SC_IN_BOT,
-  output SC_OUT_TOP,
-  output SC_OUT_BOT
-);
+( prog_clk, chanx_left_in, chanx_right_in, ccff_head, chanx_left_out, chanx_right_out, bottom_grid_pin_0_, bottom_grid_pin_1_, bottom_grid_pin_2_, bottom_grid_pin_3_, bottom_grid_pin_4_, bottom_grid_pin_5_, bottom_grid_pin_6_, bottom_grid_pin_7_, bottom_grid_pin_8_, bottom_grid_pin_9_, bottom_grid_pin_10_, bottom_grid_pin_11_, bottom_grid_pin_12_, bottom_grid_pin_13_, bottom_grid_pin_14_, bottom_grid_pin_15_, ccff_tail, SC_IN_TOP, SC_IN_BOT, SC_OUT_TOP, SC_OUT_BOT ); 
+  input [0:0] prog_clk;
+  input [0:19] chanx_left_in;
+  input [0:19] chanx_right_in;
+  input [0:0] ccff_head;
+  output [0:19] chanx_left_out;
+  output [0:19] chanx_right_out;
+  output [0:0] bottom_grid_pin_0_;
+  output [0:0] bottom_grid_pin_1_;
+  output [0:0] bottom_grid_pin_2_;
+  output [0:0] bottom_grid_pin_3_;
+  output [0:0] bottom_grid_pin_4_;
+  output [0:0] bottom_grid_pin_5_;
+  output [0:0] bottom_grid_pin_6_;
+  output [0:0] bottom_grid_pin_7_;
+  output [0:0] bottom_grid_pin_8_;
+  output [0:0] bottom_grid_pin_9_;
+  output [0:0] bottom_grid_pin_10_;
+  output [0:0] bottom_grid_pin_11_;
+  output [0:0] bottom_grid_pin_12_;
+  output [0:0] bottom_grid_pin_13_;
+  output [0:0] bottom_grid_pin_14_;
+  output [0:0] bottom_grid_pin_15_;
+  output [0:0] ccff_tail;
+  input SC_IN_TOP;
+  input SC_IN_BOT;
+  output SC_OUT_TOP;
+  output SC_OUT_BOT;
 
   wire [0:3] mux_tree_tapbuf_size10_0_sram;
   wire [0:3] mux_tree_tapbuf_size10_0_sram_inv;
@@ -120,7 +117,6 @@ module cbx_1__1_
   assign chanx_left_out[17] = chanx_right_in[17];
   assign chanx_left_out[18] = chanx_right_in[18];
   assign chanx_left_out[19] = chanx_right_in[19];
-  assign CLB_SC_OUT = CLB_SC_IN;
   assign SC_IN_TOP = SC_IN_BOT;
   assign SC_OUT_TOP = SC_OUT_BOT;
 
