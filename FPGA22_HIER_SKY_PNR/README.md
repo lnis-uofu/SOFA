@@ -2,7 +2,14 @@ FPGA22_HIER_SKY_PNR
 ====================
 
 2x2 FPGA designed using hierarchical flow and `SKY130_FD_SC_HD`.
-Utilization set to 60%
+
+Updates
+-------------------
+- **Merged `grid_io` modules with connection blocks**
+- **Pre-routed scan chain signals**
+- **Created `carry_chain` feedthrough between `grid_clb` modules**
+- Prerouting global signals (`Test_en`)
+- Prerouting clock signals
 
 Directory Structure
 -------------------
@@ -21,4 +28,4 @@ Pending
 ---------
 - DRC SignOff
 - LVS SignOff
-- PostPnR function simulation
+- PostPnR functional simulation

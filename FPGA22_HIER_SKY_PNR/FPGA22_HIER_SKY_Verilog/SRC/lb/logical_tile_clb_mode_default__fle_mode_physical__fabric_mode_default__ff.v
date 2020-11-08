@@ -46,7 +46,7 @@ wire [0:0] ff_clk;
 //
 //
 
-	sky130_fd_sc_hd__sdfxbp_1 sky130_fd_sc_hd__sdfxbp_1_0_ (
+	sky130_fd_sc_hd__sdfxtp_1 sky130_fd_sc_hd__sdfxtp_1_0_ (
 		.SCE(Test_en[0]),
 		.CLK(clk[0]),
 		.D(ff_D[0]),
