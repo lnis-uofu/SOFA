@@ -7,7 +7,7 @@
 # Define environment variables
 set SKYWATER_PDK_HOME "../../PDK/skywater-pdk";
 set FPGA_NETLIST_HOME "../../FPGA1212_FC_HD_SKY_PNR/fpga_core";
-set SDF_HOME "../SDF"
+set SDF_HOME "../../SDF"
 #
 # Enable reporting ALL the timing paths even those are NOT constrained
 set_app_var svr_enable_vpp true
