@@ -7,18 +7,6 @@ END UNITS
 
 MANUFACTURINGGRID 0.005 ;
 
-LAYER nwell
-  TYPE MASTERSLICE ;
-END nwell
-
-LAYER pwell
-  TYPE MASTERSLICE ;
-END pwell
-
-LAYER fieldpoly
-  TYPE MASTERSLICE ;
-END fieldpoly
-
 LAYER li1
   TYPE ROUTING ;
   DIRECTION VERTICAL ;
@@ -81,13 +69,13 @@ LAYER met5
   WIDTH 1.6 ;
 END met5
 
-LAYER diff
+LAYER nwell
   TYPE MASTERSLICE ;
-END diff
+END nwell
 
-LAYER licon1
+LAYER pwell
   TYPE MASTERSLICE ;
-END licon1
+END pwell
 
 VIA L1M1_PR
   LAYER li1 ;
@@ -352,6 +340,7 @@ END M4M5_PR_C
 
 SITE unit
   CLASS CORE ;
+  SYMMETRY Y ;
   SIZE 0.46 BY 2.72 ;
 END unit
 

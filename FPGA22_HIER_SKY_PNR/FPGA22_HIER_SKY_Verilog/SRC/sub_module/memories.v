@@ -131,6 +131,226 @@ endmodule
 
 
 //
+module mux_tree_tapbuf_size4_mem(prog_clk,
+                                 ccff_head,
+                                 ccff_tail,
+                                 mem_out,
+                                 mem_outb);
+//
+input [0:0] prog_clk;
+//
+input [0:0] ccff_head;
+//
+output [0:0] ccff_tail;
+//
+output [0:2] mem_out;
+//
+output [0:2] mem_outb;
+
+//
+//
+
+
+//
+//
+
+
+
+//
+//
+//
+	assign ccff_tail[0] = mem_out[2];
+//
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]),
+		.Q_N(mem_outb[0]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]),
+		.Q_N(mem_outb[1]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[1]),
+		.Q(mem_out[2]),
+		.Q_N(mem_outb[2]));
+
+endmodule
+//
+
+
+
+//
+module mux_tree_tapbuf_size7_mem(prog_clk,
+                                 ccff_head,
+                                 ccff_tail,
+                                 mem_out,
+                                 mem_outb);
+//
+input [0:0] prog_clk;
+//
+input [0:0] ccff_head;
+//
+output [0:0] ccff_tail;
+//
+output [0:2] mem_out;
+//
+output [0:2] mem_outb;
+
+//
+//
+
+
+//
+//
+
+
+
+//
+//
+//
+	assign ccff_tail[0] = mem_out[2];
+//
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]),
+		.Q_N(mem_outb[0]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]),
+		.Q_N(mem_outb[1]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[1]),
+		.Q(mem_out[2]),
+		.Q_N(mem_outb[2]));
+
+endmodule
+//
+
+
+
+//
+module mux_tree_tapbuf_size11_mem(prog_clk,
+                                  ccff_head,
+                                  ccff_tail,
+                                  mem_out,
+                                  mem_outb);
+//
+input [0:0] prog_clk;
+//
+input [0:0] ccff_head;
+//
+output [0:0] ccff_tail;
+//
+output [0:3] mem_out;
+//
+output [0:3] mem_outb;
+
+//
+//
+
+
+//
+//
+
+
+
+//
+//
+//
+	assign ccff_tail[0] = mem_out[3];
+//
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]),
+		.Q_N(mem_outb[0]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]),
+		.Q_N(mem_outb[1]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[1]),
+		.Q(mem_out[2]),
+		.Q_N(mem_outb[2]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[2]),
+		.Q(mem_out[3]),
+		.Q_N(mem_outb[3]));
+
+endmodule
+//
+
+
+
+//
+module mux_tree_tapbuf_size2_mem(prog_clk,
+                                 ccff_head,
+                                 ccff_tail,
+                                 mem_out,
+                                 mem_outb);
+//
+input [0:0] prog_clk;
+//
+input [0:0] ccff_head;
+//
+output [0:0] ccff_tail;
+//
+output [0:1] mem_out;
+//
+output [0:1] mem_outb;
+
+//
+//
+
+
+//
+//
+
+
+
+//
+//
+//
+	assign ccff_tail[0] = mem_out[1];
+//
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]),
+		.Q_N(mem_outb[0]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]),
+		.Q_N(mem_outb[1]));
+
+endmodule
+//
+
+
+
+//
 module mux_tree_tapbuf_size6_mem(prog_clk,
                                  ccff_head,
                                  ccff_tail,
@@ -234,281 +454,6 @@ output [0:2] mem_outb;
 		.D(mem_out[1]),
 		.Q(mem_out[2]),
 		.Q_N(mem_outb[2]));
-
-endmodule
-//
-
-
-
-//
-module mux_tree_tapbuf_size14_mem(prog_clk,
-                                  ccff_head,
-                                  ccff_tail,
-                                  mem_out,
-                                  mem_outb);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:3] mem_out;
-//
-output [0:3] mem_outb;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[3];
-//
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]),
-		.Q_N(mem_outb[0]));
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]),
-		.Q_N(mem_outb[1]));
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[1]),
-		.Q(mem_out[2]),
-		.Q_N(mem_outb[2]));
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[2]),
-		.Q(mem_out[3]),
-		.Q_N(mem_outb[3]));
-
-endmodule
-//
-
-
-
-//
-module mux_tree_tapbuf_size3_mem(prog_clk,
-                                 ccff_head,
-                                 ccff_tail,
-                                 mem_out,
-                                 mem_outb);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:1] mem_out;
-//
-output [0:1] mem_outb;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[1];
-//
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]),
-		.Q_N(mem_outb[0]));
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]),
-		.Q_N(mem_outb[1]));
-
-endmodule
-//
-
-
-
-//
-module mux_tree_tapbuf_size2_mem(prog_clk,
-                                 ccff_head,
-                                 ccff_tail,
-                                 mem_out,
-                                 mem_outb);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:1] mem_out;
-//
-output [0:1] mem_outb;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[1];
-//
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]),
-		.Q_N(mem_outb[0]));
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]),
-		.Q_N(mem_outb[1]));
-
-endmodule
-//
-
-
-
-//
-module mux_tree_tapbuf_size7_mem(prog_clk,
-                                 ccff_head,
-                                 ccff_tail,
-                                 mem_out,
-                                 mem_outb);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:2] mem_out;
-//
-output [0:2] mem_outb;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[2];
-//
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]),
-		.Q_N(mem_outb[0]));
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]),
-		.Q_N(mem_outb[1]));
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[1]),
-		.Q(mem_out[2]),
-		.Q_N(mem_outb[2]));
-
-endmodule
-//
-
-
-
-//
-module mux_tree_tapbuf_size9_mem(prog_clk,
-                                 ccff_head,
-                                 ccff_tail,
-                                 mem_out,
-                                 mem_outb);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:3] mem_out;
-//
-output [0:3] mem_outb;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[3];
-//
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]),
-		.Q_N(mem_outb[0]));
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]),
-		.Q_N(mem_outb[1]));
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[1]),
-		.Q(mem_out[2]),
-		.Q_N(mem_outb[2]));
-
-	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[2]),
-		.Q(mem_out[3]),
-		.Q_N(mem_outb[3]));
 
 endmodule
 //
@@ -644,7 +589,7 @@ endmodule
 
 
 //
-module mux_tree_tapbuf_size4_mem(prog_clk,
+module mux_tree_tapbuf_size3_mem(prog_clk,
                                  ccff_head,
                                  ccff_tail,
                                  mem_out,
@@ -656,9 +601,9 @@ input [0:0] ccff_head;
 //
 output [0:0] ccff_tail;
 //
-output [0:2] mem_out;
+output [0:1] mem_out;
 //
-output [0:2] mem_outb;
+output [0:1] mem_outb;
 
 //
 //
@@ -672,7 +617,56 @@ output [0:2] mem_outb;
 //
 //
 //
-	assign ccff_tail[0] = mem_out[2];
+	assign ccff_tail[0] = mem_out[1];
+//
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]),
+		.Q_N(mem_outb[0]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]),
+		.Q_N(mem_outb[1]));
+
+endmodule
+//
+
+
+
+//
+module mux_tree_tapbuf_size9_mem(prog_clk,
+                                 ccff_head,
+                                 ccff_tail,
+                                 mem_out,
+                                 mem_outb);
+//
+input [0:0] prog_clk;
+//
+input [0:0] ccff_head;
+//
+output [0:0] ccff_tail;
+//
+output [0:3] mem_out;
+//
+output [0:3] mem_outb;
+
+//
+//
+
+
+//
+//
+
+
+
+//
+//
+//
+	assign ccff_tail[0] = mem_out[3];
 //
 
 	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
@@ -692,6 +686,73 @@ output [0:2] mem_outb;
 		.D(mem_out[1]),
 		.Q(mem_out[2]),
 		.Q_N(mem_outb[2]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[2]),
+		.Q(mem_out[3]),
+		.Q_N(mem_outb[3]));
+
+endmodule
+//
+
+
+
+//
+module mux_tree_tapbuf_size14_mem(prog_clk,
+                                  ccff_head,
+                                  ccff_tail,
+                                  mem_out,
+                                  mem_outb);
+//
+input [0:0] prog_clk;
+//
+input [0:0] ccff_head;
+//
+output [0:0] ccff_tail;
+//
+output [0:3] mem_out;
+//
+output [0:3] mem_outb;
+
+//
+//
+
+
+//
+//
+
+
+
+//
+//
+//
+	assign ccff_tail[0] = mem_out[3];
+//
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]),
+		.Q_N(mem_outb[0]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]),
+		.Q_N(mem_outb[1]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_2_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[1]),
+		.Q(mem_out[2]),
+		.Q_N(mem_outb[2]));
+
+	sky130_fd_sc_hd__dfxbp_1 sky130_fd_sc_hd__dfxbp_1_3_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[2]),
+		.Q(mem_out[3]),
+		.Q_N(mem_outb[3]));
 
 endmodule
 //
@@ -887,11 +948,11 @@ endmodule
 
 
 //
-module GPIO_sky130_fd_sc_hd__dfxbp_1_mem(prog_clk,
-                                         ccff_head,
-                                         ccff_tail,
-                                         mem_out,
-                                         mem_outb);
+module EMBEDDED_IO_sky130_fd_sc_hd__dfxbp_1_mem(prog_clk,
+                                                ccff_head,
+                                                ccff_tail,
+                                                mem_out,
+                                                mem_outb);
 //
 input [0:0] prog_clk;
 //

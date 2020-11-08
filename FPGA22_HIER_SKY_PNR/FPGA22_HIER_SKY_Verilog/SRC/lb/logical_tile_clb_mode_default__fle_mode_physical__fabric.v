@@ -15,12 +15,12 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric(prog_clk,
                                                                 clk,
                                                                 fabric_in,
                                                                 fabric_regin,
-                                                                fabric_scin,
+                                                                fabric_sc_in,
                                                                 fabric_clk,
                                                                 ccff_head,
                                                                 fabric_out,
                                                                 fabric_regout,
-                                                                fabric_scout,
+                                                                fabric_sc_out,
                                                                 ccff_tail);
 //
 input [0:0] prog_clk;
@@ -33,7 +33,7 @@ input [0:3] fabric_in;
 //
 input [0:0] fabric_regin;
 //
-input [0:0] fabric_scin;
+input [0:0] fabric_sc_in;
 //
 input [0:0] fabric_clk;
 //
@@ -43,18 +43,18 @@ output [0:1] fabric_out;
 //
 output [0:0] fabric_regout;
 //
-output [0:0] fabric_scout;
+output [0:0] fabric_sc_out;
 //
 output [0:0] ccff_tail;
 
 //
 wire [0:3] fabric_in;
 wire [0:0] fabric_regin;
-wire [0:0] fabric_scin;
+wire [0:0] fabric_sc_in;
 wire [0:0] fabric_clk;
 wire [0:1] fabric_out;
 wire [0:0] fabric_regout;
-wire [0:0] fabric_scout;
+wire [0:0] fabric_sc_out;
 //
 
 
@@ -158,7 +158,7 @@ wire [0:0] mux_tree_size2_mem_1_ccff_tail;
 
 	direct_interc direct_interc_1_ (
 		.in(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1_ff_Q[0]),
-		.out(fabric_scout[0]));
+		.out(fabric_sc_out[0]));
 
 	direct_interc direct_interc_2_ (
 		.in(fabric_in[0]),
@@ -177,7 +177,7 @@ wire [0:0] mux_tree_size2_mem_1_ccff_tail;
 		.out(direct_interc_5_out[0]));
 
 	direct_interc direct_interc_6_ (
-		.in(fabric_scin[0]),
+		.in(fabric_sc_in[0]),
 		.out(direct_interc_6_out[0]));
 
 	direct_interc direct_interc_7_ (
