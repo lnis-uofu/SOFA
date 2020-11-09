@@ -579,49 +579,53 @@
         <!-- We use direct connections to reduce the area to the most
              The global local routing is going to compensate the loss in routability
           -->
-        <direct name="direct_fle0" input="clb.I0" output="fle[0:0].in[0:2]">
+        <!-- FIXME: The implicit port definition results in I0[0] connected to
+                    in[2]. Such twisted connection is not expected.
+                    I[0] should be connected to in[0]
+          -->
+        <direct name="direct_fle0" input="clb.I0[0:2]" output="fle[0:0].in[0:2]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <direct name="direct_fle0i" input="clb.I0i" output="fle[0:0].in[3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle1" input="clb.I1" output="fle[1:1].in[0:2]">
+        <direct name="direct_fle1" input="clb.I1[0:2]" output="fle[1:1].in[0:2]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <direct name="direct_fle1i" input="clb.I1i" output="fle[1:1].in[3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle2" input="clb.I2" output="fle[2:2].in[0:2]">
+        <direct name="direct_fle2" input="clb.I2[0:2]" output="fle[2:2].in[0:2]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <direct name="direct_fle2i" input="clb.I2i" output="fle[2:2].in[3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle3" input="clb.I3" output="fle[3:3].in[0:2]">
+        <direct name="direct_fle3" input="clb.I3[0:2]" output="fle[3:3].in[0:2]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <direct name="direct_fle3i" input="clb.I3i" output="fle[3:3].in[3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle4" input="clb.I4" output="fle[4:4].in[0:2]">
+        <direct name="direct_fle4" input="clb.I4[0:2]" output="fle[4:4].in[0:2]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <direct name="direct_fle4i" input="clb.I4i" output="fle[4:4].in[3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle5" input="clb.I5" output="fle[5:5].in[0:2]">
+        <direct name="direct_fle5" input="clb.I5[0:2]" output="fle[5:5].in[0:2]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <direct name="direct_fle5i" input="clb.I5i" output="fle[5:5].in[3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle6" input="clb.I6" output="fle[6:6].in[0:2]">
+        <direct name="direct_fle6" input="clb.I6[0:2]" output="fle[6:6].in[0:2]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <direct name="direct_fle6i" input="clb.I6i" output="fle[6:6].in[3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle7" input="clb.I7" output="fle[7:7].in[0:2]">
+        <direct name="direct_fle7" input="clb.I7[0:2]" output="fle[7:7].in[0:2]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <direct name="direct_fle7i" input="clb.I7i" output="fle[7:7].in[3]">
