@@ -180,7 +180,6 @@
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <port type="input" prefix="D" size="1"/>
       <port type="output" prefix="Q" size="1"/>
-      <port type="output" prefix="Q_N" size="1"/>
       <port type="clock" prefix="prog_clk" lib_name="CLK" size="1" is_global="true" default_val="0" is_prog="true"/>
     </circuit_model>
     <circuit_model type="iopad" name="EMBEDDED_IO" prefix="EMBEDDED_IO" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/digital_io_hd.v">
