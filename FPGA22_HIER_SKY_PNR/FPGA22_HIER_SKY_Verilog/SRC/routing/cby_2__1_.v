@@ -221,7 +221,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(ccff_head[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_0_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_0_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_0_sram_inv[0:3])
   );
@@ -232,7 +232,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_0_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_1_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_1_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_1_sram_inv[0:3])
   );
@@ -243,7 +243,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_1_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_2_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_2_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_2_sram_inv[0:3])
   );
@@ -254,7 +254,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_2_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_3_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_3_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_3_sram_inv[0:3])
   );
@@ -265,7 +265,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_3_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_4_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_4_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_4_sram_inv[0:3])
   );
@@ -276,7 +276,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_4_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_5_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_5_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_5_sram_inv[0:3])
   );
@@ -287,7 +287,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_5_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_6_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_6_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_6_sram_inv[0:3])
   );
@@ -298,7 +298,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_6_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_7_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_7_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_7_sram_inv[0:3])
   );
@@ -400,7 +400,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_1_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_0_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_0_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_0_sram_inv[0:3])
   );
@@ -411,7 +411,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_0_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_1_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_1_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_1_sram_inv[0:3])
   );
@@ -422,7 +422,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_3_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_2_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_2_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_2_sram_inv[0:3])
   );
@@ -433,7 +433,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_2_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_3_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_3_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_3_sram_inv[0:3])
   );
@@ -444,7 +444,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_5_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_4_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_4_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_4_sram_inv[0:3])
   );
@@ -455,7 +455,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_4_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_5_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_5_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_5_sram_inv[0:3])
   );
@@ -466,7 +466,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_7_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_6_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_6_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_6_sram_inv[0:3])
   );
@@ -477,7 +477,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_6_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_7_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_7_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_7_sram_inv[0:3])
   );

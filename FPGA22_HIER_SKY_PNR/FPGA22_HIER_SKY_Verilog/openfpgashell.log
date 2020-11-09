@@ -65,7 +65,7 @@ Warning 2: Model 'io' output port 'inpad' has no timing specification (no clock 
 Warning 3: Model 'frac_lut4' input port 'in' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
 Warning 4: Model 'frac_lut4' output port 'lut4_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
 Warning 5: Model 'frac_lut4' output port 'lut3_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
-# Loading Architecture Description took 0.01 seconds (max_rss 9.0 MiB, delta_rss +0.6 MiB)
+# Loading Architecture Description took 0.00 seconds (max_rss 9.0 MiB, delta_rss +0.6 MiB)
 # Building complex block graph
 Warning 6: [LINE 582] false logically-equivalent pin clb[0].I0[1].
 Warning 7: [LINE 582] false logically-equivalent pin clb[0].I0[2].
@@ -83,7 +83,7 @@ Warning 18: [LINE 618] false logically-equivalent pin clb[0].I6[1].
 Warning 19: [LINE 618] false logically-equivalent pin clb[0].I6[2].
 Warning 20: [LINE 624] false logically-equivalent pin clb[0].I7[1].
 Warning 21: [LINE 624] false logically-equivalent pin clb[0].I7[2].
-# Building complex block graph took 0.01 seconds (max_rss 9.5 MiB, delta_rss +0.5 MiB)
+# Building complex block graph took 0.00 seconds (max_rss 9.5 MiB, delta_rss +0.5 MiB)
 # Load circuit
 # Load circuit took 0.00 seconds (max_rss 9.9 MiB, delta_rss +0.4 MiB)
 # Clean circuit
@@ -250,14 +250,14 @@ Device Utilization: 0.25 (target 1.00)
 
 Netlist conversion complete.
 
-# Packing took 0.01 seconds (max_rss 10.6 MiB, delta_rss +0.7 MiB)
+# Packing took 0.00 seconds (max_rss 10.6 MiB, delta_rss +0.7 MiB)
 # Load Packing
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'top.net'.
 Detected 0 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.02 seconds).
+Finished loading packed FPGA netlist file (took 0 seconds).
 Warning 34: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
-# Load Packing took 0.02 seconds (max_rss 10.6 MiB, delta_rss +0.1 MiB)
+# Load Packing took 0.01 seconds (max_rss 10.6 MiB, delta_rss +0.1 MiB)
 Warning 35: Netlist contains 0 global net to non-global architecture pin connections
 
 Netlist num_nets: 3
@@ -301,7 +301,7 @@ Device Utilization: 0.25 (target 1.00)
 	Physical Tile clb:
 	Block Utilization: 0.25 Logical Block: clb
 
-## Build Device Grid took 0.00 seconds (max_rss 10.7 MiB, delta_rss +0.0 MiB)
+## Build Device Grid took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 ## Build tileable routing resource graph
 X-direction routing channel width is 40
 Y-direction routing channel width is 40
@@ -309,10 +309,10 @@ Warning 40: in check_rr_node: RR node: 105 type: OPIN location: (1,1) pin: 50 pi
 Warning 41: in check_rr_node: RR node: 106 type: OPIN location: (1,1) pin: 51 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
 Warning 42: in check_rr_node: RR node: 195 type: OPIN location: (2,1) pin: 50 pin_name: clb.regout[0] capacity: 1 has no out-going edges.
 Warning 43: in check_rr_node: RR node: 196 type: OPIN location: (2,1) pin: 51 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-## Build tileable routing resource graph took 0.01 seconds (max_rss 11.2 MiB, delta_rss +0.5 MiB)
+## Build tileable routing resource graph took 0.01 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 756
   RR Graph Edges: 2930
-# Create Device took 0.01 seconds (max_rss 11.2 MiB, delta_rss +0.5 MiB)
+# Create Device took 0.01 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 
 # Placement
 ## Computing placement delta delay look-up
@@ -321,12 +321,12 @@ Warning 44: in check_rr_node: RR node: 119 type: OPIN location: (1,1) pin: 50 pi
 Warning 45: in check_rr_node: RR node: 120 type: OPIN location: (1,1) pin: 51 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
 Warning 46: in check_rr_node: RR node: 327 type: OPIN location: (2,1) pin: 50 pin_name: clb.regout[0] capacity: 1 has no out-going edges.
 Warning 47: in check_rr_node: RR node: 328 type: OPIN location: (2,1) pin: 51 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-### Build routing resource graph took 0.00 seconds (max_rss 11.2 MiB, delta_rss +0.0 MiB)
+### Build routing resource graph took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 756
   RR Graph Edges: 2428
 ### Computing delta delays
-### Computing delta delays took 0.00 seconds (max_rss 11.5 MiB, delta_rss +0.0 MiB)
-## Computing placement delta delay look-up took 0.01 seconds (max_rss 11.5 MiB, delta_rss +0.3 MiB)
+### Computing delta delays took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
+## Computing placement delta delay look-up took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 
 There are 3 point to point connections in this circuit.
 
@@ -440,7 +440,7 @@ Placement total # of swap attempts: 292
 	Swaps aborted :   0 ( 0.0 %)
 
 Aborted Move Reasons:
-# Placement took 0.01 seconds (max_rss 11.7 MiB, delta_rss +0.5 MiB)
+# Placement took 0.01 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 
 # Routing
 ## Build tileable routing resource graph
@@ -450,7 +450,7 @@ Warning 48: in check_rr_node: RR node: 105 type: OPIN location: (1,1) pin: 50 pi
 Warning 49: in check_rr_node: RR node: 106 type: OPIN location: (1,1) pin: 51 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
 Warning 50: in check_rr_node: RR node: 195 type: OPIN location: (2,1) pin: 50 pin_name: clb.regout[0] capacity: 1 has no out-going edges.
 Warning 51: in check_rr_node: RR node: 196 type: OPIN location: (2,1) pin: 51 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-## Build tileable routing resource graph took 0.01 seconds (max_rss 11.7 MiB, delta_rss +0.0 MiB)
+## Build tileable routing resource graph took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 756
   RR Graph Edges: 2930
 Confirming router algorithm: TIMING_DRIVEN.
@@ -464,7 +464,7 @@ Restoring best routing
 Critical path: 0.86731 ns
 Successfully routed after 2 routing iterations.
 Router Stats: total_nets_routed: 4 total_connections_routed: 4 total_heap_pushes: 289 total_heap_pops: 187
-# Routing took 0.01 seconds (max_rss 11.9 MiB, delta_rss +0.2 MiB)
+# Routing took 0.01 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 
 Checking to ensure routing is legal...
 Completed routing consistency check successfully.
@@ -562,9 +562,9 @@ Setup slack histogram:
 [ -8.7e-10: -8.7e-10) 0 ( 0.0%) |
 [ -8.7e-10: -8.7e-10) 0 ( 0.0%) |
 
-Timing analysis took 0.000465 seconds (0.000410914 STA, 5.4086e-05 slack) (54 full updates: 51 setup, 0 hold, 3 combined).
+Timing analysis took 0.000351611 seconds (0.000312774 STA, 3.8837e-05 slack) (54 full updates: 51 setup, 0 hold, 3 combined).
 VPR suceeded
-The entire flow of VPR took 0.10 seconds (max_rss 11.9 MiB)
+The entire flow of VPR took 0.07 seconds (max_rss 12.7 MiB)
 
 Command line to execute: read_openfpga_arch -f /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA22_HIER_SKY_PNR/FPGA22_HIER_SKY_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/openfpga_arch.xml
 
@@ -578,10 +578,10 @@ Warning 54: Automatically set circuit model 'sky130_fd_sc_hd__dfxbp_1' to be def
 Use the default configurable memory model 'sky130_fd_sc_hd__dfxbp_1' for circuit model 'mux_tree' port 'sram')
 Use the default configurable memory model 'sky130_fd_sc_hd__dfxbp_1' for circuit model 'mux_tree_tapbuf' port 'sram')
 Use the default configurable memory model 'sky130_fd_sc_hd__dfxbp_1' for circuit model 'frac_lut4' port 'sram')
-Read OpenFPGA architecture took 0.00 seconds (max_rss 12.0 MiB, delta_rss +0.1 MiB)
+Read OpenFPGA architecture took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 Check circuit library
 Checking circuit library passed.
-Check circuit library took 0.00 seconds (max_rss 12.3 MiB, delta_rss +0.0 MiB)
+Check circuit library took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 Found 0 errors when checking configurable memory circuit models!
 
 Command line to execute: read_openfpga_simulation_setting -f /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml
@@ -590,7 +590,7 @@ Confirm selected options when call command 'read_openfpga_simulation_setting':
 --file, -f: /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml
 Reading XML simulation setting '/research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml'...
 Read OpenFPGA simulation settings
-Read OpenFPGA simulation settings took 0.00 seconds (max_rss 12.3 MiB, delta_rss +0.0 MiB)
+Read OpenFPGA simulation settings took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: link_openfpga_arch --activity_file top_ace_out.act --sort_gsb_chan_node_in_edges
 
@@ -633,7 +633,7 @@ Done with 18 nodes mapping
 [88%] Backannotated GSB[2][1]
 [100%] Backannotated GSB[2][2]
 Backannotated 9 General Switch Blocks (GSBs).
-# Build General Switch Block(GSB) annotation on top of routing resource graph took 0.00 seconds (max_rss 12.3 MiB, delta_rss +0.0 MiB)
+# Build General Switch Block(GSB) annotation on top of routing resource graph took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 # Sort incoming edges for each routing track output node of General Switch Block(GSB)
 [11%] Sorted edges for GSB[0][0]
 [22%] Sorted edges for GSB[0][1]
@@ -645,14 +645,14 @@ Backannotated 9 General Switch Blocks (GSBs).
 [88%] Sorted edges for GSB[2][1]
 [100%] Sorted edges for GSB[2][2]
 Sorted edges for 9 General Switch Blocks (GSBs).
-# Sort incoming edges for each routing track output node of General Switch Block(GSB) took 0.00 seconds (max_rss 12.3 MiB, delta_rss +0.0 MiB)
+# Sort incoming edges for each routing track output node of General Switch Block(GSB) took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 # Build a library of physical multiplexers
 Built a multiplexer library of 15 physical multiplexers.
 Maximum multiplexer size is 17.
-# Build a library of physical multiplexers took 0.00 seconds (max_rss 12.5 MiB, delta_rss +0.3 MiB)
+# Build a library of physical multiplexers took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 # Build the annotation about direct connection between tiles
 Built 6 tile-to-tile direct connections
-# Build the annotation about direct connection between tiles took 0.00 seconds (max_rss 12.5 MiB, delta_rss +0.0 MiB)
+# Build the annotation about direct connection between tiles took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 Building annotation for mapped blocks on grid locations...Done
 User specified the operating clock frequency to use VPR results
 Use VPR critical path delay 1.04077e-18 [ns] with a 20 [%] slack in OpenFPGA.
@@ -662,7 +662,7 @@ Average net density: 0.42
 Median net density: 0.00
 Average net density after weighting: 0.42
 Will apply 2 operating clock cycles to simulations
-Link OpenFPGA architecture to VPR architecture took 0.00 seconds (max_rss 12.6 MiB, delta_rss +0.3 MiB)
+Link OpenFPGA architecture to VPR architecture took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: build_fabric --compress_routing --duplicate_grid_pin --load_fabric_key /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/tasks/FPGA22_HIER_SKY_task/arch/fabric_key.xml
 
@@ -676,7 +676,7 @@ Confirm selected options when call command 'build_fabric':
 --verbose: off
 Identify unique General Switch Blocks (GSBs)
 Detected 9 unique general switch blocks from a total of 9 (compression rate=0.00%)
-Identify unique General Switch Blocks (GSBs) took 0.00 seconds (max_rss 12.6 MiB, delta_rss +0.0 MiB)
+Identify unique General Switch Blocks (GSBs) took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 
 Read Fabric Key
 Read Fabric Key took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
@@ -691,7 +691,7 @@ Build fabric module graph
 # Build local encoder (for multiplexers) modules
 # Build local encoder (for multiplexers) modules took 0.00 seconds (max_rss 12.7 MiB, delta_rss +0.0 MiB)
 # Building multiplexer modules
-# Building multiplexer modules took 0.00 seconds (max_rss 12.9 MiB, delta_rss +0.3 MiB)
+# Building multiplexer modules took 0.00 seconds (max_rss 12.9 MiB, delta_rss +0.2 MiB)
 # Build Look-Up Table (LUT) modules
 # Build Look-Up Table (LUT) modules took 0.00 seconds (max_rss 13.2 MiB, delta_rss +0.3 MiB)
 # Build wire modules
@@ -703,7 +703,7 @@ Building logical tiles...Done
 Building physical tiles...Done
 # Build grid modules took 0.00 seconds (max_rss 13.7 MiB, delta_rss +0.5 MiB)
 # Build unique routing modules...
-# Build unique routing modules... took 0.02 seconds (max_rss 16.5 MiB, delta_rss +2.8 MiB)
+# Build unique routing modules... took 0.01 seconds (max_rss 16.5 MiB, delta_rss +2.8 MiB)
 # Build FPGA fabric module
 ## Add grid instances to top module
 ## Add grid instances to top module took 0.00 seconds (max_rss 16.5 MiB, delta_rss +0.0 MiB)
@@ -720,7 +720,7 @@ Building physical tiles...Done
 ## Add module nets for configuration buses
 ## Add module nets for configuration buses took 0.00 seconds (max_rss 17.3 MiB, delta_rss +0.0 MiB)
 # Build FPGA fabric module took 0.01 seconds (max_rss 17.3 MiB, delta_rss +0.8 MiB)
-Build fabric module graph took 0.03 seconds (max_rss 17.3 MiB, delta_rss +4.6 MiB)
+Build fabric module graph took 0.02 seconds (max_rss 17.3 MiB, delta_rss +4.6 MiB)
 Create I/O location mapping for top module
 Create I/O location mapping for top module took 0.00 seconds (max_rss 17.3 MiB, delta_rss +0.0 MiB)
 
@@ -729,13 +729,13 @@ Command line to execute: repack
 Confirm selected options when call command 'repack':
 --verbose: off
 Build routing resource graph for the physical implementation of logical tile
-Build routing resource graph for the physical implementation of logical tile took 0.00 seconds (max_rss 17.5 MiB, delta_rss +0.3 MiB)
+Build routing resource graph for the physical implementation of logical tile took 0.00 seconds (max_rss 17.6 MiB, delta_rss +0.3 MiB)
 Repack clustered blocks to physical implementation of logical tile
 Repack clustered block 'c'...Done
 Repack clustered block 'out:c'...Done
 Repack clustered block 'a'...Done
 Repack clustered block 'b'...Done
-Repack clustered blocks to physical implementation of logical tile took 0.00 seconds (max_rss 17.5 MiB, delta_rss +0.0 MiB)
+Repack clustered blocks to physical implementation of logical tile took 0.00 seconds (max_rss 17.6 MiB, delta_rss +0.0 MiB)
 Build truth tables for physical LUTs
 Build truth tables for physical LUTs took 0.00 seconds (max_rss 17.8 MiB, delta_rss +0.3 MiB)
 
@@ -756,7 +756,7 @@ Build fabric-independent bitstream for implementation 'top'
  took 0.01 seconds (max_rss 17.8 MiB, delta_rss +0.0 MiB)
 Warning 56: Directory path is empty and nothing will be created.
 Write 2106 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml'
-Write 2106 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml' took 0.03 seconds (max_rss 17.8 MiB, delta_rss +0.0 MiB)
+Write 2106 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml' took 0.02 seconds (max_rss 17.8 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: build_fabric_bitstream
 
@@ -849,7 +849,7 @@ Building physical tiles...Done
 Writing Verilog netlist for top-level module of FPGA fabric './SRC/fpga_top.v'...Done
 Written 73 Verilog modules in total
 Write Verilog netlists for FPGA fabric
- took 0.19 seconds (max_rss 18.3 MiB, delta_rss +0.2 MiB)
+ took 0.17 seconds (max_rss 18.3 MiB, delta_rss +0.2 MiB)
 
 Command line to execute: write_verilog_testbench --file ./SRC --reference_benchmark_file_path top_output_verilog.v --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --explicit_port_mapping
 
@@ -869,7 +869,7 @@ Write Verilog testbenches for FPGA fabric
 
 Warning 60: Directory './SRC' already exists. Will overwrite contents
 # Write pre-configured FPGA top-level Verilog netlist for design 'top'
-# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 0.02 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
+# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 0.01 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
 # Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top'
 # Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top' took 0.00 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
 # Write autocheck testbench for FPGA top-level Verilog netlist for 'top'
@@ -879,7 +879,7 @@ Succeed to create directory './SimulationDeck'
 # Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini'
 # Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini' took 0.00 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
 Write Verilog testbenches for FPGA fabric
- took 0.05 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
+ took 0.03 seconds (max_rss 18.3 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: exit
 
@@ -887,6 +887,6 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 0.29 seconds
+The entire OpenFPGA flow took 0.19 seconds
 
 Thank you for using OpenFPGA!

@@ -5,11 +5,12 @@ FPGA22_HIER_SKY_PNR
 
 Updates
 -------------------
-- **Merged `grid_io` modules with connection blocks**
-- **Pre-routed scan chain signals**
-- **Created `carry_chain` feedthrough between `grid_clb` modules**
-- Prerouting global signals (`Test_en`)
-- Prerouting clock signals
+- Merged `grid_io` modules with connection blocks
+- Pre-routed scan chain signals
+- Created `carry_chain` feedthrough between `grid_clb` modules
+- **Prerouting global signals (`Test_en`)**
+- **Prerouting clock signals**
+- **Enabled Feed through generation for clock**
 
 Directory Structure
 -------------------
