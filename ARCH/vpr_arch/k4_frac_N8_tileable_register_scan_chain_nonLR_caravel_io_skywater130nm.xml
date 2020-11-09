@@ -579,6 +579,10 @@
         <!-- We use direct connections to reduce the area to the most
              The global local routing is going to compensate the loss in routability
           -->
+        <!-- FIXME: The implicit port definition results in I0[0] connected to
+                    in[2]. Such twisted connection is not expected.
+                    I[0] should be connected to in[0]
+          -->
         <direct name="direct_fle0" input="clb.I0" output="fle[0:0].in[0:2]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
