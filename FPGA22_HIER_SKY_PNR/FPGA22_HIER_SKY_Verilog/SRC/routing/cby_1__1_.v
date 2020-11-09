@@ -1,31 +1,30 @@
 
 
 module cby_1__1_
-(
-  input [0:0] prog_clk,
-  input [0:19] chany_bottom_in,
-  input [0:19] chany_top_in,
-  input [0:0] ccff_head,
-  output [0:19] chany_bottom_out,
-  output [0:19] chany_top_out,
-  output [0:0] left_grid_pin_16_,
-  output [0:0] left_grid_pin_17_,
-  output [0:0] left_grid_pin_18_,
-  output [0:0] left_grid_pin_19_,
-  output [0:0] left_grid_pin_20_,
-  output [0:0] left_grid_pin_21_,
-  output [0:0] left_grid_pin_22_,
-  output [0:0] left_grid_pin_23_,
-  output [0:0] left_grid_pin_24_,
-  output [0:0] left_grid_pin_25_,
-  output [0:0] left_grid_pin_26_,
-  output [0:0] left_grid_pin_27_,
-  output [0:0] left_grid_pin_28_,
-  output [0:0] left_grid_pin_29_,
-  output [0:0] left_grid_pin_30_,
-  output [0:0] left_grid_pin_31_,
-  output [0:0] ccff_tail
-);
+( prog_clk, chany_bottom_in, chany_top_in, ccff_head, chany_bottom_out, chany_top_out, left_grid_pin_16_, left_grid_pin_17_, left_grid_pin_18_, left_grid_pin_19_, left_grid_pin_20_, left_grid_pin_21_, left_grid_pin_22_, left_grid_pin_23_, left_grid_pin_24_, left_grid_pin_25_, left_grid_pin_26_, left_grid_pin_27_, left_grid_pin_28_, left_grid_pin_29_, left_grid_pin_30_, left_grid_pin_31_, ccff_tail ); 
+  input [0:0] prog_clk;
+  input [0:19] chany_bottom_in;
+  input [0:19] chany_top_in;
+  input [0:0] ccff_head;
+  output [0:19] chany_bottom_out;
+  output [0:19] chany_top_out;
+  output [0:0] left_grid_pin_16_;
+  output [0:0] left_grid_pin_17_;
+  output [0:0] left_grid_pin_18_;
+  output [0:0] left_grid_pin_19_;
+  output [0:0] left_grid_pin_20_;
+  output [0:0] left_grid_pin_21_;
+  output [0:0] left_grid_pin_22_;
+  output [0:0] left_grid_pin_23_;
+  output [0:0] left_grid_pin_24_;
+  output [0:0] left_grid_pin_25_;
+  output [0:0] left_grid_pin_26_;
+  output [0:0] left_grid_pin_27_;
+  output [0:0] left_grid_pin_28_;
+  output [0:0] left_grid_pin_29_;
+  output [0:0] left_grid_pin_30_;
+  output [0:0] left_grid_pin_31_;
+  output [0:0] ccff_tail;
 
   wire [0:3] mux_tree_tapbuf_size10_0_sram;
   wire [0:3] mux_tree_tapbuf_size10_0_sram_inv;

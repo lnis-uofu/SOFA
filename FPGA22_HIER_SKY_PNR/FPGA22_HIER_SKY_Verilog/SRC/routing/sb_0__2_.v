@@ -1,29 +1,28 @@
 
 
 module sb_0__2_
-(
-  input [0:0] prog_clk,
-  input [0:19] chanx_right_in,
-  input [0:0] right_top_grid_pin_1_,
-  input [0:0] right_bottom_grid_pin_34_,
-  input [0:0] right_bottom_grid_pin_35_,
-  input [0:0] right_bottom_grid_pin_36_,
-  input [0:0] right_bottom_grid_pin_37_,
-  input [0:0] right_bottom_grid_pin_38_,
-  input [0:0] right_bottom_grid_pin_39_,
-  input [0:0] right_bottom_grid_pin_40_,
-  input [0:0] right_bottom_grid_pin_41_,
-  input [0:19] chany_bottom_in,
-  input [0:0] bottom_left_grid_pin_1_,
-  input [0:0] ccff_head,
-  output [0:19] chanx_right_out,
-  output [0:19] chany_bottom_out,
-  output [0:0] ccff_tail,
-  input SC_IN_TOP,
-  input SC_IN_BOT,
-  output SC_OUT_TOP,
-  output SC_OUT_BOT
-);
+( prog_clk, chanx_right_in, right_top_grid_pin_1_, right_bottom_grid_pin_34_, right_bottom_grid_pin_35_, right_bottom_grid_pin_36_, right_bottom_grid_pin_37_, right_bottom_grid_pin_38_, right_bottom_grid_pin_39_, right_bottom_grid_pin_40_, right_bottom_grid_pin_41_, chany_bottom_in, bottom_left_grid_pin_1_, ccff_head, chanx_right_out, chany_bottom_out, ccff_tail, SC_IN_TOP, SC_IN_BOT, SC_OUT_TOP, SC_OUT_BOT ); 
+  input [0:0] prog_clk;
+  input [0:19] chanx_right_in;
+  input [0:0] right_top_grid_pin_1_;
+  input [0:0] right_bottom_grid_pin_34_;
+  input [0:0] right_bottom_grid_pin_35_;
+  input [0:0] right_bottom_grid_pin_36_;
+  input [0:0] right_bottom_grid_pin_37_;
+  input [0:0] right_bottom_grid_pin_38_;
+  input [0:0] right_bottom_grid_pin_39_;
+  input [0:0] right_bottom_grid_pin_40_;
+  input [0:0] right_bottom_grid_pin_41_;
+  input [0:19] chany_bottom_in;
+  input [0:0] bottom_left_grid_pin_1_;
+  input [0:0] ccff_head;
+  output [0:19] chanx_right_out;
+  output [0:19] chany_bottom_out;
+  output [0:0] ccff_tail;
+  input SC_IN_TOP;
+  input SC_IN_BOT;
+  output SC_OUT_TOP;
+  output SC_OUT_BOT;
 
   wire [0:1] mux_tree_tapbuf_size2_0_sram;
   wire [0:1] mux_tree_tapbuf_size2_0_sram_inv;

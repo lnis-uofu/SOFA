@@ -1,38 +1,37 @@
 
 
 module cby_2__1_
-(
-  input [0:0] prog_clk,
-  input [0:19] chany_bottom_in,
-  input [0:19] chany_top_in,
-  input [0:0] ccff_head,
-  output [0:19] chany_bottom_out,
-  output [0:19] chany_top_out,
-  output [0:0] right_grid_pin_0_,
-  output [0:0] left_grid_pin_16_,
-  output [0:0] left_grid_pin_17_,
-  output [0:0] left_grid_pin_18_,
-  output [0:0] left_grid_pin_19_,
-  output [0:0] left_grid_pin_20_,
-  output [0:0] left_grid_pin_21_,
-  output [0:0] left_grid_pin_22_,
-  output [0:0] left_grid_pin_23_,
-  output [0:0] left_grid_pin_24_,
-  output [0:0] left_grid_pin_25_,
-  output [0:0] left_grid_pin_26_,
-  output [0:0] left_grid_pin_27_,
-  output [0:0] left_grid_pin_28_,
-  output [0:0] left_grid_pin_29_,
-  output [0:0] left_grid_pin_30_,
-  output [0:0] left_grid_pin_31_,
-  output [0:0] ccff_tail,
-  input [0:0] gfpga_pad_EMBEDDED_IO_SOC_IN,
-  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_OUT,
-  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_DIR,
-  input [0:0] left_width_0_height_0__pin_0_,
-  output [0:0] left_width_0_height_0__pin_1_upper,
-  output [0:0] left_width_0_height_0__pin_1_lower
-);
+( prog_clk, chany_bottom_in, chany_top_in, ccff_head, chany_bottom_out, chany_top_out, right_grid_pin_0_, left_grid_pin_16_, left_grid_pin_17_, left_grid_pin_18_, left_grid_pin_19_, left_grid_pin_20_, left_grid_pin_21_, left_grid_pin_22_, left_grid_pin_23_, left_grid_pin_24_, left_grid_pin_25_, left_grid_pin_26_, left_grid_pin_27_, left_grid_pin_28_, left_grid_pin_29_, left_grid_pin_30_, left_grid_pin_31_, ccff_tail, gfpga_pad_EMBEDDED_IO_SOC_IN, gfpga_pad_EMBEDDED_IO_SOC_OUT, gfpga_pad_EMBEDDED_IO_SOC_DIR, left_width_0_height_0__pin_0_, left_width_0_height_0__pin_1_upper, left_width_0_height_0__pin_1_lower ); 
+  input [0:0] prog_clk;
+  input [0:19] chany_bottom_in;
+  input [0:19] chany_top_in;
+  input [0:0] ccff_head;
+  output [0:19] chany_bottom_out;
+  output [0:19] chany_top_out;
+  output [0:0] right_grid_pin_0_;
+  output [0:0] left_grid_pin_16_;
+  output [0:0] left_grid_pin_17_;
+  output [0:0] left_grid_pin_18_;
+  output [0:0] left_grid_pin_19_;
+  output [0:0] left_grid_pin_20_;
+  output [0:0] left_grid_pin_21_;
+  output [0:0] left_grid_pin_22_;
+  output [0:0] left_grid_pin_23_;
+  output [0:0] left_grid_pin_24_;
+  output [0:0] left_grid_pin_25_;
+  output [0:0] left_grid_pin_26_;
+  output [0:0] left_grid_pin_27_;
+  output [0:0] left_grid_pin_28_;
+  output [0:0] left_grid_pin_29_;
+  output [0:0] left_grid_pin_30_;
+  output [0:0] left_grid_pin_31_;
+  output [0:0] ccff_tail;
+  input [0:0] gfpga_pad_EMBEDDED_IO_SOC_IN;
+  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_OUT;
+  output [0:0] gfpga_pad_EMBEDDED_IO_SOC_DIR;
+  input [0:0] left_width_0_height_0__pin_0_;
+  output [0:0] left_width_0_height_0__pin_1_upper;
+  output [0:0] left_width_0_height_0__pin_1_lower;
 
   wire [0:3] mux_tree_tapbuf_size10_0_sram;
   wire [0:3] mux_tree_tapbuf_size10_0_sram_inv;
@@ -222,7 +221,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(ccff_head[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_0_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_0_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_0_sram_inv[0:3])
   );
@@ -233,7 +232,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_0_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_1_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_1_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_1_sram_inv[0:3])
   );
@@ -244,7 +243,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_1_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_2_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_2_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_2_sram_inv[0:3])
   );
@@ -255,7 +254,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_2_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_3_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_3_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_3_sram_inv[0:3])
   );
@@ -266,7 +265,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_3_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_4_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_4_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_4_sram_inv[0:3])
   );
@@ -277,7 +276,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_4_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_5_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_5_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_5_sram_inv[0:3])
   );
@@ -288,7 +287,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_5_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_6_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_6_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_6_sram_inv[0:3])
   );
@@ -299,7 +298,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_6_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size10_mem_7_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size10_7_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size10_7_sram_inv[0:3])
   );
@@ -401,7 +400,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_1_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_0_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_0_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_0_sram_inv[0:3])
   );
@@ -412,7 +411,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_0_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_1_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_1_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_1_sram_inv[0:3])
   );
@@ -423,7 +422,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_3_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_2_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_2_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_2_sram_inv[0:3])
   );
@@ -434,7 +433,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_2_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_3_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_3_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_3_sram_inv[0:3])
   );
@@ -445,7 +444,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_5_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_4_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_4_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_4_sram_inv[0:3])
   );
@@ -456,7 +455,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_4_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_5_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_5_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_5_sram_inv[0:3])
   );
@@ -467,7 +466,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size10_mem_7_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_6_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_6_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_6_sram_inv[0:3])
   );
@@ -478,7 +477,7 @@ module cby_2__1_
   (
     .prog_clk(prog_clk[0]),
     .ccff_head(mux_tree_tapbuf_size8_mem_6_ccff_tail[0]),
-    .ccff_tail(ccff_tail_mid),
+    .ccff_tail(mux_tree_tapbuf_size8_mem_7_ccff_tail[0]),
     .mem_out(mux_tree_tapbuf_size8_7_sram[0:3]),
     .mem_outb(mux_tree_tapbuf_size8_7_sram_inv[0:3])
   );
