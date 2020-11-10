@@ -45,7 +45,6 @@ wire [0:0] iopad_inpad;
 
 
 wire [0:0] EMBEDDED_IO_0_en;
-wire [0:0] EMBEDDED_IO_sky130_fd_sc_hd__dfxbp_1_mem_undriven_mem_outb;
 
 //
 //
@@ -60,12 +59,11 @@ wire [0:0] EMBEDDED_IO_sky130_fd_sc_hd__dfxbp_1_mem_undriven_mem_outb;
 		.FPGA_DIR(EMBEDDED_IO_0_en[0]),
 		.FPGA_IN(iopad_inpad[0]));
 
-	EMBEDDED_IO_sky130_fd_sc_hd__dfxbp_1_mem EMBEDDED_IO_sky130_fd_sc_hd__dfxbp_1_mem (
+	EMBEDDED_IO_sky130_fd_sc_hd__dfxtp_1_mem EMBEDDED_IO_sky130_fd_sc_hd__dfxtp_1_mem (
 		.prog_clk(prog_clk[0]),
 		.ccff_head(ccff_head[0]),
 		.ccff_tail(ccff_tail[0]),
-		.mem_out(EMBEDDED_IO_0_en[0]),
-		.mem_outb(EMBEDDED_IO_sky130_fd_sc_hd__dfxbp_1_mem_undriven_mem_outb[0]));
+		.mem_out(EMBEDDED_IO_0_en[0]));
 
 endmodule
 //

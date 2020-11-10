@@ -400,7 +400,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(clb_sc_out[0]));
 
 	direct_interc direct_interc_18_ (
-		.in(clb_I0[2]),
+		.in(clb_I0[0]),
 		.out(direct_interc_18_out[0]));
 
 	direct_interc direct_interc_19_ (
@@ -408,7 +408,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_19_out[0]));
 
 	direct_interc direct_interc_20_ (
-		.in(clb_I0[0]),
+		.in(clb_I0[2]),
 		.out(direct_interc_20_out[0]));
 
 	direct_interc direct_interc_21_ (
@@ -428,7 +428,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_24_out[0]));
 
 	direct_interc direct_interc_25_ (
-		.in(clb_I1[2]),
+		.in(clb_I1[0]),
 		.out(direct_interc_25_out[0]));
 
 	direct_interc direct_interc_26_ (
@@ -436,7 +436,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_26_out[0]));
 
 	direct_interc direct_interc_27_ (
-		.in(clb_I1[0]),
+		.in(clb_I1[2]),
 		.out(direct_interc_27_out[0]));
 
 	direct_interc direct_interc_28_ (
@@ -456,7 +456,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_31_out[0]));
 
 	direct_interc direct_interc_32_ (
-		.in(clb_I2[2]),
+		.in(clb_I2[0]),
 		.out(direct_interc_32_out[0]));
 
 	direct_interc direct_interc_33_ (
@@ -464,7 +464,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_33_out[0]));
 
 	direct_interc direct_interc_34_ (
-		.in(clb_I2[0]),
+		.in(clb_I2[2]),
 		.out(direct_interc_34_out[0]));
 
 	direct_interc direct_interc_35_ (
@@ -484,7 +484,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_38_out[0]));
 
 	direct_interc direct_interc_39_ (
-		.in(clb_I3[2]),
+		.in(clb_I3[0]),
 		.out(direct_interc_39_out[0]));
 
 	direct_interc direct_interc_40_ (
@@ -492,7 +492,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_40_out[0]));
 
 	direct_interc direct_interc_41_ (
-		.in(clb_I3[0]),
+		.in(clb_I3[2]),
 		.out(direct_interc_41_out[0]));
 
 	direct_interc direct_interc_42_ (
@@ -512,7 +512,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_45_out[0]));
 
 	direct_interc direct_interc_46_ (
-		.in(clb_I4[2]),
+		.in(clb_I4[0]),
 		.out(direct_interc_46_out[0]));
 
 	direct_interc direct_interc_47_ (
@@ -520,7 +520,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_47_out[0]));
 
 	direct_interc direct_interc_48_ (
-		.in(clb_I4[0]),
+		.in(clb_I4[2]),
 		.out(direct_interc_48_out[0]));
 
 	direct_interc direct_interc_49_ (
@@ -540,7 +540,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_52_out[0]));
 
 	direct_interc direct_interc_53_ (
-		.in(clb_I5[2]),
+		.in(clb_I5[0]),
 		.out(direct_interc_53_out[0]));
 
 	direct_interc direct_interc_54_ (
@@ -548,7 +548,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_54_out[0]));
 
 	direct_interc direct_interc_55_ (
-		.in(clb_I5[0]),
+		.in(clb_I5[2]),
 		.out(direct_interc_55_out[0]));
 
 	direct_interc direct_interc_56_ (
@@ -568,7 +568,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_59_out[0]));
 
 	direct_interc direct_interc_60_ (
-		.in(clb_I6[2]),
+		.in(clb_I6[0]),
 		.out(direct_interc_60_out[0]));
 
 	direct_interc direct_interc_61_ (
@@ -576,7 +576,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_61_out[0]));
 
 	direct_interc direct_interc_62_ (
-		.in(clb_I6[0]),
+		.in(clb_I6[2]),
 		.out(direct_interc_62_out[0]));
 
 	direct_interc direct_interc_63_ (
@@ -596,7 +596,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_66_out[0]));
 
 	direct_interc direct_interc_67_ (
-		.in(clb_I7[2]),
+		.in(clb_I7[0]),
 		.out(direct_interc_67_out[0]));
 
 	direct_interc direct_interc_68_ (
@@ -604,7 +604,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 		.out(direct_interc_68_out[0]));
 
 	direct_interc direct_interc_69_ (
-		.in(clb_I7[0]),
+		.in(clb_I7[2]),
 		.out(direct_interc_69_out[0]));
 
 	direct_interc direct_interc_70_ (
