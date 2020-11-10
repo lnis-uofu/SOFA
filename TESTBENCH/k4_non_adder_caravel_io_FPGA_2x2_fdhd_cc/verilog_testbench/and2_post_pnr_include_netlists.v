@@ -22,7 +22,7 @@
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/or2/sky130_fd_sc_hd__or2_1.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/mux2/sky130_fd_sc_hd__mux2_1.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/sdfxtp/sky130_fd_sc_hd__sdfxtp_1.v"
-`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/dfxbp/sky130_fd_sc_hd__dfxbp_1.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/dfxtp/sky130_fd_sc_hd__dfxtp_1.v"
 
 // Cells added due to their use in PnR
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/or2/sky130_fd_sc_hd__or2_0.v"
@@ -42,6 +42,7 @@
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/bufinv/sky130_fd_sc_hd__bufinv_8.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/clkinvlp/sky130_fd_sc_hd__clkinvlp_2.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/clkinv/sky130_fd_sc_hd__clkinv_2.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/clkinv/sky130_fd_sc_hd__clkinv_8.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/clkinvlp/sky130_fd_sc_hd__clkinvlp_4.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/clkinv/sky130_fd_sc_hd__clkinv_4.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/inv/sky130_fd_sc_hd__inv_4.v"
