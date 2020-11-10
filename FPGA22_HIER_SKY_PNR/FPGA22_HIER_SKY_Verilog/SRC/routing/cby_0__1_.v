@@ -17,8 +17,8 @@ module cby_0__1_
   output [0:0] right_width_0_height_0__pin_1_upper;
   output [0:0] right_width_0_height_0__pin_1_lower;
 
+  wire [0:3] mux_right_ipin_0_undriven_sram_inv;
   wire [0:3] mux_tree_tapbuf_size10_0_sram;
-  wire [0:3] mux_tree_tapbuf_size10_0_sram_inv;
   wire ccff_tail_mid;
   assign chany_top_out[0] = chany_bottom_in[0];
   assign chany_top_out[1] = chany_bottom_in[1];
@@ -67,7 +67,7 @@ module cby_0__1_
   (
     .in({ chany_bottom_in[0], chany_top_in[0], chany_bottom_in[2], chany_top_in[2], chany_bottom_in[4], chany_top_in[4], chany_bottom_in[10], chany_top_in[10], chany_bottom_in[16], chany_top_in[16] }),
     .sram(mux_tree_tapbuf_size10_0_sram[0:3]),
-    .sram_inv(mux_tree_tapbuf_size10_0_sram_inv[0:3]),
+    .sram_inv(mux_right_ipin_0_undriven_sram_inv[0:3]),
     .out(left_grid_pin_0_[0])
   );
 
@@ -78,8 +78,7 @@ module cby_0__1_
     .prog_clk(prog_clk[0]),
     .ccff_head(ccff_head[0]),
     .ccff_tail(ccff_tail_mid),
-    .mem_out(mux_tree_tapbuf_size10_0_sram[0:3]),
-    .mem_outb(mux_tree_tapbuf_size10_0_sram_inv[0:3])
+    .mem_out(mux_tree_tapbuf_size10_0_sram[0:3])
   );
 
 
