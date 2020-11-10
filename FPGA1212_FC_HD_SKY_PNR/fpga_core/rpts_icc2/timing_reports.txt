@@ -6,7 +6,7 @@ Report : clock timing
         -setup
 Design : fpga_core
 Version: P-2019.03-SP4
-Date   : Wed Oct 28 12:14:45 2020
+Date   : Tue Nov 10 15:05:17 2020
 ****************************************
 Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
 
@@ -16,7 +16,7 @@ Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysi
                                                  --- Latency ---
   Clock Pin                             Trans   Source   Offset  Network    Total            Corner
 ---------------------------------------------------------------------------------------------------
-  grid_clb_3__8_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_7/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfxbp_1_0_/CLK    1.419    0.000       --    4.601    4.601 rp-+  nominal
+  grid_clb_12__12_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfxtp_1_0_/CLK    0.163    0.000       --   10.447   10.447 rp-+  nominal
 ---------------------------------------------------------------------------------------------------
 
   Mode: full_chip
@@ -25,7 +25,7 @@ Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysi
                                                  --- Latency ---
   Clock Pin                             Trans   Source   Offset  Network    Total            Corner
 ---------------------------------------------------------------------------------------------------
-  sb_4__3_/mem_left_track_17/sky130_fd_sc_hd__dfxbp_1_2_/CLK    1.246    0.000       --    5.502    5.502 rp-+  nominal
+  grid_clb_7__3_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_4/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0/frac_lut4_sky130_fd_sc_hd__dfxtp_1_mem/sky130_fd_sc_hd__dfxtp_1_5_/CLK    3.474    0.000       --   20.370   20.370 rp-+  nominal
 ---------------------------------------------------------------------------------------------------
 ****************************************
 Report : clock timing
@@ -34,7 +34,7 @@ Report : clock timing
         -setup
 Design : fpga_core
 Version: P-2019.03-SP4
-Date   : Wed Oct 28 12:14:45 2020
+Date   : Tue Nov 10 15:05:17 2020
 ****************************************
 Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
 
@@ -43,8 +43,8 @@ Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysi
 
   Clock Pin                                 Latency      CRP      Skew             Corner
 ---------------------------------------------------------------------------------------------------
-  grid_clb_3__11_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_7/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfxbp_1_0_/CLK    4.526 rp-+  nominal
-  grid_clb_3__10_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/sky130_fd_sc_hd__sdfxbp_1_0_/CLK    3.089    0.000    1.437 rp-+  nominal
+  grid_clb_11__2_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_7/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfxtp_1_0_/CLK    6.690 rp-+  nominal
+  grid_clb_11__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/sky130_fd_sc_hd__sdfxtp_1_0_/CLK    6.103    0.000    0.587 rp-+  nominal
 
 ---------------------------------------------------------------------------------------------------
 
@@ -53,8 +53,8 @@ Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysi
 
   Clock Pin                                 Latency      CRP      Skew             Corner
 ---------------------------------------------------------------------------------------------------
-  sb_7__12_/mem_left_track_33/sky130_fd_sc_hd__dfxbp_1_2_/CLK    5.258    rp-+    nominal
-  cbx_7__12_/mem_bottom_ipin_0/sky130_fd_sc_hd__dfxbp_1_0_/CLK    4.164    0.000    1.094 rp-+  nominal
+  grid_clb_8__2_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_7/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/mem_ff_0_D_0/sky130_fd_sc_hd__dfxtp_1_1_/CLK   20.083 rp-+  nominal
+  cby_8__2_/mem_right_ipin_0/sky130_fd_sc_hd__dfxtp_1_0_/CLK   12.590    0.000    7.494 rp-+  nominal
 
 ---------------------------------------------------------------------------------------------------
 Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
@@ -63,13 +63,19 @@ Report : global timing
         -format { narrow }
 Design : fpga_core
 Version: P-2019.03-SP4
-Date   : Wed Oct 28 12:14:45 2020
+Date   : Tue Nov 10 15:05:17 2020
 ****************************************
 
 No setup violations found.
 
 
-No hold violations found.
-
+Hold violations
+--------------------------------------------------------------
+          Total   reg->reg    in->reg   reg->out    in->out
+--------------------------------------------------------------
+WNS      -1.747     -1.747      0.000      0.000      0.000
+TNS     -26.299    -26.299      0.000      0.000      0.000
+NUM          21         21          0          0          0
+--------------------------------------------------------------
 
 1

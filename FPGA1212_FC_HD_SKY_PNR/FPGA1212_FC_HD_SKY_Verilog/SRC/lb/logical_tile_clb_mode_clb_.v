@@ -14,20 +14,28 @@ module logical_tile_clb_mode_clb_(prog_clk,
                                   Test_en,
                                   clk,
                                   clb_I0,
+                                  clb_I0i,
                                   clb_I1,
+                                  clb_I1i,
                                   clb_I2,
+                                  clb_I2i,
                                   clb_I3,
+                                  clb_I3i,
                                   clb_I4,
+                                  clb_I4i,
                                   clb_I5,
+                                  clb_I5i,
                                   clb_I6,
+                                  clb_I6i,
                                   clb_I7,
+                                  clb_I7i,
                                   clb_regin,
-                                  clb_scin,
+                                  clb_sc_in,
                                   clb_clk,
                                   ccff_head,
                                   clb_O,
                                   clb_regout,
-                                  clb_scout,
+                                  clb_sc_out,
                                   ccff_tail);
 //
 input [0:0] prog_clk;
@@ -36,25 +44,41 @@ input [0:0] Test_en;
 //
 input [0:0] clk;
 //
-input [0:3] clb_I0;
+input [0:2] clb_I0;
 //
-input [0:3] clb_I1;
+input [0:0] clb_I0i;
 //
-input [0:3] clb_I2;
+input [0:2] clb_I1;
 //
-input [0:3] clb_I3;
+input [0:0] clb_I1i;
 //
-input [0:3] clb_I4;
+input [0:2] clb_I2;
 //
-input [0:3] clb_I5;
+input [0:0] clb_I2i;
 //
-input [0:3] clb_I6;
+input [0:2] clb_I3;
 //
-input [0:3] clb_I7;
+input [0:0] clb_I3i;
+//
+input [0:2] clb_I4;
+//
+input [0:0] clb_I4i;
+//
+input [0:2] clb_I5;
+//
+input [0:0] clb_I5i;
+//
+input [0:2] clb_I6;
+//
+input [0:0] clb_I6i;
+//
+input [0:2] clb_I7;
+//
+input [0:0] clb_I7i;
 //
 input [0:0] clb_regin;
 //
-input [0:0] clb_scin;
+input [0:0] clb_sc_in;
 //
 input [0:0] clb_clk;
 //
@@ -64,25 +88,33 @@ output [0:15] clb_O;
 //
 output [0:0] clb_regout;
 //
-output [0:0] clb_scout;
+output [0:0] clb_sc_out;
 //
 output [0:0] ccff_tail;
 
 //
-wire [0:3] clb_I0;
-wire [0:3] clb_I1;
-wire [0:3] clb_I2;
-wire [0:3] clb_I3;
-wire [0:3] clb_I4;
-wire [0:3] clb_I5;
-wire [0:3] clb_I6;
-wire [0:3] clb_I7;
+wire [0:2] clb_I0;
+wire [0:0] clb_I0i;
+wire [0:2] clb_I1;
+wire [0:0] clb_I1i;
+wire [0:2] clb_I2;
+wire [0:0] clb_I2i;
+wire [0:2] clb_I3;
+wire [0:0] clb_I3i;
+wire [0:2] clb_I4;
+wire [0:0] clb_I4i;
+wire [0:2] clb_I5;
+wire [0:0] clb_I5i;
+wire [0:2] clb_I6;
+wire [0:0] clb_I6i;
+wire [0:2] clb_I7;
+wire [0:0] clb_I7i;
 wire [0:0] clb_regin;
-wire [0:0] clb_scin;
+wire [0:0] clb_sc_in;
 wire [0:0] clb_clk;
 wire [0:15] clb_O;
 wire [0:0] clb_regout;
-wire [0:0] clb_scout;
+wire [0:0] clb_sc_out;
 //
 
 
@@ -149,34 +181,34 @@ wire [0:0] direct_interc_73_out;
 wire [0:0] logical_tile_clb_mode_default__fle_0_ccff_tail;
 wire [0:1] logical_tile_clb_mode_default__fle_0_fle_out;
 wire [0:0] logical_tile_clb_mode_default__fle_0_fle_regout;
-wire [0:0] logical_tile_clb_mode_default__fle_0_fle_scout;
+wire [0:0] logical_tile_clb_mode_default__fle_0_fle_sc_out;
 wire [0:0] logical_tile_clb_mode_default__fle_1_ccff_tail;
 wire [0:1] logical_tile_clb_mode_default__fle_1_fle_out;
 wire [0:0] logical_tile_clb_mode_default__fle_1_fle_regout;
-wire [0:0] logical_tile_clb_mode_default__fle_1_fle_scout;
+wire [0:0] logical_tile_clb_mode_default__fle_1_fle_sc_out;
 wire [0:0] logical_tile_clb_mode_default__fle_2_ccff_tail;
 wire [0:1] logical_tile_clb_mode_default__fle_2_fle_out;
 wire [0:0] logical_tile_clb_mode_default__fle_2_fle_regout;
-wire [0:0] logical_tile_clb_mode_default__fle_2_fle_scout;
+wire [0:0] logical_tile_clb_mode_default__fle_2_fle_sc_out;
 wire [0:0] logical_tile_clb_mode_default__fle_3_ccff_tail;
 wire [0:1] logical_tile_clb_mode_default__fle_3_fle_out;
 wire [0:0] logical_tile_clb_mode_default__fle_3_fle_regout;
-wire [0:0] logical_tile_clb_mode_default__fle_3_fle_scout;
+wire [0:0] logical_tile_clb_mode_default__fle_3_fle_sc_out;
 wire [0:0] logical_tile_clb_mode_default__fle_4_ccff_tail;
 wire [0:1] logical_tile_clb_mode_default__fle_4_fle_out;
 wire [0:0] logical_tile_clb_mode_default__fle_4_fle_regout;
-wire [0:0] logical_tile_clb_mode_default__fle_4_fle_scout;
+wire [0:0] logical_tile_clb_mode_default__fle_4_fle_sc_out;
 wire [0:0] logical_tile_clb_mode_default__fle_5_ccff_tail;
 wire [0:1] logical_tile_clb_mode_default__fle_5_fle_out;
 wire [0:0] logical_tile_clb_mode_default__fle_5_fle_regout;
-wire [0:0] logical_tile_clb_mode_default__fle_5_fle_scout;
+wire [0:0] logical_tile_clb_mode_default__fle_5_fle_sc_out;
 wire [0:0] logical_tile_clb_mode_default__fle_6_ccff_tail;
 wire [0:1] logical_tile_clb_mode_default__fle_6_fle_out;
 wire [0:0] logical_tile_clb_mode_default__fle_6_fle_regout;
-wire [0:0] logical_tile_clb_mode_default__fle_6_fle_scout;
+wire [0:0] logical_tile_clb_mode_default__fle_6_fle_sc_out;
 wire [0:1] logical_tile_clb_mode_default__fle_7_fle_out;
 wire [0:0] logical_tile_clb_mode_default__fle_7_fle_regout;
-wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
+wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 
 //
 //
@@ -189,12 +221,12 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.clk(clk[0]),
 		.fle_in({direct_interc_18_out[0], direct_interc_19_out[0], direct_interc_20_out[0], direct_interc_21_out[0]}),
 		.fle_regin(direct_interc_22_out[0]),
-		.fle_scin(direct_interc_23_out[0]),
+		.fle_sc_in(direct_interc_23_out[0]),
 		.fle_clk(direct_interc_24_out[0]),
 		.ccff_head(ccff_head[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_0_fle_out[0:1]),
 		.fle_regout(logical_tile_clb_mode_default__fle_0_fle_regout[0]),
-		.fle_scout(logical_tile_clb_mode_default__fle_0_fle_scout[0]),
+		.fle_sc_out(logical_tile_clb_mode_default__fle_0_fle_sc_out[0]),
 		.ccff_tail(logical_tile_clb_mode_default__fle_0_ccff_tail[0]));
 
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_1 (
@@ -203,12 +235,12 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.clk(clk[0]),
 		.fle_in({direct_interc_25_out[0], direct_interc_26_out[0], direct_interc_27_out[0], direct_interc_28_out[0]}),
 		.fle_regin(direct_interc_29_out[0]),
-		.fle_scin(direct_interc_30_out[0]),
+		.fle_sc_in(direct_interc_30_out[0]),
 		.fle_clk(direct_interc_31_out[0]),
 		.ccff_head(logical_tile_clb_mode_default__fle_0_ccff_tail[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_1_fle_out[0:1]),
 		.fle_regout(logical_tile_clb_mode_default__fle_1_fle_regout[0]),
-		.fle_scout(logical_tile_clb_mode_default__fle_1_fle_scout[0]),
+		.fle_sc_out(logical_tile_clb_mode_default__fle_1_fle_sc_out[0]),
 		.ccff_tail(logical_tile_clb_mode_default__fle_1_ccff_tail[0]));
 
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_2 (
@@ -217,12 +249,12 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.clk(clk[0]),
 		.fle_in({direct_interc_32_out[0], direct_interc_33_out[0], direct_interc_34_out[0], direct_interc_35_out[0]}),
 		.fle_regin(direct_interc_36_out[0]),
-		.fle_scin(direct_interc_37_out[0]),
+		.fle_sc_in(direct_interc_37_out[0]),
 		.fle_clk(direct_interc_38_out[0]),
 		.ccff_head(logical_tile_clb_mode_default__fle_1_ccff_tail[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_2_fle_out[0:1]),
 		.fle_regout(logical_tile_clb_mode_default__fle_2_fle_regout[0]),
-		.fle_scout(logical_tile_clb_mode_default__fle_2_fle_scout[0]),
+		.fle_sc_out(logical_tile_clb_mode_default__fle_2_fle_sc_out[0]),
 		.ccff_tail(logical_tile_clb_mode_default__fle_2_ccff_tail[0]));
 
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_3 (
@@ -231,12 +263,12 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.clk(clk[0]),
 		.fle_in({direct_interc_39_out[0], direct_interc_40_out[0], direct_interc_41_out[0], direct_interc_42_out[0]}),
 		.fle_regin(direct_interc_43_out[0]),
-		.fle_scin(direct_interc_44_out[0]),
+		.fle_sc_in(direct_interc_44_out[0]),
 		.fle_clk(direct_interc_45_out[0]),
 		.ccff_head(logical_tile_clb_mode_default__fle_2_ccff_tail[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_3_fle_out[0:1]),
 		.fle_regout(logical_tile_clb_mode_default__fle_3_fle_regout[0]),
-		.fle_scout(logical_tile_clb_mode_default__fle_3_fle_scout[0]),
+		.fle_sc_out(logical_tile_clb_mode_default__fle_3_fle_sc_out[0]),
 		.ccff_tail(logical_tile_clb_mode_default__fle_3_ccff_tail[0]));
 
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_4 (
@@ -245,12 +277,12 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.clk(clk[0]),
 		.fle_in({direct_interc_46_out[0], direct_interc_47_out[0], direct_interc_48_out[0], direct_interc_49_out[0]}),
 		.fle_regin(direct_interc_50_out[0]),
-		.fle_scin(direct_interc_51_out[0]),
+		.fle_sc_in(direct_interc_51_out[0]),
 		.fle_clk(direct_interc_52_out[0]),
 		.ccff_head(logical_tile_clb_mode_default__fle_3_ccff_tail[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_4_fle_out[0:1]),
 		.fle_regout(logical_tile_clb_mode_default__fle_4_fle_regout[0]),
-		.fle_scout(logical_tile_clb_mode_default__fle_4_fle_scout[0]),
+		.fle_sc_out(logical_tile_clb_mode_default__fle_4_fle_sc_out[0]),
 		.ccff_tail(logical_tile_clb_mode_default__fle_4_ccff_tail[0]));
 
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_5 (
@@ -259,12 +291,12 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.clk(clk[0]),
 		.fle_in({direct_interc_53_out[0], direct_interc_54_out[0], direct_interc_55_out[0], direct_interc_56_out[0]}),
 		.fle_regin(direct_interc_57_out[0]),
-		.fle_scin(direct_interc_58_out[0]),
+		.fle_sc_in(direct_interc_58_out[0]),
 		.fle_clk(direct_interc_59_out[0]),
 		.ccff_head(logical_tile_clb_mode_default__fle_4_ccff_tail[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_5_fle_out[0:1]),
 		.fle_regout(logical_tile_clb_mode_default__fle_5_fle_regout[0]),
-		.fle_scout(logical_tile_clb_mode_default__fle_5_fle_scout[0]),
+		.fle_sc_out(logical_tile_clb_mode_default__fle_5_fle_sc_out[0]),
 		.ccff_tail(logical_tile_clb_mode_default__fle_5_ccff_tail[0]));
 
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_6 (
@@ -273,12 +305,12 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.clk(clk[0]),
 		.fle_in({direct_interc_60_out[0], direct_interc_61_out[0], direct_interc_62_out[0], direct_interc_63_out[0]}),
 		.fle_regin(direct_interc_64_out[0]),
-		.fle_scin(direct_interc_65_out[0]),
+		.fle_sc_in(direct_interc_65_out[0]),
 		.fle_clk(direct_interc_66_out[0]),
 		.ccff_head(logical_tile_clb_mode_default__fle_5_ccff_tail[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_6_fle_out[0:1]),
 		.fle_regout(logical_tile_clb_mode_default__fle_6_fle_regout[0]),
-		.fle_scout(logical_tile_clb_mode_default__fle_6_fle_scout[0]),
+		.fle_sc_out(logical_tile_clb_mode_default__fle_6_fle_sc_out[0]),
 		.ccff_tail(logical_tile_clb_mode_default__fle_6_ccff_tail[0]));
 
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_7 (
@@ -287,12 +319,12 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.clk(clk[0]),
 		.fle_in({direct_interc_67_out[0], direct_interc_68_out[0], direct_interc_69_out[0], direct_interc_70_out[0]}),
 		.fle_regin(direct_interc_71_out[0]),
-		.fle_scin(direct_interc_72_out[0]),
+		.fle_sc_in(direct_interc_72_out[0]),
 		.fle_clk(direct_interc_73_out[0]),
 		.ccff_head(logical_tile_clb_mode_default__fle_6_ccff_tail[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_7_fle_out[0:1]),
 		.fle_regout(logical_tile_clb_mode_default__fle_7_fle_regout[0]),
-		.fle_scout(logical_tile_clb_mode_default__fle_7_fle_scout[0]),
+		.fle_sc_out(logical_tile_clb_mode_default__fle_7_fle_sc_out[0]),
 		.ccff_tail(ccff_tail[0]));
 
 	direct_interc direct_interc_0_ (
@@ -364,8 +396,8 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(clb_regout[0]));
 
 	direct_interc direct_interc_17_ (
-		.in(logical_tile_clb_mode_default__fle_7_fle_scout[0]),
-		.out(clb_scout[0]));
+		.in(logical_tile_clb_mode_default__fle_7_fle_sc_out[0]),
+		.out(clb_sc_out[0]));
 
 	direct_interc direct_interc_18_ (
 		.in(clb_I0[0]),
@@ -380,7 +412,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_20_out[0]));
 
 	direct_interc direct_interc_21_ (
-		.in(clb_I0[3]),
+		.in(clb_I0i[0]),
 		.out(direct_interc_21_out[0]));
 
 	direct_interc direct_interc_22_ (
@@ -388,7 +420,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_22_out[0]));
 
 	direct_interc direct_interc_23_ (
-		.in(clb_scin[0]),
+		.in(clb_sc_in[0]),
 		.out(direct_interc_23_out[0]));
 
 	direct_interc direct_interc_24_ (
@@ -408,7 +440,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_27_out[0]));
 
 	direct_interc direct_interc_28_ (
-		.in(clb_I1[3]),
+		.in(clb_I1i[0]),
 		.out(direct_interc_28_out[0]));
 
 	direct_interc direct_interc_29_ (
@@ -416,7 +448,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_29_out[0]));
 
 	direct_interc direct_interc_30_ (
-		.in(logical_tile_clb_mode_default__fle_0_fle_scout[0]),
+		.in(logical_tile_clb_mode_default__fle_0_fle_sc_out[0]),
 		.out(direct_interc_30_out[0]));
 
 	direct_interc direct_interc_31_ (
@@ -436,7 +468,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_34_out[0]));
 
 	direct_interc direct_interc_35_ (
-		.in(clb_I2[3]),
+		.in(clb_I2i[0]),
 		.out(direct_interc_35_out[0]));
 
 	direct_interc direct_interc_36_ (
@@ -444,7 +476,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_36_out[0]));
 
 	direct_interc direct_interc_37_ (
-		.in(logical_tile_clb_mode_default__fle_1_fle_scout[0]),
+		.in(logical_tile_clb_mode_default__fle_1_fle_sc_out[0]),
 		.out(direct_interc_37_out[0]));
 
 	direct_interc direct_interc_38_ (
@@ -464,7 +496,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_41_out[0]));
 
 	direct_interc direct_interc_42_ (
-		.in(clb_I3[3]),
+		.in(clb_I3i[0]),
 		.out(direct_interc_42_out[0]));
 
 	direct_interc direct_interc_43_ (
@@ -472,7 +504,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_43_out[0]));
 
 	direct_interc direct_interc_44_ (
-		.in(logical_tile_clb_mode_default__fle_2_fle_scout[0]),
+		.in(logical_tile_clb_mode_default__fle_2_fle_sc_out[0]),
 		.out(direct_interc_44_out[0]));
 
 	direct_interc direct_interc_45_ (
@@ -492,7 +524,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_48_out[0]));
 
 	direct_interc direct_interc_49_ (
-		.in(clb_I4[3]),
+		.in(clb_I4i[0]),
 		.out(direct_interc_49_out[0]));
 
 	direct_interc direct_interc_50_ (
@@ -500,7 +532,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_50_out[0]));
 
 	direct_interc direct_interc_51_ (
-		.in(logical_tile_clb_mode_default__fle_3_fle_scout[0]),
+		.in(logical_tile_clb_mode_default__fle_3_fle_sc_out[0]),
 		.out(direct_interc_51_out[0]));
 
 	direct_interc direct_interc_52_ (
@@ -520,7 +552,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_55_out[0]));
 
 	direct_interc direct_interc_56_ (
-		.in(clb_I5[3]),
+		.in(clb_I5i[0]),
 		.out(direct_interc_56_out[0]));
 
 	direct_interc direct_interc_57_ (
@@ -528,7 +560,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_57_out[0]));
 
 	direct_interc direct_interc_58_ (
-		.in(logical_tile_clb_mode_default__fle_4_fle_scout[0]),
+		.in(logical_tile_clb_mode_default__fle_4_fle_sc_out[0]),
 		.out(direct_interc_58_out[0]));
 
 	direct_interc direct_interc_59_ (
@@ -548,7 +580,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_62_out[0]));
 
 	direct_interc direct_interc_63_ (
-		.in(clb_I6[3]),
+		.in(clb_I6i[0]),
 		.out(direct_interc_63_out[0]));
 
 	direct_interc direct_interc_64_ (
@@ -556,7 +588,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_64_out[0]));
 
 	direct_interc direct_interc_65_ (
-		.in(logical_tile_clb_mode_default__fle_5_fle_scout[0]),
+		.in(logical_tile_clb_mode_default__fle_5_fle_sc_out[0]),
 		.out(direct_interc_65_out[0]));
 
 	direct_interc direct_interc_66_ (
@@ -576,7 +608,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_69_out[0]));
 
 	direct_interc direct_interc_70_ (
-		.in(clb_I7[3]),
+		.in(clb_I7i[0]),
 		.out(direct_interc_70_out[0]));
 
 	direct_interc direct_interc_71_ (
@@ -584,7 +616,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_scout;
 		.out(direct_interc_71_out[0]));
 
 	direct_interc direct_interc_72_ (
-		.in(logical_tile_clb_mode_default__fle_6_fle_scout[0]),
+		.in(logical_tile_clb_mode_default__fle_6_fle_sc_out[0]),
 		.out(direct_interc_72_out[0]));
 
 	direct_interc direct_interc_73_ (
