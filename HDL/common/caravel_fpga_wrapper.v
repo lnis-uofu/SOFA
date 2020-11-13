@@ -57,6 +57,9 @@ module caravel_fpga_wrapper (
     wire sc_head;
     wire sc_tail;
 
+    // Switch between wishbone and logic analyzer
+    wire wb_la_switch;
+
     // Wire-bond TOP side I/O of FPGA to LEFT-side of Caravel interface
     assign gfpga_pad_EMBEDDED_IO_SOC_IN[0] = io_in[24];
     assign io_out[24] = gfpga_pad_EMBEDDED_IO_SOC_OUT[0];
@@ -88,7 +91,7 @@ module caravel_fpga_wrapper (
     assign io_out[0] = 1'b0;
     assign io_oeb[0] = 1'b1;
 
-    // Wire-bond RIGHT side I/O of FPGA to BOTTOm-side of Caravel interface
+    // Wire-bond RIGHT side I/O of FPGA to BOTTOM-side of Caravel interface
     assign gfpga_pad_EMBEDDED_IO_SOC_IN[22:23] = la_data_in[0:1];
     assign la_data_in[0:1] = gfpga_pad_EMBEDDED_IO_SOC_OUT[22:23];
     assign la_data_in[0:1] = gfpga_pad_EMBEDDED_IO_SOC_DIR[22:23];
@@ -99,9 +102,9 @@ module caravel_fpga_wrapper (
     assign la_data_in[2:73] = gfpga_pad_EMBEDDED_IO_SOC_DIR[24:95];
 
     // Wire-bond LEFT side I/O of FPGA to BOTTOM-side of Caravel interface
-    assign gfpga_pad_EMBEDDED_IO_SOC_IN[96:98] = la_data_in[74:76];
-    assign la_data_in[74:76] = gfpga_pad_EMBEDDED_IO_SOC_OUT[96:98];
-    assign la_data_in[74:76] = gfpga_pad_EMBEDDED_IO_SOC_DIR[96:98];
+    assign gfpga_pad_EMBEDDED_IO_SOC_IN[96:99] = la_data_in[74:77];
+    assign la_data_in[74:77] = gfpga_pad_EMBEDDED_IO_SOC_OUT[96:99];
+    assign la_data_in[74:77] = gfpga_pad_EMBEDDED_IO_SOC_DIR[96:99];
 
     // Wire-bond LEFT side I/O of FPGA to LEFT-side of Caravel interface
     assign prog_clk = io_in[37];
@@ -115,11 +118,17 @@ module caravel_fpga_wrapper (
     assign io_out[35] = ccff_tail;
     assign io_oeb[35] = 1'b0;
 
-    assign gfpga_pad_EMBEDDED_IO_SOC_IN[99:107] = io_in[34:26];
-    assign io_out[34:26] = gfpga_pad_EMBEDDED_IO_SOC_OUT[99:107];
-    assign io_oeb[34:26] = gfpga_pad_EMBEDDED_IO_SOC_DIR[99:107];
+    assign gfpga_pad_EMBEDDED_IO_SOC_IN[100:107] = io_in[34:27];
+    assign io_out[34:27] = gfpga_pad_EMBEDDED_IO_SOC_OUT[100:107];
+    assign io_oeb[34:27] = gfpga_pad_EMBEDDED_IO_SOC_DIR[100:107];
 
-    assign sc_in = io_in[25];
+    assign sc_in = io_in[26];
+    assign io_out[26] = 1'b0;
+    assign io_oeb[26] = 1'b1;
+
+    // I/O[25] is reserved for a switch between wishbone interface 
+    // and logic analyzer
+    assign wb_la_switch = io_in[25];
     assign io_out[25] = 1'b0;
     assign io_oeb[25] = 1'b1;
 
