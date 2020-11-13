@@ -8,8 +8,9 @@ FPGA tape-outs using the open-source Skywater 130nm PDK and OpenFPGA
 git clone https://github.com/LNIS-Projects/skywater-openfpga.git
 python3 SCRIPT/repo_setup.py --openfpga_root_path ${OPENFPGA_PROJECT_DIRECTORY}
 ```
+---
 
-* If you have openfpga repository cloned in the level of this project, you can simple call
+* If you have openfpga repository cloned at the same level of this project, you can simple call
 ```bash
   python3 SCRIPT/repo_setup.py
 ``` 
@@ -30,6 +31,8 @@ Otherwise, you should provide full path for the --openfpga\root\_path
   - **SNPS\_ICC2**: workspace of Synopsys IC Compiler 2
                     Keep a README inside the folder about the ICC2 version and how-to-use.
   - **MSIM**: workspace of verification using Mentor ModelSim
+
+---
 
 * Note: 
   - Please **ONLY** place folders under this directory.
