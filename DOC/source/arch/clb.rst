@@ -6,7 +6,7 @@ Each Configurable Logic Block (CLB) consists of 8 logic elements as shown in :nu
 .. _fig_fle_arch:
 
 .. figure:: ./figures/fle_arch.png
-  :scale: 100%
+  :scale: 40%
   :alt: Logic element schematic
 
   Schematic of a logic element
