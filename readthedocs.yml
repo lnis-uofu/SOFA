@@ -1,0 +1,8 @@
+- name: en
+  base: DOC/
+  type: sphinx
+  formats:
+      html: true
+          pdf: true
+          python:
+              setup_install: true
