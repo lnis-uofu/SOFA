@@ -15,7 +15,7 @@ python3 SCRIPT/repo_setup.py --openfpga_root_path ${OPENFPGA_PROJECT_DIRECTORY}
   python3 SCRIPT/repo_setup.py
 ``` 
 
-Otherwise, you should provide full path for the --openfpga\root\_path
+Otherwise, you should provide full path using the option _--openfpga\_root\_path_ 
 
 ## Directory Organization
 
