@@ -32,8 +32,8 @@ except ImportError:
 
 # -- Project information -----------------------------------------------------
 
-project = u'OpenFPGA'
-copyright = u'2018, Xifan Tang'
+project = u'Skywater-OpenFPGA Chips'
+copyright = u'2020, Xifan Tang'
 author = u'Xifan Tang'
 
 # The short X.Y version
@@ -177,8 +177,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'OpenFPGA', u'OpenFPGA Documentation',
-     author, 'OpenFPGA', 'One line description of project.',
+    (master_doc, 'Skywater-OpenFPGA', u'Skywater-OpenFPGA Documentation',
+     author, 'Skywater-OpenFPGA', 'Open-source FPGA chips built with Skywater PDK and OpenFPGA.',
      'Miscellaneous'),
 ]
 
