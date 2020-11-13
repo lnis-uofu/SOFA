@@ -129,25 +129,25 @@
       <input name="I6i" num_pins="1" equivalent="none"/>
       <input name="I7" num_pins="3" equivalent="full"/>
       <input name="I7i" num_pins="1" equivalent="none"/>
-      <input name="regin" num_pins="1"/>
-      <input name="scin" num_pins="1"/>
+      <input name="reg_in" num_pins="1"/>
+      <input name="sc_in" num_pins="1"/>
       <output name="O" num_pins="16" equivalent="none"/>
-      <output name="regout" num_pins="1"/>
-      <output name="scout" num_pins="1"/>
+      <output name="reg_out" num_pins="1"/>
+      <output name="sc_out" num_pins="1"/>
       <clock name="clk" num_pins="1"/>
       <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
-        <fc_override port_name="regin" fc_type="frac" fc_val="0"/>
-        <fc_override port_name="regout" fc_type="frac" fc_val="0"/>
-        <fc_override port_name="scin" fc_type="frac" fc_val="0"/>
-        <fc_override port_name="scout" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="reg_in" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="reg_out" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="sc_in" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="sc_out" fc_type="frac" fc_val="0"/>
         <fc_override port_name="clk" fc_type="frac" fc_val="0"/>
       </fc>
       <!--pinlocations pattern="spread"/-->
       <pinlocations pattern="custom">
         <loc side="left">clb.clk</loc>
-        <loc side="top">clb.regin clb.scin clb.O[7:0] clb.I0 clb.I0i clb.I1 clb.I1i clb.I2 clb.I2i clb.I3 clb.I3i </loc>
+        <loc side="top">clb.reg_in clb.sc_in clb.O[7:0] clb.I0 clb.I0i clb.I1 clb.I1i clb.I2 clb.I2i clb.I3 clb.I3i </loc>
         <loc side="right">clb.O[15:8] clb.I4 clb.I4i clb.I5 clb.I5i clb.I6 clb.I6i clb.I7 clb.I7i</loc>
-        <loc side="bottom">clb.regout clb.scout</loc>
+        <loc side="bottom">clb.reg_out clb.sc_out</loc>
       </pinlocations>
     </tile>
   </tiles>
@@ -255,8 +255,7 @@
     </segment>
   </segmentlist>
   <directlist>
-    <direct name="shift_register" from_pin="clb.regout" to_pin="clb.regin" x_offset="0" y_offset="-1" z_offset="0"/>
-    <direct name="scan_chain" from_pin="clb.scout" to_pin="clb.scin" x_offset="0" y_offset="-1" z_offset="0"/>
+    <direct name="scan_chain" from_pin="clb.sc_out" to_pin="clb.sc_in" x_offset="0" y_offset="-1" z_offset="0"/>
   </directlist>
   <complexblocklist>
     <!-- Define input pads begin -->
@@ -336,11 +335,11 @@
       <input name="I6i" num_pins="1" equivalent="none"/>
       <input name="I7" num_pins="3" equivalent="full"/>
       <input name="I7i" num_pins="1" equivalent="none"/>
-      <input name="regin" num_pins="1"/>
-      <input name="scin" num_pins="1"/>
+      <input name="reg_in" num_pins="1"/>
+      <input name="sc_in" num_pins="1"/>
       <output name="O" num_pins="16" equivalent="none"/>
-      <output name="regout" num_pins="1"/>
-      <output name="scout" num_pins="1"/>
+      <output name="reg_out" num_pins="1"/>
+      <output name="sc_out" num_pins="1"/>
       <clock name="clk" num_pins="1"/>
       <!-- Describe fracturable logic element.  
              Each fracturable logic element has a 6-LUT that can alternatively operate as two 5-LUTs with shared inputs. 
@@ -348,21 +347,21 @@
         -->
       <pb_type name="fle" num_pb="8">
         <input name="in" num_pins="4"/>
-        <input name="regin" num_pins="1"/>
-        <input name="scin" num_pins="1"/>
+        <input name="reg_in" num_pins="1"/>
+        <input name="sc_in" num_pins="1"/>
         <output name="out" num_pins="2"/>
-        <output name="regout" num_pins="1"/>
-        <output name="scout" num_pins="1"/>
+        <output name="reg_out" num_pins="1"/>
+        <output name="sc_out" num_pins="1"/>
         <clock name="clk" num_pins="1"/>
         <!-- Physical mode definition begin (physical implementation of the fle) -->
         <mode name="physical" disabled_in_pack="true">
           <pb_type name="fabric" num_pb="1">
             <input name="in" num_pins="4"/>
-            <input name="regin" num_pins="1"/>
-            <input name="scin" num_pins="1"/>
+            <input name="reg_in" num_pins="1"/>
+            <input name="sc_in" num_pins="1"/>
             <output name="out" num_pins="2"/>
-            <output name="regout" num_pins="1"/>
-            <output name="scout" num_pins="1"/>
+            <output name="reg_out" num_pins="1"/>
+            <output name="sc_out" num_pins="1"/>
             <clock name="clk" num_pins="1"/>
             <pb_type name="frac_logic" num_pb="1">
               <input name="in" num_pins="4"/>
@@ -392,15 +391,15 @@
             </pb_type>         
             <interconnect>
               <direct name="direct1" input="fabric.in" output="frac_logic.in"/>
-              <direct name="direct2" input="fabric.scin" output="ff[0].DI"/>
+              <direct name="direct2" input="fabric.sc_in" output="ff[0].DI"/>
               <direct name="direct3" input="ff[0].Q" output="ff[1].DI"/>
-              <direct name="direct4" input="ff[1].Q" output="fabric.scout"/>
-              <direct name="direct5" input="ff[1].Q" output="fabric.regout"/>
+              <direct name="direct4" input="ff[1].Q" output="fabric.sc_out"/>
+              <direct name="direct5" input="ff[1].Q" output="fabric.reg_out"/>
               <direct name="direct6" input="frac_logic.out[1:1]" output="ff[1:1].D"/>
               <complete name="complete1" input="fabric.clk" output="ff[1:0].clk"/>
-              <mux name="mux1" input="frac_logic.out[0:0] fabric.regin" output="ff[0:0].D">
+              <mux name="mux1" input="frac_logic.out[0:0] fabric.reg_in" output="ff[0:0].D">
                 <delay_constant max="25e-12" in_port="frac_logic.out[0:0]" out_port="ff[0:0].D"/>
-                <delay_constant max="45e-12" in_port="fabric.regin" out_port="ff[0:0].D"/>
+                <delay_constant max="45e-12" in_port="fabric.reg_in" out_port="ff[0:0].D"/>
               </mux>
               <mux name="mux2" input="ff[0].Q frac_logic.out[0]" output="fabric.out[0]">
                 <!-- LUT to output is faster than FF to output on a Stratix IV -->
@@ -416,11 +415,11 @@
           </pb_type>
           <interconnect>
             <direct name="direct1" input="fle.in" output="fabric.in"/>
-            <direct name="direct3" input="fle.regin" output="fabric.regin"/>
-            <direct name="direct4" input="fle.scin" output="fabric.scin"/>
+            <direct name="direct3" input="fle.reg_in" output="fabric.reg_in"/>
+            <direct name="direct4" input="fle.sc_in" output="fabric.sc_in"/>
             <direct name="direct5" input="fabric.out" output="fle.out"/>
-            <direct name="direct7" input="fabric.regout" output="fle.regout"/>
-            <direct name="direct8" input="fabric.scout" output="fle.scout"/>
+            <direct name="direct7" input="fabric.reg_out" output="fle.reg_out"/>
+            <direct name="direct8" input="fabric.sc_out" output="fle.sc_out"/>
             <direct name="direct9" input="fle.clk" output="fabric.clk"/>
           </interconnect>
         </mode>
@@ -550,8 +549,8 @@
         <!-- Define shift register begin -->
         <mode name="shift_register">
           <pb_type name="shift_reg" num_pb="1">
-            <input name="regin" num_pins="1"/>
-            <output name="regout" num_pins="1"/>
+            <input name="reg_in" num_pins="1"/>
+            <output name="reg_out" num_pins="1"/>
             <clock name="clk" num_pins="1"/>
             <pb_type name="ff" blif_model=".latch" num_pb="2" class="flipflop">
               <input name="D" num_pins="1" port_class="D"/>
@@ -561,15 +560,15 @@
               <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
             </pb_type>
             <interconnect>
-              <direct name="direct1" input="shift_reg.regin" output="ff[0].D"/>
+              <direct name="direct1" input="shift_reg.reg_in" output="ff[0].D"/>
               <direct name="direct2" input="ff[0].Q" output="ff[1].D"/>
-              <direct name="direct3" input="ff[1].Q" output="shift_reg.regout"/>
+              <direct name="direct3" input="ff[1].Q" output="shift_reg.reg_out"/>
               <complete name="complete1" input="shift_reg.clk" output="ff.clk"/>
             </interconnect>
           </pb_type>
           <interconnect>
-            <direct name="direct1" input="fle.regin" output="shift_reg.regin"/>
-            <direct name="direct2" input="shift_reg.regout" output="fle.regout"/>
+            <direct name="direct1" input="fle.reg_in" output="shift_reg.reg_in"/>
+            <direct name="direct2" input="shift_reg.reg_out" output="fle.reg_out"/>
             <direct name="direct3" input="fle.clk" output="shift_reg.clk"/>
           </interconnect>
         </mode>
@@ -641,25 +640,25 @@
         <direct name="clbouts1" input="fle[3:0].out[0:1]" output="clb.O[7:0]"/>
         <direct name="clbouts2" input="fle[7:4].out[0:1]" output="clb.O[15:8]"/>
         <!-- Shift register chain links -->
-        <direct name="shift_register_in" input="clb.regin" output="fle[0:0].regin">
+        <direct name="shift_register_in" input="clb.reg_in" output="fle[0:0].reg_in">
           <!-- Put all inter-block carry chain delay on this one edge -->
-          <delay_constant max="0.16e-9" in_port="clb.regin" out_port="fle[0:0].regin"/>
-          <!--pack_pattern name="chain" in_port="clb.regin" out_port="fle[0:0].regin"/-->
+          <delay_constant max="0.16e-9" in_port="clb.reg_in" out_port="fle[0:0].reg_in"/>
+          <!--pack_pattern name="chain" in_port="clb.reg_in" out_port="fle[0:0].reg_in"/-->
         </direct>
-        <direct name="shift_register_out" input="fle[7:7].regout" output="clb.regout">
-          <!--pack_pattern name="chain" in_port="fle[7:7].regout" out_port="clb.regout"/-->
+        <direct name="shift_register_out" input="fle[7:7].reg_out" output="clb.reg_out">
+          <!--pack_pattern name="chain" in_port="fle[7:7].reg_out" out_port="clb.reg_out"/-->
         </direct>
-        <direct name="shift_register_link" input="fle[6:0].regout" output="fle[7:1].regin">
-          <!--pack_pattern name="chain" in_port="fle[6:0].regout" out_port="fle[7:1].regin"/-->
+        <direct name="shift_register_link" input="fle[6:0].reg_out" output="fle[7:1].reg_in">
+          <!--pack_pattern name="chain" in_port="fle[6:0].reg_out" out_port="fle[7:1].reg_in"/-->
         </direct>
         <!-- Scan chain links -->
-        <direct name="scan_chain_in" input="clb.scin" output="fle[0:0].scin">
+        <direct name="scan_chain_in" input="clb.sc_in" output="fle[0:0].sc_in">
           <!-- Put all inter-block carry chain delay on this one edge -->
-          <delay_constant max="0.16e-9" in_port="clb.scin" out_port="fle[0:0].scin"/>
+          <delay_constant max="0.16e-9" in_port="clb.sc_in" out_port="fle[0:0].sc_in"/>
         </direct>
-        <direct name="scan_chain_out" input="fle[7:7].scout" output="clb.scout">
+        <direct name="scan_chain_out" input="fle[7:7].sc_out" output="clb.sc_out">
         </direct>
-        <direct name="scan_chain_link" input="fle[6:0].scout" output="fle[7:1].scin">
+        <direct name="scan_chain_link" input="fle[6:0].sc_out" output="fle[7:1].sc_in">
         </direct>
       </interconnect>
       <!-- Every input pin is driven by 15% of the tracks in a channel, every output pin is driven by 10% of the tracks in a channel -->
