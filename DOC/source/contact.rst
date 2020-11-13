@@ -3,30 +3,20 @@
 Contacts
 ~~~~~~~~
 
-General Questions
+.. option:: General Questions
 
-Prof. Pierre-Emmanuel Gaillardon 
+  Prof. Pierre-Emmanuel Gaillardon 
+  
+  pierre-emmanuel.gaillardon@utah.edu
 
-pierre-emmanuel.gaillardon@utah.edu
+.. option:: Technical Questions about OpenFPGA
 
-Technical Questions about OpenFPGA
+  Prof. Xifan Tang
+  
+  xifan.tang@utah.edu
 
-Dr. Xifan Tang
+.. option:: Technical Questions about Physical Design
 
-xifan.tang@utah.edu
-
-Technical Questions about Backend
-
-Ganesh Gore
-
-ganesh.gore@utah.edu
-
-Edouard Giacomin
-
-edouard.giacomin@utah.edu
-
-Technical Questions about Verification and Signoff
-
-Aurelien Alacchi
-
-aurelien.alacchi@utah.edu
+  Ganesh Gore
+  
+  ganesh.gore@utah.edu
