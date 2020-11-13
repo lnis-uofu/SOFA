@@ -145,7 +145,7 @@
       <!--pinlocations pattern="spread"/-->
       <pinlocations pattern="custom">
         <loc side="left">clb.clk</loc>
-        <loc side="top">clb.reg_in clb.sc_in clb.O[7:0] clb.I0 clb.I0i clb.I1 clb.I1i clb.I2 clb.I2i clb.I3 clb.I3i </loc>
+        <loc side="top">clb.reg_in clb.sc_in clb.O[7:0] clb.I0 clb.I0i clb.I1 clb.I1i clb.I2 clb.I2i clb.I3 clb.I3i</loc>
         <loc side="right">clb.O[15:8] clb.I4 clb.I4i clb.I5 clb.I5i clb.I6 clb.I6i clb.I7 clb.I7i</loc>
         <loc side="bottom">clb.reg_out clb.sc_out</loc>
       </pinlocations>
@@ -255,6 +255,7 @@
     </segment>
   </segmentlist>
   <directlist>
+    <direct name="shift_register" from_pin="clb.reg_out" to_pin="clb.reg_in" x_offset="0" y_offset="-1" z_offset="0"/>
     <direct name="scan_chain" from_pin="clb.sc_out" to_pin="clb.sc_in" x_offset="0" y_offset="-1" z_offset="0"/>
   </directlist>
   <complexblocklist>
