@@ -1,7 +1,7 @@
 DC and AC Characteristics
 -------------------------
 
-FROG contains 196 I/O pins, whose details are summarized in the following tables.
+Each FPGA device contains 37 I/O pins, whose details are summarized in the following tables.
 
 I/O usage and port information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -11,23 +11,11 @@ I/O usage and port information
   +-----------+------------------------------------------------------------------------+-------------+
   | I/O Type  | Description                                                            | No. of Pins |
   +===========+========================================================================+=============+
-  | Data I/O  | Datapath I/Os of FPGA fabric                                           | 80          |
-  +-----------+------------------------------------------------------------------------+-------------+
-  | VDD_core  | VDD supply for FPGA core                                               | 28          |
-  +-----------+------------------------------------------------------------------------+-------------+
-  | VSS_core  | VSS supply for FPGA core                                               | 28          |
-  +-----------+------------------------------------------------------------------------+-------------+
-  | VDD_io    | VDD supply for FPGA I/Os                                               | 16          |
-  +-----------+------------------------------------------------------------------------+-------------+
-  | VSS_io    | VSS supply for FPGA I/Os                                               | 16          |
+  | Data I/O  | Datapath I/Os of FPGA fabric                                           | 30          |
   +-----------+------------------------------------------------------------------------+-------------+
   | Clk       | Operating clock of FPGA core                                           | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
-  | Reset     | Reset flip-flop contents to logic '0'                                  | 1           |
-  +-----------+------------------------------------------------------------------------+-------------+
   | ProgClk   | Clock used by configuration protocol to program FPGA fabric            | 1           |
-  +-----------+------------------------------------------------------------------------+-------------+
-  | ProgReset | Reset configurable memories to logic '0'                               | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
   | CCin      | Input of configuation protocol to load bitstream                       | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
@@ -39,9 +27,7 @@ I/O usage and port information
   +-----------+------------------------------------------------------------------------+-------------+
   | SCout     | Output of built-in scan-chain to read back flip-flops from FPGA fabric | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
-  | Spypad    | Spypads for debugging. See details in spypad section                   | 14          |
-  +-----------+------------------------------------------------------------------------+-------------+
-  | Total     |                                                                        | 191         |
+  | Total     |                                                                        | 37          |
   +-----------+------------------------------------------------------------------------+-------------+
 
 Recommended Operating Conditions
@@ -52,15 +38,15 @@ Recommended Operating Conditions
   +----------+------------------------------+------+------+-------+
   | Symbol   | Description                  | Min  | Max  | Units |
   +==========+==============================+======+======+=======+
-  | VDD_io   | Supply voltage for I/Os      | 1.26 | 2.34 | V     |
+  | VDD_io   | Supply voltage for I/Os      | TBD  | TBD  | V     |
   +----------+------------------------------+------+------+-------+
-  | VDD_core | Supply voltage for FPGA core | 0.56 | 1.04 | V     |
+  | VDD_core | Supply voltage for FPGA core | TBD  | TBD  | V     |
   +----------+------------------------------+------+------+-------+
-  | V_in     | Input voltage for other I/Os | 0.56 | 1.04 | V     |
+  | V_in     | Input voltage for other I/Os | TBD  | TBD  | V     |
   +----------+------------------------------+------+------+-------+
-  | I_in     | Maximum current through pins | N/A  | 4    | mA    |
+  | I_in     | Maximum current through pins | N/A  | TBD  | mA    |
   +----------+------------------------------+------+------+-------+
-  | f_max    | Maximum frequency of I/Os    | N/A  | 70   | MHz   |
+  | f_max    | Maximum frequency of I/Os    | N/A  | TBD  | MHz   |
   +----------+------------------------------+------+------+-------+
   
 Typical AC Characteristics
@@ -71,11 +57,11 @@ Typical AC Characteristics
   +-----------------+-------------------------------------------+------+------+-------+
   | Symbol          | Description                               | Min  | Max  | Units |
   +=================+===========================================+======+======+=======+
-  | V_in Overshoot  | Maximum allowed overshoot voltage for Vin | 2.34 | 2.34 | V     |
+  | V_in Overshoot  | Maximum allowed overshoot voltage for Vin | TBD  | TBD  | V     |
   +-----------------+-------------------------------------------+------+------+-------+
-  | V_in Undershoot | Minimum allowed overshoot voltage for Vin | 1.26 | 1.26 | V     |
+  | V_in Undershoot | Minimum allowed overshoot voltage for Vin | TBD  | TBD  | V     |
   +-----------------+-------------------------------------------+------+------+-------+
-  | I_VDD_core      | Quiescent VDD_core supply current         | 5000 | 5000 | mA    |
+  | I_VDD_core      | Quiescent VDD_core supply current         | TBD  | TBD  | mA    |
   +-----------------+-------------------------------------------+------+------+-------+
   | I_VDD_io        | Quiescent VDD_io supply current           | TBD  | TBD  | mA    |
   +-----------------+-------------------------------------------+------+------+-------+
