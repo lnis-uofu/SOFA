@@ -3,6 +3,6 @@
   type: sphinx
   formats:
       html: true
-          pdf: true
-          python:
-              setup_install: true
+      pdf: true
+  python:
+      setup_install: true
