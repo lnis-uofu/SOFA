@@ -1,5 +1,7 @@
-Device Overview
----------------
+.. _device_family:
+
+Overview
+--------
 
 All the FPGA devices in this project are fully open-source, from the architecture description to the physical design outputs, e.g., GDSII.
 All the devices are designed through the OpenFPGA framework and the Skywater 130nm PDK. 
@@ -25,7 +27,7 @@ We aims to empower embedded applications with its low-cost design approach but h
   +--------------------------+------------+
   | Max. Operating Speed     |   TBD      |
   +--------------------------+------------+
-  | User I/O Pins            |   30       |
+  | User I/O Pins            |   144      |
   +--------------------------+------------+
   | Max. I/O Speed           |   TBD      |
   +--------------------------+------------+

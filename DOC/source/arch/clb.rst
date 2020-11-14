@@ -1,5 +1,7 @@
-Configurable Logic Block User Guide
------------------------------------
+.. _clb:
+
+Configurable Logic Block
+------------------------
 
 Each Configurable Logic Block (CLB) consists of 8 logic elements as shown in :numref:`fig_fle_arch`.
 

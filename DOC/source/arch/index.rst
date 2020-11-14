@@ -4,4 +4,6 @@
 .. toctree::
    :maxdepth: 2
 
+   io_resource
+
    clb
