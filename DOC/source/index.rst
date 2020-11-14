@@ -3,13 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to FROG's documentation!
-====================================
+Welcome to SKywater-OpenFPGA documentation!
+===========================================
 
 .. toctree::
    :caption: Device
 
-   technical_highlights
+   device_family
 
    dc_ac_character
 
@@ -29,7 +29,9 @@ Welcome to FROG's documentation!
 
 For more information on the OpenFPGA see openfpga_doc_ or openfpga_github_
 
-For more information on the original FPGA architecture description language see xml_vtr_
+For more information on the VPR architecture description language see xml_vtr_
+
+For more information on the Skywater 130nm PDK see skywater_pdk_github_
 
 Indices and tables
 ==================
@@ -41,3 +43,4 @@ Indices and tables
 .. _openfpga_doc: https://docs.verilogtorouting.org/en/latest/
 .. _openfpga_github: https://github.com/verilog-to-routing/vtr-verilog-to-routing
 .. _xml_vtr: https://docs.verilogtorouting.org/en/latest/arch/reference/
+.. _skywater_pdk_github: https://github.com/google/skywater-pdk

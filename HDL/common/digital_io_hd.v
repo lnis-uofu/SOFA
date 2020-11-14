@@ -24,10 +24,7 @@ module GPIN (
   inout A, // External PAD signal
   output Y // Data input
 );
-  // Assume a 4x buf is enough to drive the global routing
-  sky130_fd_sc_hd__buf_4 in_buf (
-        .A	(A),
-        .X	(Y) );
+  assign Y = A;
 endmodule
 
 //-----------------------------------------------------
@@ -37,10 +34,7 @@ module GPOUT (
   inout Y, // External PAD signal
   input A // Data output
 );
-  // Assume a 4x buf is enough to drive the block outside FPGA
-  sky130_fd_sc_hd__buf_4 in_buf (
-        .A	(A),
-        .X	(Y) );
+  assign Y = A;
 endmodule
 
 //-----------------------------------------------------

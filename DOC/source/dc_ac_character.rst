@@ -1,7 +1,9 @@
+.. _dc_ac_character:
+
 DC and AC Characteristics
 -------------------------
 
-Each FPGA device contains 37 I/O pins, whose details are summarized in the following tables.
+Each FPGA device contains 37 external I/O pins, whose details are summarized in the following tables.
 
 I/O usage and port information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
