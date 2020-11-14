@@ -84,8 +84,8 @@
         <loc side="left">io_right.outpad io_right.inpad</loc>
       </pinlocations>
     </tile>
-    <!-- Bottom-side has 6 I/O per tile -->
-    <tile name="io_bottom" capacity="6" area="0">
+    <!-- Bottom-side has 9 I/O per tile -->
+    <tile name="io_bottom" capacity="9" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
