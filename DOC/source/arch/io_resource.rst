@@ -14,7 +14,7 @@ Among the 144 I/Os,
 
 - **30 external I/Os** are accessible through the Caravel SoC's *General-Purpose I/Os* (GPIOs).
 
-- **114 internal I/Os** are accessible through the Caravel SOC's logic analyzer and wishbone interfaces, which are controlled by the RISC-V processor. See :ref:`io_resoure_debug` and :ref:`io_resource_accelerator` for details. 
+- **114 internal I/Os** are accessible through the Caravel SOC's logic analyzer and wishbone interfaces, which are controlled by the RISC-V processor. See :ref:`io_resource_debug` and :ref:`io_resource_accelerator` for details. 
 
 .. note:: The connectivity of the 114 internal I/Os can be switched through a GPIO of Caravel SoC. As a result, the FPGA can operate in different modes. 
 
