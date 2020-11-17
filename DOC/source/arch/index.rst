@@ -6,4 +6,6 @@
 
    io_resource
 
-   clb
+   fpga_arch
+
+   clb_arch
