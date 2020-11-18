@@ -61,10 +61,10 @@
 `include "/research/ece/lnis/USERS/DARPA_ERI/Tapeout/Nov2020_Skywater/FPGA1212_FLAT_HD_SKY_PNR/fpga_core/fpga_core_icv_in_design.pt.v"
 
 `ifdef AUTOCHECKED_SIMULATION
-	`include "and2_output_verilog.v"
+	`include "and2_latch_output_verilog.v"
 `endif
 
 `ifdef AUTOCHECKED_SIMULATION
-	`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/k4_N8_caravel_io_FPGA_12x12_fdhd_cc/postpnr/verilog_testbench/and2_post_pnr_autocheck_top_tb.v"
+	`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/k4_N8_caravel_io_FPGA_12x12_fdhd_cc/postpnr/verilog_testbench/and2_latch_post_pnr_autocheck_top_tb.v"
 `endif
 
