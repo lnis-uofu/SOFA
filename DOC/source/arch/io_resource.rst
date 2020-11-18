@@ -57,6 +57,11 @@ When the logic analyzer interface is enabled, the FPGA can operate in debug mode
 
 .. note:: The logic analyzer is 128-bit, while 115 bits can drive or be driven by the FPGA I/O. The other 14 bits are connected to internal spots of the FPGA fabric, monitoring critical signal activities of the FPGA in debugging purpose.
 
+.. warning:: If the logic analyzer is not used, please configure both the management SoC and the FPGA as follows: 
+
+               - all the I/O directionality is set to input mode.
+               - all the output ports is pulled down to logic ``0``
+
 .. _fig_fpga_io_map_logic_analyzer_mode:
 
 .. figure:: ./figures/fpga_io_map_logic_analyzer_mode.png
