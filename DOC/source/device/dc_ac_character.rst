@@ -37,19 +37,22 @@ Recommended Operating Conditions
 
 .. table:: Recommended Operating Conditions
 
-  +----------+------------------------------+------+------+-------+
-  | Symbol   | Description                  | Min  | Max  | Units |
-  +==========+==============================+======+======+=======+
-  | VDD_io   | Supply voltage for I/Os      | TBD  | TBD  | V     |
-  +----------+------------------------------+------+------+-------+
-  | VDD_core | Supply voltage for FPGA core | TBD  | TBD  | V     |
-  +----------+------------------------------+------+------+-------+
-  | V_in     | Input voltage for other I/Os | TBD  | TBD  | V     |
-  +----------+------------------------------+------+------+-------+
-  | I_in     | Maximum current through pins | N/A  | TBD  | mA    |
-  +----------+------------------------------+------+------+-------+
-  | f_max    | Maximum frequency of I/Os    | N/A  | TBD  | MHz   |
-  +----------+------------------------------+------+------+-------+
+  +----------+------------------------------+------+---------+------+-------+
+  | Symbol   | Description                  | Min  | Typical | Max  | Units |
+  +==========+==============================+======+=========+======+=======+
+  | VDD_io   | Supply voltage for I/Os      | 1.8  | 3.3     | 5.0  | V     |
+  +----------+------------------------------+------+---------+------+-------+
+  | VDD_core | Supply voltage for FPGA core | 1.62 | 1.8     | 1.98 | V     |
+  +----------+------------------------------+------+---------+------+-------+
+  | V_in     | Input voltage for other I/Os | TBD  | 3.3     | TBD  | V     |
+  +----------+------------------------------+------+---------+------+-------+
+  | I_in     | Maximum current through pins | N/A  | TBD     | TBD  | mA    |
+  +----------+------------------------------+------+---------+------+-------+
+  | f_max    | Maximum frequency of I/Os    | N/A  | TBD     | TBD  | MHz   |
+  +----------+------------------------------+------+---------+------+-------+
+
+.. note:: Threshold voltage of logic `1` for I/O (V_OH) is 0.8 * VDD_io. In other words, V_in should be at least 2.64V in order to be sensed as logic `1`
+.. note:: Threshold voltage of logic `0` for I/O (V_OH) is 0.4. In other words, V_in should not exceed 0.4V in order to be sensed as logic `0`.
   
 Typical AC Characteristics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
