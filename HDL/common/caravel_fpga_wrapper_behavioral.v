@@ -3,6 +3,11 @@
  *
  * A wrapper for the FPGA IP to fit the I/O interface of Caravel SoC
  *
+ * This wrapper is a behavioral modeling the FPGA I/O interface
+ * to the Caravel SoC
+ *
+ * It should be synthesized before sent for physical design implementation 
+ *
  *-------------------------------------------------------------
  */
 
@@ -48,36 +53,18 @@ module caravel_fpga_wrapper (
     // FPGA wires
     wire prog_clk;
     wire Test_en;
+    wire io_isol_n;
     wire clk;
-    wire [0:107] gfpga_pad_EMBEDDED_IO_SOC_IN;
-    wire [0:107] gfpga_pad_EMBEDDED_IO_SOC_OUT;
-    wire [0:107] gfpga_pad_EMBEDDED_IO_SOC_DIR;
+    wire [0:143] gfpga_pad_EMBEDDED_IO_SOC_IN;
+    wire [0:143] gfpga_pad_EMBEDDED_IO_SOC_OUT;
+    wire [0:143] gfpga_pad_EMBEDDED_IO_SOC_DIR;
     wire ccff_head;
     wire ccff_tail;
     wire sc_head;
     wire sc_tail;
 
     // Switch between wishbone and logic analyzer
-    wire wb_la_switch = io_in[0];
-
-    // Safe control on logic analyzer data
-    // Pull down to '0' for unused ports
-    reg [127:0] la_data_in2fpga;
-    reg [127:0] fpga2la_data_out;
-
-    integer i = 0;
-
-    always @(la_data_in2fpga or la_data_in or la_oen) begin
-      for (i = 0; i < 128; ++i) begin
-        la_data_in2fpga[i] = la_data_in[i] and la_oen;
-      end
-    end
-
-    always @(fpga2la_data_out or la_data_out or la_oen) begin
-      for (i = 0; i < 128; ++i) begin
-        la_data_out[i] = fpga2la_data_out[i] and ~la_oen;
-      end
-    end
+    wire wb_la_switch;
 
     // Wire-bond TOP side I/O of FPGA to LEFT-side of Caravel interface
     assign gfpga_pad_EMBEDDED_IO_SOC_IN[0] = io_in[24];
@@ -102,31 +89,35 @@ module caravel_fpga_wrapper (
     assign io_out[11] = sc_tail;
     assign io_oeb[11] = 1'b0;
 
-    assign gfpga_pad_EMBEDDED_IO_SOC_IN[12:21] = io_in[10:1];
-    assign io_out[10:1] = gfpga_pad_EMBEDDED_IO_SOC_OUT[12:21];
-    assign io_oeb[10:1] = gfpga_pad_EMBEDDED_IO_SOC_DIR[12:21];
+    assign gfpga_pad_EMBEDDED_IO_SOC_IN[12:20] = io_in[10:2];
+    assign io_out[10:2] = gfpga_pad_EMBEDDED_IO_SOC_OUT[12:20];
+    assign io_oeb[10:2] = gfpga_pad_EMBEDDED_IO_SOC_DIR[12:20];
+
+    assign io_isol_n = io_in[1];
+    assign io_out[1] = 1'b0;
+    assign io_oeb[1] = 1'b1;
 
     assign Test_en = io_in[0];
     assign io_out[0] = 1'b0;
     assign io_oeb[0] = 1'b1;
 
     // Wire-bond RIGHT side I/O of FPGA to BOTTOM-side of Caravel interface
-    assign gfpga_pad_EMBEDDED_IO_SOC_IN[22] = la_wb_switch ? wb_rst_i : la_data_in2fpga[0];
-    assign gfpga_pad_EMBEDDED_IO_SOC_IN[23] = la_wb_switch ? wb_rst_stb : la_data_in2fpga[1];
-    assign fpga2la_data_out[0:1] = gfpga_pad_EMBEDDED_IO_SOC_OUT[22:23];
+    assign gfpga_pad_EMBEDDED_IO_SOC_IN[21] = la_wb_switch ? wb_rst_i : la_data_in[0];
+    assign gfpga_pad_EMBEDDED_IO_SOC_IN[22] = la_wb_switch ? wb_stb_i : la_data_in[1];
+    assign gfpga_pad_EMBEDDED_IO_SOC_IN[23] = la_wb_switch ? wb_cyc_i : la_data_in[2];
+    assign la_data_out[0:2] = gfpga_pad_EMBEDDED_IO_SOC_OUT[21:23];
 
     // Wire-bond BOTTOM side I/O of FPGA to BOTTOM-side of Caravel interface
-    assign gfpga_pad_EMBEDDED_IO_SOC_IN[24] = la_wb_switch ? wb_cyc_i : la_data_in[2];
-    assign gfpga_pad_EMBEDDED_IO_SOC_IN[25] = la_wb_switch ? wb_we_i : la_data_in[3];
-    assign gfpga_pad_EMBEDDED_IO_SOC_IN[26:57] = la_wb_switch ? wb_dat_i : la_data_in[4:35];
-    assign gfpga_pad_EMBEDDED_IO_SOC_IN[58:89] = la_wb_switch ? wb_adr_i : la_data_in[4:36];
-    assign wb_ack_o = gfpga_pad_EMBEDDED_IO_SOC_OUT[90];
-    assign wb_data_o = gfpga_pad_EMBEDDED_IO_SOC_OUT[91:122];
-    assign fpga2la_data_out[2:109] = gfpga_pad_EMBEDDED_IO_SOC_OUT[24:131];
+    assign gfpga_pad_EMBEDDED_IO_SOC_IN[24] = la_wb_switch ? wb_we_i : la_data_in[3];
+    assign gfpga_pad_EMBEDDED_IO_SOC_IN[25:56] = la_wb_switch ? wb_dat_i : la_data_in[4:35];
+    assign gfpga_pad_EMBEDDED_IO_SOC_IN[57:88] = la_wb_switch ? wb_adr_i : la_data_in[36:67];
+    assign wb_ack_o = gfpga_pad_EMBEDDED_IO_SOC_OUT[89];
+    assign wb_data_o = gfpga_pad_EMBEDDED_IO_SOC_OUT[90:121];
+    assign la_data_out[3:110] = gfpga_pad_EMBEDDED_IO_SOC_OUT[24:131];
 
     // Wire-bond LEFT side I/O of FPGA to BOTTOM-side of Caravel interface
-    assign gfpga_pad_EMBEDDED_IO_SOC_IN[132:135] = la_wb_switch ? wb_sel_i : la_data_in[110:113];
-    assign fpga2la_data_out[110:113] = gfpga_pad_EMBEDDED_IO_SOC_OUT[132:135];
+    assign gfpga_pad_EMBEDDED_IO_SOC_IN[132:135] = la_wb_switch ? wb_sel_i : la_data_in[111:114];
+    assign la_data_out[111:114] = gfpga_pad_EMBEDDED_IO_SOC_OUT[132:135];
 
     // Wire-bond LEFT side I/O of FPGA to LEFT-side of Caravel interface
     assign prog_clk = io_in[37];
@@ -159,6 +150,7 @@ module caravel_fpga_wrapper (
     fpga_core fpga_core(.prog_clk(prog_clk),
                         .Test_en(Test_en),
                         .clk(clk),
+                        .IO_ISOL_N(io_isol_n),
                         .gfpga_pad_EMBEDDED_IO_SOC_IN(gfpga_pad_EMBEDDED_IO_SOC_IN),
                         .gfpga_pad_EMBEDDED_IO_SOC_OUT(gfpga_pad_EMBEDDED_IO_SOC_OUT),
                         .gfpga_pad_EMBEDDED_IO_SOC_DIR(gfpga_pad_EMBEDDED_IO_SOC_DIR),
