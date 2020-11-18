@@ -17,7 +17,7 @@ The High Density (HD) FPGA is an embedded FPGA built with the Skywater 130nm Hig
   +===============================+============+
   | Look-Up Tables [1]_           |   1152     |
   +-------------------------------+------------+
-  | Flip-flops                    |   2204     |
+  | Flip-flops                    |   2304     |
   +-------------------------------+------------+
   | Max. Configuration Speed [2]_ |   50MHz    |
   +-------------------------------+------------+

@@ -16,6 +16,8 @@ Among the 144 I/Os,
 
 - **115 internal I/Os** are accessible through the Caravel SOC's logic analyzer and wishbone interfaces, which are controlled by the RISC-V processor. See :ref:`io_resource_debug` and :ref:`io_resource_accelerator` for details. 
 
+.. warning:: For all the unused GPIOs, please set them to **input** mode, so that the FPGA will not output any noise signals to damage other SoC components.
+
 .. note:: The connectivity of the 115 internal I/Os can be switched through a GPIO of Caravel SoC. As a result, the FPGA can operate in different modes. 
 
 .. _fig_fpga_io_switch:
@@ -56,6 +58,11 @@ When the logic analyzer interface is enabled, the FPGA can operate in debug mode
 :numref:`fig_fpga_io_map_logic_analyzer_mode` illustrates the detailed I/O arrangement for the FPGA, where the logic analyzer signals are connected to fixed FPGA I/O locations. 
 
 .. note:: The logic analyzer is 128-bit, while 115 bits can drive or be driven by the FPGA I/O. The other 14 bits are connected to internal spots of the FPGA fabric, monitoring critical signal activities of the FPGA in debugging purpose.
+
+.. warning:: If the logic analyzer is not used, please configure both the management SoC and the FPGA as follows: 
+
+               - all the I/O directionality is set to **input mode**.
+               - all the output ports is pulled down to **logic ``0``**.
 
 .. _fig_fpga_io_map_logic_analyzer_mode:
 
