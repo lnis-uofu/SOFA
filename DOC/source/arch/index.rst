@@ -4,8 +4,8 @@
 .. toctree::
    :maxdepth: 2
 
-   io_resource
-
    fpga_arch
+
+   io_resource
 
    clb_arch
