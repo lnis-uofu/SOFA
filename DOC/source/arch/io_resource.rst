@@ -64,3 +64,30 @@ When the logic analyzer interface is enabled, the FPGA can operate in debug mode
   :alt: I/O arrangement of FPGA IP when interfacing logic analyzer
 
   I/O arrangement of *High-Density* (HD) FPGA IP when interfacing logic analyzer
+
+.. _io_resource_circuit:
+
+FPGA I/O Circuit
+~~~~~~~~~~~~~~~~
+
+As shown in :numref:`fig_embedded_io_schematic`, the I/O circuit used in the I/O tiles of the FPGA fabric (see :numref:`fig_fpga_arch`) is an digital I/O cell with 
+
+- An **active-low** I/O isolation signal ``IO_ISOL_N`` to set the I/O in input mode. This is to avoid any unexpected output signals to damage circuits outside the FPGA due to configurable memories are not properly initialized.
+
+  .. warning:: This feature may not be needed if the configurable memory cell has a built-in set/reset functionality!
+
+- An internal protection circuitry to ensure clean signals at all the SOC I/O ports. This is to avoid 
+      
+  - ``SOC_OUT`` port outputs any random signal when the I/O is in input mode
+  - ``FPGA_IN`` port is driven by any random signal when the I/O is output mode
+
+- An internal configurable memory element to control the direction of I/O cell 
+
+.. _fig_embedded_io_schematic:
+
+.. figure:: ./figures/embedded_io_schematic.png
+  :scale: 30%
+  :alt: Schematic of embedded I/O cell used in FPGA
+
+  Schematic of embedded I/O cell used in FPGA
+
