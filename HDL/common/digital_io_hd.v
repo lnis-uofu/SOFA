@@ -28,10 +28,10 @@ module EMBEDDED_IO_HD (
   output FPGA_IN, // Input data to FPGA
   input FPGA_OUT, // Output data from FPGA
   input FPGA_DIR, // direction control 
-  input ISOL_N    // Isolation enable signal
+  input IO_ISOL_N    // Isolation enable signal
 );
 
-  sky130_fd_sc_hd__and2_0 ISOL_EN_GATE (.A(ISOL_N),
+  sky130_fd_sc_hd__and2_0 ISOL_EN_GATE (.A(IO_ISOL_N),
                                         .B(FPGA_DIR),
                                         .X(SOC_DIR)
                                        );
