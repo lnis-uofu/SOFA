@@ -83,6 +83,12 @@ As shown in :numref:`fig_embedded_io_schematic`, the I/O circuit used in the I/O
 
 - An internal configurable memory element to control the direction of I/O cell 
 
+The truth table of the I/O cell is consistent with the GPIO cell of Caravel SoC, where
+
+- When configuration bit (FF output) is logic ``1``, the I/O cell is in input mode
+
+- When configuration bit (FF output) is logic ``0``, the I/O cell is in output mode
+
 .. _fig_embedded_io_schematic:
 
 .. figure:: ./figures/embedded_io_schematic.png
@@ -90,4 +96,3 @@ As shown in :numref:`fig_embedded_io_schematic`, the I/O circuit used in the I/O
   :alt: Schematic of embedded I/O cell used in FPGA
 
   Schematic of embedded I/O cell used in FPGA
-
