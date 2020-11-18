@@ -43,7 +43,7 @@ module EMBEDDED_IO_HD (
                                           );
 
   // Use drive-strength 1 for a potential high fan-out from SoC components
-  sky130_fd_sc_hd__and2b_1 OUT_PROTECT_GATE (.A(SOC_DIR),
+  sky130_fd_sc_hd__and2b_1 OUT_PROTECT_GATE (.A_N(SOC_DIR),
                                              .B(FPGA_OUT),
                                              .X(SOC_OUT)
                                             );
