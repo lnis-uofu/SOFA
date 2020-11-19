@@ -344,7 +344,8 @@ module caravel_fpga_wrapper (
     assign io_out[37] = 1'b0;
     assign io_oeb[37] = 1'b1;
 
-    assign clk = io_in[36];
+    // FPGA clock port can be driven by either wishbone clock or an GPIO
+    sky130_fd_sc_hd__mux2_1 FPGA_CLK_MUX (.S(la_wb_switch), .A1(wb_clk_i), .A0(io_in[36]), .X(clk));
     assign io_out[36] = 1'b0;
     assign io_oeb[36] = 1'b1;
 
