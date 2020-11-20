@@ -1,16 +1,16 @@
-module counter(clk_counter, q_counter, rst_counter);
+module counter(clk, q, rst);
 
-    input clk_counter;
-    input rst_counter;
-    output [7:0] q_counter;
-    reg [7:0] q_counter;
+    input clk;
+    input rst;
+    output [7:0] q;
+    reg [7:0] q;
 
-    always @ (posedge clk_counter)
+    always @ (posedge clk)
     begin
-        if(rst_counter)
-		q_counter <= 8'b00000000;
+        if(rst)
+			q <= 8'b00000000;
 	else
-		q_counter <= q_counter + 1;
+		q <= q + 1;
     end
 
 endmodule
