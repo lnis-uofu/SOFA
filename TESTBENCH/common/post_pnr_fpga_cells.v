@@ -34,6 +34,7 @@
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/clkinv/sky130_fd_sc_hd__clkinv_4.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/inv/sky130_fd_sc_hd__inv_4.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/clkbuf/sky130_fd_sc_hd__clkbuf_1.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/clkbuf/sky130_fd_sc_hd__clkbuf_4.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_8.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/clkdlybuf4s50/sky130_fd_sc_hd__clkdlybuf4s50_2.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_12.v"
@@ -43,3 +44,5 @@
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/bufbuf/sky130_fd_sc_hd__bufbuf_8.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/nor2b/sky130_fd_sc_hd__nor2b_1.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/and2/sky130_fd_sc_hd__and2_0.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/nand2b/sky130_fd_sc_hd__nand2b_1.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/ebufn/sky130_fd_sc_hd__ebufn_4.v"

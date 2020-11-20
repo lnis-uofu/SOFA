@@ -172,14 +172,14 @@ initial
            // The tail should spit a pulse after configuration is done
            // So it should be at logic '1' and then pulled down to logic '0'
            if (0 == num_checked_points) begin
-             if (sc_tail != 1'b1) begin
-               $display("Error: sc_tail = %b", sc_tail);
+             if (ccff_tail !== 1'b1) begin
+               $display("Error: ccff_tail = %b", sc_tail);
                num_errors = num_errors + 1;
              end
            end
            if (1 <= num_checked_points) begin
-             if (sc_tail != 1'b0) begin
-               $display("Error: sc_tail = %b", sc_tail);
+             if (ccff_tail !== 1'b0) begin
+               $display("Error: ccff_tail = %b", sc_tail);
                num_errors = num_errors + 1;
              end
            end
