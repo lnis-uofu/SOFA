@@ -55,10 +55,13 @@
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_1.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_16.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/bufbuf/sky130_fd_sc_hd__bufbuf_16.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/bufbuf/sky130_fd_sc_hd__bufbuf_8.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/nor2b/sky130_fd_sc_hd__nor2b_1.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/and2/sky130_fd_sc_hd__and2_0.v"
 
 // ------ Include fabric top-level netlists -----
 //`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_FC_HD_SKY_PNR/fpga_core/fpga_core_icv_in_design.pt.v"
-`include "/research/ece/lnis/USERS/DARPA_ERI/Tapeout/Nov2020_Skywater/FPGA1212_FLAT_HD_SKY_PNR/fpga_core/fpga_core_icv_in_design.pt.v"
+`include "/research/ece/lnis/USERS/DARPA_ERI/Tapeout/Nov2020_Skywater/FPGA1212_FLAT_HD_SKY_PNR/fpga_top/fpga_top_icv_in_design.pt.v"
 
 `ifdef AUTOCHECKED_SIMULATION
 	`include "and2_output_verilog.v"
