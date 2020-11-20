@@ -1,8 +1,9 @@
 #####################################################################
-# Python script to adapt an OpenFPGA architecture file
+# Python script generate Verilog codes for the Caravel wrapper 
+# which interface the FPGA fabric and other SoC components
 # This script will
-#   - Convert the ${SKYWATER_OPENFPGA_HOME} to the absolute path of current directory
-#
+#   - generate the Verilog codes to connect FPGA inputs to Wishbone and Logic analyzer
+#   - generate the Verilog codes to connect FPGA outputs to Wishbone and Logic analyzer
 #####################################################################
 
 import os
@@ -73,25 +74,58 @@ for ipin in range(0, num_gpio_pins):
         # If this is an input pin of wishbone interface, whose postfix is '_i', we use MUX
         # otherwise, this is an output pin, we just wire the input to logic analyzer
         if ((wishbone_pins[ipin].endswith("_i")) or (re.search(r'_i\[\d+\]$', wishbone_pins[ipin], re.M | re.I))):
+            ##############################################################
+            # SOC INPUT will be directly driven by either 
+            # - the Wishbone input 
+            # or
+            # - the logic analyzer input
+            # through a multiplexer controlled by the signal 'la_wb_switch
             curr_line = "    " + "sky130_fd_sc_hd__mux2_1 FPGA2SOC_IN_" + str(135 - ipin) + "_MUX (.S(la_wb_switch), .A1(" + str(
                 wishbone_pins[ipin]) + "), .A0(" + str(logic_analyzer_pins[ipin][0]) + "), .X(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[" + str(135 - ipin) + "]));"
             netlist_lines.append(curr_line + "\n")
+            ##############################################################
+            # SOC OUTPUT will drive an output of logic analyzer 
+            # since this I/O is going to interface a Wishbone input only
             curr_line = "    " + "assign " + \
                 str(logic_analyzer_pins[ipin][1]) + \
                 " = gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[" + str(135 - ipin) + "];"
             netlist_lines.append(curr_line + "\n")
         elif ((wishbone_pins[ipin].endswith("_o")) or (re.search(r'_o\[\d+\]$', wishbone_pins[ipin], re.M | re.I))):
+            ##############################################################
+            # SOC INPUT will be directly driven by logic analyzer 
+            # since this I/O is going to interface a Wishbone output only
             curr_line = "    " + "assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[" + str(
                 135 - ipin) + "] = " + str(logic_analyzer_pins[ipin][0]) + ";"
             netlist_lines.append(curr_line + "\n")
-            curr_line = "    " + "assign " + \
-                str(wishbone_pins[ipin]) + \
-                " = gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[" + str(135 - ipin) + "];"
+            ##############################################################
+            # SOC OUTPUT will drive the Wishbone output through a tri-state buffer
+            # As the buffer is enabled by logic '0', we use the inverted 'la_wb_switch'
+            curr_line = "    " + "sky130_fd_sc_hd__ebufn_4 FPGA2SOC_OUT_" + str(135 - ipin) + "_DEMUX_WB (" + \
+                ".TE_B(la_wb_switch_b), " + \
+                ".A(" + "gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[" + str(135 - ipin) + "]), " + \
+                ".Z(" + str(wishbone_pins[ipin]) + ")" + \
+                ");"
             netlist_lines.append(curr_line + "\n")
+            ##############################################################
+            # SOC OUTPUT will also drive the Logic Analyzer output through a tri-state buffer
+            # As the buffer is enabled by logic '0', we use the 'la_wb_switch'
+            curr_line = "    " + "sky130_fd_sc_hd__ebufn_4 FPGA2SOC_OUT_" + str(135 - ipin) + "_DEMUX_LA (" + \
+                ".TE_B(la_wb_switch), " + \
+                ".A(" + "gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[" + str(135 - ipin) + "]), " + \
+                ".Z(" + str(logic_analyzer_pins[ipin][1]) + ")" + \
+                ");"
+            netlist_lines.append(curr_line + "\n")
+
     elif ((ipin >= num_wishbone_pins) and (ipin < num_logic_analyzer_pins)):
+        ##############################################################
+        # SOC INPUT will be directly driven by logic analyzer 
+        # since this I/O is going to interface logic analyzer input only
         curr_line = "    " + "assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[" + str(
             135 - ipin) + "] = " + str(logic_analyzer_pins[ipin][0]) + ";"
         netlist_lines.append(curr_line + "\n")
+        ##############################################################
+        # SOC OUTPUT will directly drive logic analyzer 
+        # since this I/O is going to interface logic analyzer output only
         curr_line = "    " + "assign " + \
             str(logic_analyzer_pins[ipin][1]) + \
             " = gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[" + str(135 - ipin) + "];"

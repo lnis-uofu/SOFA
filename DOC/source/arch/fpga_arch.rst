@@ -14,7 +14,7 @@ I/O tiles are placed at the boundary of the FPGA to interface with GPIOs and RIS
 
 .. _fig_fpga_arch:
 
-.. figure:: ./figures/fpga_arch.png
+.. figure:: ./figures/fpga_arch.svg
   :scale: 25%
   :alt: Tile-based FPGA architecture
 
@@ -72,7 +72,7 @@ When `Test_en` signal is active, users can
 
 .. _fig_fabric_scan_chain:
 
-.. figure:: ./figures/fabric_scan_chain.png
+.. figure:: ./figures/fabric_scan_chain.svg
   :scale: 25%
   :alt: Built-in scan-chain across FPGA
 

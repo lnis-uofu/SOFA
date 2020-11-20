@@ -20,9 +20,11 @@ Among the 144 I/Os,
 
 .. note:: The connectivity of the 115 internal I/Os can be switched through a GPIO of Caravel SoC. As a result, the FPGA can operate in different modes. 
 
+.. warning:: The internal I/O pins will drive either Wishbone or the logic analyzer, following the same truth table as mode-switch bit in :numref:`fig_fpga_io_switch`. 
+
 .. _fig_fpga_io_switch:
 
-.. figure:: ./figures/fpga_io_switch.png
+.. figure:: ./figures/fpga_io_switch.svg
   :scale: 20%
   :alt: I/O arrangement of FPGA IP
 
@@ -43,7 +45,7 @@ When the Wishbone interface is enabled, the FPGA can operate as an accelerator f
 
 .. _fig_fpga_io_map_wishbone_mode:
 
-.. figure:: ./figures/fpga_io_map_wishbone_mode.png
+.. figure:: ./figures/fpga_io_map_wishbone_mode.svg
   :scale: 20%
   :alt: I/O arrangement of FPGA IP when interfacing wishbone bus
 
@@ -66,7 +68,7 @@ When the logic analyzer interface is enabled, the FPGA can operate in debug mode
 
 .. _fig_fpga_io_map_logic_analyzer_mode:
 
-.. figure:: ./figures/fpga_io_map_logic_analyzer_mode.png
+.. figure:: ./figures/fpga_io_map_logic_analyzer_mode.svg
   :scale: 20%
   :alt: I/O arrangement of FPGA IP when interfacing logic analyzer
 
@@ -98,7 +100,7 @@ The truth table of the I/O cell is consistent with the GPIO cell of Caravel SoC,
 
 .. _fig_embedded_io_schematic:
 
-.. figure:: ./figures/embedded_io_schematic.png
+.. figure:: ./figures/embedded_io_schematic.svg
   :scale: 30%
   :alt: Schematic of embedded I/O cell used in FPGA
 

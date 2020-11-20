@@ -68,6 +68,12 @@ module fpga_top (
 
     // Switch between wishbone and logic analyzer
     wire wb_la_switch;
+    wire wb_la_switch_b;
+
+    // Inverted switch signal to drive tri-state buffers
+    // Use drive strength 8 as we will have 33 output pins which is driven by
+    // the buffers
+    sky130_fd_sc_hd__inv_8 WB_LA_SWITCH_INV (.A(la_wb_switch), .Y(la_wb_switch_b));
 
     // Wire-bond TOP side I/O of FPGA to LEFT-side of Caravel interface
     assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[0] = io_in[24];
