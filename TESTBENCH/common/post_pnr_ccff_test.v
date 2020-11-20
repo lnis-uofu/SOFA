@@ -54,6 +54,7 @@ wire [0:0] IO_ISOL_N;
 // ----- Counters for error checking -----
 integer num_prog_cycles = 0; 
 integer num_errors = 0; 
+integer num_checked_points = 0; 
 
 // Indicate when configuration should be finished
 reg config_done = 0; 
@@ -134,9 +135,9 @@ initial
 		.prog_clk(prog_clk[0]),
 		.Test_en(Test_en[0]),
 		.clk(clk[0]),
-		.gfpga_pad_EMBEDDED_IO_SOC_IN(gfpga_pad_EMBEDDED_IO_SOC_IN[0:`FPGA_IO_SIZE - 1]),
-		.gfpga_pad_EMBEDDED_IO_SOC_OUT(gfpga_pad_EMBEDDED_IO_SOC_OUT[0:`FPGA_IO_SIZE - 1]),
-		.gfpga_pad_EMBEDDED_IO_SOC_DIR(gfpga_pad_EMBEDDED_IO_SOC_DIR[0:`FPGA_IO_SIZE - 1]),
+		.gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_SOC_IN[0:`FPGA_IO_SIZE - 1]),
+		.gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_SOC_OUT[0:`FPGA_IO_SIZE - 1]),
+		.gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_SOC_DIR[0:`FPGA_IO_SIZE - 1]),
 		.ccff_head(ccff_head[0]),
 		.ccff_tail(ccff_tail[0]),
 		.sc_head(sc_head[0]),
@@ -168,11 +169,24 @@ initial
 
         // Check the ccff_tail when configuration is done 
         if (1'b1 == config_done) begin
-           if (sc_tail != 1'b1) begin
-             $display("Error: sc_tail = %b", sc_tail);
-             num_errors = num_errors + 1;
+           // The tail should spit a pulse after configuration is done
+           // So it should be at logic '1' and then pulled down to logic '0'
+           if (0 == num_checked_points) begin
+             if (ccff_tail !== 1'b1) begin
+               $display("Error: ccff_tail = %b", sc_tail);
+               num_errors = num_errors + 1;
+             end
            end
+           if (1 <= num_checked_points) begin
+             if (ccff_tail !== 1'b0) begin
+               $display("Error: ccff_tail = %b", sc_tail);
+               num_errors = num_errors + 1;
+             end
+           end
+           num_checked_points = num_checked_points + 1;
+        end
 
+        if (2 < num_checked_points) begin
            $display("Simulation finish with %d errors", num_errors);
 
            // End simulation
