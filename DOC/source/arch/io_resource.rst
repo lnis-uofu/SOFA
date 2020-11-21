@@ -39,7 +39,7 @@ Accelerator Mode
 When the Wishbone interface is enabled, the FPGA can operate as an accelerator for the RISC-V processor.
 :numref:`fig_fpga_io_map_wishbone_mode` illustrates the detailed I/O arrangement for the FPGA, where the wishbone bus signals are connected to fixed FPGA I/O locations. 
 
-.. note:: Not all the 115 internal I/Os are used by the Wishbone interface. Especially, the I/O[21:30] are not connected.
+.. note:: Not all the 115 internal I/Os are used by the Wishbone interface. Especially, the I/O[21:29] are not connected.
 
 .. warning:: The FPGA does not contain a Wishbone slave IP. Users have to implement a soft Wishbone slave when use the FPGA as an accelerator.
 
