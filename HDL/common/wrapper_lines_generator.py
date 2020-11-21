@@ -35,7 +35,8 @@ args = parser.parse_args()
 # The list start from left-side of the wrapper to the right side
 # Target FPGA gpio start from 135, 134 ...
 #####################################################################
-wishbone_pins = ['wb_rst_i', 'wbs_ack_o', 'wbs_cyc_i',
+wishbone_pins = ['wb_clk_i', 'wb_rst_i', 
+                 'wbs_ack_o', 'wbs_cyc_i',
                  'wbs_stb_i', 'wbs_we_i']
 
 wishbone_pins.extend([f"wbs_sel_i[{i}]" for i in range(4)])
@@ -79,8 +80,8 @@ for ipin in range(0, num_gpio_pins):
             # - the Wishbone input 
             # or
             # - the logic analyzer input
-            # through a multiplexer controlled by the signal 'la_wb_switch
-            curr_line = "    " + "sky130_fd_sc_hd__mux2_1 FPGA2SOC_IN_" + str(135 - ipin) + "_MUX (.S(la_wb_switch), .A1(" + str(
+            # through a multiplexer controlled by the signal 'wb_la_switch
+            curr_line = "    " + "sky130_fd_sc_hd__mux2_1 FPGA2SOC_IN_" + str(135 - ipin) + "_MUX (.S(wb_la_switch), .A1(" + str(
                 wishbone_pins[ipin]) + "), .A0(" + str(logic_analyzer_pins[ipin][0]) + "), .X(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[" + str(135 - ipin) + "]));"
             netlist_lines.append(curr_line + "\n")
             ##############################################################
@@ -99,18 +100,18 @@ for ipin in range(0, num_gpio_pins):
             netlist_lines.append(curr_line + "\n")
             ##############################################################
             # SOC OUTPUT will drive the Wishbone output through a tri-state buffer
-            # As the buffer is enabled by logic '0', we use the inverted 'la_wb_switch'
+            # As the buffer is enabled by logic '0', we use the inverted 'wb_la_switch'
             curr_line = "    " + "sky130_fd_sc_hd__ebufn_4 FPGA2SOC_OUT_" + str(135 - ipin) + "_DEMUX_WB (" + \
-                ".TE_B(la_wb_switch_b), " + \
+                ".TE_B(wb_la_switch_b), " + \
                 ".A(" + "gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[" + str(135 - ipin) + "]), " + \
                 ".Z(" + str(wishbone_pins[ipin]) + ")" + \
                 ");"
             netlist_lines.append(curr_line + "\n")
             ##############################################################
             # SOC OUTPUT will also drive the Logic Analyzer output through a tri-state buffer
-            # As the buffer is enabled by logic '0', we use the 'la_wb_switch'
+            # As the buffer is enabled by logic '0', we use the 'wb_la_switch'
             curr_line = "    " + "sky130_fd_sc_hd__ebufn_4 FPGA2SOC_OUT_" + str(135 - ipin) + "_DEMUX_LA (" + \
-                ".TE_B(la_wb_switch), " + \
+                ".TE_B(wb_la_switch), " + \
                 ".A(" + "gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[" + str(135 - ipin) + "]), " + \
                 ".Z(" + str(logic_analyzer_pins[ipin][1]) + ")" + \
                 ");"
