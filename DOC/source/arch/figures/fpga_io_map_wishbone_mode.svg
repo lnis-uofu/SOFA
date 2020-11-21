@@ -28,7 +28,7 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18\n2020-11-21 01:06:55 +0000</metadata>
+  <metadata> Produced by OmniGraffle 7.18\n2020-11-21 01:25:48 +0000</metadata>
   <g id="wishbone_mode" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
     <title>wishbone_mode</title>
     <g id="wishbone_mode_base">
@@ -237,7 +237,16 @@
       </g>
       <g id="Graphic_481">
         <text transform="translate(331.66406 943.25)" fill="black">
-          <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">4 bit</tspan>
+          <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">3 bit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_482">
+        <path d="M 368.28125 1010.625 L 368.28125 997.625 L 342.39062 997.625 L 342.39062 991.125 L 329.39062 1004.125 L 342.39062 1017.125 L 342.39062 1010.625 Z" fill="#c0ffff"/>
+        <path d="M 368.28125 1010.625 L 368.28125 997.625 L 342.39062 997.625 L 342.39062 991.125 L 329.39062 1004.125 L 342.39062 1017.125 L 342.39062 1010.625 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_483">
+        <text transform="translate(334.39062 1022.2266)" fill="black">
+          <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">1 bit</tspan>
         </text>
       </g>
     </g>
