@@ -31,22 +31,26 @@ module EMBEDDED_IO_HD (
   input IO_ISOL_N    // Isolation enable signal
 );
 
-  sky130_fd_sc_hd__and2_0 ISOL_EN_GATE (.A(IO_ISOL_N),
-                                        .B(FPGA_DIR),
+  wire SOC_DIR_N;
+
+  // Use drive-strength 4 for a high fan-out from SoC components
+  sky130_fd_sc_hd__or2b_4 ISOL_EN_GATE (.B_N(IO_ISOL_N),
+                                        .A(FPGA_DIR),
                                         .X(SOC_DIR)
                                        );
   
   // Use drive-strength 4 for a high fan-out from global routing architecture
-  sky130_fd_sc_hd__and2_4 IN_PROTECT_GATE (.A(SOC_DIR),
-                                           .B(SOC_IN),
-                                           .X(FPGA_IN)
-                                          );
+  sky130_fd_sc_hd__inv_1 INV_SOC_DIR (.A(SOC_DIR), .Y(SOC_DIR_N));
+  sky130_fd_sc_hd__ebufn_4 IN_PROTECT_GATE (.TE_B(SOC_DIR_N),
+                                            .A(SOC_IN),
+                                            .Z(FPGA_IN)
+                                            );
 
   // Use drive-strength 4 for a potential high fan-out from SoC components
-  sky130_fd_sc_hd__and2b_4 OUT_PROTECT_GATE (.A_N(SOC_DIR),
-                                             .B(FPGA_OUT),
-                                             .X(SOC_OUT)
-                                            );
+  sky130_fd_sc_hd__ebufn_4 OUT_PROTECT_GATE (.TE_B(SOC_DIR),
+                                             .A(FPGA_OUT),
+                                             .Z(SOC_OUT)
+                                             );
 
 endmodule
 

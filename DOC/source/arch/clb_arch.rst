@@ -14,7 +14,7 @@ Feedback connections between LEs are implemented by the global routing architect
 
 .. _fig_clb_arch:
 
-.. figure:: ./figures/clb_arch.png
+.. figure:: ./figures/clb_arch.svg
   :scale: 20%
   :alt: Configurable Logic Block schematic
 
@@ -32,7 +32,7 @@ As shown in :numref:`fig_fle_arch`, each Logic Element (LE) consists of
 
 .. _fig_fle_arch:
 
-.. figure:: ./figures/fle_arch.png
+.. figure:: ./figures/fle_arch.svg
   :scale: 30%
   :alt: Logic element schematic
 
