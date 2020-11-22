@@ -1,0 +1,1856 @@
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Failed: ScanChainTestFull (result was NameError)
+Traceback (most recent call last):
+  File "/research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_FLAT_HD_SKY_PNR/Verification/ScanChainTestFull_run/skywater_tests.py", line 75, in ScanChainTestFull
+    clock = Clock(io_in[36], 10, units="ns")
+NameError: name 'io_in' is not defined
+Failed 1 out of 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    FAIL            0.00          0.32         0.00  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 1                                      **
+*************************************************************************************
+**                               SIM TIME : 0.00 NS                                **
+**                              REAL TIME : 0.38 S                                 **
+**                        SIM / REAL TIME : 0.00 NS/S                              **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Failed: ScanChainTestFull (result was NameError)
+Traceback (most recent call last):
+  File "/research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_FLAT_HD_SKY_PNR/Verification/ScanChainTestFull_run/skywater_tests.py", line 75, in ScanChainTestFull
+    clock = Clock(io_in[36], 10, units="ns")
+NameError: name 'io_in' is not defined
+Failed 1 out of 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    FAIL            0.00          0.32         0.00  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 1                                      **
+*************************************************************************************
+**                               SIM TIME : 0.00 NS                                **
+**                              REAL TIME : 0.35 S                                 **
+**                        SIM / REAL TIME : 0.00 NS/S                              **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.33      3140.56  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.36 S                                 **
+**                        SIM / REAL TIME : 2843.36 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.35      2955.74  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.39 S                                 **
+**                        SIM / REAL TIME : 2622.72 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.36      2873.22  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.39 S                                 **
+**                        SIM / REAL TIME : 2642.05 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.38      2697.24  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.41 S                                 **
+**                        SIM / REAL TIME : 2498.94 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.36      2855.46  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.40 S                                 **
+**                        SIM / REAL TIME : 2572.40 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.35      2921.92  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.38 S                                 **
+**                        SIM / REAL TIME : 2693.20 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.41      2528.00  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.44 S                                 **
+**                        SIM / REAL TIME : 2339.25 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.34      2978.93  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.37 S                                 **
+**                        SIM / REAL TIME : 2759.01 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.34      3035.42  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.37 S                                 **
+**                        SIM / REAL TIME : 2770.23 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.34      3010.12  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.37 S                                 **
+**                        SIM / REAL TIME : 2776.03 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.40      2586.88  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.44 S                                 **
+**                        SIM / REAL TIME : 2304.59 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.33      3064.93  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.36 S                                 **
+**                        SIM / REAL TIME : 2811.34 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.33      3074.32  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.37 S                                 **
+**                        SIM / REAL TIME : 2785.90 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.35      2941.70  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.39 S                                 **
+**                        SIM / REAL TIME : 2638.75 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.34      2994.67  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.38 S                                 **
+**                        SIM / REAL TIME : 2671.26 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.42      2455.68  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.46 S                                 **
+**                        SIM / REAL TIME : 2238.95 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.35      2967.90  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.39 S                                 **
+**                        SIM / REAL TIME : 2635.62 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.35      2964.94  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.38 S                                 **
+**                        SIM / REAL TIME : 2709.94 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.37      2758.43  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.42 S                                 **
+**                        SIM / REAL TIME : 2469.26 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.35      2952.52  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.40 S                                 **
+**                        SIM / REAL TIME : 2577.27 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.35      2933.67  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.38 S                                 **
+**                        SIM / REAL TIME : 2708.14 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1025.00          0.36      2834.52  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1025.00 NS                             **
+**                              REAL TIME : 0.41 S                                 **
+**                        SIM / REAL TIME : 2509.65 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Failing test at simulator request before test run completion: Simulator shutdown prematurely
+Test error has lead to simulator shutting us down
+cocotb.result.SimFailure: Failing test at simulator request before test run completion: Simulator shutdown prematurely
+Failed 1 out of 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    FAIL     41343195.00        963.52     42908.34  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 1                                      **
+*************************************************************************************
+**                               SIM TIME : 41343195.00 NS                         **
+**                              REAL TIME : 963.56 S                               **
+**                        SIM / REAL TIME : 42906.63 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS          525.00          0.39      1352.45  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 525.00 NS                              **
+**                              REAL TIME : 0.42 S                                 **
+**                        SIM / REAL TIME : 1242.74 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS          525.00          0.33      1609.23  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 525.00 NS                              **
+**                              REAL TIME : 0.36 S                                 **
+**                        SIM / REAL TIME : 1478.56 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         2025.00          0.42      4815.20  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 2025.00 NS                             **
+**                              REAL TIME : 0.45 S                                 **
+**                        SIM / REAL TIME : 4501.18 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         5025.00          0.46     10823.78  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 5025.00 NS                             **
+**                              REAL TIME : 0.51 S                                 **
+**                        SIM / REAL TIME : 9948.25 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         5025.00          0.45     11152.78  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 5025.00 NS                             **
+**                              REAL TIME : 0.49 S                                 **
+**                        SIM / REAL TIME : 10320.41 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS        10025.00          0.60     16763.14  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 10025.00 NS                            **
+**                              REAL TIME : 0.63 S                                 **
+**                        SIM / REAL TIME : 15931.63 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS       100025.00          2.98     33548.04  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 100025.00 NS                           **
+**                              REAL TIME : 3.01 S                                 **
+**                        SIM / REAL TIME : 33229.95 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS       100025.00          2.96     33845.84  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 100025.00 NS                           **
+**                              REAL TIME : 3.00 S                                 **
+**                        SIM / REAL TIME : 33337.57 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Technology skywater
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS       100025.00          2.84     35256.23  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 100025.00 NS                           **
+**                              REAL TIME : 2.87 S                                 **
+**                        SIM / REAL TIME : 34823.61 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Testbench
+Test Failed: ScanChainTestFull (result was TypeError)
+Traceback (most recent call last):
+  File "/research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_FLAT_HD_SKY_PNR/Verification/ScanChainTestFull_run/skywater_tests.py", line 81, in ScanChainTestFull
+    clock = Clock(dut["io_in[36]"], 10, units="ns")
+TypeError: 'HierarchyObject' object is not subscriptable
+Failed 1 out of 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    FAIL            0.00          0.31         0.00  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 1                                      **
+*************************************************************************************
+**                               SIM TIME : 0.00 NS                                **
+**                              REAL TIME : 0.34 S                                 **
+**                        SIM / REAL TIME : 0.00 NS/S                              **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Testbench
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS       100025.00          2.90     34536.44  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 100025.00 NS                           **
+**                              REAL TIME : 2.92 S                                 **
+**                        SIM / REAL TIME : 34233.62 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Failing test at simulator request before test run completion: Simulator shutdown prematurely
+Test error has lead to simulator shutting us down
+cocotb.result.SimFailure: Failing test at simulator request before test run completion: Simulator shutdown prematurely
+Failed 1 out of 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    FAIL      1765965.00         40.44     43665.92  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 1                                      **
+*************************************************************************************
+**                               SIM TIME : 1765965.00 NS                          **
+**                              REAL TIME : 40.47 S                                **
+**                        SIM / REAL TIME : 43632.78 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Failing test at simulator request before test run completion: Simulator shutdown prematurely
+Test error has lead to simulator shutting us down
+cocotb.result.SimFailure: Failing test at simulator request before test run completion: Simulator shutdown prematurely
+Failed 1 out of 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    FAIL      2153530.00         46.96     45856.73  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 1                                      **
+*************************************************************************************
+**                               SIM TIME : 2153530.00 NS                          **
+**                              REAL TIME : 47.03 S                                **
+**                        SIM / REAL TIME : 45792.97 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Failing test at simulator request before test run completion: Simulator shutdown prematurely
+Test error has lead to simulator shutting us down
+cocotb.result.SimFailure: Failing test at simulator request before test run completion: Simulator shutdown prematurely
+Failed 1 out of 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    FAIL      1627950.00         36.46     44650.26  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 1                                      **
+*************************************************************************************
+**                               SIM TIME : 1627950.00 NS                          **
+**                              REAL TIME : 36.50 S                                **
+**                        SIM / REAL TIME : 44598.50 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS          525.00          0.37      1411.56  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 525.00 NS                              **
+**                              REAL TIME : 0.40 S                                 **
+**                        SIM / REAL TIME : 1302.59 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Simulation Finished
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS          170.01          0.31       544.80  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 170.01 NS                              **
+**                              REAL TIME : 0.35 S                                 **
+**                        SIM / REAL TIME : 491.10 NS/S                            **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Simulation Finished
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS          180.01          0.32       565.50  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 180.01 NS                              **
+**                              REAL TIME : 0.36 S                                 **
+**                        SIM / REAL TIME : 505.67 NS/S                            **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Simulation Finished 25.0 180.01
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS          180.01          0.32       569.91  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 180.01 NS                              **
+**                              REAL TIME : 0.35 S                                 **
+**                        SIM / REAL TIME : 517.14 NS/S                            **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Signal received at grid_clb_1__12_ at 7
+Simulation Finished
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS           90.01          0.32       282.06  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 90.01 NS                               **
+**                              REAL TIME : 0.35 S                                 **
+**                        SIM / REAL TIME : 254.61 NS/S                            **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Signal received at grid_clb_1__12_ at 8
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS           90.01          0.33       272.96  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 90.01 NS                               **
+**                              REAL TIME : 0.38 S                                 **
+**                        SIM / REAL TIME : 237.43 NS/S                            **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Test Failed: ScanChainTestFull (result was TypeError)
+Traceback (most recent call last):
+  File "/research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_FLAT_HD_SKY_PNR/Verification/ScanChainTestFull_run/skywater_tests.py", line 118, in ScanChainTestFull
+    for X in range(1, 1+PConf["FPGA_SIZE_X"]):
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+Failed 1 out of 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    FAIL           12.50          0.31        40.89  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 1                                      **
+*************************************************************************************
+**                               SIM TIME : 12.50 NS                               **
+**                              REAL TIME : 0.34 S                                 **
+**                        SIM / REAL TIME : 36.62 NS/S                             **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Signal received at grid_clb_1__12_ at 8
+Signal received at grid_clb_1__11_ at 8
+Signal received at grid_clb_1__10_ at 8
+Signal received at grid_clb_1__9_ at 8
+Signal received at grid_clb_1__8_ at 8
+Signal received at grid_clb_1__7_ at 8
+Signal received at grid_clb_1__6_ at 8
+Signal received at grid_clb_1__5_ at 8
+Signal received at grid_clb_1__4_ at 8
+Signal received at grid_clb_1__3_ at 8
+Signal received at grid_clb_1__2_ at 8
+Signal received at grid_clb_1__1_ at 8
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1170.01          0.38      3078.61  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1170.01 NS                             **
+**                              REAL TIME : 0.41 S                                 **
+**                        SIM / REAL TIME : 2819.73 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Waiting for grid output on 12
+Signal received at grid_clb_1__12_ at 8
+Signal received at grid_clb_1__11_ at 8
+Signal received at grid_clb_1__10_ at 8
+Signal received at grid_clb_1__9_ at 8
+Signal received at grid_clb_1__8_ at 8
+Signal received at grid_clb_1__7_ at 8
+Signal received at grid_clb_1__6_ at 8
+Signal received at grid_clb_1__5_ at 8
+Signal received at grid_clb_1__4_ at 8
+Signal received at grid_clb_1__3_ at 8
+Signal received at grid_clb_1__2_ at 8
+Signal received at grid_clb_1__1_ at 8
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1170.01          0.38      3104.33  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1170.01 NS                             **
+**                              REAL TIME : 0.41 S                                 **
+**                        SIM / REAL TIME : 2846.26 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Waiting for grid output on 12
+Signal received at grid_clb_1__12_ at 8
+Signal received at grid_clb_1__11_ at 8
+Signal received at grid_clb_1__10_ at 8
+Signal received at grid_clb_1__9_ at 8
+Signal received at grid_clb_1__8_ at 8
+Signal received at grid_clb_1__7_ at 8
+Signal received at grid_clb_1__6_ at 8
+Signal received at grid_clb_1__5_ at 8
+Signal received at grid_clb_1__4_ at 8
+Signal received at grid_clb_1__3_ at 8
+Signal received at grid_clb_1__2_ at 8
+Signal received at grid_clb_1__1_ at 8
+Terminating simulation
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1470.01          0.39      3763.39  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1470.01 NS                             **
+**                              REAL TIME : 0.43 S                                 **
+**                        SIM / REAL TIME : 3453.60 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Waiting for grid output on 12
+Signal received at grid_clb_1__12_ at 8
+Signal received at grid_clb_1__11_ at 8
+Signal received at grid_clb_1__10_ at 8
+Signal received at grid_clb_1__9_ at 8
+Signal received at grid_clb_1__8_ at 8
+Signal received at grid_clb_1__7_ at 8
+Signal received at grid_clb_1__6_ at 8
+Signal received at grid_clb_1__5_ at 8
+Signal received at grid_clb_1__4_ at 8
+Signal received at grid_clb_1__3_ at 8
+Signal received at grid_clb_1__2_ at 8
+Signal received at grid_clb_1__1_ at 8
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS         1470.01          0.45      3233.15  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 1470.01 NS                             **
+**                              REAL TIME : 0.48 S                                 **
+**                        SIM / REAL TIME : 3031.19 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Waiting for grid output on 12
+Test Failed: ScanChainTestFull (result was NameError)
+Traceback (most recent call last):
+  File "/research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_FLAT_HD_SKY_PNR/Verification/ScanChainTestFull_run/skywater_tests.py", line 120, in ScanChainTestFull
+    Yrange
+NameError: name 'Yrange' is not defined
+Failed 1 out of 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    FAIL           12.50          0.31        40.47  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 1                                      **
+*************************************************************************************
+**                               SIM TIME : 12.50 NS                               **
+**                              REAL TIME : 0.34 S                                 **
+**                        SIM / REAL TIME : 36.47 NS/S                             **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Waiting for grid output on 12
+Test Failed: ScanChainTestFull (result was SimTimeoutError)
+Traceback (most recent call last):
+  File "/research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_FLAT_HD_SKY_PNR/Verification/ScanChainTestFull_run/skywater_tests.py", line 128, in ScanChainTestFull
+    await with_timeout(FallingEdge(InstPtr), 50*CLK_PERIOD, 'ns')
+  File "/home/u1249762/.local/lib/python3.8/site-packages/cocotb/triggers.py", line 830, in with_timeout
+    raise cocotb.result.SimTimeoutError
+cocotb.result.SimTimeoutError
+Failed 1 out of 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    FAIL          512.50          0.35      1466.56  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 1                                      **
+*************************************************************************************
+**                               SIM TIME : 512.50 NS                              **
+**                              REAL TIME : 0.41 S                                 **
+**                        SIM / REAL TIME : 1257.09 NS/S                           **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Waiting for grid output on 12
+Signal received at grid_clb_1__12_ at 8
+Signal received at grid_clb_1__11_ at 8
+Signal received at grid_clb_1__10_ at 8
+Signal received at grid_clb_1__9_ at 8
+Signal received at grid_clb_1__8_ at 8
+Signal received at grid_clb_1__7_ at 8
+Signal received at grid_clb_1__6_ at 8
+Signal received at grid_clb_1__5_ at 8
+Signal received at grid_clb_1__4_ at 8
+Signal received at grid_clb_1__3_ at 8
+Signal received at grid_clb_1__2_ at 8
+Signal received at grid_clb_1__1_ at 8
+Signal received at grid_clb_2__1_ at 8
+Signal received at grid_clb_2__2_ at 8
+Signal received at grid_clb_2__3_ at 8
+Signal received at grid_clb_2__4_ at 8
+Signal received at grid_clb_2__5_ at 8
+Signal received at grid_clb_2__6_ at 8
+Signal received at grid_clb_2__7_ at 8
+Signal received at grid_clb_2__8_ at 8
+Signal received at grid_clb_2__9_ at 8
+Signal received at grid_clb_2__10_ at 8
+Signal received at grid_clb_2__11_ at 8
+Signal received at grid_clb_2__12_ at 8
+Signal received at grid_clb_3__12_ at 8
+Signal received at grid_clb_3__11_ at 9
+Signal received at grid_clb_3__10_ at 8
+Signal received at grid_clb_3__9_ at 8
+Signal received at grid_clb_3__8_ at 8
+Signal received at grid_clb_3__7_ at 8
+Signal received at grid_clb_3__6_ at 8
+Signal received at grid_clb_3__5_ at 8
+Signal received at grid_clb_3__4_ at 8
+Signal received at grid_clb_3__3_ at 8
+Signal received at grid_clb_3__2_ at 8
+Signal received at grid_clb_3__1_ at 8
+Signal received at grid_clb_4__1_ at 8
+Signal received at grid_clb_4__2_ at 8
+Signal received at grid_clb_4__3_ at 8
+Signal received at grid_clb_4__4_ at 8
+Signal received at grid_clb_4__5_ at 8
+Signal received at grid_clb_4__6_ at 8
+Signal received at grid_clb_4__7_ at 8
+Signal received at grid_clb_4__8_ at 8
+Signal received at grid_clb_4__9_ at 8
+Signal received at grid_clb_4__10_ at 8
+Signal received at grid_clb_4__11_ at 8
+Signal received at grid_clb_4__12_ at 8
+Signal received at grid_clb_5__12_ at 8
+Signal received at grid_clb_5__11_ at 8
+Signal received at grid_clb_5__10_ at 8
+Signal received at grid_clb_5__9_ at 8
+Signal received at grid_clb_5__8_ at 8
+Signal received at grid_clb_5__7_ at 8
+Signal received at grid_clb_5__6_ at 8
+Signal received at grid_clb_5__5_ at 8
+Signal received at grid_clb_5__4_ at 8
+Signal received at grid_clb_5__3_ at 8
+Signal received at grid_clb_5__2_ at 8
+Signal received at grid_clb_5__1_ at 8
+Signal received at grid_clb_6__1_ at 8
+Signal received at grid_clb_6__2_ at 8
+Signal received at grid_clb_6__3_ at 8
+Signal received at grid_clb_6__4_ at 8
+Signal received at grid_clb_6__5_ at 8
+Signal received at grid_clb_6__6_ at 8
+Signal received at grid_clb_6__7_ at 8
+Signal received at grid_clb_6__8_ at 8
+Signal received at grid_clb_6__9_ at 8
+Signal received at grid_clb_6__10_ at 8
+Signal received at grid_clb_6__11_ at 8
+Signal received at grid_clb_6__12_ at 8
+Signal received at grid_clb_7__12_ at 8
+Signal received at grid_clb_7__11_ at 8
+Signal received at grid_clb_7__10_ at 8
+Signal received at grid_clb_7__9_ at 8
+Signal received at grid_clb_7__8_ at 8
+Signal received at grid_clb_7__7_ at 8
+Signal received at grid_clb_7__6_ at 8
+Signal received at grid_clb_7__5_ at 8
+Signal received at grid_clb_7__4_ at 8
+Signal received at grid_clb_7__3_ at 8
+Signal received at grid_clb_7__2_ at 8
+Signal received at grid_clb_7__1_ at 8
+Signal received at grid_clb_8__1_ at 8
+Signal received at grid_clb_8__2_ at 8
+Signal received at grid_clb_8__3_ at 8
+Signal received at grid_clb_8__4_ at 8
+Signal received at grid_clb_8__5_ at 8
+Signal received at grid_clb_8__6_ at 8
+Signal received at grid_clb_8__7_ at 8
+Signal received at grid_clb_8__8_ at 8
+Signal received at grid_clb_8__9_ at 8
+Signal received at grid_clb_8__10_ at 8
+Signal received at grid_clb_8__11_ at 8
+Signal received at grid_clb_8__12_ at 8
+Signal received at grid_clb_9__12_ at 8
+Signal received at grid_clb_9__11_ at 8
+Signal received at grid_clb_9__10_ at 8
+Signal received at grid_clb_9__9_ at 8
+Signal received at grid_clb_9__8_ at 8
+Signal received at grid_clb_9__7_ at 8
+Signal received at grid_clb_9__6_ at 8
+Signal received at grid_clb_9__5_ at 8
+Signal received at grid_clb_9__4_ at 8
+Signal received at grid_clb_9__3_ at 8
+Signal received at grid_clb_9__2_ at 8
+Signal received at grid_clb_9__1_ at 8
+Signal received at grid_clb_10__1_ at 8
+Signal received at grid_clb_10__2_ at 8
+Signal received at grid_clb_10__3_ at 8
+Signal received at grid_clb_10__4_ at 8
+Signal received at grid_clb_10__5_ at 8
+Signal received at grid_clb_10__6_ at 8
+Signal received at grid_clb_10__7_ at 8
+Signal received at grid_clb_10__8_ at 8
+Signal received at grid_clb_10__9_ at 8
+Signal received at grid_clb_10__10_ at 8
+Signal received at grid_clb_10__11_ at 8
+Signal received at grid_clb_10__12_ at 8
+Signal received at grid_clb_11__12_ at 8
+Signal received at grid_clb_11__11_ at 8
+Signal received at grid_clb_11__10_ at 8
+Signal received at grid_clb_11__9_ at 8
+Signal received at grid_clb_11__8_ at 8
+Signal received at grid_clb_11__7_ at 8
+Signal received at grid_clb_11__6_ at 8
+Signal received at grid_clb_11__5_ at 8
+Signal received at grid_clb_11__4_ at 8
+Signal received at grid_clb_11__3_ at 8
+Signal received at grid_clb_11__2_ at 8
+Signal received at grid_clb_11__1_ at 8
+Signal received at grid_clb_12__1_ at 8
+Signal received at grid_clb_12__2_ at 8
+Signal received at grid_clb_12__3_ at 8
+Signal received at grid_clb_12__4_ at 8
+Signal received at grid_clb_12__5_ at 8
+Signal received at grid_clb_12__6_ at 8
+Signal received at grid_clb_12__7_ at 8
+Signal received at grid_clb_12__8_ at 8
+Signal received at grid_clb_12__9_ at 8
+Signal received at grid_clb_12__10_ at 8
+Signal received at grid_clb_12__11_ at 8
+Signal received at grid_clb_12__12_ at 8
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS        11530.01          0.92     12525.97  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 11530.01 NS                            **
+**                              REAL TIME : 0.95 S                                 **
+**                        SIM / REAL TIME : 12133.97 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Waiting for grid output on 12
+Signal received at grid_clb_1__12_ at 8
+Signal received at grid_clb_1__11_ at 8
+Signal received at grid_clb_1__10_ at 8
+Signal received at grid_clb_1__9_ at 8
+Signal received at grid_clb_1__8_ at 8
+Signal received at grid_clb_1__7_ at 8
+Signal received at grid_clb_1__6_ at 8
+Signal received at grid_clb_1__5_ at 8
+Signal received at grid_clb_1__4_ at 8
+Signal received at grid_clb_1__3_ at 8
+Signal received at grid_clb_1__2_ at 8
+Signal received at grid_clb_1__1_ at 8
+Signal received at grid_clb_2__1_ at 8
+Signal received at grid_clb_2__2_ at 8
+Signal received at grid_clb_2__3_ at 8
+Signal received at grid_clb_2__4_ at 8
+Signal received at grid_clb_2__5_ at 8
+Signal received at grid_clb_2__6_ at 8
+Signal received at grid_clb_2__7_ at 8
+Signal received at grid_clb_2__8_ at 8
+Signal received at grid_clb_2__9_ at 8
+Signal received at grid_clb_2__10_ at 8
+Signal received at grid_clb_2__11_ at 8
+Signal received at grid_clb_2__12_ at 8
+Signal received at grid_clb_3__12_ at 8
+Signal received at grid_clb_3__11_ at 9
+Signal received at grid_clb_3__10_ at 8
+Signal received at grid_clb_3__9_ at 8
+Signal received at grid_clb_3__8_ at 8
+Signal received at grid_clb_3__7_ at 8
+Signal received at grid_clb_3__6_ at 8
+Signal received at grid_clb_3__5_ at 8
+Signal received at grid_clb_3__4_ at 8
+Signal received at grid_clb_3__3_ at 8
+Signal received at grid_clb_3__2_ at 8
+Signal received at grid_clb_3__1_ at 8
+Signal received at grid_clb_4__1_ at 8
+Signal received at grid_clb_4__2_ at 8
+Signal received at grid_clb_4__3_ at 8
+Signal received at grid_clb_4__4_ at 8
+Signal received at grid_clb_4__5_ at 8
+Signal received at grid_clb_4__6_ at 8
+Signal received at grid_clb_4__7_ at 8
+Signal received at grid_clb_4__8_ at 8
+Signal received at grid_clb_4__9_ at 8
+Signal received at grid_clb_4__10_ at 8
+Signal received at grid_clb_4__11_ at 8
+Signal received at grid_clb_4__12_ at 8
+Signal received at grid_clb_5__12_ at 8
+Signal received at grid_clb_5__11_ at 8
+Signal received at grid_clb_5__10_ at 8
+Signal received at grid_clb_5__9_ at 8
+Signal received at grid_clb_5__8_ at 8
+Signal received at grid_clb_5__7_ at 8
+Signal received at grid_clb_5__6_ at 8
+Signal received at grid_clb_5__5_ at 8
+Signal received at grid_clb_5__4_ at 8
+Signal received at grid_clb_5__3_ at 8
+Signal received at grid_clb_5__2_ at 8
+Signal received at grid_clb_5__1_ at 8
+Signal received at grid_clb_6__1_ at 8
+Signal received at grid_clb_6__2_ at 8
+Signal received at grid_clb_6__3_ at 8
+Signal received at grid_clb_6__4_ at 8
+Signal received at grid_clb_6__5_ at 8
+Signal received at grid_clb_6__6_ at 8
+Signal received at grid_clb_6__7_ at 8
+Signal received at grid_clb_6__8_ at 8
+Signal received at grid_clb_6__9_ at 8
+Signal received at grid_clb_6__10_ at 8
+Signal received at grid_clb_6__11_ at 8
+Signal received at grid_clb_6__12_ at 8
+Signal received at grid_clb_7__12_ at 8
+Signal received at grid_clb_7__11_ at 8
+Signal received at grid_clb_7__10_ at 8
+Signal received at grid_clb_7__9_ at 8
+Signal received at grid_clb_7__8_ at 8
+Signal received at grid_clb_7__7_ at 8
+Signal received at grid_clb_7__6_ at 8
+Signal received at grid_clb_7__5_ at 8
+Signal received at grid_clb_7__4_ at 8
+Signal received at grid_clb_7__3_ at 8
+Signal received at grid_clb_7__2_ at 8
+Signal received at grid_clb_7__1_ at 8
+Signal received at grid_clb_8__1_ at 8
+Signal received at grid_clb_8__2_ at 8
+Signal received at grid_clb_8__3_ at 8
+Signal received at grid_clb_8__4_ at 8
+Signal received at grid_clb_8__5_ at 8
+Signal received at grid_clb_8__6_ at 8
+Signal received at grid_clb_8__7_ at 8
+Signal received at grid_clb_8__8_ at 8
+Signal received at grid_clb_8__9_ at 8
+Signal received at grid_clb_8__10_ at 8
+Signal received at grid_clb_8__11_ at 8
+Signal received at grid_clb_8__12_ at 8
+Signal received at grid_clb_9__12_ at 8
+Signal received at grid_clb_9__11_ at 8
+Signal received at grid_clb_9__10_ at 8
+Signal received at grid_clb_9__9_ at 8
+Signal received at grid_clb_9__8_ at 8
+Signal received at grid_clb_9__7_ at 8
+Signal received at grid_clb_9__6_ at 8
+Signal received at grid_clb_9__5_ at 8
+Signal received at grid_clb_9__4_ at 8
+Signal received at grid_clb_9__3_ at 8
+Signal received at grid_clb_9__2_ at 8
+Signal received at grid_clb_9__1_ at 8
+Signal received at grid_clb_10__1_ at 8
+Signal received at grid_clb_10__2_ at 8
+Signal received at grid_clb_10__3_ at 8
+Signal received at grid_clb_10__4_ at 8
+Signal received at grid_clb_10__5_ at 8
+Signal received at grid_clb_10__6_ at 8
+Signal received at grid_clb_10__7_ at 8
+Signal received at grid_clb_10__8_ at 8
+Signal received at grid_clb_10__9_ at 8
+Signal received at grid_clb_10__10_ at 8
+Signal received at grid_clb_10__11_ at 8
+Signal received at grid_clb_10__12_ at 8
+Signal received at grid_clb_11__12_ at 8
+Signal received at grid_clb_11__11_ at 8
+Signal received at grid_clb_11__10_ at 8
+Signal received at grid_clb_11__9_ at 8
+Signal received at grid_clb_11__8_ at 8
+Signal received at grid_clb_11__7_ at 8
+Signal received at grid_clb_11__6_ at 8
+Signal received at grid_clb_11__5_ at 8
+Signal received at grid_clb_11__4_ at 8
+Signal received at grid_clb_11__3_ at 8
+Signal received at grid_clb_11__2_ at 8
+Signal received at grid_clb_11__1_ at 8
+Signal received at grid_clb_12__1_ at 8
+Signal received at grid_clb_12__2_ at 8
+Signal received at grid_clb_12__3_ at 8
+Signal received at grid_clb_12__4_ at 8
+Signal received at grid_clb_12__5_ at 8
+Signal received at grid_clb_12__6_ at 8
+Signal received at grid_clb_12__7_ at 8
+Signal received at grid_clb_12__8_ at 8
+Signal received at grid_clb_12__9_ at 8
+Signal received at grid_clb_12__10_ at 8
+Signal received at grid_clb_12__11_ at 8
+Signal received at grid_clb_12__12_ at 8
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS        11530.01          0.90     12879.85  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 11530.01 NS                            **
+**                              REAL TIME : 0.93 S                                 **
+**                        SIM / REAL TIME : 12386.22 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Waiting for grid output on 12
+Signal received at grid_clb_1__12_ at 8
+Signal received at grid_clb_1__11_ at 8
+Signal received at grid_clb_1__10_ at 8
+Signal received at grid_clb_1__9_ at 8
+Signal received at grid_clb_1__8_ at 8
+Signal received at grid_clb_1__7_ at 8
+Signal received at grid_clb_1__6_ at 8
+Signal received at grid_clb_1__5_ at 8
+Signal received at grid_clb_1__4_ at 8
+Signal received at grid_clb_1__3_ at 8
+Signal received at grid_clb_1__2_ at 8
+Signal received at grid_clb_1__1_ at 8
+Signal received at grid_clb_2__1_ at 8
+Signal received at grid_clb_2__2_ at 8
+Signal received at grid_clb_2__3_ at 8
+Signal received at grid_clb_2__4_ at 8
+Signal received at grid_clb_2__5_ at 8
+Signal received at grid_clb_2__6_ at 8
+Signal received at grid_clb_2__7_ at 8
+Signal received at grid_clb_2__8_ at 8
+Signal received at grid_clb_2__9_ at 8
+Signal received at grid_clb_2__10_ at 8
+Signal received at grid_clb_2__11_ at 8
+Signal received at grid_clb_2__12_ at 8
+Signal received at grid_clb_3__12_ at 8
+Signal received at grid_clb_3__11_ at 9
+Signal received at grid_clb_3__10_ at 8
+Signal received at grid_clb_3__9_ at 8
+Signal received at grid_clb_3__8_ at 8
+Signal received at grid_clb_3__7_ at 8
+Signal received at grid_clb_3__6_ at 8
+Signal received at grid_clb_3__5_ at 8
+Signal received at grid_clb_3__4_ at 8
+Signal received at grid_clb_3__3_ at 8
+Signal received at grid_clb_3__2_ at 8
+Signal received at grid_clb_3__1_ at 8
+Signal received at grid_clb_4__1_ at 8
+Signal received at grid_clb_4__2_ at 8
+Signal received at grid_clb_4__3_ at 8
+Signal received at grid_clb_4__4_ at 8
+Signal received at grid_clb_4__5_ at 8
+Signal received at grid_clb_4__6_ at 8
+Signal received at grid_clb_4__7_ at 8
+Signal received at grid_clb_4__8_ at 8
+Signal received at grid_clb_4__9_ at 8
+Signal received at grid_clb_4__10_ at 8
+Signal received at grid_clb_4__11_ at 8
+Signal received at grid_clb_4__12_ at 8
+Signal received at grid_clb_5__12_ at 8
+Signal received at grid_clb_5__11_ at 8
+Signal received at grid_clb_5__10_ at 8
+Signal received at grid_clb_5__9_ at 8
+Signal received at grid_clb_5__8_ at 8
+Signal received at grid_clb_5__7_ at 8
+Signal received at grid_clb_5__6_ at 8
+Signal received at grid_clb_5__5_ at 8
+Signal received at grid_clb_5__4_ at 8
+Signal received at grid_clb_5__3_ at 8
+Signal received at grid_clb_5__2_ at 8
+Signal received at grid_clb_5__1_ at 8
+Signal received at grid_clb_6__1_ at 8
+Signal received at grid_clb_6__2_ at 8
+Signal received at grid_clb_6__3_ at 8
+Signal received at grid_clb_6__4_ at 8
+Signal received at grid_clb_6__5_ at 8
+Signal received at grid_clb_6__6_ at 8
+Signal received at grid_clb_6__7_ at 8
+Signal received at grid_clb_6__8_ at 8
+Signal received at grid_clb_6__9_ at 8
+Signal received at grid_clb_6__10_ at 8
+Signal received at grid_clb_6__11_ at 8
+Signal received at grid_clb_6__12_ at 8
+Signal received at grid_clb_7__12_ at 8
+Signal received at grid_clb_7__11_ at 8
+Signal received at grid_clb_7__10_ at 8
+Signal received at grid_clb_7__9_ at 8
+Signal received at grid_clb_7__8_ at 8
+Signal received at grid_clb_7__7_ at 8
+Signal received at grid_clb_7__6_ at 8
+Signal received at grid_clb_7__5_ at 8
+Signal received at grid_clb_7__4_ at 8
+Signal received at grid_clb_7__3_ at 8
+Signal received at grid_clb_7__2_ at 8
+Signal received at grid_clb_7__1_ at 8
+Signal received at grid_clb_8__1_ at 8
+Signal received at grid_clb_8__2_ at 8
+Signal received at grid_clb_8__3_ at 8
+Signal received at grid_clb_8__4_ at 8
+Signal received at grid_clb_8__5_ at 8
+Signal received at grid_clb_8__6_ at 8
+Signal received at grid_clb_8__7_ at 8
+Signal received at grid_clb_8__8_ at 8
+Signal received at grid_clb_8__9_ at 8
+Signal received at grid_clb_8__10_ at 8
+Signal received at grid_clb_8__11_ at 8
+Signal received at grid_clb_8__12_ at 8
+Signal received at grid_clb_9__12_ at 8
+Signal received at grid_clb_9__11_ at 8
+Signal received at grid_clb_9__10_ at 8
+Signal received at grid_clb_9__9_ at 8
+Signal received at grid_clb_9__8_ at 8
+Signal received at grid_clb_9__7_ at 8
+Signal received at grid_clb_9__6_ at 8
+Signal received at grid_clb_9__5_ at 8
+Signal received at grid_clb_9__4_ at 8
+Signal received at grid_clb_9__3_ at 8
+Signal received at grid_clb_9__2_ at 8
+Signal received at grid_clb_9__1_ at 8
+Signal received at grid_clb_10__1_ at 8
+Signal received at grid_clb_10__2_ at 8
+Signal received at grid_clb_10__3_ at 8
+Signal received at grid_clb_10__4_ at 8
+Signal received at grid_clb_10__5_ at 8
+Signal received at grid_clb_10__6_ at 8
+Signal received at grid_clb_10__7_ at 8
+Signal received at grid_clb_10__8_ at 8
+Signal received at grid_clb_10__9_ at 8
+Signal received at grid_clb_10__10_ at 8
+Signal received at grid_clb_10__11_ at 8
+Signal received at grid_clb_10__12_ at 8
+Signal received at grid_clb_11__12_ at 8
+Signal received at grid_clb_11__11_ at 8
+Signal received at grid_clb_11__10_ at 8
+Signal received at grid_clb_11__9_ at 8
+Signal received at grid_clb_11__8_ at 8
+Signal received at grid_clb_11__7_ at 8
+Signal received at grid_clb_11__6_ at 8
+Signal received at grid_clb_11__5_ at 8
+Signal received at grid_clb_11__4_ at 8
+Signal received at grid_clb_11__3_ at 8
+Signal received at grid_clb_11__2_ at 8
+Signal received at grid_clb_11__1_ at 8
+Signal received at grid_clb_12__1_ at 8
+Signal received at grid_clb_12__2_ at 8
+Signal received at grid_clb_12__3_ at 8
+Signal received at grid_clb_12__4_ at 8
+Signal received at grid_clb_12__5_ at 8
+Signal received at grid_clb_12__6_ at 8
+Signal received at grid_clb_12__7_ at 8
+Signal received at grid_clb_12__8_ at 8
+Signal received at grid_clb_12__9_ at 8
+Signal received at grid_clb_12__10_ at 8
+Signal received at grid_clb_12__11_ at 8
+Signal received at grid_clb_12__12_ at 8
+Simulation Finished in clocks 1151.8
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS        11530.01          0.90     12860.23  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 11530.01 NS                            **
+**                              REAL TIME : 0.93 S                                 **
+**                        SIM / REAL TIME : 12359.82 NS/S                          **
+*************************************************************************************
+
+Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Waiting for grid output on 12
+Signal received at grid_clb_1__12_ at 8
+Signal received at grid_clb_1__11_ at 8
+Signal received at grid_clb_1__10_ at 8
+Signal received at grid_clb_1__9_ at 8
+Signal received at grid_clb_1__8_ at 8
+Signal received at grid_clb_1__7_ at 8
+Signal received at grid_clb_1__6_ at 8
+Signal received at grid_clb_1__5_ at 8
+Signal received at grid_clb_1__4_ at 8
+Signal received at grid_clb_1__3_ at 8
+Signal received at grid_clb_1__2_ at 8
+Signal received at grid_clb_1__1_ at 8
+Signal received at grid_clb_2__1_ at 8
+Signal received at grid_clb_2__2_ at 8
+Signal received at grid_clb_2__3_ at 8
+Signal received at grid_clb_2__4_ at 8
+Signal received at grid_clb_2__5_ at 8
+Signal received at grid_clb_2__6_ at 8
+Signal received at grid_clb_2__7_ at 8
+Signal received at grid_clb_2__8_ at 8
+Signal received at grid_clb_2__9_ at 8
+Signal received at grid_clb_2__10_ at 8
+Signal received at grid_clb_2__11_ at 8
+Signal received at grid_clb_2__12_ at 8
+Signal received at grid_clb_3__12_ at 8
+Signal received at grid_clb_3__11_ at 9
+Signal received at grid_clb_3__10_ at 8
+Signal received at grid_clb_3__9_ at 8
+Signal received at grid_clb_3__8_ at 8
+Signal received at grid_clb_3__7_ at 8
+Signal received at grid_clb_3__6_ at 8
+Signal received at grid_clb_3__5_ at 8
+Signal received at grid_clb_3__4_ at 8
+Signal received at grid_clb_3__3_ at 8
+Signal received at grid_clb_3__2_ at 8
+Signal received at grid_clb_3__1_ at 8
+Signal received at grid_clb_4__1_ at 8
+Signal received at grid_clb_4__2_ at 8
+Signal received at grid_clb_4__3_ at 8
+Signal received at grid_clb_4__4_ at 8
+Signal received at grid_clb_4__5_ at 8
+Signal received at grid_clb_4__6_ at 8
+Signal received at grid_clb_4__7_ at 8
+Signal received at grid_clb_4__8_ at 8
+Signal received at grid_clb_4__9_ at 8
+Signal received at grid_clb_4__10_ at 8
+Signal received at grid_clb_4__11_ at 8
+Signal received at grid_clb_4__12_ at 8
+Signal received at grid_clb_5__12_ at 8
+Signal received at grid_clb_5__11_ at 8
+Signal received at grid_clb_5__10_ at 8
+Signal received at grid_clb_5__9_ at 8
+Signal received at grid_clb_5__8_ at 8
+Signal received at grid_clb_5__7_ at 8
+Signal received at grid_clb_5__6_ at 8
+Signal received at grid_clb_5__5_ at 8
+Signal received at grid_clb_5__4_ at 8
+Signal received at grid_clb_5__3_ at 8
+Signal received at grid_clb_5__2_ at 8
+Signal received at grid_clb_5__1_ at 8
+Signal received at grid_clb_6__1_ at 8
+Signal received at grid_clb_6__2_ at 8
+Signal received at grid_clb_6__3_ at 8
+Signal received at grid_clb_6__4_ at 8
+Signal received at grid_clb_6__5_ at 8
+Signal received at grid_clb_6__6_ at 8
+Signal received at grid_clb_6__7_ at 8
+Signal received at grid_clb_6__8_ at 8
+Signal received at grid_clb_6__9_ at 8
+Signal received at grid_clb_6__10_ at 8
+Signal received at grid_clb_6__11_ at 8
+Signal received at grid_clb_6__12_ at 8
+Signal received at grid_clb_7__12_ at 8
+Signal received at grid_clb_7__11_ at 8
+Signal received at grid_clb_7__10_ at 8
+Signal received at grid_clb_7__9_ at 8
+Signal received at grid_clb_7__8_ at 8
+Signal received at grid_clb_7__7_ at 8
+Signal received at grid_clb_7__6_ at 8
+Signal received at grid_clb_7__5_ at 8
+Signal received at grid_clb_7__4_ at 8
+Signal received at grid_clb_7__3_ at 8
+Signal received at grid_clb_7__2_ at 8
+Signal received at grid_clb_7__1_ at 8
+Signal received at grid_clb_8__1_ at 8
+Signal received at grid_clb_8__2_ at 8
+Signal received at grid_clb_8__3_ at 8
+Signal received at grid_clb_8__4_ at 8
+Signal received at grid_clb_8__5_ at 8
+Signal received at grid_clb_8__6_ at 8
+Signal received at grid_clb_8__7_ at 8
+Signal received at grid_clb_8__8_ at 8
+Signal received at grid_clb_8__9_ at 8
+Signal received at grid_clb_8__10_ at 8
+Signal received at grid_clb_8__11_ at 8
+Signal received at grid_clb_8__12_ at 8
+Signal received at grid_clb_9__12_ at 8
+Signal received at grid_clb_9__11_ at 8
+Signal received at grid_clb_9__10_ at 8
+Signal received at grid_clb_9__9_ at 8
+Signal received at grid_clb_9__8_ at 8
+Signal received at grid_clb_9__7_ at 8
+Signal received at grid_clb_9__6_ at 8
+Signal received at grid_clb_9__5_ at 8
+Signal received at grid_clb_9__4_ at 8
+Signal received at grid_clb_9__3_ at 8
+Signal received at grid_clb_9__2_ at 8
+Signal received at grid_clb_9__1_ at 8
+Signal received at grid_clb_10__1_ at 8
+Signal received at grid_clb_10__2_ at 8
+Signal received at grid_clb_10__3_ at 8
+Signal received at grid_clb_10__4_ at 8
+Signal received at grid_clb_10__5_ at 8
+Signal received at grid_clb_10__6_ at 8
+Signal received at grid_clb_10__7_ at 8
+Signal received at grid_clb_10__8_ at 8
+Signal received at grid_clb_10__9_ at 8
+Signal received at grid_clb_10__10_ at 8
+Signal received at grid_clb_10__11_ at 8
+Signal received at grid_clb_10__12_ at 8
+Signal received at grid_clb_11__12_ at 8
+Signal received at grid_clb_11__11_ at 8
+Signal received at grid_clb_11__10_ at 8
+Signal received at grid_clb_11__9_ at 8
+Signal received at grid_clb_11__8_ at 8
+Signal received at grid_clb_11__7_ at 8
+Signal received at grid_clb_11__6_ at 8
+Signal received at grid_clb_11__5_ at 8
+Signal received at grid_clb_11__4_ at 8
+Signal received at grid_clb_11__3_ at 8
+Signal received at grid_clb_11__2_ at 8
+Signal received at grid_clb_11__1_ at 8
+Signal received at grid_clb_12__1_ at 8
+Signal received at grid_clb_12__2_ at 8
+Signal received at grid_clb_12__3_ at 8
+Signal received at grid_clb_12__4_ at 8
+Signal received at grid_clb_12__5_ at 8
+Signal received at grid_clb_12__6_ at 8
+Signal received at grid_clb_12__7_ at 8
+Signal received at grid_clb_12__8_ at 8
+Signal received at grid_clb_12__9_ at 8
+Signal received at grid_clb_12__10_ at 8
+Signal received at grid_clb_12__11_ at 8
+Signal received at grid_clb_12__12_ at 8
+Simulation Finished in clocks 1152
+Per Grid 8.0
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS        11530.01          0.91     12671.80  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 11530.01 NS                            **
+**                              REAL TIME : 0.95 S                                 **
+**                        SIM / REAL TIME : 12174.08 NS/S                          **
+*************************************************************************************
+
+Shutting down...
