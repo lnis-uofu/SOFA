@@ -59,6 +59,7 @@ write_verilog_testbench --file ${OPENFPGA_VERILOG_OUTPUT_DIR}/verilog_testbench 
   --print_top_testbench \
   --print_preconfig_top_testbench \
   --print_simulation_ini ${OPENFPGA_VERILOG_OUTPUT_DIR}/SimulationDeck/simulation_deck.ini \
+  --include_signal_init \
   --explicit_port_mapping
 
 # Write the SDC to run timing analysis for a mapped FPGA fabric
