@@ -554,6 +554,7 @@
         <mode name="shift_register">
           <pb_type name="shift_reg" num_pb="1">
             <input name="reg_in" num_pins="1"/>
+            <output name="ff_out" num_pins="2"/>
             <output name="reg_out" num_pins="1"/>
             <clock name="clk" num_pins="1"/>
             <pb_type name="ff" blif_model=".latch" num_pb="2" class="flipflop">
@@ -567,13 +568,16 @@
               <direct name="direct1" input="shift_reg.reg_in" output="ff[0].D"/>
               <direct name="direct2" input="ff[0].Q" output="ff[1].D"/>
               <direct name="direct3" input="ff[1].Q" output="shift_reg.reg_out"/>
+              <direct name="direct4" input="ff[0].Q" output="shift_reg.ff_out[0:0]"/>
+              <direct name="direct5" input="ff[1].Q" output="shift_reg.ff_out[1:1]"/>
               <complete name="complete1" input="shift_reg.clk" output="ff.clk"/>
             </interconnect>
           </pb_type>
           <interconnect>
             <direct name="direct1" input="fle.reg_in" output="shift_reg.reg_in"/>
             <direct name="direct2" input="shift_reg.reg_out" output="fle.reg_out"/>
-            <direct name="direct3" input="fle.clk" output="shift_reg.clk"/>
+            <direct name="direct3" input="shift_reg.ff_out" output="fle.out"/>
+            <direct name="direct4" input="fle.clk" output="shift_reg.clk"/>
           </interconnect>
         </mode>
         <!-- Define shift register end --> 
