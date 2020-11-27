@@ -59,8 +59,10 @@ write_verilog_testbench --file ${OPENFPGA_VERILOG_OUTPUT_DIR}/verilog_testbench 
   --print_top_testbench \
   --print_preconfig_top_testbench \
   --print_simulation_ini ${OPENFPGA_VERILOG_OUTPUT_DIR}/SimulationDeck/simulation_deck.ini \
-  --include_signal_init \
   --explicit_port_mapping
+# Exclude signal initialization since it does not help simulator converge 
+# due to the lack of reset pins for flip-flops
+#--include_signal_init 
 
 # Write the SDC to run timing analysis for a mapped FPGA fabric
 write_analysis_sdc --file ${OPENFPGA_VERILOG_OUTPUT_DIR}/sdc_analysis
