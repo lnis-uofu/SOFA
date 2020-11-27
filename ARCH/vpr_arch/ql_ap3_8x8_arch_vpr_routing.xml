@@ -18,6 +18,25 @@
                 <port clock="QCK" name="CQZ"/>
             </output_ports>
         </model>
+        <model name="frac_lut4">
+            <input_ports>
+                <port name="in"/>
+            </input_ports>
+            <output_ports>
+                <port name="lut2_out"/>
+                <port name="lut4_out"/>
+            </output_ports>
+        </model>
+        <model name="MUX2">
+            <input_ports>
+                <port name="in0" />
+                <port name="in1" />
+                <port name="sel" />
+            </input_ports>
+            <output_ports>
+                <port name="out" />
+            </output_ports>
+        </model>
         <model name="LUT4">
             <input_ports>
                 <port combinational_sink_ports="O" name="I0"/>
@@ -52,7 +71,7 @@
                     IO.IQZ
                 </loc>
             </pinlocations>
-            <fc in_type="frac" in_val="0.50" out_type="frac" out_val="0.25"/>
+            <fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25"/>
             <input equivalent="none" name="OQI" num_pins="1"/>
             <output equivalent="none" name="IQZ" num_pins="1"/>
             <equivalent_sites>
@@ -85,7 +104,7 @@
                     SUPER_LOGIC_CELL.CO
                 </loc>
             </pinlocations>
-            <fc in_type="frac" in_val="0.5" out_type="frac" out_val="0.25"/>
+            <fc in_type="frac" in_val="0.2" out_type="frac" out_val="0.25"/>
             <clock name="QCK" num_pins="1"/>
             <output equivalent="none" name="AQZ" num_pins="8"/>
             <output equivalent="none" name="FZ" num_pins="8"/>
@@ -125,7 +144,7 @@
             <pinlocations pattern="custom">
                 <loc side="right">TL-VCC.VCC</loc>
             </pinlocations>
-            <fc in_type="frac" in_val="0.50" out_type="frac" out_val="0.25"/>
+            <fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25"/>
             <equivalent_sites>
                 <site pb_type="LOGIC_1" pin_mapping="custom">
                     <direct from="TL-VCC.VCC" to="LOGIC_1.a"/>
@@ -138,7 +157,7 @@
             <pinlocations pattern="custom">
                 <loc side="right">TL-GND.GND</loc>
             </pinlocations>
-            <fc in_type="frac" in_val="0.50" out_type="frac" out_val="0.25"/>
+            <fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25"/>
             <equivalent_sites>
                 <site pb_type="LOGIC_0" pin_mapping="custom">
                     <direct from="TL-GND.GND" to="LOGIC_0.a"/>
@@ -175,7 +194,7 @@
         </chan_width_distr>
         <switch_block fs="3" type="wilton"/>
         <connection_block input_switch_name="routing"/>
-        <default_fc in_type="frac" in_val="0.50" out_type="frac" out_val="0.25"/>
+        <default_fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25"/>
     </device>
     <switchlist>
         <switch Cin="0.0" Cinternal="0.0" Cout="0.0" R="0.0" Tdel="1e-10" buf_size="27.645901" mux_trans_size="2.630740" name="routing" type="mux"/>
@@ -280,12 +299,16 @@
                             <output name="O" num_pins="1"/>
                             <output name="CO" num_pins="1"/>
                             <!-- Define LUT -->
-                            <pb_type name="frac_lut4" blif_model=".subckt LUT4" num_pb="1">
+                            <pb_type name="frac_lut4" blif_model=".subckt frac_lut4" num_pb="1">
                                 <input name="in" num_pins="4"/>
-                                <output name="lut3_out" num_pins="1"/>
+                                <output name="lut2_out" num_pins="2"/>
                                 <output name="lut4_out" num_pins="1"/>
-                                <delay_constant in_port="frac_lut4.in" max="1e-10" out_port="frac_lut4.lut3_out"/>
-                                <delay_constant in_port="frac_lut4.in" max="1e-10" out_port="frac_lut4.lut4_out"/>
+                            </pb_type>
+                            <pb_type name="co_mux" blif_model=".subckt MUX2" num_pb="1">
+                                <input name="in0" num_pins="1"/>
+                                <input name="in1" num_pins="1"/>
+                                <input name="sel" num_pins="1"/>
+                                <output name="out" num_pins="1"/>
                             </pb_type>
                             <interconnect>
                                 <direct name="direct1" input="frac_logic.LI[0]" output="frac_lut4.in[0]" />
@@ -293,7 +316,10 @@
                                 <mux name="i2_ci" input="frac_logic.LI[2] frac_logic.CI" output="frac_lut4.in[2]"/>
                                 <direct name="direct3" input="frac_logic.LI[3]" output="frac_lut4.in[3]" />
                                 <direct name="direct4" input="frac_lut4.lut4_out" output="frac_logic.O" />
-                                <direct name="direct4" input="frac_lut4.lut3_out" output="frac_logic.CO" />
+                                <direct name="direct5" input="frac_lut4.lut2_out[1]" output="co_mux.in0" />
+                                <direct name="direct6" input="frac_logic.CI" output="co_mux.in1" />
+                                <direct name="direct7" input="frac_lut4.lut2_out[0]" output="co_mux.sel" />
+                                <direct name="direct8" input="co_mux.out" output="frac_logic.CO" />
                             </interconnect>
                         </pb_type>
                         <!-- Define flip-flop with scan-chain capability, DI is the scan-chain data input -->
