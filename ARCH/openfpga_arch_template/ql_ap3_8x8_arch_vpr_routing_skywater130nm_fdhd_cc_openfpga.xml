@@ -150,7 +150,7 @@
       <lut_intermediate_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2" location_map="-1-"/>
       <pass_gate_logic circuit_model_name="sky130_fd_sc_hd__mux2_1"/>
       <port type="input" prefix="in" size="4"/>
-      <port type="output" prefix="lut3_out" size="1" lut_frac_level="3" lut_output_mask="1"/>
+      <port type="output" prefix="lut2_out" size="2" lut_frac_level="2" lut_output_mask="2,3"/>
       <port type="output" prefix="lut4_out" size="1" lut_output_mask="0"/>
       <port type="sram" prefix="sram" size="16"/>
     </circuit_model>
@@ -220,6 +220,7 @@
     <pb_type name="SUPER_LOGIC_CELL.LC" physical_mode_name="PHYSICAL"/>
     <pb_type name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.frac_logic.frac_lut4" circuit_model_name="frac_lut4" mode_bits="0"/>
     <pb_type name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.ff" circuit_model_name="sky130_fd_sc_hd__dfxtp_1"/>
+    <pb_type name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.co_mux" circuit_model_name="sky130_fd_sc_hd__mux2_1"/>
     <!-- BEGIN Binding operating pb_types in mode 'ble4' -->
     <pb_type name="SUPER_LOGIC_CELL.LC[DEFAULT].DEFAULT.lut_part[VPR_LUT4].VPR_LUT4.lut_inst" physical_pb_type_name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.frac_logic.frac_lut4" mode_bits="0">
       <!-- Binding the lut4 to the first 4 inputs of fracturable lut4 -->
