@@ -11,6 +11,7 @@ import shutil
 import re
 import argparse
 import logging
+import subprocess
 
 #####################################################################
 # Initialize logger 
@@ -64,7 +65,8 @@ for root, dirs, files in os.walk(openfpga_arch_template_dirpath):
     shutil.copy(openfpga_arch_template_dirpath + src_file, des_file);
     homepath_to_replace = re.sub("/", "\/", skywater_openfpga_homepath);
     cmd = "sed -i 's/${SKYWATER_OPENFPGA_HOME}/" + homepath_to_replace + "/g' " + des_file;
-    os.system(cmd);
+    # Error out if this command fails
+    subprocess.run(cmd, shell=True, check=True); 
     num_arch_file_processed += 1;
 
 logging.info("Processed for " +  str(num_arch_file_processed) + " openfpga architecture templates");
@@ -102,7 +104,8 @@ for task_template_file in get_list_of_task_config_files(skywater_openfpga_task_d
     shutil.copy(task_template_file, task_conf_file);
     homepath_to_replace = re.sub("/", "\/", skywater_openfpga_homepath);
     cmd = "sed -i 's/${SKYWATER_OPENFPGA_HOME}/" + homepath_to_replace + "/g' " + task_conf_file;
-    os.system(cmd);
+    # Error out if this command fails
+    subprocess.run(cmd, shell=True, check=True); 
     num_task_config_file_processed += 1;
 
 logging.info("Processed for " + str(num_task_config_file_processed) + "openfpga task templates");
@@ -148,12 +151,14 @@ for task_name in openfpga_task_list:
   # Remove all the previous runs in the openfpga task to ensure a clean start
   logging.info("Clean up previous runs for openfpga task: " + task_name + "...");
   cmd = "python3 openfpga_flow/scripts/run_fpga_task.py " + task_name +  " --debug --show_thread_logs --remove_run_dir all";
-  os.system(cmd);
+  # Error out if this task run fails
+  subprocess.run(cmd, shell=True, check=True); 
   logging.info("Done");
   # Execute new task run
   cmd = "python3 openfpga_flow/scripts/run_fpga_task.py " + task_name +  " --debug --show_thread_logs";
   logging.info("Running openfpga task: " + task_name + "...");
-  os.system(cmd);
+  # Error out if this task run fails
+  subprocess.run(cmd, shell=True, check=True); 
   logging.info("Done");
 
 os.chdir(skywater_openfpga_homepath);
