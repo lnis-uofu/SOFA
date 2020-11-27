@@ -44,7 +44,7 @@
         <port name="lut4_out"/>
       </output_ports>
     </model>
-    <model name="carray_follower">
+    <model name="carry_follower">
       <input_ports>
         <port name="a"/>
         <port name="b"/>
@@ -124,22 +124,22 @@
       <equivalent_sites>
         <site pb_type="clb"/>
       </equivalent_sites>
-      <input name="I0" num_pins="3" equivalent="full"/>
-      <input name="I0i" num_pins="1" equivalent="none"/>
-      <input name="I1" num_pins="3" equivalent="full"/>
-      <input name="I1i" num_pins="1" equivalent="none"/>
-      <input name="I2" num_pins="3" equivalent="full"/>
-      <input name="I2i" num_pins="1" equivalent="none"/>
-      <input name="I3" num_pins="3" equivalent="full"/>
-      <input name="I3i" num_pins="1" equivalent="none"/>
-      <input name="I4" num_pins="3" equivalent="full"/>
-      <input name="I4i" num_pins="1" equivalent="none"/>
-      <input name="I5" num_pins="3" equivalent="full"/>
-      <input name="I5i" num_pins="1" equivalent="none"/>
-      <input name="I6" num_pins="3" equivalent="full"/>
-      <input name="I6i" num_pins="1" equivalent="none"/>
-      <input name="I7" num_pins="3" equivalent="full"/>
-      <input name="I7i" num_pins="1" equivalent="none"/>
+      <input name="I0" num_pins="2" equivalent="full"/>
+      <input name="I0i" num_pins="2" equivalent="none"/>
+      <input name="I1" num_pins="2" equivalent="full"/>
+      <input name="I1i" num_pins="2" equivalent="none"/>
+      <input name="I2" num_pins="2" equivalent="full"/>
+      <input name="I2i" num_pins="2" equivalent="none"/>
+      <input name="I3" num_pins="2" equivalent="full"/>
+      <input name="I3i" num_pins="2" equivalent="none"/>
+      <input name="I4" num_pins="2" equivalent="full"/>
+      <input name="I4i" num_pins="2" equivalent="none"/>
+      <input name="I5" num_pins="2" equivalent="full"/>
+      <input name="I5i" num_pins="2" equivalent="none"/>
+      <input name="I6" num_pins="2" equivalent="full"/>
+      <input name="I6i" num_pins="2" equivalent="none"/>
+      <input name="I7" num_pins="2" equivalent="full"/>
+      <input name="I7i" num_pins="2" equivalent="none"/>
       <input name="reg_in" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
       <input name="cin" num_pins="1"/>
@@ -336,22 +336,22 @@
          So pin equivalence should be applied to the first 3 inputs only
 	  -->
     <pb_type name="clb">
-      <input name="I0" num_pins="3" equivalent="full"/>
-      <input name="I0i" num_pins="1" equivalent="none"/>
-      <input name="I1" num_pins="3" equivalent="full"/>
-      <input name="I1i" num_pins="1" equivalent="none"/>
-      <input name="I2" num_pins="3" equivalent="full"/>
-      <input name="I2i" num_pins="1" equivalent="none"/>
-      <input name="I3" num_pins="3" equivalent="full"/>
-      <input name="I3i" num_pins="1" equivalent="none"/>
-      <input name="I4" num_pins="3" equivalent="full"/>
-      <input name="I4i" num_pins="1" equivalent="none"/>
-      <input name="I5" num_pins="3" equivalent="full"/>
-      <input name="I5i" num_pins="1" equivalent="none"/>
-      <input name="I6" num_pins="3" equivalent="full"/>
-      <input name="I6i" num_pins="1" equivalent="none"/>
-      <input name="I7" num_pins="3" equivalent="full"/>
-      <input name="I7i" num_pins="1" equivalent="none"/>
+      <input name="I0" num_pins="2" equivalent="full"/>
+      <input name="I0i" num_pins="2" equivalent="none"/>
+      <input name="I1" num_pins="2" equivalent="full"/>
+      <input name="I1i" num_pins="2" equivalent="none"/>
+      <input name="I2" num_pins="2" equivalent="full"/>
+      <input name="I2i" num_pins="2" equivalent="none"/>
+      <input name="I3" num_pins="2" equivalent="full"/>
+      <input name="I3i" num_pins="2" equivalent="none"/>
+      <input name="I4" num_pins="2" equivalent="full"/>
+      <input name="I4i" num_pins="2" equivalent="none"/>
+      <input name="I5" num_pins="2" equivalent="full"/>
+      <input name="I5i" num_pins="2" equivalent="none"/>
+      <input name="I6" num_pins="2" equivalent="full"/>
+      <input name="I6i" num_pins="2" equivalent="none"/>
+      <input name="I7" num_pins="2" equivalent="full"/>
+      <input name="I7i" num_pins="2" equivalent="none"/>
       <input name="reg_in" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
       <input name="cin" num_pins="1"/>
@@ -414,7 +414,7 @@
                 <direct name="direct7" input="frac_lut4.lut3_out[1]" output="frac_logic.out[1]"/>
                 <!-- Xifan Tang: I use out[0] because the output of lut6 in lut6 mode is wired to the out[0] -->
                 <mux name="mux1" input="frac_lut4.lut4_out frac_lut4.lut3_out[0]" output="frac_logic.out[0]"/>
-                <mux name="mux2" input="frac_lut4.cin frac_logic.in[2:2]" output="frac_lut4.in[2:2]"/>
+                <mux name="mux2" input="frac_logic.cin frac_logic.in[2:2]" output="frac_lut4.in[2:2]"/>
               </interconnect>
             </pb_type>
             <!-- Define flip-flop with scan-chain capability, DI is the scan-chain data input -->
@@ -629,52 +629,52 @@
                     in[2]. Such twisted connection is not expected.
                     I[0] should be connected to in[0]
           -->
-        <direct name="direct_fle0" input="clb.I0[0:2]" output="fle[0:0].in[0:2]">
+        <direct name="direct_fle0" input="clb.I0[0:1]" output="fle[0:0].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle0i" input="clb.I0i" output="fle[0:0].in[3]">
+        <direct name="direct_fle0i" input="clb.I0i[0:1]" output="fle[0:0].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle1" input="clb.I1[0:2]" output="fle[1:1].in[0:2]">
+        <direct name="direct_fle1" input="clb.I1[0:1]" output="fle[1:1].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle1i" input="clb.I1i" output="fle[1:1].in[3]">
+        <direct name="direct_fle1i" input="clb.I1i[0:1]" output="fle[1:1].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle2" input="clb.I2[0:2]" output="fle[2:2].in[0:2]">
+        <direct name="direct_fle2" input="clb.I2[0:1]" output="fle[2:2].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle2i" input="clb.I2i" output="fle[2:2].in[3]">
+        <direct name="direct_fle2i" input="clb.I2i[0:1]" output="fle[2:2].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle3" input="clb.I3[0:2]" output="fle[3:3].in[0:2]">
+        <direct name="direct_fle3" input="clb.I3[0:1]" output="fle[3:3].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle3i" input="clb.I3i" output="fle[3:3].in[3]">
+        <direct name="direct_fle3i" input="clb.I3i[0:1]" output="fle[3:3].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle4" input="clb.I4[0:2]" output="fle[4:4].in[0:2]">
+        <direct name="direct_fle4" input="clb.I4[0:1]" output="fle[4:4].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle4i" input="clb.I4i" output="fle[4:4].in[3]">
+        <direct name="direct_fle4i" input="clb.I4i[0:1]" output="fle[4:4].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle5" input="clb.I5[0:2]" output="fle[5:5].in[0:2]">
+        <direct name="direct_fle5" input="clb.I5[0:1]" output="fle[5:5].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle5i" input="clb.I5i" output="fle[5:5].in[3]">
+        <direct name="direct_fle5i" input="clb.I5i[0:1]" output="fle[5:5].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle6" input="clb.I6[0:2]" output="fle[6:6].in[0:2]">
+        <direct name="direct_fle6" input="clb.I6[0:1]" output="fle[6:6].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle6i" input="clb.I6i" output="fle[6:6].in[3]">
+        <direct name="direct_fle6i" input="clb.I6i[0:1]" output="fle[6:6].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle7" input="clb.I7[0:2]" output="fle[7:7].in[0:2]">
+        <direct name="direct_fle7" input="clb.I7[0:1]" output="fle[7:7].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle7i" input="clb.I7i" output="fle[7:7].in[3]">
+        <direct name="direct_fle7i" input="clb.I7i[0:1]" output="fle[7:7].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <complete name="clks" input="clb.clk" output="fle[7:0].clk">

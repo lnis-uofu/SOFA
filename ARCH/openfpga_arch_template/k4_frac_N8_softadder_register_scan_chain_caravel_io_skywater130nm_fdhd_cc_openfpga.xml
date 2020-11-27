@@ -243,7 +243,7 @@
     <!-- physical mode will be the default mode if not specified -->
     <pb_type name="clb.fle" physical_mode_name="physical"/>
     <pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4" mode_bits="0"/>
-    <pb_type name="clb.fle[physical].fabric.frac_logic.carry_follower" circuit_model_name="carry_mux2"/>
+    <pb_type name="clb.fle[physical].fabric.frac_logic.carry_follower" circuit_model_name="sky130_fd_sc_hd__mux2_1_wrapper"/>
     <pb_type name="clb.fle[physical].fabric.ff" circuit_model_name="sky130_fd_sc_hd__sdfxtp_1"/>
     <!-- Binding operating pb_type to physical pb_type -->
     <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.lut3" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="1" physical_pb_type_index_factor="0.5">
