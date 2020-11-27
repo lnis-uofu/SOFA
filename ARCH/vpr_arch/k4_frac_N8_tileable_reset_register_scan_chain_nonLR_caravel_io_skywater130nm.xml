@@ -132,7 +132,7 @@
       <input name="I7i" num_pins="1" equivalent="none"/>
       <input name="reg_in" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
-      <input name="reset" num_pins="1"/>
+      <input name="reset" num_pins="1" is_non_clock_global="true"/>
       <output name="O" num_pins="16" equivalent="none"/>
       <output name="reg_out" num_pins="1"/>
       <output name="sc_out" num_pins="1"/>
@@ -341,7 +341,7 @@
       <input name="I7i" num_pins="1" equivalent="none"/>
       <input name="reg_in" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
-      <input name="reset" num_pins="1"/>
+      <input name="reset" num_pins="1" is_non_clock_global="true"/>
       <output name="O" num_pins="16" equivalent="none"/>
       <output name="reg_out" num_pins="1"/>
       <output name="sc_out" num_pins="1"/>
@@ -649,6 +649,7 @@
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <complete name="clks" input="clb.clk" output="fle[7:0].clk">
+        </complete>
         <complete name="resets" input="clb.reset" output="fle[7:0].reset">
         </complete>
         <!-- This way of specifying direct connection to clb outputs is important because this architecture uses automatic spreading of opins.  
