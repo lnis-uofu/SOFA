@@ -1,5 +1,7 @@
 # Skywater PDK
-This directory contains the commonly used testbench template for FPGA verificatio
+This directory contains the commonly used testbench templates for FPGA verification
+
+* **post\_pnr\_testbench\_converter.py: The python script to convert an auto-generated pre-PnR testbench to the post-PnR testbench tuned for final layout 
 
 * **post\_pnr\_fpga\_cells.v**: The netlist that includes all the standard cells used by the post-PnRed FPGA fabric
 
