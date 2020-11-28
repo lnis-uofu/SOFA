@@ -1,7 +1,7 @@
 
 
 module sb_0__2_
-( chanx_right_in, right_top_grid_pin_1_, right_bottom_grid_pin_34_, right_bottom_grid_pin_35_, right_bottom_grid_pin_36_, right_bottom_grid_pin_37_, right_bottom_grid_pin_38_, right_bottom_grid_pin_39_, right_bottom_grid_pin_40_, right_bottom_grid_pin_41_, chany_bottom_in, bottom_left_grid_pin_1_, ccff_head, chanx_right_out, chany_bottom_out, ccff_tail, SC_IN_TOP, SC_OUT_BOT, SC_IN_BOT, SC_OUT_TOP, prog_clk_0_E_in ); 
+( chanx_right_in, right_top_grid_pin_1_, right_bottom_grid_pin_34_, right_bottom_grid_pin_35_, right_bottom_grid_pin_36_, right_bottom_grid_pin_37_, right_bottom_grid_pin_38_, right_bottom_grid_pin_39_, right_bottom_grid_pin_40_, right_bottom_grid_pin_41_, chany_bottom_in, bottom_left_grid_pin_1_, ccff_head, chanx_right_out, chany_bottom_out, ccff_tail, SC_IN_TOP, SC_OUT_BOT, prog_clk_0_E_in ); 
   input [0:19] chanx_right_in;
   input [0:0] right_top_grid_pin_1_;
   input [0:0] right_bottom_grid_pin_34_;
@@ -20,8 +20,6 @@ module sb_0__2_
   output [0:0] ccff_tail;
   input SC_IN_TOP;
   output SC_OUT_BOT;
-  input SC_IN_BOT;
-  output SC_OUT_TOP;
   input prog_clk_0_E_in;
 
   wire [0:1] mux_bottom_track_1_undriven_sram_inv;
@@ -114,7 +112,6 @@ module sb_0__2_
   assign chany_bottom_out[1] = chanx_right_in[17];
   assign chany_bottom_out[19] = chanx_right_in[19];
   assign SC_OUT_BOT = SC_IN_TOP;
-  assign SC_OUT_TOP = SC_IN_BOT;
   assign prog_clk_0 = prog_clk;
 
   mux_tree_tapbuf_size6
