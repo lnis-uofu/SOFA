@@ -432,6 +432,7 @@
               <clock name="clk" num_pins="1"/>
               <T_setup value="66e-12" port="ff.D" clock="clk"/>
               <T_setup value="66e-12" port="ff.DI" clock="clk"/>
+              <T_setup value="66e-12" port="ff.reset" clock="clk"/>
               <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
             </pb_type>         
             <interconnect>
