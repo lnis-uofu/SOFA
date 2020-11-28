@@ -68,7 +68,7 @@ for testbench_file in testbench_files:
   cmd = "python3 " + msim_testrun_script_abspath \
       + " --verilog_testbench " +  testbench_file \
       + " --project_path " + msim_task_dir_abspath + "/" + testbench_name \
-      + " --testbench_name " + testbench_name
+      + " --testbench_name " + testbench_name + "_autocheck_top_tb"
   subprocess.run(cmd, shell=True, check=True) 
   num_sim_finished += 1
 
