@@ -123,7 +123,7 @@ for line in vsim_log_file:
     num_sim_err = int(re.findall("# Simulation finish with(\s+)(\d+) errors", line)[0][1])
     num_err_lines_found = num_err_lines_found + 1
     if (0 < num_sim_err) : 
-      logging.error("Simulation failed with " + num_sim_err + " errors!\n")
+      logging.error("Simulation failed with " + str(num_sim_err) + " errors!\n")
       # Add to total errors
       num_err = num_err + num_sim_err
   # Check total errors by Modelsim
@@ -137,7 +137,7 @@ vsim_log_file.close()
 if (0 == num_err_lines_found) :    
   logging.error("No error lines found!Something wrong in setting up modelsim simulation\n")
 elif (0 < num_err) :
-  logging.error("ModelSim failed with " + num_err + " errors!\n")
+  logging.error("ModelSim failed with " + str(num_err) + " errors!\n")
 else :
   verification_passed = True
 
