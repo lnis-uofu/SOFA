@@ -32,7 +32,7 @@ proc add_waves {top_tb} {
 }
 
 #Top procedure to create enw project
-proc top_create_new_project {projectname verilog_files modelsim_path simtime unit top_tb} {
+proc top_create_new_project {projectname verilog_files modelsim_path top_tb} {
   #Create the project
   create_project_with_close $projectname $modelsim_path
   #Add the verilog files
@@ -40,7 +40,7 @@ proc top_create_new_project {projectname verilog_files modelsim_path simtime uni
   #Compile all the files
   set myFiles [project filenames]
   foreach x $myFiles {
-    vlog +define+ENABLE_TIMING +define+ENABLE_SIGNAL_INITIALIZATION $x
+    vlog +define+ENABLE_SIGNAL_INITIALIZATION $x
   }
   #Start the simulation
   vsim $projectname.$top_tb -voptargs=+acc
