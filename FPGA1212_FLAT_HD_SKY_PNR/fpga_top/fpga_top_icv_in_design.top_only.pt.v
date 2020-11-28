@@ -7,7 +7,15 @@
 module fpga_top ( vdda1 , vdda2 , vssa1 , vssa2 , vccd1 , vccd2 , vssd1 , 
     vssd2 , wb_clk_i , wb_rst_i , wbs_stb_i , wbs_cyc_i , wbs_we_i , 
     wbs_sel_i , wbs_dat_i , wbs_adr_i , wbs_ack_o , wbs_dat_o , la_data_in , 
-    la_data_out , la_oen , io_in , io_out , io_oeb , user_clock2 ) ;
+    la_data_out , la_oen , io_in , io_out , io_oeb , analog_io_0_ , 
+    analog_io_10_ , analog_io_11_ , analog_io_12_ , analog_io_13_ , 
+    analog_io_14_ , analog_io_15_ , analog_io_16_ , analog_io_17_ , 
+    analog_io_18_ , analog_io_19_ , analog_io_1_ , analog_io_20_ , 
+    analog_io_21_ , analog_io_22_ , analog_io_23_ , analog_io_24_ , 
+    analog_io_25_ , analog_io_26_ , analog_io_27_ , analog_io_28_ , 
+    analog_io_29_ , analog_io_2_ , analog_io_30_ , analog_io_3_ , 
+    analog_io_4_ , analog_io_5_ , analog_io_6_ , analog_io_7_ , analog_io_8_ , 
+    analog_io_9_ , user_clock2 ) ;
 inout  vdda1 ;
 inout  vdda2 ;
 inout  vssa1 ;
@@ -32,6 +40,37 @@ input  [127:0] la_oen ;
 input  [37:0] io_in ;
 output [37:0] io_out ;
 output [37:0] io_oeb ;
+inout  analog_io_0_ ;
+inout  analog_io_10_ ;
+inout  analog_io_11_ ;
+inout  analog_io_12_ ;
+inout  analog_io_13_ ;
+inout  analog_io_14_ ;
+inout  analog_io_15_ ;
+inout  analog_io_16_ ;
+inout  analog_io_17_ ;
+inout  analog_io_18_ ;
+inout  analog_io_19_ ;
+inout  analog_io_1_ ;
+inout  analog_io_20_ ;
+inout  analog_io_21_ ;
+inout  analog_io_22_ ;
+inout  analog_io_23_ ;
+inout  analog_io_24_ ;
+inout  analog_io_25_ ;
+inout  analog_io_26_ ;
+inout  analog_io_27_ ;
+inout  analog_io_28_ ;
+inout  analog_io_29_ ;
+inout  analog_io_2_ ;
+inout  analog_io_30_ ;
+inout  analog_io_3_ ;
+inout  analog_io_4_ ;
+inout  analog_io_5_ ;
+inout  analog_io_6_ ;
+inout  analog_io_7_ ;
+inout  analog_io_8_ ;
+inout  analog_io_9_ ;
 input  user_clock2 ;
 
 wire [0:143] gfpga_pad_EMBEDDED_IO_HD_SOC_IN ;
@@ -284,8 +323,6 @@ assign io_oeb[11] = 1'b0 ;
 assign io_oeb[1] = 1'b1 ;
 assign io_oeb[0] = 1'b1 ;
 
-sky130_fd_sc_hd__inv_8 WB_LA_SWITCH_INV ( .A ( la_wb_switch ) , 
-    .Y ( la_wb_switch_b ) ) ;
 sky130_fd_sc_hd__mux2_1 FPGA2SOC_IN_135_MUX ( .A0 ( la_data_in[13] ) , 
     .A1 ( wb_clk_i ) , .S ( io_in[25] ) , 
     .X ( gfpga_pad_EMBEDDED_IO_HD_SOC_IN[135] ) ) ;
