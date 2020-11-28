@@ -36,6 +36,12 @@ Date:   Thu Nov 12 19:43:43 2020 -0700
 On branch master
 Your branch is up to date with 'origin/master'.
 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   openfpga_flow/scripts/run_fpga_flow.py
+	modified:   openfpga_flow/scripts/run_fpga_task.py
+
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	openfpga/openfpga
@@ -57,9 +63,10 @@ Untracked files:
 	openfpga_flow/tasks/FPGA44_FLAT_task
 	openfpga_flow/tasks/FPGA6464_FLAT_task
 	openfpga_flow/tasks/FPGA66_FLAT_task
+	openfpga_flow/tasks/FPGA88_FLAT_HD_SKY_task
 	openfpga_flow/tasks/FPGA88_FLAT_task
 	openfpga_flow/tasks/routing_test/
 	openfpga_flow/tasks/skywater_openfpga_task
 	vpr/vpr
 
-nothing added to commit but untracked files present (use "git add" to track)
+no changes added to commit (use "git add" and/or "git commit -a")

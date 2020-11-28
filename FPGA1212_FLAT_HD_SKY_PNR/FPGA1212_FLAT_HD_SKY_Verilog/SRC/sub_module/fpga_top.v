@@ -73,7 +73,7 @@ module fpga_top (
     //
     //
     //
-    sky130_fd_sc_hd__inv_8 WB_LA_SWITCH_INV (.A(la_wb_switch), .Y(la_wb_switch_b));
+    //
 
     //
     assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[0] = io_in[24];
