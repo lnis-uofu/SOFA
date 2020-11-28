@@ -26,41 +26,38 @@ import glob
 logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.DEBUG)
 
 #####################################################################
+# Parse the options
+#####################################################################
+parser = argparse.ArgumentParser(description='Generate post-PnR testbenches for a given directory')
+parser.add_argument('--pre_pnr_testbench_dir_name', required=True,
+                    help='Specify the directory path for the pre-PnR Verilog testbenches')
+args = parser.parse_args()
+
+#####################################################################
 # Walk through the parent directory and find all the pre-PnR testbenches
 #####################################################################
 logging.info("Finding pre-PnR testbenches..."); 
 
-parent_dirpath = dirname(dirname(abspath(__file__)))
+pre_pnr_testbench_dir_abspath = abspath(args.pre_pnr_testbench_dir_name) + "/prepnr/verilog_testbench";
 
 # Count how many testbenches have been converted
 num_converted_testbenches = 0
 
 # Collect the pre-PnR testbenches to be converted
 pre_pnr_testbench_files = []
-post_pnr_testbench_dirs = []
-for root, dirs, files in os.walk(parent_dirpath):
-  for dir_name in dirs:
-    # Skip 'common' directory as the testbenches inside are already converted
-    # Also skip any hidden directories
-    if ((dir_name == "common") or (dir_name.startswith("."))):
-      continue;
-    # Find the testbenches in the fixed location of the tree
-    curr_pre_pnr_testbench_dir_path = os.path.join(root, dir_name + "/prepnr/verilog_testbench")
-    # Add to list 
-    logging.info("Checking directory: " + str(curr_pre_pnr_testbench_dir_path))
-    for globbed_file in glob.glob(curr_pre_pnr_testbench_dir_path + "/*_autocheck_top_tb.v"):
-      pre_pnr_testbench_files.append(globbed_file)
-    # If we have testbenches to convert, try to create the directory of post-pnr testbenches
-    curr_post_pnr_testbench_dir_path = os.path.join(root, dir_name + "/postpnr/verilog_testbench")
-    post_pnr_testbench_dirs.append(curr_post_pnr_testbench_dir_path)
+
+# Add to list 
+for globbed_file in glob.glob(pre_pnr_testbench_dir_abspath + "/*_autocheck_top_tb.v"):
+  pre_pnr_testbench_files.append(globbed_file)
+# If we have testbenches to convert, try to create the directory of post-pnr testbenches
+post_pnr_testbench_dir_abspath = abspath(args.pre_pnr_testbench_dir_name) + "/postpnr/verilog_testbench";
 
 logging.info("Found " + str(len(pre_pnr_testbench_files)) + " pre-PnR testbenches")
 
 #####################################################################
 # Try to create the directory of post-pnr testbenches
 #####################################################################
-for post_pnr_testbench_dir in post_pnr_testbench_dirs:
-  os.makedirs(curr_post_pnr_testbench_dir_path, exist_ok=True)
+os.makedirs(post_pnr_testbench_dir_abspath, exist_ok=True)
 
 #####################################################################
 # Convert pre-PnR testbenches to post-PnR testbenches
