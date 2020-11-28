@@ -39,8 +39,19 @@
         <port name="in"/>
       </input_ports>
       <output_ports>
+        <port name="lut2_out"/>
         <port name="lut3_out"/>
         <port name="lut4_out"/>
+      </output_ports>
+    </model>
+    <model name="carry_follower">
+      <input_ports>
+        <port name="a"/>
+        <port name="b"/>
+        <port name="cin"/>
+      </input_ports>
+      <output_ports>
+        <port name="cout"/>
       </output_ports>
     </model>
     <!-- A virtual model for scan-chain flip-flop to be used in the physical mode of FF -->
@@ -113,41 +124,45 @@
       <equivalent_sites>
         <site pb_type="clb"/>
       </equivalent_sites>
-      <input name="I0" num_pins="3" equivalent="full"/>
-      <input name="I0i" num_pins="1" equivalent="none"/>
-      <input name="I1" num_pins="3" equivalent="full"/>
-      <input name="I1i" num_pins="1" equivalent="none"/>
-      <input name="I2" num_pins="3" equivalent="full"/>
-      <input name="I2i" num_pins="1" equivalent="none"/>
-      <input name="I3" num_pins="3" equivalent="full"/>
-      <input name="I3i" num_pins="1" equivalent="none"/>
-      <input name="I4" num_pins="3" equivalent="full"/>
-      <input name="I4i" num_pins="1" equivalent="none"/>
-      <input name="I5" num_pins="3" equivalent="full"/>
-      <input name="I5i" num_pins="1" equivalent="none"/>
-      <input name="I6" num_pins="3" equivalent="full"/>
-      <input name="I6i" num_pins="1" equivalent="none"/>
-      <input name="I7" num_pins="3" equivalent="full"/>
-      <input name="I7i" num_pins="1" equivalent="none"/>
+      <input name="I0" num_pins="2" equivalent="full"/>
+      <input name="I0i" num_pins="2" equivalent="none"/>
+      <input name="I1" num_pins="2" equivalent="full"/>
+      <input name="I1i" num_pins="2" equivalent="none"/>
+      <input name="I2" num_pins="2" equivalent="full"/>
+      <input name="I2i" num_pins="2" equivalent="none"/>
+      <input name="I3" num_pins="2" equivalent="full"/>
+      <input name="I3i" num_pins="2" equivalent="none"/>
+      <input name="I4" num_pins="2" equivalent="full"/>
+      <input name="I4i" num_pins="2" equivalent="none"/>
+      <input name="I5" num_pins="2" equivalent="full"/>
+      <input name="I5i" num_pins="2" equivalent="none"/>
+      <input name="I6" num_pins="2" equivalent="full"/>
+      <input name="I6i" num_pins="2" equivalent="none"/>
+      <input name="I7" num_pins="2" equivalent="full"/>
+      <input name="I7i" num_pins="2" equivalent="none"/>
       <input name="reg_in" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
+      <input name="cin" num_pins="1"/>
       <output name="O" num_pins="16" equivalent="none"/>
       <output name="reg_out" num_pins="1"/>
       <output name="sc_out" num_pins="1"/>
+      <output name="cout" num_pins="1"/>
       <clock name="clk" num_pins="1"/>
       <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
         <fc_override port_name="reg_in" fc_type="frac" fc_val="0"/>
         <fc_override port_name="reg_out" fc_type="frac" fc_val="0"/>
         <fc_override port_name="sc_in" fc_type="frac" fc_val="0"/>
         <fc_override port_name="sc_out" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="cin" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="cout" fc_type="frac" fc_val="0"/>
         <fc_override port_name="clk" fc_type="frac" fc_val="0"/>
       </fc>
       <!--pinlocations pattern="spread"/-->
       <pinlocations pattern="custom">
         <loc side="left">clb.clk</loc>
-        <loc side="top">clb.reg_in clb.sc_in clb.O[7:0] clb.I0 clb.I0i clb.I1 clb.I1i clb.I2 clb.I2i clb.I3 clb.I3i</loc>
+        <loc side="top">clb.reg_in clb.sc_in clb.cin clb.O[7:0] clb.I0 clb.I0i clb.I1 clb.I1i clb.I2 clb.I2i clb.I3 clb.I3i</loc>
         <loc side="right">clb.O[15:8] clb.I4 clb.I4i clb.I5 clb.I5i clb.I6 clb.I6i clb.I7 clb.I7i</loc>
-        <loc side="bottom">clb.reg_out clb.sc_out</loc>
+        <loc side="bottom">clb.reg_out clb.sc_out clb.cout</loc>
       </pinlocations>
     </tile>
   </tiles>
@@ -255,6 +270,7 @@
     </segment>
   </segmentlist>
   <directlist>
+    <direct name="carry_chain" from_pin="clb.cout" to_pin="clb.cin" x_offset="0" y_offset="-1" z_offset="0"/>
     <direct name="shift_register" from_pin="clb.reg_out" to_pin="clb.reg_in" x_offset="0" y_offset="-1" z_offset="0"/>
     <direct name="scan_chain" from_pin="clb.sc_out" to_pin="clb.sc_in" x_offset="0" y_offset="-1" z_offset="0"/>
   </directlist>
@@ -320,27 +336,29 @@
          So pin equivalence should be applied to the first 3 inputs only
 	  -->
     <pb_type name="clb">
-      <input name="I0" num_pins="3" equivalent="full"/>
-      <input name="I0i" num_pins="1" equivalent="none"/>
-      <input name="I1" num_pins="3" equivalent="full"/>
-      <input name="I1i" num_pins="1" equivalent="none"/>
-      <input name="I2" num_pins="3" equivalent="full"/>
-      <input name="I2i" num_pins="1" equivalent="none"/>
-      <input name="I3" num_pins="3" equivalent="full"/>
-      <input name="I3i" num_pins="1" equivalent="none"/>
-      <input name="I4" num_pins="3" equivalent="full"/>
-      <input name="I4i" num_pins="1" equivalent="none"/>
-      <input name="I5" num_pins="3" equivalent="full"/>
-      <input name="I5i" num_pins="1" equivalent="none"/>
-      <input name="I6" num_pins="3" equivalent="full"/>
-      <input name="I6i" num_pins="1" equivalent="none"/>
-      <input name="I7" num_pins="3" equivalent="full"/>
-      <input name="I7i" num_pins="1" equivalent="none"/>
+      <input name="I0" num_pins="2" equivalent="full"/>
+      <input name="I0i" num_pins="2" equivalent="none"/>
+      <input name="I1" num_pins="2" equivalent="full"/>
+      <input name="I1i" num_pins="2" equivalent="none"/>
+      <input name="I2" num_pins="2" equivalent="full"/>
+      <input name="I2i" num_pins="2" equivalent="none"/>
+      <input name="I3" num_pins="2" equivalent="full"/>
+      <input name="I3i" num_pins="2" equivalent="none"/>
+      <input name="I4" num_pins="2" equivalent="full"/>
+      <input name="I4i" num_pins="2" equivalent="none"/>
+      <input name="I5" num_pins="2" equivalent="full"/>
+      <input name="I5i" num_pins="2" equivalent="none"/>
+      <input name="I6" num_pins="2" equivalent="full"/>
+      <input name="I6i" num_pins="2" equivalent="none"/>
+      <input name="I7" num_pins="2" equivalent="full"/>
+      <input name="I7i" num_pins="2" equivalent="none"/>
       <input name="reg_in" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
+      <input name="cin" num_pins="1"/>
       <output name="O" num_pins="16" equivalent="none"/>
       <output name="reg_out" num_pins="1"/>
       <output name="sc_out" num_pins="1"/>
+      <output name="cout" num_pins="1"/>
       <clock name="clk" num_pins="1"/>
       <!-- Describe fracturable logic element.  
              Each fracturable logic element has a 6-LUT that can alternatively operate as two 5-LUTs with shared inputs. 
@@ -350,9 +368,11 @@
         <input name="in" num_pins="4"/>
         <input name="reg_in" num_pins="1"/>
         <input name="sc_in" num_pins="1"/>
+        <input name="cin" num_pins="1"/>
         <output name="out" num_pins="2"/>
         <output name="reg_out" num_pins="1"/>
         <output name="sc_out" num_pins="1"/>
+        <output name="cout" num_pins="1"/>
         <clock name="clk" num_pins="1"/>
         <!-- Physical mode definition begin (physical implementation of the fle) -->
         <mode name="physical" disabled_in_pack="true">
@@ -360,24 +380,41 @@
             <input name="in" num_pins="4"/>
             <input name="reg_in" num_pins="1"/>
             <input name="sc_in" num_pins="1"/>
+            <input name="cin" num_pins="1"/>
             <output name="out" num_pins="2"/>
             <output name="reg_out" num_pins="1"/>
             <output name="sc_out" num_pins="1"/>
+            <output name="cout" num_pins="1"/>
             <clock name="clk" num_pins="1"/>
             <pb_type name="frac_logic" num_pb="1">
               <input name="in" num_pins="4"/>
+              <input name="cin" num_pins="1"/>
               <output name="out" num_pins="2"/>
+              <output name="cout" num_pins="1"/>
               <!-- Define LUT -->
               <pb_type name="frac_lut4" blif_model=".subckt frac_lut4" num_pb="1">
                 <input name="in" num_pins="4"/>
+                <output name="lut2_out" num_pins="2"/>
                 <output name="lut3_out" num_pins="2"/>
                 <output name="lut4_out" num_pins="1"/>
               </pb_type>
+              <pb_type name="carry_follower" blif_model=".subckt carry_follower" num_pb="1">
+                <input name="a" num_pins="1"/>
+                <input name="b" num_pins="1"/>
+                <input name="cin" num_pins="1"/>
+                <output name="cout" num_pins="1"/>
+              </pb_type>
               <interconnect>
-                <direct name="direct1" input="frac_logic.in" output="frac_lut4.in"/>
-                <direct name="direct2" input="frac_lut4.lut3_out[1]" output="frac_logic.out[1]"/>
+                <direct name="direct1" input="frac_logic.in[0:1]" output="frac_lut4.in[0:1]"/>
+                <direct name="direct2" input="frac_logic.in[3:3]" output="frac_lut4.in[3:3]"/>
+                <direct name="direct3" input="frac_logic.cin" output="carry_follower.b"/>
+                <direct name="direct4" input="frac_lut4.lut2_out[1:1]" output="carry_follower.a"/>
+                <direct name="direct5" input="frac_lut4.lut2_out[0:0]" output="carry_follower.cin"/>
+                <direct name="direct6" input="carry_follower.cout" output="frac_logic.cout"/>
+                <direct name="direct7" input="frac_lut4.lut3_out[1]" output="frac_logic.out[1]"/>
                 <!-- Xifan Tang: I use out[0] because the output of lut6 in lut6 mode is wired to the out[0] -->
                 <mux name="mux1" input="frac_lut4.lut4_out frac_lut4.lut3_out[0]" output="frac_logic.out[0]"/>
+                <mux name="mux2" input="frac_logic.cin frac_logic.in[2:2]" output="frac_lut4.in[2:2]"/>
               </interconnect>
             </pb_type>
             <!-- Define flip-flop with scan-chain capability, DI is the scan-chain data input -->
@@ -419,11 +456,13 @@
           </pb_type>
           <interconnect>
             <direct name="direct1" input="fle.in" output="fabric.in"/>
-            <direct name="direct3" input="fle.reg_in" output="fabric.reg_in"/>
-            <direct name="direct4" input="fle.sc_in" output="fabric.sc_in"/>
+            <direct name="direct2" input="fle.reg_in" output="fabric.reg_in"/>
+            <direct name="direct3" input="fle.sc_in" output="fabric.sc_in"/>
+            <direct name="direct4" input="fle.cin" output="fabric.cin"/>
             <direct name="direct5" input="fabric.out" output="fle.out"/>
-            <direct name="direct7" input="fabric.reg_out" output="fle.reg_out"/>
-            <direct name="direct8" input="fabric.sc_out" output="fle.sc_out"/>
+            <direct name="direct6" input="fabric.reg_out" output="fle.reg_out"/>
+            <direct name="direct7" input="fabric.sc_out" output="fle.sc_out"/>
+            <direct name="direct8" input="fabric.cout" output="fle.cout"/>
             <direct name="direct9" input="fle.clk" output="fabric.clk"/>
           </interconnect>
         </mode>
@@ -590,52 +629,52 @@
                     in[2]. Such twisted connection is not expected.
                     I[0] should be connected to in[0]
           -->
-        <direct name="direct_fle0" input="clb.I0[0:2]" output="fle[0:0].in[0:2]">
+        <direct name="direct_fle0" input="clb.I0[0:1]" output="fle[0:0].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle0i" input="clb.I0i" output="fle[0:0].in[3]">
+        <direct name="direct_fle0i" input="clb.I0i[0:1]" output="fle[0:0].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle1" input="clb.I1[0:2]" output="fle[1:1].in[0:2]">
+        <direct name="direct_fle1" input="clb.I1[0:1]" output="fle[1:1].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle1i" input="clb.I1i" output="fle[1:1].in[3]">
+        <direct name="direct_fle1i" input="clb.I1i[0:1]" output="fle[1:1].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle2" input="clb.I2[0:2]" output="fle[2:2].in[0:2]">
+        <direct name="direct_fle2" input="clb.I2[0:1]" output="fle[2:2].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle2i" input="clb.I2i" output="fle[2:2].in[3]">
+        <direct name="direct_fle2i" input="clb.I2i[0:1]" output="fle[2:2].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle3" input="clb.I3[0:2]" output="fle[3:3].in[0:2]">
+        <direct name="direct_fle3" input="clb.I3[0:1]" output="fle[3:3].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle3i" input="clb.I3i" output="fle[3:3].in[3]">
+        <direct name="direct_fle3i" input="clb.I3i[0:1]" output="fle[3:3].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle4" input="clb.I4[0:2]" output="fle[4:4].in[0:2]">
+        <direct name="direct_fle4" input="clb.I4[0:1]" output="fle[4:4].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle4i" input="clb.I4i" output="fle[4:4].in[3]">
+        <direct name="direct_fle4i" input="clb.I4i[0:1]" output="fle[4:4].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle5" input="clb.I5[0:2]" output="fle[5:5].in[0:2]">
+        <direct name="direct_fle5" input="clb.I5[0:1]" output="fle[5:5].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle5i" input="clb.I5i" output="fle[5:5].in[3]">
+        <direct name="direct_fle5i" input="clb.I5i[0:1]" output="fle[5:5].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle6" input="clb.I6[0:2]" output="fle[6:6].in[0:2]">
+        <direct name="direct_fle6" input="clb.I6[0:1]" output="fle[6:6].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle6i" input="clb.I6i" output="fle[6:6].in[3]">
+        <direct name="direct_fle6i" input="clb.I6i[0:1]" output="fle[6:6].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle7" input="clb.I7[0:2]" output="fle[7:7].in[0:2]">
+        <direct name="direct_fle7" input="clb.I7[0:1]" output="fle[7:7].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
-        <direct name="direct_fle7i" input="clb.I7i" output="fle[7:7].in[3]">
+        <direct name="direct_fle7i" input="clb.I7i[0:1]" output="fle[7:7].in[2:3]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <complete name="clks" input="clb.clk" output="fle[7:0].clk">
@@ -667,6 +706,15 @@
         <direct name="scan_chain_out" input="fle[7:7].sc_out" output="clb.sc_out">
         </direct>
         <direct name="scan_chain_link" input="fle[6:0].sc_out" output="fle[7:1].sc_in">
+        </direct>
+        <!-- Carry chain links -->
+        <direct name="carry_chain_in" input="clb.cin" output="fle[0:0].cin">
+          <!-- Put all inter-block carry chain delay on this one edge -->
+          <delay_constant max="0.16e-9" in_port="clb.cin" out_port="fle[0:0].cin"/>
+        </direct>
+        <direct name="carry_chain_out" input="fle[7:7].cout" output="clb.cout">
+        </direct>
+        <direct name="carry_chain_link" input="fle[6:0].cout" output="fle[7:1].cin">
         </direct>
       </interconnect>
       <!-- Every input pin is driven by 15% of the tracks in a channel, every output pin is driven by 10% of the tracks in a channel -->

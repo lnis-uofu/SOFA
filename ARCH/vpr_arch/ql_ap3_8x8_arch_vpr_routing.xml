@@ -1,0 +1,581 @@
+<?xml version="1.0" ?>
+<architecture name="QL745A" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <models>
+        <model name="IO_MACRO">
+            <input_ports>
+                <port name="outpad"/>
+            </input_ports>
+            <output_ports>
+                <port name="inpad"/>
+            </output_ports>
+        </model>
+        <model name="openfpga_ff">
+            <input_ports>
+                <port clock="QCK" name="D"/>
+                <port is_clock="1" name="QCK"/>
+            </input_ports>
+            <output_ports>
+                <port clock="QCK" name="CQZ"/>
+            </output_ports>
+        </model>
+        <model name="frac_lut4">
+            <input_ports>
+                <port name="in"/>
+            </input_ports>
+            <output_ports>
+                <port name="lut2_out"/>
+                <port name="lut4_out"/>
+            </output_ports>
+        </model>
+        <model name="MUX2">
+            <input_ports>
+                <port name="in0" />
+                <port name="in1" />
+                <port name="sel" />
+            </input_ports>
+            <output_ports>
+                <port name="out" />
+            </output_ports>
+        </model>
+        <model name="LUT4">
+            <input_ports>
+                <port combinational_sink_ports="O" name="I0"/>
+                <port combinational_sink_ports="O" name="I1"/>
+                <port combinational_sink_ports="O" name="I2"/>
+                <port combinational_sink_ports="O" name="I3"/>
+            </input_ports>
+            <output_ports>
+                <port name="O"/>
+            </output_ports>
+        </model>
+        <model name="logic_1">
+            <input_ports/>
+            <output_ports>
+                <port name="a"/>
+            </output_ports>
+        </model>
+        <model name="logic_0">
+            <input_ports/>
+            <output_ports>
+                <port name="a"/>
+            </output_ports>
+        </model>
+    </models>
+    <tiles>
+        <tile capacity="8" name="IO">
+            <pinlocations pattern="custom">
+                <loc side="top">
+                    IO.OQI
+                </loc>
+                <loc side="right">
+                    IO.IQZ
+                </loc>
+            </pinlocations>
+            <fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25"/>
+            <input equivalent="none" name="OQI" num_pins="1"/>
+            <output equivalent="none" name="IQZ" num_pins="1"/>
+            <equivalent_sites>
+                <site pb_type="IO" pin_mapping="custom">
+                    <direct from="IO.IQZ" to="IO.inpad"/>
+                    <direct from="IO.OQI" to="IO.outpad"/>
+                </site>
+            </equivalent_sites>
+        </tile>
+        <!-- Super Logic Cluster tile -->
+        <tile area="3900" name="SUPER_LOGIC_CELL">
+            <pinlocations pattern="custom">
+                <loc side="top">
+                    SUPER_LOGIC_CELL.L0I
+                    SUPER_LOGIC_CELL.L1I
+                    SUPER_LOGIC_CELL.L2I
+                    SUPER_LOGIC_CELL.L3I
+                    SUPER_LOGIC_CELL.L4I
+                    SUPER_LOGIC_CELL.L5I
+                    SUPER_LOGIC_CELL.L6I
+                    SUPER_LOGIC_CELL.L7I
+                    SUPER_LOGIC_CELL.CI
+                    SUPER_LOGIC_CELL.QCK
+                </loc>
+                <loc side="right">
+                    SUPER_LOGIC_CELL.FZ
+                    SUPER_LOGIC_CELL.AQZ
+                </loc>
+                <loc side="bottom">
+                    SUPER_LOGIC_CELL.CO
+                </loc>
+            </pinlocations>
+            <fc in_type="frac" in_val="0.2" out_type="frac" out_val="0.25"/>
+            <clock name="QCK" num_pins="1"/>
+            <output equivalent="none" name="AQZ" num_pins="8"/>
+            <output equivalent="none" name="FZ" num_pins="8"/>
+            <output name="CO" num_pins="1"/>
+            <!-- Carry output from the last logic cell -->
+            <input name="CI" num_pins="1"/>
+            <!-- Carry input to the 1st logic cell -->
+            <input equivalent="none" name="L7I" num_pins="4"/>
+            <input equivalent="none" name="L6I" num_pins="4"/>
+            <input equivalent="none" name="L5I" num_pins="4"/>
+            <input equivalent="none" name="L4I" num_pins="4"/>
+            <input equivalent="none" name="L3I" num_pins="4"/>
+            <input equivalent="none" name="L2I" num_pins="4"/>
+            <input equivalent="none" name="L1I" num_pins="4"/>
+            <input equivalent="none" name="L0I" num_pins="4"/>
+            <!-- Data inputs to each logic cell -->
+            <equivalent_sites>
+                <site pb_type="SUPER_LOGIC_CELL" pin_mapping="custom">
+                    <direct from="SUPER_LOGIC_CELL.L0I" to="SUPER_LOGIC_CELL.L0I"/>
+                    <direct from="SUPER_LOGIC_CELL.L1I" to="SUPER_LOGIC_CELL.L1I"/>
+                    <direct from="SUPER_LOGIC_CELL.L2I" to="SUPER_LOGIC_CELL.L2I"/>
+                    <direct from="SUPER_LOGIC_CELL.L3I" to="SUPER_LOGIC_CELL.L3I"/>
+                    <direct from="SUPER_LOGIC_CELL.L4I" to="SUPER_LOGIC_CELL.L4I"/>
+                    <direct from="SUPER_LOGIC_CELL.L5I" to="SUPER_LOGIC_CELL.L5I"/>
+                    <direct from="SUPER_LOGIC_CELL.L6I" to="SUPER_LOGIC_CELL.L6I"/>
+                    <direct from="SUPER_LOGIC_CELL.L7I" to="SUPER_LOGIC_CELL.L7I"/>
+                    <direct from="SUPER_LOGIC_CELL.CI" to="SUPER_LOGIC_CELL.CI"/>
+                    <direct from="SUPER_LOGIC_CELL.CO" to="SUPER_LOGIC_CELL.CO"/>
+                    <direct from="SUPER_LOGIC_CELL.FZ" to="SUPER_LOGIC_CELL.FZ"/>
+                    <direct from="SUPER_LOGIC_CELL.AQZ" to="SUPER_LOGIC_CELL.AQZ"/>
+                    <direct from="SUPER_LOGIC_CELL.QCK" to="SUPER_LOGIC_CELL.QCK"/>
+                </site>
+            </equivalent_sites>
+        </tile>
+        <tile capacity="1" name="TL-VCC">
+            <switchbox_locations pattern="all"/>
+            <pinlocations pattern="custom">
+                <loc side="right">TL-VCC.VCC</loc>
+            </pinlocations>
+            <fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25"/>
+            <equivalent_sites>
+                <site pb_type="LOGIC_1" pin_mapping="custom">
+                    <direct from="TL-VCC.VCC" to="LOGIC_1.a"/>
+                </site>
+            </equivalent_sites>
+            <output name="VCC" num_pins="1"/>
+        </tile>
+        <tile capacity="1" name="TL-GND">
+            <switchbox_locations pattern="all"/>
+            <pinlocations pattern="custom">
+                <loc side="right">TL-GND.GND</loc>
+            </pinlocations>
+            <fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25"/>
+            <equivalent_sites>
+                <site pb_type="LOGIC_0" pin_mapping="custom">
+                    <direct from="TL-GND.GND" to="LOGIC_0.a"/>
+                </site>
+            </equivalent_sites>
+            <output name="GND" num_pins="1"/>
+        </tile>
+    </tiles>
+    <layout>
+        <fixed_layout height="12" name="ql-ap3-8x8" width="12">
+            <!-- Fill the entire grid with empty tiles -->
+            <region endx="W-1" endy="H-1" priority="1" startx="0" starty="0" type="EMPTY"/>
+            <!-- Fill with 'SLC' -->
+            <region endx="W-3" endy="H-3" priority="10" startx="2" starty="2" type="SUPER_LOGIC_CELL"/>
+            <!-- Top IOs -->
+            <region endx="W-3" endy="1" priority="20" startx="2" starty="1" type="IO"/>
+            <!-- Left IOs -->
+            <region endx="1" endy="H-3" priority="20" startx="1" starty="2" type="IO"/>
+            <!-- Bottom IOs -->
+            <region endx="W-3" endy="H-2" priority="20" startx="2" starty="H-2" type="IO"/>
+            <!-- Right IOs -->
+            <region endx="W-2" endy="H-3" priority="20" startx="W-2" starty="2" type="IO"/>
+            <!-- Const sources -->
+            <single priority="100" type="TL-VCC" x="1" y="1"/>
+            <single priority="100" type="TL-GND" x="1" y="H-2"/>
+        </fixed_layout>
+    </layout>
+    <device>
+        <sizing R_minW_nmos="13090.000000" R_minW_pmos="19086.831111"/>
+        <area grid_logic_tile_area="0"/>
+        <chan_width_distr>
+            <x distr="uniform" peak="1.000000"/>
+            <y distr="uniform" peak="1.000000"/>
+        </chan_width_distr>
+        <switch_block fs="3" type="wilton"/>
+        <connection_block input_switch_name="routing"/>
+        <default_fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25"/>
+    </device>
+    <switchlist>
+        <switch Cin="0.0" Cinternal="0.0" Cout="0.0" R="0.0" Tdel="1e-10" buf_size="27.645901" mux_trans_size="2.630740" name="routing" type="mux"/>
+    </switchlist>
+    <segmentlist>
+        <segment Cmetal="22.5e-15" Rmetal="1e-12" freq="1.000000" length="4" name="hop4" type="unidir">
+            <sb type="pattern">1 1 1 1 1</sb>
+            <cb type="pattern">1 1 1 1</cb>
+            <mux name="routing"/>
+        </segment>
+    </segmentlist>
+    <directlist>
+        <direct from_pin="SUPER_LOGIC_CELL.CO" name="adder_carry" to_pin="SUPER_LOGIC_CELL.CI" x_offset="0" y_offset="-1" z_offset="0"/>
+    </directlist>
+    <complexblocklist>
+        <pb_type name="IO">
+            <input name="outpad" num_pins="1"/>
+            <output name="inpad" num_pins="1"/>
+            <mode name="PHYSICAL">
+                <pb_type name="PHYSICAL" num_pb="1">
+                    <input name="outpad" num_pins="1"/>
+                    <output name="inpad" num_pins="1"/>
+                    <pb_type blif_model=".subckt IO_MACRO" name="macro" num_pb="1">
+                        <input name="outpad" num_pins="1"/>
+                        <output name="inpad" num_pins="1"/>
+                    </pb_type>
+                    <interconnect>
+                        <direct input="macro.inpad" name="PHYSICAL-inpad" output="PHYSICAL.inpad"/>
+                        <direct input="PHYSICAL.outpad" name="macro-outpad" output="macro.outpad"/>
+                    </interconnect>
+                </pb_type>
+                <interconnect>
+                    <direct input="PHYSICAL.inpad" name="IO-inpad" output="IO.inpad"/>
+                    <direct input="IO.outpad" name="PHYSICAL-outpad" output="PHYSICAL.outpad"/>
+                </interconnect>
+            </mode>
+            <mode name="INPUT">
+                <pb_type name="INPUT" num_pb="1">
+                    <input name="outpad" num_pins="1"/>
+                    <output name="inpad" num_pins="1"/>
+                    <pb_type blif_model=".input" name="i_pad" num_pb="1">
+                        <output name="inpad" num_pins="1"/>
+                    </pb_type>
+                    <interconnect>
+                        <direct input="i_pad.inpad" name="INPUT-inpad" output="INPUT.inpad"/>
+                    </interconnect>
+                </pb_type>
+                <interconnect>
+                    <direct input="IO.outpad" name="INPUT-outpad" output="INPUT.outpad"/>
+                    <direct input="INPUT.inpad" name="IO-inpad" output="IO.inpad"/>
+                </interconnect>
+            </mode>
+            <mode name="OUTPUT">
+                <pb_type name="OUTPUT" num_pb="1">
+                    <input name="outpad" num_pins="1"/>
+                    <output name="inpad" num_pins="1"/>
+                    <pb_type blif_model=".output" name="o_pad" num_pb="1">
+                        <input name="outpad" num_pins="1"/>
+                    </pb_type>
+                    <interconnect>
+                        <direct input="OUTPUT.outpad" name="o_pad-outpad" output="o_pad.outpad"/>
+                    </interconnect>
+                </pb_type>
+                <interconnect>
+                    <direct input="OUTPUT.inpad" name="IO-inpad" output="IO.inpad"/>
+                    <direct input="IO.outpad" name="OUTPUT-outpad" output="OUTPUT.outpad"/>
+                </interconnect>
+            </mode>
+        </pb_type>
+        <pb_type name="SUPER_LOGIC_CELL">
+            <clock name="QCK" num_pins="1"/>
+            <input name="CI" num_pins="1"/>
+            <input name="L0I" num_pins="4"/>
+            <input name="L1I" num_pins="4"/>
+            <input name="L2I" num_pins="4"/>
+            <input name="L3I" num_pins="4"/>
+            <input name="L4I" num_pins="4"/>
+            <input name="L5I" num_pins="4"/>
+            <input name="L6I" num_pins="4"/>
+            <input name="L7I" num_pins="4"/>
+            <output name="AQZ" num_pins="8"/>
+            <output name="CO" num_pins="1"/>
+            <output name="FZ" num_pins="8"/>
+            <pb_type name="LC" num_pb="8">
+                <input name="CI" num_pins="1"/>
+                <input name="LI" num_pins="4"/>
+                <input name="QCK" num_pins="1"/>
+                <output name="AQZ" num_pins="1"/>
+                <output name="CO" num_pins="1"/>
+                <output name="FZ" num_pins="1"/>
+                <mode name="PHYSICAL" disabled_in_pack="true">
+                    <pb_type name="PHYSICAL" num_pb="1">
+                        <input name="CI" num_pins="1"/>
+                        <input name="LI" num_pins="4"/>
+                        <output name="AQZ" num_pins="1"/>
+                        <output name="CO" num_pins="1"/>
+                        <output name="FZ" num_pins="1"/>
+                        <clock name="QCK" num_pins="1"/>
+                        <pb_type name="frac_logic" num_pb="1">
+                            <input name="LI" num_pins="4"/>
+                            <input name="CI" num_pins="1"/>
+                            <output name="O" num_pins="1"/>
+                            <output name="CO" num_pins="1"/>
+                            <!-- Define LUT -->
+                            <pb_type name="frac_lut4" blif_model=".subckt frac_lut4" num_pb="1">
+                                <input name="in" num_pins="4"/>
+                                <output name="lut2_out" num_pins="2"/>
+                                <output name="lut4_out" num_pins="1"/>
+                            </pb_type>
+                            <pb_type name="co_mux" blif_model=".subckt MUX2" num_pb="1">
+                                <input name="in0" num_pins="1"/>
+                                <input name="in1" num_pins="1"/>
+                                <input name="sel" num_pins="1"/>
+                                <output name="out" num_pins="1"/>
+                            </pb_type>
+                            <interconnect>
+                                <direct name="direct1" input="frac_logic.LI[0]" output="frac_lut4.in[0]" />
+                                <direct name="direct2" input="frac_logic.LI[1]" output="frac_lut4.in[1]" />
+                                <mux name="i2_ci" input="frac_logic.LI[2] frac_logic.CI" output="frac_lut4.in[2]"/>
+                                <direct name="direct3" input="frac_logic.LI[3]" output="frac_lut4.in[3]" />
+                                <direct name="direct4" input="frac_lut4.lut4_out" output="frac_logic.O" />
+                                <direct name="direct5" input="frac_lut4.lut2_out[1]" output="co_mux.in0" />
+                                <direct name="direct6" input="frac_logic.CI" output="co_mux.in1" />
+                                <direct name="direct7" input="frac_lut4.lut2_out[0]" output="co_mux.sel" />
+                                <direct name="direct8" input="co_mux.out" output="frac_logic.CO" />
+                            </interconnect>
+                        </pb_type>
+                        <!-- Define flip-flop with scan-chain capability, DI is the scan-chain data input -->
+                        <pb_type name="ff" blif_model=".subckt openfpga_ff" num_pb="1">
+                            <clock name="QCK" num_pins="1"/>
+                            <input name="D" num_pins="1"/>
+                            <output name="CQZ" num_pins="1"/>
+                            <T_clock_to_Q clock="QCK" max="1e-10" port="ff.CQZ"/>
+                            <T_setup clock="QCK" port="ff.D" value="1e-10"/>
+                            <T_hold clock="QCK" port="ff.D" value="1e-10"/>
+                        </pb_type>
+                        <interconnect>
+                            <direct name="direct_LI0" input="PHYSICAL.LI[0]" output="frac_logic.LI[0]" />
+                            <direct name="direct_LI1" input="PHYSICAL.LI[1]" output="frac_logic.LI[1]" />
+                            <direct name="direct_LI2" input="PHYSICAL.LI[2]" output="frac_logic.LI[2]" />
+                            <direct name="direct_LI3" input="PHYSICAL.LI[3]" output="frac_logic.LI[3]" />
+                            <direct name="direct_CI" input="PHYSICAL.CI" output="frac_logic.CI" />
+                            <direct name="direct_QCK" input="PHYSICAL.QCK" output="ff.QCK" />
+                            <mux name="lut_qdi" input="frac_logic.O PHYSICAL.LI[3]" output="ff.D"/>
+                            <direct name="direct_AQZ" input="ff.CQZ" output="PHYSICAL.AQZ" />
+                            <direct name="direct_FZ" input="frac_logic.O" output="PHYSICAL.FZ" />
+                            <direct name="direct_CO" input="frac_logic.CO" output="PHYSICAL.CO" />
+                        </interconnect>
+                    </pb_type>
+                    <interconnect>
+                        <direct input="PHYSICAL.AQZ" name="LC-AQZ" output="LC.AQZ"/>
+                        <direct input="PHYSICAL.CO" name="LC-CO" output="LC.CO"/>
+                        <direct input="PHYSICAL.FZ" name="LC-FZ" output="LC.FZ"/>
+                        <direct input="LC.CI" name="PHYSICAL-CI" output="PHYSICAL.CI"/>
+                        <direct input="LC.LI" name="PHYSICAL-LI" output="PHYSICAL.LI"/>
+                        <direct input="LC.QCK" name="PHYSICAL-QCK" output="PHYSICAL.QCK"/>
+                    </interconnect>
+                </mode>
+
+                <mode name="DEFAULT">
+                    <pb_type name="DEFAULT" num_pb="1">
+                        <input name="CI" num_pins="1"/>
+                        <input name="LI" num_pins="4"/>
+                        <input name="QCK" num_pins="1"/>
+                        <output name="AQZ" num_pins="1"/>
+                        <output name="CO" num_pins="1"/>
+                        <output name="FZ" num_pins="1"/>
+                        <pb_type blif_model=".subckt openfpga_ff" name="ff" num_pb="1">
+                            <clock name="QCK" num_pins="1"/>
+                            <input name="D" num_pins="1"/>
+                            <output name="CQZ" num_pins="1"/>
+                            <T_clock_to_Q clock="QCK" max="1e-10" port="ff.CQZ"/>
+                            <T_setup clock="QCK" port="ff.D" value="1e-10"/>
+                            <T_hold clock="QCK" port="ff.D" value="1e-10"/>
+                            <metadata>
+                                <meta name="fasm_prefix">BLK2REG</meta>
+                                <meta name="fasm_features"/>
+                            </metadata>
+                        </pb_type>
+                        <pb_type name="lut_part" num_pb="1">
+                            <input name="LI" num_pins="4"/>
+                            <output name="FZ" num_pins="1"/>
+                            <mode name="VPR_LUT4">
+                                <pb_type name="VPR_LUT4" num_pb="1">
+                                    <input name="LI" num_pins="4"/>
+                                    <output name="FZ" num_pins="1"/>
+                                    <pb_type name="lut_inst" num_pb="1">
+                                        <input name="in" num_pins="4"/>
+                                        <output name="out" num_pins="1"/>
+                                        <pb_type blif_model=".names" class="lut" name="lut" num_pb="1">
+                                            <input name="in" num_pins="4" port_class="lut_in"/>
+                                            <output name="out" num_pins="1" port_class="lut_out"/>
+                                            <delay_matrix in_port="lut.in" out_port="lut.out" type="max">
+                                                1e-10 1e-10 1e-10 1e-10 
+                                            </delay_matrix>
+                                        </pb_type>
+                                        <interconnect>
+                                            <direct input="lut_inst.in[0]" name="lut-in[0]" output="lut.in[0]"/>
+                                            <direct input="lut_inst.in[1]" name="lut-in[1]" output="lut.in[1]"/>
+                                            <direct input="lut_inst.in[2]" name="lut-in[2]" output="lut.in[2]"/>
+                                            <direct input="lut_inst.in[3]" name="lut-in[3]" output="lut.in[3]"/>
+                                            <direct input="lut.out" name="lut_inst-out" output="lut_inst.out"/>
+                                        </interconnect>
+                                        <metadata>
+                                            <meta name="fasm_prefix">LUT4</meta>
+                                            <meta name="fasm_type">LUT</meta>
+                                            <meta name="fasm_lut">INIT[15:0] = lut</meta>
+                                        </metadata>
+                                    </pb_type>
+                                    <interconnect>
+                                        <direct input="lut_inst.out" name="VPR_LUT4-FZ" output="VPR_LUT4.FZ">
+                                            <pack_pattern in_port="lut_inst.out" name="pack-VPR_LUT_to_FF" out_port="VPR_LUT4.FZ"/>
+                                        </direct>
+                                        <direct input="VPR_LUT4.LI[0]" name="lut_inst-in[0]" output="lut_inst.in[0]"/>
+                                        <direct input="VPR_LUT4.LI[1]" name="lut_inst-in[1]" output="lut_inst.in[1]"/>
+                                        <direct input="VPR_LUT4.LI[2]" name="lut_inst-in[2]" output="lut_inst.in[2]"/>
+                                        <direct input="VPR_LUT4.LI[3]" name="lut_inst-in[3]" output="lut_inst.in[3]"/>
+                                    </interconnect>
+                                </pb_type>
+                                <interconnect>
+                                    <direct input="lut_part.LI" name="VPR_LUT4-LI" output="VPR_LUT4.LI"/>
+                                    <direct input="VPR_LUT4.FZ" name="lut_part-FZ" output="lut_part.FZ"/>
+                                </interconnect>
+                            </mode>
+                            <!--mode name="LUT4">
+                                <pb_type name="LUT4" num_pb="1">
+                                    <input name="LI" num_pins="4"/>
+                                    <output name="FZ" num_pins="1"/>
+                                    <pb_type blif_model=".subckt LUT4" name="lut_inst" num_pb="1">
+                                        <input name="I0" num_pins="1"/>
+                                        <input name="I1" num_pins="1"/>
+                                        <input name="I2" num_pins="1"/>
+                                        <input name="I3" num_pins="1"/>
+                                        <output name="O" num_pins="1"/>
+                                        <delay_constant in_port="lut_inst.I0" max="1e-10" out_port="lut_inst.O"/>
+                                        <delay_constant in_port="lut_inst.I1" max="1e-10" out_port="lut_inst.O"/>
+                                        <delay_constant in_port="lut_inst.I2" max="1e-10" out_port="lut_inst.O"/>
+                                        <delay_constant in_port="lut_inst.I3" max="1e-10" out_port="lut_inst.O"/>
+                                        <metadata>
+                                            <meta name="fasm_prefix">LUT4</meta>
+                                            <meta name="fasm_params">INIT[15:0]=INIT</meta>
+                                        </metadata>
+                                    </pb_type>
+                                    <interconnect>
+                                        <direct input="lut_inst.O" name="LUT4-FZ" output="LUT4.FZ">
+                                            <pack_pattern in_port="lut_inst.O" name="pack-LUT4_to_FF" out_port="LUT4.FZ"/>
+                                        </direct>
+                                        <direct input="LUT4.LI[0]" name="lut_inst-I0" output="lut_inst.I0"/>
+                                        <direct input="LUT4.LI[1]" name="lut_inst-I1" output="lut_inst.I1"/>
+                                        <direct input="LUT4.LI[2]" name="lut_inst-I2" output="lut_inst.I2"/>
+                                        <direct input="LUT4.LI[3]" name="lut_inst-I3" output="lut_inst.I3"/>
+                                    </interconnect>
+                                </pb_type>
+                                <interconnect>
+                                    <direct input="lut_part.LI" name="LUT4-LI" output="LUT4.LI"/>
+                                    <direct input="LUT4.FZ" name="lut_part-FZ" output="lut_part.FZ"/>
+                                </interconnect>
+                            </mode-->
+                        </pb_type>
+                        <interconnect>
+                            <direct input="ff.CQZ" name="DEFAULT-AQZ" output="DEFAULT.AQZ"/>
+                            <direct input="lut_part.FZ" name="DEFAULT-FZ" output="DEFAULT.FZ">
+                                <pack_pattern in_port="lut_part.FZ" name="pack-VPR_LUT_to_FF" out_port="DEFAULT.FZ"/>
+                                <!--pack_pattern in_port="lut_part.FZ" name="pack-LUT4_to_FF" out_port="DEFAULT.FZ"/-->
+                            </direct>
+                            <mux input="lut_part.FZ DEFAULT.LI[3]" name="cds_mux" output="ff.D">
+                                <metadata>
+                                    <meta name="fasm_mux">
+                                        lut_part.FZ : I0
+                                        DEFAULT.LI[3] : I1
+                                    </meta>
+                                    <meta name="type">bel</meta>
+                                    <meta name="subtype">routing</meta>
+                                </metadata>
+                            </mux>
+                            <direct input="DEFAULT.QCK" name="ff-QCK" output="ff.QCK"/>
+                            <direct input="DEFAULT.LI[0]" name="lut_part-LI[0]" output="lut_part.LI[0]"/>
+                            <direct input="DEFAULT.LI[1]" name="lut_part-LI[1]" output="lut_part.LI[1]"/>
+                            <direct input="DEFAULT.LI[2]" name="lut_part-LI[2]" output="lut_part.LI[2]"/>
+                            <direct input="DEFAULT.LI[3]" name="lut_part-LI[3]" output="lut_part.LI[3]"/>
+                        </interconnect>
+                    </pb_type>
+                    <interconnect>
+                        <direct input="LC.CI" name="DEFAULT-CI" output="DEFAULT.CI"/>
+                        <direct input="LC.LI" name="DEFAULT-LI" output="DEFAULT.LI"/>
+                        <direct input="LC.QCK" name="DEFAULT-QCK" output="DEFAULT.QCK"/>
+                        <direct input="DEFAULT.AQZ" name="LC-AQZ" output="LC.AQZ"/>
+                        <direct input="DEFAULT.CO" name="LC-CO" output="LC.CO"/>
+                        <direct input="DEFAULT.FZ" name="LC-FZ" output="LC.FZ"/>
+                    </interconnect>
+                </mode>
+                <metadata>
+                    <meta name="fasm_prefix">LC0 LC1 LC2 LC3 LC4 LC5 LC6 LC7</meta>
+                </metadata>
+            </pb_type>
+            <interconnect>
+                <direct input="SUPER_LOGIC_CELL.CI" name="LC[0]-CI" output="LC[0].CI"/>
+                <direct input="SUPER_LOGIC_CELL.L0I[0]" name="LC[0]-LI[0]" output="LC[0].LI[0]"/>
+                <direct input="SUPER_LOGIC_CELL.L0I[1]" name="LC[0]-LI[1]" output="LC[0].LI[1]"/>
+                <direct input="SUPER_LOGIC_CELL.L0I[2]" name="LC[0]-LI[2]" output="LC[0].LI[2]"/>
+                <direct input="SUPER_LOGIC_CELL.L0I[3]" name="LC[0]-LI[3]" output="LC[0].LI[3]"/>
+                <direct input="SUPER_LOGIC_CELL.QCK" name="LC[0]-QCK" output="LC[0].QCK"/>
+                <direct input="LC[0].CO" name="LC[1]-CI" output="LC[1].CI"/>
+                <direct input="SUPER_LOGIC_CELL.L1I[0]" name="LC[1]-LI[0]" output="LC[1].LI[0]"/>
+                <direct input="SUPER_LOGIC_CELL.L1I[1]" name="LC[1]-LI[1]" output="LC[1].LI[1]"/>
+                <direct input="SUPER_LOGIC_CELL.L1I[2]" name="LC[1]-LI[2]" output="LC[1].LI[2]"/>
+                <direct input="SUPER_LOGIC_CELL.L1I[3]" name="LC[1]-LI[3]" output="LC[1].LI[3]"/>
+                <direct input="SUPER_LOGIC_CELL.QCK" name="LC[1]-QCK" output="LC[1].QCK"/>
+                <direct input="LC[1].CO" name="LC[2]-CI" output="LC[2].CI"/>
+                <direct input="SUPER_LOGIC_CELL.L2I[0]" name="LC[2]-LI[0]" output="LC[2].LI[0]"/>
+                <direct input="SUPER_LOGIC_CELL.L2I[1]" name="LC[2]-LI[1]" output="LC[2].LI[1]"/>
+                <direct input="SUPER_LOGIC_CELL.L2I[2]" name="LC[2]-LI[2]" output="LC[2].LI[2]"/>
+                <direct input="SUPER_LOGIC_CELL.L2I[3]" name="LC[2]-LI[3]" output="LC[2].LI[3]"/>
+                <direct input="SUPER_LOGIC_CELL.QCK" name="LC[2]-QCK" output="LC[2].QCK"/>
+                <direct input="LC[2].CO" name="LC[3]-CI" output="LC[3].CI"/>
+                <direct input="SUPER_LOGIC_CELL.L3I[0]" name="LC[3]-LI[0]" output="LC[3].LI[0]"/>
+                <direct input="SUPER_LOGIC_CELL.L3I[1]" name="LC[3]-LI[1]" output="LC[3].LI[1]"/>
+                <direct input="SUPER_LOGIC_CELL.L3I[2]" name="LC[3]-LI[2]" output="LC[3].LI[2]"/>
+                <direct input="SUPER_LOGIC_CELL.L3I[3]" name="LC[3]-LI[3]" output="LC[3].LI[3]"/>
+                <direct input="SUPER_LOGIC_CELL.QCK" name="LC[3]-QCK" output="LC[3].QCK"/>
+                <direct input="LC[3].CO" name="LC[4]-CI" output="LC[4].CI"/>
+                <direct input="SUPER_LOGIC_CELL.L4I[0]" name="LC[4]-LI[0]" output="LC[4].LI[0]"/>
+                <direct input="SUPER_LOGIC_CELL.L4I[1]" name="LC[4]-LI[1]" output="LC[4].LI[1]"/>
+                <direct input="SUPER_LOGIC_CELL.L4I[2]" name="LC[4]-LI[2]" output="LC[4].LI[2]"/>
+                <direct input="SUPER_LOGIC_CELL.L4I[3]" name="LC[4]-LI[3]" output="LC[4].LI[3]"/>
+                <direct input="SUPER_LOGIC_CELL.QCK" name="LC[4]-QCK" output="LC[4].QCK"/>
+                <direct input="LC[4].CO" name="LC[5]-CI" output="LC[5].CI"/>
+                <direct input="SUPER_LOGIC_CELL.L5I[0]" name="LC[5]-LI[0]" output="LC[5].LI[0]"/>
+                <direct input="SUPER_LOGIC_CELL.L5I[1]" name="LC[5]-LI[1]" output="LC[5].LI[1]"/>
+                <direct input="SUPER_LOGIC_CELL.L5I[2]" name="LC[5]-LI[2]" output="LC[5].LI[2]"/>
+                <direct input="SUPER_LOGIC_CELL.L5I[3]" name="LC[5]-LI[3]" output="LC[5].LI[3]"/>
+                <direct input="SUPER_LOGIC_CELL.QCK" name="LC[5]-QCK" output="LC[5].QCK"/>
+                <direct input="LC[5].CO" name="LC[6]-CI" output="LC[6].CI"/>
+                <direct input="SUPER_LOGIC_CELL.L6I[0]" name="LC[6]-LI[0]" output="LC[6].LI[0]"/>
+                <direct input="SUPER_LOGIC_CELL.L6I[1]" name="LC[6]-LI[1]" output="LC[6].LI[1]"/>
+                <direct input="SUPER_LOGIC_CELL.L6I[2]" name="LC[6]-LI[2]" output="LC[6].LI[2]"/>
+                <direct input="SUPER_LOGIC_CELL.L6I[3]" name="LC[6]-LI[3]" output="LC[6].LI[3]"/>
+                <direct input="SUPER_LOGIC_CELL.QCK" name="LC[6]-QCK" output="LC[6].QCK"/>
+                <direct input="LC[6].CO" name="LC[7]-CI" output="LC[7].CI"/>
+                <direct input="SUPER_LOGIC_CELL.L7I[0]" name="LC[7]-LI[0]" output="LC[7].LI[0]"/>
+                <direct input="SUPER_LOGIC_CELL.L7I[1]" name="LC[7]-LI[1]" output="LC[7].LI[1]"/>
+                <direct input="SUPER_LOGIC_CELL.L7I[2]" name="LC[7]-LI[2]" output="LC[7].LI[2]"/>
+                <direct input="SUPER_LOGIC_CELL.L7I[3]" name="LC[7]-LI[3]" output="LC[7].LI[3]"/>
+                <direct input="SUPER_LOGIC_CELL.QCK" name="LC[7]-QCK" output="LC[7].QCK"/>
+                <direct input="LC[0].AQZ" name="SUPER_LOGIC_CELL-AQZ[0]" output="SUPER_LOGIC_CELL.AQZ[0]"/>
+                <direct input="LC[1].AQZ" name="SUPER_LOGIC_CELL-AQZ[1]" output="SUPER_LOGIC_CELL.AQZ[1]"/>
+                <direct input="LC[2].AQZ" name="SUPER_LOGIC_CELL-AQZ[2]" output="SUPER_LOGIC_CELL.AQZ[2]"/>
+                <direct input="LC[3].AQZ" name="SUPER_LOGIC_CELL-AQZ[3]" output="SUPER_LOGIC_CELL.AQZ[3]"/>
+                <direct input="LC[4].AQZ" name="SUPER_LOGIC_CELL-AQZ[4]" output="SUPER_LOGIC_CELL.AQZ[4]"/>
+                <direct input="LC[5].AQZ" name="SUPER_LOGIC_CELL-AQZ[5]" output="SUPER_LOGIC_CELL.AQZ[5]"/>
+                <direct input="LC[6].AQZ" name="SUPER_LOGIC_CELL-AQZ[6]" output="SUPER_LOGIC_CELL.AQZ[6]"/>
+                <direct input="LC[7].AQZ" name="SUPER_LOGIC_CELL-AQZ[7]" output="SUPER_LOGIC_CELL.AQZ[7]"/>
+                <direct input="LC[7].CO" name="SUPER_LOGIC_CELL-CO" output="SUPER_LOGIC_CELL.CO"/>
+                <direct input="LC[0].FZ" name="SUPER_LOGIC_CELL-FZ[0]" output="SUPER_LOGIC_CELL.FZ[0]"/>
+                <direct input="LC[1].FZ" name="SUPER_LOGIC_CELL-FZ[1]" output="SUPER_LOGIC_CELL.FZ[1]"/>
+                <direct input="LC[2].FZ" name="SUPER_LOGIC_CELL-FZ[2]" output="SUPER_LOGIC_CELL.FZ[2]"/>
+                <direct input="LC[3].FZ" name="SUPER_LOGIC_CELL-FZ[3]" output="SUPER_LOGIC_CELL.FZ[3]"/>
+                <direct input="LC[4].FZ" name="SUPER_LOGIC_CELL-FZ[4]" output="SUPER_LOGIC_CELL.FZ[4]"/>
+                <direct input="LC[5].FZ" name="SUPER_LOGIC_CELL-FZ[5]" output="SUPER_LOGIC_CELL.FZ[5]"/>
+                <direct input="LC[6].FZ" name="SUPER_LOGIC_CELL-FZ[6]" output="SUPER_LOGIC_CELL.FZ[6]"/>
+                <direct input="LC[7].FZ" name="SUPER_LOGIC_CELL-FZ[7]" output="SUPER_LOGIC_CELL.FZ[7]"/>
+            </interconnect>
+        </pb_type>
+        <pb_type name="LOGIC_1">
+            <output name="a" num_pins="1"/>
+            <pb_type blif_model=".subckt logic_1" name="logic_1" num_pb="1">
+                <output name="a" num_pins="1"/>
+            </pb_type>
+            <interconnect>
+                <direct input="logic_1.a" name="LOGIC_1-a" output="LOGIC_1.a"/>
+            </interconnect>
+        </pb_type>
+        <pb_type name="LOGIC_0">
+            <output name="a" num_pins="1"/>
+            <pb_type blif_model=".subckt logic_0" name="gnd" num_pb="1">
+                <output name="a" num_pins="1"/>
+            </pb_type>
+            <interconnect>
+                <direct input="gnd.a" name="LOGIC_0-a" output="LOGIC_0.a"/>
+            </interconnect>
+        </pb_type>
+    </complexblocklist>
+</architecture>
+

@@ -48,6 +48,7 @@
       <input_ports>
         <port name="D" clock="clk"/>
         <port name="DI" clock="clk"/>
+        <port name="reset" clock="clk"/>
         <port name="clk" is_clock="1"/>
       </input_ports>
       <output_ports>
@@ -131,6 +132,7 @@
       <input name="I7i" num_pins="1" equivalent="none"/>
       <input name="reg_in" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
+      <input name="reset" num_pins="1" is_non_clock_global="true"/>
       <output name="O" num_pins="16" equivalent="none"/>
       <output name="reg_out" num_pins="1"/>
       <output name="sc_out" num_pins="1"/>
@@ -141,10 +143,11 @@
         <fc_override port_name="sc_in" fc_type="frac" fc_val="0"/>
         <fc_override port_name="sc_out" fc_type="frac" fc_val="0"/>
         <fc_override port_name="clk" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="reset" fc_type="frac" fc_val="0"/>
       </fc>
       <!--pinlocations pattern="spread"/-->
       <pinlocations pattern="custom">
-        <loc side="left">clb.clk</loc>
+        <loc side="left">clb.clk clb.reset</loc>
         <loc side="top">clb.reg_in clb.sc_in clb.O[7:0] clb.I0 clb.I0i clb.I1 clb.I1i clb.I2 clb.I2i clb.I3 clb.I3i</loc>
         <loc side="right">clb.O[15:8] clb.I4 clb.I4i clb.I5 clb.I5i clb.I6 clb.I6i clb.I7 clb.I7i</loc>
         <loc side="bottom">clb.reg_out clb.sc_out</loc>
@@ -338,6 +341,7 @@
       <input name="I7i" num_pins="1" equivalent="none"/>
       <input name="reg_in" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
+      <input name="reset" num_pins="1" is_non_clock_global="true"/>
       <output name="O" num_pins="16" equivalent="none"/>
       <output name="reg_out" num_pins="1"/>
       <output name="sc_out" num_pins="1"/>
@@ -350,6 +354,7 @@
         <input name="in" num_pins="4"/>
         <input name="reg_in" num_pins="1"/>
         <input name="sc_in" num_pins="1"/>
+        <input name="reset" num_pins="1"/>
         <output name="out" num_pins="2"/>
         <output name="reg_out" num_pins="1"/>
         <output name="sc_out" num_pins="1"/>
@@ -360,6 +365,7 @@
             <input name="in" num_pins="4"/>
             <input name="reg_in" num_pins="1"/>
             <input name="sc_in" num_pins="1"/>
+            <input name="reset" num_pins="1"/>
             <output name="out" num_pins="2"/>
             <output name="reg_out" num_pins="1"/>
             <output name="sc_out" num_pins="1"/>
@@ -384,10 +390,12 @@
             <pb_type name="ff" blif_model=".subckt scff" num_pb="2">
               <input name="D" num_pins="1"/>
               <input name="DI" num_pins="1"/>
+              <input name="reset" num_pins="1"/>
               <output name="Q" num_pins="1"/>
               <clock name="clk" num_pins="1"/>
               <T_setup value="66e-12" port="ff.D" clock="clk"/>
               <T_setup value="66e-12" port="ff.DI" clock="clk"/>
+              <T_setup value="66e-12" port="ff.reset" clock="clk"/>
               <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
             </pb_type>         
             <interconnect>
@@ -397,6 +405,7 @@
               <direct name="direct4" input="ff[1].Q" output="fabric.sc_out"/>
               <direct name="direct5" input="ff[1].Q" output="fabric.reg_out"/>
               <complete name="complete1" input="fabric.clk" output="ff[1:0].clk"/>
+              <complete name="complete2" input="fabric.reset" output="ff[1:0].reset"/>
               <mux name="mux1" input="frac_logic.out[0:0] fabric.reg_in" output="ff[0:0].D">
                 <delay_constant max="25e-12" in_port="frac_logic.out[0:0]" out_port="ff[0:0].D"/>
                 <delay_constant max="45e-12" in_port="fabric.reg_in" out_port="ff[0:0].D"/>
@@ -425,6 +434,7 @@
             <direct name="direct7" input="fabric.reg_out" output="fle.reg_out"/>
             <direct name="direct8" input="fabric.sc_out" output="fle.sc_out"/>
             <direct name="direct9" input="fle.clk" output="fabric.clk"/>
+            <direct name="direct10" input="fle.reset" output="fabric.reset"/>
           </interconnect>
         </mode>
         <!-- Physical mode definition end (physical implementation of the fle) -->
@@ -639,6 +649,8 @@
           <!-- TODO: Timing should be backannotated from post-PnR results -->
         </direct>
         <complete name="clks" input="clb.clk" output="fle[7:0].clk">
+        </complete>
+        <complete name="resets" input="clb.reset" output="fle[7:0].reset">
         </complete>
         <!-- This way of specifying direct connection to clb outputs is important because this architecture uses automatic spreading of opins.  
                By grouping to output pins in this fashion, if a logic block is completely filled by 6-LUTs, 
