@@ -17,7 +17,7 @@ import subprocess
 #####################################################################
 # Initialize logger
 #####################################################################
-logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.DEBUG)
+logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.INFO)
 
 #####################################################################
 # Parse the options
@@ -43,9 +43,9 @@ if not isfile(args.verilog_testbench):
 
 project_abs_path = os.path.abspath(args.project_path)
 if not os.path.isdir(project_abs_path):
-  logging.info("Creating ModelSim project directory : " + project_abs_path + " ...\n")
+  logging.debug("Creating ModelSim project directory : " + project_abs_path + " ...\n")
   os.makedirs(project_abs_path, exist_ok=True)
-  logging.info("Done\n")
+  logging.debug("Done\n")
 
 #####################################################################
 # Create the Tcl script for Modelsim
@@ -59,7 +59,7 @@ if not isfile(msim_proc_tcl_path):
 
 # Create output file handler
 tcl_file_path = project_abs_path + "/" + os.path.basename(args.testbench_name) + ".tcl"
-logging.info("Generating Tcl script for ModelSim: " + tcl_file_path)
+logging.debug("Generating Tcl script for ModelSim: " + tcl_file_path)
 tcl_file = open(tcl_file_path, "w")
 
 # A string buffer to write tcl content
@@ -87,7 +87,7 @@ for line in tcl_lines:
   tcl_file.write(line + "\n")
 
 tcl_file.close()
-logging.info("Done")
+logging.debug("Done")
 
 #####################################################################
 # Run ModelSim simulation
@@ -95,13 +95,13 @@ logging.info("Done")
 curr_dir = os.getcwd()
 # Change to the project directory
 os.chdir(project_abs_path)
-logging.info("Changed to directory: " + project_abs_path)
+logging.debug("Changed to directory: " + project_abs_path)
 
 # Run ModelSim
 vsim_log_file_path = project_abs_path + "/vsim_run_log"
 vsim_bin = "/uusoc/facility/cad_tools/Mentor/modelsim10.7b/modeltech/bin/vsim"
 vsim_cmd = vsim_bin + " -c -do " + os.path.abspath(tcl_file_path) + " > " + vsim_log_file_path
-logging.info("Running modelsim by : " + vsim_cmd)
+logging.debug("Running modelsim by : " + vsim_cmd)
 subprocess.run(vsim_cmd, shell=True, check=True)
 
 # Go back to current directory
@@ -142,6 +142,6 @@ else :
   verification_passed = True
 
 if (verification_passed) :
-  logging.info(args.verilog_testbench + "...[Passed]\n")
+  logging.info(args.testbench_name + "...[Passed]\n")
 else :
-  logging.error(args.verilog_testbench + "...[Failed]\n")
+  logging.error(args.testbench_name + "...[Failed]\n")
