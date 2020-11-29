@@ -39,6 +39,17 @@ write_fabric_bitstream --format xml --file fabric_bitstream.xml
 write_fabric_verilog --file ./SRC --explicit_port_mapping --include_timing --include_signal_init --support_icarus_simulator --verbose
 
 write_verilog_testbench --file ./SRC --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --explicit_port_mapping
+
+# Write the SDC files for PnR backend
+#  - Turn on every options here
+write_pnr_sdc --file ./SDC
+
+# Write SDC to disable timing for configure ports
+write_sdc_disable_timing_configure_ports --file ./SDC/disable_configure_ports.sdc
+
+# Write the SDC to run timing analysis for a mapped FPGA fabric
+write_analysis_sdc --file ./SDC_analysis
+
 # Finish and exit OpenFPGA
 exit
 
