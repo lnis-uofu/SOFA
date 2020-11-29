@@ -122,7 +122,7 @@ for pin_info in pin_data['pins']:
       curr_line = "assign " + pin_data['caravel_gpio_output_name'] + "[" + str(indices[1]) + "] = 1'b0;"
       netlist_lines.append("    " + curr_line + "\n")
       # Tie Caravel direction port to logic '1'
-      curr_line = "assign " + pin_data['caravel_gpio_direction_name'] + "[" + str(indices[1]) + "] = 1'b1"
+      curr_line = "assign " + pin_data['caravel_gpio_direction_name'] + "[" + str(indices[1]) + "] = 1'b1;"
       netlist_lines.append("    " + curr_line + "\n")
 
   # - FPGA control output ports to Caravel GPIO 
@@ -143,7 +143,7 @@ for pin_info in pin_data['pins']:
                 +  pin_info['fpga_pin_type'] + "[" + str(indices[0]) + "];";
       netlist_lines.append("    " + curr_line + "\n")
       # Tie Caravel direction port to logic '0'
-      curr_line = "assign " + pin_data['caravel_gpio_direction_name'] + "[" + str(indices[1]) + "] = 1'b0"
+      curr_line = "assign " + pin_data['caravel_gpio_direction_name'] + "[" + str(indices[1]) + "] = 1'b0;"
       netlist_lines.append("    " + curr_line + "\n")
 
   # - FPGA I/O ports to Caravel logic analyzer I/O only
