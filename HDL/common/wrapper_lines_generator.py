@@ -92,15 +92,15 @@ for pin_info in pin_data['pins']:
       # FPGA input     <- Caravel input
       curr_line = "assign " + pin_data['fpga_gpio_input_name'] + "[" + str(indices[0]) + "] = " \
                 +  pin_data['caravel_gpio_input_name'] + "[" + str(indices[1]) + "];";
-      netlist_lines.append(curr_line + "\n")
+      netlist_lines.append("    " + curr_line + "\n")
       # FPGA output    -> Caravel output
       curr_line = "assign " + pin_data['caravel_gpio_output_name'] + "[" + str(indices[1]) + "] = " \
                 +  pin_data['fpga_gpio_output_name'] + "[" + str(indices[0]) + "];";
-      netlist_lines.append(curr_line + "\n")
+      netlist_lines.append("    " + curr_line + "\n")
       # FPGA direction -> Caravel direction
       curr_line = "assign " + pin_data['caravel_gpio_direction_name'] + "[" + str(indices[1]) + "] = " \
                 +  pin_data['fpga_gpio_direction_name'] + "[" + str(indices[0]) + "];";
-      netlist_lines.append(curr_line + "\n")
+      netlist_lines.append("    " + curr_line + "\n")
 
   # - FPGA control input ports to Caravel GPIO 
   if (("io" != pin_info['fpga_pin_type']) \
@@ -117,13 +117,13 @@ for pin_info in pin_data['pins']:
       # Connect the FPGA input port to the Caravel input
       curr_line = "assign " + pin_info['fpga_pin_type'] + "[" + str(indices[0]) + "] = " \
                 +  pin_data['caravel_gpio_input_name'] + "[" + str(indices[1]) + "];";
-      netlist_lines.append(curr_line + "\n")
+      netlist_lines.append("    " + curr_line + "\n")
       # Tie Caravel output port to logic '0'
       curr_line = "assign " + pin_data['caravel_gpio_output_name'] + "[" + str(indices[1]) + "] = 1'b0;"
-      netlist_lines.append(curr_line + "\n")
+      netlist_lines.append("    " + curr_line + "\n")
       # Tie Caravel direction port to logic '1'
       curr_line = "assign " + pin_data['caravel_gpio_direction_name'] + "[" + str(indices[1]) + "] = 1'b1"
-      netlist_lines.append(curr_line + "\n")
+      netlist_lines.append("    " + curr_line + "\n")
 
   # - FPGA control output ports to Caravel GPIO 
   if (("io" != pin_info['fpga_pin_type']) \
@@ -141,10 +141,10 @@ for pin_info in pin_data['pins']:
       # Connect Caravel output port to FPGA control output
       curr_line = "assign " + pin_data['caravel_gpio_output_name'] + "[" + str(indices[1]) + "] = " \
                 +  pin_info['fpga_pin_type'] + "[" + str(indices[0]) + "];";
-      netlist_lines.append(curr_line + "\n")
+      netlist_lines.append("    " + curr_line + "\n")
       # Tie Caravel direction port to logic '0'
       curr_line = "assign " + pin_data['caravel_gpio_direction_name'] + "[" + str(indices[1]) + "] = 1'b0"
-      netlist_lines.append(curr_line + "\n")
+      netlist_lines.append("    " + curr_line + "\n")
 
   # - FPGA I/O ports to Caravel logic analyzer I/O only
   if (("io" == pin_info['fpga_pin_type']) \
@@ -163,13 +163,13 @@ for pin_info in pin_data['pins']:
       # since this I/O is going to interface logic analyzer input only
       curr_line = "assign " + pin_data['fpga_gpio_input_name'] + "[" + str(indices[0]) + "] = " \
                 + pin_data['caravel_logic_analyzer_input_name'] + "[" + str(indices[1]) + "]" + ";"
-      netlist_lines.append(curr_line + "\n")
+      netlist_lines.append("    " + curr_line + "\n")
       ##############################################################
       # SOC OUTPUT will directly drive logic analyzer 
       # since this I/O is going to interface logic analyzer output only
       curr_line = "assign " + pin_data['caravel_logic_analyzer_output_name'] + "[" + str(indices[1]) + "]" \
                 +  " = " + pin_data['fpga_gpio_output_name'] + "[" + str(indices[0]) + "];"
-      netlist_lines.append(curr_line + "\n")
+      netlist_lines.append("    " + curr_line + "\n")
 
   # - FPGA I/O ports to Caravel logic analyzer I/O and Wishbone interface
   if (("io" == pin_info['fpga_pin_type']) \
@@ -202,13 +202,13 @@ for pin_info in pin_data['pins']:
                   +  ".A0(" + pin_data['caravel_logic_analyzer_input_name'] + str(indices[1]) + "), " \
                   +  ".X(" + pin_data['fpga_gpio_input_name'] + "[" + str(indices[0]) + "])" \
                   +  ");"
-        netlist_lines.append(curr_line + "\n")
+        netlist_lines.append("    " + curr_line + "\n")
         ##############################################################
         # SOC OUTPUT will drive an output of logic analyzer 
         # since this I/O is going to interface a Wishbone input only
         curr_line = "assign " + pin_data['caravel_logic_analyzer_output_name'] + "[" + str(indices[1]) + "]" \
                   +  " = " + pin_data['fpga_gpio_output_name'] + "[" + str(indices[0]) + "];"
-        netlist_lines.append(curr_line + "\n")
+        netlist_lines.append("    " + curr_line + "\n")
     elif (pin_info['caravel_pin_type'][1].endswith("_output")):
       for indices in zip(list(fpga_io_pin_range), list(la_io_pin_range), list(wb_io_pin_range)) : 
         ##############################################################
@@ -216,7 +216,7 @@ for pin_info in pin_data['pins']:
         # since this I/O is going to interface a Wishbone output only
         curr_line = "assign " +  pin_data['fpga_gpio_input_name'] + "[" + str(indices[0]) + "] = " \
                   +  pin_data['caravel_logic_analyzer_input_name'] + "[" + str(indices[1]) + "];"
-        netlist_lines.append(curr_line + "\n")
+        netlist_lines.append("    " + curr_line + "\n")
         ##############################################################
         # SOC OUTPUT will drive the Wishbone output through a tri-state buffer
         # As the buffer is enabled by logic '0', we use the inverted 'wb_la_switch'
@@ -225,7 +225,7 @@ for pin_info in pin_data['pins']:
                   + ".A(" + pin_data['fpga_gpio_output_name'] + "[" + str(indices[0]) + "]), " \
                   + ".Z(" + pin_data['caravel_' + pin_info['caravel_pin_type'][1] + '_name'] + "[" + str(indices[2]) + "])" \
                   + ");"
-        netlist_lines.append(curr_line + "\n")
+        netlist_lines.append("    " + curr_line + "\n")
         ##############################################################
         # SOC OUTPUT will also drive the Logic Analyzer output through a tri-state buffer
         # As the buffer is enabled by logic '0', we use the 'wb_la_switch'
@@ -234,7 +234,7 @@ for pin_info in pin_data['pins']:
                   + ".A(" + pin_data['fpga_gpio_output_name'] + "[" + str(indices[0]) + "]), " \
                   + ".Z(" + pin_data['caravel_logic_analyzer_output_name'] + "[" + str(indices[1]) + "])" \
                   + ");"
-        netlist_lines.append(curr_line + "\n")
+        netlist_lines.append("    " + curr_line + "\n")
 
 if isfile(args.output_verilog):
     os.remove(args.output_verilog)
