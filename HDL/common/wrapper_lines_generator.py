@@ -12,6 +12,7 @@ import shutil
 import re
 import argparse
 import logging
+import json
 
 #####################################################################
 # Initialize logger
@@ -26,52 +27,63 @@ parser = argparse.ArgumentParser(
     description='Generator for technology-mapped wrapper')
 parser.add_argument('--template_netlist', default='caravel_fpga_wrapper_hd_template.v',
                     help='Specify template verilog netlist')
+parser.add_argument('--pin_assignment_file', required=True,
+                    help='Specify the json file constaining pin assignment information')
 parser.add_argument('--output_verilog', default='caravel_fpga_wrapper_hd.v',
                     help='Specify output verilog file path')
 args = parser.parse_args()
 
 #####################################################################
-# Define Wishbone interface pin sequence
-# The list start from left-side of the wrapper to the right side
-# Target FPGA gpio start from 135, 134 ...
+# Check options:
+# - Input json file must be valid
+#   Otherwise, error out
 #####################################################################
-wishbone_pins = ['wb_clk_i', 'wb_rst_i', 
-                 'wbs_ack_o', 'wbs_cyc_i',
-                 'wbs_stb_i', 'wbs_we_i']
-
-wishbone_pins.extend([f"wbs_sel_i[{i}]" for i in range(4)])
-wishbone_pins.extend([f"wbs_adr_i[{i}]" for i in range(32)])
-wishbone_pins.extend([f"wbs_dat_i[{i}]" for i in range(32)])
-wishbone_pins.extend([f"wbs_dat_o[{i}]" for i in range(32)])
+if not isfile(args.pin_assignment_file):
+  logging.error("Invalid pin assignment file: " + args.pin_assignment_file + "\nFile does not exist!\n")
+  exit(1)
 
 #####################################################################
-# Define Logic Analyzer interface pin sequence
-# The list start from left-side of the wrapper to the right side
-# Target FPGA gpio start from 135, 134 ...
+# Parse the json file
 #####################################################################
-logic_analyzer_pins = []
-for ipin in range(13, 128):
-    logic_analyzer_pins.append(["la_data_in[" + str(ipin) + "]",
-                                "la_data_out[" + str(ipin) + "]", "la_oen[" + str(ipin) + "]"])
+json_file = open(args.pin_assignment_file, "r")
+pin_data = json.load(json_file)
+
+#####################################################################
+# A function to parse pin range from json data
+# JSON pin range format is LSB:MSB
+# Return pin range format is [LSB, MSB] as a list
+#####################################################################
+def parse_json_pin_range(json_range) :
+  pin_range = json_range.split(':')
+  assert(2 == len(pin_range))
+  return pin_range
 
 #####################################################################
 # Generate wrapper lines
 #####################################################################
 netlist_lines = []
-num_wishbone_pins = len(wishbone_pins)
-num_logic_analyzer_pins = len(logic_analyzer_pins)
-num_gpio_pins = 135 - 21 + 1
 
-print("Number of Wishbone pins: " + str(num_wishbone_pins))
-print("Number of logic analyzer pins: " + str(num_logic_analyzer_pins))
-print("Number of gpio pins: " + str(num_gpio_pins))
-
-assert num_wishbone_pins < num_logic_analyzer_pins
-assert num_logic_analyzer_pins == num_gpio_pins
-
-for ipin in range(0, num_gpio_pins):
-    curr_line = ""
-    if ((ipin < num_wishbone_pins) and (ipin < num_logic_analyzer_pins)):
+# Walk through the array containing the pin information
+for pin_info in pin_data['pins']:
+  # Deposit a tab to respect the HDL coding indent
+  curr_line = "    "
+  # TODO: Check codes that ensure the pin index should match
+  #
+  # Branch on the types of connnections:
+  # - FPGA I/O to Caravel GPIO 
+  if (("io" == pin_info['fpga_pin_type']) and ("gpio" == pin_info['caravel_pin_type'][0])):
+    # Should have only 1 port in caravel
+    assert(1 == len(pin_info['caravel_pin_type']))
+    # Get pin range
+    fpga_io_pin_range = parse_json_pin_range(pin_info['fpga_pin_index'])
+    # Connect all the input, output and direction port
+    # FPGA input     <- Caravel input
+    # FPGA output    -> Caravel output
+    # FPGA direction -> Caravel direction
+    curr_line += "assign " + pin_data['fpga_gpio_input_name']
+    netlist_lines.append(curr_line + "\n")
+    
+  if ((ipin < num_wishbone_pins) and (ipin < num_logic_analyzer_pins)):
         # If this is an input pin of wishbone interface, whose postfix is '_i', we use MUX
         # otherwise, this is an output pin, we just wire the input to logic analyzer
         if ((wishbone_pins[ipin].endswith("_i")) or (re.search(r'_i\[\d+\]$', wishbone_pins[ipin], re.M | re.I))):
