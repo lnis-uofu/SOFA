@@ -49,7 +49,7 @@ logging.info("Found " + str(len(testbench_files)) + " testbenches")
 # Try to create the directory of Modelsim projects
 #####################################################################
 parent_dir_abspath = dirname(dirname(abspath(__file__)))
-msim_task_dir_abspath = abspath(parent_dir_abspath + args.task_name) + "/postpnr/verilog_testbench";
+msim_task_dir_abspath = abspath(parent_dir_abspath + "/" + args.task_name) + "/postpnr/verilog_testbench";
 os.makedirs(msim_task_dir_abspath, exist_ok=True)
 
 #####################################################################
