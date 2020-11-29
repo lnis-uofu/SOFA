@@ -18,7 +18,8 @@
   "fpga_gpio_input_name": "gfpga_pad_EMBEDDED_IO_HD_SOC_IN",
   "fpga_gpio_output_name": "gfpga_pad_EMBEDDED_IO_HD_SOC_OUT",
   "fpga_gpio_direction_name": "gfpga_pad_EMBEDDED_IO_HD_SOC_DIR",
-  "mode_switch_pin_name": "wb_la_switch"
+  "mode_switch_pin_name": "wb_la_switch",
+  "inverted_mode_switch_pin_name": "wb_la_switch_b",
   "pins": [
     {
       "fpga_pin_type": "io" 
