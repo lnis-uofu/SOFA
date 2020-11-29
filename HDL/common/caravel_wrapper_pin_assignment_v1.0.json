@@ -1,0 +1,163 @@
+{
+  "caravel_gpio_input_name": "io_in",
+  "caravel_gpio_output_name": "io_out",
+  "caravel_gpio_direction_name": "io_oeb",
+  "caravel_logic_analyzer_input_name": "la_data_in",
+  "caravel_logic_analyzer_output_name": "la_data_out",
+  "caravel_logic_analyzer_direction_name": "la_oen",
+  "caravel_wishbone_clock_input_name": "wbs_clk_i",
+  "caravel_wishbone_reset_input_name": "wbs_rst_i",
+  "caravel_wishbone_ack_output_name": "wbs_ack_o",
+  "caravel_wishbone_cyc_input_name": "wbs_cyc_i",
+  "caravel_wishbone_stb_input_name": "wbs_stb_i",
+  "caravel_wishbone_we_input_name": "wbs_we_i",
+  "caravel_wishbone_sel_input_name": "wbs_sel_i",
+  "caravel_wishbone_address_input_name": "wbs_adr_i",
+  "caravel_wishbone_data_input_name": "wbs_dat_i",
+  "caravel_wishbone_data_output_name": "wbs_dat_o",
+  "fpga_gpio_input_name": "gfpga_pad_EMBEDDED_IO_HD_SOC_IN",
+  "fpga_gpio_output_name": "gfpga_pad_EMBEDDED_IO_HD_SOC_OUT",
+  "fpga_gpio_direction_name": "gfpga_pad_EMBEDDED_IO_HD_SOC_DIR",
+  "mode_switch_pin_name": "wb_la_switch",
+  "inverted_mode_switch_pin_name": "wb_la_switch_b",
+  "pins": [
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "0:11", 
+      "caravel_pin_type": ["gpio"],
+      "caravel_pin_index": ["24:13"]
+    },
+    {
+      "fpga_pin_type": "ccff_head",
+      "fpga_pin_index": "0:0", 
+      "caravel_pin_type": ["input"],
+      "caravel_pin_index": ["12:12"]
+    }, 
+    {
+      "fpga_pin_type": "sc_tail", 
+      "fpga_pin_index": "0:0", 
+      "caravel_pin_type": ["output"],
+      "caravel_pin_index": ["11:11"]
+    }, 
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "12:20", 
+      "caravel_pin_type": ["gpio"],
+      "caravel_pin_index": ["10:2"]
+    }, 
+    {
+      "fpga_pin_type": "io_isol_n", 
+      "fpga_pin_index": "0:0", 
+      "caravel_pin_type": ["input"],
+      "caravel_pin_index": ["1:1"]
+    },
+    {
+      "fpga_pin_type": "test_en", 
+      "fpga_pin_index": "0:0", 
+      "caravel_pin_type": ["input"],
+      "caravel_pin_index": ["0:0"]
+    }, 
+    {
+      "fpga_pin_type": "io",
+      "fpga_pin_index": "21:23", 
+      "caravel_pin_type": ["logic_analyzer_io"],
+      "caravel_pin_index": ["127:125"]
+    }, 
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "24:29", 
+      "caravel_pin_type": ["logic_analyzer_io"],
+      "caravel_pin_index": ["124:119"]
+    },
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "30:61", 
+      "caravel_pin_type": ["logic_analyzer_io", "wishbone_data_output"],
+      "caravel_pin_index": ["118:87", "0:31"]
+    },
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "62:93", 
+      "caravel_pin_type": ["logic_analyzer_io", "wishbone_data_input"],
+      "caravel_pin_index": ["86:55", "0:31"]
+    },
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "94:125", 
+      "caravel_pin_type": ["logic_analyzer_io", "wishbone_address_input"],
+      "caravel_pin_index": ["54:23", "0:31"]
+    }, 
+    {
+      "fpga_pin_type": "io",
+      "fpga_pin_index": "126:129", 
+      "caravel_pin_type": ["logic_analyzer_io", "wishbone_sel_input"],
+      "caravel_pin_index": ["22:19", "0:3"]
+    }, 
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "130:130", 
+      "caravel_pin_type": ["logic_analyzer_io", "wishbone_we_input"],
+      "caravel_pin_index": ["18:18", "0:0"]
+    },
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "131:131", 
+      "caravel_pin_type": ["logic_analyzer_io", "wishbone_stb_input"],
+      "caravel_pin_index": ["17:17", "0:0"]
+    },
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "132:132", 
+      "caravel_pin_type": ["logic_analyzer_io", "wishbone_cyc_input"],
+      "caravel_pin_index": ["16:16", "0:0"]
+    }, 
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "133:133", 
+      "caravel_pin_type": ["logic_analyzer_io", "wishbone_ack_output"],
+      "caravel_pin_index": ["15:15", "0:0"]
+    },
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "134:134", 
+      "caravel_pin_type": ["logic_analyzer_io", "wishbone_reset_input"],
+      "caravel_pin_index": ["14:14", "0:0"]
+    },
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "135:135", 
+      "caravel_pin_type": ["logic_analyzer_io", "wishbone_clock_input"],
+      "caravel_pin_index": ["13:13", "0:0"]
+    },
+    {
+      "fpga_pin_type": "prog_clk", 
+      "fpga_pin_index": "0:0", 
+      "caravel_pin_type": ["input"],
+      "caravel_pin_index": ["37:37"]
+    },
+    {
+      "fpga_pin_type": "clk",
+      "fpga_pin_index": "0:0", 
+      "caravel_pin_type": ["input"],
+      "caravel_pin_index": ["36:36"]
+    },
+    {
+      "fpga_pin_type": "sc_tail", 
+      "fpga_pin_index": "0:0", 
+      "caravel_pin_type": ["output"],
+      "caravel_pin_index": ["35:35"]
+    },
+    {
+      "fpga_pin_type": "io", 
+      "fpga_pin_index": "136:143", 
+      "caravel_pin_type": ["gpio"],
+      "caravel_pin_index": ["34:27"]
+    },
+    {
+      "fpga_pin_type": "sc_head", 
+      "fpga_pin_index": "0:0", 
+      "caravel_pin_type": ["input"],
+      "caravel_pin_index": ["26:26"]
+    }
+  ]
+}
