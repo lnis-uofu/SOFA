@@ -329,10 +329,10 @@ Warning 60: in check_rr_node: RR node: 1389 type: OPIN location: (11,1) pin: 50 
 Warning 61: in check_rr_node: RR node: 1390 type: OPIN location: (11,1) pin: 51 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
 Warning 62: in check_rr_node: RR node: 1479 type: OPIN location: (12,1) pin: 50 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
 Warning 63: in check_rr_node: RR node: 1480 type: OPIN location: (12,1) pin: 51 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-## Build tileable routing resource graph took 0.17 seconds (max_rss 18.1 MiB, delta_rss +7.3 MiB)
+## Build tileable routing resource graph took 0.16 seconds (max_rss 18.1 MiB, delta_rss +7.3 MiB)
   RR Graph Nodes: 18580
   RR Graph Edges: 96524
-# Create Device took 0.17 seconds (max_rss 18.1 MiB, delta_rss +7.3 MiB)
+# Create Device took 0.16 seconds (max_rss 18.1 MiB, delta_rss +7.3 MiB)
 
 # Placement
 ## Computing placement delta delay look-up
@@ -654,7 +654,7 @@ Setup slack histogram:
 [ -9.3e-10: -9.3e-10) 0 ( 0.0%) |
 [ -9.3e-10: -9.3e-10) 0 ( 0.0%) |
 
-Timing analysis took 0.000513075 seconds (0.000459398 STA, 5.3677e-05 slack) (67 full updates: 48 setup, 0 hold, 19 combined).
+Timing analysis took 0.000524223 seconds (0.00046474 STA, 5.9483e-05 slack) (67 full updates: 48 setup, 0 hold, 19 combined).
 VPR suceeded
 The entire flow of VPR took 0.50 seconds (max_rss 19.5 MiB)
 
@@ -886,7 +886,7 @@ Done with 19 nodes mapping
 [99%] Backannotated GSB[12][11]
 [100%] Backannotated GSB[12][12]
 Backannotated 169 General Switch Blocks (GSBs).
-# Build General Switch Block(GSB) annotation on top of routing resource graph took 0.01 seconds (max_rss 19.8 MiB, delta_rss +0.0 MiB)
+# Build General Switch Block(GSB) annotation on top of routing resource graph took 0.00 seconds (max_rss 19.8 MiB, delta_rss +0.0 MiB)
 # Sort incoming edges for each routing track output node of General Switch Block(GSB)
 [0%] Sorted edges for GSB[0][0]
 [1%] Sorted edges for GSB[0][1]
@@ -1127,7 +1127,7 @@ Building physical tiles...Done
 ## Add connection block instances to top module
 ## Add connection block instances to top module took 0.00 seconds (max_rss 27.1 MiB, delta_rss +0.5 MiB)
 ## Add module nets between grids and GSBs
-## Add module nets between grids and GSBs took 0.14 seconds (max_rss 42.8 MiB, delta_rss +15.7 MiB)
+## Add module nets between grids and GSBs took 0.13 seconds (max_rss 42.8 MiB, delta_rss +15.7 MiB)
 ## Add module nets for inter-tile connections
 ## Add module nets for inter-tile connections took 0.00 seconds (max_rss 43.3 MiB, delta_rss +0.5 MiB)
 ## Add module nets for configuration buses
@@ -1168,10 +1168,10 @@ Generating bitstream for X-direction Connection blocks ...Done
 Generating bitstream for Y-direction Connection blocks ...Done
 
 Build fabric-independent bitstream for implementation 'top'
- took 0.16 seconds (max_rss 49.7 MiB, delta_rss +5.1 MiB)
+ took 0.13 seconds (max_rss 49.7 MiB, delta_rss +5.1 MiB)
 Warning 116: Directory path is empty and nothing will be created.
 Write 67960 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml'
-Write 67960 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml' took 0.52 seconds (max_rss 49.7 MiB, delta_rss +0.0 MiB)
+Write 67960 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml' took 0.45 seconds (max_rss 49.7 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: build_fabric_bitstream
 
@@ -1182,7 +1182,7 @@ Build fabric dependent bitstream
 
 
 Build fabric dependent bitstream
- took 0.03 seconds (max_rss 53.6 MiB, delta_rss +3.9 MiB)
+ took 0.07 seconds (max_rss 53.6 MiB, delta_rss +3.9 MiB)
 
 Command line to execute: write_fabric_bitstream --format plain_text --file fabric_bitstream.bit
 
@@ -1202,7 +1202,7 @@ Confirm selected options when call command 'write_fabric_bitstream':
 --verbose: off
 Warning 118: Directory path is empty and nothing will be created.
 Write 67960 fabric bitstream into xml file 'fabric_bitstream.xml'
-Write 67960 fabric bitstream into xml file 'fabric_bitstream.xml' took 0.09 seconds (max_rss 53.6 MiB, delta_rss +0.0 MiB)
+Write 67960 fabric bitstream into xml file 'fabric_bitstream.xml' took 0.12 seconds (max_rss 53.6 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_fabric_verilog --file ./SRC --explicit_port_mapping --include_timing --include_signal_init --support_icarus_simulator --verbose
 
@@ -1264,7 +1264,7 @@ Building physical tiles...Done
 Writing Verilog netlist for top-level module of FPGA fabric './SRC/fpga_top.v'...Done
 Written 71 Verilog modules in total
 Write Verilog netlists for FPGA fabric
- took 0.34 seconds (max_rss 56.4 MiB, delta_rss +2.8 MiB)
+ took 0.44 seconds (max_rss 56.4 MiB, delta_rss +2.8 MiB)
 
 Command line to execute: write_verilog_testbench --file ./SRC --reference_benchmark_file_path top_output_verilog.v --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --explicit_port_mapping
 
@@ -1284,17 +1284,72 @@ Write Verilog testbenches for FPGA fabric
 
 Warning 120: Directory './SRC' already exists. Will overwrite contents
 # Write pre-configured FPGA top-level Verilog netlist for design 'top'
-# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 0.11 seconds (max_rss 56.4 MiB, delta_rss +0.0 MiB)
+# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 0.14 seconds (max_rss 56.5 MiB, delta_rss +0.2 MiB)
 # Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top'
-# Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top' took 0.00 seconds (max_rss 56.4 MiB, delta_rss +0.0 MiB)
+# Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top' took 0.00 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
 # Write autocheck testbench for FPGA top-level Verilog netlist for 'top'
 Will use 67961 configuration clock cycles to top testbench
-# Write autocheck testbench for FPGA top-level Verilog netlist for 'top' took 0.12 seconds (max_rss 56.6 MiB, delta_rss +0.2 MiB)
+# Write autocheck testbench for FPGA top-level Verilog netlist for 'top' took 0.13 seconds (max_rss 56.6 MiB, delta_rss +0.1 MiB)
 Succeed to create directory './SimulationDeck'
 # Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini'
 # Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini' took 0.00 seconds (max_rss 56.6 MiB, delta_rss +0.0 MiB)
 Write Verilog testbenches for FPGA fabric
- took 0.24 seconds (max_rss 56.7 MiB, delta_rss +0.3 MiB)
+ took 0.29 seconds (max_rss 56.6 MiB, delta_rss +0.2 MiB)
+
+Command line to execute: write_pnr_sdc --file ./SDC
+
+Confirm selected options when call command 'write_pnr_sdc':
+--file, -f: ./SDC
+--flatten_names: off
+--hierarchical: off
+--output_hierarchy: off
+--time_unit: off
+--constrain_global_port: off
+--constrain_non_clock_global_port: off
+--constrain_grid: off
+--constrain_sb: off
+--constrain_cb: off
+--constrain_configurable_memory_outputs: off
+--constrain_routing_multiplexer_outputs: off
+--constrain_switch_block_outputs: off
+--constrain_zero_delay_paths: off
+--verbose: off
+Succeed to create directory './SDC'
+Write SDC for constraining clocks for P&R flow './SDC/global_ports.sdc'
+Write SDC for constraining clocks for P&R flow './SDC/global_ports.sdc' took 0.00 seconds (max_rss 56.7 MiB, delta_rss +0.0 MiB)
+Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc'
+Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc' took 0.01 seconds (max_rss 56.7 MiB, delta_rss +0.0 MiB)
+Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc'
+Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc' took 0.05 seconds (max_rss 56.7 MiB, delta_rss +0.0 MiB)
+Write SDC to disable switch block outputs for P&R flow './SDC/disable_sb_outputs.sdc'
+Write SDC to disable switch block outputs for P&R flow './SDC/disable_sb_outputs.sdc' took 0.00 seconds (max_rss 56.7 MiB, delta_rss +0.0 MiB)
+Write SDC for constrain Switch Block timing for P&R flow
+Write SDC for constrain Switch Block timing for P&R flow took 0.05 seconds (max_rss 56.7 MiB, delta_rss +0.0 MiB)
+Write SDC for constrain Connection Block timing for P&R flow
+Write SDC for constrain Connection Block timing for P&R flow took 0.02 seconds (max_rss 56.7 MiB, delta_rss +0.0 MiB)
+Write SDC for constraining grid timing for P&R flow
+Write SDC for constraining grid timing for P&R flow took 0.02 seconds (max_rss 56.7 MiB, delta_rss +0.0 MiB)
+
+Command line to execute: write_sdc_disable_timing_configure_ports --file ./SDC/disable_configure_ports.sdc
+
+Confirm selected options when call command 'write_sdc_disable_timing_configure_ports':
+--file, -f: ./SDC/disable_configure_ports.sdc
+--flatten_names: off
+--verbose: off
+Warning 121: Directory './SDC' already exists. Will overwrite contents
+Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc'
+Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc' took 0.12 seconds (max_rss 56.7 MiB, delta_rss +0.0 MiB)
+
+Command line to execute: write_analysis_sdc --file ./SDC_analysis
+
+Confirm selected options when call command 'write_analysis_sdc':
+--file, -f: ./SDC_analysis
+--verbose: off
+--flatten_names: off
+--time_unit: off
+Succeed to create directory './SDC_analysis'
+Generating SDC for Timing/Power analysis on the mapped FPGA './SDC_analysis/top_fpga_top_analysis.sdc'
+Generating SDC for Timing/Power analysis on the mapped FPGA './SDC_analysis/top_fpga_top_analysis.sdc' took 0.76 seconds (max_rss 56.8 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: exit
 
@@ -1302,6 +1357,6 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 2.06 seconds
+The entire OpenFPGA flow took 3.11 seconds
 
 Thank you for using OpenFPGA!
