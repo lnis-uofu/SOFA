@@ -56,7 +56,7 @@ pin_data = json.load(json_file)
 def parse_json_pin_range(json_range) :
   pin_range_str = json_range.split(':')
   assert(2 == len(pin_range_str))
-  return range(pin_range_str[0], pin_range_str[1] + 1)
+  return range(int(pin_range_str[0]), int(pin_range_str[1]) + 1)
 
 #####################################################################
 # Generate wrapper lines
