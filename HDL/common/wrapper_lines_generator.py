@@ -199,7 +199,7 @@ for pin_info in pin_data['pins']:
         curr_line = "sky130_fd_sc_hd__mux2_1 FPGA2SOC_IN_" + str(indices[0]) + "_MUX (" \
                   +  ".S(" + pin_data['mode_switch_pin_name'] + "), " \
                   +  ".A1(" + pin_data['caravel_' + pin_info['caravel_pin_type'][1] + '_name'] + "[" + str(indices[2]) + "]), " \
-                  +  ".A0(" + pin_data['caravel_logic_analyzer_input_name'] + str(indices[1]) + "), " \
+                  +  ".A0(" + pin_data['caravel_logic_analyzer_input_name'] + "[" + str(indices[1]) + "]), " \
                   +  ".X(" + pin_data['fpga_gpio_input_name'] + "[" + str(indices[0]) + "])" \
                   +  ");"
         netlist_lines.append("    " + curr_line + "\n")
