@@ -58,13 +58,13 @@
       "caravel_pin_index": ["2:2"]
     },
     {
-      "fpga_pin_type": "io_isol_n", 
+      "fpga_pin_type": "IO_ISOL_N", 
       "fpga_pin_index": "0:0", 
       "caravel_pin_type": ["input"],
       "caravel_pin_index": ["1:1"]
     },
     {
-      "fpga_pin_type": "test_en", 
+      "fpga_pin_type": "Test_en", 
       "fpga_pin_index": "0:0", 
       "caravel_pin_type": ["input"],
       "caravel_pin_index": ["0:0"]
