@@ -27,14 +27,14 @@
                 <port name="lut4_out"/>
             </output_ports>
         </model>
-        <model name="MUX2">
+        <model name="carry_follower">
             <input_ports>
-                <port name="in0" />
-                <port name="in1" />
-                <port name="sel" />
-            </input_ports>
+                <port name="a"/>
+                <port name="b"/>
+                <port name="cin"/>
+                </input_ports>
             <output_ports>
-                <port name="out" />
+                <port name="cout"/>
             </output_ports>
         </model>
         <model name="LUT4">
@@ -304,22 +304,21 @@
                                 <output name="lut2_out" num_pins="2"/>
                                 <output name="lut4_out" num_pins="1"/>
                             </pb_type>
-                            <pb_type name="co_mux" blif_model=".subckt MUX2" num_pb="1">
-                                <input name="in0" num_pins="1"/>
-                                <input name="in1" num_pins="1"/>
-                                <input name="sel" num_pins="1"/>
-                                <output name="out" num_pins="1"/>
+                            <pb_type name="carry_follower" blif_model=".subckt carry_follower" num_pb="1">
+                                <input name="a" num_pins="1"/>
+                                <input name="b" num_pins="1"/>
+                                <input name="cin" num_pins="1"/>
+                                <output name="cout" num_pins="1"/>
                             </pb_type>
                             <interconnect>
-                                <direct name="direct1" input="frac_logic.LI[0]" output="frac_lut4.in[0]" />
-                                <direct name="direct2" input="frac_logic.LI[1]" output="frac_lut4.in[1]" />
-                                <mux name="i2_ci" input="frac_logic.LI[2] frac_logic.CI" output="frac_lut4.in[2]"/>
-                                <direct name="direct3" input="frac_logic.LI[3]" output="frac_lut4.in[3]" />
-                                <direct name="direct4" input="frac_lut4.lut4_out" output="frac_logic.O" />
-                                <direct name="direct5" input="frac_lut4.lut2_out[1]" output="co_mux.in0" />
-                                <direct name="direct6" input="frac_logic.CI" output="co_mux.in1" />
-                                <direct name="direct7" input="frac_lut4.lut2_out[0]" output="co_mux.sel" />
-                                <direct name="direct8" input="co_mux.out" output="frac_logic.CO" />
+                                <direct name="direct1" input="frac_logic.LI[0:1]" output="frac_lut4.in[0:1]" />
+                                <direct name="direct2" input="frac_logic.LI[3:3]" output="frac_lut4.in[3:3]" />
+                                <direct name="direct3" input="frac_lut4.lut4_out" output="frac_logic.O" />
+                                <direct name="direct4" input="frac_lut4.lut2_out[1:1]" output="carry_follower.a" />
+                                <direct name="direct5" input="frac_logic.CI" output="carry_follower.b" />
+                                <direct name="direct6" input="frac_lut4.lut2_out[0:0]" output="carry_follower.cin" />
+                                <direct name="direct7" input="carry_follower.out" output="frac_logic.CO" />
+                                <mux name="i2_ci" input="frac_logic.LI[2:2] frac_logic.CI" output="frac_lut4.in[2:2]"/>
                             </interconnect>
                         </pb_type>
                         <!-- Define flip-flop with scan-chain capability, DI is the scan-chain data input -->
