@@ -31,6 +31,8 @@ logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.DEBUG)
 parser = argparse.ArgumentParser(description='Generate post-PnR testbenches for a given directory')
 parser.add_argument('--pre_pnr_testbench_dir_name', required=True,
                     help='Specify the directory path for the pre-PnR Verilog testbenches')
+parser.add_argument('--pin_assignment_file', required=True,
+                    help='Specify the file path to the pin assignment JSON description as input')
 args = parser.parse_args()
 
 #####################################################################
@@ -70,6 +72,25 @@ for curr_pre_pnr_testbench_file in pre_pnr_testbench_files:
   cmd = "python3 ./post_pnr_testbench_converter.py " \
       + " --pre_pnr_testbench " +  curr_pre_pnr_testbench_file \
       + " --post_pnr_testbench " + curr_post_pnr_testbench_file
+  subprocess.run(cmd, shell=True, check=True) 
+  num_converted_testbenches += 1
+  logging.info("Done")
+
+logging.info("\nConverted " + str(num_converted_testbenches) + " testbenches.")
+
+#####################################################################
+# Convert post-PnR testbenches to wrapper testbenches
+#####################################################################
+logging.info("Converting pre-PnR testbench to post-PnR testbench...");
+for curr_pre_pnr_testbench_file in pre_pnr_testbench_files:
+  curr_post_pnr_testbench_file = re.sub("_autocheck_top_tb.v$", "_post_pnr_autocheck_top_tb.v", curr_pre_pnr_testbench_file)
+  curr_post_pnr_testbench_file = re.sub("\/prepnr\/", "\/postpnr\/", curr_post_pnr_testbench_file)
+  curr_wrapper_testbench_file = re.sub("_autocheck_top_tb.v$", "_wrapper_autocheck_top_tb.v", curr_pre_pnr_testbench_file)
+  logging.info("Processing " + curr_post_pnr_testbench_file + " testbench:")
+  cmd = "python3 ./post_pnr_wrapper_testbench_converter.py " \
+      + " --post_pnr_testbench " +  curr_post_pnr_testbench_file \
+      + " --pin_assignment_file " +  args.pin_assignment_file \
+      + " --wrapper_testbench " + curr_wrapper_testbench_file
   subprocess.run(cmd, shell=True, check=True) 
   num_converted_testbenches += 1
   logging.info("Done")
