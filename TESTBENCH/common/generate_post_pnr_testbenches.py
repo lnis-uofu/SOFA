@@ -85,7 +85,7 @@ logging.info("Converting pre-PnR testbench to post-PnR testbench...");
 for curr_pre_pnr_testbench_file in pre_pnr_testbench_files:
   curr_post_pnr_testbench_file = re.sub("_autocheck_top_tb.v$", "_post_pnr_autocheck_top_tb.v", curr_pre_pnr_testbench_file)
   curr_post_pnr_testbench_file = re.sub("\/prepnr\/", "\/postpnr\/", curr_post_pnr_testbench_file)
-  curr_wrapper_testbench_file = re.sub("_autocheck_top_tb.v$", "_wrapper_autocheck_top_tb.v", curr_pre_pnr_testbench_file)
+  curr_wrapper_testbench_file = re.sub("_autocheck_top_tb.v$", "_wrapper_autocheck_top_tb.v", curr_post_pnr_testbench_file)
   logging.info("Processing " + curr_post_pnr_testbench_file + " testbench:")
   cmd = "python3 ./post_pnr_wrapper_testbench_converter.py " \
       + " --post_pnr_testbench " +  curr_post_pnr_testbench_file \
