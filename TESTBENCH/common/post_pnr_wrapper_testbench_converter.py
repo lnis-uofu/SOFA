@@ -236,6 +236,8 @@ with open(args.post_pnr_testbench, "r") as wp:
                   + "wire [`MPRJ_IO_PADS-1:0] io_oeb;\n" \
                   + "// ---- Analog I/O pins ----\n" \
                   + "wire [`MPRJ_IO_PADS-8:0] analog_io;\n"
+                  + "// ---- User clock pin ----\n" \
+                  + "wire [0:0] user_clock2;\n"
     
     # Skip all the lines about FPGA instanciation
     if (curr_line == "\tfpga_core FPGA_DUT (\n"): 
