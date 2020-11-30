@@ -131,8 +131,8 @@ def write_testbench_wrapper_connection(tb_file, pin_data, mode_switch_io_index):
       assert(len(list(fpga_io_pin_range)) == len(list(caravel_io_pin_range)))
       for indices in zip(list(fpga_io_pin_range), list(caravel_io_pin_range)) : 
         # Connect the FPGA input port to the Caravel input
-        curr_line = "assign " + pin_info['caravel_gpio_input_name'] + "[" + str(indices[1]) + "] = " \
-                  +  pin_data['fpga_pin_type'] + "[" + str(indices[0]) + "];";
+        curr_line = "assign " + pin_data['caravel_gpio_input_name'] + "[" + str(indices[1]) + "] = " \
+                  +  pin_info['fpga_pin_type'] + "[" + str(indices[0]) + "];";
         tb_file.write("    " + curr_line + "\n")
 
     # - FPGA control output ports to Caravel GPIO 
@@ -151,8 +151,8 @@ def write_testbench_wrapper_connection(tb_file, pin_data, mode_switch_io_index):
         curr_line = "assign " + pin_data['caravel_gpio_input_name'] + "[" + str(indices[1]) + "] = 1'b0;"
         tb_file.write("    " + curr_line + "\n")
         # Connect Caravel output port to FPGA control output
-        curr_line = "assign " + pin_data['fpga_pin_type'] + "[" + str(indices[0]) + "] = " \
-                  +  pin_info['caravel_gpio_output_name'] + "[" + str(indices[1]) + "];";
+        curr_line = "assign " + pin_info['fpga_pin_type'] + "[" + str(indices[0]) + "] = " \
+                  +  pin_data['caravel_gpio_output_name'] + "[" + str(indices[1]) + "];";
         tb_file.write("    " + curr_line + "\n")
 
     # - We always try to use the logic analyzer to connect FPGA I/O ports
@@ -180,7 +180,7 @@ def write_testbench_wrapper_connection(tb_file, pin_data, mode_switch_io_index):
 # Open the post-pnr Verilog testbench and start modification
 #####################################################################
 logging.info("Converting post-PnR testbench:"+ args.post_pnr_testbench)
-logging.info("To post-PnR wrapper testbench:"+ args.wrapper_pnr_testbench)
+logging.info("To post-PnR wrapper testbench:"+ args.wrapper_testbench)
 # Create output file handler
 tb_file = open(args.wrapper_testbench, "w")
 
@@ -245,6 +245,7 @@ with open(args.post_pnr_testbench, "r") as wp:
     # When FPGA instance are skipped, add the wrapper instance
     if ((True == fpga_instance_lines) and (curr_line.endswith(");\n"))): 
       skip_current_line = False
+      fpga_instance_lines = False
       line2output = "\tfpga_wrapper FPGA_DUT(\n" \
                   + "\t\t\t.vdda1(vdda1),\n" \
                   + "\t\t\t.vdda2(vdda2),\n" \
@@ -271,9 +272,8 @@ with open(args.post_pnr_testbench, "r") as wp:
                   + "\t\t\t.io_oeb(io_oeb),\n" \
                   + "\t\t\t.analog_io(analog_io)\n" \
                   + "\t\t\t);\n";
-
-    # Wire the stimuli according to pin assignment
-    write_testbench_wrapper_connection(tb_file, pin_data, 25)
+      # Wire the stimuli according to pin assignment
+      write_testbench_wrapper_connection(tb_file, pin_data, 25)
     
     if (False == skip_current_line):
       tb_file.write(line2output)
