@@ -270,7 +270,8 @@ with open(args.post_pnr_testbench, "r") as wp:
                   + "\t\t\t.io_in(io_in),\n" \
                   + "\t\t\t.io_out(io_out),\n" \
                   + "\t\t\t.io_oeb(io_oeb),\n" \
-                  + "\t\t\t.analog_io(analog_io)\n" \
+                  + "\t\t\t.analog_io(analog_io),\n" \
+                  + "\t\t\t.user_clock2(user_clock2)\n" \
                   + "\t\t\t);\n";
       # Wire the stimuli according to pin assignment
       write_testbench_wrapper_connection(tb_file, pin_data, 25)
