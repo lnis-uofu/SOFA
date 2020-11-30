@@ -154,7 +154,7 @@
       "caravel_pin_index": ["36:36"]
     },
     {
-      "fpga_pin_type": "sc_tail", 
+      "fpga_pin_type": "ccff_tail", 
       "fpga_pin_index": "0:0", 
       "caravel_pin_type": ["output"],
       "caravel_pin_index": ["35:35"]
