@@ -197,7 +197,7 @@ with open(args.post_pnr_testbench, "r") as wp:
     # If the current line satisfy the following conditions
     # It should be modified and outputted to post-PnR Verilog testbenches
     # Other lines can be directly copied to post-PnR Verilog testbenches
-    line2output = curr_line \
+    line2output = curr_line 
     #
     # Add post_pnr to top-level module name
     if (curr_line.startswith("module")): 
@@ -274,6 +274,10 @@ with open(args.post_pnr_testbench, "r") as wp:
                   + "\t\t\t);\n";
       # Wire the stimuli according to pin assignment
       write_testbench_wrapper_connection(tb_file, pin_data, 25)
+
+    # Correct the path in signal initialization
+    if (re.search(r'\$deposit\(FPGA_DUT', curr_line)):
+      line2output = re.sub(r'\$deposit\(FPGA_DUT', '$deposit(FPGA_DUT.fpga_core_uut', curr_line)
     
     if (False == skip_current_line):
       tb_file.write(line2output)
