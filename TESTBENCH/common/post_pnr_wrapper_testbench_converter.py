@@ -235,9 +235,13 @@ with open(args.post_pnr_testbench, "r") as wp:
                   + "wire [`MPRJ_IO_PADS-1:0] io_out;\n" \
                   + "wire [`MPRJ_IO_PADS-1:0] io_oeb;\n" \
                   + "// ---- Analog I/O pins ----\n" \
-                  + "wire [`MPRJ_IO_PADS-8:0] analog_io;\n"
+                  + "wire [`MPRJ_IO_PADS-8:0] analog_io;\n" \
                   + "// ---- User clock pin ----\n" \
                   + "wire [0:0] user_clock2;\n"
+      # TODO: This is a temporary fix for the flattened analog io port
+      # SHOULD BE REMOVED ABOUT UPDATED WRAPPER
+      for ipin in range(31):
+        line2output += "wire [0:0] analog_io_" + str(ipin) + "_;\n"
     
     # Skip all the lines about FPGA instanciation
     if (curr_line == "\tfpga_core FPGA_DUT (\n"): 
@@ -273,9 +277,15 @@ with open(args.post_pnr_testbench, "r") as wp:
                   + "\t\t\t.io_in(io_in),\n" \
                   + "\t\t\t.io_out(io_out),\n" \
                   + "\t\t\t.io_oeb(io_oeb),\n" \
-                  + "\t\t\t.analog_io(analog_io),\n" \
-                  + "\t\t\t.user_clock2(user_clock2)\n" \
-                  + "\t\t\t);\n";
+                  #+ "\t\t\t.analog_io(analog_io),\n" \
+                  #+ "\t\t\t);\n";
+      # TODO: This is a temporary fix for the flattened analog io port
+      # SHOULD BE REMOVED ABOUT UPDATED WRAPPER
+      for ipin in range(31):
+        line2output += ".analog_io_" + str(ipin) + "_(analog_io_" + str(ipin) + "_),\n"
+
+      line2output += "\t\t\t.user_clock2(user_clock2)\n"
+      line2output += "\t\t\t);\n";
       # Wire the stimuli according to pin assignment
       write_testbench_wrapper_connection(tb_file, pin_data, 25)
 
