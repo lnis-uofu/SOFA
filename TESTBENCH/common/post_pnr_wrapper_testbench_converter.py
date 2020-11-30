@@ -246,7 +246,7 @@ with open(args.post_pnr_testbench, "r") as wp:
     if ((True == fpga_instance_lines) and (curr_line.endswith(");\n"))): 
       skip_current_line = False
       fpga_instance_lines = False
-      line2output = "\tfpga_wrapper FPGA_DUT(\n" \
+      line2output = "\tfpga_top FPGA_DUT(\n" \
                   + "\t\t\t.vdda1(vdda1),\n" \
                   + "\t\t\t.vdda2(vdda2),\n" \
                   + "\t\t\t.vssa1(vssa1),\n" \
