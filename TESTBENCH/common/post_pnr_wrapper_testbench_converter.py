@@ -231,9 +231,9 @@ with open(args.post_pnr_testbench, "r") as wp:
                   + "wire [127:0] la_data_out;\n" \
                   + "wire [127:0] la_oen;\n" \
                   + "// ---- GPIO pins ----\n" \
-                  + "wire [`MRPJ_IO_PADS-1:0] io_in;\n" \
-                  + "wire [`MRPJ_IO_PADS-1:0] io_out;\n" \
-                  + "wire [`MRPJ_IO_PADS-1:0] io_oeb;\n" \
+                  + "wire [`MPRJ_IO_PADS-1:0] io_in;\n" \
+                  + "wire [`MPRJ_IO_PADS-1:0] io_out;\n" \
+                  + "wire [`MPRJ_IO_PADS-1:0] io_oeb;\n" \
                   + "// ---- Analog I/O pins ----\n" \
                   + "wire [`MPRJ_IO_PADS-8:0] analog_io;\n"
     
