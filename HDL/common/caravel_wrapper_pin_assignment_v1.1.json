@@ -5,8 +5,8 @@
   "caravel_logic_analyzer_input_name": "la_data_in",
   "caravel_logic_analyzer_output_name": "la_data_out",
   "caravel_logic_analyzer_direction_name": "la_oen",
-  "caravel_wishbone_clock_input_name": "wbs_clk_i",
-  "caravel_wishbone_reset_input_name": "wbs_rst_i",
+  "caravel_wishbone_clock_input_name": "wb_clk_i",
+  "caravel_wishbone_reset_input_name": "wb_rst_i",
   "caravel_wishbone_ack_output_name": "wbs_ack_o",
   "caravel_wishbone_cyc_input_name": "wbs_cyc_i",
   "caravel_wishbone_stb_input_name": "wbs_stb_i",
@@ -58,13 +58,13 @@
       "caravel_pin_index": ["2:2"]
     },
     {
-      "fpga_pin_type": "io_isol_n", 
+      "fpga_pin_type": "IO_ISOL_N", 
       "fpga_pin_index": "0:0", 
       "caravel_pin_type": ["input"],
       "caravel_pin_index": ["1:1"]
     },
     {
-      "fpga_pin_type": "test_en", 
+      "fpga_pin_type": "Test_en", 
       "fpga_pin_index": "0:0", 
       "caravel_pin_type": ["input"],
       "caravel_pin_index": ["0:0"]
@@ -154,7 +154,7 @@
       "caravel_pin_index": ["36:36"]
     },
     {
-      "fpga_pin_type": "sc_tail", 
+      "fpga_pin_type": "ccff_tail", 
       "fpga_pin_index": "0:0", 
       "caravel_pin_type": ["output"],
       "caravel_pin_index": ["35:35"]
