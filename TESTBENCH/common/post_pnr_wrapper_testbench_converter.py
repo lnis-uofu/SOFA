@@ -258,6 +258,7 @@ with open(args.post_pnr_testbench, "r") as wp:
                   + "\t\t\t.wb_clk_i(wb_clk_i),\n" \
                   + "\t\t\t.wb_rst_i(wb_rst_i),\n" \
                   + "\t\t\t.wbs_stb_i(wbs_stb_i),\n" \
+                  + "\t\t\t.wbs_we_i(wbs_we_i),\n" \
                   + "\t\t\t.wbs_cyc_i(wbs_cyc_i),\n" \
                   + "\t\t\t.wbs_sel_i(wbs_sel_i),\n" \
                   + "\t\t\t.wbs_dat_i(wbs_dat_i),\n" \
