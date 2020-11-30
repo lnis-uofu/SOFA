@@ -78,7 +78,7 @@ def parse_json_pin_range(json_range) :
 def write_testbench_wrapper_connection(tb_file, pin_data, mode_switch_io_index):
   # Switch to the logic analyzer mode for io[25] which is reserved for mode-switch purpose
   mode_switch_line = "assign " + pin_data['caravel_gpio_input_name'] + "[" + str(mode_switch_io_index) + "] = " \
-                   +  "1b'0;";
+                   +  "1'b0;";
   tb_file.write("    " + mode_switch_line + "\n")
    
   for pin_info in pin_data['pins']:
