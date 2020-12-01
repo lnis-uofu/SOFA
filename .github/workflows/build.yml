@@ -67,6 +67,7 @@ jobs:
         run: |
           export CC=${{ matrix.config.cc }}
           export CXX=${{ matrix.config.cxx }}
+          pwd
           cd ./OpenFPGA
           mkdir build
           cmake .. -DCMAKE_BUILD_TYPE=$BUILD_TYPE
