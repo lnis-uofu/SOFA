@@ -1,0 +1,3 @@
+[submodule "OpenFPGA"]
+	path = OpenFPGA
+	url = https://github.com/LNIS-Projects/OpenFPGA
