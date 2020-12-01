@@ -9,14 +9,14 @@ proc create_project_with_close {projectname modelsim_path} {
   #Get the current project name
   set project_env [project env]
   if {$project_env eq ""} {
-      #If string empty (no project)
-      create_project $projectname $modelsim_path
-    } else {
-      #If string not empty (a project is loaded so clsoe it first)
-      project close
-      create_project $projectname $modelsim_path
-    }
+    #If string empty (no project)
+    create_project $projectname $modelsim_path
+  } else {
+    #If string not empty (a project is loaded so clsoe it first)
+    project close
+    create_project $projectname $modelsim_path
   }
+}
 
 proc add_files_project {verilog_files} {
   #Get the length of the list
@@ -30,11 +30,9 @@ proc add_files_project {verilog_files} {
 proc add_waves {top_tb} {
   add wave -position insertpoint sim:/$top_tb/*
 }
-proc runsim {simtime unit} {
-  run $simtime $unit
-}
+
 #Top procedure to create enw project
-proc top_create_new_project {projectname verilog_files modelsim_path simtime unit top_tb} {
+proc top_create_new_project {projectname verilog_files modelsim_path top_tb} {
   #Create the project
   create_project_with_close $projectname $modelsim_path
   #Add the verilog files
@@ -42,30 +40,12 @@ proc top_create_new_project {projectname verilog_files modelsim_path simtime uni
   #Compile all the files
   set myFiles [project filenames]
   foreach x $myFiles {
-    vlog +define+ENABLE_TIMING +define+ENABLE_SIGNAL_INITIALIZATION $x
+    vlog +define+ENABLE_SIGNAL_INITIALIZATION $x
   }
   #Start the simulation
   vsim $projectname.$top_tb -voptargs=+acc
   #Add the waves
   add_waves $top_tb
   #run the simulation
-  runsim $simtime $unit
-  #Fit the window view
-  wave zoom full
-}
-#Top proc to recompile files and re run the simulation
-proc top_rerun_sim {simtime unit top_tb} {
-  #Save actual format
-  set myLoc [pwd]
-  write format wave -window .main_pane.wave.interior.cs.body.pw.wf $myLoc/relaunch.do
-  quit -sim
-  #Compile updated verilog files
-  set myFiles [project filenames]
-  foreach x $myFiles {
-    vlog +define+ENABLE_TIMING +define+ENABLE_SIGNAL_INITIALIZATION $x
-  }
-  set projectname K4n4_test_fpga_msim
-  vsim $projectname.$top_tb -voptargs=+acc -do relaunch.do
-  #run the simulation
-  run $simtime $unit
+  run -all
 }

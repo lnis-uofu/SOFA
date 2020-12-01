@@ -33,10 +33,10 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18\n2020-11-21 01:05:14 +0000</metadata>
-  <g id="switch" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
-    <title>switch</title>
-    <g id="switch_base">
+  <metadata> Produced by OmniGraffle 7.18\n2020-11-29 03:10:55 +0000</metadata>
+  <g id="v1_0" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
+    <title>v1.0</title>
+    <g id="v1_0_base">
       <title>base</title>
       <g id="Graphic_535">
         <text transform="translate(120.79736 899.1797)" fill="black">
@@ -319,7 +319,7 @@
       </g>
       <g id="Graphic_538">
         <text transform="translate(761.1309 905.7734)" fill="black">
-          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="15">IO_ISOL_N -&gt; Caravel GPIO[1]</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="15">IO_ISOL_N &lt;- Caravel GPIO[1]</tspan>
           <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="12.445312" y="34">TEST_EN &lt;- Caravel GPIO[0]</tspan>
         </text>
       </g>

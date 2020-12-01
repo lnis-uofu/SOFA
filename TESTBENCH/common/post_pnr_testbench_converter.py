@@ -61,6 +61,11 @@ with open(args.pre_pnr_testbench, "r") as wp:
     # Other lines can be directly copied to post-PnR Verilog testbenches
     line2output = curr_line \
     # Condition A:  
+    # Add post_pnr to top-level module name
+    if (curr_line.startswith("module")): 
+      line2output = re.sub("autocheck_top_tb;$", "post_pnr_autocheck_top_tb;", curr_line)
+    # Add sc_head and sc_tail wire definition after ccff tail definition
+    # Condition B:  
     # Add sc_head and sc_tail wire definition after ccff tail definition
     if (curr_line == "wire [0:0] ccff_tail;\n"): 
       line2output = line2output \
@@ -68,16 +73,16 @@ with open(args.pre_pnr_testbench, "r") as wp:
                   + "wire [0:0] sc_head;\n" \
                   + "// ---- Scan-chain tail ----\n" \
                   + "wire [0:0] sc_tail;\n"
-    # Condition B:  
+    # Condition C:  
     # Assign an initial value to sc_head after other ports
     elif (curr_line == "\tassign IO_ISOL_N[0] = 1'b1;\n"): 
       line2output = line2output \
                   + "\tassign sc_head[0] = 1'b0;\n"
-    # Condition C:  
+    # Condition D:  
     # Replace fpga_top with fpga_core in DUT instanciation
     elif (curr_line == "\tfpga_top FPGA_DUT (\n"): 
       line2output = "\tfpga_core FPGA_DUT (\n"
-    # Condition D:  
+    # Condition E:  
     # Add sc_head and sc_tail to the port mapping of FPGA core instance
     elif (curr_line == "\t\t.ccff_tail(ccff_tail[0]));\n"): 
       line2output = "\t\t.ccff_tail(ccff_tail[0]),\n" \
