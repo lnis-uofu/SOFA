@@ -45,6 +45,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: LNIS-Projects/OpenFPGA
+          path: OpenFPGA
 
       - name: Install dependency
         run: source ./.github/workflows/install_dependency.sh 
@@ -68,6 +69,8 @@ jobs:
           export CC=${{ matrix.config.cc }}
           export CXX=${{ matrix.config.cxx }}
           pwd
+          ls
+          ls ..
           cd ./OpenFPGA
           mkdir build
           cmake .. -DCMAKE_BUILD_TYPE=$BUILD_TYPE
