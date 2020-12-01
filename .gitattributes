@@ -1,3 +1,2 @@
 *.gds filter=lfs diff=lfs merge=lfs -text
 *.spef filter=lfs diff=lfs merge=lfs -text
-*.v filter=lfs diff=lfs merge=lfs -text
