@@ -17,8 +17,7 @@
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/common/post_pnr_fpga_cells.v"
 
 // ------ Include fabric top-level netlists -----
-//`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_FC_HD_SKY_PNR/fpga_core/fpga_core_icv_in_design.pt.v"
-`include "/research/ece/lnis/USERS/DARPA_ERI/Tapeout/Nov2020_Skywater/FPGA1212_FLAT_HD_SKY_PNR/fpga_top/fpga_top_icv_in_design.pt.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_FLAT_HD_SKY_PNR/fpga_top/fpga_top_icv_in_design.pt.v"
 
 `ifdef AUTOCHECKED_SIMULATION
 	`include "and2_output_verilog.v"
