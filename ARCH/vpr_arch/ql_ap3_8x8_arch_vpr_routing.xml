@@ -11,11 +11,11 @@
         </model>
         <model name="openfpga_ff">
             <input_ports>
-                <port clock="QCK" name="D"/>
-                <port is_clock="1" name="QCK"/>
+                <port clock="clk" name="D"/>
+                <port is_clock="1" name="clk"/>
             </input_ports>
             <output_ports>
-                <port clock="QCK" name="CQZ"/>
+                <port clock="clk" name="Q"/>
             </output_ports>
         </model>
         <model name="frac_lut4">
@@ -35,17 +35,6 @@
                 </input_ports>
             <output_ports>
                 <port name="cout"/>
-            </output_ports>
-        </model>
-        <model name="LUT4">
-            <input_ports>
-                <port combinational_sink_ports="O" name="I0"/>
-                <port combinational_sink_ports="O" name="I1"/>
-                <port combinational_sink_ports="O" name="I2"/>
-                <port combinational_sink_ports="O" name="I3"/>
-            </input_ports>
-            <output_ports>
-                <port name="O"/>
             </output_ports>
         </model>
         <model name="logic_1">
@@ -104,7 +93,11 @@
                     SUPER_LOGIC_CELL.CO
                 </loc>
             </pinlocations>
-            <fc in_type="frac" in_val="0.2" out_type="frac" out_val="0.25"/>
+	    <fc in_type="frac" in_val="0.2" out_type="frac" out_val="0.25">
+		    <fc_override port_name="QCK" fc_type="frac" fc_val="0"/>
+		    <fc_override port_name="CO" fc_type="frac" fc_val="0"/>	
+		    <fc_override port_name="CI" fc_type="frac" fc_val="0"/>	
+	    </fc>
             <clock name="QCK" num_pins="1"/>
             <output equivalent="none" name="AQZ" num_pins="8"/>
             <output equivalent="none" name="FZ" num_pins="8"/>
@@ -167,7 +160,7 @@
         </tile>
     </tiles>
     <layout>
-        <fixed_layout height="12" name="ql-ap3-8x8" width="12">
+        <fixed_layout height="12" name="8x8" width="12">
             <!-- Fill the entire grid with empty tiles -->
             <region endx="W-1" endy="H-1" priority="1" startx="0" starty="0" type="EMPTY"/>
             <!-- Fill with 'SLC' -->
@@ -214,7 +207,7 @@
             <input name="outpad" num_pins="1"/>
             <output name="inpad" num_pins="1"/>
             <mode name="PHYSICAL">
-                <pb_type name="PHYSICAL" num_pb="1">
+                <pb_type name="iopad" num_pb="1">
                     <input name="outpad" num_pins="1"/>
                     <output name="inpad" num_pins="1"/>
                     <pb_type blif_model=".subckt IO_MACRO" name="macro" num_pb="1">
@@ -222,13 +215,13 @@
                         <output name="inpad" num_pins="1"/>
                     </pb_type>
                     <interconnect>
-                        <direct input="macro.inpad" name="PHYSICAL-inpad" output="PHYSICAL.inpad"/>
-                        <direct input="PHYSICAL.outpad" name="macro-outpad" output="macro.outpad"/>
+                        <direct input="macro.inpad" name="iopad-inpad" output="iopad.inpad"/>
+                        <direct input="iopad.outpad" name="macro-outpad" output="macro.outpad"/>
                     </interconnect>
                 </pb_type>
                 <interconnect>
-                    <direct input="PHYSICAL.inpad" name="IO-inpad" output="IO.inpad"/>
-                    <direct input="IO.outpad" name="PHYSICAL-outpad" output="PHYSICAL.outpad"/>
+                    <direct input="iopad.inpad" name="IO-inpad" output="IO.inpad"/>
+                    <direct input="IO.outpad" name="iopad-outpad" output="iopad.outpad"/>
                 </interconnect>
             </mode>
             <mode name="INPUT">
@@ -317,18 +310,18 @@
                                 <direct name="direct4" input="frac_lut4.lut2_out[1:1]" output="carry_follower.a" />
                                 <direct name="direct5" input="frac_logic.CI" output="carry_follower.b" />
                                 <direct name="direct6" input="frac_lut4.lut2_out[0:0]" output="carry_follower.cin" />
-                                <direct name="direct7" input="carry_follower.out" output="frac_logic.CO" />
+                                <direct name="direct7" input="carry_follower.cout" output="frac_logic.CO" />
                                 <mux name="i2_ci" input="frac_logic.LI[2:2] frac_logic.CI" output="frac_lut4.in[2:2]"/>
                             </interconnect>
                         </pb_type>
                         <!-- Define flip-flop with scan-chain capability, DI is the scan-chain data input -->
                         <pb_type name="ff" blif_model=".subckt openfpga_ff" num_pb="1">
-                            <clock name="QCK" num_pins="1"/>
+                            <clock name="clk" num_pins="1"/>
                             <input name="D" num_pins="1"/>
-                            <output name="CQZ" num_pins="1"/>
-                            <T_clock_to_Q clock="QCK" max="1e-10" port="ff.CQZ"/>
-                            <T_setup clock="QCK" port="ff.D" value="1e-10"/>
-                            <T_hold clock="QCK" port="ff.D" value="1e-10"/>
+                            <output name="Q" num_pins="1"/>
+                            <T_clock_to_Q clock="clk" max="1e-10" port="ff.Q"/>
+                            <T_setup clock="clk" port="ff.D" value="1e-10"/>
+                            <T_hold clock="clk" port="ff.D" value="1e-10"/>
                         </pb_type>
                         <interconnect>
                             <direct name="direct_LI0" input="PHYSICAL.LI[0]" output="frac_logic.LI[0]" />
@@ -336,9 +329,9 @@
                             <direct name="direct_LI2" input="PHYSICAL.LI[2]" output="frac_logic.LI[2]" />
                             <direct name="direct_LI3" input="PHYSICAL.LI[3]" output="frac_logic.LI[3]" />
                             <direct name="direct_CI" input="PHYSICAL.CI" output="frac_logic.CI" />
-                            <direct name="direct_QCK" input="PHYSICAL.QCK" output="ff.QCK" />
+                            <direct name="direct_QCK" input="PHYSICAL.QCK" output="ff.clk" />
                             <mux name="lut_qdi" input="frac_logic.O PHYSICAL.LI[3]" output="ff.D"/>
-                            <direct name="direct_AQZ" input="ff.CQZ" output="PHYSICAL.AQZ" />
+                            <direct name="direct_AQZ" input="ff.Q" output="PHYSICAL.AQZ" />
                             <direct name="direct_FZ" input="frac_logic.O" output="PHYSICAL.FZ" />
                             <direct name="direct_CO" input="frac_logic.CO" output="PHYSICAL.CO" />
                         </interconnect>
@@ -360,15 +353,14 @@
                         <input name="QCK" num_pins="1"/>
                         <output name="AQZ" num_pins="1"/>
                         <output name="CO" num_pins="1"/>
-                        <output name="FZ" num_pins="1"/>
-                        <pb_type blif_model=".subckt openfpga_ff" name="ff" num_pb="1">
-                            <clock name="QCK" num_pins="1"/>
-                            <input name="D" num_pins="1"/>
-                            <output name="CQZ" num_pins="1"/>
-                            <T_clock_to_Q clock="QCK" max="1e-10" port="ff.CQZ"/>
-                            <T_setup clock="QCK" port="ff.D" value="1e-10"/>
-                            <T_hold clock="QCK" port="ff.D" value="1e-10"/>
-                            <metadata>
+			<output name="FZ" num_pins="1"/>
+			<pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
+                            <input name="D" num_pins="1" port_class="D"/>
+                            <output name="Q" num_pins="1" port_class="Q"/>
+                            <clock name="clk" num_pins="1" port_class="clock"/>
+                             <T_setup value="66e-12" port="ff.D" clock="clk"/>
+                             <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
+ 			     <metadata>
                                 <meta name="fasm_prefix">BLK2REG</meta>
                                 <meta name="fasm_features"/>
                             </metadata>
@@ -454,7 +446,7 @@
                             </mode-->
                         </pb_type>
                         <interconnect>
-                            <direct input="ff.CQZ" name="DEFAULT-AQZ" output="DEFAULT.AQZ"/>
+                            <direct input="ff.Q" name="DEFAULT-AQZ" output="DEFAULT.AQZ"/>
                             <direct input="lut_part.FZ" name="DEFAULT-FZ" output="DEFAULT.FZ">
                                 <pack_pattern in_port="lut_part.FZ" name="pack-VPR_LUT_to_FF" out_port="DEFAULT.FZ"/>
                                 <!--pack_pattern in_port="lut_part.FZ" name="pack-LUT4_to_FF" out_port="DEFAULT.FZ"/-->
@@ -469,7 +461,7 @@
                                     <meta name="subtype">routing</meta>
                                 </metadata>
                             </mux>
-                            <direct input="DEFAULT.QCK" name="ff-QCK" output="ff.QCK"/>
+                            <direct input="DEFAULT.QCK" name="ff-clk" output="ff.clk"/>
                             <direct input="DEFAULT.LI[0]" name="lut_part-LI[0]" output="lut_part.LI[0]"/>
                             <direct input="DEFAULT.LI[1]" name="lut_part-LI[1]" output="lut_part.LI[1]"/>
                             <direct input="DEFAULT.LI[2]" name="lut_part-LI[2]" output="lut_part.LI[2]"/>

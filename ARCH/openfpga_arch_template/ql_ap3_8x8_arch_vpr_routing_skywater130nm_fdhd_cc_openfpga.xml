@@ -86,6 +86,21 @@
          If your standard cell provider does not offer the exact truth table,
          you can simply swap the inputs as shown in the example below
       -->
+    <circuit_model type="gate" name="sky130_fd_sc_hd__or2_1" prefix="sky130_fd_sc_hd__or2_1" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/or2/sky130_fd_sc_hd__or2_1.v">
+      <design_technology type="cmos" topology="OR"/>
+      <device_technology device_model_name="logic"/>
+      <input_buffer exist="false"/>
+      <output_buffer exist="false"/>
+      <port type="input" prefix="a" lib_name="A" size="1"/>
+      <port type="input" prefix="b" lib_name="B" size="1"/>
+      <port type="output" prefix="out" lib_name="X" size="1"/>
+      <delay_matrix type="rise" in_port="a b" out_port="out">
+        10e-12 5e-12
+      </delay_matrix>
+      <delay_matrix type="fall" in_port="a b" out_port="out">
+        10e-12 5e-12
+      </delay_matrix>
+    </circuit_model>
     <circuit_model type="gate" name="sky130_fd_sc_hd__mux2_1" prefix="sky130_fd_sc_hd__mux2_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/mux2/sky130_fd_sc_hd__mux2_1.v">
       <design_technology type="cmos" topology="MUX2"/>
       <device_technology device_model_name="logic"/>
@@ -133,7 +148,7 @@
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <!--DFF subckt ports should be defined as <D> <Q> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ff" name="sky130_fd_sc_hd__dfxtp_1" prefix="sky130_fd_sc_hd__dfxtp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/dfxtp/sky130_fd_sc_hd__dfxtp_1.v">
+    <circuit_model type="ff" name="sky130_fd_sc_hd__sdfxtp_1" prefix="sky130_fd_sc_hd__sdfxtp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/dfxtp/sky130_fd_sc_hd__sdfxtp_1.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
@@ -149,10 +164,11 @@
       <lut_input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2"/>
       <lut_intermediate_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2" location_map="-1-"/>
       <pass_gate_logic circuit_model_name="sky130_fd_sc_hd__mux2_1"/>
-      <port type="input" prefix="in" size="4"/>
+      <port type="input" prefix="in" size="4" tri_state_map="---1" circuit_model_name="sky130_fd_sc_hd__or2_1"/>
       <port type="output" prefix="lut2_out" size="2" lut_frac_level="2" lut_output_mask="2,3"/>
       <port type="output" prefix="lut4_out" size="1" lut_output_mask="0"/>
       <port type="sram" prefix="sram" size="16"/>
+      <port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="sky130_fd_sc_hd__dfxtp_1" default_val="1"/>
     </circuit_model>
     <!--Scan-chain DFF subckt ports should be defined as <D> <Q> <Qb> <CLK> <RESET> <SET>  -->
     <circuit_model type="ccff" name="sky130_fd_sc_hd__dfxtp_1" prefix="sky130_fd_sc_hd__dfxtp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/dfxtp/sky130_fd_sc_hd__dfxtp_1.v">
@@ -220,19 +236,21 @@
     <!-- physical pb_type binding in complex block IO -->
     <pb_type name="IO" physical_mode_name="PHYSICAL" idle_mode_name="INPUT"/>
     <!-- IMPORTANT: must set unused I/Os to operating in INPUT mode !!! -->
-    <pb_type name="IO[PHYSICAL].PHYSICAL" circuit_model_name="EMBEDDED_IO_HD" mode_bits="1"/> 
-    <pb_type name="IO[INPUT].INPUT" physical_pb_type_name="IO[PHYSICAL].PHYSICAL" mode_bits="1"/> 
-    <pb_type name="IO[OUTPUT].OUTPUT" physical_pb_type_name="IO[PHYSICAL].PHYSICAL" mode_bits="0"/> 
+    <pb_type name="IO[PHYSICAL].iopad.macro" circuit_model_name="EMBEDDED_IO_HD" mode_bits="1"/>
+    <pb_type name="IO[INPUT].INPUT.i_pad" physical_pb_type_name="IO[PHYSICAL].iopad.macro" mode_bits="1"/>
+    <pb_type name="IO[OUTPUT].OUTPUT.o_pad" physical_pb_type_name="IO[PHYSICAL].iopad.macro" mode_bits="0"/>    
     <!-- End physical pb_type binding in complex block IO -->
 
     <!-- physical pb_type binding in complex block CLB -->
     <!-- physical mode will be the default mode if not specified -->
     <pb_type name="SUPER_LOGIC_CELL.LC" physical_mode_name="PHYSICAL"/>
     <pb_type name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.frac_logic.frac_lut4" circuit_model_name="frac_lut4" mode_bits="0"/>
-    <pb_type name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.ff" circuit_model_name="sky130_fd_sc_hd__dfxtp_1"/>
-    <pb_type name="clb.fle[physical].fabric.frac_logic.carry_follower" circuit_model_name="sky130_fd_sc_hd__mux2_1_wrapper"/> 
+    <pb_type name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.ff" circuit_model_name="sky130_fd_sc_hd__sdfxtp_1"/>
+    <pb_type name="SUPER_LOGIC_CELL[default].LC[PHYSICAL].PHYSICAL[default].frac_logic[default].carry_follower" circuit_model_name="sky130_fd_sc_hd__mux2_1_wrapper"/>
+    <pb_type name="LOGIC_1[default].logic_1" circuit_model_name="LOGIC_VDD"/>
+    <pb_type name="LOGIC_0[default].gnd" circuit_model_name="LOGIC_GND"/>
     <!-- BEGIN Binding operating pb_types in mode 'ble4' -->
-    <pb_type name="SUPER_LOGIC_CELL.LC[DEFAULT].DEFAULT.lut_part[VPR_LUT4].VPR_LUT4.lut_inst" physical_pb_type_name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.frac_logic.frac_lut4" mode_bits="0">
+    <pb_type name="SUPER_LOGIC_CELL.LC[DEFAULT].DEFAULT.lut_part[VPR_LUT4].VPR_LUT4.lut_inst.lut" physical_pb_type_name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.frac_logic.frac_lut4" mode_bits="0">
       <!-- Binding the lut4 to the first 4 inputs of fracturable lut4 -->
       <port name="in" physical_mode_port="in[0:3]"/>
       <port name="out" physical_mode_port="lut4_out"/>
