@@ -7,3 +7,4 @@
 **/*_Verilog/SRC_Skeleton
 **/*_Verilog/SRCBackup
 **/DOC/build
+**/SRC**/*_tb.v
