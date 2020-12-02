@@ -158,7 +158,7 @@
       <!-- model_type could be T, res_val cap_val should be defined -->
     </circuit_model>
     <circuit_model type="mux" name="mux_2level" prefix="mux_2level" dump_structural_verilog="true">
-      <design_technology type="cmos" structure="multi_level" num_level="2" add_const_input="true" const_input_val="1"/>
+      <design_technology type="cmos" structure="multi_level" num_level="2" add_const_input="true" const_input_val="1" local_encoder="true"/>
       <input_buffer exist="false"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
@@ -167,7 +167,7 @@
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <circuit_model type="mux" name="mux_2level_tapbuf" prefix="mux_2level_tapbuf" dump_structural_verilog="true">
-      <design_technology type="cmos" structure="multi_level" num_level="2" add_const_input="true" const_input_val="1"/>
+      <design_technology type="cmos" structure="multi_level" num_level="2" add_const_input="true" const_input_val="1" local_encoder="true"/>
       <input_buffer exist="false"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_4"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
@@ -176,7 +176,7 @@
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <circuit_model type="mux" name="mux_1level" is_default="true" prefix="mux_1level" dump_structural_verilog="true">
-      <design_technology type="cmos" structure="multi_level" num_level="1" add_const_input="true" const_input_val="1"/>
+      <design_technology type="cmos" structure="multi_level" num_level="1" add_const_input="true" const_input_val="1" local_encoder="true"/>
       <input_buffer exist="false"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
@@ -185,7 +185,7 @@
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <circuit_model type="mux" name="mux_1level_tapbuf" prefix="mux_1level_tapbuf" dump_structural_verilog="true">
-      <design_technology type="cmos" structure="multi_level" num_level="1" add_const_input="true" const_input_val="1"/>
+      <design_technology type="cmos" structure="multi_level" num_level="1" add_const_input="true" const_input_val="1" local_encoder="true"/>
       <input_buffer exist="false"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_4"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
