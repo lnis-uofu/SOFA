@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:39b0368d968c2127e15ec8cc01b99e54e6d3a508ec73409b8740261b5ae15a13
-size 494
+`timescale 1ns/1ps
+
+//-----------------------------------------------------
+// Function: a wrapper for the MUX2 required by carry logic
+//-----------------------------------------------------
+module sky130_fd_sc_hd__mux2_1_wrapper (
+  input A0,  
+  input A1, 
+  input S, 
+  output X
+);
+
+  sky130_fd_sc_hd__mux2_1 MUX2 (.A0(A0),
+                                .A1(A1),
+                                .S(S),
+                                .X(X)
+                               );
+  
+endmodule
+
