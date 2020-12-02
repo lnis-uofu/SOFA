@@ -44,7 +44,7 @@ jobs:
       - name: Checkout OpenFPGA repo
         uses: actions/checkout@v2
         with:
-          repository: LNIS-Projects/OpenFPGA
+          repository: lnis-uofu/OpenFPGA
           path: OpenFPGA
 
       - name: Install dependency
