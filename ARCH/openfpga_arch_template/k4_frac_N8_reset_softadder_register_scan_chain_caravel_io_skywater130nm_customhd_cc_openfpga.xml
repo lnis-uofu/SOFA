@@ -160,7 +160,7 @@
     <circuit_model type="mux" name="mux_2level" prefix="mux_2level" dump_structural_verilog="true">
       <design_technology type="cmos" structure="multi_level" num_level="2" add_const_input="true" const_input_val="1"/>
       <input_buffer exist="false"/>
-      <output_buffer exist="true" circuit_mode_name="sky130_fd_sc_hd__inv_1"/>
+      <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
       <port type="input" prefix="in" size="1"/>
       <port type="output" prefix="out" size="1"/>
@@ -188,7 +188,7 @@
       <design_technology type="cmos" structure="multi_level" num_level="1" add_const_input="true" const_input_val="1"/>
       <input_buffer exist="false"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_4"/>
-      <pass_gate_logic circuit_model_name="sky130_fd_sc_hd__mux2_1"/>
+      <pass_gate_logic circuit_model_name="TGATE"/>
       <port type="input" prefix="in" size="1"/>
       <port type="output" prefix="out" size="1"/>
       <port type="sram" prefix="sram" size="1"/>
