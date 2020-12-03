@@ -20,8 +20,6 @@ python3 HDL/common/wrapper_lines_generator.py --template_netlist HDL/common/cara
 ##############################################
 # Generate post-PnR testbenches
 python3 TESTBENCH/common/generate_post_pnr_testbenches.py --pre_pnr_testbench_dir_name ./TESTBENCH/k4_N8_caravel_io_FPGA_12x12_fdhd_cc --pin_assignment_file ./HDL/common/caravel_wrapper_pin_assignment_v1.0.json
-python3 TESTBENCH/common/generate_post_pnr_testbenches.py --pre_pnr_testbench_dir_name ./TESTBENCH/k4_N8_reset_caravel_io_FPGA_12x12_fdhd_cc --pin_assignment_file ./HDL/common/caravel_wrapper_pin_assignment_v1.1.json
-python3 TESTBENCH/common/generate_post_pnr_testbenches.py --pre_pnr_testbench_dir_name ./TESTBENCH/k4_N8_softadder_caravel_io_FPGA_12x12_fdhd_cc --pin_assignment_file ./HDL/common/caravel_wrapper_pin_assignment_v1.0.json
 python3 TESTBENCH/common/generate_post_pnr_testbenches.py --pre_pnr_testbench_dir_name ./TESTBENCH/k4_N8_reset_softadder_caravel_io_FPGA_12x12_fdhd_cc --pin_assignment_file ./HDL/common/caravel_wrapper_pin_assignment_v1.1.json
 python3 TESTBENCH/common/generate_post_pnr_testbenches.py --pre_pnr_testbench_dir_name ./TESTBENCH/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc --pin_assignment_file ./HDL/common/caravel_wrapper_pin_assignment_v1.1.json
 
