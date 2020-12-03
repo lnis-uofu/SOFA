@@ -11,7 +11,7 @@
          As the FPGA core does not share the clock with Caravel SoC
          the actual clock frequency could be higher 
       -->
-    <operating frequency="50e6" num_cycles="auto" slack="0.2"/>
+    <operating frequency="50e6" num_cycles="100" slack="0.2"/>
     <!-- Use 50MHz as the Caravel SoC can operate at 50MHz 
          As the FPGA core does not share the clock with Caravel SoC
          the actual programming clock frequency could be higher 
