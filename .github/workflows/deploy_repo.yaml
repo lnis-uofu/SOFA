@@ -20,7 +20,7 @@ jobs:
     - name: Checkout Caravel-SOFA-HD
       uses: actions/checkout@master
       with:
-        repository: ganeshgore/dummyTestRepo
+        repository: lnis-uofu/actions_test_repo
         # repository: lnis-uofu/Caravel-SOFA-HD
         token: ${{ secrets.GITHUB_TOKEN }}
         path: Caravel-SOFA-HD
@@ -44,5 +44,5 @@ jobs:
       with:
         directory: Caravel-SOFA-HD
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        repository: ganeshgore/dummyTestRepo
+        repository: lnis-uofu/actions_test_repo
         branch: master
