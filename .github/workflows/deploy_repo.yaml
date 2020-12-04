@@ -26,9 +26,11 @@ jobs:
         path: Caravel-SOFA-HD
 
     - name: Updating files
-      run: source ${GITHUB_WORKSPACE}/SOFA-Chips/.github/workflows/sync_repo.sh
+      working-directory: ${{ runner.workspace }}/Caravel-SOFA-HD
+      run: source .github/workflows/sync_repo.sh
 
     - name: Commit files
+      working-directory: ${{ runner.workspace }}/Caravel-SOFA-HD
       run: |
         git config --local user.email "lnis.uofu@github.com"
         git config --local user.name "lnis.uofu"
