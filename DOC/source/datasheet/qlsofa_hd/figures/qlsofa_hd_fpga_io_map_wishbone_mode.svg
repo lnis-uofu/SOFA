@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="156.75 679.5 703.8047 543.9336" width="703.8047" height="543.9336">
+  <defs>
+    <font-face font-family="Times" font-size="16" panose-1="0 0 8 0 0 0 0 2 0 0" units-per-em="1000" underline-position="-66.40625" underline-thickness="67.87109" slope="0" x-height="460.4492" cap-height="675.78125" ascent="750" descent="-250" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Times-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Times" font-size="16" panose-1="0 0 5 0 0 0 0 2 0 0" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="453.6133" cap-height="661.6211" ascent="750" descent="-250" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Times-Roman"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="DimensionArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -6 10 12" markerWidth="10" markerHeight="12" color="black">
+      <g>
+        <path d="M 0 0 L 7.200001 0 M 7.200001 4.5000004 L 7.200001 -4.5000004 M 0 1.8000001 L 6.3000005 0 L 0 -1.8000001" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="DimensionArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -6 10 12" markerWidth="10" markerHeight="12" color="black">
+      <g>
+        <path d="M 0 0 L -7.200001 0 M -7.200001 -4.5000004 L -7.200001 4.5000004 M 0 -1.8000001 L -6.3000005 0 L 0 1.8000001" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Times" font-size="16" panose-1="0 0 5 0 0 0 0 9 0 0" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="-937.5" x-height="446.28906" cap-height="652.34375" ascent="750" descent="-250" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Times-Italic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18\n2020-11-29 00:23:07 +0000</metadata>
+  <g id="v1_1" stroke-dasharray="none" stroke="none" fill="none" fill-opacity="1" stroke-opacity="1">
+    <title>v1.1</title>
+    <g id="v1_1_base">
+      <title>base</title>
+      <g id="Graphic_278">
+        <rect x="394.82812" y="758.5801" width="315.85156" height="289.69336" fill="#ffffc0"/>
+        <rect x="394.82812" y="758.5801" width="315.85156" height="289.69336" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(399.82812 893.9268)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="700" fill="black" x="112.85156" y="15">FPGA Core</tspan>
+        </text>
+      </g>
+      <g id="Graphic_279">
+        <text transform="translate(432.2461 763.5801)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[0] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_413">
+        <text transform="translate(614.7461 763.5801)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[11] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_414">
+        <text transform="translate(535.7949 763.5801)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="15">…</tspan>
+        </text>
+      </g>
+      <g id="Graphic_415">
+        <text transform="translate(646.5781 792.5801)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[12] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_416">
+        <text transform="translate(646.5781 884.5234)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[18] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_417">
+        <text transform="translate(676.4258 840.0859)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="15">…</tspan>
+        </text>
+      </g>
+      <g id="Graphic_421">
+        <text transform="translate(399.82812 891.668)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[136] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_422">
+        <text transform="translate(399.82812 792.5801)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[143] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_423">
+        <text transform="translate(409.6797 840.0859)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="15">…</tspan>
+        </text>
+      </g>
+      <g id="Graphic_425">
+        <text transform="translate(631.8164 1024.2734)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="15">…</tspan>
+        </text>
+      </g>
+      <g id="Graphic_428">
+        <text transform="translate(409.6797 967.7734)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="15">…</tspan>
+        </text>
+      </g>
+      <g id="Graphic_430">
+        <path d="M 727.6797 849.5859 L 736.6797 835.0859 L 736.6797 842.3359 L 757.5703 842.3359 L 757.5703 835.0859 L 766.5703 849.5859 L 757.5703 864.0859 L 757.5703 856.8359 L 736.6797 856.8359 L 736.6797 864.0859 Z" fill="#c0ffff"/>
+        <path d="M 727.6797 849.5859 L 736.6797 835.0859 L 736.6797 842.3359 L 757.5703 842.3359 L 757.5703 835.0859 L 766.5703 849.5859 L 757.5703 864.0859 L 757.5703 856.8359 L 736.6797 856.8359 L 736.6797 864.0859 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_438">
+        <line x1="718.6797" y1="816.4859" x2="718.6797" y2="882.6859" marker-end="url(#DimensionArrow_Marker)" marker-start="url(#DimensionArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_439">
+        <line x1="467.0912" y1="748.5216" x2="638.4166" y2="747.5585" marker-end="url(#DimensionArrow_Marker)" marker-start="url(#DimensionArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_440">
+        <path d="M 552.7539 743.5 L 538.2539 734.5 L 545.5039 734.5 L 545.5039 713.6094 L 538.2539 713.6094 L 552.7539 704.6094 L 567.2539 713.6094 L 560.0039 713.6094 L 560.0039 734.5 L 567.2539 734.5 Z" fill="#c0ffff"/>
+        <path d="M 552.7539 743.5 L 538.2539 734.5 L 545.5039 734.5 L 545.5039 713.6094 L 538.2539 713.6094 L 552.7539 704.6094 L 567.2539 713.6094 L 560.0039 713.6094 L 560.0039 734.5 L 567.2539 734.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_441">
+        <text transform="translate(483.2422 684.5)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="15">Caravel GPIO[24:13]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_442">
+        <text transform="translate(577.3047 719.5)" fill="black">
+          <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">12 bit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_444">
+        <text transform="translate(732.4531 869.0859)" fill="black">
+          <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">7 bit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_445">
+        <text transform="translate(779.1172 826.25)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="13.34375" y="15">Caravel</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="34">GPIO[10:4]</tspan>
+        </text>
+      </g>
+      <g id="Line_446">
+        <line x1="381.0547" y1="816.4859" x2="381.0547" y2="882.6859" marker-end="url(#DimensionArrow_Marker)" marker-start="url(#DimensionArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_447">
+        <path d="M 373.3047 849.5859 L 364.3047 864.0859 L 364.3047 856.8359 L 343.41406 856.8359 L 343.41406 864.0859 L 334.41406 849.5859 L 343.41406 835.0859 L 343.41406 842.3359 L 364.3047 842.3359 L 364.3047 835.0859 Z" fill="#c0ffff"/>
+        <path d="M 373.3047 849.5859 L 364.3047 864.0859 L 364.3047 856.8359 L 343.41406 856.8359 L 343.41406 864.0859 L 334.41406 849.5859 L 343.41406 835.0859 L 343.41406 842.3359 L 364.3047 842.3359 L 364.3047 835.0859 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_448">
+        <text transform="translate(237.22656 826.25)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="17.34375" y="15">Caravel</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="34">GPIO[34:27]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_449">
+        <text transform="translate(345.85938 864.2734)" fill="black">
+          <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">8 bit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_453">
+        <text transform="translate(161.75 947.5938)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="3.1054688" y="15">Caravel Wishbone clk_i</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="4.878906" y="34">Caravel Wishbone rst_i</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="53">Caravel Wishbone ack_o</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="1.7773438" y="72">Caravel Wishbone cyc_i</tspan>
+        </text>
+      </g>
+      <g id="Line_454">
+        <line x1="381.40053" y1="972.6693" x2="381.70884" y2="985.5026" marker-end="url(#DimensionArrow_Marker)" marker-start="url(#DimensionArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_459">
+        <path d="M 329.39062 982.2734 L 329.39062 969.2734 L 355.28125 969.2734 L 355.28125 962.7734 L 368.28125 975.7734 L 355.28125 988.7734 L 355.28125 982.2734 Z" fill="#c0ffff"/>
+        <path d="M 329.39062 982.2734 L 329.39062 969.2734 L 355.28125 969.2734 L 355.28125 962.7734 L 368.28125 975.7734 L 355.28125 988.7734 L 355.28125 982.2734 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_462">
+        <path d="M 470.98047 1073.4336 L 456.48047 1073.4336 L 456.48047 1088.4336 L 449.23047 1088.4336 L 463.73047 1099.4336 L 478.23047 1088.4336 L 470.98047 1088.4336 Z" fill="#c0ffff"/>
+        <path d="M 470.98047 1073.4336 L 456.48047 1073.4336 L 456.48047 1088.4336 L 449.23047 1088.4336 L 463.73047 1099.4336 L 478.23047 1088.4336 L 470.98047 1088.4336 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_464"/>
+      <g id="Graphic_463">
+        <text transform="translate(401.95703 1075.4336)" fill="black">
+          <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">32 bit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_465">
+        <text transform="translate(646.5781 949.7734)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[19] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_466">
+        <text transform="translate(647.0078 987.6836)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[23] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_468">
+        <text transform="translate(399.82812 947.5938)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[135] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_467">
+        <text transform="translate(399.82812 987.6875)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[132] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_470">
+        <text transform="translate(396.1709 1025.5938)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[131] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_469">
+        <text transform="translate(646.5781 1025.5938)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[24] </tspan>
+        </text>
+      </g>
+      <g id="Graphic_471">
+        <text transform="translate(396.1709 1104.4336)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="21.765625" y="15">Caravel Wishbone stb_i</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="21.773438" y="34">Caravel Wishbone we_i</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="1.3359375" y="53">Caravel Wishbone adr_i[31:0]</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="1.7773438" y="72">Caravel Wishbone dat_i[31:0]</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="91">Caravel Wishbone dat_o[31:0]</tspan>
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="6.6640625" y="110">Caravel Wishbone sel_i[3:0]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_474">
+        <path d="M 540.7031 1096.4688 L 526.2031 1096.4688 L 526.2031 1081.4688 L 518.9531 1081.4688 L 533.4531 1070.4688 L 547.9531 1081.4688 L 540.7031 1081.4688 Z" fill="#c0ffff"/>
+        <path d="M 540.7031 1096.4688 L 526.2031 1096.4688 L 526.2031 1081.4688 L 518.9531 1081.4688 L 533.4531 1070.4688 L 547.9531 1081.4688 L 540.7031 1081.4688 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_473">
+        <text transform="translate(555.63965 1075.4688)" fill="black">
+          <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">70 bit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_476">
+        <text transform="translate(509.5991 1023.5664)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="15">…</tspan>
+        </text>
+      </g>
+      <g id="Graphic_478">
+        <text transform="translate(571.9258 1025.5938)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="2" y="15">gpio[30] </tspan>
+        </text>
+      </g>
+      <g id="Line_479">
+        <line x1="433.6461" y1="1058.5" x2="600.1" y2="1058.5" marker-end="url(#DimensionArrow_Marker)" marker-start="url(#DimensionArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_481">
+        <text transform="translate(331.66406 943.25)" fill="black">
+          <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">3 bit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_482">
+        <path d="M 368.28125 1010.625 L 368.28125 997.625 L 342.39062 997.625 L 342.39062 991.125 L 329.39062 1004.125 L 342.39062 1017.125 L 342.39062 1010.625 Z" fill="#c0ffff"/>
+        <path d="M 368.28125 1010.625 L 368.28125 997.625 L 342.39062 997.625 L 342.39062 991.125 L 329.39062 1004.125 L 342.39062 1017.125 L 342.39062 1010.625 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_483">
+        <text transform="translate(334.39062 1022.2266)" fill="black">
+          <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">1 bit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_484">
+        <text transform="translate(676.4258 967.7734)" fill="black">
+          <tspan font-family="Times" font-size="16" font-weight="400" fill="black" x="0" y="15">…</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

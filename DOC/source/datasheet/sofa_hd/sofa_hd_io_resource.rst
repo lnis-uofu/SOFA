@@ -3,8 +3,8 @@
 I/O Resources
 -------------
 
-DATA I/Os
-^^^^^^^^^
+Pin Assignment
+^^^^^^^^^^^^^^
 
 The *High-Density* (HD) FPGA IP has 144 data I/O pins as shown in :numref:`fig_sofa_hd_fpga_io_switch`.
 
@@ -31,7 +31,7 @@ Among the 144 I/Os,
 .. _io_resource_sofa_hd_external_io:
 
 External I/Os
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 A SOFA HD FPGA IP contains 37 external I/O pins, including 29 data I/Os and 8 control I/Os.
 
@@ -44,19 +44,19 @@ Full details are summarized in the following table.
   +===========+========================================================================+=============+
   | Data I/O  | Datapath I/Os of FPGA fabric                                           | 29          |
   +-----------+------------------------------------------------------------------------+-------------+
-  | Clk       | Operating clock of FPGA core                                           | 1           |
+  | CLK       | Operating clock of FPGA core                                           | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
-  | ProgClk   | Clock used by configuration protocol to program FPGA fabric            | 1           |
+  | PROG_CLK  | Clock used by configuration protocol to program FPGA fabric            | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
-  | CCin      | Input of configuation protocol to load bitstream                       | 1           |
+  | CCFF_HEAD | Input of configuation protocol to load bitstream                       | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
-  | CCout     | Output of configuration protocol to read back bitstream                | 1           |
+  | CCFF_TAIL | Output of configuration protocol to read back bitstream                | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
-  | TestEn    | Activate the test mode of FPGA fabric                                  | 1           |
+  | TEST_EN   | Activate the test mode of FPGA fabric                                  | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
-  | SCin      | Input of built-in scan-chain to load data to flip-flops of FPGA fabric | 1           |
+  | SC_HEAD   | Input of built-in scan-chain to load data to flip-flops of FPGA fabric | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
-  | SCout     | Output of built-in scan-chain to read back flip-flops from FPGA fabric | 1           |
+  | SC_TAIL   | Output of built-in scan-chain to read back flip-flops from FPGA fabric | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
   | IO_ISLO_N | Active-low signal to enable I/O datapath isolation from external ports | 1           |
   +-----------+------------------------------------------------------------------------+-------------+
@@ -66,7 +66,7 @@ Full details are summarized in the following table.
 .. _sofa_hd_io_resource_accelerator:
 
 Accelerator Mode
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 When the Wishbone interface is enabled, the FPGA can operate as an accelerator for the RISC-V processor.
 :numref:`fig_sofa_hd_fpga_io_map_wishbone_mode` illustrates the detailed I/O arrangement for the FPGA, where the wishbone bus signals are connected to fixed FPGA I/O locations. 
@@ -86,7 +86,7 @@ When the Wishbone interface is enabled, the FPGA can operate as an accelerator f
 .. _sofa_hd_io_resource_debug:
 
 Debug Mode
-~~~~~~~~~~
+^^^^^^^^^^
 
 When the logic analyzer interface is enabled, the FPGA can operate in debug mode, whose internal signals can be readback through the registers of the RISC-V processor.
 :numref:`fig_sofa_hd_fpga_io_map_logic_analyzer_mode` illustrates the detailed I/O arrangement for the FPGA, where the logic analyzer signals are connected to fixed FPGA I/O locations. 
