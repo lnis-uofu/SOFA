@@ -1,30 +1,31 @@
-.. _fpga_arch:
+.. _sofa_hd_fpga_arch:
 
-FPGA Overview
+Architecture
 -------------
 
-.. _fpga_arch_overview:
 
-Architecture Overview
-~~~~~~~~~~~~~~~~~~~~~
+.. _sofa_hd_fpga_arch_floorplan:
 
-:numref:`fig_fpga_arch` shows an overview on the architecture of the embedded FPGA fabric.
+Floorplan
+^^^^^^^^^
+
+:numref:`fig_sofa_hd_fpga_arch` shows an overview on the architecture of the embedded FPGA fabric.
 The FPGA follows a homogeneous architecture which only contains single type of tiles in the center fabric.
-I/O tiles are placed at the boundary of the FPGA to interface with GPIOs and RISC-V processors (see details in :ref:`io_resource`). 
+I/O tiles are placed at the boundary of the FPGA to interface with GPIOs and RISC-V processors (see details in :ref:`sofa_hd_io_resource`). 
 
-.. _fig_fpga_arch:
+.. _fig_sofa_hd_fpga_arch:
 
-.. figure:: ./figures/fpga_arch.svg
+.. figure:: ./figures/sofa_hd_fpga_arch.svg
   :scale: 25%
   :alt: Tile-based FPGA architecture
 
   Tile-based FPGA architecture
 
 
-.. _fpga_arch_tiles:
+.. _sofa_hd_fpga_arch_tiles:
 
 Tiles
-~~~~~
+^^^^^
 
 The FPGA architecture follows a tile-based organization, to exploit the fine-grainularity in physical design, where three types of tiles are built:
 
@@ -58,21 +59,21 @@ The FPGA architecture follows a tile-based organization, to exploit the fine-gra
   |      |          |  cells.                                      |
   +------+----------+----------------------------------------------+
 
-.. _fpga_arch_scan_chain:
+.. _sofa_hd_fpga_arch_scan_chain:
 
 Scan-chain
-~~~~~~~~~~
+^^^^^^^^^^
 
-There is a built-in scan-chain in the FPGA which connects the the `sc_in` and `sc_out` ports of CLBs in a chain (see details in :ref:`clb_arch_scan_chain`), as illustrated in :numref:`fig_fabric_scan_chain`.
+There is a built-in scan-chain in the FPGA which connects the the `sc_in` and `sc_out` ports of CLBs in a chain (see details in :ref:`sofa_hd_clb_arch_scan_chain`), as illustrated in :numref:`fig_sofa_hd_fabric_scan_chain`.
 
 When `Test_en` signal is active, users can 
 
 - overwrite the contents of all the D-type flip-flops in the FPGA by feeding signals to the `SC_HEAD` port
 - readback the contents of all the D-type flip-flops in the FPGA through the `SC_TAIL` port. 
 
-.. _fig_fabric_scan_chain:
+.. _fig_sofa_hd_fabric_scan_chain:
 
-.. figure:: ./figures/fabric_scan_chain.svg
+.. figure:: ./figures/sofa_hd_fabric_scan_chain.svg
   :scale: 25%
   :alt: Built-in scan-chain across FPGA
 

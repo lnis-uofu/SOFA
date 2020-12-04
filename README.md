@@ -1,10 +1,10 @@
-# Skywater + OpenFPGA: Open-Source FPGAs 
+# SOFA
 [![linux_build](https://github.com/LNIS-Projects/skywater-openfpga/workflows/linux_build/badge.svg)](https://github.com/LNIS-Projects/skywater-openfpga/actions)
 [![Documentation Status](https://readthedocs.org/projects/skywater-openfpga/badge/?version=latest)](https://skywater-openfpga.readthedocs.io/en/latest/?badge=latest)
       
 ## Introduction
 
-FPGA tape-outs using the open-source Skywater 130nm PDK and OpenFPGA
+SOFA (**S**kywater **O**pensource **F**PG**A**s) are a series of open-source FPGA IPs using the open-source [Skywater 130nm PDK](https://github.com/google/skywater-pdk) and [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) framework
 
 ## Quick Start
 

@@ -1,11 +1,9 @@
-.. _device:
-   Device Datasheet 
+.. _device_family:
+   Device Family 
  
 .. toctree::
    :maxdepth: 2
 
-   device_overview
+   introduction
 
-   device_resource
-
-   dc_ac_character
+   hd_fpga/index
