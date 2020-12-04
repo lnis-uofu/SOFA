@@ -1,0 +1,61 @@
+name: Caravel-SOFA_HD Deployment
+# = = = Env Variable = = = = =
+# secrets.TEST_REPO_KEY
+# secrets.SOFA_HD_KEY
+# secrets.SOFA_CHD_KEY
+# secrets.QLSOFA_HD_KEY
+# secrets.QLAP3_KEY
+# yq r -X deploy_sofa.yaml > ./workflows/deploy_sofa_hd.yaml
+env:
+  SCAN_DIRECTORY: 'FPGA1212_FLAT_HD_SKY_PNR/**'
+  PROJ_SUFFIX: SOFA_HD
+  DEST_DIR: Caravel-SOFA_HD
+  DEST_REPO: lnis-uofu/actions_test_repo
+  REPO_KEY: ${{ secrets.TEST_REPO_KEY }}
+on:
+  push:
+    paths:
+      - '.github/**'
+      - '$SCAN_DIRECTORY'
+  pull_request:
+    types: closed
+    branches:
+      - master
+jobs:
+  linux:
+    name: Updating release repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout SOFA-Chips
+        uses: actions/checkout@v2
+        with:
+          path: SOFA-Chips
+      - name: Checkout caravel repo
+        uses: actions/checkout@master
+        with:
+          repository: lnis-uofu/actions_test_repo
+          path: Caravel-SOFA_HD
+      - name: Checkout open_mpw_precheck repo
+        uses: actions/checkout@master
+        with:
+          repository: efabless/open_mpw_precheck
+          path: open_mpw_precheck
+      - name: Perform checks with open_mpw_precheck
+        uses: addnab/docker-run-action@v1
+        with:
+          image: goreganesh/open_mpw_prechecker
+          options: -v ${{github.workspace}}:/usr/local/workspace -w /usr/local/workspace
+          run: bash ./SOFA-Chips/.github/workflows/perform_precheck.sh
+      - name: Deploy files
+        run: bash ./SOFA-Chips/.github/workflows/sync_repo.sh
+      - name: Deploy Changes
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          user_name: "lnis.uofu"
+          user_email: "lnis.uofu@gmail.com"
+          deploy_key: ${{ secrets.TEST_REPO_KEY }}
+          external_repository: lnis-uofu/actions_test_repo
+          publish_dir: Caravel-SOFA_HD
+          publish_branch: master
+          disable_nojekyll: true
+          commit_message: '[Deployment] ${{ github.event.head_commit.message }}'

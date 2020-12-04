@@ -1,10 +1,19 @@
+#!/bin/bash
+# This script runs after the prechecks and before the deployment
+# In the host enviroment (All the GITHUB variables are available)
 
-date >> ../Caravel-SOFA-HD/test_log_file.txt
+# Working directory in github workspace
+# Original repo is places SOFA-Chips
+# for conditional file copy use PROJ_SUFFIX (example SOFA_HD)
 
+tail -n +2 ./SOFA-Chips/SynRepoConfig/sync_files.csv | while  IFS=, read -r srcLoc dstLoc; do
+    Copying "./SOFA-Chips/$srcLoc --> ${DEST_DIR}/$dstLoc"
+    rsync -avp ./SOFA-Chips/$srcLoc ${DEST_DIR}/$dstLoc
+done
 
-# MAGTYPE=mag magic -rcfile ${PDK_ROOT}/sky130A/libs.tech/magic/current/sky130A.magicrc -noc -dnull merge.tcl
+cd ${DEST_DIR}
 
-
-# use fpga_top fpga_top_uut
-# transform 1 0 0 0 1 0
-# box 0 0 2500 3000
+[ -s source_commit_hash.txt ] || echo "----------" > source_commit_hash.txt
+sed -i -e "s/^/\n/" source_commit_hash.txt
+sed -i -e "s/^/${GITHUB_SHA}\n/" source_commit_hash.txt
+sed -i -e "s/^/$(date)\n/" source_commit_hash.txt

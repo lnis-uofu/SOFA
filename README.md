@@ -42,4 +42,4 @@ Otherwise, you should provide full path using the option _--openfpga\_root\_path
 * Note: 
   - Please **ONLY** place folders under this directory.
     README should be the **ONLY** file under this directory
-  - Each EDA tool should have **independent** workspace in separated directories
+  - Each EDA tool should have **independent** workspace in separated directories.
