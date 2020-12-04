@@ -10,7 +10,6 @@ jobs:
   linux:
     name: Updating release repository
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout SOFA-Chips
       uses: actions/checkout@v2
@@ -21,9 +20,17 @@ jobs:
       uses: actions/checkout@master
       with:
         repository: lnis-uofu/actions_test_repo
-        # repository: lnis-uofu/Caravel-SOFA-HD
-        token: ${{ secrets.GITHUB_TOKEN }}
         path: Caravel-SOFA-HD
+
+    - name: Where am I
+      uses: addnab/docker-run-action@v1
+      with:
+        image: goreganesh/open_mpw_prechecker
+        options: -v ${{github.workspace}}:/usr/local/workspace
+        run: pwd && ls
+
+    - name: Am I in the host container now
+      run: pwd && ls
 
     - name: Updating files
       run: pwd && ls && cd SOFA-Chips && source ./.github/workflows/sync_repo.sh
@@ -31,18 +38,13 @@ jobs:
     - name: View directory
       run: pwd && ls
 
-    - name: Commit files
-      run: |
-        cd Caravel-SOFA-HD
-        pwd && ls
-        git config --local user.email "lnis.uofu@github.com"
-        git config --local user.name "lnis.uofu"
-        git commit -m "Auto commit" -a
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: Deploy Changes
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        directory: Caravel-SOFA-HD
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        repository: lnis-uofu/actions_test_repo
-        branch: master
+        user_name: "lnis.uofu"
+        user_email: "lnis.uofu@gmail.com"
+        deploy_key: ${{ secrets.TEST_REPO_KEY }}
+        external_repository: lnis-uofu/actions_test_repo
+        publish_dir: ./Caravel-SOFA-HD
+        publish_branch: master
+        commit_message: '[Deployment] ${{ github.event.head_commit.message }}'
