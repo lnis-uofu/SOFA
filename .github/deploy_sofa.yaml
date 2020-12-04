@@ -24,6 +24,7 @@ on:
   push:
     paths:
     - '.github/**'
+    - 'SynRepoConfig/**'
     - '$SCAN_DIRECTORY'
   pull_request:
     types: closed
