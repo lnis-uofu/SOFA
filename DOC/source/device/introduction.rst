@@ -1,7 +1,7 @@
-.. _device_overview:
+.. _device_family_introduction:
 
-General Description
--------------------
+Introduction
+------------
 
 All the FPGA devices in this project are fully open-source, from the architecture description to the physical design outputs, e.g., GDSII.
 All the devices are designed through the OpenFPGA framework and the Skywater 130nm PDK. 
