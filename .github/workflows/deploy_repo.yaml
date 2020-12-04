@@ -24,3 +24,20 @@ jobs:
         # repository: lnis-uofu/Caravel-SOFA-HD
         token: ${{ secrets.GITHUB_TOKEN }}
         path: Caravel-SOFA-HD
+
+    - name: Updating files
+        run: source ./SOFA-Chips/.github/workflows/sync_repo.sh
+
+    - name: Commit files
+      run: |
+        git config --local user.email "lnis.uofu@github.com"
+        git config --local user.name "lnis.uofu"
+        cd Caravel-SOFA-HD
+        git commit -m "Auto commit" -a
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        directory: Caravel-SOFA-HD
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: master
