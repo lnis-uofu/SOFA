@@ -26,7 +26,7 @@ jobs:
         path: Caravel-SOFA-HD
 
     - name: Updating files
-        run: source ./SOFA-Chips/.github/workflows/sync_repo.sh
+      run: source ${GITHUB_WORKSPACE}/SOFA-Chips/.github/workflows/sync_repo.sh
 
     - name: Commit files
       run: |
