@@ -26,15 +26,17 @@ jobs:
         path: Caravel-SOFA-HD
 
     - name: Updating files
-      working-directory: ${{ runner.workspace }}/Caravel-SOFA-HD
-      run: source .github/workflows/sync_repo.sh
+      run: pwd && ls && cd SOFA-Chips && source ./.github/workflows/sync_repo.sh
+
+    - name: View directory
+      run: pwd && ls
 
     - name: Commit files
-      working-directory: ${{ runner.workspace }}/Caravel-SOFA-HD
       run: |
+        cd Caravel-SOFA-HD
+        pwd && ls
         git config --local user.email "lnis.uofu@github.com"
         git config --local user.name "lnis.uofu"
-        cd Caravel-SOFA-HD
         git commit -m "Auto commit" -a
 
     - name: Push changes

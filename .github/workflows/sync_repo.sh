@@ -1,5 +1,5 @@
 
-date >> testfile.txt
+date >> ../Caravel-SOFA-HD/testfile.txt
 
 
 # MAGTYPE=mag magic -rcfile ${PDK_ROOT}/sky130A/libs.tech/magic/current/sky130A.magicrc -noc -dnull merge.tcl
