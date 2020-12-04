@@ -6,6 +6,8 @@ name: linux_build
 # - scheduled weekly
 on:
   push:
+    branches-ignore:
+    - ganesh_dev
   pull_request:
   schedule:
     - cron: '0 0 * * 0 ' # weekly
