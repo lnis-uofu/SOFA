@@ -1,0 +1,26 @@
+name: To perform precheck and deploy to release repository
+
+on:
+  push:
+  pull_request:
+    types: closed
+    branches:
+      - master
+jobs:
+  linux:
+    name: Updating release repository
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout SOFA-Chips
+      uses: actions/checkout@v2
+      with:
+        path: SOFA-Chips
+
+    - name: Checkout Caravel-SOFA-HD
+      uses: actions/checkout@master
+      with:
+        repository: ganeshgore/dummyTestRepo
+        # repository: lnis-uofu/Caravel-SOFA-HD
+        token: ${{ secrets.GITHUB_TOKEN }}
+        path: Caravel-SOFA-HD
