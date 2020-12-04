@@ -44,4 +44,5 @@ jobs:
       with:
         directory: Caravel-SOFA-HD
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        repository: ganeshgore/dummyTestRepo
         branch: master
