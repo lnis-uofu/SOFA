@@ -16,13 +16,15 @@ The High Density (HD) FPGAs are embedded FPGAs built with the Skywater 130nm Hig
   +-------------------------------+------------+-----------+
   | Soft Adders [2]_              |   N/A      |   1152    |
   +-------------------------------+------------+-----------+
-  | Max. Configuration Speed [3]_ |   50MHz    |   50MHz   |
+  | Routing Channel Width [3]_    |   40       |   60      |
   +-------------------------------+------------+-----------+
-  | Max. Operating Speed [3]_     |   50MHz    |   50 MHz  |
+  | Max. Configuration Speed [4]_ |   50MHz    |   50MHz   |
   +-------------------------------+------------+-----------+
-  | User I/O Pins [4]_            |   144      |   144     |
+  | Max. Operating Speed [4]_     |   50MHz    |   50 MHz  |
   +-------------------------------+------------+-----------+
-  | Max. I/O Speed [3]_           |   33MHz    |   33 MHz  |
+  | User I/O Pins [5]_            |   144      |   144     |
+  +-------------------------------+------------+-----------+
+  | Max. I/O Speed [4]_           |   33MHz    |   33 MHz  |
   +-------------------------------+------------+-----------+
   | Core Voltage                  |   1.8V     |   1.8V    |
   +-------------------------------+------------+-----------+
@@ -31,7 +33,9 @@ The High Density (HD) FPGAs are embedded FPGAs built with the Skywater 130nm Hig
 
 .. [2] counted by 3-input Look-Up Tables (LUTs) that are organized as a carry chain
 
-.. [3] bounded by the maximum speed of `GPIO cells of Skywater 130nm PDK <https://skywater-pdk.readthedocs.io/en/latest/contents/libraries/sky130_fd_io/docs/user_guide.html#design-metrics-1>`_. Higher speed may be expected when a high-speed GPIO cell is available.
+.. [3] counted by number of uni-directional routing tracks per tile
 
-.. [4] I/Os are divided into two groups: GPIOs and embedded I/Os.
+.. [4] bounded by the maximum speed of `GPIO cells of Skywater 130nm PDK <https://skywater-pdk.readthedocs.io/en/latest/contents/libraries/sky130_fd_io/docs/user_guide.html#design-metrics-1>`_. Higher speed may be expected when a high-speed GPIO cell is available.
+
+.. [5] I/Os are divided into two groups: GPIOs and embedded I/Os.
 
