@@ -121,16 +121,24 @@ for line in vsim_log_file:
   # Check errors from self-testing testbench output
   if line.startswith("# Simulation finish with") :
     num_sim_err = int(re.findall("# Simulation finish with(\s+)(\d+) errors", line)[0][1])
-    num_err_lines_found = num_err_lines_found + 1
+    num_err_lines_found += 1
     if (0 < num_sim_err) : 
       logging.error("Simulation failed with " + str(num_sim_err) + " errors!\n")
       # Add to total errors
-      num_err = num_err + num_sim_err
+      num_err += num_sim_err
+  if line.startswith("# Simulation Failed with") :
+    print (line)
+    num_sim_err = int(re.findall("# Simulation Failed with(\s+)(\d+) error\(s\)", line)[0][1])
+    num_err_lines_found += 1
+    if (0 < num_sim_err) : 
+      logging.error("Simulation failed with " + str(num_sim_err) + " errors!\n")
+      # Add to total errors
+      num_err += num_sim_err
   # Check total errors by Modelsim
   if line.startswith("# Errors:") :
     num_msim_err = int(re.findall("# Errors:(\s)(\d+),", line)[0][1])
-    num_err_lines_found = num_err_lines_found + 1
-    num_err = num_err + num_msim_err
+    num_err_lines_found += 1
+    num_err += num_msim_err
 
 vsim_log_file.close()
 
