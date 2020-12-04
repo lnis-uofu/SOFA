@@ -47,4 +47,5 @@ jobs:
         external_repository: lnis-uofu/actions_test_repo
         publish_dir: ./Caravel-SOFA-HD
         publish_branch: master
+        disable_nojekyll: true
         commit_message: '[Deployment] ${{ github.event.head_commit.message }}'
