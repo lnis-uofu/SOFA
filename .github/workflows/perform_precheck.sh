@@ -26,7 +26,9 @@ magic -rcfile ${PDK_ROOT}/sky130A/libs.tech/magic/current/sky130A.magicrc \
 echo "[Info] merge fpga-top"
 
 # = = = = = = = = = = = = = Build Caravel = = = = = = = = = = = = = = = = = = =
+for i in {1..30}; do sleep 1m; echo "Still shipping"; done & # 30 min timeout for merge GDS
 make ship
+kill %1
 echo "[Info] Finished shiping chip"
 rm -f gds/caravel.old.gds
 
