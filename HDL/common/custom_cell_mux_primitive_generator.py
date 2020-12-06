@@ -94,6 +94,20 @@ def generate_verilog_codes_custom_cell_mux2(first_input_index, instance_index):
 
   return lines
 
+#######################################################################
+# A function to generate Verilog codes for a MUX2 standard cell
+# Given an input index
+def generate_verilog_codes_standard_cell_mux2(first_input_index, instance_index):
+  lines = []
+
+  lines.append("\tsky130_fd_sc_hd__mux2_1 sky130_fd_sc_hd__mux2_1_" + str(instance_index) + "(")
+  lines.append("\t    .A1(in[" + str(first_input_index) + "]),")
+  lines.append("\t    .A0(in[" + str(first_input_index + 1) + "]),")
+  lines.append("\t    .S(mem[" + str(first_input_index) + "]),")
+  lines.append("\t    .X(out[0])")
+  lines.append("\t    );")
+
+  return lines
 
 #######################################################################
 # A function to output custom cells of multiplexing structure to a file
@@ -107,12 +121,8 @@ def write_custom_mux_cells_to_file(custom_nlist, input_size, mem_size):
   if (1 == mem_size):
     assert(2 == input_size)
     # Output a standard cell, currently we support HD cell MUX2
-    lines.append("\tsky130_fd_sc_hd_mux2_1 sky130_fd_sc_hd_mux2_1_0(")
-    lines.append("\t                                                .A1(in[0]),")
-    lines.append("\t                                                .A0(in[1]),")
-    lines.append("\t                                                .S(mem[0]),")
-    lines.append("\t                                                .X(out[0])")
-    lines.append("\t                                               );")
+    for line in generate_verilog_codes_standard_cell_mux2(0, 0):
+      lines.append(line)
   else:
     assert(1 < mem_size)
     assert(mem_size == input_size)
