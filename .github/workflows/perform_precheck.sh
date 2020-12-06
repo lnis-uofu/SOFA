@@ -7,7 +7,7 @@
 printenv
 
 cd ./${DEST_DIR}
-echo "Running in directory ${pwd}"
+echo "Running in directory ${PWD}"
 
 cp ../SOFA-Chips/${SCAN_DIRECTORY}/fpga_top_icv_in_design.gds.gz ./gds/
 make uncompress
