@@ -53,7 +53,7 @@ jobs:
         path: open_mpw_precheck
 
     - name: Perform checks with open_mpw_precheck
-      uses: ganeshgore/docker-run-action@1cd63ec
+      uses: ganeshgore/docker-run-action@49cd3a1
       with:
         image: goreganesh/open_mpw_prechecker
         options: >
@@ -62,7 +62,7 @@ jobs:
           -e DEST_DIR=$DEST_DIR
           -e SCAN_DIRECTORY=$SCAN_DIRECTORY
           --workdir /usr/local/workspace
-        run: pwd && cd /usr/local/workspace && ls && bash ./SOFA-Chips/.github/workflows/perform_precheck.sh
+        run: cd /usr/local/workspace && pwd && ls && bash ./SOFA-Chips/.github/workflows/perform_precheck.sh
 
     - name: Deploy files
       run: bash ./SOFA-Chips/.github/workflows/sync_repo.sh

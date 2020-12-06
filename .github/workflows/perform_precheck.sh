@@ -4,10 +4,8 @@
 # Original repo is places ../SOFA-Chips
 # for conditional file copy use PROJ_SUFFIX (example SOFA_HD)
 
-printenv
-
 cd ./${DEST_DIR}
-echo "Running in directory ${PWD}"
+echo "[Info] Running in directory ${PWD}"
 
 cp ../SOFA-Chips/${SCAN_DIRECTORY}/fpga_top_icv_in_design.gds.gz ./gds/
 make uncompress
@@ -44,3 +42,10 @@ if test -f "./checks/caravel.magic.drc"; then
         -magic_drc_in ./checks/caravel.magic.drc
         -rdb_out ./checks/caravel.magic.rdb
 fi
+echo "[Info] Converted errors in RDB format"
+
+# = = = = = = = Clean up repo  = = = = = = = = = = = = = = = = = = =
+rm -rf user_project_wrapper.mag
+rm -rf gds/caravel.mag
+rm -rf magic_drc.log
+git checkout HEAD -- ./mag/user_project_wrapper.mag
