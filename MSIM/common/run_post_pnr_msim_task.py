@@ -30,6 +30,8 @@ parser.add_argument('--testbench_dir_name', required=True,
                     help='Specify the directory path for the Verilog testbenches')
 parser.add_argument('--task_name', required=True,
                     help='Specify the directory path for the Verilog testbenches')
+parser.add_argument('--testbench_type', default="postpnr",
+                    help='Specify the type of verification: postpnr|prepnr')
 args = parser.parse_args()
 
 #####################################################################
@@ -37,7 +39,7 @@ args = parser.parse_args()
 #####################################################################
 logging.info("Finding testbenches..."); 
 
-testbench_dir_abspath = abspath(args.testbench_dir_name) + "/postpnr/verilog_testbench";
+testbench_dir_abspath = abspath(args.testbench_dir_name) + "/" + args.testbench_type + "/verilog_testbench";
 
 testbench_files = []
 for globbed_file in glob.glob(testbench_dir_abspath + "/*_include_netlists.v"):
@@ -49,7 +51,7 @@ logging.info("Found " + str(len(testbench_files)) + " testbenches")
 # Try to create the directory of Modelsim projects
 #####################################################################
 parent_dir_abspath = dirname(dirname(abspath(__file__)))
-msim_task_dir_abspath = abspath(parent_dir_abspath + "/" + args.task_name) + "/postpnr/verilog_testbench";
+msim_task_dir_abspath = abspath(parent_dir_abspath + "/" + args.task_name) + "/" + args.testbench_type + "/verilog_testbench";
 os.makedirs(msim_task_dir_abspath, exist_ok=True)
 
 #####################################################################
