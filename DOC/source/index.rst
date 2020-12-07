@@ -7,15 +7,15 @@ Welcome to SKywater-OpenFPGA documentation!
 ===========================================
 
 .. toctree::
-   :caption: Device Datasheet
+   :caption: Device Family
 
    device/index
 
 .. toctree::
    :maxdepth: 2
-   :caption: FPGA Architecture
+   :caption: Datasheets
 
-   arch/index
+   datasheet/index
 
 .. toctree::
    :maxdepth: 2
