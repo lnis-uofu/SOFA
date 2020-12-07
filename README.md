@@ -1,10 +1,5 @@
-# SOFA
-[![linux_build](https://github.com/LNIS-Projects/skywater-openfpga/workflows/linux_build/badge.svg)](https://github.com/LNIS-Projects/skywater-openfpga/actions)
-[![Documentation Status](https://readthedocs.org/projects/skywater-openfpga/badge/?version=latest)](https://skywater-openfpga.readthedocs.io/en/latest/?badge=latest)
-      
-## Introduction
-
-SOFA (**S**kywater **O**pensource **F**PG**A**s) are a series of open-source FPGA IPs using the open-source [Skywater 130nm PDK](https://github.com/google/skywater-pdk) and [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) framework
+# skywater-openfpga
+FPGA tape-outs using the open-source Skywater 130nm PDK and OpenFPGA
 
 ## Quick Start
 
@@ -13,14 +8,13 @@ SOFA (**S**kywater **O**pensource **F**PG**A**s) are a series of open-source FPG
 git clone https://github.com/LNIS-Projects/skywater-openfpga.git
 python3 SCRIPT/repo_setup.py --openfpga_root_path ${OPENFPGA_PROJECT_DIRECTORY}
 ```
----
 
-* If you have openfpga repository cloned at the same level of this project, you can simple call
+* If you have openfpga repository cloned in the level of this project, you can simple call
 ```bash
   python3 SCRIPT/repo_setup.py
 ``` 
 
-Otherwise, you should provide full path using the option _--openfpga\_root\_path_ 
+Otherwise, you should provide full path for the --openfpga\root\_path
 
 ## Directory Organization
 
@@ -37,9 +31,7 @@ Otherwise, you should provide full path using the option _--openfpga\_root\_path
                     Keep a README inside the folder about the ICC2 version and how-to-use.
   - **MSIM**: workspace of verification using Mentor ModelSim
 
----
-
 * Note: 
   - Please **ONLY** place folders under this directory.
     README should be the **ONLY** file under this directory
-  - Each EDA tool should have **independent** workspace in separated directories.
+  - Each EDA tool should have **independent** workspace in separated directories
