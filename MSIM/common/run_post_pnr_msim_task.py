@@ -16,6 +16,8 @@ import argparse
 import logging
 import subprocess
 import glob
+import threading
+import run_post_pnr_msim_test
 
 #####################################################################
 # Initialize logger 
@@ -64,15 +66,16 @@ num_sim_finished = 0
 msim_testrun_script_abspath = os.path.abspath(__file__) 
 msim_testrun_script_abspath = re.sub(os.path.basename(msim_testrun_script_abspath), "run_post_pnr_msim_test.py", msim_testrun_script_abspath)
 
+threads = []
 for testbench_file in testbench_files:
   # Find testbench name
   testbench_name = re.findall("(\w+)_include_netlists.v", os.path.basename(testbench_file))[0]
-  cmd = "python3 " + msim_testrun_script_abspath \
-      + " --verilog_testbench " +  testbench_file \
-      + " --project_path " + msim_task_dir_abspath + "/" + testbench_name \
-      + " --testbench_name " + testbench_name + "_autocheck_top_tb"
-  subprocess.run(cmd, shell=True, check=True) 
-  num_sim_finished += 1
+  process = threading.Thread(target=run_post_pnr_msim_test.run_msim, args=(testbench_file, msim_task_dir_abspath + "/" + testbench_name, testbench_name + "_autocheck_top_tb",))
+  process.start()
+  threads.append(process)
+
+for process in threads:
+  process.join()
 
 logging.info("Done")
-logging.info("Finish " + str(num_sim_finished) + " ModelSim simulations")
+logging.info("Finish " + str(len(threads)) + " ModelSim simulations")
