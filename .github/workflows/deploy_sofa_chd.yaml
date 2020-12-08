@@ -1,17 +1,17 @@
-name: Caravel-SOFA_HD Deployment
+name: Caravel-SOFA_CHD Deployment
 # = = = Env Variable = = = = =
 # secrets.TEST_REPO_KEY
-# secrets.SOFA_HD_KEY
 # secrets.SOFA_CHD_KEY
-# secrets.QLSOFA_HD_KEY
+# secrets.SOFA_CHD_KEY
+# secrets.QLSOFA_CHD_KEY
 # secrets.QLAP3_KEY
 # yq r -X deploy_sofa.yaml > ./workflows/deploy_sofa_hd.yaml
 env:
-  SCAN_DIRECTORY: 'FPGA1212_FLAT_HD_SKY_PNR/**'
-  PROJ_SUFFIX: SOFA_HD
-  DEST_DIR: Caravel-SOFA_HD
+  SCAN_DIRECTORY: 'FPGA1212_SOFA_CHD_PNR/**'
+  PROJ_SUFFIX: SOFA_CHD
+  DEST_DIR: Caravel-SOFA_CHD
   DEST_REPO: lnis-uofu/Caravel-SOFA-HD
-  REPO_KEY: ${{ secrets.SOFA_HD_KEY }}
+  REPO_KEY: ${{ secrets.SOFA_CHD_KEY }}
 on:
   push:
     paths:
@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: lnis-uofu/Caravel-SOFA-HD
-          path: Caravel-SOFA_HD
+          path: Caravel-SOFA_CHD
       - name: Checkout open_mpw_precheck repo
         uses: actions/checkout@master
         with:
@@ -58,9 +58,9 @@ jobs:
         with:
           user_name: "lnis.uofu"
           user_email: "lnis.uofu@gmail.com"
-          deploy_key: ${{ secrets.SOFA_HD_KEY }}
+          deploy_key: ${{ secrets.SOFA_CHD_KEY }}
           external_repository: lnis-uofu/Caravel-SOFA-HD
-          publish_dir: Caravel-SOFA_HD
+          publish_dir: Caravel-SOFA_CHD
           publish_branch: master
           disable_nojekyll: true
           commit_message: '[Deployment] ${{ github.event.head_commit.message }}'

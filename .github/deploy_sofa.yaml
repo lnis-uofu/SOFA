@@ -16,9 +16,9 @@ env:
   DEST_DIR: &DEST_DIR
     Caravel-SOFA_HD
   DEST_REPO: &DEST_REPO
-    lnis-uofu/actions_test_repo
+    lnis-uofu/Caravel-SOFA-HD
   REPO_KEY: &REPO_KEY
-    ${{ secrets.TEST_REPO_KEY }}
+    ${{ secrets.SOFA_HD_KEY }}
 
 on:
   push:
@@ -26,6 +26,8 @@ on:
     - '.github/**'
     - 'SynRepoConfig/**'
     - '$SCAN_DIRECTORY'
+    branches:
+      - ganesh_dev
   pull_request:
     types: closed
     branches:
