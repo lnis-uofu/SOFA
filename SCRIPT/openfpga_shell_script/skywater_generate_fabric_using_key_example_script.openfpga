@@ -21,7 +21,7 @@ link_openfpga_arch --activity_file ${ACTIVITY_FILE} --sort_gsb_chan_node_in_edge
 # Build the module graph
 #  - Enabled compression on routing architecture modules
 #  - Enable pin duplication on grid modules
-build_fabric --compress_routing --duplicate_grid_pin --load_fabric_key ${EXTERNAL_FABRIC_KEY_FILE} #--verbose
+build_fabric --compress_routing --duplicate_grid_pin --generate_random_fabric_key #--verbose
 
 # Write the fabric hierarchy of module graph to a file
 # This is used by hierarchical PnR flows

@@ -86,7 +86,7 @@
          If your standard cell provider does not offer the exact truth table,
          you can simply swap the inputs as shown in the example below
       -->
-    <circuit_model type="gate" name="sky130_fd_sc_hd__or2_1" prefix="sky130_fd_sc_hd__or2_1" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/or2/sky130_fd_sc_hd__or2_1.v">
+    <circuit_model type="gate" name="sky130_fd_sc_hd__or2_1" prefix="sky130_fd_sc_hd__or2_1" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/or2/sky130_fd_sc_hd__or2_1.v">
       <design_technology type="cmos" topology="OR"/>
       <device_technology device_model_name="logic"/>
       <input_buffer exist="false"/>
@@ -238,7 +238,7 @@
     <!-- IMPORTANT: must set unused I/Os to operating in INPUT mode !!! -->
     <pb_type name="IO[PHYSICAL].iopad.macro" circuit_model_name="EMBEDDED_IO_HD" mode_bits="1"/>
     <pb_type name="IO[INPUT].INPUT.i_pad" physical_pb_type_name="IO[PHYSICAL].iopad.macro" mode_bits="1"/>
-    <pb_type name="IO[OUTPUT].OUTPUT.o_pad" physical_pb_type_name="IO[PHYSICAL].iopad.macro" mode_bits="0"/>    
+    <pb_type name="IO[OUTPUT].OUTPUT.o_pad" physical_pb_type_name="IO[PHYSICAL].iopad.macro" mode_bits="0"/>
     <!-- End physical pb_type binding in complex block IO -->
 
     <!-- physical pb_type binding in complex block CLB -->
