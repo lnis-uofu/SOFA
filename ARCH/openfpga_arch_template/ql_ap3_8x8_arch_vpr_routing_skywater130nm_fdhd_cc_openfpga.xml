@@ -247,8 +247,6 @@
     <pb_type name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.frac_logic.frac_lut4" circuit_model_name="frac_lut4" mode_bits="0"/>
     <pb_type name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.ff" circuit_model_name="sky130_fd_sc_hd__sdfxtp_1"/>
     <pb_type name="SUPER_LOGIC_CELL[default].LC[PHYSICAL].PHYSICAL[default].frac_logic[default].carry_follower" circuit_model_name="sky130_fd_sc_hd__mux2_1_wrapper"/>
-    <pb_type name="LOGIC_1[default].logic_1" circuit_model_name="LOGIC_VDD"/>
-    <pb_type name="LOGIC_0[default].gnd" circuit_model_name="LOGIC_GND"/>
     <!-- BEGIN Binding operating pb_types in mode 'ble4' -->
     <pb_type name="SUPER_LOGIC_CELL.LC[DEFAULT].DEFAULT.lut_part[VPR_LUT4].VPR_LUT4.lut_inst.lut" physical_pb_type_name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.frac_logic.frac_lut4" mode_bits="0">
       <!-- Binding the lut4 to the first 4 inputs of fracturable lut4 -->
@@ -258,9 +256,5 @@
     <pb_type name="SUPER_LOGIC_CELL.LC[DEFAULT].DEFAULT.ff" physical_pb_type_name="SUPER_LOGIC_CELL.LC[PHYSICAL].PHYSICAL.ff"/>
     <!-- END Binding operating pb_types in mode 'ble4' -->
 
-    <!-- physical pb_type binding in complex block LOGIC1 -->
-    <pb_type name="LOGIC_1.logic_1" circuit_model_name="LOGIC_VDD"/> 
-    <!-- physical pb_type binding in complex block LOGIC0 -->
-    <pb_type name="LOGIC_0.gnd" circuit_model_name="LOGIC_GND"/> 
   </pb_type_annotations>
 </openfpga_architecture>

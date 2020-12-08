@@ -37,18 +37,6 @@
                 <port name="cout"/>
             </output_ports>
         </model>
-        <model name="logic_1">
-            <input_ports/>
-            <output_ports>
-                <port name="a"/>
-            </output_ports>
-        </model>
-        <model name="logic_0">
-            <input_ports/>
-            <output_ports>
-                <port name="a"/>
-            </output_ports>
-        </model>
     </models>
     <tiles>
         <tile capacity="8" name="IO">
@@ -132,32 +120,6 @@
                 </site>
             </equivalent_sites>
         </tile>
-        <tile capacity="1" name="TL-VCC">
-            <switchbox_locations pattern="all"/>
-            <pinlocations pattern="custom">
-                <loc side="right">TL-VCC.VCC</loc>
-            </pinlocations>
-            <fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25"/>
-            <equivalent_sites>
-                <site pb_type="LOGIC_1" pin_mapping="custom">
-                    <direct from="TL-VCC.VCC" to="LOGIC_1.a"/>
-                </site>
-            </equivalent_sites>
-            <output name="VCC" num_pins="1"/>
-        </tile>
-        <tile capacity="1" name="TL-GND">
-            <switchbox_locations pattern="all"/>
-            <pinlocations pattern="custom">
-                <loc side="right">TL-GND.GND</loc>
-            </pinlocations>
-            <fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25"/>
-            <equivalent_sites>
-                <site pb_type="LOGIC_0" pin_mapping="custom">
-                    <direct from="TL-GND.GND" to="LOGIC_0.a"/>
-                </site>
-            </equivalent_sites>
-            <output name="GND" num_pins="1"/>
-        </tile>
     </tiles>
     <layout>
         <fixed_layout height="12" name="8x8" width="12">
@@ -173,9 +135,6 @@
             <region endx="W-3" endy="H-2" priority="20" startx="2" starty="H-2" type="IO"/>
             <!-- Right IOs -->
             <region endx="W-2" endy="H-3" priority="20" startx="W-2" starty="2" type="IO"/>
-            <!-- Const sources -->
-            <single priority="100" type="TL-VCC" x="1" y="1"/>
-            <single priority="100" type="TL-GND" x="1" y="H-2"/>
         </fixed_layout>
     </layout>
     <device>
@@ -547,24 +506,6 @@
                 <direct input="LC[5].FZ" name="SUPER_LOGIC_CELL-FZ[5]" output="SUPER_LOGIC_CELL.FZ[5]"/>
                 <direct input="LC[6].FZ" name="SUPER_LOGIC_CELL-FZ[6]" output="SUPER_LOGIC_CELL.FZ[6]"/>
                 <direct input="LC[7].FZ" name="SUPER_LOGIC_CELL-FZ[7]" output="SUPER_LOGIC_CELL.FZ[7]"/>
-            </interconnect>
-        </pb_type>
-        <pb_type name="LOGIC_1">
-            <output name="a" num_pins="1"/>
-            <pb_type blif_model=".subckt logic_1" name="logic_1" num_pb="1">
-                <output name="a" num_pins="1"/>
-            </pb_type>
-            <interconnect>
-                <direct input="logic_1.a" name="LOGIC_1-a" output="LOGIC_1.a"/>
-            </interconnect>
-        </pb_type>
-        <pb_type name="LOGIC_0">
-            <output name="a" num_pins="1"/>
-            <pb_type blif_model=".subckt logic_0" name="gnd" num_pb="1">
-                <output name="a" num_pins="1"/>
-            </pb_type>
-            <interconnect>
-                <direct input="gnd.a" name="LOGIC_0-a" output="LOGIC_0.a"/>
             </interconnect>
         </pb_type>
     </complexblocklist>
