@@ -70,7 +70,7 @@ threads = []
 for testbench_file in testbench_files:
   # Find testbench name
   testbench_name = re.findall("(\w+)_include_netlists.v", os.path.basename(testbench_file))[0]
-  process = threading.Thread(target=run_post_pnr_msim_test.run_msim, args=(testbench_file, msim_task_dir_abspath + "/" + testbench_name, testbench_name + "_autocheck_top_tb",))
+  process = multiprocessing.Process(target=run_post_pnr_msim_test.run_msim, args=(testbench_file, msim_task_dir_abspath + "/" + testbench_name, testbench_name + "_autocheck_top_tb",))
   process.start()
   threads.append(process)
 
