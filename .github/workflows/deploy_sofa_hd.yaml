@@ -9,7 +9,7 @@ name: Caravel-SOFA_HD Deployment
 env:
   SCAN_DIRECTORY: 'FPGA1212_FLAT_HD_SKY_PNR/**'
   PROJ_SUFFIX: SOFA_HD
-  DEST_DIR: Caravel-SOFA_HD
+  DEST_DIR: Caravel-SOFA-HD
   DEST_REPO: lnis-uofu/Caravel-SOFA-HD
   REPO_KEY: ${{ secrets.SOFA_HD_KEY }}
 on:
@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: lnis-uofu/Caravel-SOFA-HD
-          path: Caravel-SOFA_HD
+          path: Caravel-SOFA-HD
       - name: Checkout open_mpw_precheck repo
         uses: actions/checkout@master
         with:
@@ -52,15 +52,17 @@ jobs:
 
           run: cd /usr/local/workspace && pwd && ls && bash ./SOFA-Chips/.github/workflows/perform_precheck.sh
       - name: Deploy files
+        # if: ${{ github.event_name == 'pull_request' && contains(github.ref, "master") && github.event.action == 'merged' }}
         run: bash ./SOFA-Chips/.github/workflows/sync_repo.sh
       - name: Deploy Changes
         uses: peaceiris/actions-gh-pages@v3
+        # if: ${{ github.event_name == 'pull_request' && contains(github.ref, "master") && github.event.action == 'merged' }}
         with:
           user_name: "lnis.uofu"
           user_email: "lnis.uofu@gmail.com"
           deploy_key: ${{ secrets.SOFA_HD_KEY }}
           external_repository: lnis-uofu/Caravel-SOFA-HD
-          publish_dir: Caravel-SOFA_HD
+          publish_dir: Caravel-SOFA-HD
           publish_branch: master
           disable_nojekyll: true
           commit_message: '[Deployment] ${{ github.event.head_commit.message }}'

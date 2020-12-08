@@ -14,7 +14,7 @@ env:
   PROJ_SUFFIX: &PROJ_SUFFIX
     SOFA_HD
   DEST_DIR: &DEST_DIR
-    Caravel-SOFA_HD
+    Caravel-SOFA-HD
   DEST_REPO: &DEST_REPO
     lnis-uofu/Caravel-SOFA-HD
   REPO_KEY: &REPO_KEY
@@ -67,10 +67,12 @@ jobs:
         run: cd /usr/local/workspace && pwd && ls && bash ./SOFA-Chips/.github/workflows/perform_precheck.sh
 
     - name: Deploy files
+      # if: ${{ github.event_name == 'pull_request' && contains(github.ref, "master") && github.event.action == 'merged' }}
       run: bash ./SOFA-Chips/.github/workflows/sync_repo.sh
 
     - name: Deploy Changes
       uses: peaceiris/actions-gh-pages@v3
+      # if: ${{ github.event_name == 'pull_request' && contains(github.ref, "master") && github.event.action == 'merged' }}
       with:
         user_name: "lnis.uofu"
         user_email: "lnis.uofu@gmail.com"
@@ -80,3 +82,19 @@ jobs:
         publish_branch: master
         disable_nojekyll: true
         commit_message: '[Deployment] ${{ github.event.head_commit.message }}'
+
+    # - name: Deploy files to localbranch
+    #   if: ${{! (github.event_name == 'pull_request' && contains(github.ref, "master") && github.event.action == 'merged') }}
+    #   run: bash ./SOFA-Chips/.github/workflows/sync_repo.sh
+
+    # - name: Deploy Changes localbranch
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   if: ${{! (github.event_name == 'pull_request' && contains(github.ref, "master") && github.event.action == 'merged') }}
+    #   with:
+    #     user_name: "lnis.uofu"
+    #     user_email: "lnis.uofu@gmail.com"
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_dir: ./SOFA-Chips/local_checks/Caravel-SOFA_HD
+    #     publish_branch: master
+    #     disable_nojekyll: true
+    #     commit_message: '[Deployment] ${{ github.event.head_commit.message }}'
