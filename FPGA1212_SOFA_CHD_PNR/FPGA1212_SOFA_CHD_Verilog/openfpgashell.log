@@ -1,0 +1,1414 @@
+/research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga/openfpga -f top_run.openfpga
+Reading script file top_run.openfpga...
+
+            ___                   _____ ____   ____    _     
+           / _ \ _ __   ___ _ __ |  ___|  _ \ / ___|  / \    
+          | | | | '_ \ / _ \ '_ \| |_  | |_) | |  _  / _ \   
+          | |_| | |_) |  __/ | | |  _| |  __/| |_| |/ ___ \  
+           \___/| .__/ \___|_| |_|_|   |_|    \____/_/   \_\ 
+                |_|                                          
+
+               OpenFPGA: An Open-source FPGA IP Generator
+                     Versatile Place and Route (VPR)
+                           FPGA-Verilog
+                           FPGA-SPICE
+                           FPGA-SDC
+                           FPGA-Bitstream
+
+             This is a free software under the MIT License
+
+             Copyright (c) 2018 LNIS - The University of Utah
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+
+Command line to execute: vpr /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_SOFA_CHD_PNR/FPGA1212_SOFA_CHD_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/vpr_arch.xml top.blif --clock_modeling route --device 12x12 --route_chan_width 60 --absorb_buffer_luts off
+VPR FPGA Placement and Routing.
+Version: 0.0.0+c5d9bac1-dirty
+Revision: c5d9bac1-dirty
+Compiled: 2020-12-07T12:53:13
+Compiler: GNU 8.4.0 on Linux-3.10.0-1062.9.1.el7.x86_64 x86_64
+Build Info: release VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+vpr /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_SOFA_CHD_PNR/FPGA1212_SOFA_CHD_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/vpr_arch.xml top.blif --clock_modeling route --device 12x12 --route_chan_width 60 --absorb_buffer_luts off
+
+
+Architecture file: /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_SOFA_CHD_PNR/FPGA1212_SOFA_CHD_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/vpr_arch.xml
+Circuit name: top
+
+# Loading Architecture Description
+Warning 1: Model 'io' input port 'outpad' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 2: Model 'io' output port 'inpad' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 3: Model 'frac_lut4' input port 'in' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 4: Model 'frac_lut4' output port 'lut4_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 5: Model 'frac_lut4' output port 'lut3_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 6: Model 'frac_lut4' output port 'lut2_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 7: Model 'carry_follower' input port 'cin' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 8: Model 'carry_follower' input port 'b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 9: Model 'carry_follower' input port 'a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 10: Model 'carry_follower' output port 'cout' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+# Loading Architecture Description took 0.01 seconds (max_rss 8.8 MiB, delta_rss +0.4 MiB)
+# Building complex block graph
+Warning 11: clb[0].cin[0] unconnected pin in architecture.
+Warning 12: clb[0].cout[0] unconnected pin in architecture.
+Warning 13: fle[0].cin[0] unconnected pin in architecture.
+Warning 14: fle[0].cout[0] unconnected pin in architecture.
+Warning 15: fle[1].cin[0] unconnected pin in architecture.
+Warning 16: fle[1].cout[0] unconnected pin in architecture.
+Warning 17: fle[2].cin[0] unconnected pin in architecture.
+Warning 18: fle[2].cout[0] unconnected pin in architecture.
+Warning 19: fle[3].cin[0] unconnected pin in architecture.
+Warning 20: fle[3].cout[0] unconnected pin in architecture.
+Warning 21: fle[4].cin[0] unconnected pin in architecture.
+Warning 22: fle[4].cout[0] unconnected pin in architecture.
+Warning 23: fle[5].cin[0] unconnected pin in architecture.
+Warning 24: fle[5].cout[0] unconnected pin in architecture.
+Warning 25: fle[6].cin[0] unconnected pin in architecture.
+Warning 26: fle[6].cout[0] unconnected pin in architecture.
+Warning 27: fle[7].cin[0] unconnected pin in architecture.
+Warning 28: fle[7].cout[0] unconnected pin in architecture.
+Warning 29: fabric[0].cin[0] unconnected pin in architecture.
+Warning 30: fabric[0].cout[0] unconnected pin in architecture.
+Warning 31: fabric[0].cin[0] unconnected pin in architecture.
+Warning 32: fabric[0].cout[0] unconnected pin in architecture.
+Warning 33: fabric[0].cin[0] unconnected pin in architecture.
+Warning 34: fabric[0].cout[0] unconnected pin in architecture.
+Warning 35: fabric[0].cin[0] unconnected pin in architecture.
+Warning 36: fabric[0].cout[0] unconnected pin in architecture.
+Warning 37: fabric[0].cin[0] unconnected pin in architecture.
+Warning 38: fabric[0].cout[0] unconnected pin in architecture.
+Warning 39: fabric[0].cin[0] unconnected pin in architecture.
+Warning 40: fabric[0].cout[0] unconnected pin in architecture.
+Warning 41: fabric[0].cin[0] unconnected pin in architecture.
+Warning 42: fabric[0].cout[0] unconnected pin in architecture.
+Warning 43: fabric[0].cin[0] unconnected pin in architecture.
+Warning 44: fabric[0].cout[0] unconnected pin in architecture.
+Warning 45: [LINE 642] false logically-equivalent pin clb[0].I0[1].
+Warning 46: [LINE 648] false logically-equivalent pin clb[0].I1[1].
+Warning 47: [LINE 654] false logically-equivalent pin clb[0].I2[1].
+Warning 48: [LINE 660] false logically-equivalent pin clb[0].I3[1].
+Warning 49: [LINE 666] false logically-equivalent pin clb[0].I4[1].
+Warning 50: [LINE 672] false logically-equivalent pin clb[0].I5[1].
+Warning 51: [LINE 678] false logically-equivalent pin clb[0].I6[1].
+Warning 52: [LINE 684] false logically-equivalent pin clb[0].I7[1].
+# Building complex block graph took 0.01 seconds (max_rss 9.5 MiB, delta_rss +0.7 MiB)
+# Load circuit
+# Load circuit took 0.00 seconds (max_rss 9.9 MiB, delta_rss +0.4 MiB)
+# Clean circuit
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 0
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 0
+Swept block(s)      : 0
+Constant Pins Marked: 0
+# Clean circuit took 0.00 seconds (max_rss 9.9 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.00 seconds (max_rss 9.9 MiB, delta_rss +0.0 MiB)
+# Verify circuit
+# Verify circuit took 0.00 seconds (max_rss 9.9 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 4
+    .input :       2
+    .output:       1
+    4-LUT  :       1
+  Nets  : 3
+    Avg Fanout:     1.0
+    Max Fanout:     1.0
+    Min Fanout:     1.0
+  Netlist Clocks: 0
+# Build Timing Graph
+  Timing Graph Nodes: 6
+  Timing Graph Edges: 5
+  Timing Graph Levels: 4
+# Build Timing Graph took 0.00 seconds (max_rss 9.9 MiB, delta_rss +0.0 MiB)
+Netlist contains 0 clocks
+# Load Timing Constraints
+
+SDC file 'top.sdc' not found
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on a virtual external clock 'virtual_io_clock'
+   * optimize virtual clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'virtual_io_clock' (Virtual Clock)
+
+# Load Timing Constraints took 0.00 seconds (max_rss 9.9 MiB, delta_rss +0.0 MiB)
+Timing analysis: ON
+Circuit netlist file: top.net
+Circuit placement file: top.place
+Circuit routing file: top.route
+Circuit SDC file: top.sdc
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+NetlistOpts.abosrb_buffer_luts            : false
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: PATH_TIMING_DRIVEN_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 60
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 1.000000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 60
+RouterOpts.trim_empty_chan: false
+RouterOpts.trim_obs_chan: false
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+
+RoutingArch.directionality: UNI_DIRECTIONAL
+RoutingArch.switch_block_type: WILTON
+RoutingArch.Fs: 3
+
+# Packing
+Warning 53: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 54: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 55: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 56: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Begin packing 'top.blif'.
+
+After removing unused inputs...
+	total blocks: 4, total nets: 3, total inputs: 2, total outputs: 1
+Begin prepacking.
+Finish prepacking.
+Using inter-cluster delay: 1.33777e-09
+Packing with pin utilization targets: io_top:1,1 io_right:1,1 io_bottom:1,1 io_left:1,1 clb:0.8,1
+Packing with high fanout thresholds: io_top:128 io_right:128 io_bottom:128 io_left:128 clb:32
+Warning 57: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 58: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 59: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 60: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Not enough resources expand FPGA size to (14 x 14)
+Complex block 0: 'c' (clb) .
+Complex block 1: 'out:c' (io) .
+Complex block 2: 'a' (io) .
+Complex block 3: 'b' (io) .
+
+Pb types usage...
+  inpad        : 2
+  outpad       : 1
+  fle          : 1
+  clb          : 1
+  lut3inter    : 1
+  ble3         : 1
+  io           : 3
+  lut3         : 1
+  lut          : 1
+
+
+Logic Element (fle) detailed count:
+  Total number of Logic Elements used : 1
+  LEs used for logic and registers    : 0
+  LEs used for logic only             : 1
+  LEs used for registers only         : 0
+
+	EMPTY: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
+	io: # blocks: 3, average # input + clock pins used: 0.333333, average # output pins used: 0.666667
+	clb: # blocks: 1, average # input + clock pins used: 2, average # output pins used: 1
+Absorbed logical nets 0 out of 3 nets, 3 nets not absorbed.
+Warning 61: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 62: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 63: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 64: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+FPGA sized to 14 x 14 (12x12)
+Device Utilization: 0.02 (target 1.00)
+	Block Utilization: 0.02 Type: io
+	Block Utilization: 0.01 Type: clb
+
+
+Netlist conversion complete.
+
+# Packing took 0.03 seconds (max_rss 10.7 MiB, delta_rss +0.7 MiB)
+# Load Packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'top.net'.
+Detected 0 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0.02 seconds).
+Warning 65: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load Packing took 0.01 seconds (max_rss 10.7 MiB, delta_rss +0.1 MiB)
+Warning 66: Netlist contains 0 global net to non-global architecture pin connections
+
+Netlist num_nets: 3
+Netlist num_blocks: 4
+Netlist EMPTY blocks: 0.
+Netlist io blocks: 3.
+Netlist clb blocks: 1.
+Netlist inputs pins: 2
+Netlist output pins: 1
+
+# Create Device
+## Build Device Grid
+Warning 67: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 68: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 69: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 70: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+FPGA sized to 14 x 14: 196 grid tiles (12x12)
+
+Resource usage...
+	Netlist
+		3	blocks of type: io
+	Architecture
+		12	blocks of type: io_top
+		12	blocks of type: io_right
+		108	blocks of type: io_bottom
+		12	blocks of type: io_left
+	Netlist
+		1	blocks of type: clb
+	Architecture
+		144	blocks of type: clb
+
+Device Utilization: 0.02 (target 1.00)
+	Physical Tile io_top:
+	Block Utilization: 0.25 Logical Block: io
+	Physical Tile io_right:
+	Block Utilization: 0.25 Logical Block: io
+	Physical Tile io_bottom:
+	Block Utilization: 0.03 Logical Block: io
+	Physical Tile io_left:
+	Block Utilization: 0.25 Logical Block: io
+	Physical Tile clb:
+	Block Utilization: 0.01 Logical Block: clb
+
+## Build Device Grid took 0.00 seconds (max_rss 10.8 MiB, delta_rss +0.0 MiB)
+## Build tileable routing resource graph
+X-direction routing channel width is 60
+Y-direction routing channel width is 60
+Warning 71: in check_rr_node: RR node: 500 type: OPIN location: (1,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 72: in check_rr_node: RR node: 501 type: OPIN location: (1,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 73: in check_rr_node: RR node: 502 type: OPIN location: (1,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 74: in check_rr_node: RR node: 604 type: OPIN location: (2,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 75: in check_rr_node: RR node: 605 type: OPIN location: (2,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 76: in check_rr_node: RR node: 606 type: OPIN location: (2,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 77: in check_rr_node: RR node: 708 type: OPIN location: (3,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 78: in check_rr_node: RR node: 709 type: OPIN location: (3,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 79: in check_rr_node: RR node: 710 type: OPIN location: (3,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 80: in check_rr_node: RR node: 812 type: OPIN location: (4,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 81: in check_rr_node: RR node: 813 type: OPIN location: (4,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 82: in check_rr_node: RR node: 814 type: OPIN location: (4,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 83: in check_rr_node: RR node: 916 type: OPIN location: (5,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 84: in check_rr_node: RR node: 917 type: OPIN location: (5,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 85: in check_rr_node: RR node: 918 type: OPIN location: (5,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 86: in check_rr_node: RR node: 1020 type: OPIN location: (6,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 87: in check_rr_node: RR node: 1021 type: OPIN location: (6,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 88: in check_rr_node: RR node: 1022 type: OPIN location: (6,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 89: in check_rr_node: RR node: 1124 type: OPIN location: (7,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 90: in check_rr_node: RR node: 1125 type: OPIN location: (7,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 91: in check_rr_node: RR node: 1126 type: OPIN location: (7,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 92: in check_rr_node: RR node: 1228 type: OPIN location: (8,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 93: in check_rr_node: RR node: 1229 type: OPIN location: (8,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 94: in check_rr_node: RR node: 1230 type: OPIN location: (8,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 95: in check_rr_node: RR node: 1332 type: OPIN location: (9,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 96: in check_rr_node: RR node: 1333 type: OPIN location: (9,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 97: in check_rr_node: RR node: 1334 type: OPIN location: (9,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 98: in check_rr_node: RR node: 1436 type: OPIN location: (10,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 99: in check_rr_node: RR node: 1437 type: OPIN location: (10,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 100: in check_rr_node: RR node: 1438 type: OPIN location: (10,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 101: in check_rr_node: RR node: 1540 type: OPIN location: (11,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 102: in check_rr_node: RR node: 1541 type: OPIN location: (11,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 103: in check_rr_node: RR node: 1542 type: OPIN location: (11,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 104: in check_rr_node: RR node: 1644 type: OPIN location: (12,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 105: in check_rr_node: RR node: 1645 type: OPIN location: (12,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 106: in check_rr_node: RR node: 1646 type: OPIN location: (12,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 107: in check_rr_graph: fringe node 15912 CHANX at (1,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build tileable routing resource graph took 0.19 seconds (max_rss 20.1 MiB, delta_rss +9.3 MiB)
+  RR Graph Nodes: 23404
+  RR Graph Edges: 121880
+# Create Device took 0.19 seconds (max_rss 20.1 MiB, delta_rss +9.3 MiB)
+
+# Placement
+## Computing placement delta delay look-up
+### Build routing resource graph
+Warning 108: in check_rr_node: RR node: 184 type: OPIN location: (1,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 109: in check_rr_node: RR node: 185 type: OPIN location: (1,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 110: in check_rr_node: RR node: 186 type: OPIN location: (1,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 111: in check_rr_node: RR node: 1472 type: OPIN location: (2,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 112: in check_rr_node: RR node: 1473 type: OPIN location: (2,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 113: in check_rr_node: RR node: 1474 type: OPIN location: (2,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 114: in check_rr_node: RR node: 2760 type: OPIN location: (3,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 115: in check_rr_node: RR node: 2761 type: OPIN location: (3,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 116: in check_rr_node: RR node: 2762 type: OPIN location: (3,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 117: in check_rr_node: RR node: 4048 type: OPIN location: (4,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 118: in check_rr_node: RR node: 4049 type: OPIN location: (4,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 119: in check_rr_node: RR node: 4050 type: OPIN location: (4,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 120: in check_rr_node: RR node: 5336 type: OPIN location: (5,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 121: in check_rr_node: RR node: 5337 type: OPIN location: (5,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 122: in check_rr_node: RR node: 5338 type: OPIN location: (5,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 123: in check_rr_node: RR node: 6624 type: OPIN location: (6,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 124: in check_rr_node: RR node: 6625 type: OPIN location: (6,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 125: in check_rr_node: RR node: 6626 type: OPIN location: (6,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 126: in check_rr_node: RR node: 7912 type: OPIN location: (7,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 127: in check_rr_node: RR node: 7913 type: OPIN location: (7,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 128: in check_rr_node: RR node: 7914 type: OPIN location: (7,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 129: in check_rr_node: RR node: 9200 type: OPIN location: (8,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 130: in check_rr_node: RR node: 9201 type: OPIN location: (8,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 131: in check_rr_node: RR node: 9202 type: OPIN location: (8,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 132: in check_rr_node: RR node: 10488 type: OPIN location: (9,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 133: in check_rr_node: RR node: 10489 type: OPIN location: (9,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 134: in check_rr_node: RR node: 10490 type: OPIN location: (9,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 135: in check_rr_node: RR node: 11776 type: OPIN location: (10,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 136: in check_rr_node: RR node: 11777 type: OPIN location: (10,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 137: in check_rr_node: RR node: 11778 type: OPIN location: (10,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 138: in check_rr_node: RR node: 13064 type: OPIN location: (11,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 139: in check_rr_node: RR node: 13065 type: OPIN location: (11,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 140: in check_rr_node: RR node: 13066 type: OPIN location: (11,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 141: in check_rr_node: RR node: 14352 type: OPIN location: (12,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 142: in check_rr_node: RR node: 14353 type: OPIN location: (12,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 143: in check_rr_node: RR node: 14354 type: OPIN location: (12,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+### Build routing resource graph took 0.08 seconds (max_rss 20.8 MiB, delta_rss +0.5 MiB)
+  RR Graph Nodes: 23120
+  RR Graph Edges: 105560
+### Computing delta delays
+### Computing delta delays took 0.03 seconds (max_rss 20.8 MiB, delta_rss +0.0 MiB)
+## Computing placement delta delay look-up took 0.11 seconds (max_rss 20.8 MiB, delta_rss +0.5 MiB)
+
+There are 3 point to point connections in this circuit.
+
+
+BB estimate of min-dist (placement) wire length: 44
+
+Completed placement consistency check successfully.
+Initial placement cost: 1 bb_cost: 0.733333 td_cost: 1.01245e-09
+Initial placement estimated Critical Path Delay (CPD): 1.04131 ns
+Initial placement estimated setup Total Negative Slack (sTNS): -1.04131 ns
+Initial placement estimated setup Worst Negative Slack (sWNS): -1.04131 ns
+
+Initial placement estimated setup slack histogram:
+[   -1e-09:   -1e-09) 1 (100.0%) |**************************************************
+[   -1e-09:   -1e-09) 0 ( 0.0%) |
+[   -1e-09:   -1e-09) 0 ( 0.0%) |
+[   -1e-09:   -1e-09) 0 ( 0.0%) |
+[   -1e-09:   -1e-09) 0 ( 0.0%) |
+[   -1e-09:   -1e-09) 0 ( 0.0%) |
+[   -1e-09:   -1e-09) 0 ( 0.0%) |
+[   -1e-09:   -1e-09) 0 ( 0.0%) |
+[   -1e-09:   -1e-09) 0 ( 0.0%) |
+[   -1e-09:   -1e-09) 0 ( 0.0%) |
+Placement contains 0 placement macros involving 0 blocks (average macro size -nan)
+
+------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
+      T Av Cost Av BB Cost Av TD Cost     CPD       sTNS     sWNS Ac Rate Std Dev  R lim Crit Exp Tot Moves  Alpha
+------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
+2.9e+00   1.006       0.71 9.5345e-10   0.983     -0.983   -0.983   1.000  0.0343   13.0     1.00          6  0.500
+1.5e+00   0.888       0.60 8.5621e-10   0.983     -0.983   -0.983   1.000  0.0824   13.0     1.00         12  0.500
+7.3e-01   0.970       0.49 8.8526e-10   0.925     -0.925   -0.925   1.000  0.0496   13.0     1.00         18  0.500
+3.6e-01   1.062       0.58 9.1341e-10   0.925     -0.925   -0.925   1.000  0.0624   13.0     1.00         24  0.500
+1.8e-01   0.959       0.53 9.5691e-10   0.925     -0.925   -0.925   0.667  0.0335   13.0     1.00         30  0.950
+1.7e-01   1.029       0.53 8.875e-10    1.041      -1.04   -1.041   0.333  0.0571   13.0     1.00         36  0.950
+1.6e-01   0.956       0.51 7.1954e-10   0.983     -0.983   -0.983   1.000  0.0762   11.6     1.81         42  0.500
+8.2e-02   1.130       0.55 8.0799e-10   0.867     -0.867   -0.867   0.333  0.1256   13.0     1.00         48  0.950
+7.8e-02   1.115       0.55 8.3217e-10   0.867     -0.867   -0.867   0.833  0.0463   11.6     1.81         54  0.900
+7.0e-02   0.666       0.33 7.1621e-10   0.925     -0.925   -0.925   0.833  0.0770   13.0     1.00         60  0.900
+6.3e-02   1.142       0.35 5.9431e-10   0.751     -0.751   -0.751   0.333  0.1179   13.0     1.00         66  0.950
+6.0e-02   0.906       0.31 6.8141e-10   0.751     -0.751   -0.751   0.500  0.0251   11.6     1.81         72  0.950
+5.7e-02   1.093       0.36 6.8141e-10   0.751     -0.751   -0.751   0.500  0.0424   12.3     1.40         78  0.950
+5.4e-02   1.000       0.38 6.8141e-10   0.751     -0.751   -0.751   0.000  0.0000   13.0     1.00         84  0.950
+5.1e-02   0.891       0.30 6.8141e-10   0.751     -0.751   -0.751   0.333  0.0000    7.3     4.34         90  0.950
+4.9e-02   0.944       0.27 6.6208e-10   0.751     -0.751   -0.751   0.500  0.0478    6.5     4.79         96  0.950
+4.6e-02   0.936       0.21 6.0653e-10   0.809     -0.809   -0.809   0.333  0.0904    6.9     4.56        102  0.950
+4.4e-02   1.054       0.21 5.2422e-10   0.809     -0.809   -0.809   0.333  0.0116    6.2     4.99        108  0.950
+4.2e-02   0.859       0.17 4.3375e-10   0.809     -0.809   -0.809   0.167  0.0000    5.5     5.37        114  0.950
+4.0e-02   1.000       0.17 5.0741e-10   0.693     -0.693   -0.693   0.167  0.0000    4.0     6.25        120  0.950
+3.8e-02   0.869       0.11 5.9441e-10   0.693     -0.693   -0.693   0.333  0.0559    2.9     6.89        126  0.950
+3.6e-02   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    2.6     7.07        132  0.950
+3.4e-02   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.5     7.74        138  0.950
+3.2e-02   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        144  0.800
+2.6e-02   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        150  0.800
+2.1e-02   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        156  0.800
+1.7e-02   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        162  0.800
+1.3e-02   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        168  0.800
+1.1e-02   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        174  0.800
+8.5e-03   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        180  0.800
+6.8e-03   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        186  0.800
+5.4e-03   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        192  0.800
+4.4e-03   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        198  0.800
+3.5e-03   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        204  0.800
+2.8e-03   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        210  0.800
+2.2e-03   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        216  0.800
+1.8e-03   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        222  0.800
+1.8e-03   1.000       0.10 5.6541e-10   0.693     -0.693   -0.693   0.000  0.0000    1.0     8.00        228  0.000
+
+BB estimate of min-dist (placement) wire length: 6
+
+Completed placement consistency check successfully.
+
+Swaps called: 232
+
+Placement estimated critical path delay: 0.69331 ns
+Placement estimated setup Total Negative Slack (sTNS): -0.69331 ns
+Placement estimated setup Worst Negative Slack (sWNS): -0.69331 ns
+
+Placement estimated setup slack histogram:
+[ -6.9e-10: -6.9e-10) 1 (100.0%) |**************************************************
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+
+Placement cost: 1, bb_cost: 0.1, td_cost: 5.6541e-10, 
+
+Placement resource usage:
+  io  implemented as io_bottom: 3
+  clb implemented as clb      : 1
+
+Placement number of temperatures: 38
+Placement total # of swap attempts: 232
+	Swaps accepted:  73 (31.5 %)
+	Swaps rejected: 159 (68.5 %)
+	Swaps aborted :   0 ( 0.0 %)
+
+Aborted Move Reasons:
+# Placement took 0.11 seconds (max_rss 21.2 MiB, delta_rss +1.1 MiB)
+
+# Routing
+## Build tileable routing resource graph
+X-direction routing channel width is 60
+Y-direction routing channel width is 60
+Warning 144: in check_rr_node: RR node: 500 type: OPIN location: (1,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 145: in check_rr_node: RR node: 501 type: OPIN location: (1,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 146: in check_rr_node: RR node: 502 type: OPIN location: (1,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 147: in check_rr_node: RR node: 604 type: OPIN location: (2,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 148: in check_rr_node: RR node: 605 type: OPIN location: (2,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 149: in check_rr_node: RR node: 606 type: OPIN location: (2,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 150: in check_rr_node: RR node: 708 type: OPIN location: (3,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 151: in check_rr_node: RR node: 709 type: OPIN location: (3,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 152: in check_rr_node: RR node: 710 type: OPIN location: (3,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 153: in check_rr_node: RR node: 812 type: OPIN location: (4,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 154: in check_rr_node: RR node: 813 type: OPIN location: (4,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 155: in check_rr_node: RR node: 814 type: OPIN location: (4,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 156: in check_rr_node: RR node: 916 type: OPIN location: (5,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 157: in check_rr_node: RR node: 917 type: OPIN location: (5,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 158: in check_rr_node: RR node: 918 type: OPIN location: (5,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 159: in check_rr_node: RR node: 1020 type: OPIN location: (6,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 160: in check_rr_node: RR node: 1021 type: OPIN location: (6,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 161: in check_rr_node: RR node: 1022 type: OPIN location: (6,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 162: in check_rr_node: RR node: 1124 type: OPIN location: (7,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 163: in check_rr_node: RR node: 1125 type: OPIN location: (7,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 164: in check_rr_node: RR node: 1126 type: OPIN location: (7,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 165: in check_rr_node: RR node: 1228 type: OPIN location: (8,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 166: in check_rr_node: RR node: 1229 type: OPIN location: (8,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 167: in check_rr_node: RR node: 1230 type: OPIN location: (8,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 168: in check_rr_node: RR node: 1332 type: OPIN location: (9,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 169: in check_rr_node: RR node: 1333 type: OPIN location: (9,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 170: in check_rr_node: RR node: 1334 type: OPIN location: (9,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 171: in check_rr_node: RR node: 1436 type: OPIN location: (10,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 172: in check_rr_node: RR node: 1437 type: OPIN location: (10,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 173: in check_rr_node: RR node: 1438 type: OPIN location: (10,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 174: in check_rr_node: RR node: 1540 type: OPIN location: (11,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 175: in check_rr_node: RR node: 1541 type: OPIN location: (11,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 176: in check_rr_node: RR node: 1542 type: OPIN location: (11,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 177: in check_rr_node: RR node: 1644 type: OPIN location: (12,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 178: in check_rr_node: RR node: 1645 type: OPIN location: (12,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 179: in check_rr_node: RR node: 1646 type: OPIN location: (12,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 180: in check_rr_graph: fringe node 15912 CHANX at (1,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build tileable routing resource graph took 0.14 seconds (max_rss 21.5 MiB, delta_rss +0.3 MiB)
+  RR Graph Nodes: 23404
+  RR Graph Edges: 121880
+Confirming router algorithm: TIMING_DRIVEN.
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.0     0.0    0     124       3       3       0 ( 0.000%)      10 ( 0.1%)    0.693    -0.6933     -0.693      0.000      0.000      N/A
+Restoring best routing
+Critical path: 0.69331 ns
+Successfully routed after 1 routing iterations.
+Router Stats: total_nets_routed: 3 total_connections_routed: 3 total_heap_pushes: 124 total_heap_pops: 52
+# Routing took 0.15 seconds (max_rss 22.3 MiB, delta_rss +1.1 MiB)
+
+Checking to ensure routing is legal...
+Completed routing consistency check successfully.
+
+Serial number (magic cookie) for the routing is: -11606
+Circuit successfully routed with a channel width factor of 60.
+
+Average number of bends per net: 1.00000  Maximum # of bends: 1
+
+Number of global nets: 0
+Number of routed nets (nonglobal): 3
+Wire length results (in units of 1 clb segments)...
+	Total wirelength: 10, average net length: 3.33333
+	Maximum net length: 5
+
+Wire length results in terms of physical segments...
+	Total wiring segments used: 6, average wire segments per net: 2.00000
+	Maximum segments used by a net: 2
+	Total local nets with reserved CLB opins: 0
+
+Routing channel utilization histogram:
+[        1:      inf)   0 ( 0.0%) |
+[      0.9:        1)   0 ( 0.0%) |
+[      0.8:      0.9)   0 ( 0.0%) |
+[      0.7:      0.8)   0 ( 0.0%) |
+[      0.5:      0.6)   0 ( 0.0%) |
+[      0.4:      0.5)   0 ( 0.0%) |
+[      0.3:      0.4)   0 ( 0.0%) |
+[      0.2:      0.3)   0 ( 0.0%) |
+[      0.1:      0.2)   0 ( 0.0%) |
+[        0:      0.1) 338 (100.0%) |***********************************************
+Maximum routing channel utilization:      0.05 at (7,0)
+
+X - Directed channels:   j max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0       3   0.286       60
+                         1       0   0.000       60
+                         2       0   0.000       60
+                         3       0   0.000       60
+                         4       0   0.000       60
+                         5       0   0.000       60
+                         6       0   0.000       60
+                         7       0   0.000       60
+                         8       0   0.000       60
+                         9       0   0.000       60
+                        10       0   0.000       60
+                        11       0   0.000       60
+                        12       0   0.000       60
+Y - Directed channels:   i max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0       0   0.000       60
+                         1       0   0.000       60
+                         2       0   0.000       60
+                         3       0   0.000       60
+                         4       0   0.000       60
+                         5       0   0.000       60
+                         6       0   0.000       60
+                         7       3   0.429       60
+                         8       0   0.000       60
+                         9       0   0.000       60
+                        10       0   0.000       60
+                        11       0   0.000       60
+                        12       0   0.000       60
+
+Total tracks in x-direction: 780, in y-direction: 780
+
+Logic area (in minimum width transistor areas, excludes I/Os and empty grid tiles)...
+	Total logic block area (Warning, need to add pitch of routing to blocks with height > 3): 7.76074e+06
+	Total used logic block area: 53894
+
+Routing area (in minimum width transistor areas)...
+	Total routing area: 826325., per logic tile: 4215.94
+
+Segment usage by type (index): type utilization
+                               ---- -----------
+                                  0      0.0016
+                                  1     0.00154
+                                  2    0.000214
+
+Segment usage by length: length utilization
+                         ------ -----------
+                              1      0.0016
+                              2     0.00154
+                              4    0.000214
+
+
+Hold Worst Negative Slack (hWNS): 0 ns
+Hold Total Negative Slack (hTNS): 0 ns
+
+Hold slack histogram:
+[  6.1e-10:  6.1e-10) 1 (100.0%) |**************************************************
+[  6.1e-10:  6.1e-10) 0 ( 0.0%) |
+[  6.1e-10:  6.1e-10) 0 ( 0.0%) |
+[  6.1e-10:  6.1e-10) 0 ( 0.0%) |
+[  6.1e-10:  6.1e-10) 0 ( 0.0%) |
+[  6.1e-10:  6.1e-10) 0 ( 0.0%) |
+[  6.1e-10:  6.1e-10) 0 ( 0.0%) |
+[  6.1e-10:  6.1e-10) 0 ( 0.0%) |
+[  6.1e-10:  6.1e-10) 0 ( 0.0%) |
+[  6.1e-10:  6.1e-10) 0 ( 0.0%) |
+
+Final critical path: 0.69331 ns, Fmax: 1442.36 MHz
+Setup Worst Negative Slack (sWNS): -0.69331 ns
+Setup Total Negative Slack (sTNS): -0.69331 ns
+
+Setup slack histogram:
+[ -6.9e-10: -6.9e-10) 1 (100.0%) |**************************************************
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+[ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
+
+Timing analysis took 0.000266012 seconds (0.000240965 STA, 2.5047e-05 slack) (43 full updates: 41 setup, 0 hold, 2 combined).
+VPR suceeded
+The entire flow of VPR took 0.53 seconds (max_rss 22.5 MiB)
+
+Command line to execute: read_openfpga_arch -f /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_SOFA_CHD_PNR/FPGA1212_SOFA_CHD_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/openfpga_arch.xml
+
+Confirm selected options when call command 'read_openfpga_arch':
+--file, -f: /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_SOFA_CHD_PNR/FPGA1212_SOFA_CHD_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/openfpga_arch.xml
+Reading XML architecture '/research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_SOFA_CHD_PNR/FPGA1212_SOFA_CHD_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/openfpga_arch.xml'...
+Read OpenFPGA architecture
+Warning 181: Automatically set circuit model 'frac_lut4' to be default in its type.
+Warning 182: Automatically set circuit model 'sky130_fd_sc_hd__sdfrtp_1' to be default in its type.
+Warning 183: Automatically set circuit model 'sky130_fd_sc_hd__mux2_1_wrapper' to be default in its type.
+Warning 184: Automatically set circuit model 'sky130_fd_sc_hd__dfrtp_1' to be default in its type.
+Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'mux_2level' port 'sram')
+Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'mux_2level_tapbuf' port 'sram')
+Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'mux_1level' port 'sram')
+Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'mux_1level_tapbuf' port 'sram')
+Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'frac_lut4' port 'sram')
+Read OpenFPGA architecture took 0.00 seconds (max_rss 22.8 MiB, delta_rss +0.3 MiB)
+Check circuit library
+Checking circuit library passed.
+Check circuit library took 0.00 seconds (max_rss 22.8 MiB, delta_rss +0.0 MiB)
+Found 0 errors when checking configurable memory circuit models!
+Found 0 errors when checking tile annotation!
+
+Command line to execute: read_openfpga_simulation_setting -f /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml
+
+Confirm selected options when call command 'read_openfpga_simulation_setting':
+--file, -f: /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml
+Reading XML simulation setting '/research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml'...
+Read OpenFPGA simulation settings
+Read OpenFPGA simulation settings took 0.00 seconds (max_rss 22.8 MiB, delta_rss +0.1 MiB)
+
+Command line to execute: link_openfpga_arch --activity_file top_ace_out.act --sort_gsb_chan_node_in_edges
+
+Confirm selected options when call command 'link_openfpga_arch':
+--activity_file: top_ace_out.act
+--sort_gsb_chan_node_in_edges: on
+--verbose: off
+Link OpenFPGA architecture to VPR architecture
+
+Building annotation for physical modes in pb_type...Done
+Check physical mode annotation for pb_types passed.
+
+Building annotation about physical types for pb_type interconnection...Done
+
+Building annotation between operating and physical pb_types...Done
+Check physical pb_type annotation for pb_types passed.
+
+Building annotation between physical pb_types and circuit models...Done
+Check physical pb_type annotation for circuit model passed.
+
+Building annotation between physical pb_types and mode selection bits...Done
+Check pb_type annotation for mode selection bits passed.
+Assigning unique indices for primitive pb_graph nodes...Done
+Binding operating pb_graph nodes/pins to physical pb_graph nodes/pins...Done
+Check pb_graph annotation for physical nodes and pins passed.
+Binded 4 routing resource graph switches to circuit models
+Binded 3 routing segments to circuit models
+Binded 3 direct connections to circuit models
+Annotating rr_node with routed nets...Done with 12 nodes mapping
+Annotating previous nodes for rr_node...Done with 15 nodes mapping
+# Build General Switch Block(GSB) annotation on top of routing resource graph
+[0%] Backannotated GSB[0][0]
+[1%] Backannotated GSB[0][1]
+[1%] Backannotated GSB[0][2]
+[2%] Backannotated GSB[0][3]
+[2%] Backannotated GSB[0][4]
+[3%] Backannotated GSB[0][5]
+[4%] Backannotated GSB[0][6]
+[4%] Backannotated GSB[0][7]
+[5%] Backannotated GSB[0][8]
+[5%] Backannotated GSB[0][9]
+[6%] Backannotated GSB[0][10]
+[7%] Backannotated GSB[0][11]
+[7%] Backannotated GSB[0][12]
+[8%] Backannotated GSB[1][0]
+[8%] Backannotated GSB[1][1]
+[9%] Backannotated GSB[1][2]
+[10%] Backannotated GSB[1][3]
+[10%] Backannotated GSB[1][4]
+[11%] Backannotated GSB[1][5]
+[11%] Backannotated GSB[1][6]
+[12%] Backannotated GSB[1][7]
+[13%] Backannotated GSB[1][8]
+[13%] Backannotated GSB[1][9]
+[14%] Backannotated GSB[1][10]
+[14%] Backannotated GSB[1][11]
+[15%] Backannotated GSB[1][12]
+[15%] Backannotated GSB[2][0]
+[16%] Backannotated GSB[2][1]
+[17%] Backannotated GSB[2][2]
+[17%] Backannotated GSB[2][3]
+[18%] Backannotated GSB[2][4]
+[18%] Backannotated GSB[2][5]
+[19%] Backannotated GSB[2][6]
+[20%] Backannotated GSB[2][7]
+[20%] Backannotated GSB[2][8]
+[21%] Backannotated GSB[2][9]
+[21%] Backannotated GSB[2][10]
+[22%] Backannotated GSB[2][11]
+[23%] Backannotated GSB[2][12]
+[23%] Backannotated GSB[3][0]
+[24%] Backannotated GSB[3][1]
+[24%] Backannotated GSB[3][2]
+[25%] Backannotated GSB[3][3]
+[26%] Backannotated GSB[3][4]
+[26%] Backannotated GSB[3][5]
+[27%] Backannotated GSB[3][6]
+[27%] Backannotated GSB[3][7]
+[28%] Backannotated GSB[3][8]
+[28%] Backannotated GSB[3][9]
+[29%] Backannotated GSB[3][10]
+[30%] Backannotated GSB[3][11]
+[30%] Backannotated GSB[3][12]
+[31%] Backannotated GSB[4][0]
+[31%] Backannotated GSB[4][1]
+[32%] Backannotated GSB[4][2]
+[33%] Backannotated GSB[4][3]
+[33%] Backannotated GSB[4][4]
+[34%] Backannotated GSB[4][5]
+[34%] Backannotated GSB[4][6]
+[35%] Backannotated GSB[4][7]
+[36%] Backannotated GSB[4][8]
+[36%] Backannotated GSB[4][9]
+[37%] Backannotated GSB[4][10]
+[37%] Backannotated GSB[4][11]
+[38%] Backannotated GSB[4][12]
+[39%] Backannotated GSB[5][0]
+[39%] Backannotated GSB[5][1]
+[40%] Backannotated GSB[5][2]
+[40%] Backannotated GSB[5][3]
+[41%] Backannotated GSB[5][4]
+[42%] Backannotated GSB[5][5]
+[42%] Backannotated GSB[5][6]
+[43%] Backannotated GSB[5][7]
+[43%] Backannotated GSB[5][8]
+[44%] Backannotated GSB[5][9]
+[44%] Backannotated GSB[5][10]
+[45%] Backannotated GSB[5][11]
+[46%] Backannotated GSB[5][12]
+[46%] Backannotated GSB[6][0]
+[47%] Backannotated GSB[6][1]
+[47%] Backannotated GSB[6][2]
+[48%] Backannotated GSB[6][3]
+[49%] Backannotated GSB[6][4]
+[49%] Backannotated GSB[6][5]
+[50%] Backannotated GSB[6][6]
+[50%] Backannotated GSB[6][7]
+[51%] Backannotated GSB[6][8]
+[52%] Backannotated GSB[6][9]
+[52%] Backannotated GSB[6][10]
+[53%] Backannotated GSB[6][11]
+[53%] Backannotated GSB[6][12]
+[54%] Backannotated GSB[7][0]
+[55%] Backannotated GSB[7][1]
+[55%] Backannotated GSB[7][2]
+[56%] Backannotated GSB[7][3]
+[56%] Backannotated GSB[7][4]
+[57%] Backannotated GSB[7][5]
+[57%] Backannotated GSB[7][6]
+[58%] Backannotated GSB[7][7]
+[59%] Backannotated GSB[7][8]
+[59%] Backannotated GSB[7][9]
+[60%] Backannotated GSB[7][10]
+[60%] Backannotated GSB[7][11]
+[61%] Backannotated GSB[7][12]
+[62%] Backannotated GSB[8][0]
+[62%] Backannotated GSB[8][1]
+[63%] Backannotated GSB[8][2]
+[63%] Backannotated GSB[8][3]
+[64%] Backannotated GSB[8][4]
+[65%] Backannotated GSB[8][5]
+[65%] Backannotated GSB[8][6]
+[66%] Backannotated GSB[8][7]
+[66%] Backannotated GSB[8][8]
+[67%] Backannotated GSB[8][9]
+[68%] Backannotated GSB[8][10]
+[68%] Backannotated GSB[8][11]
+[69%] Backannotated GSB[8][12]
+[69%] Backannotated GSB[9][0]
+[70%] Backannotated GSB[9][1]
+[71%] Backannotated GSB[9][2]
+[71%] Backannotated GSB[9][3]
+[72%] Backannotated GSB[9][4]
+[72%] Backannotated GSB[9][5]
+[73%] Backannotated GSB[9][6]
+[73%] Backannotated GSB[9][7]
+[74%] Backannotated GSB[9][8]
+[75%] Backannotated GSB[9][9]
+[75%] Backannotated GSB[9][10]
+[76%] Backannotated GSB[9][11]
+[76%] Backannotated GSB[9][12]
+[77%] Backannotated GSB[10][0]
+[78%] Backannotated GSB[10][1]
+[78%] Backannotated GSB[10][2]
+[79%] Backannotated GSB[10][3]
+[79%] Backannotated GSB[10][4]
+[80%] Backannotated GSB[10][5]
+[81%] Backannotated GSB[10][6]
+[81%] Backannotated GSB[10][7]
+[82%] Backannotated GSB[10][8]
+[82%] Backannotated GSB[10][9]
+[83%] Backannotated GSB[10][10]
+[84%] Backannotated GSB[10][11]
+[84%] Backannotated GSB[10][12]
+[85%] Backannotated GSB[11][0]
+[85%] Backannotated GSB[11][1]
+[86%] Backannotated GSB[11][2]
+[86%] Backannotated GSB[11][3]
+[87%] Backannotated GSB[11][4]
+[88%] Backannotated GSB[11][5]
+[88%] Backannotated GSB[11][6]
+[89%] Backannotated GSB[11][7]
+[89%] Backannotated GSB[11][8]
+[90%] Backannotated GSB[11][9]
+[91%] Backannotated GSB[11][10]
+[91%] Backannotated GSB[11][11]
+[92%] Backannotated GSB[11][12]
+[92%] Backannotated GSB[12][0]
+[93%] Backannotated GSB[12][1]
+[94%] Backannotated GSB[12][2]
+[94%] Backannotated GSB[12][3]
+[95%] Backannotated GSB[12][4]
+[95%] Backannotated GSB[12][5]
+[96%] Backannotated GSB[12][6]
+[97%] Backannotated GSB[12][7]
+[97%] Backannotated GSB[12][8]
+[98%] Backannotated GSB[12][9]
+[98%] Backannotated GSB[12][10]
+[99%] Backannotated GSB[12][11]
+[100%] Backannotated GSB[12][12]
+Backannotated 169 General Switch Blocks (GSBs).
+# Build General Switch Block(GSB) annotation on top of routing resource graph took 0.00 seconds (max_rss 22.8 MiB, delta_rss +0.0 MiB)
+# Sort incoming edges for each routing track output node of General Switch Block(GSB)
+[0%] Sorted edges for GSB[0][0]
+[1%] Sorted edges for GSB[0][1]
+[1%] Sorted edges for GSB[0][2]
+[2%] Sorted edges for GSB[0][3]
+[2%] Sorted edges for GSB[0][4]
+[3%] Sorted edges for GSB[0][5]
+[4%] Sorted edges for GSB[0][6]
+[4%] Sorted edges for GSB[0][7]
+[5%] Sorted edges for GSB[0][8]
+[5%] Sorted edges for GSB[0][9]
+[6%] Sorted edges for GSB[0][10]
+[7%] Sorted edges for GSB[0][11]
+[7%] Sorted edges for GSB[0][12]
+[8%] Sorted edges for GSB[1][0]
+[8%] Sorted edges for GSB[1][1]
+[9%] Sorted edges for GSB[1][2]
+[10%] Sorted edges for GSB[1][3]
+[10%] Sorted edges for GSB[1][4]
+[11%] Sorted edges for GSB[1][5]
+[11%] Sorted edges for GSB[1][6]
+[12%] Sorted edges for GSB[1][7]
+[13%] Sorted edges for GSB[1][8]
+[13%] Sorted edges for GSB[1][9]
+[14%] Sorted edges for GSB[1][10]
+[14%] Sorted edges for GSB[1][11]
+[15%] Sorted edges for GSB[1][12]
+[15%] Sorted edges for GSB[2][0]
+[16%] Sorted edges for GSB[2][1]
+[17%] Sorted edges for GSB[2][2]
+[17%] Sorted edges for GSB[2][3]
+[18%] Sorted edges for GSB[2][4]
+[18%] Sorted edges for GSB[2][5]
+[19%] Sorted edges for GSB[2][6]
+[20%] Sorted edges for GSB[2][7]
+[20%] Sorted edges for GSB[2][8]
+[21%] Sorted edges for GSB[2][9]
+[21%] Sorted edges for GSB[2][10]
+[22%] Sorted edges for GSB[2][11]
+[23%] Sorted edges for GSB[2][12]
+[23%] Sorted edges for GSB[3][0]
+[24%] Sorted edges for GSB[3][1]
+[24%] Sorted edges for GSB[3][2]
+[25%] Sorted edges for GSB[3][3]
+[26%] Sorted edges for GSB[3][4]
+[26%] Sorted edges for GSB[3][5]
+[27%] Sorted edges for GSB[3][6]
+[27%] Sorted edges for GSB[3][7]
+[28%] Sorted edges for GSB[3][8]
+[28%] Sorted edges for GSB[3][9]
+[29%] Sorted edges for GSB[3][10]
+[30%] Sorted edges for GSB[3][11]
+[30%] Sorted edges for GSB[3][12]
+[31%] Sorted edges for GSB[4][0]
+[31%] Sorted edges for GSB[4][1]
+[32%] Sorted edges for GSB[4][2]
+[33%] Sorted edges for GSB[4][3]
+[33%] Sorted edges for GSB[4][4]
+[34%] Sorted edges for GSB[4][5]
+[34%] Sorted edges for GSB[4][6]
+[35%] Sorted edges for GSB[4][7]
+[36%] Sorted edges for GSB[4][8]
+[36%] Sorted edges for GSB[4][9]
+[37%] Sorted edges for GSB[4][10]
+[37%] Sorted edges for GSB[4][11]
+[38%] Sorted edges for GSB[4][12]
+[39%] Sorted edges for GSB[5][0]
+[39%] Sorted edges for GSB[5][1]
+[40%] Sorted edges for GSB[5][2]
+[40%] Sorted edges for GSB[5][3]
+[41%] Sorted edges for GSB[5][4]
+[42%] Sorted edges for GSB[5][5]
+[42%] Sorted edges for GSB[5][6]
+[43%] Sorted edges for GSB[5][7]
+[43%] Sorted edges for GSB[5][8]
+[44%] Sorted edges for GSB[5][9]
+[44%] Sorted edges for GSB[5][10]
+[45%] Sorted edges for GSB[5][11]
+[46%] Sorted edges for GSB[5][12]
+[46%] Sorted edges for GSB[6][0]
+[47%] Sorted edges for GSB[6][1]
+[47%] Sorted edges for GSB[6][2]
+[48%] Sorted edges for GSB[6][3]
+[49%] Sorted edges for GSB[6][4]
+[49%] Sorted edges for GSB[6][5]
+[50%] Sorted edges for GSB[6][6]
+[50%] Sorted edges for GSB[6][7]
+[51%] Sorted edges for GSB[6][8]
+[52%] Sorted edges for GSB[6][9]
+[52%] Sorted edges for GSB[6][10]
+[53%] Sorted edges for GSB[6][11]
+[53%] Sorted edges for GSB[6][12]
+[54%] Sorted edges for GSB[7][0]
+[55%] Sorted edges for GSB[7][1]
+[55%] Sorted edges for GSB[7][2]
+[56%] Sorted edges for GSB[7][3]
+[56%] Sorted edges for GSB[7][4]
+[57%] Sorted edges for GSB[7][5]
+[57%] Sorted edges for GSB[7][6]
+[58%] Sorted edges for GSB[7][7]
+[59%] Sorted edges for GSB[7][8]
+[59%] Sorted edges for GSB[7][9]
+[60%] Sorted edges for GSB[7][10]
+[60%] Sorted edges for GSB[7][11]
+[61%] Sorted edges for GSB[7][12]
+[62%] Sorted edges for GSB[8][0]
+[62%] Sorted edges for GSB[8][1]
+[63%] Sorted edges for GSB[8][2]
+[63%] Sorted edges for GSB[8][3]
+[64%] Sorted edges for GSB[8][4]
+[65%] Sorted edges for GSB[8][5]
+[65%] Sorted edges for GSB[8][6]
+[66%] Sorted edges for GSB[8][7]
+[66%] Sorted edges for GSB[8][8]
+[67%] Sorted edges for GSB[8][9]
+[68%] Sorted edges for GSB[8][10]
+[68%] Sorted edges for GSB[8][11]
+[69%] Sorted edges for GSB[8][12]
+[69%] Sorted edges for GSB[9][0]
+[70%] Sorted edges for GSB[9][1]
+[71%] Sorted edges for GSB[9][2]
+[71%] Sorted edges for GSB[9][3]
+[72%] Sorted edges for GSB[9][4]
+[72%] Sorted edges for GSB[9][5]
+[73%] Sorted edges for GSB[9][6]
+[73%] Sorted edges for GSB[9][7]
+[74%] Sorted edges for GSB[9][8]
+[75%] Sorted edges for GSB[9][9]
+[75%] Sorted edges for GSB[9][10]
+[76%] Sorted edges for GSB[9][11]
+[76%] Sorted edges for GSB[9][12]
+[77%] Sorted edges for GSB[10][0]
+[78%] Sorted edges for GSB[10][1]
+[78%] Sorted edges for GSB[10][2]
+[79%] Sorted edges for GSB[10][3]
+[79%] Sorted edges for GSB[10][4]
+[80%] Sorted edges for GSB[10][5]
+[81%] Sorted edges for GSB[10][6]
+[81%] Sorted edges for GSB[10][7]
+[82%] Sorted edges for GSB[10][8]
+[82%] Sorted edges for GSB[10][9]
+[83%] Sorted edges for GSB[10][10]
+[84%] Sorted edges for GSB[10][11]
+[84%] Sorted edges for GSB[10][12]
+[85%] Sorted edges for GSB[11][0]
+[85%] Sorted edges for GSB[11][1]
+[86%] Sorted edges for GSB[11][2]
+[86%] Sorted edges for GSB[11][3]
+[87%] Sorted edges for GSB[11][4]
+[88%] Sorted edges for GSB[11][5]
+[88%] Sorted edges for GSB[11][6]
+[89%] Sorted edges for GSB[11][7]
+[89%] Sorted edges for GSB[11][8]
+[90%] Sorted edges for GSB[11][9]
+[91%] Sorted edges for GSB[11][10]
+[91%] Sorted edges for GSB[11][11]
+[92%] Sorted edges for GSB[11][12]
+[92%] Sorted edges for GSB[12][0]
+[93%] Sorted edges for GSB[12][1]
+[94%] Sorted edges for GSB[12][2]
+[94%] Sorted edges for GSB[12][3]
+[95%] Sorted edges for GSB[12][4]
+[95%] Sorted edges for GSB[12][5]
+[96%] Sorted edges for GSB[12][6]
+[97%] Sorted edges for GSB[12][7]
+[97%] Sorted edges for GSB[12][8]
+[98%] Sorted edges for GSB[12][9]
+[98%] Sorted edges for GSB[12][10]
+[99%] Sorted edges for GSB[12][11]
+[100%] Sorted edges for GSB[12][12]
+Sorted edges for 169 General Switch Blocks (GSBs).
+# Sort incoming edges for each routing track output node of General Switch Block(GSB) took 0.07 seconds (max_rss 23.3 MiB, delta_rss +0.5 MiB)
+# Build a library of physical multiplexers
+Built a multiplexer library of 16 physical multiplexers.
+Maximum multiplexer size is 16.
+# Build a library of physical multiplexers took 0.00 seconds (max_rss 23.3 MiB, delta_rss +0.0 MiB)
+# Build the annotation about direct connection between tiles
+Built 407 tile-to-tile direct connections
+# Build the annotation about direct connection between tiles took 0.00 seconds (max_rss 23.3 MiB, delta_rss +0.0 MiB)
+Building annotation for mapped blocks on grid locations...Done
+User specified the operating clock frequency to use VPR results
+Use VPR critical path delay 8.31972e-19 [ns] with a 20 [%] slack in OpenFPGA.
+Will apply operating clock frequency 1201.96 [MHz] to simulations
+User specified the number of operating clock cycles to be inferred from signal activities
+Average net density: 0.42
+Median net density: 0.00
+Average net density after weighting: 0.42
+Will apply 2 operating clock cycles to simulations
+Link OpenFPGA architecture to VPR architecture took 0.08 seconds (max_rss 23.6 MiB, delta_rss +0.8 MiB)
+
+Command line to execute: build_fabric --compress_routing --duplicate_grid_pin --load_fabric_key /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/tasks/FPGA1212_SOFA_CHD_task/arch/fabric_key.xml
+
+Confirm selected options when call command 'build_fabric':
+--frame_view: off
+--compress_routing: on
+--duplicate_grid_pin: on
+--load_fabric_key: /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/tasks/FPGA1212_SOFA_CHD_task/arch/fabric_key.xml
+--write_fabric_key: off
+--generate_random_fabric_key: off
+--verbose: off
+Identify unique General Switch Blocks (GSBs)
+Detected 9 unique general switch blocks from a total of 169 (compression rate=1777.78%)
+Identify unique General Switch Blocks (GSBs) took 0.12 seconds (max_rss 23.6 MiB, delta_rss +0.0 MiB)
+
+Read Fabric Key
+Read Fabric Key took 0.00 seconds (max_rss 23.7 MiB, delta_rss +0.1 MiB)
+
+Build fabric module graph
+# Build constant generator modules
+# Build constant generator modules took 0.00 seconds (max_rss 23.7 MiB, delta_rss +0.0 MiB)
+# Build user-defined modules
+# Build user-defined modules took 0.00 seconds (max_rss 23.7 MiB, delta_rss +0.0 MiB)
+# Build essential (inverter/buffer/logic gate) modules
+# Build essential (inverter/buffer/logic gate) modules took 0.00 seconds (max_rss 23.7 MiB, delta_rss +0.0 MiB)
+# Build local encoder (for multiplexers) modules
+# Build local encoder (for multiplexers) modules took 0.00 seconds (max_rss 23.7 MiB, delta_rss +0.0 MiB)
+# Building multiplexer modules
+# Building multiplexer modules took 0.00 seconds (max_rss 24.2 MiB, delta_rss +0.5 MiB)
+# Build Look-Up Table (LUT) modules
+# Build Look-Up Table (LUT) modules took 0.00 seconds (max_rss 24.2 MiB, delta_rss +0.0 MiB)
+# Build wire modules
+# Build wire modules took 0.00 seconds (max_rss 24.2 MiB, delta_rss +0.0 MiB)
+# Build memory modules
+# Build memory modules took 0.00 seconds (max_rss 24.4 MiB, delta_rss +0.3 MiB)
+# Build grid modules
+Building logical tiles...Done
+Building physical tiles...Done
+# Build grid modules took 0.00 seconds (max_rss 25.0 MiB, delta_rss +0.5 MiB)
+# Build unique routing modules...
+# Build unique routing modules... took 0.01 seconds (max_rss 28.1 MiB, delta_rss +3.1 MiB)
+# Build FPGA fabric module
+## Add grid instances to top module
+## Add grid instances to top module took 0.00 seconds (max_rss 29.3 MiB, delta_rss +1.3 MiB)
+## Add switch block instances to top module
+## Add switch block instances to top module took 0.00 seconds (max_rss 30.1 MiB, delta_rss +0.8 MiB)
+## Add connection block instances to top module
+## Add connection block instances to top module took 0.00 seconds (max_rss 30.6 MiB, delta_rss +0.5 MiB)
+## Add connection block instances to top module
+## Add connection block instances to top module took 0.00 seconds (max_rss 31.1 MiB, delta_rss +0.5 MiB)
+## Add module nets between grids and GSBs
+## Add module nets between grids and GSBs took 0.14 seconds (max_rss 52.5 MiB, delta_rss +21.4 MiB)
+## Add module nets for inter-tile connections
+## Add module nets for inter-tile connections took 0.00 seconds (max_rss 53.1 MiB, delta_rss +0.5 MiB)
+## Add module nets for configuration buses
+## Add module nets for configuration buses took 0.03 seconds (max_rss 55.1 MiB, delta_rss +1.5 MiB)
+# Build FPGA fabric module took 0.19 seconds (max_rss 55.1 MiB, delta_rss +27.1 MiB)
+Build fabric module graph took 0.21 seconds (max_rss 55.1 MiB, delta_rss +31.4 MiB)
+Create I/O location mapping for top module
+Create I/O location mapping for top module took 0.00 seconds (max_rss 55.1 MiB, delta_rss +0.0 MiB)
+Create global port info for top module
+Create global port info for top module took 0.00 seconds (max_rss 55.1 MiB, delta_rss +0.0 MiB)
+
+Command line to execute: repack
+
+Confirm selected options when call command 'repack':
+--verbose: off
+Build routing resource graph for the physical implementation of logical tile
+Build routing resource graph for the physical implementation of logical tile took 0.00 seconds (max_rss 55.1 MiB, delta_rss +0.0 MiB)
+Repack clustered blocks to physical implementation of logical tile
+Repack clustered block 'c'...Done
+Repack clustered block 'out:c'...Done
+Repack clustered block 'a'...Done
+Repack clustered block 'b'...Done
+Repack clustered blocks to physical implementation of logical tile took 0.00 seconds (max_rss 55.1 MiB, delta_rss +0.0 MiB)
+Build truth tables for physical LUTs
+Build truth tables for physical LUTs took 0.00 seconds (max_rss 55.1 MiB, delta_rss +0.0 MiB)
+
+Command line to execute: build_architecture_bitstream --write_file fabric_indepenent_bitstream.xml
+
+Confirm selected options when call command 'build_architecture_bitstream':
+--write_file: fabric_indepenent_bitstream.xml
+--read_file: off
+--verbose: off
+
+Build fabric-independent bitstream for implementation 'top'
+
+Generating bitstream for Switch blocks...Done
+Generating bitstream for X-direction Connection blocks ...Done
+Generating bitstream for Y-direction Connection blocks ...Done
+
+Build fabric-independent bitstream for implementation 'top'
+ took 0.26 seconds (max_rss 60.4 MiB, delta_rss +5.2 MiB)
+Warning 185: Directory path is empty and nothing will be created.
+Write 81452 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml'
+Write 81452 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml' took 0.73 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
+
+Command line to execute: build_fabric_bitstream
+
+Confirm selected options when call command 'build_fabric_bitstream':
+--verbose: off
+
+Build fabric dependent bitstream
+
+
+Build fabric dependent bitstream
+ took 0.09 seconds (max_rss 65.5 MiB, delta_rss +5.2 MiB)
+
+Command line to execute: write_fabric_bitstream --format plain_text --file fabric_bitstream.bit
+
+Confirm selected options when call command 'write_fabric_bitstream':
+--file, -f: fabric_bitstream.bit
+--format: plain_text
+--verbose: off
+Warning 186: Directory path is empty and nothing will be created.
+Write 81452 fabric bitstream into plain text file 'fabric_bitstream.bit'
+Write 81452 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.01 seconds (max_rss 65.5 MiB, delta_rss +0.0 MiB)
+
+Command line to execute: write_fabric_bitstream --format xml --file fabric_bitstream.xml
+
+Confirm selected options when call command 'write_fabric_bitstream':
+--file, -f: fabric_bitstream.xml
+--format: xml
+--verbose: off
+Warning 187: Directory path is empty and nothing will be created.
+Write 81452 fabric bitstream into xml file 'fabric_bitstream.xml'
+Write 81452 fabric bitstream into xml file 'fabric_bitstream.xml' took 0.16 seconds (max_rss 65.5 MiB, delta_rss +0.0 MiB)
+
+Command line to execute: write_fabric_verilog --file ./SRC --explicit_port_mapping --verbose
+
+Confirm selected options when call command 'write_fabric_verilog':
+--file, -f: ./SRC
+--explicit_port_mapping: on
+--include_timing: off
+--print_user_defined_template: off
+--verbose: on
+Write Verilog netlists for FPGA fabric
+
+Succeed to create directory './SRC'
+Succeed to create directory './SRC/sub_module'
+Succeed to create directory './SRC/lb'
+Succeed to create directory './SRC/routing'
+Generating Verilog netlist './SRC/sub_module/inv_buf_passgate.v' for essential gates...Done
+Writing Verilog netlist for configuration decoders './SRC/sub_module/arch_encoder.v'...Done
+Writing Verilog netlist for local decoders for multiplexers './SRC/sub_module/local_encoder.v'...Done
+Writing Verilog netlist for Multiplexer primitives './SRC/sub_module/mux_primitives.v' ...Done
+Writing Verilog netlist for Multiplexers './SRC/sub_module/muxes.v' ...Done
+Writing Verilog netlist for LUTs './SRC/sub_module/luts.v'...Done
+Writing Verilog netlist for wires './SRC/sub_module/wires.v'...Done
+Writing Verilog netlist for memories './SRC/sub_module/memories.v' ...Done
+
+Writing logical tiles...
+Writing Verilog netlists for logic tile 'io' ...
+Writing Verilog netlist './SRC/lb/logical_tile_io_mode_physical__iopad.v' for primitive pb_type 'iopad' ...
+Writing Verilog codes of logical tile primitive block 'logical_tile_io_mode_physical__iopad'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_io_mode_io_.v' for pb_type 'io' ...
+Writing Verilog codes of pb_type 'logical_tile_io_mode_io_'...Done
+Done
+
+Writing Verilog netlists for logic tile 'clb' ...
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4.v' for primitive pb_type 'frac_lut4' ...
+Writing Verilog codes of logical tile primitive block 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__carry_follower.v' for primitive pb_type 'carry_follower' ...
+Writing Verilog codes of logical tile primitive block 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__carry_follower'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.v' for pb_type 'frac_logic' ...
+Writing Verilog codes of pb_type 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.v' for primitive pb_type 'ff' ...
+Writing Verilog codes of logical tile primitive block 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric.v' for pb_type 'fabric' ...
+Writing Verilog codes of pb_type 'logical_tile_clb_mode_default__fle_mode_physical__fabric'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle.v' for pb_type 'fle' ...
+Writing Verilog codes of pb_type 'logical_tile_clb_mode_default__fle'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_clb_.v' for pb_type 'clb' ...
+Writing Verilog codes of pb_type 'logical_tile_clb_mode_clb_'...Done
+Done
+
+Writing logical tiles...Done
+
+Building physical tiles...
+Writing Verilog Netlist './SRC/lb/grid_io_top_top.v' for physical tile 'io_top' at top side ...Done
+Writing Verilog Netlist './SRC/lb/grid_io_right_right.v' for physical tile 'io_right' at right side ...Done
+Writing Verilog Netlist './SRC/lb/grid_io_bottom_bottom.v' for physical tile 'io_bottom' at bottom side ...Done
+Writing Verilog Netlist './SRC/lb/grid_io_left_left.v' for physical tile 'io_left' at left side ...Done
+Writing Verilog Netlist './SRC/lb/grid_clb.v' for physical_tile 'clb'...Done
+Building physical tiles...Done
+
+Writing Verilog netlist for top-level module of FPGA fabric './SRC/fpga_top.v'...Done
+Written 92 Verilog modules in total
+Write Verilog netlists for FPGA fabric
+ took 0.64 seconds (max_rss 68.4 MiB, delta_rss +2.8 MiB)
+
+Command line to execute: write_verilog_testbench --file ./SRC --reference_benchmark_file_path top_output_verilog.v --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --explicit_port_mapping
+
+Confirm selected options when call command 'write_verilog_testbench':
+--file, -f: ./SRC
+--fabric_netlist_file_path: off
+--reference_benchmark_file_path: top_output_verilog.v
+--print_top_testbench: on
+--fast_configuration: off
+--print_formal_verification_top_netlist: off
+--print_preconfig_top_testbench: on
+--print_simulation_ini: ./SimulationDeck/simulation_deck.ini
+--explicit_port_mapping: on
+--include_signal_init: off
+--support_icarus_simulator: off
+--verbose: off
+Warning 188: Forcely enable to print top-level Verilog netlist in formal verification purpose as print pre-configured top-level Verilog testbench is enabled
+Write Verilog testbenches for FPGA fabric
+
+Warning 189: Directory './SRC' already exists. Will overwrite contents
+# Write pre-configured FPGA top-level Verilog netlist for design 'top'
+# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 3.54 seconds (max_rss 68.4 MiB, delta_rss +0.0 MiB)
+# Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top'
+# Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top' took 0.00 seconds (max_rss 68.4 MiB, delta_rss +0.0 MiB)
+# Write autocheck testbench for FPGA top-level Verilog netlist for 'top'
+Will use 81453 configuration clock cycles to top testbench
+# Write autocheck testbench for FPGA top-level Verilog netlist for 'top' took 0.21 seconds (max_rss 68.5 MiB, delta_rss +0.1 MiB)
+Succeed to create directory './SimulationDeck'
+# Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini'
+# Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini' took 0.00 seconds (max_rss 68.5 MiB, delta_rss +0.0 MiB)
+Write Verilog testbenches for FPGA fabric
+ took 3.77 seconds (max_rss 68.5 MiB, delta_rss +0.1 MiB)
+
+Command line to execute: write_pnr_sdc --file ./SDC
+
+Confirm selected options when call command 'write_pnr_sdc':
+--file, -f: ./SDC
+--flatten_names: off
+--hierarchical: off
+--output_hierarchy: off
+--time_unit: off
+--constrain_global_port: off
+--constrain_non_clock_global_port: off
+--constrain_grid: off
+--constrain_sb: off
+--constrain_cb: off
+--constrain_configurable_memory_outputs: off
+--constrain_routing_multiplexer_outputs: off
+--constrain_switch_block_outputs: off
+--constrain_zero_delay_paths: off
+--verbose: off
+Succeed to create directory './SDC'
+Write SDC for constraining clocks for P&R flow './SDC/global_ports.sdc'
+Write SDC for constraining clocks for P&R flow './SDC/global_ports.sdc' took 0.00 seconds (max_rss 68.5 MiB, delta_rss +0.0 MiB)
+Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc'
+Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc' took 0.01 seconds (max_rss 68.6 MiB, delta_rss +0.1 MiB)
+Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc'
+Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc' took 0.07 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC to disable switch block outputs for P&R flow './SDC/disable_sb_outputs.sdc'
+Write SDC to disable switch block outputs for P&R flow './SDC/disable_sb_outputs.sdc' took 0.00 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC for constrain Switch Block timing for P&R flow
+Write SDC for constrain Switch Block timing for P&R flow took 0.04 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC for constrain Connection Block timing for P&R flow
+Write SDC for constrain Connection Block timing for P&R flow took 0.02 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC for constraining grid timing for P&R flow
+Write SDC for constraining grid timing for P&R flow took 0.02 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+
+Command line to execute: write_sdc_disable_timing_configure_ports --file ./SDC/disable_configure_ports.sdc
+
+Confirm selected options when call command 'write_sdc_disable_timing_configure_ports':
+--file, -f: ./SDC/disable_configure_ports.sdc
+--flatten_names: off
+--verbose: off
+Warning 190: Directory './SDC' already exists. Will overwrite contents
+Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc'
+Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc' took 0.10 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+
+Command line to execute: write_analysis_sdc --file ./SDC_analysis
+
+Confirm selected options when call command 'write_analysis_sdc':
+--file, -f: ./SDC_analysis
+--verbose: off
+--flatten_names: off
+--time_unit: off
+Succeed to create directory './SDC_analysis'
+Generating SDC for Timing/Power analysis on the mapped FPGA './SDC_analysis/top_fpga_top_analysis.sdc'
+Generating SDC for Timing/Power analysis on the mapped FPGA './SDC_analysis/top_fpga_top_analysis.sdc' took 0.97 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+
+Command line to execute: exit
+
+Confirm selected options when call command 'exit':
+
+Finish execution with 0 errors
+
+The entire OpenFPGA flow took 7.48 seconds
+
+Thank you for using OpenFPGA!

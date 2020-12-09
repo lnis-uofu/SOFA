@@ -1,0 +1,68 @@
+name: Caravel-QLSOFA_HD Deployment
+# = = = Env Variable = = = = =
+# secrets.TEST_REPO_KEY
+# secrets.QLSOFA_HD_KEY
+# secrets.SOFA_CHD_KEY
+# secrets.QLQLSOFA_HD_KEY
+# secrets.QLAP3_KEY
+# yq r -X deploy_sofa.yaml > ./workflows/deploy_sofa_hd.yaml
+env:
+  SCAN_DIRECTORY: 'FPGA1212_RESET_HD_SKY_PNR/**'
+  PROJ_SUFFIX: QLSOFA_HD
+  DEST_DIR: Caravel-QLSOFA-HD
+  DEST_REPO: lnis-uofu/Caravel-QLSOFA-HD
+  REPO_KEY: ${{ secrets.QLSOFA_HD_KEY }}
+on:
+  push:
+    paths:
+      - '.github/**'
+      - 'SynRepoConfig/**'
+      - '$SCAN_DIRECTORY'
+    branches:
+      - ganesh_dev
+  pull_request:
+    types: closed
+    branches:
+      - master
+jobs:
+  linux:
+    name: Updating release repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout SOFA-Chips
+        uses: actions/checkout@v2
+        with:
+          path: SOFA-Chips
+      - name: Checkout caravel repo
+        uses: actions/checkout@master
+        with:
+          repository: lnis-uofu/Caravel-QLSOFA-HD
+          path: Caravel-QLSOFA-HD
+      - name: Checkout open_mpw_precheck repo
+        uses: actions/checkout@master
+        with:
+          repository: efabless/open_mpw_precheck
+          path: open_mpw_precheck
+      - name: Perform checks with open_mpw_precheck
+        uses: ganeshgore/docker-run-action@49cd3a1
+        with:
+          image: goreganesh/open_mpw_prechecker
+          options: >
+            -v ${{github.workspace}}/open_mpw_precheck:/usr/local/bin -v ${{github.workspace}}:/usr/local/workspace -e DEST_DIR=$DEST_DIR -e SCAN_DIRECTORY=$SCAN_DIRECTORY --workdir /usr/local/workspace
+
+          run: cd /usr/local/workspace && pwd && ls && bash ./SOFA-Chips/.github/workflows/perform_precheck.sh
+      - name: Deploy files
+        # if: ${{ github.event_name == 'pull_request' && contains(github.ref, "master") && github.event.action == 'merged' }}
+        run: bash ./SOFA-Chips/.github/workflows/sync_repo.sh
+      - name: Deploy Changes
+        uses: peaceiris/actions-gh-pages@v3
+        # if: ${{ github.event_name == 'pull_request' && contains(github.ref, "master") && github.event.action == 'merged' }}
+        with:
+          user_name: "lnis.uofu"
+          user_email: "lnis.uofu@gmail.com"
+          deploy_key: ${{ secrets.QLSOFA_HD_KEY }}
+          external_repository: lnis-uofu/Caravel-QLSOFA-HD
+          publish_dir: Caravel-QLSOFA-HD
+          publish_branch: master
+          disable_nojekyll: true
+          commit_message: '[Deployment] ${{ github.event.head_commit.message }}'

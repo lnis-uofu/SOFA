@@ -17,3 +17,7 @@ cd ${DEST_DIR}
 sed -i -e "s/^/\n/" source_commit_hash.txt
 sed -i -e "s/^/${GITHUB_SHA}\n/" source_commit_hash.txt
 sed -i -e "s/^/$(date)\n/" source_commit_hash.txt
+
+
+# Clean up file from repo
+git checkout master qflow
