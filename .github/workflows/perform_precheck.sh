@@ -22,7 +22,9 @@ echo "[Info] Merged with user_project_wrapper"
 MAGTYPE=mag \
 magic -rcfile ${PDK_ROOT}/sky130A/libs.tech/magic/current/sky130A.magicrc \
 -noconsole -dnull \
-../SOFA-Chips/SCRIPT/merge_fpga_top.tcl </dev/null | tee magic_drc.log
+../SOFA-Chips/SCRIPT/merge_fpga_top.tcl </dev/null > \
+/usr/local/workspace/${DEST_DIR}/checks/magic_merge_user_project_wrapper.log
+
 echo "[Info] merge fpga-top"
 
 # = = = = = = = = = = Build Caravel with Klayout = = = = = = = = = = = = = = =
@@ -41,12 +43,14 @@ mv ./gds/caravel_merged.gds ./gds/caravel.gds
 # rm -f gds/caravel.old.gds
 
 # = = = = = = = = = = = = = Perform Open MPW Checks = = = = = = = = = = = = = =
-python3 /usr/local/bin/open_mpw_prechecker.py \
+cd /usr/local/bin
+python3 open_mpw_prechecker.py \
     --target_path /usr/local/workspace/${DEST_DIR} \
     --pdk_root $PDK_ROOT
 echo "[Info] Finished MPW Prechecker"
 
 # = = = = = = = Convert DRC Errors to RDB = = = = = = = = = = = = = = = = = = =
+cd /usr/local/workspace/${DEST_DIR}
 if test -f "./checks/caravel.magic.drc"; then
     python3 ../SOFA-Chips/SCRIPT/magic_drc_to_rdb.py \
         -magic_drc_in ./checks/caravel.magic.drc

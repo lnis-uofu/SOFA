@@ -35,7 +35,7 @@ def main():
                     drcRule = line.strip().split("(")
                     drcRule = [drcRule,"UnknownRule"] if len(drcRule) <2 else drcRule
                     fpw.write(f"r_0_{drcRule[1][:-1]}\n")
-                    fpw.write(f"500 500 2 Nov 29 03:26:39 2020\n")
+                    fpw.write(f"5000 5000 2 Nov 29 03:26:39 2020\n")
                     fpw.write(f"Rule File Pathname: {args.magic_drc_in}\n")
                     fpw.write(f"{drcRule[1][:-1]}: {drcRule[0]}\n")
                     drcNumber = 1
