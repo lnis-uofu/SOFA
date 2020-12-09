@@ -6,7 +6,7 @@ I/O Resources
 Pin Assignment
 ^^^^^^^^^^^^^^
 
-The *High-Density* (HD) FPGA IP has 144 data I/O pins as shown in :numref:`fig_qlsofa_hd_fpga_io_switch`.
+The QLSOFA HD FPGA IP has 144 data I/O pins as shown in :numref:`fig_qlsofa_hd_fpga_io_switch`.
 
 Among the 144 I/Os, 
 
@@ -26,14 +26,14 @@ Among the 144 I/Os,
   :scale: 20%
   :alt: I/O arrangement of FPGA IP
 
-  I/O arrangement of *High-Density* (HD) FPGA IP: switchable between logic analyzer and wishbone bus interface
+  I/O arrangement of QLSOFA HD FPGA IP: switchable between logic analyzer and wishbone bus interface
 
 .. _io_resource_qlsofa_hd_external_io:
 
 External I/Os
 ^^^^^^^^^^^^^
 
-A SOFA HD FPGA IP contains 37 external I/O pins, including 27 data I/Os and 10 control I/Os.
+A QLSOFA HD FPGA IP contains 37 external I/O pins, including 27 data I/Os and 10 control I/Os.
 
 Full details are summarized in the following table.
 

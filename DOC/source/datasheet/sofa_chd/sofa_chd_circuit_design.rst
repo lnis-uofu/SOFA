@@ -1,9 +1,9 @@
-.. _qlsofa_hd_circuit_design:
+.. _sofa_chd_circuit_design:
 
 Circuit Designs
 ---------------
 
-.. _qlsofa_hd_circuit_design_io:
+.. _sofa_chd_circuit_design_io:
 
 I/O Circuit
 ^^^^^^^^^^^
