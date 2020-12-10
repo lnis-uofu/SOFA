@@ -8,5 +8,14 @@ Circuit Designs
 I/O Circuit
 ^^^^^^^^^^^
 
-SOFA CHD FPGA share the same I/O circuit design as SOFA HD FPGA.
+QLSOFA HD FPGA share the same I/O circuit design as SOFA HD FPGA.
 See details at :ref:`sofa_hd_circuit_design_io`.
+
+.. _sofa_hd_circuit_design_mux:
+
+Multiplexer
+^^^^^^^^^^^
+
+QLSOFA HD FPGA share the same multiplexer design as SOFA HD FPGA.
+See details at :ref:`sofa_hd_circuit_design_mux`.
+
