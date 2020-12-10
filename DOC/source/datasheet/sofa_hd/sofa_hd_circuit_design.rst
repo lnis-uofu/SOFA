@@ -34,3 +34,21 @@ The truth table of the I/O cell is consistent with the GPIO cell of Caravel SoC,
   :alt: Schematic of embedded I/O cell used in FPGA
 
   Schematic of embedded I/O cell used in FPGA
+
+.. _sofa_hd_circuit_design_mux:
+
+Multiplexer
+^^^^^^^^^^^
+
+Routing multiplexer are designed by using the skywater *High-Density* (HD) 2-input MUX cell, as shown in :numref:`fig_sofa_hd_mux_circuit`.
+The tree-like multiplexer design is applied to all the routing multiplexers in logic elements, connection blocks and switch blocks across the FPGA fabric.
+
+.. _fig_sofa_hd_mux_circuit:
+
+.. figure:: ./figures/sofa_hd_mux_circuit.svg
+  :scale: 30%
+  :alt: Schematic of multiplexer design in SOFA HD FPGA
+
+  Schematic of multiplexer design in SOFA HD FPGA
+
+.. note:: Each routing multiplexer has a dedicated input which is connected to ground (GND) signal. When it is not used, the output will be driven by the ground, working as a constant generator.

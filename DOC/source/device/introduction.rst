@@ -3,9 +3,18 @@
 Introduction
 ------------
 
-All the FPGA devices in this project are fully open-source, from the architecture description to the physical design outputs, e.g., GDSII.
-All the devices are designed through the OpenFPGA framework and the Skywater 130nm PDK. 
-The devices are embedded FPGA IPs, which are designed to interface the caravel SoC interface.
+*Skywater Opensource FpgA* (SOFA) is a fully open-source embedded FPGA IP library, from the architecture description to production ready layouts.
+As illustrated in :numref:`fig_sofa_motivation`, SOFA IPs are designed through the Skywater 130nm PDK, OpenFPGA framework and Synopsys IC Compiler II.
+The runtime of the design flow for each IP is within 24 hours. 
+
+All the SOFA FPGAs are designed to interface the Caravel SoC interface.
 We aims to empower embedded applications with its low-cost design approach but high-density architecture.
-Operating temperature ranging from 0 :math:`^\circ C` to 85 :math:`^\circ C`
+
+.. _fig_sofa_motivation:
+
+.. figure:: ./figures/sofa_motivation.png
+  :scale: 15%
+  :alt: 24-hour FPGA IP development: from PDK to production-ready layout
+
+  24-hour FPGA IP development: from PDK to production-ready layout
 
