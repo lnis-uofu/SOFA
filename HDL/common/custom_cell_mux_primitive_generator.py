@@ -58,9 +58,9 @@ custom_nlist = open(args.output_verilog, "w")
 #######################################################################
 # A function to generate Verilog codes for a MUX3 custom cell
 # Given an input index
-def generate_verilog_codes_custom_cell_mux3(first_input_index, instance_index):
+def generate_verilog_codes_custom_cell_mux3(first_input_index, instance_index, add_inverter_follower):
   lines = []
-
+  # Instanciate a 3-input MUX cell
   lines.append("\tscs8hd_muxinv3_1 scs8hd_muxinv3_1_" + str(instance_index) + "(")
   lines.append("\t                                    .Q1(in[" + str(first_input_index) + "]),")
   lines.append("\t                                    .Q2(in[" + str(first_input_index + 1) + "]),")
@@ -71,17 +71,28 @@ def generate_verilog_codes_custom_cell_mux3(first_input_index, instance_index):
   lines.append("\t                                    .S1B(mem_inv[" + str(first_input_index + 1) + "]),")
   lines.append("\t                                    .S2(mem[" + str(first_input_index + 2) + "]),")
   lines.append("\t                                    .S2B(mem_inv[" + str(first_input_index + 2) + "]),")
-  lines.append("\t                                    .Z(out[0])")
+  if (add_inverter_follower):
+    lines.append("\t                                    .Z(out_inv[0])")
+  else:
+    lines.append("\t                                    .Z(out[0])")
   lines.append("\t                                    );")
+
+  # Instanciate an inverter follower to pair the MUX cells (which has input inverters)
+  if (add_inverter_follower):
+    lines.append("\tsky130_fd_sc_hd__inv_1 scs8hd_muxinv3_1_inv_follower" + str(instance_index) + "(")
+    lines.append("\t                                    .A(out_inv[0]),")
+    lines.append("\t                                    .Y(out[0])")
+    lines.append("\t                                    );")
 
   return lines
 
 #######################################################################
 # A function to generate Verilog codes for a MUX3 custom cell
 # Given an input index
-def generate_verilog_codes_custom_cell_mux2(first_input_index, instance_index):
+def generate_verilog_codes_custom_cell_mux2(first_input_index, instance_index, add_inverter_follower):
   lines = []
 
+  # Instanciate a 2-input MUX cell
   lines.append("\tscs8hd_muxinv2_1 scs8hd_muxinv2_1_" + str(instance_index) + "(")
   lines.append("\t                                    .Q1(in[" + str(first_input_index) + "]),")
   lines.append("\t                                    .Q2(in[" + str(first_input_index + 1) + "]),")
@@ -89,8 +100,18 @@ def generate_verilog_codes_custom_cell_mux2(first_input_index, instance_index):
   lines.append("\t                                    .S0B(mem_inv[" + str(first_input_index) + "]),")
   lines.append("\t                                    .S1(mem[" + str(first_input_index + 1) + "]),")
   lines.append("\t                                    .S1B(mem_inv[" + str(first_input_index + 1) + "]),")
-  lines.append("\t                                    .Z(out[0])")
+  if (add_inverter_follower):
+    lines.append("\t                                    .Z(out_inv[0])")
+  else:
+    lines.append("\t                                    .Z(out[0])")
   lines.append("\t                                    );")
+
+  # Instanciate an inverter follower to pair the MUX cells (which has input inverters)
+  if (add_inverter_follower):
+    lines.append("\tsky130_fd_sc_hd__inv_1 scs8hd_muxinv2_1_inv_follower" + str(instance_index) + "(")
+    lines.append("\t                                    .A(out_inv[0]),")
+    lines.append("\t                                    .Y(out[0])")
+    lines.append("\t                                    );")
 
   return lines
 
@@ -116,8 +137,12 @@ def generate_verilog_codes_standard_cell_mux2(first_input_index, instance_index)
 #   In this case, an standard cell will be outputted
 # - If the memory size is larger than 1, the input size should be the same 
 #   as memory size. In this case, we will output custom cells
-def write_custom_mux_cells_to_file(custom_nlist, input_size, mem_size):
+def write_custom_mux_cells_to_file(custom_nlist, input_size, mem_size, add_inverter_follower):
   lines = []
+
+  if (add_inverter_follower):
+    lines.append("wire [0:0] out_inv;")
+
   if (1 == mem_size):
     assert(2 == input_size)
     # Output a standard cell, currently we support HD cell MUX2
@@ -132,17 +157,17 @@ def write_custom_mux_cells_to_file(custom_nlist, input_size, mem_size):
     #   - a few MUX2 cells
     if (1 == input_size % 2):
       assert(3 <= input_size)
-      for line in generate_verilog_codes_custom_cell_mux3(0, 0):
+      for line in generate_verilog_codes_custom_cell_mux3(0, 0, add_inverter_follower):
         lines.append(line)
       for mux2_inst in range(int((input_size - 3) / 2)): 
-        for line in generate_verilog_codes_custom_cell_mux2(3 + 2 * mux2_inst, mux2_inst):
+        for line in generate_verilog_codes_custom_cell_mux2(3 + 2 * mux2_inst, mux2_inst, add_inverter_follower):
           lines.append(line)
     # - If the input size is an even number, we will use 
     #   - a few MUX2 cells
     else:
       assert (0 == input_size % 2)
       for mux2_inst in range(int(input_size / 2)): 
-        for line in generate_verilog_codes_custom_cell_mux2(2 * mux2_inst, mux2_inst):
+        for line in generate_verilog_codes_custom_cell_mux2(2 * mux2_inst, mux2_inst, add_inverter_follower):
           lines.append(line)
 
   # Output lines to file
@@ -154,6 +179,7 @@ with open(args.template_netlist, "r") as wp:
   template_nlist = wp.readlines()
   # A flag for write the current line or skip
   output_action = "copy"
+  mux_structure = "1level"
   input_size = 0
   mem_size = 0
   for line_num, curr_line in enumerate(template_nlist):
@@ -168,6 +194,12 @@ with open(args.template_netlist, "r") as wp:
       mem_size = int(re.findall("input(\d+)_mem(\d+)\(", curr_line)[0][1])
       assert(input_size > 0)
       assert(mem_size > 0)
+      # Find the MUX structure levels
+      if (re.search("1level", curr_line)):
+        mux_structure = "1level"
+      else:
+        assert(re.search("2level", curr_line))
+        mux_structure = "2level"
       # Change status indicating that we are now inside a module
       output_action = "copy"
 
@@ -179,7 +211,7 @@ with open(args.template_netlist, "r") as wp:
     # Reaching the end of the current module
     # Now output the custom cell instanciation
     if (curr_line.startswith("endmodule")): 
-      write_custom_mux_cells_to_file(custom_nlist, input_size, mem_size)
+      write_custom_mux_cells_to_file(custom_nlist, input_size, mem_size, "1level" != mux_structure)
       output_action = "copy"
     
     if ("skip" != output_action):
