@@ -34,7 +34,7 @@ module EMBEDDED_IO_HD (
   wire SOC_DIR_N;
 
   // Use drive-strength 4 for a high fan-out from SoC components
-  sky130_fd_sc_hd__or2b_1 ISOL_EN_GATE (.B_N(IO_ISOL_N),
+  sky130_fd_sc_hd__or2b_4 ISOL_EN_GATE (.B_N(IO_ISOL_N),
                                         .A(FPGA_DIR),
                                         .X(SOC_DIR)
                                         );
