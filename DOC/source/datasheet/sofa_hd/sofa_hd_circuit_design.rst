@@ -21,7 +21,7 @@ As shown in :numref:`fig_sofa_hd_embedded_io_schematic`, the I/O circuit used in
 
 - An internal configurable memory element to control the direction of I/O cell 
 
-The truth table of the I/O cell is consistent with the GPIO cell of Caravel SoC, where
+The truth table of the I/O cell is consistent with the GPIO cell of Caravel SoC (which requires an active-low signal to enable output directionality), where
 
 - When configuration bit (FF output) is logic ``1``, the I/O cell is in input mode
 
