@@ -35,6 +35,21 @@ The truth table of the I/O cell is consistent with the GPIO cell of Caravel SoC 
 
   Schematic of embedded I/O cell used in FPGA
 
+:numref:`fig_sofa_hd_embedded_io_test_waveform` shows an example waveform about how the I/O cell works:
+
+- When ``IO_ISOL_N`` is enabled/disabled
+- When operates in input mode
+- When operates in output mode
+
+.. _fig_sofa_hd_embedded_io_test_waveform:
+
+.. figure:: ./figures/sofa_hd_embedded_io_test_waveform.svg
+  :scale: 30%
+  :alt: Schematic of embedded I/O cell used in FPGA
+
+  An example of waveforms of embedded I/O cell used in FPGA
+
+
 .. _sofa_hd_circuit_design_mux:
 
 Multiplexer
