@@ -1854,3 +1854,170 @@ Passed 1 tests (0 skipped)
 *************************************************************************************
 
 Shutting down...
+Found test skywater_tests.ScanChainTestFull
+Running test 1/1: ScanChainTestFull
+Starting test: "ScanChainTestFull"
+Description: None
+Signal received at grid_clb_1__12_ at 8
+Signal received at grid_clb_1__11_ at 8
+Signal received at grid_clb_1__10_ at 8
+Signal received at grid_clb_1__9_ at 8
+Signal received at grid_clb_1__8_ at 8
+Signal received at grid_clb_1__7_ at 8
+Signal received at grid_clb_1__6_ at 8
+Signal received at grid_clb_1__5_ at 8
+Signal received at grid_clb_1__4_ at 8
+Signal received at grid_clb_1__3_ at 8
+Signal received at grid_clb_1__2_ at 8
+Signal received at grid_clb_1__1_ at 8
+Signal received at grid_clb_2__1_ at 8
+Signal received at grid_clb_2__2_ at 8
+Signal received at grid_clb_2__3_ at 8
+Signal received at grid_clb_2__4_ at 8
+Signal received at grid_clb_2__5_ at 8
+Signal received at grid_clb_2__6_ at 8
+Signal received at grid_clb_2__7_ at 8
+Signal received at grid_clb_2__8_ at 8
+Signal received at grid_clb_2__9_ at 8
+Signal received at grid_clb_2__10_ at 8
+Signal received at grid_clb_2__11_ at 8
+Signal received at grid_clb_2__12_ at 8
+Signal received at grid_clb_3__12_ at 8
+Signal received at grid_clb_3__11_ at 9
+Signal received at grid_clb_3__10_ at 8
+Signal received at grid_clb_3__9_ at 8
+Signal received at grid_clb_3__8_ at 8
+Signal received at grid_clb_3__7_ at 8
+Signal received at grid_clb_3__6_ at 8
+Signal received at grid_clb_3__5_ at 8
+Signal received at grid_clb_3__4_ at 8
+Signal received at grid_clb_3__3_ at 8
+Signal received at grid_clb_3__2_ at 8
+Signal received at grid_clb_3__1_ at 8
+Signal received at grid_clb_4__1_ at 8
+Signal received at grid_clb_4__2_ at 8
+Signal received at grid_clb_4__3_ at 8
+Signal received at grid_clb_4__4_ at 8
+Signal received at grid_clb_4__5_ at 8
+Signal received at grid_clb_4__6_ at 8
+Signal received at grid_clb_4__7_ at 8
+Signal received at grid_clb_4__8_ at 8
+Signal received at grid_clb_4__9_ at 8
+Signal received at grid_clb_4__10_ at 8
+Signal received at grid_clb_4__11_ at 8
+Signal received at grid_clb_4__12_ at 8
+Signal received at grid_clb_5__12_ at 8
+Signal received at grid_clb_5__11_ at 8
+Signal received at grid_clb_5__10_ at 8
+Signal received at grid_clb_5__9_ at 8
+Signal received at grid_clb_5__8_ at 8
+Signal received at grid_clb_5__7_ at 8
+Signal received at grid_clb_5__6_ at 8
+Signal received at grid_clb_5__5_ at 8
+Signal received at grid_clb_5__4_ at 8
+Signal received at grid_clb_5__3_ at 8
+Signal received at grid_clb_5__2_ at 8
+Signal received at grid_clb_5__1_ at 8
+Signal received at grid_clb_6__1_ at 8
+Signal received at grid_clb_6__2_ at 8
+Signal received at grid_clb_6__3_ at 8
+Signal received at grid_clb_6__4_ at 8
+Signal received at grid_clb_6__5_ at 8
+Signal received at grid_clb_6__6_ at 8
+Signal received at grid_clb_6__7_ at 8
+Signal received at grid_clb_6__8_ at 8
+Signal received at grid_clb_6__9_ at 8
+Signal received at grid_clb_6__10_ at 8
+Signal received at grid_clb_6__11_ at 8
+Signal received at grid_clb_6__12_ at 8
+Signal received at grid_clb_7__12_ at 8
+Signal received at grid_clb_7__11_ at 8
+Signal received at grid_clb_7__10_ at 8
+Signal received at grid_clb_7__9_ at 8
+Signal received at grid_clb_7__8_ at 8
+Signal received at grid_clb_7__7_ at 8
+Signal received at grid_clb_7__6_ at 8
+Signal received at grid_clb_7__5_ at 8
+Signal received at grid_clb_7__4_ at 8
+Signal received at grid_clb_7__3_ at 8
+Signal received at grid_clb_7__2_ at 8
+Signal received at grid_clb_7__1_ at 8
+Signal received at grid_clb_8__1_ at 8
+Signal received at grid_clb_8__2_ at 8
+Signal received at grid_clb_8__3_ at 8
+Signal received at grid_clb_8__4_ at 8
+Signal received at grid_clb_8__5_ at 8
+Signal received at grid_clb_8__6_ at 8
+Signal received at grid_clb_8__7_ at 8
+Signal received at grid_clb_8__8_ at 8
+Signal received at grid_clb_8__9_ at 8
+Signal received at grid_clb_8__10_ at 8
+Signal received at grid_clb_8__11_ at 8
+Signal received at grid_clb_8__12_ at 8
+Signal received at grid_clb_9__12_ at 8
+Signal received at grid_clb_9__11_ at 8
+Signal received at grid_clb_9__10_ at 8
+Signal received at grid_clb_9__9_ at 8
+Signal received at grid_clb_9__8_ at 8
+Signal received at grid_clb_9__7_ at 8
+Signal received at grid_clb_9__6_ at 8
+Signal received at grid_clb_9__5_ at 8
+Signal received at grid_clb_9__4_ at 8
+Signal received at grid_clb_9__3_ at 8
+Signal received at grid_clb_9__2_ at 8
+Signal received at grid_clb_9__1_ at 8
+Signal received at grid_clb_10__1_ at 8
+Signal received at grid_clb_10__2_ at 8
+Signal received at grid_clb_10__3_ at 8
+Signal received at grid_clb_10__4_ at 8
+Signal received at grid_clb_10__5_ at 8
+Signal received at grid_clb_10__6_ at 8
+Signal received at grid_clb_10__7_ at 8
+Signal received at grid_clb_10__8_ at 8
+Signal received at grid_clb_10__9_ at 8
+Signal received at grid_clb_10__10_ at 8
+Signal received at grid_clb_10__11_ at 8
+Signal received at grid_clb_10__12_ at 8
+Signal received at grid_clb_11__12_ at 8
+Signal received at grid_clb_11__11_ at 8
+Signal received at grid_clb_11__10_ at 8
+Signal received at grid_clb_11__9_ at 8
+Signal received at grid_clb_11__8_ at 8
+Signal received at grid_clb_11__7_ at 8
+Signal received at grid_clb_11__6_ at 8
+Signal received at grid_clb_11__5_ at 8
+Signal received at grid_clb_11__4_ at 8
+Signal received at grid_clb_11__3_ at 8
+Signal received at grid_clb_11__2_ at 8
+Signal received at grid_clb_11__1_ at 8
+Signal received at grid_clb_12__1_ at 8
+Signal received at grid_clb_12__2_ at 8
+Signal received at grid_clb_12__3_ at 8
+Signal received at grid_clb_12__4_ at 8
+Signal received at grid_clb_12__5_ at 8
+Signal received at grid_clb_12__6_ at 8
+Signal received at grid_clb_12__7_ at 8
+Signal received at grid_clb_12__8_ at 8
+Signal received at grid_clb_12__9_ at 8
+Signal received at grid_clb_12__10_ at 8
+Signal received at grid_clb_12__11_ at 8
+Signal received at grid_clb_12__12_ at 8
+Simulation Finished in clocks 1152
+Per Grid 8.0
+Test Passed: ScanChainTestFull
+Passed 1 tests (0 skipped)
+******************************************************************************************
+** TEST                              PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+******************************************************************************************
+** skywater_tests.ScanChainTestFull    PASS        11580.00          0.99     11725.64  **
+******************************************************************************************
+
+*************************************************************************************
+**                                 ERRORS : 0                                      **
+*************************************************************************************
+**                               SIM TIME : 11580.00 NS                            **
+**                              REAL TIME : 1.02 S                                 **
+**                        SIM / REAL TIME : 11333.51 NS/S                          **
+*************************************************************************************
+
+Shutting down...
