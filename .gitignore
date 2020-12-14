@@ -8,3 +8,5 @@
 **/*_Verilog/SRCBackup
 **/DOC/build
 **/SRC**/*_tb.v
+**/SDC/**/*.sdc
+!**/SDC/**/disable_configure_ports.sdc
