@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="628.9111 1022.3935 418.46777 349.9947" width="418.46777" height="349.9947">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="628.9111 1022.3935 418.46777 349.9947" width="418.46777" height="349.9947">
   <defs>
     <font-face font-family="Times" font-size="16" panose-1="0 0 5 0 0 0 0 9 0 0" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="-937.5" x-height="446.28906" cap-height="652.34375" ascent="750" descent="-250" font-style="italic" font-weight="400">
       <font-face-src>
@@ -28,8 +28,8 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18\n2020-11-19 23:01:04 +0000</metadata>
-  <g id="switch" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
+  <metadata> Produced by OmniGraffle 7.18\n2020-12-11 18:21:49 +0000</metadata>
+  <g id="switch" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
     <title>switch</title>
     <g id="switch_boundary">
       <title>boundary</title>
@@ -38,7 +38,7 @@
         <path d="M 955.125 1083.375 L 744.75 1083.375 L 744.75 1316.25 L 955.125 1316.25 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
       </g>
       <g id="Line_568">
-        <line x1="955.125" y1="1235.206" x2="923.7813" y2="1235.9262" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="955.125" y1="1256.5479" x2="871.7645" y2="1256.5479" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Line_569">
         <path d="M 859.332 1083 L 859.332 1101.6667 L 886.389 1101.4805" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
@@ -76,7 +76,7 @@
     <g id="switch_base">
       <title>base</title>
       <g id="Graphic_514">
-        <text transform="translate(684.168 1226.7952)" fill="black">
+        <text transform="translate(685.5234 1247.0479)" fill="black">
           <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">SOC_IN</tspan>
         </text>
       </g>
@@ -86,13 +86,13 @@
         </text>
       </g>
       <g id="Line_517">
-        <line x1="892.0556" y1="1236.2952" x2="743.3945" y2="1236.2952" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="839.3808" y1="1256.5479" x2="744.75" y2="1256.5479" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Line_518">
         <line x1="795.4195" y1="1203.125" x2="795.4195" y2="1277.7382" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Line_519">
-        <line x1="907.753" y1="1203.0717" x2="907.7329" y2="1226.9284" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="855.0503" y1="1203.8125" x2="855.0503" y2="1247.1767" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Line_522">
         <line x1="956.4805" y1="1287.1037" x2="811.0889" y2="1287.1088" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
@@ -103,7 +103,7 @@
         </text>
       </g>
       <g id="Graphic_524">
-        <text transform="translate(960.125 1224.8457)" fill="black">
+        <text transform="translate(960.125 1247.0479)" fill="black">
           <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">FPGA_IN</tspan>
         </text>
       </g>
@@ -111,31 +111,28 @@
         <ellipse cx="795.4195" cy="1199.125" rx="2.53125404468923" ry="3.00000479370559" fill="black"/>
         <ellipse cx="795.4195" cy="1199.125" rx="2.53125404468923" ry="3.00000479370559" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
-      <g id="Line_543">
-        <line x1="743.3945" y1="1199.675" x2="904.2251" y2="1199.0847" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      </g>
       <g id="Graphic_544">
-        <text transform="translate(673.5117 1190.3125)" fill="black">
+        <text transform="translate(667.78125 1190.3125)" fill="black">
           <tspan font-family="Times" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">SOC_DIR</tspan>
         </text>
       </g>
       <g id="Graphic_545">
-        <ellipse cx="907.7563" cy="1199.0717" rx="2.53125404468911" ry="3.00000479370553" fill="black"/>
-        <ellipse cx="907.7563" cy="1199.0717" rx="2.53125404468911" ry="3.00000479370553" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <ellipse cx="855.0503" cy="1199.8125" rx="2.53125404468914" ry="3.00000479370565" fill="black"/>
+        <ellipse cx="855.0503" cy="1199.8125" rx="2.53125404468914" ry="3.00000479370565" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Group_552">
         <g id="Graphic_556">
-          <path d="M 907.8607 1148.8333 L 907.8607 1156.8333 C 909.8607 1176.8333 915.8607 1178.8333 927.8607 1188.8333 C 939.8607 1178.8333 945.8607 1176.8333 947.8607 1156.8333 L 947.8607 1148.8333 C 939.8607 1150.8333 938.8607 1151.8333 927.8607 1152.8333 C 916.8607 1151.8333 915.8607 1150.8333 907.8607 1148.8333" fill="white"/>
-          <path d="M 907.8607 1148.8333 L 907.8607 1156.8333 C 909.8607 1176.8333 915.8607 1178.8333 927.8607 1188.8333 C 939.8607 1178.8333 945.8607 1176.8333 947.8607 1156.8333 L 947.8607 1148.8333 C 939.8607 1150.8333 938.8607 1151.8333 927.8607 1152.8333 C 916.8607 1151.8333 915.8607 1150.8333 907.8607 1148.8333" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path d="M 907.875 1149.375 L 907.875 1157.375 C 909.875 1177.375 915.875 1179.375 927.875 1189.375 C 939.875 1179.375 945.875 1177.375 947.875 1157.375 L 947.875 1149.375 C 939.875 1151.375 938.875 1152.375 927.875 1153.375 C 916.875 1152.375 915.875 1151.375 907.875 1149.375" fill="white"/>
+          <path d="M 907.875 1149.375 L 907.875 1157.375 C 909.875 1177.375 915.875 1179.375 927.875 1189.375 C 939.875 1179.375 945.875 1177.375 947.875 1157.375 L 947.875 1149.375 C 939.875 1151.375 938.875 1152.375 927.875 1153.375 C 916.875 1152.375 915.875 1151.375 907.875 1149.375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </g>
         <g id="Line_555">
-          <line x1="937.8607" y1="1138.8333" x2="937.8607" y2="1150.3333" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <line x1="937.875" y1="1139.375" x2="937.875" y2="1150.875" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </g>
         <g id="Line_554">
-          <line x1="917.8607" y1="1138.8333" x2="917.8607" y2="1148.8333" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <line x1="917.875" y1="1139.375" x2="917.875" y2="1149.375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </g>
         <g id="Line_553">
-          <line x1="927.8607" y1="1187.541" x2="927.8607" y2="1198.8333" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <line x1="927.875" y1="1188.0827" x2="927.875" y2="1199.375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </g>
       </g>
       <g id="Graphic_558">
@@ -158,7 +155,7 @@
         </text>
       </g>
       <g id="Line_561">
-        <path d="M 917.341 1107.3747 L 937.694 1107.1693 L 937.8607 1138.8333" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path d="M 917.341 1107.3747 L 937.694 1107.1693 L 937.875 1139.375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Line_562">
         <line x1="740.5195" y1="1138.8849" x2="917.341" y2="1138.25" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
@@ -169,7 +166,7 @@
         </text>
       </g>
       <g id="Line_564">
-        <line x1="909.2875" y1="1199.0536" x2="927.8607" y2="1198.8333" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="856.5815" y1="1199.8033" x2="927.875" y2="1199.375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Line_565">
         <line x1="778.791" y1="1287.0613" x2="746.0703" y2="1286.9666" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
@@ -179,8 +176,8 @@
         <path d="M 950.625 1109.5817 L 950.625 1103.8796 L 950.625 1103.8796 L 950.625 1101.0285 L 961.0859 1106.7306 L 950.625 1112.4328 L 950.625 1109.5817 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_582">
-        <path d="M 950.625 1237.0586 L 950.625 1231.3565 L 950.625 1231.3565 L 950.625 1228.5054 L 961.0859 1234.2075 L 950.625 1239.9097 L 950.625 1237.0586 Z" fill="#c0ffff"/>
-        <path d="M 950.625 1237.0586 L 950.625 1231.3565 L 950.625 1231.3565 L 950.625 1228.5054 L 961.0859 1234.2075 L 950.625 1239.9097 L 950.625 1237.0586 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 950.625 1259.399 L 950.625 1253.6968 L 950.625 1253.6968 L 950.625 1250.8457 L 961.0859 1256.5479 L 950.625 1262.25 L 950.625 1259.399 Z" fill="#c0ffff"/>
+        <path d="M 950.625 1259.399 L 950.625 1253.6968 L 950.625 1253.6968 L 950.625 1250.8457 L 961.0859 1256.5479 L 950.625 1262.25 L 950.625 1259.399 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_581">
         <path d="M 957.7109 1289.815 L 957.7109 1284.1128 L 957.7109 1284.1128 L 957.7109 1281.2617 L 947.25 1286.9639 L 957.7109 1292.666 L 957.7109 1289.815 Z" fill="#ff8080"/>
@@ -199,12 +196,12 @@
         <path d="M 740.0195 1141.8927 L 740.0195 1136.1906 L 740.0195 1136.1906 L 740.0195 1133.3395 L 750.4805 1139.0417 L 740.0195 1144.7438 L 740.0195 1141.8927 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_587">
-        <path d="M 742.0195 1239.1968 L 742.0195 1233.4946 L 742.0195 1233.4946 L 742.0195 1230.6436 L 752.4805 1236.3457 L 742.0195 1242.0479 L 742.0195 1239.1968 Z" fill="#c0ffff"/>
-        <path d="M 742.0195 1239.1968 L 742.0195 1233.4946 L 742.0195 1233.4946 L 742.0195 1230.6436 L 752.4805 1236.3457 L 742.0195 1242.0479 L 742.0195 1239.1968 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 740.0195 1259.399 L 740.0195 1253.6968 L 740.0195 1253.6968 L 740.0195 1250.8457 L 750.4805 1256.5479 L 740.0195 1262.25 L 740.0195 1259.399 Z" fill="#c0ffff"/>
+        <path d="M 740.0195 1259.399 L 740.0195 1253.6968 L 740.0195 1253.6968 L 740.0195 1250.8457 L 750.4805 1256.5479 L 740.0195 1262.25 L 740.0195 1259.399 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_588">
-        <path d="M 750.4805 1201.9761 L 750.4805 1196.2739 L 750.4805 1196.2739 L 750.4805 1193.4229 L 740.0195 1199.125 L 750.4805 1204.8271 L 750.4805 1201.9761 Z" fill="#ff8080"/>
-        <path d="M 750.4805 1201.9761 L 750.4805 1196.2739 L 750.4805 1196.2739 L 750.4805 1193.4229 L 740.0195 1199.125 L 750.4805 1204.8271 L 750.4805 1201.9761 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 744.75 1201.9761 L 744.75 1196.2739 L 744.75 1196.2739 L 744.75 1193.4229 L 734.2891 1199.125 L 744.75 1204.8271 L 744.75 1201.9761 Z" fill="#ff8080"/>
+        <path d="M 744.75 1201.9761 L 744.75 1196.2739 L 744.75 1196.2739 L 744.75 1193.4229 L 734.2891 1199.125 L 744.75 1204.8271 L 744.75 1201.9761 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_589">
         <path d="M 750.4805 1289.815 L 750.4805 1284.1128 L 750.4805 1284.1128 L 750.4805 1281.2617 L 740.0195 1286.9639 L 750.4805 1292.666 L 750.4805 1289.815 Z" fill="#ff8080"/>
@@ -229,8 +226,8 @@
         <path d="M 744.75 1360.601 L 744.75 1354.899 L 744.75 1354.899 L 744.75 1352.0479 L 755.2109 1357.75 L 744.75 1363.4521 L 744.75 1360.601 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_595">
-        <path d="M 893.0556 1219.8457 L 922.3945 1236.2952 L 893.0556 1252.7446 Z" fill="white"/>
-        <path d="M 893.0556 1219.8457 L 922.3945 1236.2952 L 893.0556 1252.7446 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path d="M 840.3808 1240.0984 L 869.7197 1256.5479 L 840.3808 1272.9973 Z" fill="white"/>
+        <path d="M 840.3808 1240.0984 L 869.7197 1256.5479 L 840.3808 1272.9973 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_597">
         <path d="M 810.0889 1270.6599 L 780.75 1287.1094 L 810.0889 1303.5588 Z" fill="white"/>
@@ -247,6 +244,21 @@
       <g id="Graphic_603">
         <circle cx="917.8945" cy="1146.375" r="4.50000719055851" fill="white"/>
         <circle cx="917.8945" cy="1146.375" r="4.50000719055851" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_609">
+        <circle cx="855.0503" cy="1244.5984" r="4.50000719055848" fill="white"/>
+        <circle cx="855.0503" cy="1244.5984" r="4.50000719055848" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_610">
+        <path d="M 864.3836 1215 L 855.0503 1231.6467 L 845.7169 1215 Z" fill="white"/>
+        <path d="M 864.3836 1215 L 855.0503 1231.6467 L 845.7169 1215 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_611">
+        <circle cx="855.5503" cy="1230.6235" r="2.5532776857906" fill="white"/>
+        <circle cx="855.5503" cy="1230.6235" r="2.5532776857906" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_612">
+        <line x1="744.75" y1="1199.6042" x2="853.519" y2="1199.8096" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
     </g>
   </g>

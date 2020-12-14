@@ -103,7 +103,8 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-    <circuit_model type="pass_gate" name="TGATE" prefix="TGATE" is_default="true">
+    <!--  Trick OpenFPGA to avoid auto-generating TGATE modules, which are not used in PnR -->
+    <circuit_model type="pass_gate" name="TGATE" prefix="TGATE" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/fd_hd_mux_custom_cells_tt.v">
       <design_technology type="cmos" topology="transmission_gate" nmos_size="1" pmos_size="2"/>
       <device_technology device_model_name="logic"/>
       <input_buffer exist="false"/>
@@ -288,7 +289,7 @@
   </direct_connection>
   <tile_annotations>
     <global_port name="clk" tile_port="clb.clk" is_clock="true" default_val="0"/>
-    <global_port name="reset" tile_port="clb.reset" is_reset="true" default_val="1"/>
+    <global_port name="Reset" tile_port="clb.reset" is_reset="true" default_val="1"/>
   </tile_annotations>
   <pb_type_annotations>
     <!-- physical pb_type binding in complex block IO -->

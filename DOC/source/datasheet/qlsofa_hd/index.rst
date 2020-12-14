@@ -1,4 +1,4 @@
-.. _datasheet_sofa_hd:
+.. _datasheet_qlsofa_hd:
    QLSOFA HD
 
 QLSOFA HD

@@ -37,7 +37,7 @@ module EMBEDDED_IO_HD (
   sky130_fd_sc_hd__or2b_4 ISOL_EN_GATE (.B_N(IO_ISOL_N),
                                         .A(FPGA_DIR),
                                         .X(SOC_DIR)
-                                       );
+                                        );
   
   // Use drive-strength 4 for a high fan-out from global routing architecture
   sky130_fd_sc_hd__inv_1 INV_SOC_DIR (.A(SOC_DIR), .Y(SOC_DIR_N));

@@ -8,21 +8,8 @@ Architecture
 Floorplan
 ^^^^^^^^^
 
-
-:numref:`fig_qlsofa_hd_fpga_arch` shows an overview on the architecture of the embedded FPGA fabric.
-The FPGA follows a homogeneous architecture which only contains single type of tiles in the center fabric.
-I/O tiles are placed at the boundary of the FPGA to interface with GPIOs and RISC-V processors (see details in :ref:`qlsofa_hd_io_resource`). 
-
-.. _fig_qlsofa_hd_fpga_arch:
-
-.. figure:: ./figures/qlsofa_hd_fpga_arch.svg
-  :scale: 25%
-  :alt: Tile-based FPGA architecture
-
-  Tile-based FPGA architecture
-
-
-.. _qlsofa_hd_fpga_arch_tiles:
+QLSOFA HD FPGA share the same floroplan as SOFA HD FPGA.
+See details at :ref:`sofa_hd_fpga_arch_floorplan`.
 
 Tiles
 ^^^^^
@@ -64,19 +51,5 @@ The FPGA architecture follows a tile-based organization, to exploit the fine-gra
 Scan-chain
 ^^^^^^^^^^
 
-There is a built-in scan-chain in the FPGA which connects the the `sc_in` and `sc_out` ports of CLBs in a chain (see details in :ref:`qlsofa_hd_clb_arch_scan_chain`), as illustrated in :numref:`fig_qlsofa_hd_fabric_scan_chain`.
-
-When `Test_en` signal is active, users can 
-
-- overwrite the contents of all the D-type flip-flops in the FPGA by feeding signals to the `SC_HEAD` port
-- readback the contents of all the D-type flip-flops in the FPGA through the `SC_TAIL` port. 
-
-.. _fig_qlsofa_hd_fabric_scan_chain:
-
-.. figure:: ./figures/qlsofa_hd_fabric_scan_chain.svg
-  :scale: 25%
-  :alt: Built-in scan-chain across FPGA
-
-  Built-in scan-chain across FPGA
-
-
+QLSOFA HD FPGA share the same floroplan as SOFA HD FPGA.
+See details at :ref:`sofa_hd_fpga_arch_scan_chain`.
