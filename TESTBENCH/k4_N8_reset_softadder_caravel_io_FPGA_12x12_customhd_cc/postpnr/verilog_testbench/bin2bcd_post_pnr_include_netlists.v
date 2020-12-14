@@ -21,10 +21,10 @@
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_SOFA_CHD_PNR/fpga_top/fpga_top_icv_in_design.pt.v"
 
 `ifdef AUTOCHECKED_SIMULATION
-	`include "and2_latch_output_verilog.v"
+	`include "bin2bcd_output_verilog.v"
 `endif
 
 `ifdef AUTOCHECKED_SIMULATION
-	`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc/postpnr/verilog_testbench/and2_latch_post_pnr_autocheck_top_tb.v"
+	`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc/postpnr/verilog_testbench/bin2bcd_post_pnr_autocheck_top_tb.v"
 `endif
 

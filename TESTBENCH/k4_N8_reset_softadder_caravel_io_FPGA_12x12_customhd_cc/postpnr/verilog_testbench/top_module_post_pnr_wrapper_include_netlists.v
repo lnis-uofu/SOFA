@@ -10,6 +10,7 @@
 
 // ------ Include simulation defines -----
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc/prepnr/verilog_testbench/define_simulation.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/HDL/common/caravel_defines.v"
 
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/HDL/common/skywater_function_verification.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/HDL/common/fd_hd_mux_custom_cells_tt.v"
@@ -21,10 +22,10 @@
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_SOFA_CHD_PNR/fpga_top/fpga_top_icv_in_design.pt.v"
 
 `ifdef AUTOCHECKED_SIMULATION
-	`include "and2_latch_output_verilog.v"
+	`include "top_module_output_verilog.v"
 `endif
 
 `ifdef AUTOCHECKED_SIMULATION
-	`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc/postpnr/verilog_testbench/and2_latch_post_pnr_autocheck_top_tb.v"
+	`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc/postpnr/verilog_testbench/top_module_post_pnr_wrapper_autocheck_top_tb.v"
 `endif
 
