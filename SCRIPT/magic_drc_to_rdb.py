@@ -35,18 +35,19 @@ def main():
                     drcRule = line.strip().split("(")
                     drcRule = [drcRule,"UnknownRule"] if len(drcRule) <2 else drcRule
                     fpw.write(f"r_0_{drcRule[1][:-1]}\n")
-                    fpw.write(f"5000 5000 2 Nov 29 03:26:39 2020\n")
+                    fpw.write(f"1000 1000 2 Nov 29 03:26:39 2020\n")
                     fpw.write(f"Rule File Pathname: {args.magic_drc_in}\n")
                     fpw.write(f"{drcRule[1][:-1]}: {drcRule[0]}\n")
                     drcNumber = 1
                 elif (lineType==data):
                     cord = [int(float(i))*100 for i in line.strip().split(" ")]
-                    fpw.write(f"p {drcNumber} 4\n")
-                    fpw.write(f"{cord[0]} {cord[1]}\n")
-                    fpw.write(f"{cord[2]} {cord[1]}\n")
-                    fpw.write(f"{cord[2]} {cord[3]}\n")
-                    fpw.write(f"{cord[0]} {cord[3]}\n")
-                    drcNumber+=1
+                    if cord[0]>32638 and cord[1]>138201 and drcNumber<900:
+                        fpw.write(f"p {drcNumber} 4\n")
+                        fpw.write(f"{cord[0]} {cord[1]}\n")
+                        fpw.write(f"{cord[2]} {cord[1]}\n")
+                        fpw.write(f"{cord[2]} {cord[3]}\n")
+                        fpw.write(f"{cord[0]} {cord[3]}\n")
+                        drcNumber+=1
         print(f"Generated RDB at {args.rdb_out}")
 
 
