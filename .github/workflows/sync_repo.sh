@@ -5,10 +5,13 @@
 # Working directory in github workspace
 # Original repo is places SOFA-Chips
 # for conditional file copy use PROJ_SUFFIX (example SOFA_HD)
-
-tail -n +2 ./SOFA-Chips/SynRepoConfig/sync_files.csv | while  IFS=, read -r srcLoc dstLoc; do
-    Copying "./SOFA-Chips/$srcLoc --> ${DEST_DIR}/$dstLoc"
-    rsync -avp ./SOFA-Chips/$srcLoc ${DEST_DIR}/$dstLoc
+COPY_FILE="./SOFA-Chips/SynRepoConfig/sync_files_${PROJ_SUFFIX,,}.csv"
+echo "[Info] Using file for rsync $COPY_FILE"
+tail -n +2 $COPY_FILE | while  IFS=, read -r srcLoc dstLoc; do
+    srcLoc=$(echo $(eval "echo $srcLoc"))
+    dstLoc=$(echo $(eval "echo $dstLoc"))
+    echo "Copying ./SOFA-Chips/$srcLoc --> ${DEST_DIR}/$dstLoc"
+    rsync -ap ./SOFA-Chips/$srcLoc ${DEST_DIR}/$dstLoc
 done
 
 cd ${DEST_DIR}
