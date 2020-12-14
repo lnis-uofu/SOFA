@@ -30,6 +30,7 @@ export VERILOG_PROJ_DIR=${PROJ_NAME}_Verilog
 export SPY_HACK_FILE=${TASK_DIR_NAME}/spy_hack.txt
 export POST_OPENFPGA_SCRIPT=./PostOpenFPGAScript.sh
 export RESTRUCT_NETLIST=../utils/RestructureNetlistSkywater.py
+export POST_GENERATION_SCRIPT=./generate_scandef_and_case_analysis.sh
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Restructure Netlist Varaibles
