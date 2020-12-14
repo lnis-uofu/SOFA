@@ -36,6 +36,7 @@ output [0:0] out;
 //
 //
 
+wire [0:0] out_inv;
 	scs8hd_muxinv2_1 scs8hd_muxinv2_1_0(
 	                                    .Q1(in[0]),
 	                                    .Q2(in[1]),
@@ -43,7 +44,11 @@ output [0:0] out;
 	                                    .S0B(mem_inv[0]),
 	                                    .S1(mem[1]),
 	                                    .S1B(mem_inv[1]),
-	                                    .Z(out[0])
+	                                    .Z(out_inv[0])
+	                                    );
+	sky130_fd_sc_hd__inv_1 scs8hd_muxinv2_1_inv_follower0(
+	                                    .A(out_inv[0]),
+	                                    .Y(out[0])
 	                                    );
 	scs8hd_muxinv2_1 scs8hd_muxinv2_1_1(
 	                                    .Q1(in[2]),
@@ -52,7 +57,11 @@ output [0:0] out;
 	                                    .S0B(mem_inv[2]),
 	                                    .S1(mem[3]),
 	                                    .S1B(mem_inv[3]),
-	                                    .Z(out[0])
+	                                    .Z(out_inv[0])
+	                                    );
+	sky130_fd_sc_hd__inv_1 scs8hd_muxinv2_1_inv_follower1(
+	                                    .A(out_inv[0]),
+	                                    .Y(out[0])
 	                                    );
 endmodule
 //
@@ -87,6 +96,7 @@ output [0:0] out;
 //
 //
 
+wire [0:0] out_inv;
 	scs8hd_muxinv2_1 scs8hd_muxinv2_1_0(
 	                                    .Q1(in[0]),
 	                                    .Q2(in[1]),
@@ -94,7 +104,11 @@ output [0:0] out;
 	                                    .S0B(mem_inv[0]),
 	                                    .S1(mem[1]),
 	                                    .S1B(mem_inv[1]),
-	                                    .Z(out[0])
+	                                    .Z(out_inv[0])
+	                                    );
+	sky130_fd_sc_hd__inv_1 scs8hd_muxinv2_1_inv_follower0(
+	                                    .A(out_inv[0]),
+	                                    .Y(out[0])
 	                                    );
 endmodule
 //
@@ -129,6 +143,7 @@ output [0:0] out;
 //
 //
 
+wire [0:0] out_inv;
 	scs8hd_muxinv3_1 scs8hd_muxinv3_1_0(
 	                                    .Q1(in[0]),
 	                                    .Q2(in[1]),
@@ -139,7 +154,11 @@ output [0:0] out;
 	                                    .S1B(mem_inv[1]),
 	                                    .S2(mem[2]),
 	                                    .S2B(mem_inv[2]),
-	                                    .Z(out[0])
+	                                    .Z(out_inv[0])
+	                                    );
+	sky130_fd_sc_hd__inv_1 scs8hd_muxinv3_1_inv_follower0(
+	                                    .A(out_inv[0]),
+	                                    .Y(out[0])
 	                                    );
 endmodule
 //
@@ -174,6 +193,7 @@ output [0:0] out;
 //
 //
 
+wire [0:0] out_inv;
 	scs8hd_muxinv2_1 scs8hd_muxinv2_1_0(
 	                                    .Q1(in[0]),
 	                                    .Q2(in[1]),
@@ -181,7 +201,11 @@ output [0:0] out;
 	                                    .S0B(mem_inv[0]),
 	                                    .S1(mem[1]),
 	                                    .S1B(mem_inv[1]),
-	                                    .Z(out[0])
+	                                    .Z(out_inv[0])
+	                                    );
+	sky130_fd_sc_hd__inv_1 scs8hd_muxinv2_1_inv_follower0(
+	                                    .A(out_inv[0]),
+	                                    .Y(out[0])
 	                                    );
 endmodule
 //
@@ -216,6 +240,7 @@ output [0:0] out;
 //
 //
 
+wire [0:0] out_inv;
 	scs8hd_muxinv2_1 scs8hd_muxinv2_1_0(
 	                                    .Q1(in[0]),
 	                                    .Q2(in[1]),
@@ -223,7 +248,11 @@ output [0:0] out;
 	                                    .S0B(mem_inv[0]),
 	                                    .S1(mem[1]),
 	                                    .S1B(mem_inv[1]),
-	                                    .Z(out[0])
+	                                    .Z(out_inv[0])
+	                                    );
+	sky130_fd_sc_hd__inv_1 scs8hd_muxinv2_1_inv_follower0(
+	                                    .A(out_inv[0]),
+	                                    .Y(out[0])
 	                                    );
 	scs8hd_muxinv2_1 scs8hd_muxinv2_1_1(
 	                                    .Q1(in[2]),
@@ -232,7 +261,11 @@ output [0:0] out;
 	                                    .S0B(mem_inv[2]),
 	                                    .S1(mem[3]),
 	                                    .S1B(mem_inv[3]),
-	                                    .Z(out[0])
+	                                    .Z(out_inv[0])
+	                                    );
+	sky130_fd_sc_hd__inv_1 scs8hd_muxinv2_1_inv_follower1(
+	                                    .A(out_inv[0]),
+	                                    .Y(out[0])
 	                                    );
 endmodule
 //
@@ -267,6 +300,7 @@ output [0:0] out;
 //
 //
 
+wire [0:0] out_inv;
 	sky130_fd_sc_hd__mux2_1 sky130_fd_sc_hd__mux2_1_0(
 	    .A1(in[0]),
 	    .A0(in[1]),

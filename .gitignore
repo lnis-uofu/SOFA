@@ -6,6 +6,7 @@
 **/*_task/skywater
 **/*_Verilog/SRC_Skeleton
 **/*_Verilog/SRCBackup
+**/SRC/top_top_formal_verification.v
 **/DOC/build
 **/SRC**/*_tb.v
 **/SDC/**/*.sdc
