@@ -10,6 +10,7 @@
 
 // ------ Include simulation defines -----
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc/prepnr/verilog_testbench/define_simulation.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/HDL/common/caravel_defines.v"
 
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/HDL/common/skywater_function_verification.v"
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/HDL/common/fd_hd_mux_custom_cells_tt.v"
