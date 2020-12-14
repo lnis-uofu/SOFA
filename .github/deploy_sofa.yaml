@@ -35,7 +35,7 @@ on:
 jobs:
   linux:
     name: Updating release repository
-    runs-on: "self-hosted"
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout SOFA-Chips
       uses: actions/checkout@v2
