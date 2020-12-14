@@ -11,23 +11,21 @@ input  [0:0] ccff_head ;
 output [0:0] ccff_tail ;
 output [0:0] mem_out ;
 
-wire copt_net_124 ;
+wire copt_net_122 ;
 
 sky130_fd_sc_hd__dfxtp_4 sky130_fd_sc_hd__dfxtp_1_0_ ( .D ( ccff_head[0] ) , 
-    .CLK ( prog_clk[0] ) , .Q ( copt_net_124 ) ) ;
+    .CLK ( prog_clk[0] ) , .Q ( copt_net_122 ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_18__17 ( .A ( mem_out[0] ) , .X ( ccff_tail[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1351 ( .A ( copt_net_119 ) , 
-    .X ( copt_net_118 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1352 ( .A ( copt_net_124 ) , 
-    .X ( copt_net_119 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1353 ( .A ( copt_net_118 ) , 
-    .X ( copt_net_120 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1354 ( .A ( copt_net_122 ) , 
+sky130_fd_sc_hd__dlygate4sd1_1 copt_h_inst_1346 ( .A ( copt_net_124 ) , 
     .X ( mem_out[0] ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1355 ( .A ( copt_net_123 ) , 
-    .X ( copt_net_122 ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1356 ( .A ( copt_net_120 ) , 
-    .X ( copt_net_123 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1347 ( .A ( copt_net_125 ) , 
+    .X ( copt_net_124 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1348 ( .A ( copt_net_126 ) , 
+    .X ( copt_net_125 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1349 ( .A ( copt_net_127 ) , 
+    .X ( copt_net_126 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1350 ( .A ( copt_net_122 ) , 
+    .X ( copt_net_127 ) ) ;
 endmodule
 
 
@@ -42,17 +40,17 @@ input  FPGA_DIR ;
 input  IO_ISOL_N ;
 
 sky130_fd_sc_hd__nand2b_1 ISOL_EN_GATE ( .A_N ( FPGA_DIR ) , 
-    .B ( IO_ISOL_N ) , .Y ( aps_rename_511_ ) ) ;
-sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( aps_rename_511_ ) , 
+    .B ( IO_ISOL_N ) , .Y ( aps_rename_510_ ) ) ;
+sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( aps_rename_510_ ) , 
     .Y ( SOC_DIR_N ) ) ;
 sky130_fd_sc_hd__ebufn_4 IN_PROTECT_GATE ( .A ( SOC_IN ) , 
     .TE_B ( SOC_DIR_N ) , .Z ( FPGA_IN ) ) ;
 sky130_fd_sc_hd__ebufn_4 OUT_PROTECT_GATE ( .A ( FPGA_OUT ) , 
-    .TE_B ( BUF_net_88 ) , .Z ( SOC_OUT ) ) ;
-sky130_fd_sc_hd__inv_4 BINV_R_88 ( .A ( BUF_net_90 ) , .Y ( BUF_net_88 ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_90 ( .A ( aps_rename_511_ ) , 
-    .Y ( BUF_net_90 ) ) ;
-sky130_fd_sc_hd__inv_6 BINV_R_112 ( .A ( BUF_net_90 ) , .Y ( SOC_DIR ) ) ;
+    .TE_B ( BUF_net_90 ) , .Z ( SOC_OUT ) ) ;
+sky130_fd_sc_hd__inv_4 BINV_R_90 ( .A ( BUF_net_92 ) , .Y ( BUF_net_90 ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_92 ( .A ( aps_rename_510_ ) , 
+    .Y ( BUF_net_92 ) ) ;
+sky130_fd_sc_hd__inv_6 BINV_R_110 ( .A ( BUF_net_92 ) , .Y ( SOC_DIR ) ) ;
 endmodule
 
 
@@ -132,16 +130,13 @@ input  FPGA_DIR ;
 input  IO_ISOL_N ;
 
 sky130_fd_sc_hd__nand2b_1 ISOL_EN_GATE ( .A_N ( FPGA_DIR ) , 
-    .B ( IO_ISOL_N ) , .Y ( aps_rename_510_ ) ) ;
-sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( BUF_net_85 ) , .Y ( SOC_DIR_N ) ) ;
+    .B ( IO_ISOL_N ) , .Y ( net_net_89 ) ) ;
+sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( SOC_DIR ) , .Y ( SOC_DIR_N ) ) ;
 sky130_fd_sc_hd__ebufn_4 IN_PROTECT_GATE ( .A ( SOC_IN ) , 
     .TE_B ( SOC_DIR_N ) , .Z ( FPGA_IN ) ) ;
 sky130_fd_sc_hd__ebufn_4 OUT_PROTECT_GATE ( .A ( FPGA_OUT ) , 
-    .TE_B ( BUF_net_85 ) , .Z ( SOC_OUT ) ) ;
-sky130_fd_sc_hd__inv_4 BINV_R_85 ( .A ( BUF_net_87 ) , .Y ( BUF_net_85 ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_87 ( .A ( aps_rename_510_ ) , 
-    .Y ( BUF_net_87 ) ) ;
-sky130_fd_sc_hd__inv_6 BINV_R_108 ( .A ( BUF_net_87 ) , .Y ( SOC_DIR ) ) ;
+    .TE_B ( SOC_DIR ) , .Z ( SOC_OUT ) ) ;
+sky130_fd_sc_hd__buf_8 BUFT_RR_89 ( .A ( net_net_89 ) , .X ( SOC_DIR ) ) ;
 endmodule
 
 
@@ -222,15 +217,16 @@ input  IO_ISOL_N ;
 
 sky130_fd_sc_hd__nand2b_1 ISOL_EN_GATE ( .A_N ( FPGA_DIR ) , 
     .B ( IO_ISOL_N ) , .Y ( aps_rename_509_ ) ) ;
-sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( BUF_net_82 ) , .Y ( SOC_DIR_N ) ) ;
+sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( BUF_net_87 ) , .Y ( SOC_DIR_N ) ) ;
 sky130_fd_sc_hd__ebufn_4 IN_PROTECT_GATE ( .A ( SOC_IN ) , 
     .TE_B ( SOC_DIR_N ) , .Z ( FPGA_IN ) ) ;
 sky130_fd_sc_hd__ebufn_4 OUT_PROTECT_GATE ( .A ( FPGA_OUT ) , 
-    .TE_B ( BUF_net_82 ) , .Z ( SOC_OUT ) ) ;
-sky130_fd_sc_hd__inv_4 BINV_R_82 ( .A ( BUF_net_84 ) , .Y ( BUF_net_82 ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_84 ( .A ( aps_rename_509_ ) , 
-    .Y ( BUF_net_84 ) ) ;
-sky130_fd_sc_hd__inv_6 BINV_R_106 ( .A ( BUF_net_84 ) , .Y ( SOC_DIR ) ) ;
+    .TE_B ( BUF_net_86 ) , .Z ( SOC_OUT ) ) ;
+sky130_fd_sc_hd__inv_4 BINV_R_86 ( .A ( BUF_net_88 ) , .Y ( BUF_net_86 ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_87 ( .A ( BUF_net_88 ) , .Y ( BUF_net_87 ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_88 ( .A ( aps_rename_509_ ) , 
+    .Y ( BUF_net_88 ) ) ;
+sky130_fd_sc_hd__inv_6 BINV_R_108 ( .A ( BUF_net_88 ) , .Y ( SOC_DIR ) ) ;
 endmodule
 
 
@@ -311,16 +307,14 @@ input  IO_ISOL_N ;
 
 sky130_fd_sc_hd__nand2b_1 ISOL_EN_GATE ( .A_N ( FPGA_DIR ) , 
     .B ( IO_ISOL_N ) , .Y ( aps_rename_508_ ) ) ;
-sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( aps_rename_508_ ) , 
-    .Y ( SOC_DIR_N ) ) ;
 sky130_fd_sc_hd__ebufn_4 IN_PROTECT_GATE ( .A ( SOC_IN ) , 
-    .TE_B ( SOC_DIR_N ) , .Z ( FPGA_IN ) ) ;
+    .TE_B ( BUF_net_84 ) , .Z ( FPGA_IN ) ) ;
 sky130_fd_sc_hd__ebufn_4 OUT_PROTECT_GATE ( .A ( FPGA_OUT ) , 
-    .TE_B ( BUF_net_79 ) , .Z ( SOC_OUT ) ) ;
-sky130_fd_sc_hd__inv_4 BINV_R_79 ( .A ( BUF_net_81 ) , .Y ( BUF_net_79 ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_81 ( .A ( aps_rename_508_ ) , 
-    .Y ( BUF_net_81 ) ) ;
-sky130_fd_sc_hd__inv_6 BINV_R_110 ( .A ( BUF_net_81 ) , .Y ( SOC_DIR ) ) ;
+    .TE_B ( BUF_net_81 ) , .Z ( SOC_OUT ) ) ;
+sky130_fd_sc_hd__inv_4 BINV_R_81 ( .A ( BUF_net_84 ) , .Y ( BUF_net_81 ) ) ;
+sky130_fd_sc_hd__inv_8 BINV_R_83 ( .A ( BUF_net_84 ) , .Y ( SOC_DIR ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_84 ( .A ( aps_rename_508_ ) , 
+    .Y ( BUF_net_84 ) ) ;
 endmodule
 
 
@@ -400,16 +394,13 @@ input  FPGA_DIR ;
 input  IO_ISOL_N ;
 
 sky130_fd_sc_hd__nand2b_1 ISOL_EN_GATE ( .A_N ( FPGA_DIR ) , 
-    .B ( IO_ISOL_N ) , .Y ( aps_rename_507_ ) ) ;
-sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( BUF_net_76 ) , .Y ( SOC_DIR_N ) ) ;
+    .B ( IO_ISOL_N ) , .Y ( net_net_80 ) ) ;
+sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( SOC_DIR ) , .Y ( SOC_DIR_N ) ) ;
 sky130_fd_sc_hd__ebufn_4 IN_PROTECT_GATE ( .A ( SOC_IN ) , 
     .TE_B ( SOC_DIR_N ) , .Z ( FPGA_IN ) ) ;
 sky130_fd_sc_hd__ebufn_4 OUT_PROTECT_GATE ( .A ( FPGA_OUT ) , 
-    .TE_B ( BUF_net_76 ) , .Z ( SOC_OUT ) ) ;
-sky130_fd_sc_hd__inv_4 BINV_R_76 ( .A ( BUF_net_78 ) , .Y ( BUF_net_76 ) ) ;
-sky130_fd_sc_hd__inv_8 BINV_R_77 ( .A ( BUF_net_78 ) , .Y ( SOC_DIR ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_78 ( .A ( aps_rename_507_ ) , 
-    .Y ( BUF_net_78 ) ) ;
+    .TE_B ( SOC_DIR ) , .Z ( SOC_OUT ) ) ;
+sky130_fd_sc_hd__buf_8 BUFT_RR_80 ( .A ( net_net_80 ) , .X ( SOC_DIR ) ) ;
 endmodule
 
 
@@ -489,16 +480,19 @@ input  FPGA_DIR ;
 input  IO_ISOL_N ;
 
 sky130_fd_sc_hd__nand2b_1 ISOL_EN_GATE ( .A_N ( FPGA_DIR ) , 
-    .B ( IO_ISOL_N ) , .Y ( aps_rename_506_ ) ) ;
-sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( BUF_net_73 ) , .Y ( SOC_DIR_N ) ) ;
+    .B ( IO_ISOL_N ) , .Y ( aps_rename_507_ ) ) ;
+sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( aps_rename_507_ ) , 
+    .Y ( SOC_DIR_N ) ) ;
 sky130_fd_sc_hd__ebufn_4 IN_PROTECT_GATE ( .A ( SOC_IN ) , 
     .TE_B ( SOC_DIR_N ) , .Z ( FPGA_IN ) ) ;
 sky130_fd_sc_hd__ebufn_4 OUT_PROTECT_GATE ( .A ( FPGA_OUT ) , 
-    .TE_B ( BUF_net_73 ) , .Z ( SOC_OUT ) ) ;
-sky130_fd_sc_hd__inv_4 BINV_R_73 ( .A ( BUF_net_75 ) , .Y ( BUF_net_73 ) ) ;
-sky130_fd_sc_hd__inv_8 BINV_R_74 ( .A ( BUF_net_75 ) , .Y ( SOC_DIR ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_75 ( .A ( aps_rename_506_ ) , 
-    .Y ( BUF_net_75 ) ) ;
+    .TE_B ( BUF_net_77 ) , .Z ( SOC_OUT ) ) ;
+sky130_fd_sc_hd__inv_4 BINV_R_77 ( .A ( BUF_net_79 ) , .Y ( BUF_net_77 ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_78 ( .A ( BUF_net_79 ) , .Y ( BUF_net_78 ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_79 ( .A ( aps_rename_507_ ) , 
+    .Y ( BUF_net_79 ) ) ;
+sky130_fd_sc_hd__inv_8 BINV_R_106 ( .A ( BUF_net_107 ) , .Y ( SOC_DIR ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_107 ( .A ( BUF_net_78 ) , .Y ( BUF_net_107 ) ) ;
 endmodule
 
 
@@ -568,7 +562,7 @@ endmodule
 
 
 module cbx_1__0__EMBEDDED_IO_HD_2 ( SOC_IN , SOC_OUT , SOC_DIR , FPGA_IN , 
-    FPGA_OUT , FPGA_DIR , IO_ISOL_N , ZBUF_184_0 ) ;
+    FPGA_OUT , FPGA_DIR , IO_ISOL_N , ZBUF_211_0 ) ;
 input  SOC_IN ;
 output SOC_OUT ;
 output SOC_DIR ;
@@ -576,22 +570,22 @@ output FPGA_IN ;
 input  FPGA_OUT ;
 input  FPGA_DIR ;
 input  IO_ISOL_N ;
-input  ZBUF_184_0 ;
+input  ZBUF_211_0 ;
 
 sky130_fd_sc_hd__nand2b_1 ISOL_EN_GATE ( .A_N ( FPGA_DIR ) , 
     .B ( IO_ISOL_N ) , .Y ( SOC_DIR ) ) ;
-sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( SOC_DIR ) , .Y ( SOC_DIR_N ) ) ;
+sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( ZBUF_211_0 ) , .Y ( SOC_DIR_N ) ) ;
 sky130_fd_sc_hd__ebufn_4 IN_PROTECT_GATE ( .A ( SOC_IN ) , 
     .TE_B ( SOC_DIR_N ) , .Z ( FPGA_IN ) ) ;
 sky130_fd_sc_hd__ebufn_4 OUT_PROTECT_GATE ( .A ( FPGA_OUT ) , 
-    .TE_B ( ZBUF_184_0 ) , .Z ( SOC_OUT ) ) ;
+    .TE_B ( ZBUF_211_0 ) , .Z ( SOC_OUT ) ) ;
 endmodule
 
 
 module cbx_1__0__logical_tile_io_mode_physical__iopad_2 ( IO_ISOL_N , 
     prog_clk , gfpga_pad_EMBEDDED_IO_HD_SOC_IN , 
     gfpga_pad_EMBEDDED_IO_HD_SOC_OUT , gfpga_pad_EMBEDDED_IO_HD_SOC_DIR , 
-    iopad_outpad , ccff_head , iopad_inpad , ccff_tail , ZBUF_184_0 ) ;
+    iopad_outpad , ccff_head , iopad_inpad , ccff_tail , ZBUF_211_0 ) ;
 input  [0:0] IO_ISOL_N ;
 input  [0:0] prog_clk ;
 input  [0:0] gfpga_pad_EMBEDDED_IO_HD_SOC_IN ;
@@ -601,7 +595,7 @@ input  [0:0] iopad_outpad ;
 input  [0:0] ccff_head ;
 output [0:0] iopad_inpad ;
 output [0:0] ccff_tail ;
-input  ZBUF_184_0 ;
+input  ZBUF_211_0 ;
 
 wire [0:0] EMBEDDED_IO_HD_0_en ;
 
@@ -611,7 +605,7 @@ cbx_1__0__EMBEDDED_IO_HD_2 EMBEDDED_IO_HD_0_ (
     .SOC_DIR ( gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[0] ) , 
     .FPGA_IN ( iopad_inpad[0] ) , .FPGA_OUT ( iopad_outpad[0] ) , 
     .FPGA_DIR ( EMBEDDED_IO_HD_0_en[0] ) , .IO_ISOL_N ( IO_ISOL_N[0] ) , 
-    .ZBUF_184_0 ( ZBUF_184_0 ) ) ;
+    .ZBUF_211_0 ( ZBUF_211_0 ) ) ;
 cbx_1__0__EMBEDDED_IO_HD_sky130_fd_sc_hd__dfxtp_1_mem_2 EMBEDDED_IO_HD_sky130_fd_sc_hd__dfxtp_1_mem ( 
     .prog_clk ( prog_clk ) , .ccff_head ( ccff_head ) , 
     .ccff_tail ( ccff_tail ) , .mem_out ( EMBEDDED_IO_HD_0_en ) ) ;
@@ -621,7 +615,7 @@ endmodule
 module cbx_1__0__logical_tile_io_mode_io__2 ( IO_ISOL_N , prog_clk , 
     gfpga_pad_EMBEDDED_IO_HD_SOC_IN , gfpga_pad_EMBEDDED_IO_HD_SOC_OUT , 
     gfpga_pad_EMBEDDED_IO_HD_SOC_DIR , io_outpad , ccff_head , io_inpad , 
-    ccff_tail , ZBUF_184_0 ) ;
+    ccff_tail , ZBUF_211_0 ) ;
 input  [0:0] IO_ISOL_N ;
 input  [0:0] prog_clk ;
 input  [0:0] gfpga_pad_EMBEDDED_IO_HD_SOC_IN ;
@@ -631,7 +625,7 @@ input  [0:0] io_outpad ;
 input  [0:0] ccff_head ;
 output [0:0] io_inpad ;
 output [0:0] ccff_tail ;
-input  ZBUF_184_0 ;
+input  ZBUF_211_0 ;
 
 cbx_1__0__logical_tile_io_mode_physical__iopad_2 logical_tile_io_mode_physical__iopad_0 ( 
     .IO_ISOL_N ( IO_ISOL_N ) , .prog_clk ( prog_clk ) , 
@@ -640,7 +634,7 @@ cbx_1__0__logical_tile_io_mode_physical__iopad_2 logical_tile_io_mode_physical__
     .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR ( gfpga_pad_EMBEDDED_IO_HD_SOC_DIR ) , 
     .iopad_outpad ( io_outpad ) , .ccff_head ( ccff_head ) , 
     .iopad_inpad ( io_inpad ) , .ccff_tail ( ccff_tail ) , 
-    .ZBUF_184_0 ( ZBUF_184_0 ) ) ;
+    .ZBUF_211_0 ( ZBUF_211_0 ) ) ;
 endmodule
 
 
@@ -668,16 +662,17 @@ input  FPGA_DIR ;
 input  IO_ISOL_N ;
 
 sky130_fd_sc_hd__nand2b_1 ISOL_EN_GATE ( .A_N ( FPGA_DIR ) , 
-    .B ( IO_ISOL_N ) , .Y ( aps_rename_505_ ) ) ;
-sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( BUF_net_70 ) , .Y ( SOC_DIR_N ) ) ;
+    .B ( IO_ISOL_N ) , .Y ( aps_rename_506_ ) ) ;
+sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( aps_rename_506_ ) , 
+    .Y ( SOC_DIR_N ) ) ;
 sky130_fd_sc_hd__ebufn_4 IN_PROTECT_GATE ( .A ( SOC_IN ) , 
     .TE_B ( SOC_DIR_N ) , .Z ( FPGA_IN ) ) ;
 sky130_fd_sc_hd__ebufn_4 OUT_PROTECT_GATE ( .A ( FPGA_OUT ) , 
-    .TE_B ( BUF_net_70 ) , .Z ( SOC_OUT ) ) ;
-sky130_fd_sc_hd__inv_4 BINV_R_70 ( .A ( BUF_net_72 ) , .Y ( BUF_net_70 ) ) ;
-sky130_fd_sc_hd__inv_8 BINV_R_71 ( .A ( BUF_net_72 ) , .Y ( SOC_DIR ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_72 ( .A ( aps_rename_505_ ) , 
-    .Y ( BUF_net_72 ) ) ;
+    .TE_B ( BUF_net_74 ) , .Z ( SOC_OUT ) ) ;
+sky130_fd_sc_hd__inv_8 BINV_R_73 ( .A ( BUF_net_76 ) , .Y ( SOC_DIR ) ) ;
+sky130_fd_sc_hd__inv_4 BINV_R_74 ( .A ( BUF_net_76 ) , .Y ( BUF_net_74 ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_76 ( .A ( aps_rename_506_ ) , 
+    .Y ( BUF_net_76 ) ) ;
 endmodule
 
 
@@ -757,13 +752,17 @@ input  FPGA_DIR ;
 input  IO_ISOL_N ;
 
 sky130_fd_sc_hd__nand2b_1 ISOL_EN_GATE ( .A_N ( FPGA_DIR ) , 
-    .B ( IO_ISOL_N ) , .Y ( net_net_69 ) ) ;
-sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( SOC_DIR ) , .Y ( SOC_DIR_N ) ) ;
+    .B ( IO_ISOL_N ) , .Y ( aps_rename_505_ ) ) ;
+sky130_fd_sc_hd__inv_1 INV_SOC_DIR ( .A ( aps_rename_505_ ) , 
+    .Y ( SOC_DIR_N ) ) ;
 sky130_fd_sc_hd__ebufn_4 IN_PROTECT_GATE ( .A ( SOC_IN ) , 
     .TE_B ( SOC_DIR_N ) , .Z ( FPGA_IN ) ) ;
 sky130_fd_sc_hd__ebufn_4 OUT_PROTECT_GATE ( .A ( FPGA_OUT ) , 
-    .TE_B ( SOC_DIR ) , .Z ( SOC_OUT ) ) ;
-sky130_fd_sc_hd__buf_8 BUFT_RR_69 ( .A ( net_net_69 ) , .X ( SOC_DIR ) ) ;
+    .TE_B ( BUF_net_70 ) , .Z ( SOC_OUT ) ) ;
+sky130_fd_sc_hd__inv_8 BINV_R_69 ( .A ( BUF_net_72 ) , .Y ( SOC_DIR ) ) ;
+sky130_fd_sc_hd__inv_4 BINV_R_70 ( .A ( BUF_net_72 ) , .Y ( BUF_net_70 ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_72 ( .A ( aps_rename_505_ ) , 
+    .Y ( BUF_net_72 ) ) ;
 endmodule
 
 
@@ -978,7 +977,7 @@ input  [0:0] ccff_head ;
 output [0:0] ccff_tail ;
 output [0:3] mem_out ;
 
-sky130_fd_sc_hd__dfxtp_4 sky130_fd_sc_hd__dfxtp_1_0_ ( .D ( ccff_head[0] ) , 
+sky130_fd_sc_hd__dfxtp_4 sky130_fd_sc_hd__dfxtp_1_0_ ( .D ( ropt_net_136 ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[0] ) ) ;
 sky130_fd_sc_hd__dfxtp_4 sky130_fd_sc_hd__dfxtp_1_1_ ( .D ( mem_out[0] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[1] ) ) ;
@@ -987,6 +986,20 @@ sky130_fd_sc_hd__dfxtp_4 sky130_fd_sc_hd__dfxtp_1_2_ ( .D ( mem_out[1] ) ,
 sky130_fd_sc_hd__dfxtp_4 sky130_fd_sc_hd__dfxtp_1_3_ ( .D ( mem_out[2] ) , 
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) ) ;
 sky130_fd_sc_hd__buf_1 FTB_1__0 ( .A ( mem_out[3] ) , .X ( ccff_tail[0] ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1339 ( .A ( ccff_head[0] ) , 
+    .X ( copt_net_116 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1340 ( .A ( copt_net_116 ) , 
+    .X ( copt_net_117 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1341 ( .A ( copt_net_117 ) , 
+    .X ( copt_net_118 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1342 ( .A ( copt_net_118 ) , 
+    .X ( copt_net_119 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1343 ( .A ( copt_net_119 ) , 
+    .X ( copt_net_120 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1344 ( .A ( copt_net_120 ) , 
+    .X ( copt_net_121 ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 ropt_h_inst_1357 ( .A ( copt_net_121 ) , 
+    .X ( ropt_net_136 ) ) ;
 endmodule
 
 
@@ -1114,6 +1127,8 @@ wire [0:0] sky130_fd_sc_hd__mux2_1_7_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_8_X ;
 wire [0:0] sky130_fd_sc_hd__mux2_1_9_X ;
 
+sky130_fd_sc_hd__buf_6 sky130_fd_sc_hd__buf_4_0_ ( 
+    .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , .X ( out[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_0_ ( .A0 ( in[1] ) , .A1 ( in[0] ) , 
     .S ( sram[0] ) , .X ( sky130_fd_sc_hd__mux2_1_0_X[0] ) ) ;
 sky130_fd_sc_hd__mux2_1 mux_l1_in_1_ ( .A0 ( in[3] ) , .A1 ( in[2] ) , 
@@ -1143,8 +1158,6 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__buf_6 BUFT_RR_101 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
-    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -1195,9 +1208,9 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__inv_8 BINV_R_99 ( .A ( BUF_net_100 ) , .Y ( out[0] ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_100 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
-    .Y ( BUF_net_100 ) ) ;
+sky130_fd_sc_hd__inv_8 BINV_R_100 ( .A ( BUF_net_101 ) , .Y ( out[0] ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_101 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
+    .Y ( BUF_net_101 ) ) ;
 endmodule
 
 
@@ -1248,7 +1261,7 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__buf_6 BUFT_RR_98 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
+sky130_fd_sc_hd__buf_6 BUFT_RR_99 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
     .X ( out[0] ) ) ;
 endmodule
 
@@ -1300,9 +1313,9 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__inv_8 BINV_R_96 ( .A ( BUF_net_97 ) , .Y ( out[0] ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_97 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
-    .Y ( BUF_net_97 ) ) ;
+sky130_fd_sc_hd__inv_8 BINV_R_97 ( .A ( BUF_net_98 ) , .Y ( out[0] ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_98 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
+    .Y ( BUF_net_98 ) ) ;
 endmodule
 
 
@@ -1353,9 +1366,9 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__inv_8 BINV_R_94 ( .A ( BUF_net_95 ) , .Y ( out[0] ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_95 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
-    .Y ( BUF_net_95 ) ) ;
+sky130_fd_sc_hd__inv_8 BINV_R_95 ( .A ( BUF_net_96 ) , .Y ( out[0] ) ) ;
+sky130_fd_sc_hd__inv_1 BINV_R_96 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
+    .Y ( BUF_net_96 ) ) ;
 endmodule
 
 
@@ -1406,9 +1419,8 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__inv_8 BINV_R_92 ( .A ( BUF_net_93 ) , .Y ( out[0] ) ) ;
-sky130_fd_sc_hd__inv_1 BINV_R_93 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
-    .Y ( BUF_net_93 ) ) ;
+sky130_fd_sc_hd__buf_6 BUFT_RR_94 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
+    .X ( out[0] ) ) ;
 endmodule
 
 
@@ -1459,7 +1471,7 @@ sky130_fd_sc_hd__mux2_1 mux_l4_in_0_ (
     .A0 ( sky130_fd_sc_hd__mux2_1_8_X[0] ) , 
     .A1 ( sky130_fd_sc_hd__mux2_1_7_X[0] ) , .S ( sram[3] ) , 
     .X ( sky130_fd_sc_hd__mux2_1_9_X[0] ) ) ;
-sky130_fd_sc_hd__buf_6 BUFT_RR_91 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
+sky130_fd_sc_hd__buf_6 BUFT_RR_93 ( .A ( sky130_fd_sc_hd__mux2_1_9_X[0] ) , 
     .X ( out[0] ) ) ;
 endmodule
 
@@ -1577,7 +1589,7 @@ cbx_1__0__mux_tree_tapbuf_size10_0 mux_top_ipin_0 (
     .sram ( mux_tree_tapbuf_size10_0_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_1 , SYNOPSYS_UNCONNECTED_2 , 
         SYNOPSYS_UNCONNECTED_3 , SYNOPSYS_UNCONNECTED_4 } ) ,
-    .out ( bottom_grid_pin_0_ ) , .p0 ( optlc_net_114 ) ) ;
+    .out ( bottom_grid_pin_0_ ) , .p0 ( optlc_net_112 ) ) ;
 cbx_1__0__mux_tree_tapbuf_size10_1 mux_top_ipin_1 (
     .in ( { chanx_right_out[1] , chanx_left_out[1] , chanx_right_out[3] , 
         chanx_left_out[3] , chanx_right_out[5] , chanx_left_out[5] , 
@@ -1586,7 +1598,7 @@ cbx_1__0__mux_tree_tapbuf_size10_1 mux_top_ipin_1 (
     .sram ( mux_tree_tapbuf_size10_1_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_5 , SYNOPSYS_UNCONNECTED_6 , 
         SYNOPSYS_UNCONNECTED_7 , SYNOPSYS_UNCONNECTED_8 } ) ,
-    .out ( bottom_grid_pin_2_ ) , .p0 ( optlc_net_114 ) ) ;
+    .out ( bottom_grid_pin_2_ ) , .p0 ( optlc_net_112 ) ) ;
 cbx_1__0__mux_tree_tapbuf_size10_2 mux_top_ipin_2 (
     .in ( { chanx_right_out[0] , chanx_left_out[0] , chanx_right_out[2] , 
         chanx_left_out[2] , chanx_right_out[6] , chanx_left_out[6] , 
@@ -1595,7 +1607,7 @@ cbx_1__0__mux_tree_tapbuf_size10_2 mux_top_ipin_2 (
     .sram ( mux_tree_tapbuf_size10_2_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_9 , SYNOPSYS_UNCONNECTED_10 , 
         SYNOPSYS_UNCONNECTED_11 , SYNOPSYS_UNCONNECTED_12 } ) ,
-    .out ( bottom_grid_pin_4_ ) , .p0 ( optlc_net_115 ) ) ;
+    .out ( bottom_grid_pin_4_ ) , .p0 ( optlc_net_113 ) ) ;
 cbx_1__0__mux_tree_tapbuf_size10_3 mux_top_ipin_3 (
     .in ( { chanx_right_out[1] , chanx_left_out[1] , chanx_right_out[3] , 
         chanx_left_out[3] , chanx_right_out[7] , chanx_left_out[7] , 
@@ -1604,7 +1616,7 @@ cbx_1__0__mux_tree_tapbuf_size10_3 mux_top_ipin_3 (
     .sram ( mux_tree_tapbuf_size10_3_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_13 , SYNOPSYS_UNCONNECTED_14 , 
         SYNOPSYS_UNCONNECTED_15 , SYNOPSYS_UNCONNECTED_16 } ) ,
-    .out ( bottom_grid_pin_6_ ) , .p0 ( optlc_net_115 ) ) ;
+    .out ( bottom_grid_pin_6_ ) , .p0 ( optlc_net_114 ) ) ;
 cbx_1__0__mux_tree_tapbuf_size10_4 mux_top_ipin_4 (
     .in ( { chanx_right_out[0] , chanx_left_out[0] , chanx_right_out[2] , 
         chanx_left_out[2] , chanx_right_out[4] , chanx_left_out[4] , 
@@ -1613,7 +1625,7 @@ cbx_1__0__mux_tree_tapbuf_size10_4 mux_top_ipin_4 (
     .sram ( mux_tree_tapbuf_size10_4_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_17 , SYNOPSYS_UNCONNECTED_18 , 
         SYNOPSYS_UNCONNECTED_19 , SYNOPSYS_UNCONNECTED_20 } ) ,
-    .out ( bottom_grid_pin_8_ ) , .p0 ( optlc_net_116 ) ) ;
+    .out ( bottom_grid_pin_8_ ) , .p0 ( optlc_net_114 ) ) ;
 cbx_1__0__mux_tree_tapbuf_size10_5 mux_top_ipin_5 (
     .in ( { chanx_right_out[1] , chanx_left_out[1] , chanx_right_out[3] , 
         chanx_left_out[3] , chanx_right_out[5] , chanx_left_out[5] , 
@@ -1622,7 +1634,7 @@ cbx_1__0__mux_tree_tapbuf_size10_5 mux_top_ipin_5 (
     .sram ( mux_tree_tapbuf_size10_5_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_21 , SYNOPSYS_UNCONNECTED_22 , 
         SYNOPSYS_UNCONNECTED_23 , SYNOPSYS_UNCONNECTED_24 } ) ,
-    .out ( bottom_grid_pin_10_ ) , .p0 ( optlc_net_116 ) ) ;
+    .out ( bottom_grid_pin_10_ ) , .p0 ( optlc_net_114 ) ) ;
 cbx_1__0__mux_tree_tapbuf_size10_6 mux_top_ipin_6 (
     .in ( { chanx_right_out[0] , chanx_left_out[0] , chanx_right_out[2] , 
         chanx_left_out[2] , chanx_right_out[6] , chanx_left_out[6] , 
@@ -1631,7 +1643,7 @@ cbx_1__0__mux_tree_tapbuf_size10_6 mux_top_ipin_6 (
     .sram ( mux_tree_tapbuf_size10_6_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_25 , SYNOPSYS_UNCONNECTED_26 , 
         SYNOPSYS_UNCONNECTED_27 , SYNOPSYS_UNCONNECTED_28 } ) ,
-    .out ( bottom_grid_pin_12_ ) , .p0 ( optlc_net_114 ) ) ;
+    .out ( bottom_grid_pin_12_ ) , .p0 ( optlc_net_112 ) ) ;
 cbx_1__0__mux_tree_tapbuf_size10_7 mux_top_ipin_7 (
     .in ( { chanx_right_out[1] , chanx_left_out[1] , chanx_right_out[3] , 
         chanx_left_out[3] , chanx_right_out[7] , chanx_left_out[7] , 
@@ -1640,7 +1652,7 @@ cbx_1__0__mux_tree_tapbuf_size10_7 mux_top_ipin_7 (
     .sram ( mux_tree_tapbuf_size10_7_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_29 , SYNOPSYS_UNCONNECTED_30 , 
         SYNOPSYS_UNCONNECTED_31 , SYNOPSYS_UNCONNECTED_32 } ) ,
-    .out ( bottom_grid_pin_14_ ) , .p0 ( optlc_net_114 ) ) ;
+    .out ( bottom_grid_pin_14_ ) , .p0 ( optlc_net_112 ) ) ;
 cbx_1__0__mux_tree_tapbuf_size10 mux_top_ipin_8 (
     .in ( { chanx_right_out[0] , chanx_left_out[0] , chanx_right_out[2] , 
         chanx_left_out[2] , chanx_right_out[8] , chanx_left_out[8] , 
@@ -1649,7 +1661,7 @@ cbx_1__0__mux_tree_tapbuf_size10 mux_top_ipin_8 (
     .sram ( mux_tree_tapbuf_size10_8_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_33 , SYNOPSYS_UNCONNECTED_34 , 
         SYNOPSYS_UNCONNECTED_35 , SYNOPSYS_UNCONNECTED_36 } ) ,
-    .out ( bottom_grid_pin_16_ ) , .p0 ( optlc_net_115 ) ) ;
+    .out ( bottom_grid_pin_16_ ) , .p0 ( optlc_net_113 ) ) ;
 cbx_1__0__mux_tree_tapbuf_size10_mem_0 mem_top_ipin_0 ( 
     .prog_clk ( prog_clk ) , .ccff_head ( ccff_head ) , 
     .ccff_tail ( mux_tree_tapbuf_size10_mem_0_ccff_tail ) , 
@@ -1715,12 +1727,12 @@ cbx_1__0__logical_tile_io_mode_io__2 logical_tile_io_mode_io__2 (
     .IO_ISOL_N ( IO_ISOL_N ) , .prog_clk ( prog_clk ) , 
     .gfpga_pad_EMBEDDED_IO_HD_SOC_IN ( gfpga_pad_EMBEDDED_IO_HD_SOC_IN[2] ) , 
     .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT ( gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[2] ) ,
-    .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR ( { aps_rename_512_ } ) ,
+    .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR ( { aps_rename_511_ } ) ,
     .io_outpad ( top_width_0_height_0__pin_4_ ) , 
     .ccff_head ( logical_tile_io_mode_io__1_ccff_tail ) , 
     .io_inpad ( top_width_0_height_0__pin_5_lower ) , 
     .ccff_tail ( logical_tile_io_mode_io__2_ccff_tail ) , 
-    .ZBUF_184_0 ( gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[2] ) ) ;
+    .ZBUF_211_0 ( gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[2] ) ) ;
 cbx_1__0__logical_tile_io_mode_io__3 logical_tile_io_mode_io__3 ( 
     .IO_ISOL_N ( IO_ISOL_N ) , .prog_clk ( prog_clk ) , 
     .gfpga_pad_EMBEDDED_IO_HD_SOC_IN ( gfpga_pad_EMBEDDED_IO_HD_SOC_IN[3] ) , 
@@ -1775,10 +1787,10 @@ cbx_1__0__logical_tile_io_mode_io_ logical_tile_io_mode_io__8 (
     .ccff_head ( logical_tile_io_mode_io__7_ccff_tail ) , 
     .io_inpad ( top_width_0_height_0__pin_17_lower ) , 
     .ccff_tail ( ccff_tail ) ) ;
-sky130_fd_sc_hd__buf_16 prog_clk_0_FTB00 ( .A ( prog_clk_0_N_in ) , 
+sky130_fd_sc_hd__buf_1 prog_clk_0_FTB00 ( .A ( prog_clk_0_N_in ) , 
     .X ( prog_clk[0] ) ) ;
 sky130_fd_sc_hd__clkbuf_1 prog_clk_0_W_FTB01 ( .A ( prog_clk_0_N_in ) , 
-    .X ( ctsbuf_net_1117 ) ) ;
+    .X ( ctsbuf_net_1115 ) ) ;
 sky130_fd_sc_hd__buf_8 FTB_19__18 ( .A ( chanx_left_in[0] ) , 
     .X ( chanx_right_out[0] ) ) ;
 sky130_fd_sc_hd__buf_8 FTB_20__19 ( .A ( chanx_left_in[1] ) , 
@@ -1888,15 +1900,15 @@ sky130_fd_sc_hd__buf_6 FTB_67__66 (
     .X ( top_width_0_height_0__pin_17_upper[0] ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_68__67 ( .A ( SC_IN_TOP ) , .X ( SC_OUT_BOT ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_69__68 ( .A ( SC_IN_BOT ) , .X ( SC_OUT_TOP ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_116 ( .LO ( SYNOPSYS_UNCONNECTED_37 ) , 
+sky130_fd_sc_hd__conb_1 optlc_114 ( .LO ( SYNOPSYS_UNCONNECTED_37 ) , 
+    .HI ( optlc_net_112 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_116 ( .LO ( SYNOPSYS_UNCONNECTED_38 ) , 
+    .HI ( optlc_net_113 ) ) ;
+sky130_fd_sc_hd__conb_1 optlc_118 ( .LO ( SYNOPSYS_UNCONNECTED_39 ) , 
     .HI ( optlc_net_114 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_118 ( .LO ( SYNOPSYS_UNCONNECTED_38 ) , 
-    .HI ( optlc_net_115 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_120 ( .LO ( SYNOPSYS_UNCONNECTED_39 ) , 
-    .HI ( optlc_net_116 ) ) ;
-sky130_fd_sc_hd__buf_6 ZBUF_184_inst_121 ( .A ( aps_rename_512_ ) , 
+sky130_fd_sc_hd__buf_6 ZBUF_211_inst_119 ( .A ( aps_rename_511_ ) , 
     .X ( gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[2] ) ) ;
-sky130_fd_sc_hd__clkbuf_8 cts_buf_3521248 ( .A ( ctsbuf_net_1117 ) , 
+sky130_fd_sc_hd__clkbuf_8 cts_buf_3521246 ( .A ( ctsbuf_net_1115 ) , 
     .X ( prog_clk_0_W_out ) ) ;
 endmodule
 

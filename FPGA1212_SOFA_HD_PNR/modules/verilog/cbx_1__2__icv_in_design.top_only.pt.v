@@ -108,7 +108,7 @@ cbx_1__2__mux_tree_tapbuf_size10_1 mux_top_ipin_0 (
     .sram ( mux_tree_tapbuf_size10_1_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_5 , SYNOPSYS_UNCONNECTED_6 , 
         SYNOPSYS_UNCONNECTED_7 , SYNOPSYS_UNCONNECTED_8 } ) ,
-    .out ( bottom_grid_pin_0_ ) , .p0 ( optlc_net_74 ) ) ;
+    .out ( bottom_grid_pin_0_ ) , .p0 ( optlc_net_72 ) ) ;
 cbx_1__2__mux_tree_tapbuf_size10_2 mux_top_ipin_3 (
     .in ( { chanx_right_out[0] , chanx_left_out[0] , chanx_right_out[2] , 
         chanx_left_out[2] , chanx_right_out[4] , chanx_left_out[4] , 
@@ -117,7 +117,7 @@ cbx_1__2__mux_tree_tapbuf_size10_2 mux_top_ipin_3 (
     .sram ( mux_tree_tapbuf_size10_2_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_9 , SYNOPSYS_UNCONNECTED_10 , 
         SYNOPSYS_UNCONNECTED_11 , SYNOPSYS_UNCONNECTED_12 } ) ,
-    .out ( bottom_grid_pin_3_ ) , .p0 ( optlc_net_75 ) ) ;
+    .out ( bottom_grid_pin_3_ ) , .p0 ( optlc_net_73 ) ) ;
 cbx_1__2__mux_tree_tapbuf_size10_3 mux_top_ipin_4 (
     .in ( { chanx_right_out[1] , chanx_left_out[1] , chanx_right_out[3] , 
         chanx_left_out[3] , chanx_right_out[5] , chanx_left_out[5] , 
@@ -135,7 +135,7 @@ cbx_1__2__mux_tree_tapbuf_size10_4 mux_top_ipin_7 (
     .sram ( mux_tree_tapbuf_size10_4_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_17 , SYNOPSYS_UNCONNECTED_18 , 
         SYNOPSYS_UNCONNECTED_19 , SYNOPSYS_UNCONNECTED_20 } ) ,
-    .out ( bottom_grid_pin_7_ ) , .p0 ( optlc_net_75 ) ) ;
+    .out ( bottom_grid_pin_7_ ) , .p0 ( optlc_net_73 ) ) ;
 cbx_1__2__mux_tree_tapbuf_size10_5 mux_top_ipin_8 (
     .in ( { chanx_right_out[1] , chanx_left_out[1] , chanx_right_out[3] , 
         chanx_left_out[3] , chanx_right_out[9] , chanx_left_out[9] , 
@@ -144,7 +144,7 @@ cbx_1__2__mux_tree_tapbuf_size10_5 mux_top_ipin_8 (
     .sram ( mux_tree_tapbuf_size10_5_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_21 , SYNOPSYS_UNCONNECTED_22 , 
         SYNOPSYS_UNCONNECTED_23 , SYNOPSYS_UNCONNECTED_24 } ) ,
-    .out ( bottom_grid_pin_8_ ) , .p0 ( optlc_net_74 ) ) ;
+    .out ( bottom_grid_pin_8_ ) , .p0 ( optlc_net_72 ) ) ;
 cbx_1__2__mux_tree_tapbuf_size10_6 mux_top_ipin_11 (
     .in ( { chanx_right_out[0] , chanx_left_out[0] , chanx_right_out[2] , 
         chanx_left_out[2] , chanx_right_out[6] , chanx_left_out[6] , 
@@ -162,7 +162,7 @@ cbx_1__2__mux_tree_tapbuf_size10_7 mux_top_ipin_12 (
     .sram ( mux_tree_tapbuf_size10_7_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_29 , SYNOPSYS_UNCONNECTED_30 , 
         SYNOPSYS_UNCONNECTED_31 , SYNOPSYS_UNCONNECTED_32 } ) ,
-    .out ( bottom_grid_pin_12_ ) , .p0 ( optlc_net_74 ) ) ;
+    .out ( bottom_grid_pin_12_ ) , .p0 ( optlc_net_72 ) ) ;
 cbx_1__2__mux_tree_tapbuf_size10 mux_top_ipin_15 (
     .in ( { chanx_right_out[0] , chanx_left_out[0] , chanx_right_out[2] , 
         chanx_left_out[2] , chanx_right_out[4] , chanx_left_out[4] , 
@@ -223,7 +223,7 @@ cbx_1__2__mux_tree_tapbuf_size8_0 mux_top_ipin_1 (
     .sram ( mux_tree_tapbuf_size8_0_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_37 , SYNOPSYS_UNCONNECTED_38 , 
         SYNOPSYS_UNCONNECTED_39 , SYNOPSYS_UNCONNECTED_40 } ) ,
-    .out ( bottom_grid_pin_1_ ) , .p0 ( optlc_net_75 ) ) ;
+    .out ( bottom_grid_pin_1_ ) , .p0 ( optlc_net_73 ) ) ;
 cbx_1__2__mux_tree_tapbuf_size8_1 mux_top_ipin_2 (
     .in ( { chanx_right_out[1] , chanx_left_out[1] , chanx_right_out[3] , 
         chanx_left_out[3] , chanx_right_out[7] , chanx_left_out[7] , 
@@ -239,7 +239,7 @@ cbx_1__2__mux_tree_tapbuf_size8_2 mux_top_ipin_5 (
     .sram ( mux_tree_tapbuf_size8_2_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_45 , SYNOPSYS_UNCONNECTED_46 , 
         SYNOPSYS_UNCONNECTED_47 , SYNOPSYS_UNCONNECTED_48 } ) ,
-    .out ( bottom_grid_pin_5_ ) , .p0 ( optlc_net_75 ) ) ;
+    .out ( bottom_grid_pin_5_ ) , .p0 ( optlc_net_73 ) ) ;
 cbx_1__2__mux_tree_tapbuf_size8_3 mux_top_ipin_6 (
     .in ( { chanx_right_out[1] , chanx_left_out[1] , chanx_right_out[3] , 
         chanx_left_out[3] , chanx_right_out[11] , chanx_left_out[11] , 
@@ -255,7 +255,7 @@ cbx_1__2__mux_tree_tapbuf_size8_4 mux_top_ipin_9 (
     .sram ( mux_tree_tapbuf_size8_4_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_53 , SYNOPSYS_UNCONNECTED_54 , 
         SYNOPSYS_UNCONNECTED_55 , SYNOPSYS_UNCONNECTED_56 } ) ,
-    .out ( bottom_grid_pin_9_ ) , .p0 ( optlc_net_75 ) ) ;
+    .out ( bottom_grid_pin_9_ ) , .p0 ( optlc_net_73 ) ) ;
 cbx_1__2__mux_tree_tapbuf_size8_5 mux_top_ipin_10 (
     .in ( { chanx_right_out[1] , chanx_left_out[1] , chanx_right_out[3] , 
         chanx_left_out[3] , chanx_right_out[7] , chanx_left_out[7] , 
@@ -263,7 +263,7 @@ cbx_1__2__mux_tree_tapbuf_size8_5 mux_top_ipin_10 (
     .sram ( mux_tree_tapbuf_size8_5_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_57 , SYNOPSYS_UNCONNECTED_58 , 
         SYNOPSYS_UNCONNECTED_59 , SYNOPSYS_UNCONNECTED_60 } ) ,
-    .out ( bottom_grid_pin_10_ ) , .p0 ( optlc_net_74 ) ) ;
+    .out ( bottom_grid_pin_10_ ) , .p0 ( optlc_net_72 ) ) ;
 cbx_1__2__mux_tree_tapbuf_size8_6 mux_top_ipin_13 (
     .in ( { chanx_right_out[0] , chanx_left_out[0] , chanx_right_out[2] , 
         chanx_left_out[2] , chanx_right_out[10] , chanx_left_out[10] , 
@@ -279,7 +279,7 @@ cbx_1__2__mux_tree_tapbuf_size8 mux_top_ipin_14 (
     .sram ( mux_tree_tapbuf_size8_7_sram ) ,
     .sram_inv ( { SYNOPSYS_UNCONNECTED_65 , SYNOPSYS_UNCONNECTED_66 , 
         SYNOPSYS_UNCONNECTED_67 , SYNOPSYS_UNCONNECTED_68 } ) ,
-    .out ( bottom_grid_pin_14_ ) , .p0 ( optlc_net_74 ) ) ;
+    .out ( bottom_grid_pin_14_ ) , .p0 ( optlc_net_72 ) ) ;
 cbx_1__2__mux_tree_tapbuf_size8_mem_0 mem_top_ipin_1 ( 
     .prog_clk ( prog_clk ) , 
     .ccff_head ( mux_tree_tapbuf_size10_mem_1_ccff_tail ) , 
@@ -331,10 +331,10 @@ cbx_1__2__logical_tile_io_mode_io_ logical_tile_io_mode_io__0 (
 sky130_fd_sc_hd__buf_1 prog_clk_0_FTB00 ( .A ( prog_clk_0_S_in ) , 
     .X ( prog_clk[0] ) ) ;
 sky130_fd_sc_hd__clkbuf_1 prog_clk_0_W_FTB01 ( .A ( prog_clk_0_S_in ) , 
-    .X ( ctsbuf_net_176 ) ) ;
+    .X ( ctsbuf_net_174 ) ) ;
 sky130_fd_sc_hd__buf_8 FTB_19__18 ( .A ( chanx_left_in[0] ) , 
     .X ( chanx_right_out[0] ) ) ;
-sky130_fd_sc_hd__buf_8 FTB_20__19 ( .A ( chanx_left_in[1] ) , 
+sky130_fd_sc_hd__buf_12 FTB_20__19 ( .A ( chanx_left_in[1] ) , 
     .X ( chanx_right_out[1] ) ) ;
 sky130_fd_sc_hd__buf_8 FTB_21__20 ( .A ( chanx_left_in[2] ) , 
     .X ( chanx_right_out[2] ) ) ;
@@ -376,7 +376,7 @@ sky130_fd_sc_hd__buf_8 FTB_39__38 ( .A ( chanx_right_in[0] ) ,
     .X ( chanx_left_out[0] ) ) ;
 sky130_fd_sc_hd__buf_8 FTB_40__39 ( .A ( chanx_right_in[1] ) , 
     .X ( chanx_left_out[1] ) ) ;
-sky130_fd_sc_hd__buf_8 FTB_41__40 ( .A ( chanx_right_in[2] ) , 
+sky130_fd_sc_hd__buf_12 FTB_41__40 ( .A ( chanx_right_in[2] ) , 
     .X ( chanx_left_out[2] ) ) ;
 sky130_fd_sc_hd__buf_8 FTB_42__41 ( .A ( chanx_right_in[3] ) , 
     .X ( chanx_left_out[3] ) ) ;
@@ -421,11 +421,7 @@ sky130_fd_sc_hd__conb_1 optlc_74 ( .LO ( SYNOPSYS_UNCONNECTED_69 ) ,
     .HI ( optlc_net_72 ) ) ;
 sky130_fd_sc_hd__conb_1 optlc_76 ( .LO ( SYNOPSYS_UNCONNECTED_70 ) , 
     .HI ( optlc_net_73 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_78 ( .LO ( SYNOPSYS_UNCONNECTED_71 ) , 
-    .HI ( optlc_net_74 ) ) ;
-sky130_fd_sc_hd__conb_1 optlc_80 ( .LO ( SYNOPSYS_UNCONNECTED_72 ) , 
-    .HI ( optlc_net_75 ) ) ;
-sky130_fd_sc_hd__buf_6 cts_buf_3521207 ( .A ( ctsbuf_net_176 ) , 
+sky130_fd_sc_hd__buf_6 cts_buf_3521203 ( .A ( ctsbuf_net_174 ) , 
     .X ( prog_clk_0_W_out ) ) ;
 endmodule
 

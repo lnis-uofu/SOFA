@@ -13,27 +13,27 @@ output [0:0] mem_out ;
 input  VDD ;
 input  VSS ;
 
-wire copt_net_55 ;
+wire copt_net_60 ;
 supply1 VDD ;
 supply0 VSS ;
 
 sky130_fd_sc_hd__dfxtp_4 sky130_fd_sc_hd__dfxtp_1_0_ ( .D ( ccff_head[0] ) , 
-    .CLK ( prog_clk[0] ) , .Q ( copt_net_55 ) , .VPWR ( VDD ) , 
+    .CLK ( prog_clk[0] ) , .Q ( copt_net_60 ) , .VPWR ( VDD ) , 
     .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_6 FTB_2__1 ( .A ( copt_net_59 ) , .X ( ccff_tail[0] ) , 
+sky130_fd_sc_hd__buf_6 FTB_2__1 ( .A ( mem_out[0] ) , .X ( ccff_tail[0] ) , 
     .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1187 ( .A ( copt_net_55 ) , 
-    .X ( mem_out[0] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1188 ( .A ( mem_out[0] ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1187 ( .A ( copt_net_60 ) , 
+    .X ( copt_net_55 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1188 ( .A ( copt_net_55 ) , 
     .X ( copt_net_56 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1189 ( .A ( copt_net_60 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1189 ( .A ( copt_net_56 ) , 
     .X ( copt_net_57 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1190 ( .A ( copt_net_57 ) , 
     .X ( copt_net_58 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1191 ( .A ( copt_net_58 ) , 
-    .X ( copt_net_59 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1192 ( .A ( copt_net_56 ) , 
-    .X ( copt_net_60 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1192 ( .A ( copt_net_61 ) , 
+    .X ( mem_out[0] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1193 ( .A ( copt_net_58 ) , 
+    .X ( copt_net_61 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 endmodule
 
 
@@ -156,17 +156,17 @@ sky130_fd_sc_hd__dfxtp_4 sky130_fd_sc_hd__dfxtp_1_3_ ( .D ( mem_out[2] ) ,
     .CLK ( prog_clk[0] ) , .Q ( mem_out[3] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_1 FTB_1__0 ( .A ( mem_out[3] ) , .X ( ccff_tail[0] ) , 
     .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1181 ( .A ( copt_net_51 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1181 ( .A ( ccff_head[0] ) , 
     .X ( copt_net_49 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1182 ( .A ( copt_net_52 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1182 ( .A ( copt_net_49 ) , 
     .X ( copt_net_50 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1183 ( .A ( copt_net_53 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1183 ( .A ( copt_net_50 ) , 
     .X ( copt_net_51 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1184 ( .A ( ccff_head[0] ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1184 ( .A ( copt_net_51 ) , 
     .X ( copt_net_52 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1185 ( .A ( copt_net_50 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1185 ( .A ( copt_net_52 ) , 
     .X ( copt_net_53 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1186 ( .A ( copt_net_49 ) , 
+sky130_fd_sc_hd__dlygate4sd3_1 copt_h_inst_1186 ( .A ( copt_net_53 ) , 
     .X ( copt_net_54 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 endmodule
 
@@ -259,10 +259,14 @@ input  prog_clk_0_E_in ;
 input  VDD ;
 input  VSS ;
 
-wire ropt_net_73 ;
-wire ropt_net_75 ;
-wire ropt_net_74 ;
-wire ropt_net_72 ;
+wire ropt_net_67 ;
+wire ropt_net_68 ;
+wire ropt_net_66 ;
+wire ropt_net_65 ;
+wire ropt_net_63 ;
+wire ropt_net_69 ;
+wire ropt_net_64 ;
+wire ropt_net_62 ;
 wire [0:0] prog_clk ;
 wire prog_clk_0 ;
 wire [0:3] mux_tree_tapbuf_size10_0_sram ;
@@ -308,12 +312,12 @@ sky130_fd_sc_hd__buf_8 FTB_7__6 ( .A ( chany_bottom_in[4] ) ,
     .X ( chany_top_out[4] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_8__7 ( .A ( chany_bottom_in[5] ) , 
     .X ( chany_top_out[5] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_8 FTB_9__8 ( .A ( chany_bottom_in[6] ) , 
+sky130_fd_sc_hd__buf_6 FTB_9__8 ( .A ( chany_bottom_in[6] ) , 
     .X ( chany_top_out[6] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_10__9 ( .A ( chany_bottom_in[7] ) , 
-    .X ( ropt_net_73 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+    .X ( ropt_net_67 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_11__10 ( .A ( chany_bottom_in[8] ) , 
-    .X ( ropt_net_75 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+    .X ( ropt_net_68 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_12__11 ( .A ( chany_bottom_in[9] ) , 
     .X ( chany_top_out[9] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_8 FTB_13__12 ( .A ( chany_bottom_in[10] ) , 
@@ -321,18 +325,18 @@ sky130_fd_sc_hd__buf_8 FTB_13__12 ( .A ( chany_bottom_in[10] ) ,
 sky130_fd_sc_hd__buf_6 FTB_14__13 ( .A ( chany_bottom_in[11] ) , 
     .X ( chany_top_out[11] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_15__14 ( .A ( chany_bottom_in[12] ) , 
-    .X ( chany_top_out[12] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_8 FTB_16__15 ( .A ( chany_bottom_in[13] ) , 
-    .X ( chany_top_out[13] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_8 FTB_17__16 ( .A ( chany_bottom_in[14] ) , 
-    .X ( chany_top_out[14] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+    .X ( ropt_net_66 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__buf_6 FTB_16__15 ( .A ( chany_bottom_in[13] ) , 
+    .X ( ropt_net_65 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__buf_6 FTB_17__16 ( .A ( chany_bottom_in[14] ) , 
+    .X ( ropt_net_63 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_18__17 ( .A ( chany_bottom_in[15] ) , 
     .X ( chany_top_out[15] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_8 FTB_19__18 ( .A ( chany_bottom_in[16] ) , 
     .X ( chany_top_out[16] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_20__19 ( .A ( chany_bottom_in[17] ) , 
     .X ( chany_top_out[17] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_8 FTB_21__20 ( .A ( chany_bottom_in[18] ) , 
+sky130_fd_sc_hd__buf_6 FTB_21__20 ( .A ( chany_bottom_in[18] ) , 
     .X ( chany_top_out[18] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_22__21 ( .A ( chany_bottom_in[19] ) , 
     .X ( chany_top_out[19] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
@@ -343,7 +347,7 @@ sky130_fd_sc_hd__buf_6 FTB_24__23 ( .A ( chany_top_in[1] ) ,
 sky130_fd_sc_hd__buf_8 FTB_25__24 ( .A ( chany_top_in[2] ) , 
     .X ( chany_bottom_out[2] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_26__25 ( .A ( chany_top_in[3] ) , 
-    .X ( ropt_net_74 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+    .X ( chany_bottom_out[3] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_8 FTB_27__26 ( .A ( chany_top_in[4] ) , 
     .X ( chany_bottom_out[4] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_28__27 ( .A ( chany_top_in[5] ) , 
@@ -359,10 +363,10 @@ sky130_fd_sc_hd__buf_6 FTB_32__31 ( .A ( chany_top_in[9] ) ,
 sky130_fd_sc_hd__buf_8 FTB_33__32 ( .A ( chany_top_in[10] ) , 
     .X ( chany_bottom_out[10] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_34__33 ( .A ( chany_top_in[11] ) , 
-    .X ( chany_bottom_out[11] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_8 FTB_35__34 ( .A ( chany_top_in[12] ) , 
-    .X ( chany_bottom_out[12] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_8 FTB_36__35 ( .A ( chany_top_in[13] ) , 
+    .X ( ropt_net_69 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__buf_6 FTB_35__34 ( .A ( chany_top_in[12] ) , 
+    .X ( ropt_net_64 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__buf_6 FTB_36__35 ( .A ( chany_top_in[13] ) , 
     .X ( chany_bottom_out[13] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_37__36 ( .A ( chany_top_in[14] ) , 
     .X ( chany_bottom_out[14] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
@@ -373,7 +377,7 @@ sky130_fd_sc_hd__buf_8 FTB_39__38 ( .A ( chany_top_in[16] ) ,
 sky130_fd_sc_hd__buf_6 FTB_40__39 ( .A ( chany_top_in[17] ) , 
     .X ( chany_bottom_out[17] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_41__40 ( .A ( chany_top_in[18] ) , 
-    .X ( ropt_net_72 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+    .X ( ropt_net_62 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_42__41 ( .A ( chany_top_in[19] ) , 
     .X ( chany_bottom_out[19] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__buf_6 FTB_43__42 ( 
@@ -382,14 +386,22 @@ sky130_fd_sc_hd__buf_6 FTB_43__42 (
     .VGND ( VSS ) ) ;
 sky130_fd_sc_hd__conb_1 optlc_49 ( .LO ( SYNOPSYS_UNCONNECTED_5 ) , 
     .HI ( optlc_net_48 ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_8 ropt_mt_inst_1204 ( .A ( ropt_net_72 ) , 
+sky130_fd_sc_hd__buf_8 ropt_mt_inst_1194 ( .A ( ropt_net_62 ) , 
     .X ( chany_bottom_out[18] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_8 ropt_mt_inst_1205 ( .A ( ropt_net_73 ) , 
+sky130_fd_sc_hd__buf_8 ropt_mt_inst_1195 ( .A ( ropt_net_63 ) , 
+    .X ( chany_top_out[14] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__buf_8 ropt_mt_inst_1196 ( .A ( ropt_net_64 ) , 
+    .X ( chany_bottom_out[12] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__buf_8 ropt_mt_inst_1197 ( .A ( ropt_net_65 ) , 
+    .X ( chany_top_out[13] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__buf_8 ropt_mt_inst_1198 ( .A ( ropt_net_66 ) , 
+    .X ( chany_top_out[12] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__buf_8 ropt_mt_inst_1199 ( .A ( ropt_net_67 ) , 
     .X ( chany_top_out[7] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_8 ropt_mt_inst_1206 ( .A ( ropt_net_74 ) , 
-    .X ( chany_bottom_out[3] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
-sky130_fd_sc_hd__buf_8 ropt_mt_inst_1207 ( .A ( ropt_net_75 ) , 
+sky130_fd_sc_hd__buf_8 ropt_mt_inst_1200 ( .A ( ropt_net_68 ) , 
     .X ( chany_top_out[8] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
+sky130_fd_sc_hd__buf_8 ropt_mt_inst_1201 ( .A ( ropt_net_69 ) , 
+    .X ( chany_bottom_out[11] ) , .VPWR ( VDD ) , .VGND ( VSS ) ) ;
 endmodule
 
 
