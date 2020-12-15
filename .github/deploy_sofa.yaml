@@ -64,6 +64,8 @@ jobs:
           -e DEST_DIR=$DEST_DIR
           -e SCAN_DIRECTORY=$SCAN_DIRECTORY
           --workdir /usr/local/workspace
+          --memory 2g
+          --memory-swap 4g
         run: cd /usr/local/workspace && pwd && ls && bash ./SOFA-Chips/.github/workflows/perform_precheck.sh
 
     - name: Deploy files

@@ -44,8 +44,7 @@ mv ./gds/caravel_merged.gds ./gds/caravel.gds
 # rm -f gds/caravel.old.gds
 
 # = = = = = = = = = = = = = Perform Open MPW Checks = = = = = = = = = = = = = =
-if [[ ! -n "$SKIP_PRECHECK" ]]; then
-    echo $SKIP_PRECHECK
+if [[ "$SKIP_PRECHECK" != 1 ]]; then
     echo "[Info] Running MPW Prechecker"
     cd /usr/local/bin
     python3 open_mpw_prechecker.py \
