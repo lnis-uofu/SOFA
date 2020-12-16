@@ -31,7 +31,6 @@
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/simple_por.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/storage.v"
-`include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/user_proj_example.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/sram_1rw1r_32_256_8_sky130.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/DFFRAM.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/DFFRAMBB.v"
