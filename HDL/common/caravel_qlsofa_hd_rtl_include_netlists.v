@@ -30,7 +30,6 @@
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/gpio_control_block.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/simple_por.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.v"
-`include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/user_project_wrapper.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/storage.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/user_proj_example.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/sram_1rw1r_32_256_8_sky130.v"
@@ -47,3 +46,7 @@
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/housekeeping_spi.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/clock_div.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/storage_bridge_wb.v"
+
+// Use Post-PnR netlists of QLSOFA HD FPGA
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/HDL/common/user_project_wrapper.v"
+`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_QLSOFA_HD_PNR/fpga_top/fpga_top_icv_in_design.lvs.v"
