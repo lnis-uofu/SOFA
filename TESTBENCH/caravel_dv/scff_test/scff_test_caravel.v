@@ -18,10 +18,12 @@ module scff_test_caravel;
   wire [0:0] pReset;
   reg [0:0] prog_clock_reg;
   wire [0:0] prog_clk;
+  wire [0:0] prog_clock;
   wire [0:0] Test_en;
   wire [0:0] Reset;
   reg [0:0] op_clock_reg;
   wire [0:0] op_clk;
+  wire [0:0] op_clock;
   reg [0:0] prog_reset;
   reg [0:0] greset;
 
