@@ -45,6 +45,8 @@
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/housekeeping_spi.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/clock_div.v"
 `include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/storage_bridge_wb.v"
+`include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/mprj_logic_high.v"
+`include "/research/ece/lnis/USERS/tang/github/caravel/verilog/rtl/mprj2_logic_high.v"
 
 // Use Post-PnR netlists of QLSOFA HD FPGA
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/HDL/common/user_project_wrapper.v"
