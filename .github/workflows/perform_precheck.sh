@@ -49,7 +49,7 @@ if [[ "$SKIP_PRECHECK" != 1 ]]; then
     cd /usr/local/bin
     python3 open_mpw_prechecker.py \
         --target_path /usr/local/workspace/${DEST_DIR} \
-        --pdk_root $PDK_ROOT
+        --pdk_root $PDK_ROOT ${PRECHECKER_OPTS}
     echo "[Info] Finished MPW Prechecker"
 else
     echo "[Info] Skipped MPW Prechecker"
