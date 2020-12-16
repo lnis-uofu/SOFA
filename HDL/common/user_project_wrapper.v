@@ -70,7 +70,7 @@ module user_project_wrapper #(
 	.vssd1(vssd1),	// User area 1 digital ground
 	.vssd2(vssd2),	// User area 2 digital ground
     .VDD(vccd1),
-    .VCC(vssd1),
+    .VSS(vssd1),
     `endif
 
 	// MGMT core clock and reset
