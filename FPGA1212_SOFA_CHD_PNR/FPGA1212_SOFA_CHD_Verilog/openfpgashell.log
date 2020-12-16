@@ -70,7 +70,7 @@ Warning 7: Model 'carry_follower' input port 'cin' has no timing specification (
 Warning 8: Model 'carry_follower' input port 'b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
 Warning 9: Model 'carry_follower' input port 'a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
 Warning 10: Model 'carry_follower' output port 'cout' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
-# Loading Architecture Description took 0.01 seconds (max_rss 8.8 MiB, delta_rss +0.4 MiB)
+# Loading Architecture Description took 0.00 seconds (max_rss 8.8 MiB, delta_rss +0.4 MiB)
 # Building complex block graph
 Warning 11: clb[0].cin[0] unconnected pin in architecture.
 Warning 12: clb[0].cout[0] unconnected pin in architecture.
@@ -114,7 +114,7 @@ Warning 49: [LINE 666] false logically-equivalent pin clb[0].I4[1].
 Warning 50: [LINE 672] false logically-equivalent pin clb[0].I5[1].
 Warning 51: [LINE 678] false logically-equivalent pin clb[0].I6[1].
 Warning 52: [LINE 684] false logically-equivalent pin clb[0].I7[1].
-# Building complex block graph took 0.01 seconds (max_rss 9.5 MiB, delta_rss +0.7 MiB)
+# Building complex block graph took 0.00 seconds (max_rss 9.5 MiB, delta_rss +0.7 MiB)
 # Load circuit
 # Load circuit took 0.00 seconds (max_rss 9.9 MiB, delta_rss +0.4 MiB)
 # Clean circuit
@@ -286,7 +286,7 @@ Netlist conversion complete.
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'top.net'.
 Detected 0 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0 seconds).
+Finished loading packed FPGA netlist file (took 0.01 seconds).
 Warning 65: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
 # Load Packing took 0.01 seconds (max_rss 10.7 MiB, delta_rss +0.1 MiB)
 Warning 66: Netlist contains 0 global net to non-global architecture pin connections
@@ -374,10 +374,10 @@ Warning 105: in check_rr_node: RR node: 1645 type: OPIN location: (12,1) pin: 53
 Warning 106: in check_rr_node: RR node: 1646 type: OPIN location: (12,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
 Warning 107: in check_rr_graph: fringe node 15912 CHANX at (1,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build tileable routing resource graph took 0.29 seconds (max_rss 20.1 MiB, delta_rss +9.3 MiB)
+## Build tileable routing resource graph took 0.20 seconds (max_rss 20.1 MiB, delta_rss +9.3 MiB)
   RR Graph Nodes: 23404
   RR Graph Edges: 121880
-# Create Device took 0.29 seconds (max_rss 20.1 MiB, delta_rss +9.3 MiB)
+# Create Device took 0.20 seconds (max_rss 20.1 MiB, delta_rss +9.3 MiB)
 
 # Placement
 ## Computing placement delta delay look-up
@@ -423,7 +423,7 @@ Warning 143: in check_rr_node: RR node: 14354 type: OPIN location: (12,1) pin: 5
   RR Graph Edges: 105560
 ### Computing delta delays
 ### Computing delta delays took 0.04 seconds (max_rss 20.8 MiB, delta_rss +0.0 MiB)
-## Computing placement delta delay look-up took 0.15 seconds (max_rss 20.8 MiB, delta_rss +0.5 MiB)
+## Computing placement delta delay look-up took 0.14 seconds (max_rss 20.8 MiB, delta_rss +0.5 MiB)
 
 There are 3 point to point connections in this circuit.
 
@@ -583,7 +583,7 @@ Restoring best routing
 Critical path: 0.69331 ns
 Successfully routed after 1 routing iterations.
 Router Stats: total_nets_routed: 3 total_connections_routed: 3 total_heap_pushes: 124 total_heap_pops: 52
-# Routing took 0.20 seconds (max_rss 22.3 MiB, delta_rss +1.1 MiB)
+# Routing took 0.19 seconds (max_rss 22.3 MiB, delta_rss +1.1 MiB)
 
 Checking to ensure routing is legal...
 Completed routing consistency check successfully.
@@ -701,9 +701,9 @@ Setup slack histogram:
 [ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
 [ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
 
-Timing analysis took 0.000354561 seconds (0.000323356 STA, 3.1205e-05 slack) (43 full updates: 41 setup, 0 hold, 2 combined).
+Timing analysis took 0.000305193 seconds (0.000277647 STA, 2.7546e-05 slack) (43 full updates: 41 setup, 0 hold, 2 combined).
 VPR suceeded
-The entire flow of VPR took 0.72 seconds (max_rss 22.5 MiB)
+The entire flow of VPR took 0.60 seconds (max_rss 22.5 MiB)
 
 Command line to execute: read_openfpga_arch -f /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_SOFA_CHD_PNR/FPGA1212_SOFA_CHD_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/openfpga_arch.xml
 
@@ -733,7 +733,7 @@ Confirm selected options when call command 'read_openfpga_simulation_setting':
 --file, -f: /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml
 Reading XML simulation setting '/research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml'...
 Read OpenFPGA simulation settings
-Read OpenFPGA simulation settings took 0.00 seconds (max_rss 22.8 MiB, delta_rss +0.1 MiB)
+Read OpenFPGA simulation settings took 0.01 seconds (max_rss 22.8 MiB, delta_rss +0.1 MiB)
 
 Command line to execute: link_openfpga_arch --activity_file top_ace_out.act --sort_gsb_chan_node_in_edges
 
@@ -1107,7 +1107,7 @@ Backannotated 169 General Switch Blocks (GSBs).
 [99%] Sorted edges for GSB[12][11]
 [100%] Sorted edges for GSB[12][12]
 Sorted edges for 169 General Switch Blocks (GSBs).
-# Sort incoming edges for each routing track output node of General Switch Block(GSB) took 0.09 seconds (max_rss 23.3 MiB, delta_rss +0.5 MiB)
+# Sort incoming edges for each routing track output node of General Switch Block(GSB) took 0.10 seconds (max_rss 23.3 MiB, delta_rss +0.5 MiB)
 # Build a library of physical multiplexers
 Built a multiplexer library of 16 physical multiplexers.
 Maximum multiplexer size is 16.
@@ -1124,7 +1124,7 @@ Average net density: 0.42
 Median net density: 0.00
 Average net density after weighting: 0.42
 Will apply 2 operating clock cycles to simulations
-Link OpenFPGA architecture to VPR architecture took 0.10 seconds (max_rss 23.6 MiB, delta_rss +0.8 MiB)
+Link OpenFPGA architecture to VPR architecture took 0.11 seconds (max_rss 23.6 MiB, delta_rss +0.8 MiB)
 
 Command line to execute: build_fabric --compress_routing --duplicate_grid_pin --load_fabric_key /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/tasks/FPGA1212_SOFA_CHD_task/arch/fabric_key.xml
 
@@ -1165,7 +1165,7 @@ Building logical tiles...Done
 Building physical tiles...Done
 # Build grid modules took 0.00 seconds (max_rss 25.0 MiB, delta_rss +0.5 MiB)
 # Build unique routing modules...
-# Build unique routing modules... took 0.01 seconds (max_rss 28.1 MiB, delta_rss +3.1 MiB)
+# Build unique routing modules... took 0.02 seconds (max_rss 28.1 MiB, delta_rss +3.1 MiB)
 # Build FPGA fabric module
 ## Add grid instances to top module
 ## Add grid instances to top module took 0.00 seconds (max_rss 29.3 MiB, delta_rss +1.3 MiB)
@@ -1176,13 +1176,13 @@ Building physical tiles...Done
 ## Add connection block instances to top module
 ## Add connection block instances to top module took 0.00 seconds (max_rss 31.1 MiB, delta_rss +0.5 MiB)
 ## Add module nets between grids and GSBs
-## Add module nets between grids and GSBs took 0.14 seconds (max_rss 52.5 MiB, delta_rss +21.4 MiB)
+## Add module nets between grids and GSBs took 0.18 seconds (max_rss 52.5 MiB, delta_rss +21.4 MiB)
 ## Add module nets for inter-tile connections
 ## Add module nets for inter-tile connections took 0.00 seconds (max_rss 53.1 MiB, delta_rss +0.5 MiB)
 ## Add module nets for configuration buses
-## Add module nets for configuration buses took 0.01 seconds (max_rss 55.1 MiB, delta_rss +1.5 MiB)
-# Build FPGA fabric module took 0.17 seconds (max_rss 55.1 MiB, delta_rss +27.1 MiB)
-Build fabric module graph took 0.19 seconds (max_rss 55.1 MiB, delta_rss +31.4 MiB)
+## Add module nets for configuration buses took 0.02 seconds (max_rss 55.1 MiB, delta_rss +1.5 MiB)
+# Build FPGA fabric module took 0.22 seconds (max_rss 55.1 MiB, delta_rss +27.1 MiB)
+Build fabric module graph took 0.24 seconds (max_rss 55.1 MiB, delta_rss +31.4 MiB)
 Create I/O location mapping for top module
 Create I/O location mapping for top module took 0.00 seconds (max_rss 55.1 MiB, delta_rss +0.0 MiB)
 Create global port info for top module
@@ -1217,10 +1217,10 @@ Generating bitstream for X-direction Connection blocks ...Done
 Generating bitstream for Y-direction Connection blocks ...Done
 
 Build fabric-independent bitstream for implementation 'top'
- took 0.15 seconds (max_rss 60.4 MiB, delta_rss +5.2 MiB)
+ took 0.16 seconds (max_rss 60.4 MiB, delta_rss +5.2 MiB)
 Warning 185: Directory path is empty and nothing will be created.
 Write 81452 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml'
-Write 81452 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml' took 0.60 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
+Write 81452 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml' took 0.55 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: build_fabric_bitstream
 
@@ -1251,7 +1251,7 @@ Confirm selected options when call command 'write_fabric_bitstream':
 --verbose: off
 Warning 187: Directory path is empty and nothing will be created.
 Write 81452 fabric bitstream into xml file 'fabric_bitstream.xml'
-Write 81452 fabric bitstream into xml file 'fabric_bitstream.xml' took 0.14 seconds (max_rss 65.5 MiB, delta_rss +0.0 MiB)
+Write 81452 fabric bitstream into xml file 'fabric_bitstream.xml' took 0.11 seconds (max_rss 65.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_fabric_verilog --file ./SRC --explicit_port_mapping --verbose
 
@@ -1314,7 +1314,7 @@ Building physical tiles...Done
 Writing Verilog netlist for top-level module of FPGA fabric './SRC/fpga_top.v'...Done
 Written 92 Verilog modules in total
 Write Verilog netlists for FPGA fabric
- took 0.45 seconds (max_rss 68.4 MiB, delta_rss +2.8 MiB)
+ took 0.48 seconds (max_rss 68.4 MiB, delta_rss +2.8 MiB)
 
 Command line to execute: write_verilog_testbench --file ./SRC --reference_benchmark_file_path top_output_verilog.v --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --explicit_port_mapping
 
@@ -1336,17 +1336,17 @@ Write Verilog testbenches for FPGA fabric
 
 Warning 189: Directory './SRC' already exists. Will overwrite contents
 # Write pre-configured FPGA top-level Verilog netlist for design 'top'
-# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 3.67 seconds (max_rss 68.4 MiB, delta_rss +0.0 MiB)
+# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 3.08 seconds (max_rss 68.4 MiB, delta_rss +0.0 MiB)
 # Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top'
 # Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top' took 0.00 seconds (max_rss 68.4 MiB, delta_rss +0.0 MiB)
 # Write autocheck testbench for FPGA top-level Verilog netlist for 'top'
 Will use 81453 configuration clock cycles to top testbench
-# Write autocheck testbench for FPGA top-level Verilog netlist for 'top' took 0.23 seconds (max_rss 68.5 MiB, delta_rss +0.1 MiB)
+# Write autocheck testbench for FPGA top-level Verilog netlist for 'top' took 0.13 seconds (max_rss 68.5 MiB, delta_rss +0.1 MiB)
 Succeed to create directory './SimulationDeck'
 # Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini'
 # Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini' took 0.00 seconds (max_rss 68.5 MiB, delta_rss +0.0 MiB)
 Write Verilog testbenches for FPGA fabric
- took 3.93 seconds (max_rss 68.5 MiB, delta_rss +0.2 MiB)
+ took 3.23 seconds (max_rss 68.5 MiB, delta_rss +0.1 MiB)
 
 Command line to execute: write_pnr_sdc --file ./SDC
 
@@ -1370,17 +1370,17 @@ Succeed to create directory './SDC'
 Write SDC for constraining clocks for P&R flow './SDC/global_ports.sdc'
 Write SDC for constraining clocks for P&R flow './SDC/global_ports.sdc' took 0.00 seconds (max_rss 68.5 MiB, delta_rss +0.0 MiB)
 Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc'
-Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc' took 0.01 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc' took 0.00 seconds (max_rss 68.6 MiB, delta_rss +0.1 MiB)
 Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc'
-Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc' took 0.05 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc' took 0.03 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 Write SDC to disable switch block outputs for P&R flow './SDC/disable_sb_outputs.sdc'
 Write SDC to disable switch block outputs for P&R flow './SDC/disable_sb_outputs.sdc' took 0.00 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 Write SDC for constrain Switch Block timing for P&R flow
-Write SDC for constrain Switch Block timing for P&R flow took 0.04 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC for constrain Switch Block timing for P&R flow took 0.03 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 Write SDC for constrain Connection Block timing for P&R flow
-Write SDC for constrain Connection Block timing for P&R flow took 0.01 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC for constrain Connection Block timing for P&R flow took 0.02 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 Write SDC for constraining grid timing for P&R flow
-Write SDC for constraining grid timing for P&R flow took 0.01 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC for constraining grid timing for P&R flow took 0.03 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_sdc_disable_timing_configure_ports --file ./SDC/disable_configure_ports.sdc
 
@@ -1390,7 +1390,7 @@ Confirm selected options when call command 'write_sdc_disable_timing_configure_p
 --verbose: off
 Warning 190: Directory './SDC' already exists. Will overwrite contents
 Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc'
-Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc' took 0.11 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc' took 0.15 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_analysis_sdc --file ./SDC_analysis
 
@@ -1401,7 +1401,7 @@ Confirm selected options when call command 'write_analysis_sdc':
 --time_unit: off
 Succeed to create directory './SDC_analysis'
 Generating SDC for Timing/Power analysis on the mapped FPGA './SDC_analysis/top_fpga_top_analysis.sdc'
-Generating SDC for Timing/Power analysis on the mapped FPGA './SDC_analysis/top_fpga_top_analysis.sdc' took 1.01 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Generating SDC for Timing/Power analysis on the mapped FPGA './SDC_analysis/top_fpga_top_analysis.sdc' took 1.10 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: exit
 
@@ -1409,6 +1409,6 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 7.3 seconds
+The entire OpenFPGA flow took 6.66 seconds
 
 Thank you for using OpenFPGA!

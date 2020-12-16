@@ -1,0 +1,36 @@
+                                Ref Name           Total Area        Utilization_%       Instance Count 
+	 ----------------------------------------------------------------------------------------------------
+                 sky130_fd_sc_hd__dfrtp_1       2038254.848000              19.83                81452 
+        sky130_uuopenfpga_cc_hd_invmux2_1        957513.331200               9.32                63773 
+                   sky130_fd_sc_hd__buf_8        467022.912000               4.54                31105 
+        sky130_uuopenfpga_cc_hd_invmux3_1        450426.995200               4.38                15652 
+                sky130_fd_sc_hd__clkinv_1        402397.180800               3.92               107203 
+                   sky130_fd_sc_hd__inv_1        396631.651200               3.86               105667 
+                  sky130_fd_sc_hd__mux2_1        227400.595200               2.21                20194 
+                 sky130_fd_sc_hd__nand2_1        178408.608000               1.74                47530 
+                  sky130_fd_sc_hd__nor2_1        178408.608000               1.74                47530 
+                   sky130_fd_sc_hd__buf_1        158124.153600               1.54                42126 
+               sky130_fd_sc_hd__bufbuf_16        145707.244800               1.42                 4479 
+                   sky130_fd_sc_hd__buf_6        129307.766400               1.26                11483 
+                   sky130_fd_sc_hd__inv_8         99072.518400               0.96                 8798 
+                sky130_fd_sc_hd__sdfrtp_1         72069.120000               0.70                 2304 
+           sky130_fd_sc_hd__dlygate4sd3_1         67324.569600               0.66                 6726 
+                  sky130_fd_sc_hd__conb_1         31012.243200               0.30                 8262 
+                   sky130_fd_sc_hd__buf_4         12326.822400               0.12                 1642 
+                   sky130_fd_sc_hd__inv_2         10682.745600               0.10                 2846 
+                   sky130_fd_sc_hd__or2_0          7206.912000               0.07                 1152 
+                 sky130_fd_sc_hd__ebufn_4          5758.022400               0.06                  354 
+                sky130_fd_sc_hd__clkbuf_8          4128.960000               0.04                  300 
+                  sky130_fd_sc_hd__mux2_2          3490.848000               0.03                  310 
+                   sky130_fd_sc_hd__buf_2          3423.283200               0.03                  684 
+                sky130_fd_sc_hd__clkbuf_1          2837.721600               0.03                  756 
+                sky130_fd_sc_hd__bufbuf_8          2683.824000               0.03                  143 
+           sky130_fd_sc_hd__dlygate4sd1_1          1453.894400               0.01                  166 
+           sky130_fd_sc_hd__dlygate4sd2_1          1348.793600               0.01                  154 
+                sky130_fd_sc_hd__nand2b_1           825.792000               0.01                  132 
+                   sky130_fd_sc_hd__inv_4           525.504000               0.01                   84 
+                   sky130_fd_sc_hd__inv_6           140.134400               0.00                   16 
+                  sky130_fd_sc_hd__or2b_4           135.129600               0.00                   12 
+FPGA_BBOX_AREA 9002554.1632
+CORE_BBOX_AREA 10276128.1216
+FPGA_BBOX_UTIL 87.6064803462
