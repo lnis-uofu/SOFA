@@ -63,9 +63,8 @@ jobs:
           -v ${{github.workspace}}:/usr/local/workspace
           -e DEST_DIR=$DEST_DIR
           -e SCAN_DIRECTORY=$SCAN_DIRECTORY
+          -e PRECHECKER_OPTS="--skip_drc"
           --workdir /usr/local/workspace
-          --memory 2g
-          --memory-swap 4g
         run: cd /usr/local/workspace && pwd && ls && bash ./SOFA-Chips/.github/workflows/perform_precheck.sh
 
     - name: Deploy files
