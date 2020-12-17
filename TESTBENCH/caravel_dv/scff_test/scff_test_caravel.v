@@ -100,7 +100,7 @@ module scff_test_caravel;
   assign Reset[0] = ~greset[0];
   assign Test_en[0] = ~greset;
   assign ccff_head[0] = 1'b0;
-  assign IO_ISOL_N[0] = 1'b0;
+  assign IO_ISOL_N[0] = ~greset;
   // ----- End connecting global ports of FPGA fabric to stimuli -----
 
   assign mprj_io[0] = Test_en;
