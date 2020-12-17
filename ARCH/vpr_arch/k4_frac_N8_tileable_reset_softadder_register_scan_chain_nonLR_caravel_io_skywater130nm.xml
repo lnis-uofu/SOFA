@@ -73,7 +73,7 @@
          These clocks can be handled in back-end
      -->
     <!-- Top-side has 1 I/O per tile -->
-    <tile name="io_top" capacity="1" area="0">
+    <tile name="io_top" capacity="32" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -85,7 +85,7 @@
       </pinlocations>
     </tile>
     <!-- Right-side has 1 I/O per tile -->
-    <tile name="io_right" capacity="1" area="0">
+    <tile name="io_right" capacity="32" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -97,7 +97,7 @@
       </pinlocations>
     </tile>
     <!-- Bottom-side has 9 I/O per tile -->
-    <tile name="io_bottom" capacity="9" area="0">
+    <tile name="io_bottom" capacity="32" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -109,7 +109,7 @@
       </pinlocations>
     </tile>
     <!-- Left-side has 1 I/O per tile -->
-    <tile name="io_left" capacity="1" area="0">
+    <tile name="io_left" capacity="32" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
