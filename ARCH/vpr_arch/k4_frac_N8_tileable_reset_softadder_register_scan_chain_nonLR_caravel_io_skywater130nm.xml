@@ -202,6 +202,16 @@
       <!--Fill with 'clb'-->
       <fill type="clb" priority="10"/>
     </fixed_layout>
+    <fixed_layout name="32x32" width="34" height="34">
+      <!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
+      <row type="io_top" starty="H-1" priority="100"/>
+      <row type="io_bottom" starty="0" priority="100"/>
+      <col type="io_left" startx="0" priority="100"/>
+      <col type="io_right" startx="W-1" priority="100"/>
+      <corners type="EMPTY" priority="101"/>
+      <!--Fill with 'clb'-->
+      <fill type="clb" priority="10"/>
+    </fixed_layout>
   </layout>
   <device>
     <!-- VB & JL: Using Ian Kuon's transistor sizing and drive strength data for routing, at 40 nm. Ian used BPTM 
