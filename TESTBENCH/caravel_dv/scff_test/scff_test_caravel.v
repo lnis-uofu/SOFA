@@ -5,7 +5,7 @@
 `define SOC_CLOCK_PERIOD 12.5
 `define FPGA_CLOCK_PERIOD 12.5
 
-module scff_test_caravel;
+module scff_test_post_pnr_caravel_autocheck_top_tb;
   reg clock;
   reg RSTB;
   reg power1, power2;

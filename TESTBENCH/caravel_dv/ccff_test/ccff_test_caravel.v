@@ -6,7 +6,7 @@
 `define FPGA_PROG_CLOCK_PERIOD 12.5
 `define FPGA_CLOCK_PERIOD 12.5
 
-module ccff_test_caravel;
+module ccff_test_post_pnr_caravel_autocheck_top_tb;
   reg clock;
   reg RSTB;
   reg power1, power2;
