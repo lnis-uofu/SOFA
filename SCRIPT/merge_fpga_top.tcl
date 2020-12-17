@@ -4,7 +4,7 @@ gds rescale false
 gds merge yes
 
 gds read ./gds/fpga_top_icv_in_design.gds
-load ./mag/user_project_wrapper.mag
+load ./mag/user_project_wrapper_empty.mag
 
 save user_project_wrapper
 

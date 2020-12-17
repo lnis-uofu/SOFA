@@ -16,11 +16,14 @@ done
 
 cd ${DEST_DIR}
 
-[ -s source_commit_hash.txt ] || echo "----------" > source_commit_hash.txt
-sed -i -e "s/^/\n/" source_commit_hash.txt
-sed -i -e "s/^/${GITHUB_SHA}\n/" source_commit_hash.txt
-sed -i -e "s/^/$(date)\n/" source_commit_hash.txt
+[ -s source_commit_hash.txt ] || echo "---- Start ----" > source_commit_hash.txt
 
+sed -i "1i  GITHUB_SHA ${GITHUB_SHA:--}" source_commit_hash.txt
+sed -i "1i  Date       $(date)" source_commit_hash.txt
+sed -i '1i  = = = = = = = = = = = = = = = =' source_commit_hash.txt
 
 # Clean up file from repo
 git checkout master qflow
+rm -rf .travis*
+rm -f .travis.yml
+find . -xtype l -delete
