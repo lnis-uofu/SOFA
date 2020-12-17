@@ -237,7 +237,7 @@ module ccff_test_caravel;
   );
 
   spiflash #(
-    .FILENAME("/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/caravel_dv/scff_test/scff_test_caravel.hex")
+    .FILENAME("/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/caravel_dv/ccff_test/ccff_test_caravel.hex")
   ) spiflash (
     .csb(flash_csb),
     .clk(flash_clk),
