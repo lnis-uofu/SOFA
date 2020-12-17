@@ -2,15 +2,14 @@
 ////                                                              ////
 //// WISHBONE SD Card Controller IP Core                          ////
 ////                                                              ////
-//// sd_data_xfer_trig.v                                          ////
+//// sd_defines.v                                                 ////
 ////                                                              ////
 //// This file is part of the WISHBONE SD Card                    ////
 //// Controller IP Core project                                   ////
 //// http://opencores.org/project,sd_card_controller              ////
 ////                                                              ////
 //// Description                                                  ////
-//// Module resposible for triggering data transfer based on      ////
-//// command transfer completition code                           ////
+//// Header file with common definitions                          ////
 ////                                                              ////
 //// Author(s):                                                   ////
 ////     - Marek Czerski, ma.czerski@gmail.com                    ////
@@ -18,6 +17,11 @@
 //////////////////////////////////////////////////////////////////////
 ////                                                              ////
 //// Copyright (C) 2013 Authors                                   ////
+////                                                              ////
+//// Based on original work by                                    ////
+////     Adam Edvardsson (adam.edvardsson@orsoc.se)               ////
+////                                                              ////
+////     Copyright (C) 2009 Authors                               ////
 ////                                                              ////
 //// This source file may be used and distributed without         ////
 //// restriction provided that this copyright statement is not    ////
@@ -41,86 +45,56 @@
 //// from http://www.opencores.org/lgpl.shtml                     ////
 ////                                                              ////
 //////////////////////////////////////////////////////////////////////
-`include "sd_defines.v" 
 
-module sd_data_xfer_trig (
-           input sd_clk,
-           input rst,
-           input cmd_with_data_start_i,
-           input r_w_i,
-           input [`INT_CMD_SIZE-1:0] cmd_int_status_i,
-           output reg start_tx_o,
-           output reg start_rx_o
-       );
+//global defines
+`define BLKSIZE_W 12
+`define BLKCNT_W 16
 
-reg r_w_reg;
-parameter SIZE = 2;
-reg [SIZE-1:0] state;
-reg [SIZE-1:0] next_state;
-parameter IDLE             = 2'b00;
-parameter WAIT_FOR_CMD_INT = 2'b01;
-parameter TRIGGER_XFER     = 2'b10;
+//cmd module interrupts
+`define INT_CMD_SIZE 5
+`define INT_CMD_CC 0
+`define INT_CMD_EI 1
+`define INT_CMD_CTE 2
+`define INT_CMD_CCRCE 3
+`define INT_CMD_CIE  4
 
-always @(state or cmd_with_data_start_i or r_w_i or cmd_int_status_i)
-begin: FSM_COMBO
-    case(state)
-        IDLE: begin
-            if (cmd_with_data_start_i & r_w_i)
-                next_state <= TRIGGER_XFER;
-            else if (cmd_with_data_start_i)
-                next_state <= WAIT_FOR_CMD_INT;
-            else
-                next_state <= IDLE;
-        end
-        WAIT_FOR_CMD_INT: begin
-            if (cmd_int_status_i[`INT_CMD_CC])
-                next_state <= TRIGGER_XFER;
-            else if (cmd_int_status_i[`INT_CMD_EI])
-                next_state <= IDLE;
-            else
-                next_state <= WAIT_FOR_CMD_INT;
-        end
-        TRIGGER_XFER: begin
-            next_state <= IDLE;
-        end
-        default: next_state <= IDLE;
-    endcase
-end
+//data module interrupts
+`define INT_DATA_SIZE 3
+`define INT_DATA_CC 0
+`define INT_DATA_CCRCE 1
+`define INT_DATA_CFE 2
 
-always @(posedge sd_clk or posedge rst)
-begin: FSM_SEQ
-    if (rst) begin
-        state <= IDLE;
-    end
-    else begin
-        state <= next_state;
-    end
-end
+//command register defines
+`define CMD_REG_SIZE 14
+`define CMD_RESPONSE_CHECK 1:0
+`define CMD_BUSY_CHECK 2
+`define CMD_CRC_CHECK 3
+`define CMD_IDX_CHECK 4
+`define CMD_WITH_DATA 6:5
+`define CMD_INDEX 13:8
 
-always @(posedge sd_clk or posedge rst)
-begin
-    if (rst) begin
-        start_tx_o <= 0;
-        start_rx_o <= 0;
-        r_w_reg <= 0;
-    end
-    else begin
-        case(state)
-            IDLE: begin
-                start_tx_o <= 0;
-                start_rx_o <= 0;
-                r_w_reg <= r_w_i;
-            end
-            WAIT_FOR_CMD_INT: begin
-                start_tx_o <= 0;
-                start_rx_o <= 0;
-            end
-            TRIGGER_XFER: begin
-                start_tx_o <= ~r_w_reg;
-                start_rx_o <= r_w_reg;
-            end
-        endcase
-    end
-end
+//register addreses
+`define argument 8'h00
+`define command 8'h04
+`define resp0 8'h08
+`define resp1 8'h0c
+`define resp2 8'h10
+`define resp3 8'h14
+`define controller 8'h1c
+`define timeout 8'h20
+`define clock_d 8'h24
+`define reset 8'h28
+`define voltage 8'h2c
+`define capa 8'h30
+`define cmd_isr 8'h34
+`define cmd_iser 8'h38
+`define data_isr 8'h3c
+`define data_iser 8'h40
+`define blksize 8'h44
+`define blkcnt 8'h48
+`define dst_src_addr 8'h60
 
-endmodule
+//wb module defines
+`define RESET_BLOCK_SIZE 512
+`define RESET_CLK_DIV 0
+`define SUPPLY_VOLTAGE_mV 3300
