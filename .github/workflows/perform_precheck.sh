@@ -36,8 +36,6 @@ echo "[Info] Finished shiping chip with Klayout"
 rm -rf ./gds/fpga_top*
 rm -rf ./gds/user_project_wrapper_empty.gds
 rm -rf ./gds/user_proj_example.gds
-rm -rf .travis*
-rm -f .travis.yml
 mv ./gds/caravel_merged.gds ./gds/caravel.gds
 
 # = = = = = = = = =  Build Caravel with Magic = = = = = = = = = = = = = = = = =
@@ -75,3 +73,10 @@ rm -rf gds/caravel.mag
 rm -rf magic_drc.log
 git checkout HEAD -- ./mag/user_project_wrapper.mag
 git checkout HEAD -- ./mag/user_project_wrapper.mag
+
+echo ${CARAVEL_COMPARE_COMMIT}
+if [[ 0 -eq $(git cat-file -e $CARAVEL_COMPARE_COMMIT) ]]; then
+    git diff --stat $CARAVEL_COMPARE_COMMIT . > \
+    /usr/local/workspace/${DEST_DIR}/checks/compare_caravel.txt
+    echo "[Info] Create compare_caravel.txt"
+fi
