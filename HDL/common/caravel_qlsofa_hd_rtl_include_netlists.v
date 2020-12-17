@@ -50,4 +50,8 @@
 
 // Use Post-PnR netlists of QLSOFA HD FPGA
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/HDL/common/user_project_wrapper.v"
-`include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_QLSOFA_HD_PNR/fpga_top/fpga_top_icv_in_design.lvs.v"
+`ifdef USE_POWER_PINS
+  `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_QLSOFA_HD_PNR/fpga_top/fpga_top_icv_in_design.lvs.v"
+`else
+  `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_QLSOFA_HD_PNR/fpga_top/fpga_top_icv_in_design.pt.v"
+`endif
