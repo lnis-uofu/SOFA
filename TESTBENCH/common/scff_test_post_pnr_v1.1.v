@@ -144,6 +144,10 @@ initial
 		.ccff_tail(ccff_tail[0]),
 		.sc_head(sc_head[0]),
 		.sc_tail(sc_tail[0]),
+`ifdef USE_POWER_PINS
+        .VDD(1'b1),
+        .VSS(1'b0),
+`endif
         .IO_ISOL_N(IO_ISOL_N)
         );
 
