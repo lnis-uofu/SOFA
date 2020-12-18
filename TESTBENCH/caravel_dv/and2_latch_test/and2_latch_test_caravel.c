@@ -62,6 +62,15 @@ void main() {
   | 001    | 0     | 0     | 0      | 0      | 0     | 0       | 0       | 0     | 1     | 0       |
 
   */
+  /* Set up the housekeeping SPI to be connected internally so */
+  /* that external pin changes don't affect it. */
+  reg_spimaster_config = 0xa002;  // Enable, prescaler = 2,
+                                  // connect to housekeeping SPI
+                                  // Connect the housekeeping SPI to the SPI master
+                                  // so that the CSB line is not left floating.  This allows
+                                  // all of the GPIO pins to be used for user functions.
+
+
 
   // By default all the I/Os are in input mode 
   reg_mprj_io_0 =  GPIO_MODE_USER_STD_INPUT_NOPULL;
