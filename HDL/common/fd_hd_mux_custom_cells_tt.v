@@ -3,7 +3,7 @@
 // type: scs8hd_muxinv8_1 
 `timescale 1ns/10ps
 `celldefine
-module scs8hd_muxinv2_1 (Z, Q1, Q2, S0, S0B, S1, S1B);
+module sky130_uuopenfpga_cc_hd_invmux2_1 (Z, Q1, Q2, S0, S0B, S1, S1B);
 	output Z;
 	input Q1, Q2, S0, S0B, S1, S1B;
 
@@ -36,7 +36,7 @@ endmodule
 // type: scs8hd_muxinv8_1 
 `timescale 1ns/10ps
 `celldefine
-module scs8hd_muxinv3_1 (Z, Q1, Q2, Q3, S0, S0B, S1, S1B, S2, S2B);
+module sky130_uuopenfpga_cc_hd_invmux3_1 (Z, Q1, Q2, Q3, S0, S0B, S1, S1B, S2, S2B);
 	output Z;
 	input Q1, Q2, Q3, S0, S0B, S1, S1B, S2, S2B;
 
