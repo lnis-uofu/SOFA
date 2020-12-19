@@ -1,7 +1,8 @@
 `timescale 1 ns / 1 ps
 
 `define POWER_UP_TIME_PERIOD 200
-`define SOC_SETUP_TIME_PERIOD 2000
+`define SOC_RESET_TIME_PERIOD 2000
+`define SOC_SETUP_TIME_PERIOD 200*2001
 `define SOC_CLOCK_PERIOD 12.5
 `define FPGA_CLOCK_PERIOD 12.5
 
@@ -177,7 +178,7 @@ module scff_test_post_pnr_caravel_autocheck_top_tb;
   initial begin
     RSTB <= 1'b0;
     soc_setup_done <= 1'b1;
-    #(`SOC_SETUP_TIME_PERIOD);
+    #(`SOC_RESET_TIME_PERIOD);
     RSTB <= 1'b1;      // Release reset
     soc_setup_done <= 1'b1; // We can start scff test
   end
