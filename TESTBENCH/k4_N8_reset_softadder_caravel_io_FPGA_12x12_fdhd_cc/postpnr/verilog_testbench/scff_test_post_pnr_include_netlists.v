@@ -33,9 +33,9 @@
 
 // ------ Include fabric top-level netlists -----
 `ifndef USE_POWER_PINS
-  `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_QLSOFA_HD_PNR/fpga_top/fpga_top_icv_in_design.lvs.v"
-`else
   `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_QLSOFA_HD_PNR/fpga_top/fpga_top_icv_in_design.pt.v"
+`else
+  `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/FPGA1212_QLSOFA_HD_PNR/fpga_top/fpga_top_icv_in_design.lvs.v"
 `endif
 
 `include "/research/ece/lnis/USERS/tang/github/skywater-openfpga/TESTBENCH/common/scff_test_post_pnr_v1.1.v"
