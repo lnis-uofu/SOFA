@@ -61,7 +61,7 @@ custom_nlist = open(args.output_verilog, "w")
 def generate_verilog_codes_custom_cell_mux3(first_input_index, instance_index, add_inverter_follower):
   lines = []
   # Instanciate a 3-input MUX cell
-  lines.append("\tscs8hd_muxinv3_1 scs8hd_muxinv3_1_" + str(instance_index) + "(")
+  lines.append("\tsky130_uuopenfpga_fd_cc_invmux3_1 sky130_uuopenfpga_fd_cc_invmux3_1_" + str(instance_index) + "(")
   lines.append("\t                                    .Q1(in[" + str(first_input_index) + "]),")
   lines.append("\t                                    .Q2(in[" + str(first_input_index + 1) + "]),")
   lines.append("\t                                    .Q3(in[" + str(first_input_index + 2) + "]),")
@@ -79,7 +79,7 @@ def generate_verilog_codes_custom_cell_mux3(first_input_index, instance_index, a
 
   # Instanciate an inverter follower to pair the MUX cells (which has input inverters)
   if (add_inverter_follower):
-    lines.append("\tsky130_fd_sc_hd__inv_1 scs8hd_muxinv3_1_inv_follower" + str(instance_index) + "(")
+    lines.append("\tsky130_fd_sc_hd__inv_1 sky130_uuopenfpga_fd_cc_invmux3_1_inv_follower" + str(instance_index) + "(")
     lines.append("\t                                    .A(out_inv[0]),")
     lines.append("\t                                    .Y(out[0])")
     lines.append("\t                                    );")
@@ -93,7 +93,7 @@ def generate_verilog_codes_custom_cell_mux2(first_input_index, instance_index, a
   lines = []
 
   # Instanciate a 2-input MUX cell
-  lines.append("\tscs8hd_muxinv2_1 scs8hd_muxinv2_1_" + str(instance_index) + "(")
+  lines.append("\tsky130_uuopenfpga_fd_cc_invmux2_1 sky130_uuopenfpga_fd_cc_invmux2_1_" + str(instance_index) + "(")
   lines.append("\t                                    .Q1(in[" + str(first_input_index) + "]),")
   lines.append("\t                                    .Q2(in[" + str(first_input_index + 1) + "]),")
   lines.append("\t                                    .S0(mem[" + str(first_input_index) + "]),")
@@ -108,7 +108,7 @@ def generate_verilog_codes_custom_cell_mux2(first_input_index, instance_index, a
 
   # Instanciate an inverter follower to pair the MUX cells (which has input inverters)
   if (add_inverter_follower):
-    lines.append("\tsky130_fd_sc_hd__inv_1 scs8hd_muxinv2_1_inv_follower" + str(instance_index) + "(")
+    lines.append("\tsky130_fd_sc_hd__inv_1 sky130_uuopenfpga_fd_cc_invmux2_1_inv_follower" + str(instance_index) + "(")
     lines.append("\t                                    .A(out_inv[0]),")
     lines.append("\t                                    .Y(out[0])")
     lines.append("\t                                    );")
