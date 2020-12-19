@@ -15,8 +15,8 @@ echo "[Info] All files are uncompressed"
 AddLine="use fpga_top fpga_top_uut\n"\
 "transform 1 0 0 0 1 0\n"\
 "box 0 0 2500 3000"
-sed -i "s/<< properties >>/${AddLine}\n<< properties >>/" ./mag/user_project_wrapper.mag
-echo "[Info] Merged with user_project_wrapper"
+sed -i "s/<< properties >>/${AddLine}\n<< properties >>/" ./mag/user_project_wrapper_empty.mag
+echo "[Info] Updated user_project_wrapper_empty"
 
 # = = = Running magic to merge fpga_top with user_project_wrapper = = = = = =  =
 [ ! -d "/usr/local/workspace/${DEST_DIR}/checks" ] && mkdir /usr/local/workspace/${DEST_DIR}/checks
@@ -26,10 +26,12 @@ magic -rcfile ${PDK_ROOT}/sky130A/libs.tech/magic/current/sky130A.magicrc \
 ../SOFA-Chips/SCRIPT/merge_fpga_top.tcl </dev/null > \
 /usr/local/workspace/${DEST_DIR}/checks/magic_merge_user_project_wrapper.log
 
+git reset ./mag/user_project_wrapper_empty.mag
 echo "[Info] merge fpga-top"
 
 # = = = = = = = = = = Build Caravel with Klayout = = = = = = = = = = = = = = =
-klayout -r ../SOFA-Chips/SCRIPT/merge_caravel_klayout.py -zz
+klayout -r ../SOFA-Chips/SCRIPT/merge_caravel_klayout.py -zz > \
+/usr/local/workspace/${DEST_DIR}/checks/KlayoutMerge.log
 echo "[Info] Finished shiping chip with Klayout"
 rm -rf ./gds/fpga_top*
 rm -rf ./gds/user_project_wrapper_empty.gds
@@ -49,9 +51,10 @@ if [[ "$SKIP_PRECHECK" != 1 ]]; then
     cd /usr/local/bin
     python3 open_mpw_prechecker.py \
         --target_path /usr/local/workspace/${DEST_DIR} \
-        --pdk_root $PDK_ROOT
+        --pdk_root $PDK_ROOT ${PRECHECKER_OPTS}
     echo "[Info] Finished MPW Prechecker"
 else
+    make compress
     echo "[Info] Skipped MPW Prechecker"
 fi
 
@@ -69,3 +72,11 @@ rm -rf user_project_wrapper.mag
 rm -rf gds/caravel.mag
 rm -rf magic_drc.log
 git checkout HEAD -- ./mag/user_project_wrapper.mag
+git checkout HEAD -- ./mag/user_project_wrapper.mag
+
+echo ${CARAVEL_COMPARE_COMMIT}
+if [[ 0 -eq $(git cat-file -e $CARAVEL_COMPARE_COMMIT) ]]; then
+    git diff --stat $CARAVEL_COMPARE_COMMIT . > \
+    /usr/local/workspace/${DEST_DIR}/checks/compare_caravel.txt
+    echo "[Info] Create compare_caravel.txt"
+fi
