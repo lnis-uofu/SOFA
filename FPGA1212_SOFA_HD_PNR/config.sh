@@ -2,7 +2,7 @@
 # = = = = = = = = = = = = = = Variables Sections  = = = = = = = = = = = = = = =
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-export PROJ_NAME=FPGA1212_FLAT_HD_SKY # Project Name
+export PROJ_NAME=FPGA1212_SOFA_HD_PNR # Project Name
 export FPGA_SIZE_X=12        # Grid X Size
 export FPGA_SIZE_Y=12        # Grid Y Size
 # Design Style [hier/flat], mostly hier
@@ -32,6 +32,8 @@ export POST_OPENFPGA_SCRIPT=./PostOpenFPGAScript.sh
 export RESTRUCT_NETLIST=../utils/RestructureNetlistSkywater.py
 export POST_GENERATION_SCRIPT=./generate_scandef_and_case_analysis.sh
 
+export TAPEOUT_DIRECTORY=/research/ece/lnis/USERS/DARPA_ERI/Tapeout/SOFA
+export TAPEOUT_SCRIPT=
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Restructure Netlist Varaibles
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
