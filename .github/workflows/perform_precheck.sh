@@ -26,7 +26,7 @@ magic -rcfile ${PDK_ROOT}/sky130A/libs.tech/magic/current/sky130A.magicrc \
 ../SOFA-Chips/SCRIPT/merge_fpga_top.tcl </dev/null > \
 /usr/local/workspace/${DEST_DIR}/checks/magic_merge_user_project_wrapper.log
 
-git reset ./mag/user_project_wrapper_empty.mag
+git checkout HEAD ./mag/user_project_wrapper_empty.mag
 echo "[Info] merge fpga-top"
 
 # = = = = = = = = = = Build Caravel with Klayout = = = = = = = = = = = = = = =
