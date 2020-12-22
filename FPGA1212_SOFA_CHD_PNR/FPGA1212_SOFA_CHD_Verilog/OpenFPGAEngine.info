@@ -48,6 +48,7 @@ Untracked files:
 	openfpga_flow/tasks/FPGA1212_FC_HD_SKY_task
 	openfpga_flow/tasks/FPGA1212_FLAT_HD_SKY_task
 	openfpga_flow/tasks/FPGA1212_HIER_SKY_SC_MS_task
+	openfpga_flow/tasks/FPGA1212_QLSOFA_CHD_task
 	openfpga_flow/tasks/FPGA1212_QLSOFA_HD_task
 	openfpga_flow/tasks/FPGA1212_RESET_HD_SKY_task
 	openfpga_flow/tasks/FPGA1212_SOFA_CHD_task
