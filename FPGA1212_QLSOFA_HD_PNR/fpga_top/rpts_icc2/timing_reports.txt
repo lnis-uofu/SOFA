@@ -6,7 +6,7 @@ Report : clock timing
         -setup
 Design : fpga_top
 Version: P-2019.03-SP4
-Date   : Mon Dec 14 01:56:02 2020
+Date   : Mon Dec 21 23:13:06 2020
 ****************************************
 Information: Timer using 'PrimeTime Delay Calculation, AWP'. (TIM-050)
 
@@ -16,7 +16,7 @@ Information: Timer using 'PrimeTime Delay Calculation, AWP'. (TIM-050)
                                                  --- Latency ---
   Clock Pin                             Trans   Source   Offset  Network    Total            Corner
 ---------------------------------------------------------------------------------------------------
-  fpga_core_uut/sb_11__11_/mem_right_track_2/sky130_fd_sc_hd__dfrtp_1_3_/CLK    6.164    0.000       --   11.143   11.143 rp-+  nominal
+  fpga_core_uut/sb_11__11_/mem_right_track_2/sky130_fd_sc_hd__dfrtp_1_3_/CLK    6.164    0.000       --   11.140   11.140 rp-+  nominal
 ---------------------------------------------------------------------------------------------------
 
   Mode: full_chip
@@ -25,7 +25,7 @@ Information: Timer using 'PrimeTime Delay Calculation, AWP'. (TIM-050)
                                                  --- Latency ---
   Clock Pin                             Trans   Source   Offset  Network    Total            Corner
 ---------------------------------------------------------------------------------------------------
-  fpga_core_uut/grid_clb_11__12_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfrtp_1_0_/CLK    0.710    0.000       --    6.927    6.927 rp-+  nominal
+  fpga_core_uut/grid_clb_11__12_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_7/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/sky130_fd_sc_hd__sdfrtp_1_0_/CLK    0.701    0.000       --    6.921    6.921 rp-+  nominal
 ---------------------------------------------------------------------------------------------------
 ****************************************
 Report : clock timing
@@ -34,7 +34,7 @@ Report : clock timing
         -setup
 Design : fpga_top
 Version: P-2019.03-SP4
-Date   : Mon Dec 14 01:56:02 2020
+Date   : Mon Dec 21 23:13:07 2020
 ****************************************
 Information: Timer using 'PrimeTime Delay Calculation, AWP'. (TIM-050)
 
@@ -43,8 +43,8 @@ Information: Timer using 'PrimeTime Delay Calculation, AWP'. (TIM-050)
 
   Clock Pin                                          Latency      Skew             Corner
 ---------------------------------------------------------------------------------------------------
-  fpga_core_uut/sb_10__8_/mem_left_track_53/sky130_fd_sc_hd__dfrtp_1_2_/CLK    9.828 rp-+  nominal
-  fpga_core_uut/cbx_10__8_/mem_top_ipin_0/sky130_fd_sc_hd__dfrtp_1_0_/CLK    5.994    3.835 rp-+  nominal
+  fpga_core_uut/sb_1__5_/mem_left_track_53/sky130_fd_sc_hd__dfrtp_1_2_/CLK   10.371 rp-+  nominal
+  fpga_core_uut/cbx_1__5_/mem_top_ipin_0/sky130_fd_sc_hd__dfrtp_1_0_/CLK    6.542    3.829 rp-+  nominal
 
 ---------------------------------------------------------------------------------------------------
 
@@ -53,8 +53,8 @@ Information: Timer using 'PrimeTime Delay Calculation, AWP'. (TIM-050)
 
   Clock Pin                                          Latency      Skew             Corner
 ---------------------------------------------------------------------------------------------------
-  fpga_core_uut/grid_clb_6__2_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_7/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfrtp_1_0_/CLK    6.115 rp-+  nominal
-  fpga_core_uut/grid_clb_6__3_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/sky130_fd_sc_hd__sdfrtp_1_0_/CLK    5.386    0.729 rp-+  nominal
+  fpga_core_uut/grid_clb_6__2_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_7/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfrtp_1_0_/CLK    6.109 rp-+  nominal
+  fpga_core_uut/grid_clb_6__3_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/sky130_fd_sc_hd__sdfrtp_1_0_/CLK    5.381    0.729 rp-+  nominal
 
 ---------------------------------------------------------------------------------------------------
 Information: Timer using 'PrimeTime Delay Calculation, AWP'. (TIM-050)
@@ -63,7 +63,7 @@ Report : global timing
         -format { narrow }
 Design : fpga_top
 Version: P-2019.03-SP4
-Date   : Mon Dec 14 01:56:04 2020
+Date   : Mon Dec 21 23:13:09 2020
 ****************************************
 
 No setup violations found.
