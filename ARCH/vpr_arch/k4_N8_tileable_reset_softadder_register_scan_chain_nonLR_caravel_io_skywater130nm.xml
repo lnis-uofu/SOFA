@@ -417,6 +417,7 @@
               <direct name="direct2" input="fabric.sc_in" output="ff.DI"/>
               <direct name="direct4" input="ff.Q" output="fabric.sc_out"/>
               <direct name="direct5" input="ff.Q" output="fabric.reg_out"/>
+              <direct name="direct6" input="frac_logic.cout" output="fabric.cout"/>
               <complete name="complete1" input="fabric.clk" output="ff.clk"/>
               <complete name="complete2" input="fabric.reset" output="ff.reset"/>
               <mux name="mux1" input="frac_logic.out fabric.reg_in" output="ff.D">
