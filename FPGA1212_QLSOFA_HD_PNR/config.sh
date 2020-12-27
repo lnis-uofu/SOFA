@@ -24,7 +24,7 @@ export DIE_DIMENSION=3200
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Derived Or Fixed Variables
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-export OPENFPGA_ENGINE_PATH=/research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip
+export OPENFPGA_ENGINE_PATH=${OPENFPGA_PATH}
 export TASK_DIR_NAME=${PROJ_NAME}_task
 export VERILOG_PROJ_DIR=${PROJ_NAME}_Verilog
 export SPY_HACK_FILE=${TASK_DIR_NAME}/spy_hack.txt

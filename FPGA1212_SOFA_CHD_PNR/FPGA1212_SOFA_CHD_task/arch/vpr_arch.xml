@@ -1,9 +1,9 @@
-<!-- 
+<!--
   Low-cost homogeneous FPGA Architecture.
 
   - Skywater 130 nm technology
-  - General purpose logic block: 
-    K = 4, N = 8, fracturable 4 LUTs (can operate as one 4-LUT or two 3-LUTs with all 3 inputs shared) 
+  - General purpose logic block:
+    K = 4, N = 8, fracturable 4 LUTs (can operate as one 4-LUT or two 3-LUTs with all 3 inputs shared)
     with optionally registered outputs
   - Routing architecture:
       - 10% L = 1, fc_in = 0.15, Fc_out = 0.10
@@ -14,13 +14,13 @@
   Authors: Xifan Tang
 -->
 <architecture>
-  <!-- 
-       ODIN II specific config begins 
-       Describes the types of user-specified netlist blocks (in blif, this corresponds to 
+  <!--
+       ODIN II specific config begins
+       Describes the types of user-specified netlist blocks (in blif, this corresponds to
        ".model [type_of_block]") that this architecture supports.
 
-       Note: Basic LUTs, I/Os, and flip-flops are not included here as there are 
-       already special structures in blif (.names, .input, .output, and .latch) 
+       Note: Basic LUTs, I/Os, and flip-flops are not included here as there are
+       already special structures in blif (.names, .input, .output, and .latch)
        that describe them.
   -->
   <models>
@@ -204,19 +204,19 @@
     </fixed_layout>
   </layout>
   <device>
-    <!-- VB & JL: Using Ian Kuon's transistor sizing and drive strength data for routing, at 40 nm. Ian used BPTM 
+    <!-- VB & JL: Using Ian Kuon's transistor sizing and drive strength data for routing, at 40 nm. Ian used BPTM
 			     models. We are modifying the delay values however, to include metal C and R, which allows more architecture
 			     experimentation. We are also modifying the relative resistance of PMOS to be 1.8x that of NMOS
-			     (vs. Ian's 3x) as 1.8x lines up with Jeff G's data from a 45 nm process (and is more typical of 
-			     45 nm in general). I'm upping the Rmin_nmos from Ian's just over 6k to nearly 9k, and dropping 
+			     (vs. Ian's 3x) as 1.8x lines up with Jeff G's data from a 45 nm process (and is more typical of
+			     45 nm in general). I'm upping the Rmin_nmos from Ian's just over 6k to nearly 9k, and dropping
 			     RminW_pmos from 18k to 16k to hit this 1.8x ratio, while keeping the delays of buffers approximately
-			     lined up with Stratix IV. 
+			     lined up with Stratix IV.
 			     We are using Jeff G.'s capacitance data for 45 nm (in tech/ptm_45nm).
 			     Jeff's tables list C in for transistors with widths in multiples of the minimum feature size (45 nm).
 			     The minimum contactable transistor is 2.5 * 45 nm, so I need to multiply drive strength sizes in this file
 	                     by 2.5x when looking up in Jeff's tables.
 			     The delay values are lined up with Stratix IV, which has an architecture similar to this
-			     proposed FPGA, and which is also 40 nm 
+			     proposed FPGA, and which is also 40 nm
 			     C_ipin_cblock: input capacitance of a track buffer, which VPR assumes is a single-stage
 			     4x minimum drive strength buffer. -->
     <sizing R_minW_nmos="8926" R_minW_pmos="16067"/>
@@ -234,14 +234,14 @@
   <switchlist>
     <!-- VB: the mux_trans_size and buf_size data below is in minimum width transistor *areas*, assuming the purple
 	       book area formula. This means the mux transistors are about 5x minimum drive strength.
-	       We assume the first stage of the buffer is 3x min drive strength to be reasonable given the large 
+	       We assume the first stage of the buffer is 3x min drive strength to be reasonable given the large
 	       mux transistors, and this gives a reasonable stage ratio of a bit over 5x to the second stage. We assume
 	       the n and p transistors in the first stage are equal-sized to lower the buffer trip point, since it's fed
-	       by a pass transistor mux. We can then reverse engineer the buffer second stage to hit the specified 
+	       by a pass transistor mux. We can then reverse engineer the buffer second stage to hit the specified
 	       buf_size (really buffer area) - 16.2x minimum drive nmos and 1.8*16.2 = 29.2x minimum drive.
-	       I then took the data from Jeff G.'s PTM modeling of 45 nm to get the Cin (gate of first stage) and Cout 
+	       I then took the data from Jeff G.'s PTM modeling of 45 nm to get the Cin (gate of first stage) and Cout
 	       (diff of second stage) listed below.  Jeff's models are in tech/ptm_45nm, and are in min feature multiples.
-	       The minimum contactable transistor is 2.5 * 45 nm, so I need to multiply the drive strength sizes above by 
+	       The minimum contactable transistor is 2.5 * 45 nm, so I need to multiply the drive strength sizes above by
 	       2.5x when looking up in Jeff's tables.
 	       Finally, we choose a switch delay (58 ps) that leads to length 4 wires having a delay equal to that of SIV of 126 ps.
 	       This also leads to the switch being 46% of the total wire delay, which is reasonable. -->
@@ -252,7 +252,7 @@
     <switch type="mux" name="ipin_cblock" R="2231.5" Cout="0." Cin="1.47e-15" Tdel="7.247000e-11" mux_trans_size="1.222260" buf_size="auto"/>
   </switchlist>
   <segmentlist>
-    <!--- VB & JL: using ITRS metal stack data, 96 nm half pitch wires, which are intermediate metal width/space.  
+    <!--- VB & JL: using ITRS metal stack data, 96 nm half pitch wires, which are intermediate metal width/space.
 			     With the 96 nm half pitch, such wires would take 60 um of height, vs. a 90 nm high (approximated as square) Stratix IV tile so this seems
 			     reasonable. Using a tile length of 90 nm, corresponding to the length of a Stratix IV tile if it were square. -->
     <!-- GIVE a specific name for the segment! OpenFPGA appreciate that! -->
@@ -286,8 +286,8 @@
            If you need to register the I/O, define clocks in the circuit models
            These clocks can be handled in back-end
        -->
-      <!-- A mode denotes the physical implementation of an I/O 
-           This mode will be not packable but is mainly used for fabric verilog generation   
+      <!-- A mode denotes the physical implementation of an I/O
+           This mode will be not packable but is mainly used for fabric verilog generation
         -->
       <mode name="physical" disabled_in_pack="true">
         <pb_type name="iopad" blif_model=".subckt io" num_pb="1">
@@ -306,7 +306,7 @@
 
       <!-- IOs can operate as either inputs or outputs.
 	     Delays below come from Ian Kuon. They are small, so they should be interpreted as
-	     the delays to and from registers in the I/O (and generally I/Os are registered 
+	     the delays to and from registers in the I/O (and generally I/Os are registered
 	     today and that is when you timing analyze them.
 	     -->
       <mode name="inpad">
@@ -333,8 +333,8 @@
     </pb_type>
     <!-- Define I/O pads ends -->
     <!-- Define general purpose logic block (CLB) begin -->
-    <!-- -Due to the absence of local routing, 
-         the 4 inputs of fracturable LUT4 are no longer equivalent, 
+    <!-- -Due to the absence of local routing,
+         the 4 inputs of fracturable LUT4 are no longer equivalent,
          because the 4th input can not be switched when the dual-LUT3 modes are used.
          So pin equivalence should be applied to the first 3 inputs only
 	  -->
@@ -364,8 +364,8 @@
       <output name="sc_out" num_pins="1"/>
       <output name="cout" num_pins="1"/>
       <clock name="clk" num_pins="1"/>
-      <!-- Describe fracturable logic element.  
-             Each fracturable logic element has a 6-LUT that can alternatively operate as two 5-LUTs with shared inputs. 
+      <!-- Describe fracturable logic element.
+             Each fracturable logic element has a 6-LUT that can alternatively operate as two 5-LUTs with shared inputs.
              The outputs of the fracturable logic element can be optionally registered
         -->
       <pb_type name="fle" num_pb="8">
@@ -434,13 +434,15 @@
               <T_setup value="66e-12" port="ff.DI" clock="clk"/>
               <T_setup value="66e-12" port="ff.reset" clock="clk"/>
               <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
-            </pb_type>         
+            </pb_type>
             <interconnect>
               <direct name="direct1" input="fabric.in" output="frac_logic.in"/>
-              <direct name="direct2" input="fabric.sc_in" output="ff[0].DI"/>
-              <direct name="direct3" input="ff[0].Q" output="ff[1].DI"/>
-              <direct name="direct4" input="ff[1].Q" output="fabric.sc_out"/>
-              <direct name="direct5" input="ff[1].Q" output="fabric.reg_out"/>
+              <direct name="direct2" input="fabric.cin" output="frac_logic.cin"/>
+              <direct name="direct3" input="fabric.sc_in" output="ff[0].DI"/>
+              <direct name="direct4" input="ff[0].Q" output="ff[1].DI"/>
+              <direct name="direct5" input="ff[1].Q" output="fabric.sc_out"/>
+              <direct name="direct6" input="ff[1].Q" output="fabric.reg_out"/>
+              <direct name="direct7" input="frac_logic.cout" output="fabric.cout"/>
               <complete name="complete1" input="fabric.clk" output="ff[1:0].clk"/>
               <complete name="complete2" input="fabric.reset" output="ff[1:0].reset"/>
               <mux name="mux1" input="frac_logic.out[0:0] fabric.reg_in" output="ff[0:0].D">
@@ -629,7 +631,7 @@
             <direct name="direct4" input="fle.clk" output="shift_reg.clk"/>
           </interconnect>
         </mode>
-        <!-- Define shift register end --> 
+        <!-- Define shift register end -->
       </pb_type>
       <interconnect>
         <!-- We use direct connections to reduce the area to the most
@@ -691,8 +693,8 @@
         </complete>
         <complete name="resets" input="clb.reset" output="fle[7:0].reset">
         </complete>
-        <!-- This way of specifying direct connection to clb outputs is important because this architecture uses automatic spreading of opins.  
-               By grouping to output pins in this fashion, if a logic block is completely filled by 6-LUTs, 
+        <!-- This way of specifying direct connection to clb outputs is important because this architecture uses automatic spreading of opins.
+               By grouping to output pins in this fashion, if a logic block is completely filled by 6-LUTs,
                then the outputs those 6-LUTs take get evenly distributed across all four sides of the CLB instead of clumped on two sides (which is what happens with a more
                naive specification).
           -->
