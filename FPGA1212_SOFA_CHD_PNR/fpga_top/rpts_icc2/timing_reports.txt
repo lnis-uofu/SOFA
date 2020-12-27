@@ -1,0 +1,75 @@
+****************************************
+Report : clock timing
+        -type latency
+        -launch
+        -nworst 1
+        -setup
+Design : fpga_top
+Version: P-2019.03-SP4
+Date   : Mon Dec 21 23:36:49 2020
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, AWP'. (TIM-050)
+
+  Mode: full_chip
+  Clock: PROG_CLK
+
+                                                 --- Latency ---
+  Clock Pin                             Trans   Source   Offset  Network    Total            Corner
+---------------------------------------------------------------------------------------------------
+  fpga_core_uut/sb_11__10_/mem_right_track_0/sky130_fd_sc_hd__dfrtp_1_3_/CLK    6.822    0.000       --   11.669   11.669 rp-+  nominal
+---------------------------------------------------------------------------------------------------
+
+  Mode: full_chip
+  Clock: CLK
+
+                                                 --- Latency ---
+  Clock Pin                             Trans   Source   Offset  Network    Total            Corner
+---------------------------------------------------------------------------------------------------
+  fpga_core_uut/grid_clb_12__12_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_1/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/sky130_fd_sc_hd__sdfrtp_1_0_/CLK    0.826    0.000       --    7.285    7.285 rp-+  nominal
+---------------------------------------------------------------------------------------------------
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 1
+        -setup
+Design : fpga_top
+Version: P-2019.03-SP4
+Date   : Mon Dec 21 23:36:50 2020
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, AWP'. (TIM-050)
+
+  Mode: full_chip
+  Clock: PROG_CLK
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  fpga_core_uut/sb_0__10_/mem_bottom_track_53/sky130_fd_sc_hd__dfrtp_1_1_/CLK   10.838 rp-+  nominal
+  fpga_core_uut/cby_0__10_/mem_right_ipin_0/sky130_fd_sc_hd__dfrtp_1_0_/CLK    6.166    4.672 rp-+  nominal
+
+---------------------------------------------------------------------------------------------------
+
+  Mode: full_chip
+  Clock: CLK
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  fpga_core_uut/grid_clb_10__2_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_7/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1/sky130_fd_sc_hd__sdfrtp_1_0_/CLK    6.486 rp-+  nominal
+  fpga_core_uut/grid_clb_10__3_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/sky130_fd_sc_hd__sdfrtp_1_0_/CLK    5.760    0.727 rp-+  nominal
+
+---------------------------------------------------------------------------------------------------
+Information: Timer using 'PrimeTime Delay Calculation, AWP'. (TIM-050)
+****************************************
+Report : global timing
+        -format { narrow }
+Design : fpga_top
+Version: P-2019.03-SP4
+Date   : Mon Dec 21 23:36:52 2020
+****************************************
+
+No setup violations found.
+
+
+No hold violations found.
+
+
+1

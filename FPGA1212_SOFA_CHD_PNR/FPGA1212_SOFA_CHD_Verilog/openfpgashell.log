@@ -1,4 +1,4 @@
-/research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga/openfpga -f top_run.openfpga
+/research/ece/lnis/USERS/DARPA_ERI/tools/OpenFPGA_for_Chip/openfpga/openfpga -f top_run.openfpga
 Reading script file top_run.openfpga...
 
             ___                   _____ ____   ____    _     
@@ -70,51 +70,17 @@ Warning 7: Model 'carry_follower' input port 'cin' has no timing specification (
 Warning 8: Model 'carry_follower' input port 'b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
 Warning 9: Model 'carry_follower' input port 'a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
 Warning 10: Model 'carry_follower' output port 'cout' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
-# Loading Architecture Description took 0.01 seconds (max_rss 8.8 MiB, delta_rss +0.4 MiB)
+# Loading Architecture Description took 0.00 seconds (max_rss 8.8 MiB, delta_rss +0.4 MiB)
 # Building complex block graph
-Warning 11: clb[0].cin[0] unconnected pin in architecture.
-Warning 12: clb[0].cout[0] unconnected pin in architecture.
-Warning 13: fle[0].cin[0] unconnected pin in architecture.
-Warning 14: fle[0].cout[0] unconnected pin in architecture.
-Warning 15: fle[1].cin[0] unconnected pin in architecture.
-Warning 16: fle[1].cout[0] unconnected pin in architecture.
-Warning 17: fle[2].cin[0] unconnected pin in architecture.
-Warning 18: fle[2].cout[0] unconnected pin in architecture.
-Warning 19: fle[3].cin[0] unconnected pin in architecture.
-Warning 20: fle[3].cout[0] unconnected pin in architecture.
-Warning 21: fle[4].cin[0] unconnected pin in architecture.
-Warning 22: fle[4].cout[0] unconnected pin in architecture.
-Warning 23: fle[5].cin[0] unconnected pin in architecture.
-Warning 24: fle[5].cout[0] unconnected pin in architecture.
-Warning 25: fle[6].cin[0] unconnected pin in architecture.
-Warning 26: fle[6].cout[0] unconnected pin in architecture.
-Warning 27: fle[7].cin[0] unconnected pin in architecture.
-Warning 28: fle[7].cout[0] unconnected pin in architecture.
-Warning 29: fabric[0].cin[0] unconnected pin in architecture.
-Warning 30: fabric[0].cout[0] unconnected pin in architecture.
-Warning 31: fabric[0].cin[0] unconnected pin in architecture.
-Warning 32: fabric[0].cout[0] unconnected pin in architecture.
-Warning 33: fabric[0].cin[0] unconnected pin in architecture.
-Warning 34: fabric[0].cout[0] unconnected pin in architecture.
-Warning 35: fabric[0].cin[0] unconnected pin in architecture.
-Warning 36: fabric[0].cout[0] unconnected pin in architecture.
-Warning 37: fabric[0].cin[0] unconnected pin in architecture.
-Warning 38: fabric[0].cout[0] unconnected pin in architecture.
-Warning 39: fabric[0].cin[0] unconnected pin in architecture.
-Warning 40: fabric[0].cout[0] unconnected pin in architecture.
-Warning 41: fabric[0].cin[0] unconnected pin in architecture.
-Warning 42: fabric[0].cout[0] unconnected pin in architecture.
-Warning 43: fabric[0].cin[0] unconnected pin in architecture.
-Warning 44: fabric[0].cout[0] unconnected pin in architecture.
-Warning 45: [LINE 642] false logically-equivalent pin clb[0].I0[1].
-Warning 46: [LINE 648] false logically-equivalent pin clb[0].I1[1].
-Warning 47: [LINE 654] false logically-equivalent pin clb[0].I2[1].
-Warning 48: [LINE 660] false logically-equivalent pin clb[0].I3[1].
-Warning 49: [LINE 666] false logically-equivalent pin clb[0].I4[1].
-Warning 50: [LINE 672] false logically-equivalent pin clb[0].I5[1].
-Warning 51: [LINE 678] false logically-equivalent pin clb[0].I6[1].
-Warning 52: [LINE 684] false logically-equivalent pin clb[0].I7[1].
-# Building complex block graph took 0.01 seconds (max_rss 9.5 MiB, delta_rss +0.7 MiB)
+Warning 11: [LINE 644] false logically-equivalent pin clb[0].I0[1].
+Warning 12: [LINE 650] false logically-equivalent pin clb[0].I1[1].
+Warning 13: [LINE 656] false logically-equivalent pin clb[0].I2[1].
+Warning 14: [LINE 662] false logically-equivalent pin clb[0].I3[1].
+Warning 15: [LINE 668] false logically-equivalent pin clb[0].I4[1].
+Warning 16: [LINE 674] false logically-equivalent pin clb[0].I5[1].
+Warning 17: [LINE 680] false logically-equivalent pin clb[0].I6[1].
+Warning 18: [LINE 686] false logically-equivalent pin clb[0].I7[1].
+# Building complex block graph took 0.00 seconds (max_rss 9.6 MiB, delta_rss +0.8 MiB)
 # Load circuit
 # Load circuit took 0.00 seconds (max_rss 9.9 MiB, delta_rss +0.4 MiB)
 # Clean circuit
@@ -224,10 +190,10 @@ RoutingArch.switch_block_type: WILTON
 RoutingArch.Fs: 3
 
 # Packing
-Warning 53: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
-Warning 54: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
-Warning 55: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
-Warning 56: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 19: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 20: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 21: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 22: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
 Begin packing 'top.blif'.
 
 After removing unused inputs...
@@ -237,10 +203,10 @@ Finish prepacking.
 Using inter-cluster delay: 1.33777e-09
 Packing with pin utilization targets: io_top:1,1 io_right:1,1 io_bottom:1,1 io_left:1,1 clb:0.8,1
 Packing with high fanout thresholds: io_top:128 io_right:128 io_bottom:128 io_left:128 clb:32
-Warning 57: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
-Warning 58: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
-Warning 59: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
-Warning 60: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 23: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 24: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 25: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 26: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
 Not enough resources expand FPGA size to (14 x 14)
 Complex block 0: 'c' (clb) .
 Complex block 1: 'out:c' (io) .
@@ -269,10 +235,10 @@ Logic Element (fle) detailed count:
 	io: # blocks: 3, average # input + clock pins used: 0.333333, average # output pins used: 0.666667
 	clb: # blocks: 1, average # input + clock pins used: 2, average # output pins used: 1
 Absorbed logical nets 0 out of 3 nets, 3 nets not absorbed.
-Warning 61: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
-Warning 62: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
-Warning 63: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
-Warning 64: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 27: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 28: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 29: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 30: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
 FPGA sized to 14 x 14 (12x12)
 Device Utilization: 0.02 (target 1.00)
 	Block Utilization: 0.02 Type: io
@@ -287,9 +253,9 @@ Begin loading packed FPGA netlist file.
 Netlist generated from file 'top.net'.
 Detected 0 constant generators (to see names run with higher pack verbosity)
 Finished loading packed FPGA netlist file (took 0 seconds).
-Warning 65: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
+Warning 31: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
 # Load Packing took 0.01 seconds (max_rss 10.7 MiB, delta_rss +0.1 MiB)
-Warning 66: Netlist contains 0 global net to non-global architecture pin connections
+Warning 32: Netlist contains 0 global net to non-global architecture pin connections
 
 Netlist num_nets: 3
 Netlist num_blocks: 4
@@ -301,10 +267,10 @@ Netlist output pins: 1
 
 # Create Device
 ## Build Device Grid
-Warning 67: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
-Warning 68: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
-Warning 69: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
-Warning 70: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 33: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 34: Ambiguous block type specification at grid location (0,13). Existing block type 'io_top' at (0,13) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 35: Ambiguous block type specification at grid location (13,0). Existing block type 'io_bottom' at (13,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 36: Ambiguous block type specification at grid location (13,13). Existing block type 'io_top' at (13,13) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
 FPGA sized to 14 x 14: 196 grid tiles (12x12)
 
 Resource usage...
@@ -336,94 +302,94 @@ Device Utilization: 0.02 (target 1.00)
 ## Build tileable routing resource graph
 X-direction routing channel width is 60
 Y-direction routing channel width is 60
-Warning 71: in check_rr_node: RR node: 500 type: OPIN location: (1,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 72: in check_rr_node: RR node: 501 type: OPIN location: (1,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 73: in check_rr_node: RR node: 502 type: OPIN location: (1,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 74: in check_rr_node: RR node: 604 type: OPIN location: (2,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 75: in check_rr_node: RR node: 605 type: OPIN location: (2,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 76: in check_rr_node: RR node: 606 type: OPIN location: (2,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 77: in check_rr_node: RR node: 708 type: OPIN location: (3,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 78: in check_rr_node: RR node: 709 type: OPIN location: (3,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 79: in check_rr_node: RR node: 710 type: OPIN location: (3,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 80: in check_rr_node: RR node: 812 type: OPIN location: (4,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 81: in check_rr_node: RR node: 813 type: OPIN location: (4,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 82: in check_rr_node: RR node: 814 type: OPIN location: (4,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 83: in check_rr_node: RR node: 916 type: OPIN location: (5,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 84: in check_rr_node: RR node: 917 type: OPIN location: (5,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 85: in check_rr_node: RR node: 918 type: OPIN location: (5,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 86: in check_rr_node: RR node: 1020 type: OPIN location: (6,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 87: in check_rr_node: RR node: 1021 type: OPIN location: (6,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 88: in check_rr_node: RR node: 1022 type: OPIN location: (6,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 89: in check_rr_node: RR node: 1124 type: OPIN location: (7,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 90: in check_rr_node: RR node: 1125 type: OPIN location: (7,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 91: in check_rr_node: RR node: 1126 type: OPIN location: (7,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 92: in check_rr_node: RR node: 1228 type: OPIN location: (8,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 93: in check_rr_node: RR node: 1229 type: OPIN location: (8,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 94: in check_rr_node: RR node: 1230 type: OPIN location: (8,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 95: in check_rr_node: RR node: 1332 type: OPIN location: (9,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 96: in check_rr_node: RR node: 1333 type: OPIN location: (9,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 97: in check_rr_node: RR node: 1334 type: OPIN location: (9,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 98: in check_rr_node: RR node: 1436 type: OPIN location: (10,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 99: in check_rr_node: RR node: 1437 type: OPIN location: (10,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 100: in check_rr_node: RR node: 1438 type: OPIN location: (10,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 101: in check_rr_node: RR node: 1540 type: OPIN location: (11,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 102: in check_rr_node: RR node: 1541 type: OPIN location: (11,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 103: in check_rr_node: RR node: 1542 type: OPIN location: (11,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 104: in check_rr_node: RR node: 1644 type: OPIN location: (12,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 105: in check_rr_node: RR node: 1645 type: OPIN location: (12,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 106: in check_rr_node: RR node: 1646 type: OPIN location: (12,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 107: in check_rr_graph: fringe node 15912 CHANX at (1,1) has no fanin.
+Warning 37: in check_rr_node: RR node: 500 type: OPIN location: (1,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 38: in check_rr_node: RR node: 501 type: OPIN location: (1,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 39: in check_rr_node: RR node: 502 type: OPIN location: (1,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 40: in check_rr_node: RR node: 604 type: OPIN location: (2,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 41: in check_rr_node: RR node: 605 type: OPIN location: (2,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 42: in check_rr_node: RR node: 606 type: OPIN location: (2,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 43: in check_rr_node: RR node: 708 type: OPIN location: (3,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 44: in check_rr_node: RR node: 709 type: OPIN location: (3,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 45: in check_rr_node: RR node: 710 type: OPIN location: (3,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 46: in check_rr_node: RR node: 812 type: OPIN location: (4,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 47: in check_rr_node: RR node: 813 type: OPIN location: (4,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 48: in check_rr_node: RR node: 814 type: OPIN location: (4,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 49: in check_rr_node: RR node: 916 type: OPIN location: (5,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 50: in check_rr_node: RR node: 917 type: OPIN location: (5,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 51: in check_rr_node: RR node: 918 type: OPIN location: (5,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 52: in check_rr_node: RR node: 1020 type: OPIN location: (6,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 53: in check_rr_node: RR node: 1021 type: OPIN location: (6,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 54: in check_rr_node: RR node: 1022 type: OPIN location: (6,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 55: in check_rr_node: RR node: 1124 type: OPIN location: (7,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 56: in check_rr_node: RR node: 1125 type: OPIN location: (7,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 57: in check_rr_node: RR node: 1126 type: OPIN location: (7,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 58: in check_rr_node: RR node: 1228 type: OPIN location: (8,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 59: in check_rr_node: RR node: 1229 type: OPIN location: (8,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 60: in check_rr_node: RR node: 1230 type: OPIN location: (8,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 61: in check_rr_node: RR node: 1332 type: OPIN location: (9,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 62: in check_rr_node: RR node: 1333 type: OPIN location: (9,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 63: in check_rr_node: RR node: 1334 type: OPIN location: (9,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 64: in check_rr_node: RR node: 1436 type: OPIN location: (10,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 65: in check_rr_node: RR node: 1437 type: OPIN location: (10,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 66: in check_rr_node: RR node: 1438 type: OPIN location: (10,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 67: in check_rr_node: RR node: 1540 type: OPIN location: (11,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 68: in check_rr_node: RR node: 1541 type: OPIN location: (11,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 69: in check_rr_node: RR node: 1542 type: OPIN location: (11,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 70: in check_rr_node: RR node: 1644 type: OPIN location: (12,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 71: in check_rr_node: RR node: 1645 type: OPIN location: (12,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 72: in check_rr_node: RR node: 1646 type: OPIN location: (12,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 73: in check_rr_graph: fringe node 15912 CHANX at (1,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build tileable routing resource graph took 0.29 seconds (max_rss 20.1 MiB, delta_rss +9.3 MiB)
+## Build tileable routing resource graph took 0.14 seconds (max_rss 20.1 MiB, delta_rss +9.3 MiB)
   RR Graph Nodes: 23404
   RR Graph Edges: 121880
-# Create Device took 0.29 seconds (max_rss 20.1 MiB, delta_rss +9.3 MiB)
+# Create Device took 0.15 seconds (max_rss 20.1 MiB, delta_rss +9.3 MiB)
 
 # Placement
 ## Computing placement delta delay look-up
 ### Build routing resource graph
-Warning 108: in check_rr_node: RR node: 184 type: OPIN location: (1,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 109: in check_rr_node: RR node: 185 type: OPIN location: (1,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 110: in check_rr_node: RR node: 186 type: OPIN location: (1,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 111: in check_rr_node: RR node: 1472 type: OPIN location: (2,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 112: in check_rr_node: RR node: 1473 type: OPIN location: (2,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 113: in check_rr_node: RR node: 1474 type: OPIN location: (2,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 114: in check_rr_node: RR node: 2760 type: OPIN location: (3,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 115: in check_rr_node: RR node: 2761 type: OPIN location: (3,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 116: in check_rr_node: RR node: 2762 type: OPIN location: (3,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 117: in check_rr_node: RR node: 4048 type: OPIN location: (4,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 118: in check_rr_node: RR node: 4049 type: OPIN location: (4,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 119: in check_rr_node: RR node: 4050 type: OPIN location: (4,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 120: in check_rr_node: RR node: 5336 type: OPIN location: (5,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 121: in check_rr_node: RR node: 5337 type: OPIN location: (5,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 122: in check_rr_node: RR node: 5338 type: OPIN location: (5,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 123: in check_rr_node: RR node: 6624 type: OPIN location: (6,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 124: in check_rr_node: RR node: 6625 type: OPIN location: (6,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 125: in check_rr_node: RR node: 6626 type: OPIN location: (6,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 126: in check_rr_node: RR node: 7912 type: OPIN location: (7,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 127: in check_rr_node: RR node: 7913 type: OPIN location: (7,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 128: in check_rr_node: RR node: 7914 type: OPIN location: (7,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 129: in check_rr_node: RR node: 9200 type: OPIN location: (8,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 130: in check_rr_node: RR node: 9201 type: OPIN location: (8,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 131: in check_rr_node: RR node: 9202 type: OPIN location: (8,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 132: in check_rr_node: RR node: 10488 type: OPIN location: (9,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 133: in check_rr_node: RR node: 10489 type: OPIN location: (9,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 134: in check_rr_node: RR node: 10490 type: OPIN location: (9,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 135: in check_rr_node: RR node: 11776 type: OPIN location: (10,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 136: in check_rr_node: RR node: 11777 type: OPIN location: (10,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 137: in check_rr_node: RR node: 11778 type: OPIN location: (10,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 138: in check_rr_node: RR node: 13064 type: OPIN location: (11,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 139: in check_rr_node: RR node: 13065 type: OPIN location: (11,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 140: in check_rr_node: RR node: 13066 type: OPIN location: (11,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 141: in check_rr_node: RR node: 14352 type: OPIN location: (12,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 142: in check_rr_node: RR node: 14353 type: OPIN location: (12,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 143: in check_rr_node: RR node: 14354 type: OPIN location: (12,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-### Build routing resource graph took 0.10 seconds (max_rss 20.8 MiB, delta_rss +0.5 MiB)
+Warning 74: in check_rr_node: RR node: 184 type: OPIN location: (1,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 75: in check_rr_node: RR node: 185 type: OPIN location: (1,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 76: in check_rr_node: RR node: 186 type: OPIN location: (1,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 77: in check_rr_node: RR node: 1472 type: OPIN location: (2,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 78: in check_rr_node: RR node: 1473 type: OPIN location: (2,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 79: in check_rr_node: RR node: 1474 type: OPIN location: (2,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 80: in check_rr_node: RR node: 2760 type: OPIN location: (3,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 81: in check_rr_node: RR node: 2761 type: OPIN location: (3,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 82: in check_rr_node: RR node: 2762 type: OPIN location: (3,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 83: in check_rr_node: RR node: 4048 type: OPIN location: (4,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 84: in check_rr_node: RR node: 4049 type: OPIN location: (4,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 85: in check_rr_node: RR node: 4050 type: OPIN location: (4,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 86: in check_rr_node: RR node: 5336 type: OPIN location: (5,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 87: in check_rr_node: RR node: 5337 type: OPIN location: (5,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 88: in check_rr_node: RR node: 5338 type: OPIN location: (5,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 89: in check_rr_node: RR node: 6624 type: OPIN location: (6,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 90: in check_rr_node: RR node: 6625 type: OPIN location: (6,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 91: in check_rr_node: RR node: 6626 type: OPIN location: (6,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 92: in check_rr_node: RR node: 7912 type: OPIN location: (7,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 93: in check_rr_node: RR node: 7913 type: OPIN location: (7,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 94: in check_rr_node: RR node: 7914 type: OPIN location: (7,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 95: in check_rr_node: RR node: 9200 type: OPIN location: (8,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 96: in check_rr_node: RR node: 9201 type: OPIN location: (8,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 97: in check_rr_node: RR node: 9202 type: OPIN location: (8,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 98: in check_rr_node: RR node: 10488 type: OPIN location: (9,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 99: in check_rr_node: RR node: 10489 type: OPIN location: (9,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 100: in check_rr_node: RR node: 10490 type: OPIN location: (9,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 101: in check_rr_node: RR node: 11776 type: OPIN location: (10,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 102: in check_rr_node: RR node: 11777 type: OPIN location: (10,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 103: in check_rr_node: RR node: 11778 type: OPIN location: (10,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 104: in check_rr_node: RR node: 13064 type: OPIN location: (11,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 105: in check_rr_node: RR node: 13065 type: OPIN location: (11,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 106: in check_rr_node: RR node: 13066 type: OPIN location: (11,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 107: in check_rr_node: RR node: 14352 type: OPIN location: (12,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 108: in check_rr_node: RR node: 14353 type: OPIN location: (12,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 109: in check_rr_node: RR node: 14354 type: OPIN location: (12,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+### Build routing resource graph took 0.07 seconds (max_rss 20.8 MiB, delta_rss +0.5 MiB)
   RR Graph Nodes: 23120
   RR Graph Edges: 105560
 ### Computing delta delays
-### Computing delta delays took 0.04 seconds (max_rss 20.8 MiB, delta_rss +0.0 MiB)
-## Computing placement delta delay look-up took 0.15 seconds (max_rss 20.8 MiB, delta_rss +0.5 MiB)
+### Computing delta delays took 0.03 seconds (max_rss 20.8 MiB, delta_rss +0.0 MiB)
+## Computing placement delta delay look-up took 0.10 seconds (max_rss 20.8 MiB, delta_rss +0.5 MiB)
 
 There are 3 point to point connections in this circuit.
 
@@ -526,51 +492,51 @@ Placement total # of swap attempts: 232
 	Swaps aborted :   0 ( 0.0 %)
 
 Aborted Move Reasons:
-# Placement took 0.15 seconds (max_rss 21.2 MiB, delta_rss +1.1 MiB)
+# Placement took 0.11 seconds (max_rss 21.2 MiB, delta_rss +1.1 MiB)
 
 # Routing
 ## Build tileable routing resource graph
 X-direction routing channel width is 60
 Y-direction routing channel width is 60
-Warning 144: in check_rr_node: RR node: 500 type: OPIN location: (1,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 145: in check_rr_node: RR node: 501 type: OPIN location: (1,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 146: in check_rr_node: RR node: 502 type: OPIN location: (1,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 147: in check_rr_node: RR node: 604 type: OPIN location: (2,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 148: in check_rr_node: RR node: 605 type: OPIN location: (2,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 149: in check_rr_node: RR node: 606 type: OPIN location: (2,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 150: in check_rr_node: RR node: 708 type: OPIN location: (3,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 151: in check_rr_node: RR node: 709 type: OPIN location: (3,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 152: in check_rr_node: RR node: 710 type: OPIN location: (3,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 153: in check_rr_node: RR node: 812 type: OPIN location: (4,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 154: in check_rr_node: RR node: 813 type: OPIN location: (4,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 155: in check_rr_node: RR node: 814 type: OPIN location: (4,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 156: in check_rr_node: RR node: 916 type: OPIN location: (5,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 157: in check_rr_node: RR node: 917 type: OPIN location: (5,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 158: in check_rr_node: RR node: 918 type: OPIN location: (5,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 159: in check_rr_node: RR node: 1020 type: OPIN location: (6,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 160: in check_rr_node: RR node: 1021 type: OPIN location: (6,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 161: in check_rr_node: RR node: 1022 type: OPIN location: (6,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 162: in check_rr_node: RR node: 1124 type: OPIN location: (7,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 163: in check_rr_node: RR node: 1125 type: OPIN location: (7,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 164: in check_rr_node: RR node: 1126 type: OPIN location: (7,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 165: in check_rr_node: RR node: 1228 type: OPIN location: (8,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 166: in check_rr_node: RR node: 1229 type: OPIN location: (8,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 167: in check_rr_node: RR node: 1230 type: OPIN location: (8,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 168: in check_rr_node: RR node: 1332 type: OPIN location: (9,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 169: in check_rr_node: RR node: 1333 type: OPIN location: (9,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 170: in check_rr_node: RR node: 1334 type: OPIN location: (9,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 171: in check_rr_node: RR node: 1436 type: OPIN location: (10,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 172: in check_rr_node: RR node: 1437 type: OPIN location: (10,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 173: in check_rr_node: RR node: 1438 type: OPIN location: (10,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 174: in check_rr_node: RR node: 1540 type: OPIN location: (11,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 175: in check_rr_node: RR node: 1541 type: OPIN location: (11,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 176: in check_rr_node: RR node: 1542 type: OPIN location: (11,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 177: in check_rr_node: RR node: 1644 type: OPIN location: (12,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
-Warning 178: in check_rr_node: RR node: 1645 type: OPIN location: (12,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
-Warning 179: in check_rr_node: RR node: 1646 type: OPIN location: (12,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
-Warning 180: in check_rr_graph: fringe node 15912 CHANX at (1,1) has no fanin.
+Warning 110: in check_rr_node: RR node: 500 type: OPIN location: (1,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 111: in check_rr_node: RR node: 501 type: OPIN location: (1,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 112: in check_rr_node: RR node: 502 type: OPIN location: (1,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 113: in check_rr_node: RR node: 604 type: OPIN location: (2,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 114: in check_rr_node: RR node: 605 type: OPIN location: (2,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 115: in check_rr_node: RR node: 606 type: OPIN location: (2,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 116: in check_rr_node: RR node: 708 type: OPIN location: (3,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 117: in check_rr_node: RR node: 709 type: OPIN location: (3,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 118: in check_rr_node: RR node: 710 type: OPIN location: (3,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 119: in check_rr_node: RR node: 812 type: OPIN location: (4,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 120: in check_rr_node: RR node: 813 type: OPIN location: (4,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 121: in check_rr_node: RR node: 814 type: OPIN location: (4,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 122: in check_rr_node: RR node: 916 type: OPIN location: (5,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 123: in check_rr_node: RR node: 917 type: OPIN location: (5,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 124: in check_rr_node: RR node: 918 type: OPIN location: (5,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 125: in check_rr_node: RR node: 1020 type: OPIN location: (6,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 126: in check_rr_node: RR node: 1021 type: OPIN location: (6,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 127: in check_rr_node: RR node: 1022 type: OPIN location: (6,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 128: in check_rr_node: RR node: 1124 type: OPIN location: (7,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 129: in check_rr_node: RR node: 1125 type: OPIN location: (7,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 130: in check_rr_node: RR node: 1126 type: OPIN location: (7,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 131: in check_rr_node: RR node: 1228 type: OPIN location: (8,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 132: in check_rr_node: RR node: 1229 type: OPIN location: (8,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 133: in check_rr_node: RR node: 1230 type: OPIN location: (8,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 134: in check_rr_node: RR node: 1332 type: OPIN location: (9,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 135: in check_rr_node: RR node: 1333 type: OPIN location: (9,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 136: in check_rr_node: RR node: 1334 type: OPIN location: (9,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 137: in check_rr_node: RR node: 1436 type: OPIN location: (10,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 138: in check_rr_node: RR node: 1437 type: OPIN location: (10,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 139: in check_rr_node: RR node: 1438 type: OPIN location: (10,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 140: in check_rr_node: RR node: 1540 type: OPIN location: (11,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 141: in check_rr_node: RR node: 1541 type: OPIN location: (11,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 142: in check_rr_node: RR node: 1542 type: OPIN location: (11,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 143: in check_rr_node: RR node: 1644 type: OPIN location: (12,1) pin: 52 pin_name: clb.reg_out[0] capacity: 1 has no out-going edges.
+Warning 144: in check_rr_node: RR node: 1645 type: OPIN location: (12,1) pin: 53 pin_name: clb.sc_out[0] capacity: 1 has no out-going edges.
+Warning 145: in check_rr_node: RR node: 1646 type: OPIN location: (12,1) pin: 54 pin_name: clb.cout[0] capacity: 1 has no out-going edges.
+Warning 146: in check_rr_graph: fringe node 15912 CHANX at (1,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build tileable routing resource graph took 0.19 seconds (max_rss 21.5 MiB, delta_rss +0.3 MiB)
+## Build tileable routing resource graph took 0.14 seconds (max_rss 21.5 MiB, delta_rss +0.3 MiB)
   RR Graph Nodes: 23404
   RR Graph Edges: 121880
 Confirming router algorithm: TIMING_DRIVEN.
@@ -583,7 +549,7 @@ Restoring best routing
 Critical path: 0.69331 ns
 Successfully routed after 1 routing iterations.
 Router Stats: total_nets_routed: 3 total_connections_routed: 3 total_heap_pushes: 124 total_heap_pops: 52
-# Routing took 0.20 seconds (max_rss 22.3 MiB, delta_rss +1.1 MiB)
+# Routing took 0.15 seconds (max_rss 22.4 MiB, delta_rss +1.1 MiB)
 
 Checking to ensure routing is legal...
 Completed routing consistency check successfully.
@@ -701,9 +667,9 @@ Setup slack histogram:
 [ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
 [ -6.9e-10: -6.9e-10) 0 ( 0.0%) |
 
-Timing analysis took 0.000354561 seconds (0.000323356 STA, 3.1205e-05 slack) (43 full updates: 41 setup, 0 hold, 2 combined).
+Timing analysis took 0.000255382 seconds (0.000233752 STA, 2.163e-05 slack) (43 full updates: 41 setup, 0 hold, 2 combined).
 VPR suceeded
-The entire flow of VPR took 0.72 seconds (max_rss 22.5 MiB)
+The entire flow of VPR took 0.45 seconds (max_rss 22.5 MiB)
 
 Command line to execute: read_openfpga_arch -f /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_SOFA_CHD_PNR/FPGA1212_SOFA_CHD_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/openfpga_arch.xml
 
@@ -711,10 +677,10 @@ Confirm selected options when call command 'read_openfpga_arch':
 --file, -f: /research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_SOFA_CHD_PNR/FPGA1212_SOFA_CHD_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/openfpga_arch.xml
 Reading XML architecture '/research/ece/lnis/USERS/DARPA_ERI/GF14nm_chip_2019/ICC2_Methodology_Flow/GANESH/FROG_PnR/FPGA1212_SOFA_CHD_PNR/FPGA1212_SOFA_CHD_task/run001/vpr_arch/top/MIN_ROUTE_CHAN_WIDTH/arch/openfpga_arch.xml'...
 Read OpenFPGA architecture
-Warning 181: Automatically set circuit model 'frac_lut4' to be default in its type.
-Warning 182: Automatically set circuit model 'sky130_fd_sc_hd__sdfrtp_1' to be default in its type.
-Warning 183: Automatically set circuit model 'sky130_fd_sc_hd__mux2_1_wrapper' to be default in its type.
-Warning 184: Automatically set circuit model 'sky130_fd_sc_hd__dfrtp_1' to be default in its type.
+Warning 147: Automatically set circuit model 'frac_lut4' to be default in its type.
+Warning 148: Automatically set circuit model 'sky130_fd_sc_hd__sdfrtp_1' to be default in its type.
+Warning 149: Automatically set circuit model 'sky130_fd_sc_hd__mux2_1_wrapper' to be default in its type.
+Warning 150: Automatically set circuit model 'sky130_fd_sc_hd__dfrtp_1' to be default in its type.
 Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'mux_2level' port 'sram')
 Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'mux_2level_tapbuf' port 'sram')
 Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'mux_1level' port 'sram')
@@ -727,11 +693,11 @@ Check circuit library took 0.00 seconds (max_rss 22.8 MiB, delta_rss +0.0 MiB)
 Found 0 errors when checking configurable memory circuit models!
 Found 0 errors when checking tile annotation!
 
-Command line to execute: read_openfpga_simulation_setting -f /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml
+Command line to execute: read_openfpga_simulation_setting -f /research/ece/lnis/USERS/DARPA_ERI/tools/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml
 
 Confirm selected options when call command 'read_openfpga_simulation_setting':
---file, -f: /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml
-Reading XML simulation setting '/research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml'...
+--file, -f: /research/ece/lnis/USERS/DARPA_ERI/tools/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml
+Reading XML simulation setting '/research/ece/lnis/USERS/DARPA_ERI/tools/OpenFPGA_for_Chip/openfpga_flow/openfpga_simulation_settings/auto_sim_openfpga.xml'...
 Read OpenFPGA simulation settings
 Read OpenFPGA simulation settings took 0.00 seconds (max_rss 22.8 MiB, delta_rss +0.1 MiB)
 
@@ -935,7 +901,7 @@ Annotating previous nodes for rr_node...Done with 15 nodes mapping
 [99%] Backannotated GSB[12][11]
 [100%] Backannotated GSB[12][12]
 Backannotated 169 General Switch Blocks (GSBs).
-# Build General Switch Block(GSB) annotation on top of routing resource graph took 0.01 seconds (max_rss 22.8 MiB, delta_rss +0.0 MiB)
+# Build General Switch Block(GSB) annotation on top of routing resource graph took 0.00 seconds (max_rss 22.8 MiB, delta_rss +0.0 MiB)
 # Sort incoming edges for each routing track output node of General Switch Block(GSB)
 [0%] Sorted edges for GSB[0][0]
 [1%] Sorted edges for GSB[0][1]
@@ -1107,7 +1073,7 @@ Backannotated 169 General Switch Blocks (GSBs).
 [99%] Sorted edges for GSB[12][11]
 [100%] Sorted edges for GSB[12][12]
 Sorted edges for 169 General Switch Blocks (GSBs).
-# Sort incoming edges for each routing track output node of General Switch Block(GSB) took 0.09 seconds (max_rss 23.3 MiB, delta_rss +0.5 MiB)
+# Sort incoming edges for each routing track output node of General Switch Block(GSB) took 0.07 seconds (max_rss 23.3 MiB, delta_rss +0.5 MiB)
 # Build a library of physical multiplexers
 Built a multiplexer library of 16 physical multiplexers.
 Maximum multiplexer size is 16.
@@ -1124,21 +1090,21 @@ Average net density: 0.42
 Median net density: 0.00
 Average net density after weighting: 0.42
 Will apply 2 operating clock cycles to simulations
-Link OpenFPGA architecture to VPR architecture took 0.10 seconds (max_rss 23.6 MiB, delta_rss +0.8 MiB)
+Link OpenFPGA architecture to VPR architecture took 0.07 seconds (max_rss 23.6 MiB, delta_rss +0.8 MiB)
 
-Command line to execute: build_fabric --compress_routing --duplicate_grid_pin --load_fabric_key /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/tasks/FPGA1212_SOFA_CHD_task/arch/fabric_key.xml
+Command line to execute: build_fabric --compress_routing --duplicate_grid_pin --load_fabric_key /research/ece/lnis/USERS/DARPA_ERI/tools/OpenFPGA_for_Chip/openfpga_flow/tasks/FPGA1212_SOFA_CHD_task/arch/fabric_key.xml
 
 Confirm selected options when call command 'build_fabric':
 --frame_view: off
 --compress_routing: on
 --duplicate_grid_pin: on
---load_fabric_key: /research/ece/lnis/USERS/DARPA_ERI/Tapeout/May2020/OpenFPGA_for_Chip/openfpga_flow/tasks/FPGA1212_SOFA_CHD_task/arch/fabric_key.xml
+--load_fabric_key: /research/ece/lnis/USERS/DARPA_ERI/tools/OpenFPGA_for_Chip/openfpga_flow/tasks/FPGA1212_SOFA_CHD_task/arch/fabric_key.xml
 --write_fabric_key: off
 --generate_random_fabric_key: off
 --verbose: off
 Identify unique General Switch Blocks (GSBs)
 Detected 9 unique general switch blocks from a total of 169 (compression rate=1777.78%)
-Identify unique General Switch Blocks (GSBs) took 0.16 seconds (max_rss 23.6 MiB, delta_rss +0.0 MiB)
+Identify unique General Switch Blocks (GSBs) took 0.12 seconds (max_rss 23.6 MiB, delta_rss +0.0 MiB)
 
 Read Fabric Key
 Read Fabric Key took 0.00 seconds (max_rss 23.7 MiB, delta_rss +0.1 MiB)
@@ -1174,15 +1140,15 @@ Building physical tiles...Done
 ## Add connection block instances to top module
 ## Add connection block instances to top module took 0.00 seconds (max_rss 30.6 MiB, delta_rss +0.5 MiB)
 ## Add connection block instances to top module
-## Add connection block instances to top module took 0.00 seconds (max_rss 31.1 MiB, delta_rss +0.5 MiB)
+## Add connection block instances to top module took 0.00 seconds (max_rss 31.2 MiB, delta_rss +0.5 MiB)
 ## Add module nets between grids and GSBs
-## Add module nets between grids and GSBs took 0.14 seconds (max_rss 52.5 MiB, delta_rss +21.4 MiB)
+## Add module nets between grids and GSBs took 0.13 seconds (max_rss 52.6 MiB, delta_rss +21.4 MiB)
 ## Add module nets for inter-tile connections
 ## Add module nets for inter-tile connections took 0.00 seconds (max_rss 53.1 MiB, delta_rss +0.5 MiB)
 ## Add module nets for configuration buses
 ## Add module nets for configuration buses took 0.01 seconds (max_rss 55.1 MiB, delta_rss +1.5 MiB)
-# Build FPGA fabric module took 0.17 seconds (max_rss 55.1 MiB, delta_rss +27.1 MiB)
-Build fabric module graph took 0.19 seconds (max_rss 55.1 MiB, delta_rss +31.4 MiB)
+# Build FPGA fabric module took 0.16 seconds (max_rss 55.1 MiB, delta_rss +27.1 MiB)
+Build fabric module graph took 0.18 seconds (max_rss 55.1 MiB, delta_rss +31.4 MiB)
 Create I/O location mapping for top module
 Create I/O location mapping for top module took 0.00 seconds (max_rss 55.1 MiB, delta_rss +0.0 MiB)
 Create global port info for top module
@@ -1217,10 +1183,10 @@ Generating bitstream for X-direction Connection blocks ...Done
 Generating bitstream for Y-direction Connection blocks ...Done
 
 Build fabric-independent bitstream for implementation 'top'
- took 0.15 seconds (max_rss 60.4 MiB, delta_rss +5.2 MiB)
-Warning 185: Directory path is empty and nothing will be created.
+ took 0.14 seconds (max_rss 60.4 MiB, delta_rss +5.3 MiB)
+Warning 151: Directory path is empty and nothing will be created.
 Write 81452 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml'
-Write 81452 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml' took 0.60 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
+Write 81452 architecture independent bitstream into XML file 'fabric_indepenent_bitstream.xml' took 0.76 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: build_fabric_bitstream
 
@@ -1231,7 +1197,7 @@ Build fabric dependent bitstream
 
 
 Build fabric dependent bitstream
- took 0.04 seconds (max_rss 65.5 MiB, delta_rss +5.2 MiB)
+ took 0.09 seconds (max_rss 65.6 MiB, delta_rss +5.2 MiB)
 
 Command line to execute: write_fabric_bitstream --format plain_text --file fabric_bitstream.bit
 
@@ -1239,9 +1205,9 @@ Confirm selected options when call command 'write_fabric_bitstream':
 --file, -f: fabric_bitstream.bit
 --format: plain_text
 --verbose: off
-Warning 186: Directory path is empty and nothing will be created.
+Warning 152: Directory path is empty and nothing will be created.
 Write 81452 fabric bitstream into plain text file 'fabric_bitstream.bit'
-Write 81452 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.01 seconds (max_rss 65.5 MiB, delta_rss +0.0 MiB)
+Write 81452 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.02 seconds (max_rss 65.6 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_fabric_bitstream --format xml --file fabric_bitstream.xml
 
@@ -1249,9 +1215,9 @@ Confirm selected options when call command 'write_fabric_bitstream':
 --file, -f: fabric_bitstream.xml
 --format: xml
 --verbose: off
-Warning 187: Directory path is empty and nothing will be created.
+Warning 153: Directory path is empty and nothing will be created.
 Write 81452 fabric bitstream into xml file 'fabric_bitstream.xml'
-Write 81452 fabric bitstream into xml file 'fabric_bitstream.xml' took 0.14 seconds (max_rss 65.5 MiB, delta_rss +0.0 MiB)
+Write 81452 fabric bitstream into xml file 'fabric_bitstream.xml' took 0.14 seconds (max_rss 65.6 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_fabric_verilog --file ./SRC --explicit_port_mapping --verbose
 
@@ -1314,7 +1280,7 @@ Building physical tiles...Done
 Writing Verilog netlist for top-level module of FPGA fabric './SRC/fpga_top.v'...Done
 Written 92 Verilog modules in total
 Write Verilog netlists for FPGA fabric
- took 0.45 seconds (max_rss 68.4 MiB, delta_rss +2.8 MiB)
+ took 0.62 seconds (max_rss 68.4 MiB, delta_rss +2.8 MiB)
 
 Command line to execute: write_verilog_testbench --file ./SRC --reference_benchmark_file_path top_output_verilog.v --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --explicit_port_mapping
 
@@ -1331,22 +1297,22 @@ Confirm selected options when call command 'write_verilog_testbench':
 --include_signal_init: off
 --support_icarus_simulator: off
 --verbose: off
-Warning 188: Forcely enable to print top-level Verilog netlist in formal verification purpose as print pre-configured top-level Verilog testbench is enabled
+Warning 154: Forcely enable to print top-level Verilog netlist in formal verification purpose as print pre-configured top-level Verilog testbench is enabled
 Write Verilog testbenches for FPGA fabric
 
-Warning 189: Directory './SRC' already exists. Will overwrite contents
+Warning 155: Directory './SRC' already exists. Will overwrite contents
 # Write pre-configured FPGA top-level Verilog netlist for design 'top'
-# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 3.67 seconds (max_rss 68.4 MiB, delta_rss +0.0 MiB)
+# Write pre-configured FPGA top-level Verilog netlist for design 'top' took 3.55 seconds (max_rss 68.4 MiB, delta_rss +0.0 MiB)
 # Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top'
-# Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top' took 0.00 seconds (max_rss 68.4 MiB, delta_rss +0.0 MiB)
+# Write configuration-skip testbench for FPGA top-level Verilog netlist implemented by 'top' took 0.01 seconds (max_rss 68.4 MiB, delta_rss +0.0 MiB)
 # Write autocheck testbench for FPGA top-level Verilog netlist for 'top'
 Will use 81453 configuration clock cycles to top testbench
-# Write autocheck testbench for FPGA top-level Verilog netlist for 'top' took 0.23 seconds (max_rss 68.5 MiB, delta_rss +0.1 MiB)
+# Write autocheck testbench for FPGA top-level Verilog netlist for 'top' took 0.20 seconds (max_rss 68.5 MiB, delta_rss +0.1 MiB)
 Succeed to create directory './SimulationDeck'
 # Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini'
 # Write exchangeable file containing simulation information './SimulationDeck/simulation_deck.ini' took 0.00 seconds (max_rss 68.5 MiB, delta_rss +0.0 MiB)
 Write Verilog testbenches for FPGA fabric
- took 3.93 seconds (max_rss 68.5 MiB, delta_rss +0.2 MiB)
+ took 3.78 seconds (max_rss 68.5 MiB, delta_rss +0.1 MiB)
 
 Command line to execute: write_pnr_sdc --file ./SDC
 
@@ -1370,7 +1336,7 @@ Succeed to create directory './SDC'
 Write SDC for constraining clocks for P&R flow './SDC/global_ports.sdc'
 Write SDC for constraining clocks for P&R flow './SDC/global_ports.sdc' took 0.00 seconds (max_rss 68.5 MiB, delta_rss +0.0 MiB)
 Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc'
-Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc' took 0.01 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc' took 0.00 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc'
 Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc' took 0.05 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 Write SDC to disable switch block outputs for P&R flow './SDC/disable_sb_outputs.sdc'
@@ -1378,7 +1344,7 @@ Write SDC to disable switch block outputs for P&R flow './SDC/disable_sb_outputs
 Write SDC for constrain Switch Block timing for P&R flow
 Write SDC for constrain Switch Block timing for P&R flow took 0.04 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 Write SDC for constrain Connection Block timing for P&R flow
-Write SDC for constrain Connection Block timing for P&R flow took 0.01 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Write SDC for constrain Connection Block timing for P&R flow took 0.02 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 Write SDC for constraining grid timing for P&R flow
 Write SDC for constraining grid timing for P&R flow took 0.01 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 
@@ -1388,7 +1354,7 @@ Confirm selected options when call command 'write_sdc_disable_timing_configure_p
 --file, -f: ./SDC/disable_configure_ports.sdc
 --flatten_names: off
 --verbose: off
-Warning 190: Directory './SDC' already exists. Will overwrite contents
+Warning 156: Directory './SDC' already exists. Will overwrite contents
 Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc'
 Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc' took 0.11 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
 
@@ -1401,7 +1367,7 @@ Confirm selected options when call command 'write_analysis_sdc':
 --time_unit: off
 Succeed to create directory './SDC_analysis'
 Generating SDC for Timing/Power analysis on the mapped FPGA './SDC_analysis/top_fpga_top_analysis.sdc'
-Generating SDC for Timing/Power analysis on the mapped FPGA './SDC_analysis/top_fpga_top_analysis.sdc' took 1.01 seconds (max_rss 68.6 MiB, delta_rss +0.0 MiB)
+Generating SDC for Timing/Power analysis on the mapped FPGA './SDC_analysis/top_fpga_top_analysis.sdc' took 0.90 seconds (max_rss 68.7 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: exit
 
@@ -1409,6 +1375,6 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 7.3 seconds
+The entire OpenFPGA flow took 7.13 seconds
 
 Thank you for using OpenFPGA!
