@@ -73,7 +73,7 @@
          These clocks can be handled in back-end
      -->
     <!-- Top-side has 1 I/O per tile -->
-    <tile name="io_top" capacity="32" area="0">
+    <tile name="io_top" capacity="1" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -85,7 +85,7 @@
       </pinlocations>
     </tile>
     <!-- Right-side has 1 I/O per tile -->
-    <tile name="io_right" capacity="32" area="0">
+    <tile name="io_right" capacity="1" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -97,7 +97,7 @@
       </pinlocations>
     </tile>
     <!-- Bottom-side has 9 I/O per tile -->
-    <tile name="io_bottom" capacity="32" area="0">
+    <tile name="io_bottom" capacity="9" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -109,7 +109,7 @@
       </pinlocations>
     </tile>
     <!-- Left-side has 1 I/O per tile -->
-    <tile name="io_left" capacity="32" area="0">
+    <tile name="io_left" capacity="1" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -125,7 +125,22 @@
       <equivalent_sites>
         <site pb_type="clb"/>
       </equivalent_sites>
-      <input name="I" num_pins="24" equivalent="full"/>
+      <input name="I0" num_pins="2" equivalent="full"/>
+      <input name="I0i" num_pins="2" equivalent="none"/>
+      <input name="I1" num_pins="2" equivalent="full"/>
+      <input name="I1i" num_pins="2" equivalent="none"/>
+      <input name="I2" num_pins="2" equivalent="full"/>
+      <input name="I2i" num_pins="2" equivalent="none"/>
+      <input name="I3" num_pins="2" equivalent="full"/>
+      <input name="I3i" num_pins="2" equivalent="none"/>
+      <input name="I4" num_pins="2" equivalent="full"/>
+      <input name="I4i" num_pins="2" equivalent="none"/>
+      <input name="I5" num_pins="2" equivalent="full"/>
+      <input name="I5i" num_pins="2" equivalent="none"/>
+      <input name="I6" num_pins="2" equivalent="full"/>
+      <input name="I6i" num_pins="2" equivalent="none"/>
+      <input name="I7" num_pins="2" equivalent="full"/>
+      <input name="I7i" num_pins="2" equivalent="none"/>
       <input name="reg_in" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
       <input name="cin" num_pins="1"/>
@@ -148,8 +163,8 @@
       <!--pinlocations pattern="spread"/-->
       <pinlocations pattern="custom">
         <loc side="left">clb.clk clb.reset</loc>
-        <loc side="top">clb.reg_in clb.sc_in clb.cin clb.O[7:0] clb.I[11:0]</loc>
-        <loc side="right">clb.O[15:8] clb.I[23:12]</loc>
+        <loc side="top">clb.reg_in clb.sc_in clb.cin clb.O[7:0] clb.I0 clb.I0i clb.I1 clb.I1i clb.I2 clb.I2i clb.I3 clb.I3i</loc>
+        <loc side="right">clb.O[15:8] clb.I4 clb.I4i clb.I5 clb.I5i clb.I6 clb.I6i clb.I7 clb.I7i</loc>
         <loc side="bottom">clb.reg_out clb.sc_out clb.cout</loc>
       </pinlocations>
     </tile>
@@ -178,16 +193,6 @@
       <fill type="clb" priority="10"/>
     </fixed_layout>
     <fixed_layout name="12x12" width="14" height="14">
-      <!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
-      <row type="io_top" starty="H-1" priority="100"/>
-      <row type="io_bottom" starty="0" priority="100"/>
-      <col type="io_left" startx="0" priority="100"/>
-      <col type="io_right" startx="W-1" priority="100"/>
-      <corners type="EMPTY" priority="101"/>
-      <!--Fill with 'clb'-->
-      <fill type="clb" priority="10"/>
-    </fixed_layout>
-    <fixed_layout name="32x32" width="34" height="34">
       <!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
       <row type="io_top" starty="H-1" priority="100"/>
       <row type="io_bottom" starty="0" priority="100"/>
@@ -334,7 +339,22 @@
          So pin equivalence should be applied to the first 3 inputs only
 	  -->
     <pb_type name="clb">
-      <input name="I" num_pins="24" equivalent="full"/>
+      <input name="I0" num_pins="2" equivalent="full"/>
+      <input name="I0i" num_pins="2" equivalent="none"/>
+      <input name="I1" num_pins="2" equivalent="full"/>
+      <input name="I1i" num_pins="2" equivalent="none"/>
+      <input name="I2" num_pins="2" equivalent="full"/>
+      <input name="I2i" num_pins="2" equivalent="none"/>
+      <input name="I3" num_pins="2" equivalent="full"/>
+      <input name="I3i" num_pins="2" equivalent="none"/>
+      <input name="I4" num_pins="2" equivalent="full"/>
+      <input name="I4i" num_pins="2" equivalent="none"/>
+      <input name="I5" num_pins="2" equivalent="full"/>
+      <input name="I5i" num_pins="2" equivalent="none"/>
+      <input name="I6" num_pins="2" equivalent="full"/>
+      <input name="I6i" num_pins="2" equivalent="none"/>
+      <input name="I7" num_pins="2" equivalent="full"/>
+      <input name="I7i" num_pins="2" equivalent="none"/>
       <input name="reg_in" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
       <input name="cin" num_pins="1"/>
@@ -417,10 +437,12 @@
             </pb_type>         
             <interconnect>
               <direct name="direct1" input="fabric.in" output="frac_logic.in"/>
-              <direct name="direct2" input="fabric.sc_in" output="ff[0].DI"/>
-              <direct name="direct3" input="ff[0].Q" output="ff[1].DI"/>
-              <direct name="direct4" input="ff[1].Q" output="fabric.sc_out"/>
-              <direct name="direct5" input="ff[1].Q" output="fabric.reg_out"/>
+              <direct name="direct2" input="fabric.cin" output="frac_logic.cin"/>
+              <direct name="direct3" input="fabric.sc_in" output="ff[0].DI"/>
+              <direct name="direct4" input="ff[0].Q" output="ff[1].DI"/>
+              <direct name="direct5" input="ff[1].Q" output="fabric.sc_out"/>
+              <direct name="direct6" input="ff[1].Q" output="fabric.reg_out"/>
+              <direct name="direct7" input="frac_logic.cout" output="fabric.cout"/>
               <complete name="complete1" input="fabric.clk" output="ff[1:0].clk"/>
               <complete name="complete2" input="fabric.reset" output="ff[1:0].reset"/>
               <mux name="mux1" input="frac_logic.out[0:0] fabric.reg_in" output="ff[0:0].D">
@@ -618,10 +640,55 @@
         <!-- FIXME: The implicit port definition results in I0[0] connected to
                     in[2]. Such twisted connection is not expected.
                     I[0] should be connected to in[0]
-	  -->
-	<complete name="crossbar" input="clb.I fle[7:0].out" output="fle[7:0].in">
+          -->
+        <direct name="direct_fle0" input="clb.I0[0:1]" output="fle[0:0].in[0:1]">
           <!-- TODO: Timing should be backannotated from post-PnR results -->
-        </complete>
+        </direct>
+        <direct name="direct_fle0i" input="clb.I0i[0:1]" output="fle[0:0].in[2:3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle1" input="clb.I1[0:1]" output="fle[1:1].in[0:1]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle1i" input="clb.I1i[0:1]" output="fle[1:1].in[2:3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle2" input="clb.I2[0:1]" output="fle[2:2].in[0:1]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle2i" input="clb.I2i[0:1]" output="fle[2:2].in[2:3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle3" input="clb.I3[0:1]" output="fle[3:3].in[0:1]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle3i" input="clb.I3i[0:1]" output="fle[3:3].in[2:3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle4" input="clb.I4[0:1]" output="fle[4:4].in[0:1]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle4i" input="clb.I4i[0:1]" output="fle[4:4].in[2:3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle5" input="clb.I5[0:1]" output="fle[5:5].in[0:1]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle5i" input="clb.I5i[0:1]" output="fle[5:5].in[2:3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle6" input="clb.I6[0:1]" output="fle[6:6].in[0:1]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle6i" input="clb.I6i[0:1]" output="fle[6:6].in[2:3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle7" input="clb.I7[0:1]" output="fle[7:7].in[0:1]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
+        <direct name="direct_fle7i" input="clb.I7i[0:1]" output="fle[7:7].in[2:3]">
+          <!-- TODO: Timing should be backannotated from post-PnR results -->
+        </direct>
         <complete name="clks" input="clb.clk" output="fle[7:0].clk">
         </complete>
         <complete name="resets" input="clb.reset" output="fle[7:0].reset">

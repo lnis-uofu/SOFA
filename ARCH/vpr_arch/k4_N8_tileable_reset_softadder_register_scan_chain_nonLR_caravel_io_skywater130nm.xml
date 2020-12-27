@@ -502,7 +502,7 @@
         </mode>
         <!-- 4-LUT mode definition end -->
         <!-- Define shift register begin -->
-        <mode name="shift_register">
+        <mode name="shift_register" disable_packing="true">
           <pb_type name="shift_reg" num_pb="1">
             <input name="reg_in" num_pins="1"/>
             <output name="ff_out" num_pins="1"/>
@@ -517,8 +517,8 @@
             </pb_type>
             <interconnect>
               <direct name="direct1" input="shift_reg.reg_in" output="ff.D"/>
-              <direct name="direct3" input="ff.Q" output="shift_reg.reg_out"/>
-              <direct name="direct4" input="ff.Q" output="shift_reg.ff_out"/>
+              <direct name="direct2" input="ff.Q" output="shift_reg.reg_out"/>
+              <direct name="direct3" input="ff.Q" output="shift_reg.ff_out"/>
               <complete name="complete1" input="shift_reg.clk" output="ff.clk"/>
             </interconnect>
           </pb_type>
