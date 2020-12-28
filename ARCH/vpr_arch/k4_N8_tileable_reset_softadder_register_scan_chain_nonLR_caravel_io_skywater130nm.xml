@@ -72,7 +72,7 @@
          These clocks can be handled in back-end
      -->
     <!-- Top-side has 1 I/O per tile -->
-    <tile name="io_top" capacity="32" area="0">
+    <tile name="io_top" capacity="16" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -84,7 +84,7 @@
       </pinlocations>
     </tile>
     <!-- Right-side has 1 I/O per tile -->
-    <tile name="io_right" capacity="32" area="0">
+    <tile name="io_right" capacity="16" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -96,7 +96,7 @@
       </pinlocations>
     </tile>
     <!-- Bottom-side has 9 I/O per tile -->
-    <tile name="io_bottom" capacity="32" area="0">
+    <tile name="io_bottom" capacity="16" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -108,7 +108,7 @@
       </pinlocations>
     </tile>
     <!-- Left-side has 1 I/O per tile -->
-    <tile name="io_left" capacity="32" area="0">
+    <tile name="io_left" capacity="16" area="0">
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
@@ -250,7 +250,7 @@
 			     With the 96 nm half pitch, such wires would take 60 um of height, vs. a 90 nm high (approximated as square) Stratix IV tile so this seems
 			     reasonable. Using a tile length of 90 nm, corresponding to the length of a Stratix IV tile if it were square. -->
     <!-- GIVE a specific name for the segment! OpenFPGA appreciate that! -->
-    <segment name="L1" freq="0.10" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+    <segment name="L1" freq="0.20" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
       <mux name="L1_mux"/>
       <sb type="pattern">1 1</sb>
       <cb type="pattern">1</cb>
@@ -260,7 +260,7 @@
       <sb type="pattern">1 1 1</sb>
       <cb type="pattern">1 1</cb>
     </segment>
-    <segment name="L4" freq="0.80" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+    <segment name="L4" freq="0.70" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
       <mux name="L4_mux"/>
       <sb type="pattern">1 1 1 1 1</sb>
       <cb type="pattern">1 1 1 1</cb>
