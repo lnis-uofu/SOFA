@@ -133,6 +133,7 @@
       <output name="reg_out" num_pins="1"/>
       <output name="sc_out" num_pins="1"/>
       <output name="cout" num_pins="1"/>
+      <output name="cout_copy" num_pins="1"/>
       <clock name="clk" num_pins="1"/>
       <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
         <fc_override port_name="reg_in" fc_type="frac" fc_val="0"/>
@@ -149,7 +150,7 @@
         <loc side="left">clb.clk clb.reset</loc>
         <loc side="top">clb.reg_in clb.sc_in clb.cin clb.O[7:0] clb.I[11:0]</loc>
         <loc side="right">clb.I[23:12]</loc>
-        <loc side="bottom">clb.reg_out clb.sc_out clb.cout</loc>
+        <loc side="bottom">clb.reg_out clb.sc_out clb.cout clb.cout_copy</loc>
       </pinlocations>
     </tile>
   </tiles>
@@ -342,6 +343,7 @@
       <output name="reg_out" num_pins="1"/>
       <output name="sc_out" num_pins="1"/>
       <output name="cout" num_pins="1"/>
+      <output name="cout_copy" num_pins="1"/>
       <clock name="clk" num_pins="1"/>
       <!-- Describe fracturable logic element.  
              Each fracturable logic element has a 6-LUT that can alternatively operate as two 5-LUTs with shared inputs. 
@@ -553,7 +555,8 @@
                naive specification).
           -->
         <direct name="clbouts1" input="fle[3:0].out" output="clb.O[3:0]"/>
-        <direct name="clbouts2" input="fle[7:4].out" output="clb.O[7:4]"/>
+	<direct name="clbouts2" input="fle[7:4].out" output="clb.O[7:4]"/>
+	<direct name="cout_copy" input="fle[7:7].cout" output="clb.cout_copy"/>
         <!-- Shift register chain links -->
         <direct name="shift_register_in" input="clb.reg_in" output="fle[0:0].reg_in">
           <!-- Put all inter-block carry chain delay on this one edge -->
