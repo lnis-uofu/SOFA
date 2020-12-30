@@ -140,7 +140,6 @@
         <fc_override port_name="sc_in" fc_type="frac" fc_val="0"/>
         <fc_override port_name="sc_out" fc_type="frac" fc_val="0"/>
         <fc_override port_name="cin" fc_type="frac" fc_val="0"/>
-        <fc_override port_name="cout" fc_type="frac" fc_val="0"/>
         <fc_override port_name="clk" fc_type="frac" fc_val="0"/>
         <fc_override port_name="reset" fc_type="frac" fc_val="0"/>
       </fc>
@@ -414,7 +413,8 @@
             </pb_type>         
             <interconnect>
               <direct name="direct1" input="fabric.in" output="frac_logic.in"/>
-              <direct name="direct2" input="fabric.sc_in" output="ff.DI"/>
+	      <direct name="direct2" input="fabric.sc_in" output="ff.DI"/>
+	      <direct name="direct3" input="fabric.cin" output="frac_logic.cin"/>
               <direct name="direct4" input="ff.Q" output="fabric.sc_out"/>
               <direct name="direct5" input="ff.Q" output="fabric.reg_out"/>
               <direct name="direct6" input="frac_logic.cout" output="fabric.cout"/>
