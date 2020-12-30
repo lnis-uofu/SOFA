@@ -140,6 +140,7 @@
         <fc_override port_name="sc_in" fc_type="frac" fc_val="0"/>
         <fc_override port_name="sc_out" fc_type="frac" fc_val="0"/>
         <fc_override port_name="cin" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="cout" fc_type="frac" fc_val="0"/>
         <fc_override port_name="clk" fc_type="frac" fc_val="0"/>
         <fc_override port_name="reset" fc_type="frac" fc_val="0"/>
       </fc>
