@@ -25,51 +25,17 @@
   -->
   <models>
     <!-- A virtual model for I/O to be used in the physical mode of io block -->
-    <model name="io">
+    <!--model name="io">
       <input_ports>
         <port name="outpad"/>
       </input_ports>
       <output_ports>
         <port name="inpad"/>
       </output_ports>
-    </model>
-    <model name="in_buff">
-      <input_ports>
-        <port name="A" combinational_sink_ports="Q"/>
-      </input_ports>
-      <output_ports>
-        <port name="Q"/>
-      </output_ports>
-    </model>
-    <model name="in_reg">
-      <input_ports>
-        <port name="clk" is_clock="1"/>
-        <port name="dataIn" clock="clk"/>
-      </input_ports>
-      <output_ports>
-        <port name="dataOut" clock="clk"/>
-      </output_ports>
-    </model>
-    <model name="out_buff">
-      <input_ports>
-        <port combinational_sink_ports="Q" name="A"/>
-      </input_ports>
-      <output_ports>
-        <port name="Q"/>
-      </output_ports>
-    </model>
-    <model name="out_reg">
-      <input_ports>
-        <port name="clk" is_clock="1"/>
-        <port name="dataIn" clock="clk"/>
-      </input_ports>
-      <output_ports>
-        <port name="dataOut" clock="clk"/>
-      </output_ports>
-    </model>
+    </mode-->
     <model name="intf_model">
       <input_ports>
-        <port name="CLK" is_clock="1"/>
+        <port name="clk" is_clock="1"/>
         <port name="SOC_IN" clock="clk"/>
         <port name="FPGA_OUT" clock="clk"/>
       </input_ports>
@@ -120,15 +86,14 @@
       <equivalent_sites>
         <site pb_type="interface"/>
       </equivalent_sites>
-      <clock name="CLK" num_pins="1"/>
+      <clock name="clk" num_pins="1"/>
       <input name="SOC_IN" num_pins="1"/>
       <input name="FPGA_OUT" num_pins="1"/>
       <output name="FPGA_IN" num_pins="1"/>
       <output name="SOC_OUT" num_pins="1"/>
       <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
       <pinlocations pattern="custom">
-        <loc side="bottom">io_top.FPGA_IN io_top.FPGA_OUT</loc>
-        <loc side="top">io_top.SOC_IN io_top.SOC_OUT io_top.CLK</loc>
+        <loc side="bottom">io_top.FPGA_IN io_top.FPGA_OUT io_top.SOC_IN io_top.SOC_OUT io_top.clk</loc>
       </pinlocations>
     </tile>
     <!-- Right-side has 1 I/O per tile -->
@@ -136,15 +101,14 @@
       <equivalent_sites>
         <site pb_type="interface"/>
       </equivalent_sites>
-      <clock name="CLK" num_pins="1"/>
+      <clock name="clk" num_pins="1"/>
       <input name="SOC_IN" num_pins="1"/>
       <input name="FPGA_OUT" num_pins="1"/>
       <output name="FPGA_IN" num_pins="1"/>
       <output name="SOC_OUT" num_pins="1"/>
       <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
       <pinlocations pattern="custom">
-        <loc side="bottom">io_right.FPGA_IN io_right.FPGA_OUT</loc>
-        <loc side="top">io_right.SOC_IN io_right.SOC_OUT io_right.CLK</loc>
+        <loc side="left">io_right.FPGA_IN io_right.FPGA_OUT io_right.SOC_IN io_right.SOC_OUT io_right.clk</loc>
       </pinlocations>
     </tile>
     <!-- Bottom-side has 9 I/O per tile -->
@@ -152,15 +116,14 @@
       <equivalent_sites>
         <site pb_type="interface"/>
       </equivalent_sites>
-      <clock name="CLK" num_pins="1"/>
+      <clock name="clk" num_pins="1"/>
       <input name="SOC_IN" num_pins="1"/>
       <input name="FPGA_OUT" num_pins="1"/>
       <output name="FPGA_IN" num_pins="1"/>
       <output name="SOC_OUT" num_pins="1"/>
       <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
       <pinlocations pattern="custom">
-        <loc side="top">io_bottom.FPGA_IN io_bottom.FPGA_OUT</loc>
-        <loc side="bottom">io_bottom.SOC_IN io_bottom.SOC_OUT io_bottom.CLK</loc>
+        <loc side="top">io_bottom.FPGA_IN io_bottom.FPGA_OUT io_bottom.SOC_IN io_bottom.SOC_OUT io_bottom.clk</loc>
       </pinlocations>
     </tile>
     <!-- Left-side has 1 I/O per tile -->
@@ -168,15 +131,14 @@
       <equivalent_sites>
         <site pb_type="interface"/>
       </equivalent_sites>
-      <clock name="CLK" num_pins="1"/>
+      <clock name="clk" num_pins="1"/>
       <input name="SOC_IN" num_pins="1"/>
       <input name="FPGA_OUT" num_pins="1"/>
       <output name="FPGA_IN" num_pins="1"/>
       <output name="SOC_OUT" num_pins="1"/>
       <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
       <pinlocations pattern="custom">
-        <loc side="right">io_left.FPGA_IN io_left.FPGA_OUT</loc>
-        <loc side="left">io_left.SOC_IN io_left.SOC_OUT io_left.CLK</loc>
+        <loc side="right">io_left.FPGA_IN io_left.FPGA_OUT io_left.SOC_IN io_left.SOC_OUT io_left.clk</loc>
       </pinlocations>
     </tile>
     <!-- CLB has most pins on the top and right sides -->
@@ -333,8 +295,8 @@
   </directlist>
   <complexblocklist>
     <!-- Define I/O pads begins -->
-    <pb_type name="interface" num_pins="1">
-      <clock name="CLK" num_pins="1"/>
+    <pb_type name="interface">
+      <clock name="clk" num_pins="1"/>
       <input name="SOC_IN" num_pins="1"/>
       <input name="FPGA_OUT" num_pins="1"/>
       <output name="FPGA_IN" num_pins="1"/>
@@ -342,14 +304,18 @@
       <!-- Physical mode definition begin (physical implementation of the interface) -->
       <mode name="physical" disabled_in_pack="true">
           <pb_type name="intf_fabric" blif_model=".subckt intf_model" num_pb="1">
-            <clock name="CLK" num_pins="1"/>
+            <clock name="clk" num_pins="1"/>
             <input name="SOC_IN" num_pins="1"/>
             <input name="FPGA_OUT" num_pins="1"/>
             <output name="FPGA_IN" num_pins="1"/>
             <output name="SOC_OUT" num_pins="1"/>
+            <T_setup value="66e-12" port="intf_fabric.SOC_IN" clock="clk"/>
+            <T_setup value="66e-12" port="intf_fabric.FPGA_OUT" clock="clk"/>
+            <T_clock_to_Q max="124e-12" port="intf_fabric.FPGA_IN" clock="clk"/>
+            <T_clock_to_Q max="124e-12" port="intf_fabric.SOC_OUT" clock="clk"/>
           </pb_type>
           <interconnect>
-            <direct name="direct1" input="interface.CLK" output="intf_fabric.CLK"/>
+            <direct name="direct1" input="interface.clk" output="intf_fabric.clk"/>
             <direct name="direct2" input="interface.SOC_IN" output="intf_fabric.SOC_IN"/>
             <direct name="direct3" input="interface.FPGA_OUT" output="intf_fabric.FPGA_OUT"/>
             <direct name="direct4" input="intf_fabric.FPGA_IN" output="interface.FPGA_IN"/>
@@ -357,120 +323,68 @@
           </interconnect>
       </mode>
       <!-- Physical mode definition end (physical implementation of the interface) -->
-      <mode name="in_buff">
-        <pb_type name="in_buff" num_pb="1">
-          <clock name="CLK" num_pins="1"/>
+      <mode name="io_input">
+        <pb_type name="io_input" num_pb="1">
+          <clock name="clk" num_pins="1"/>
           <input name="SOC_IN" num_pins="1"/>
           <output name="FPGA_IN" num_pins="1"/>
-          <pb_type blif_model=".input" name="inpad" num_pb="1">
+          <pb_type name="inpad" blif_model=".input" num_pb="1">
             <output name="inpad" num_pins="1"/>
           </pb_type>
-          <pb_type blif_model=".subckt in_buff" name="inst_buff" num_pb="1">
-            <input name="A" num_pins="1"/>
-            <output name="Q" num_pins="1"/>
-            <delay_constant in_port="inst_buff.A" max="1e-10" out_port="inst_buff.Q"/>
-            <!--metadata>
-              <meta name="fasm_features">ISEL</meta>
-            </metadata-->
+          <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
+            <input name="D" num_pins="1" port_class="D"/>
+            <output name="Q" num_pins="1" port_class="Q"/>
+            <clock name="clk" num_pins="1" port_class="clock"/>
+            <T_setup value="66e-12" port="ff.D" clock="clk"/>
+            <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
           </pb_type>
           <interconnect>
-            <direct input="inst_buff.Q" name="in_buff-FPGA_IN" output="in_buff.FPGA_IN">
-            <direct input="inpad.inpad" name="inst_buff-A" output="inst_buff.A">
-              <pack_pattern in_port="inpad.inpad" name="pack-IPAD_TO_IBUF" out_port="inst_buff.A"/>
+            <direct name="io_input-FPGA_IN" input="inpad.inpad" output="io_input.FPGA_IN">
+              <pack_pattern name="pack-IPAD_TO_IBUF" in_port="inpad.inpad" out_port="io_input.FPGA_IN"/>
+            </direct>
+            <direct name="ff-clk" input="io_input.clk" output="ff.clk"/>
+            <direct name="ff-Q" input="ff.Q" output="io_input.FPGA_IN" />
+            <direct name="ff-D" input="inpad.inpad" output="ff.D">
+              <pack_pattern name="pack-IPAD_TO_IREG" in_port="inpad.inpad" out_port="ff.D"/>
             </direct>
           </interconnect>
         </pb_type>
         <interconnect>
-          <direct input="in_buff.FPGA_IN" name="interface-FPGA_IN" output="interface.FPGA_IN"/>
-          <direct input="interface.SOC_IN" name="in_buff-SOC_IN" output="in_buff.SOC_IN"/>
-          <direct input="interface.CLK" name="in_buff-CLK" output="in_buff.CLK"/>
+          <direct name="interface-FPGA_IN" input="io_input.FPGA_IN" output="interface.FPGA_IN"/>
+          <direct name="io_input-SOC_IN" input="interface.SOC_IN" output="io_input.SOC_IN"/>
+          <direct name="io_input-clk" input="interface.clk" output="io_input.clk"/>
         </interconnect>
       </mode>
-      <mode name="out_buff">
-        <pb_type name="out_buff" num_pb="1">
-          <clock name="CLK" num_pins="1"/>
+      <mode name="io_output">
+        <pb_type name="io_output" num_pb="1">
+          <clock name="clk" num_pins="1"/>
           <input name="FPGA_OUT" num_pins="1"/>
           <output name="SOC_OUT" num_pins="1"/>
-          <pb_type blif_model=".subckt out_buff" name="inst_buff" num_pb="1">
-            <input name="A" num_pins="1"/>
-            <output name="Q" num_pins="1"/>
-            <delay_constant in_port="inst_buff.A" max="1e-10" out_port="inst_buff.Q"/>
-            <!--metadata>
-              <meta name="fasm_features">OSEL</meta>
-            </metadata-->
+          <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
+            <input name="D" num_pins="1" port_class="D"/>
+            <output name="Q" num_pins="1" port_class="Q"/>
+            <clock name="clk" num_pins="1" port_class="clock"/>
+            <T_setup value="66e-12" port="ff.D" clock="clk"/>
+            <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
           </pb_type>
-          <pb_type blif_model=".output" name="outpad" num_pb="1">
+          <pb_type name="outpad" blif_model=".output" num_pb="1">
             <input name="outpad" num_pins="1"/>
           </pb_type>
           <interconnect>
-            <direct input="out_buff.FPGA_OUT" name="inst_buff-A" output="inst_buff.A"/>
-            <direct input="inst_buff.Q" name="outpad-outpad" output="outpad.outpad">
-              <pack_pattern in_port="inst_buff.Q" name="pack-OBUF_TO_OPAD" out_port="outpad.outpad"/>
+            <direct name="io_output-FPGA_OUT" input="io_output.FPGA_OUT" output="outpad.outpad">
+              <pack_pattern name="pack-OBUF_TO_OPAD" in_port="io_output.FPGA_OUT" out_port="outpad.outpad"/>
+            </direct>
+            <direct name="ff-clk" input="io_output.clk" output="ff.clk"/>
+            <direct name="ff-D" input="io_output.FPGA_OUT" output="ff.D"/>
+            <direct name="outpad-outpad" input="ff.Q" output="outpad.outpad">
+              <pack_pattern name="pack-OBUF_TO_OREG" in_port="ff.Q" out_port="outpad.outpad"/>
             </direct>
           </interconnect>
         </pb_type>
         <interconnect>
-          <direct input="out_buff.SOC_OUT" name="interface-SOC_OUT" output="interface.SOC_OUT"/>
-          <direct input="interface.CLK" name="out_buff-CLK" output="out_buff.CLK"/>
-          <direct input="interface.FPGA_OUT" name="out_buff-FPGA_OUT" output="out_buff.FPGA_OUT"/>
-        </interconnect>
-      </mode>
-      <mode name="in_reg">
-        <pb_type name="in_reg" num_pb="1">
-          <clock name="CLK" num_pins="1"/>
-          <input name="SOC_IN" num_pins="1"/>
-          <output name="FPGA_IN" num_pins="1"/>
-          <pb_type blif_model=".input" name="inpad" num_pb="1">
-            <output name="inpad" num_pins="1"/>
-          </pb_type>
-          <pb_type blif_model=".subckt in_reg" name="inst_reg" num_pb="1">
-            <clock name="clk" num_pins="1"/>
-            <input name="dataIn" num_pins="1"/>
-            <output name="dataOut" num_pins="1"/>
-            <T_setup clock="clk" port="inst_reg.dataIn" value="1e-10"/>
-            <T_clock_to_Q clock="clk" max="1e-10" port="inst_reg.dataOut"/>
-          </pb_type>
-          <interconnect>
-            <direct input="inst_reg.dataOut" name="in_reg-FPGA_IN" output="in_reg.FPGA_IN"/>
-            <direct input="in_reg.CLK" name="inst_reg-clk" output="inst_reg.clk"/>
-            <direct input="inpad.inpad" name="inst_reg-dataIn" output="inst_reg.dataIn">
-              <pack_pattern in_port="inpad.inpad" name="pack-IPAD_TO_IREG" out_port="inst_reg.dataIn"/>
-            </direct>
-          </interconnect>
-          </pb_type>
-          <interconnect>
-          <direct input="in_reg.FPGA_IN" name="interface-FPGA_IN" output="interface.FPGA_IN"/>
-          <direct input="interface.SOC_IN" name="in_reg-SOC_IN" output="in_reg.SOC_IN"/>
-          <direct input="interface.CLK" name="in_reg-CLK" output="in_reg.CLK"/>
-          </interconnect>
-      </mode>
-      <mode name="out_reg">
-        <pb_type name="out_reg" num_pb="1">
-          <clock name="CLK" num_pins="1"/>
-          <input name="FPGA_OUT" num_pins="1"/>
-          <output name="SOC_OUT" num_pins="1"/>
-          <pb_type blif_model=".subckt out_reg" name="inst_reg" num_pb="1">
-            <clock name="clk" num_pins="1"/>
-            <input name="dataIn" num_pins="1"/>
-            <output name="dataOut" num_pins="1"/>
-            <T_setup clock="clk" port="inst_reg.dataIn" value="1e-10"/>
-            <T_clock_to_Q clock="clk" max="1e-10" port="inst_reg.dataOut"/>
-          </pb_type>
-          <pb_type blif_model=".output" name="outpad" num_pb="1">
-            <input name="outpad" num_pins="1"/>
-          </pb_type>
-          <interconnect>
-            <direct input="out_reg.CLK" name="inst_reg-clk" output="inst_reg.clk"/>
-            <direct input="out_reg.FPGA_OUT" name="inst_reg-dataIn" output="inst_reg.dataIn"/>
-            <direct input="inst_reg.dataOut" name="outpad-outpad" output="outpad.outpad">
-              <pack_pattern in_port="inst_reg.dataOut" name="pack-OBUF_TO_OREG" out_port="outpad.outpad"/>
-            </direct>
-          </interconnect>
-        </pb_type>
-        <interconnect>
-          <direct input="out_reg.SOC_OUT" name="interface-SOC_OUT" output="interface.SOC_OUT"/>
-          <direct input="interface.CLK" name="out_reg-CLK" output="out_reg.CLK"/>
-          <direct input="interface.FPGA_OUT" name="out_reg-FPGA_OUT" output="out_reg.FPGA_OUT"/>
+          <direct input="io_output.SOC_OUT" name="interface-SOC_OUT" output="interface.SOC_OUT"/>
+          <direct input="interface.clk" name="io_output-clk" output="io_output.clk"/>
+          <direct input="interface.FPGA_OUT" name="io_output-FPGA_OUT" output="io_output.FPGA_OUT"/>
         </interconnect>
       </mode>
     </pb_type>
