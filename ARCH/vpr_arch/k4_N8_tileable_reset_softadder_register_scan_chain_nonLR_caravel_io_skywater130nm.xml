@@ -68,13 +68,13 @@ Authors: Xifan Tang
                 <site pb_type="io"/>
             </equivalent_sites>
             <clock name="clk" num_pins="1"/>
-            <input name="SOC_IN" num_pins="1"/>
-            <input name="FPGA_OUT" num_pins="1"/>
-            <output name="FPGA_IN" num_pins="1"/>
-            <output name="SOC_OUT" num_pins="1"/>
+            <input name="a2f_i" num_pins="1"/>
+            <input name="f2a_i" num_pins="1"/>
+            <output name="a2f_o" num_pins="1"/>
+            <output name="f2a_o" num_pins="1"/>
             <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
             <pinlocations pattern="custom">
-                <loc side="bottom">io_top.FPGA_IN io_top.FPGA_OUT io_top.SOC_IN io_top.SOC_OUT io_top.clk</loc>
+                <loc side="bottom">io_top.a2f_o io_top.f2a_i io_top.a2f_i io_top.f2a_o io_top.clk</loc>
             </pinlocations>
         </tile>
         <!-- Right-side has 1 I/O per tile -->
@@ -83,13 +83,13 @@ Authors: Xifan Tang
                 <site pb_type="io"/>
             </equivalent_sites>
             <clock name="clk" num_pins="1"/>
-            <input name="SOC_IN" num_pins="1"/>
-            <input name="FPGA_OUT" num_pins="1"/>
-            <output name="FPGA_IN" num_pins="1"/>
-            <output name="SOC_OUT" num_pins="1"/>
+            <input name="a2f_i" num_pins="1"/>
+            <input name="f2a_i" num_pins="1"/>
+            <output name="a2f_o" num_pins="1"/>
+            <output name="f2a_o" num_pins="1"/>
             <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
             <pinlocations pattern="custom">
-                <loc side="left">io_right.FPGA_IN io_right.FPGA_OUT io_right.SOC_IN io_right.SOC_OUT io_right.clk</loc>
+                <loc side="left">io_right.a2f_o io_right.f2a_i io_right.a2f_i io_right.f2a_o io_right.clk</loc>
             </pinlocations>
         </tile>
         <!-- Bottom-side has 9 I/O per tile -->
@@ -98,13 +98,13 @@ Authors: Xifan Tang
                 <site pb_type="io"/>
             </equivalent_sites>
             <clock name="clk" num_pins="1"/>
-            <input name="SOC_IN" num_pins="1"/>
-            <input name="FPGA_OUT" num_pins="1"/>
-            <output name="FPGA_IN" num_pins="1"/>
-            <output name="SOC_OUT" num_pins="1"/>
+            <input name="a2f_i" num_pins="1"/>
+            <input name="f2a_i" num_pins="1"/>
+            <output name="a2f_o" num_pins="1"/>
+            <output name="f2a_o" num_pins="1"/>
             <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
             <pinlocations pattern="custom">
-                <loc side="top">io_bottom.FPGA_IN io_bottom.FPGA_OUT io_bottom.SOC_IN io_bottom.SOC_OUT io_bottom.clk</loc>
+                <loc side="top">io_bottom.a2f_o io_bottom.f2a_i io_bottom.a2f_i io_bottom.f2a_o io_bottom.clk</loc>
             </pinlocations>
         </tile>
         <!-- Left-side has 1 I/O per tile -->
@@ -113,13 +113,13 @@ Authors: Xifan Tang
                 <site pb_type="io"/>
             </equivalent_sites>
             <clock name="clk" num_pins="1"/>
-            <input name="SOC_IN" num_pins="1"/>
-            <input name="FPGA_OUT" num_pins="1"/>
-            <output name="FPGA_IN" num_pins="1"/>
-            <output name="SOC_OUT" num_pins="1"/>
+            <input name="a2f_i" num_pins="1"/>
+            <input name="f2a_i" num_pins="1"/>
+            <output name="a2f_o" num_pins="1"/>
+            <output name="f2a_o" num_pins="1"/>
             <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
             <pinlocations pattern="custom">
-                <loc side="right">io_left.FPGA_IN io_left.FPGA_OUT io_left.SOC_IN io_left.SOC_OUT io_left.clk</loc>
+                <loc side="right">io_left.a2f_o io_left.f2a_i io_left.a2f_i io_left.f2a_o io_left.clk</loc>
             </pinlocations>
         </tile>
         <!-- CLB has most pins on the top and right sides -->
@@ -278,10 +278,10 @@ Authors: Xifan Tang
         <!-- Define I/O pads begins -->
         <pb_type name="io">
             <clock name="clk" num_pins="1"/>
-            <input name="a2f_i" num_pins="1"/> <!--SOC_IN-->
-            <input name="f2a_i" num_pins="1"/> <!--FPGA_OUT-->
-            <output name="a2f_o" num_pins="1"/> <!--FPGA_IN-->
-            <output name="f2a_o" num_pins="1"/> <!--SOC_OUT-->
+            <input name="a2f_i" num_pins="1"/> 
+            <input name="f2a_i" num_pins="1"/> 
+            <output name="a2f_o" num_pins="1"/>
+            <output name="f2a_o" num_pins="1"/>
             <!-- Physical mode definition begin (physical implementation of the io) -->
             <mode name="physical" disabled_in_pack="true">
                 <pb_type name="iopad" num_pb="1">
