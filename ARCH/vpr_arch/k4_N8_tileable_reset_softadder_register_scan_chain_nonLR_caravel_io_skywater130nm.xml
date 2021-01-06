@@ -166,7 +166,7 @@ Authors: Xifan Tang
             <col type="io_left" startx="0" priority="100"/>
             <col type="io_right" startx="W-1" priority="100"/>
             <corners type="EMPTY" priority="101"/>
-                <!--Fill with 'clb'-->
+            <!--Fill with 'clb'-->
             <fill type="clb" priority="10"/>
         </auto_layout>
         <fixed_layout name="2x2" width="4" height="4">
@@ -176,7 +176,7 @@ Authors: Xifan Tang
             <col type="io_left" startx="0" priority="100"/>
             <col type="io_right" startx="W-1" priority="100"/>
             <corners type="EMPTY" priority="101"/>
-                <!--Fill with 'clb'-->
+            <!--Fill with 'clb'-->
             <fill type="clb" priority="10"/>
         </fixed_layout>
         <fixed_layout name="12x12" width="14" height="14">
@@ -186,7 +186,7 @@ Authors: Xifan Tang
             <col type="io_left" startx="0" priority="100"/>
             <col type="io_right" startx="W-1" priority="100"/>
             <corners type="EMPTY" priority="101"/>
-                <!--Fill with 'clb'-->
+            <!--Fill with 'clb'-->
             <fill type="clb" priority="10"/>
         </fixed_layout>
         <fixed_layout name="32x32" width="34" height="34">
@@ -196,7 +196,7 @@ Authors: Xifan Tang
             <col type="io_left" startx="0" priority="100"/>
             <col type="io_right" startx="W-1" priority="100"/>
             <corners type="EMPTY" priority="101"/>
-                <!--Fill with 'clb'-->
+            <!--Fill with 'clb'-->
             <fill type="clb" priority="10"/>
         </fixed_layout>
     </layout>
@@ -217,9 +217,9 @@ Authors: Xifan Tang
             C_ipin_cblock: input capacitance of a track buffer, which VPR assumes is a single-stage
         4x minimum drive strength buffer. -->
         <sizing R_minW_nmos="8926" R_minW_pmos="16067"/>
-            <!-- The grid_logic_tile_area below will be used for all blocks that do not explicitly set their own (non-routing)
-                area; set to 0 since we explicitly set the area of all blocks currently in this architecture file.
-            -->
+        <!-- The grid_logic_tile_area below will be used for all blocks that do not explicitly set their own (non-routing)
+            area; set to 0 since we explicitly set the area of all blocks currently in this architecture file.
+        -->
         <area grid_logic_tile_area="0"/>
         <chan_width_distr>
             <x distr="uniform" peak="1.000000"/>
@@ -245,7 +245,7 @@ Authors: Xifan Tang
         <switch type="mux" name="L1_mux" R="551" Cin=".77e-15" Cout="4e-15" Tdel="58e-12" mux_trans_size="2.630740" buf_size="27.645901"/>
         <switch type="mux" name="L2_mux" R="551" Cin=".77e-15" Cout="4e-15" Tdel="58e-12" mux_trans_size="2.630740" buf_size="27.645901"/>
         <switch type="mux" name="L4_mux" R="551" Cin=".77e-15" Cout="4e-15" Tdel="58e-12" mux_trans_size="2.630740" buf_size="27.645901"/>
-            <!--switch ipin_cblock resistance set to yeild for 4x minimum drive strength buffer-->
+        <!--switch ipin_cblock resistance set to yeild for 4x minimum drive strength buffer-->
         <switch type="mux" name="ipin_cblock" R="2231.5" Cout="0." Cin="1.47e-15" Tdel="7.247000e-11" mux_trans_size="1.222260" buf_size="auto"/>
     </switchlist>
     <segmentlist>
@@ -278,19 +278,19 @@ Authors: Xifan Tang
         <!-- Define I/O pads begins -->
         <pb_type name="io">
             <clock name="clk" num_pins="1"/>
-            <input name="SOC_IN" num_pins="1"/>
-            <input name="FPGA_OUT" num_pins="1"/>
-            <output name="FPGA_IN" num_pins="1"/>
-            <output name="SOC_OUT" num_pins="1"/>
-                <!-- Physical mode definition begin (physical implementation of the io) -->
+            <input name="a2f_i" num_pins="1"/> <!--SOC_IN-->
+            <input name="f2a_i" num_pins="1"/> <!--FPGA_OUT-->
+            <output name="a2f_o" num_pins="1"/> <!--FPGA_IN-->
+            <output name="f2a_o" num_pins="1"/> <!--SOC_OUT-->
+            <!-- Physical mode definition begin (physical implementation of the io) -->
             <mode name="physical" disabled_in_pack="true">
-                <pb_type name="intf_fabric" num_pb="1">
+                <pb_type name="iopad" num_pb="1">
                     <clock name="clk" num_pins="1"/>
-                    <input name="SOC_IN" num_pins="1"/>
-                    <input name="FPGA_OUT" num_pins="1"/>
-                    <output name="FPGA_IN" num_pins="1"/>
-                    <output name="SOC_OUT" num_pins="1"/>
-                    <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
+                    <input name="a2f_i" num_pins="1"/>
+                    <input name="f2a_i" num_pins="1"/>
+                    <output name="a2f_o" num_pins="1"/>
+                    <output name="f2a_o" num_pins="1"/>
+                    <pb_type name="ff" blif_model=".latch" num_pb="2" class="flipflop">
                         <input name="D" num_pins="1" port_class="D"/>
                         <output name="Q" num_pins="1" port_class="Q"/>
                         <clock name="clk" num_pins="1" port_class="clock"/>
@@ -298,56 +298,28 @@ Authors: Xifan Tang
                         <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
                     </pb_type>
                     <interconnect>
-                        <direct name="ff-clk" input="intf_fabric.clk" output="ff.clk"/>
-                        <mux name="mux1" input="intf_fabric.SOC_IN ff.Q" output="intf_fabric.FPGA_IN"/>
-                        <mux name="mux2" input="intf_fabric.FPGA_OUT ff.Q" output="intf_fabric.SOC_OUT"/>
-                        <mux name="mux3" input="intf_fabric.SOC_IN intf_fabric.FPGA_OUT" output="ff.D"/>
+                        <direct name="ff[0:0]-clk" input="iopad.clk" output="ff[0:0].clk"/>
+                        <direct name="ff[1:1]-clk" input="iopad.clk" output="ff[1:1].clk"/>
+                        <direct name="ff[0:0]-D" input="iopad.f2a_i" output="ff[0:0].D" />
+                        <direct name="ff[1:1]-D" input="iopad.a2f_i" output="ff[1:1].D" />
+                        <mux name="mux1" input="iopad.f2a_i ff[0:0].Q" output="iopad.f2a_o"/>
+                        <mux name="mux2" input="iopad.a2f_i ff[1:1].Q" output="iopad.a2f_o"/>
                     </interconnect>
                 </pb_type>
                 <interconnect>
-                    <direct name="direct1" input="io.clk" output="intf_fabric.clk"/>
-                    <direct name="direct2" input="io.SOC_IN" output="intf_fabric.SOC_IN"/>
-                    <direct name="direct3" input="io.FPGA_OUT" output="intf_fabric.FPGA_OUT"/>
-                    <direct name="direct4" input="intf_fabric.FPGA_IN" output="io.FPGA_IN"/>
-                    <direct name="direct5" input="intf_fabric.SOC_OUT" output="io.SOC_OUT"/>
+                    <direct name="direct1" input="io.clk" output="iopad.clk"/>
+                    <direct name="direct2" input="io.a2f_i" output="iopad.a2f_i"/>
+                    <direct name="direct3" input="io.f2a_i" output="iopad.f2a_i"/>
+                    <direct name="direct4" input="iopad.a2f_o" output="io.a2f_o"/>
+                    <direct name="direct5" input="iopad.f2a_o" output="io.f2a_o"/>
                 </interconnect>
             </mode>
             <!-- Physical mode definition end (physical implementation of the io) -->
-            <mode name="io_input">
-                <pb_type name="io_input" num_pb="1">
-                    <clock name="clk" num_pins="1"/>
-                    <input name="SOC_IN" num_pins="1"/>
-                    <output name="FPGA_IN" num_pins="1"/>
-                    <pb_type name="inpad" blif_model=".input" num_pb="1">
-                        <output name="inpad" num_pins="1"/>
-                    </pb_type>
-                    <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
-                        <input name="D" num_pins="1" port_class="D"/>
-                        <output name="Q" num_pins="1" port_class="Q"/>
-                        <clock name="clk" num_pins="1" port_class="clock"/>
-                        <T_setup value="66e-12" port="ff.D" clock="clk"/>
-                        <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
-                    </pb_type>
-                    <interconnect>
-                        <!--direct name="inpad.inpad" input="io_input.SOC_IN" output="inpad.inpad"/-->
-                        <direct name="ff-clk" input="io_input.clk" output="ff.clk"/>
-                        <direct name="ff-D" input="inpad.inpad" output="ff.D">
-                            <pack_pattern name="pack-IREG" in_port="inpad.inpad" out_port="ff.D"/>
-                        </direct>
-                        <mux name="mux1" input="inpad.inpad ff.Q" output="io_input.FPGA_IN"/>
-                    </interconnect>
-                </pb_type>
-                <interconnect>
-                    <direct name="io-FPGA_IN" input="io_input.FPGA_IN" output="io.FPGA_IN"/>
-                    <direct name="io_input-SOC_IN" input="io.SOC_IN" output="io_input.SOC_IN"/>
-                    <direct name="io_input-clk" input="io.clk" output="io_input.clk"/>
-                </interconnect>
-            </mode>
             <mode name="io_output">
                 <pb_type name="io_output" num_pb="1">
                     <clock name="clk" num_pins="1"/>
-                    <input name="FPGA_OUT" num_pins="1"/>
-                    <output name="SOC_OUT" num_pins="1"/>
+                    <input name="f2a_i" num_pins="1"/>
+                    <output name="f2a_o" num_pins="1"/>
                     <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
                         <input name="D" num_pins="1" port_class="D"/>
                         <output name="Q" num_pins="1" port_class="Q"/>
@@ -360,16 +332,55 @@ Authors: Xifan Tang
                     </pb_type>
                     <interconnect>
                         <direct name="ff-clk" input="io_output.clk" output="ff.clk"/>
-                        <direct name="ff-D" input="io_output.FPGA_OUT" output="ff.D"/>
-                        <mux name="mux2" input="ff.Q io_output.FPGA_OUT" output="outpad.outpad">
+                        <direct name="ff-D" input="io_output.f2a_i" output="ff.D"/>
+                        <mux name="mux1" input="ff.Q io_output.f2a_i" output="outpad.outpad">
                             <pack_pattern name="pack-OREG" in_port="ff.Q" out_port="outpad.outpad"/>
+                            <delay_constant max="25e-12" in_port="io_output.f2a_i" out_port="outpad.outpad"/>
+                            <delay_constant max="45e-12" in_port="ff.Q" out_port="outpad.outpad"/>
                         </mux>
+                        <!--direct name="outpad" input="io_output.f2a_i" output="outpad.outpad">
+                            <delay_constant max="1.394e-11" in_port="io_output.f2a_i" out_port="outpad.outpad"/>
+                        </direct-->
                     </interconnect>
                 </pb_type>
                 <interconnect>
-                    <direct input="io_output.SOC_OUT" name="io-SOC_OUT" output="io.SOC_OUT"/>
-                    <direct input="io.clk" name="io_output-clk" output="io_output.clk"/>
-                    <direct input="io.FPGA_OUT" name="io_output-FPGA_OUT" output="io_output.FPGA_OUT"/>
+                    <direct name="io-f2a_o" input="io_output.f2a_o" output="io.f2a_o"/>
+                    <direct name="io_output-clk" input="io.clk" output="io_output.clk"/>
+                    <direct name="io_output-f2a_i" input="io.f2a_i" output="io_output.f2a_i"/>
+                </interconnect>
+            </mode>
+            <mode name="io_input">
+                <pb_type name="io_input" num_pb="1">
+                    <clock name="clk" num_pins="1"/>
+                    <input name="a2f_i" num_pins="1"/>
+                    <output name="a2f_o" num_pins="1"/>
+                    <pb_type name="inpad" blif_model=".input" num_pb="1">
+                        <output name="inpad" num_pins="1"/>
+                    </pb_type>
+                    <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
+                        <input name="D" num_pins="1" port_class="D"/>
+                        <output name="Q" num_pins="1" port_class="Q"/>
+                        <clock name="clk" num_pins="1" port_class="clock"/>
+                        <T_setup value="66e-12" port="ff.D" clock="clk"/>
+                        <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
+                    </pb_type>
+                    <interconnect>
+                        <direct name="ff-clk" input="io_input.clk" output="ff.clk"/>
+                        <direct name="ff-D" input="io_input.a2f_i" output="ff.D"/>
+                        <mux name="mux2" input="io_input.a2f_i ff.Q" output="io_input.a2f_o">
+                            <pack_pattern name="pack-IREG" in_port="ff.Q" out_port="io_input.a2f_o"/>
+                            <delay_constant max="25e-12" in_port="io_input.a2f_i" out_port="io_input.a2f_o"/>
+                            <delay_constant max="45e-12" in_port="ff.Q" out_port="io_input.a2f_o"/>
+                        </mux>
+                        <direct name="inpad" input="inpad.inpad" output="io_input.a2f_o">
+                            <delay_constant max="4.243e-11" in_port="inpad.inpad" out_port="io_input.a2f_o"/>
+                        </direct>
+                    </interconnect>
+                </pb_type>
+                <interconnect>
+                    <direct name="io-a2f_o" input="io_input.a2f_o" output="io.a2f_o"/>
+                    <direct name="io_input-a2f_i" input="io.a2f_i" output="io_input.a2f_i"/>
+                    <direct name="io_input-clk" input="io.clk" output="io_input.clk"/>
                 </interconnect>
             </mode>
         </pb_type>
@@ -391,10 +402,10 @@ Authors: Xifan Tang
             <output name="sc_out" num_pins="1"/>
             <output name="cout" num_pins="1"/>
             <clock name="clk" num_pins="1"/>
-                <!-- Describe fracturable logic element.  
-                    Each fracturable logic element has a 6-LUT that can alternatively operate as two 5-LUTs with shared inputs. 
-                    The outputs of the fracturable logic element can be optionally registered
-                -->
+            <!-- Describe fracturable logic element.  
+                Each fracturable logic element has a 6-LUT that can alternatively operate as two 5-LUTs with shared inputs. 
+                The outputs of the fracturable logic element can be optionally registered
+            -->
             <pb_type name="fle" num_pb="8">
                 <input name="in" num_pins="4"/>
                 <input name="reg_in" num_pins="1"/>
@@ -406,7 +417,7 @@ Authors: Xifan Tang
                 <output name="sc_out" num_pins="1"/>
                 <output name="cout" num_pins="1"/>
                 <clock name="clk" num_pins="1"/>
-                    <!-- Physical mode definition begin (physical implementation of the fle) -->
+                <!-- Physical mode definition begin (physical implementation of the fle) -->
                 <mode name="physical" disabled_in_pack="true">
                     <pb_type name="fabric" num_pb="1">
                         <input name="in" num_pins="4"/>
@@ -424,7 +435,7 @@ Authors: Xifan Tang
                             <input name="cin" num_pins="1"/>
                             <output name="out" num_pins="1"/>
                             <output name="cout" num_pins="1"/>
-                                <!-- Define LUT -->
+                            <!-- Define LUT -->
                             <pb_type name="frac_lut4" blif_model=".subckt frac_lut4" num_pb="1">
                                 <input name="in" num_pins="4"/>
                                 <output name="lut2_out" num_pins="2"/>
@@ -443,7 +454,7 @@ Authors: Xifan Tang
                                 <direct name="direct4" input="frac_lut4.lut2_out[1:1]" output="carry_follower.a"/>
                                 <direct name="direct5" input="frac_lut4.lut2_out[0:0]" output="carry_follower.cin"/>
                                 <direct name="direct6" input="carry_follower.cout" output="frac_logic.cout"/>
-                                    <!-- Xifan Tang: I use out[0] because the output of lut6 in lut6 mode is wired to the out[0] -->
+                                <!-- Xifan Tang: I use out[0] because the output of lut6 in lut6 mode is wired to the out[0] -->
                                 <direct name="direct7" input="frac_lut4.lut4_out" output="frac_logic.out"/>
                                 <mux name="mux2" input="frac_logic.cin frac_logic.in[2:2]" output="frac_lut4.in[2:2]"/>
                             </interconnect>
@@ -499,20 +510,20 @@ Authors: Xifan Tang
                         <input name="in" num_pins="4"/>
                         <output name="out" num_pins="1"/>
                         <clock name="clk" num_pins="1"/>
-                            <!-- Define LUT -->
+                        <!-- Define LUT -->
                         <pb_type name="lut4" blif_model=".names" num_pb="1" class="lut">
                             <input name="in" num_pins="4" port_class="lut_in"/>
                             <output name="out" num_pins="1" port_class="lut_out"/>
-                                <!-- LUT timing using delay matrix -->
-                                <!-- These are the physical delay inputs on a Stratix IV LUT but because VPR cannot do LUT rebalancing,
-                                    we instead take the average of these numbers to get more stable results
-                                    82e-12
-                                    173e-12
-                                    261e-12
-                                    263e-12
-                                    398e-12
-                                    397e-12
-                                -->
+                            <!-- LUT timing using delay matrix -->
+                            <!-- These are the physical delay inputs on a Stratix IV LUT but because VPR cannot do LUT rebalancing,
+                                we instead take the average of these numbers to get more stable results
+                                82e-12
+                                173e-12
+                                261e-12
+                                263e-12
+                                398e-12
+                                397e-12
+                            -->
                             <delay_matrix type="max" in_port="lut4.in" out_port="lut4.out">
                                 261e-12
                                 261e-12
@@ -601,11 +612,11 @@ Authors: Xifan Tang
                 -->
                 <direct name="clbouts1" input="fle[3:0].out" output="clb.O[3:0]"/>
                 <direct name="clbouts2" input="fle[7:4].out" output="clb.O[7:4]"/>
-                    <!-- Shift register chain links -->
+                <!-- Shift register chain links -->
                 <direct name="shift_register_in" input="clb.reg_in" output="fle[0:0].reg_in">
                     <!-- Put all inter-block carry chain delay on this one edge -->
                     <delay_constant max="0.16e-9" in_port="clb.reg_in" out_port="fle[0:0].reg_in"/>
-                        <!--pack_pattern name="chain" in_port="clb.reg_in" out_port="fle[0:0].reg_in"/-->
+                    <!--pack_pattern name="chain" in_port="clb.reg_in" out_port="fle[0:0].reg_in"/-->
                 </direct>
                 <direct name="shift_register_out" input="fle[7:7].reg_out" output="clb.reg_out">
                     <!--pack_pattern name="chain" in_port="fle[7:7].reg_out" out_port="clb.reg_out"/-->
