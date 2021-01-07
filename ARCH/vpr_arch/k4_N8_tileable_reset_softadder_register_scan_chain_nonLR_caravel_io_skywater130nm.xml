@@ -25,6 +25,14 @@ Authors: Xifan Tang
     -->
     <models>
         <!-- A virtual model for I/O to be used in the physical mode of io block -->
+        <model name="io">
+          <input_ports>
+            <port name="outpad"/>
+          </input_ports>
+          <output_ports>
+            <port name="inpad"/>
+          </output_ports>
+        </model>
         <model name="frac_lut4">
             <input_ports>
                 <port name="in"/>
@@ -297,13 +305,17 @@ Authors: Xifan Tang
                         <T_setup value="66e-12" port="ff.D" clock="clk"/>
                         <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
                     </pb_type>
+                    <pb_type name="pad" blif_model=".subckt io" num_pb="1">
+                      <input name="outpad" num_pins="1"/>
+                      <output name="inpad" num_pins="1"/>
+                    </pb_type>
                     <interconnect>
                         <direct name="ff[0:0]-clk" input="iopad.clk" output="ff[0:0].clk"/>
                         <direct name="ff[1:1]-clk" input="iopad.clk" output="ff[1:1].clk"/>
                         <direct name="ff[0:0]-D" input="iopad.f2a_i" output="ff[0:0].D" />
                         <direct name="ff[1:1]-D" input="iopad.a2f_i" output="ff[1:1].D" />
-                        <mux name="mux1" input="iopad.f2a_i ff[0:0].Q" output="iopad.f2a_o"/>
-                        <mux name="mux2" input="iopad.a2f_i ff[1:1].Q" output="iopad.a2f_o"/>
+                        <mux name="mux1" input="iopad.f2a_i ff[0:0].Q" output="pad.outpad"/>
+                        <mux name="mux2" input="pad.inpad ff[1:1].Q" output="iopad.a2f_o"/>
                     </interconnect>
                 </pb_type>
                 <interconnect>
@@ -319,7 +331,6 @@ Authors: Xifan Tang
                 <pb_type name="io_output" num_pb="1">
                     <clock name="clk" num_pins="1"/>
                     <input name="f2a_i" num_pins="1"/>
-                    <output name="f2a_o" num_pins="1"/>
                     <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
                         <input name="D" num_pins="1" port_class="D"/>
                         <output name="Q" num_pins="1" port_class="Q"/>
@@ -338,13 +349,9 @@ Authors: Xifan Tang
                             <delay_constant max="25e-12" in_port="io_output.f2a_i" out_port="outpad.outpad"/>
                             <delay_constant max="45e-12" in_port="ff.Q" out_port="outpad.outpad"/>
                         </mux>
-                        <!--direct name="outpad" input="io_output.f2a_i" output="outpad.outpad">
-                            <delay_constant max="1.394e-11" in_port="io_output.f2a_i" out_port="outpad.outpad"/>
-                        </direct-->
                     </interconnect>
                 </pb_type>
                 <interconnect>
-                    <direct name="io-f2a_o" input="io_output.f2a_o" output="io.f2a_o"/>
                     <direct name="io_output-clk" input="io.clk" output="io_output.clk"/>
                     <direct name="io_output-f2a_i" input="io.f2a_i" output="io_output.f2a_i"/>
                 </interconnect>
@@ -352,7 +359,6 @@ Authors: Xifan Tang
             <mode name="io_input">
                 <pb_type name="io_input" num_pb="1">
                     <clock name="clk" num_pins="1"/>
-                    <input name="a2f_i" num_pins="1"/>
                     <output name="a2f_o" num_pins="1"/>
                     <pb_type name="inpad" blif_model=".input" num_pb="1">
                         <output name="inpad" num_pins="1"/>
@@ -366,20 +372,16 @@ Authors: Xifan Tang
                     </pb_type>
                     <interconnect>
                         <direct name="ff-clk" input="io_input.clk" output="ff.clk"/>
-                        <direct name="ff-D" input="io_input.a2f_i" output="ff.D"/>
-                        <mux name="mux2" input="io_input.a2f_i ff.Q" output="io_input.a2f_o">
+                        <direct name="ff-D" input="inpad.inpad" output="ff.D"/>
+                        <mux name="mux2" input="inpad.inpad ff.Q" output="io_input.a2f_o">
                             <pack_pattern name="pack-IREG" in_port="ff.Q" out_port="io_input.a2f_o"/>
-                            <delay_constant max="25e-12" in_port="io_input.a2f_i" out_port="io_input.a2f_o"/>
+                            <delay_constant max="25e-12" in_port="inpad.inpad" out_port="io_input.a2f_o"/>
                             <delay_constant max="45e-12" in_port="ff.Q" out_port="io_input.a2f_o"/>
                         </mux>
-                        <direct name="inpad" input="inpad.inpad" output="io_input.a2f_o">
-                            <delay_constant max="4.243e-11" in_port="inpad.inpad" out_port="io_input.a2f_o"/>
-                        </direct>
                     </interconnect>
                 </pb_type>
                 <interconnect>
                     <direct name="io-a2f_o" input="io_input.a2f_o" output="io.a2f_o"/>
-                    <direct name="io_input-a2f_i" input="io.a2f_i" output="io_input.a2f_i"/>
                     <direct name="io_input-clk" input="io.clk" output="io_input.clk"/>
                 </interconnect>
             </mode>
