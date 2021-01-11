@@ -76,11 +76,22 @@
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
-      <input name="outpad" num_pins="1"/>
-      <output name="inpad" num_pins="1"/>
-      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
+      <clock name="clk" num_pins="1"/>
+      <!--input name="a2f_i" num_pins="1"/-->
+      <input name="f2a_i" num_pins="1"/>
+      <output name="a2f_o" num_pins="1"/>
+      <!--output name="f2a_o" num_pins="1"/-->
+      <input name="sc_in" num_pins="1"/>
+      <output name="sc_out" num_pins="1"/>
+      <input name="reset" num_pins="1" is_non_clock_global="true"/>
+      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
+        <fc_override port_name="clk" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="sc_in" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="sc_out" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="reset" fc_type="frac" fc_val="0"/>
+      </fc>
       <pinlocations pattern="custom">
-        <loc side="bottom">io_top.outpad io_top.inpad</loc>
+        <loc side="bottom">io_top.a2f_o io_top.f2a_i io_top.clk io_top.sc_in io_top.sc_out io_top.reset</loc>
       </pinlocations>
     </tile>
     <!-- Right-side has 1 I/O per tile -->
@@ -88,11 +99,20 @@
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
-      <input name="outpad" num_pins="1"/>
-      <output name="inpad" num_pins="1"/>
-      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
+      <clock name="clk" num_pins="1"/>
+      <input name="f2a_i" num_pins="1"/>
+      <output name="a2f_o" num_pins="1"/>
+      <input name="sc_in" num_pins="1"/>
+      <output name="sc_out" num_pins="1"/>
+      <input name="reset" num_pins="1" is_non_clock_global="true"/>
+      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
+        <fc_override port_name="clk" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="sc_in" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="sc_out" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="reset" fc_type="frac" fc_val="0"/>
+      </fc>
       <pinlocations pattern="custom">
-        <loc side="left">io_right.outpad io_right.inpad</loc>
+        <loc side="left">io_right.a2f_o io_right.f2a_i io_right.clk io_right.sc_in io_right.sc_out io_right.reset</loc>
       </pinlocations>
     </tile>
     <!-- Bottom-side has 9 I/O per tile -->
@@ -100,11 +120,20 @@
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
-      <input name="outpad" num_pins="1"/>
-      <output name="inpad" num_pins="1"/>
-      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
+      <clock name="clk" num_pins="1"/>
+      <input name="f2a_i" num_pins="1"/>
+      <output name="a2f_o" num_pins="1"/>
+      <input name="sc_in" num_pins="1"/>
+      <output name="sc_out" num_pins="1"/>
+      <input name="reset" num_pins="1" is_non_clock_global="true"/>
+      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
+        <fc_override port_name="clk" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="sc_in" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="sc_out" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="reset" fc_type="frac" fc_val="0"/>
+      </fc>
       <pinlocations pattern="custom">
-        <loc side="top">io_bottom.outpad io_bottom.inpad</loc>
+        <loc side="top">io_bottom.a2f_o io_bottom.f2a_i io_bottom.clk io_bottom.sc_in io_bottom.sc_out io_bottom.reset</loc>
       </pinlocations>
     </tile>
     <!-- Left-side has 1 I/O per tile -->
@@ -112,11 +141,20 @@
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
-      <input name="outpad" num_pins="1"/>
-      <output name="inpad" num_pins="1"/>
-      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
+      <clock name="clk" num_pins="1"/>
+      <input name="f2a_i" num_pins="1"/>
+      <output name="a2f_o" num_pins="1"/>
+      <input name="sc_in" num_pins="1"/>
+      <output name="sc_out" num_pins="1"/>
+      <input name="reset" num_pins="1" is_non_clock_global="true"/>
+      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
+        <fc_override port_name="clk" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="sc_in" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="sc_out" fc_type="frac" fc_val="0"/>
+        <fc_override port_name="reset" fc_type="frac" fc_val="0"/>
+      </fc>
       <pinlocations pattern="custom">
-        <loc side="right">io_left.outpad io_left.inpad</loc>
+        <loc side="right">io_left.a2f_o io_left.f2a_i io_left.clk io_left.sc_in io_left.sc_out io_left.reset</loc>
       </pinlocations>
     </tile>
     <!-- CLB has most pins on the top and right sides -->
@@ -275,56 +313,130 @@
   <complexblocklist>
     <!-- Define input pads begin -->
     <pb_type name="io">
-      <input name="outpad" num_pins="1"/>
-      <output name="inpad" num_pins="1"/>
-      <!-- Do NOT add clock pins to I/O here!!! VPR does not build clock network in the way that OpenFPGA can support
-           If you need to register the I/O, define clocks in the circuit models
-           These clocks can be handled in back-end
-       -->
-      <!-- A mode denotes the physical implementation of an I/O 
-           This mode will be not packable but is mainly used for fabric verilog generation   
-        -->
+      <clock name="clk" num_pins="1"/>
+      <!--input name="a2f_i" num_pins="1"/-->
+      <input name="f2a_i" num_pins="1"/>
+      <output name="a2f_o" num_pins="1"/>
+      <!--output name="f2a_o" num_pins="1"/-->
+      <input name="sc_in" num_pins="1"/>
+      <output name="sc_out" num_pins="1"/>
+      <input name="reset" num_pins="1" is_non_clock_global="true"/>
+      <!-- Physical mode definition begin (physical implementation of the io) -->
       <mode name="physical" disabled_in_pack="true">
-        <pb_type name="iopad" blif_model=".subckt io" num_pb="1">
-          <input name="outpad" num_pins="1"/>
-          <output name="inpad" num_pins="1"/>
+        <pb_type name="iopad" num_pb="1">
+          <clock name="clk" num_pins="1"/>
+          <!--input name="a2f_i" num_pins="1"/-->
+          <input name="f2a_i" num_pins="1"/>
+          <output name="a2f_o" num_pins="1"/>
+          <!--output name="f2a_o" num_pins="1"/-->
+          <input name="sc_in" num_pins="1"/>
+          <input name="reset" num_pins="1"/>
+          <output name="sc_out" num_pins="1"/>
+          <pb_type name="ff" blif_model=".subckt scff" num_pb="2">
+            <input name="D" num_pins="1" port_class="D"/>
+            <input name="DI" num_pins="1"/>
+            <input name="reset" num_pins="1"/>
+            <output name="Q" num_pins="1" port_class="Q"/>
+            <clock name="clk" num_pins="1" port_class="clock"/>
+            <T_setup value="66e-12" port="ff.D" clock="clk"/>
+            <T_setup value="66e-12" port="ff.DI" clock="clk"/>
+            <T_setup value="66e-12" port="ff.reset" clock="clk"/>
+            <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
+          </pb_type>
+          <pb_type name="pad" blif_model=".subckt io" num_pb="1">
+            <input name="outpad" num_pins="1"/>
+            <output name="inpad" num_pins="1"/>
+          </pb_type>
+          <interconnect>
+            <direct name="ff[0:0]-clk" input="iopad.clk" output="ff[0:0].clk"/>
+            <direct name="ff[1:1]-clk" input="iopad.clk" output="ff[1:1].clk"/>
+            <direct name="ff[0:0]-D" input="iopad.f2a_i" output="ff[0:0].D" />
+            <!--direct name="ff[1:1]-D" input="iopad.a2f_i" output="ff[1:1].D" /-->
+            <direct name="ff[1:1]-D" input="pad.inpad" output="ff[1:1].D"/>
+            <direct name="ff[0:0]-DI" input="iopad.sc_in" output="ff[0:0].DI"/>
+            <direct name="ff[1:1]-DI" input="ff[0:0].Q" output="ff[1:1].DI"/>
+            <direct name="iopad-sc_out" input="ff[1:1].Q" output="iopad.sc_out"/>
+            <complete name="complete1" input="iopad.reset" output="ff[1:0].reset"/>
+            <mux name="mux1" input="iopad.f2a_i ff[0:0].Q" output="pad.outpad">
+              <delay_constant max="25e-12" in_port="iopad.f2a_i" out_port="pad.outpad"/>
+              <delay_constant max="45e-12" in_port="ff[0:0].Q" out_port="pad.outpad"/>
+            </mux>
+            <mux name="mux2" input="pad.inpad ff[1:1].Q" output="iopad.a2f_o">
+              <delay_constant max="25e-12" in_port="pad.inpad" out_port="iopad.a2f_o"/>
+              <delay_constant max="45e-12" in_port="ff[1:1].Q" out_port="iopad.a2f_o"/>
+            </mux>
+          </interconnect>
         </pb_type>
         <interconnect>
-          <direct name="outpad" input="io.outpad" output="iopad.outpad">
-            <delay_constant max="1.394e-11" in_port="io.outpad" out_port="iopad.outpad"/>
-          </direct>
-          <direct name="inpad" input="iopad.inpad" output="io.inpad">
-            <delay_constant max="4.243e-11" in_port="iopad.inpad" out_port="io.inpad"/>
-          </direct>
+          <direct name="direct1" input="io.clk" output="iopad.clk"/>
+          <!--direct name="direct2" input="io.a2f_i" output="iopad.a2f_i"/-->
+          <direct name="direct3" input="io.f2a_i" output="iopad.f2a_i"/>
+          <direct name="direct4" input="iopad.a2f_o" output="io.a2f_o"/>
+          <!--direct name="direct5" input="iopad.f2a_o" output="io.f2a_o"/-->
+          <direct name="direct6" input="io.sc_in" output="iopad.sc_in"/>
+          <direct name="direct7" input="iopad.sc_out" output="io.sc_out"/>
+          <direct name="direct8" input="io.reset" output="iopad.reset"/>
         </interconnect>
       </mode>
-
-      <!-- IOs can operate as either inputs or outputs.
-	     Delays below come from Ian Kuon. They are small, so they should be interpreted as
-	     the delays to and from registers in the I/O (and generally I/Os are registered 
-	     today and that is when you timing analyze them.
-	     -->
-      <mode name="inpad">
-        <pb_type name="inpad" blif_model=".input" num_pb="1">
-          <output name="inpad" num_pins="1"/>
+      <!-- Physical mode definition end (physical implementation of the io) -->
+      <mode name="io_output">
+        <pb_type name="io_output" num_pb="1">
+          <clock name="clk" num_pins="1"/>
+          <input name="f2a_i" num_pins="1"/>
+          <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
+            <input name="D" num_pins="1" port_class="D"/>
+            <output name="Q" num_pins="1" port_class="Q"/>
+            <clock name="clk" num_pins="1" port_class="clock"/>
+            <T_setup value="66e-12" port="ff.D" clock="clk"/>
+            <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
+          </pb_type>
+          <pb_type name="outpad" blif_model=".output" num_pb="1">
+            <input name="outpad" num_pins="1"/>
+          </pb_type>
+          <interconnect>
+            <direct name="ff-clk" input="io_output.clk" output="ff.clk"/>
+            <direct name="ff-D" input="io_output.f2a_i" output="ff.D"/>
+            <mux name="mux1" input="ff.Q io_output.f2a_i" output="outpad.outpad">
+              <pack_pattern name="pack-OREG" in_port="ff.Q" out_port="outpad.outpad"/>
+              <delay_constant max="25e-12" in_port="io_output.f2a_i" out_port="outpad.outpad"/>
+              <delay_constant max="45e-12" in_port="ff.Q" out_port="outpad.outpad"/>
+            </mux>
+          </interconnect>
         </pb_type>
         <interconnect>
-          <direct name="inpad" input="inpad.inpad" output="io.inpad">
-            <delay_constant max="4.243e-11" in_port="inpad.inpad" out_port="io.inpad"/>
-          </direct>
+          <direct name="io_output-clk" input="io.clk" output="io_output.clk"/>
+          <direct name="io_output-f2a_i" input="io.f2a_i" output="io_output.f2a_i"/>
         </interconnect>
       </mode>
-      <mode name="outpad">
-        <pb_type name="outpad" blif_model=".output" num_pb="1">
-          <input name="outpad" num_pins="1"/>
+      <mode name="io_input">
+        <pb_type name="io_input" num_pb="1">
+          <clock name="clk" num_pins="1"/>
+          <output name="a2f_o" num_pins="1"/>
+          <pb_type name="inpad" blif_model=".input" num_pb="1">
+            <output name="inpad" num_pins="1"/>
+          </pb_type>
+          <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
+            <input name="D" num_pins="1" port_class="D"/>
+            <output name="Q" num_pins="1" port_class="Q"/>
+            <clock name="clk" num_pins="1" port_class="clock"/>
+            <T_setup value="66e-12" port="ff.D" clock="clk"/>
+            <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
+          </pb_type>
+          <interconnect>
+            <direct name="ff-clk" input="io_input.clk" output="ff.clk"/>
+            <direct name="ff-D" input="inpad.inpad" output="ff.D"/>
+            <mux name="mux2" input="inpad.inpad ff.Q" output="io_input.a2f_o">
+              <pack_pattern name="pack-IREG" in_port="ff.Q" out_port="io_input.a2f_o"/>
+              <delay_constant max="25e-12" in_port="inpad.inpad" out_port="io_input.a2f_o"/>
+              <delay_constant max="45e-12" in_port="ff.Q" out_port="io_input.a2f_o"/>
+            </mux>
+          </interconnect>
         </pb_type>
         <interconnect>
-          <direct name="outpad" input="io.outpad" output="outpad.outpad">
-            <delay_constant max="1.394e-11" in_port="io.outpad" out_port="outpad.outpad"/>
-          </direct>
+          <direct name="io-a2f_o" input="io_input.a2f_o" output="io.a2f_o"/>
+          <direct name="io_input-clk" input="io.clk" output="io_input.clk"/>
         </interconnect>
       </mode>
-      <power method="ignore"/>
     </pb_type>
     <!-- Define I/O pads ends -->
     <!-- Define general purpose logic block (CLB) begin -->
