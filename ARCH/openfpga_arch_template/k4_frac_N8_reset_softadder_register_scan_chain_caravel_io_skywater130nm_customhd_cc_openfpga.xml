@@ -288,8 +288,12 @@
     <direct name="scan_chain" circuit_model_name="direct_interc" type="column" x_dir="positive" y_dir="positive"/>
   </direct_connection>
   <tile_annotations>
-    <global_port name="clk" tile_port="clb.clk" is_clock="true" default_val="0"/>
-    <global_port name="Reset" tile_port="clb.reset" is_reset="true" default_val="1"/>
+      <global_port name="clk" is_clock="true" default_val="0">
+          <tile name="clb" port="clk" x="-1" y="-1"/>
+      </global_port>
+      <global_port name="Reset" is_reset="true" default_val="1">
+          <tile name="clb" port="reset" x="-1" y="-1"/>
+      </global_port>
   </tile_annotations>
   <pb_type_annotations>
     <!-- physical pb_type binding in complex block IO -->
