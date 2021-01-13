@@ -1,14 +1,14 @@
 <!-- Architecture annotation for OpenFPGA framework
-     This annotation supports the k4_frac_cc_sky130nm.xml
-     - General purpose logic block
-       - K = 6, N = 10, I = 40
-       - Single mode
-     - Routing architecture
-       - L = 4, fc_in = 0.15, fc_out = 0.1
-     - Skywater 130nm PDK
-       - circuit models are binded to the opensource skywater
-         foundry middle-speed (ms) standard cell library
-  -->
+This annotation supports the k4_frac_cc_sky130nm.xml
+- General purpose logic block
+- K = 6, N = 10, I = 40
+- Single mode
+- Routing architecture
+- L = 4, fc_in = 0.15, fc_out = 0.1
+- Skywater 130nm PDK
+- circuit models are binded to the opensource skywater
+foundry middle-speed (ms) standard cell library
+-->
 <openfpga_architecture>
   <technology_library>
     <device_library>
@@ -43,7 +43,7 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-	<circuit_model type="inv_buf" name="sky130_fd_sc_hd__buf_1" prefix="sky130_fd_sc_hd__buf_1" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_1.v">
+    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__buf_1" prefix="sky130_fd_sc_hd__buf_1" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_1.v">
       <design_technology type="cmos" topology="buffer" size="1"/>
       <device_technology device_model_name="logic"/>
       <port type="input" prefix="in" lib_name="A" size="1"/>
@@ -79,7 +79,7 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-	<circuit_model type="inv_buf" name="sky130_fd_sc_hd__buf_8" prefix="sky130_fd_sc_hd__buf_8" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_8.v">
+    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__buf_8" prefix="sky130_fd_sc_hd__buf_8" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_8.v">
       <design_technology type="cmos" topology="buffer" size="1" num_level="2" f_per_stage="4"/>
       <device_technology device_model_name="logic"/>
       <port type="input" prefix="in" lib_name="A" size="1"/>
@@ -127,7 +127,7 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-	<!--  Trick OpenFPGA to avoid auto-generating TGATE modules, which are not used in PnR -->
+    <!--  Trick OpenFPGA to avoid auto-generating TGATE modules, which are not used in PnR -->
     <circuit_model type="pass_gate" name="TGATE" prefix="TGATE" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/fd_hd_mux_custom_cells_tt.v">
       <design_technology type="cmos" topology="transmission_gate" nmos_size="1" pmos_size="2"/>
       <device_technology device_model_name="logic"/>
@@ -160,12 +160,12 @@
       </delay_matrix>
     </circuit_model>
     <!-- Define a circuit model for the standard cell MUX2
-         OpenFPGA requires the following truth table for the MUX2
-         When the select signal sel is enabled, the first input, i.e., in0
-         will be propagated to the output, i.e., out
-         If your standard cell provider does not offer the exact truth table,
-         you can simply swap the inputs as shown in the example below
-      -->
+      OpenFPGA requires the following truth table for the MUX2
+      When the select signal sel is enabled, the first input, i.e., in0
+      will be propagated to the output, i.e., out
+      If your standard cell provider does not offer the exact truth table,
+      you can simply swap the inputs as shown in the example below
+    -->
     <circuit_model type="gate" name="sky130_fd_sc_hd__mux2_1" prefix="sky130_fd_sc_hd__mux2_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/mux2/sky130_fd_sc_hd__mux2_1.v">
       <design_technology type="cmos" topology="MUX2"/>
       <device_technology device_model_name="logic"/>
@@ -183,7 +183,7 @@
       <port type="input" prefix="in" size="1"/>
       <port type="output" prefix="out" size="1"/>
       <wire_param model_type="pi" R="101" C="22.5e-15" num_level="1"/>
-      <!-- model_type could be T, res_val and cap_val DON'T CARE -->
+        <!-- model_type could be T, res_val and cap_val DON'T CARE -->
     </circuit_model>
     <circuit_model type="wire" name="direct_interc" prefix="direct_interc" is_default="true">
       <design_technology type="cmos"/>
@@ -192,7 +192,7 @@
       <port type="input" prefix="in" size="1"/>
       <port type="output" prefix="out" size="1"/>
       <wire_param model_type="pi" R="0" C="0" num_level="1"/>
-      <!-- model_type could be T, res_val cap_val should be defined -->
+        <!-- model_type could be T, res_val cap_val should be defined -->
     </circuit_model>
     <circuit_model type="mux" name="mux_2level" prefix="mux_2level" dump_structural_verilog="true">
       <design_technology type="cmos" structure="multi_level" num_level="2" add_const_input="true" const_input_val="1" local_encoder="true"/>
@@ -230,8 +230,7 @@
       <port type="output" prefix="out" size="1"/>
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
-    <!--circuit_model type="mux" name="mux_1level" is_default="true" prefix="mux_1level" dump_structural_verilog="true"-->
-	<circuit_model type="mux" name="mux_1level" prefix="mux_1level" dump_structural_verilog="true">
+    <circuit_model type="mux" name="mux_1level" prefix="mux_1level" dump_structural_verilog="true">
       <design_technology type="cmos" structure="multi_level" num_level="1" add_const_input="true" const_input_val="1" local_encoder="true"/>
       <input_buffer exist="false"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
@@ -240,7 +239,7 @@
       <port type="output" prefix="out" size="1"/>
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
-	<circuit_model type="mux" name="mux_1level_io" prefix="mux_1level_io" dump_structural_verilog="true">
+    <circuit_model type="mux" name="mux_1level_io" prefix="mux_1level_io" dump_structural_verilog="true">
       <design_technology type="cmos" structure="multi_level" num_level="1" local_encoder="false"/>
       <input_buffer exist="false"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_1"/>
@@ -249,7 +248,7 @@
       <port type="output" prefix="out" size="1"/>
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
-	<circuit_model type="mux" name="mux_1level_fabric" prefix="mux_1level_fabric" dump_structural_verilog="true">
+    <circuit_model type="mux" name="mux_1level_fabric" prefix="mux_1level_fabric" dump_structural_verilog="true">
       <design_technology type="cmos" structure="multi_level" num_level="1" local_encoder="false"/>
       <input_buffer exist="false"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_1"/>
@@ -267,7 +266,7 @@
       <port type="output" prefix="out" size="1"/>
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
-	<circuit_model type="mux" name="mux_tree" prefix="mux_tree" is_default="true" dump_structural_verilog="true">
+    <circuit_model type="mux" name="mux_tree" prefix="mux_tree" is_default="true" dump_structural_verilog="true">
       <design_technology type="cmos" structure="tree" add_const_input="true" const_input_val="1"/>
       <input_buffer exist="false"/>
       <output_buffer exist="false"/>
@@ -285,7 +284,6 @@
       <port type="output" prefix="out" size="1"/>
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
-    <!--DFF subckt ports should be defined as <D> <Q> <CLK> <RESET> <SET>  -->
     <circuit_model type="ff" name="sky130_fd_sc_hd__sdfrtp_1" prefix="sky130_fd_sc_hd__sdfrtp_1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/sdfrtp/sky130_fd_sc_hd__sdfrtp_1.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
@@ -305,28 +303,25 @@
       <lut_input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2"/>
       <lut_intermediate_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2" location_map="-1-"/>
       <pass_gate_logic circuit_model_name="sky130_fd_sc_hd__mux2_1"/>
-      <!--port type="input" prefix="in" size="4" tri_state_map="---1" circuit_model_name="sky130_fd_sc_hd__or2_1"/-->
-	  <port type="input" prefix="in" size="4"/>
+      <port type="input" prefix="in" size="4"/>
       <port type="output" prefix="lut2_out" size="2" lut_frac_level="2" lut_output_mask="2,3"/>
-      <!--port type="output" prefix="lut3_out" size="2" lut_frac_level="3" lut_output_mask="0,1"/-->
       <port type="output" prefix="lut4_out" size="1" lut_output_mask="0"/>
       <port type="sram" prefix="sram" size="16"/>
-      <!--port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="CFGSDFFR" default_val="1"/-->
     </circuit_model>
     <!-- new ccFF  -->
-	<circuit_model type="ccff" name="CFGSDFFR" prefix="CFGSDFFR" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
-	   <design_technology type="cmos"/>
-       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
-       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
-	   <port type="input" prefix="pReset" lib_name="RST" size="1" is_global="true" default_val="0" is_reset="true" is_prog="true"/>
-       <port type="input" prefix="SE" size="1" is_global="true" default_val="0"/>
-       <port type="input" prefix="CFG_DONE" lib_name="CFGE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
-       <port type="input" prefix="D" size="1"/>
-       <port type="input" prefix="SI" size="1"/>
-       <port type="output" prefix="Q" size="1"/>
-       <port type="output" prefix="CFGQN" size="1"/>
-       <port type="output" prefix="CFGQ" size="1"/>
-       <port type="clock" prefix="prog_clk" lib_name="CK" size="1" is_global="true" default_val="0" is_prog="true"/>
+    <circuit_model type="ccff" name="CFGSDFFR" prefix="CFGSDFFR" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
+      <design_technology type="cmos"/>
+      <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
+      <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
+      <port type="input" prefix="pReset" lib_name="RST" size="1" is_global="true" default_val="0" is_reset="true" is_prog="true"/>
+      <port type="input" prefix="SE" size="1" is_global="true" default_val="0"/>
+      <port type="input" prefix="CFG_DONE" lib_name="CFGE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
+      <port type="input" prefix="D" size="1"/>
+      <port type="input" prefix="SI" size="1"/>
+      <port type="output" prefix="Q" size="1"/>
+      <port type="output" prefix="CFGQN" size="1"/>
+      <port type="output" prefix="CFGQ" size="1"/>
+      <port type="clock" prefix="prog_clk" lib_name="CK" size="1" is_global="true" default_val="0" is_prog="true"/>
     </circuit_model>
     <circuit_model type="iopad" name="EMBEDDED_IO_HD" prefix="EMBEDDED_IO_HD" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_io_logic.v">
       <design_technology type="cmos"/>
@@ -336,18 +331,9 @@
       <port type="output" prefix="SOC_OUT" lib_name="SOC_OUT" size="1" is_global="true" is_io="true" is_data_io="true"/>
       <port type="output" prefix="inpad" lib_name="FPGA_IN" size="1"/>
       <port type="input" prefix="outpad" lib_name="FPGA_OUT" size="1"/>
-	  
-	  <!-- 20210106 -->
-	  <!--port type="input" prefix="a2f_i" lib_name="SOC_IN" size="1" is_global="true" is_io="true" is_data_io="true"/-->
-	  <!--port type="output" prefix="f2a_o" lib_name="SOC_OUT" size="1" is_global="true" is_io="true" is_data_io="true"/-->
-	  <!--port type="output" prefix="a2f_o" lib_name="FPGA_IN" size="1"/-->
-	  <!--port type="input" prefix="f2a_i" lib_name="FPGA_OUT" size="1"/-->
-	  
-	  <!--port type="clock" prefix="clk" lib_name="CLK" size="1" is_global="false" default_val="0" /-->
-	  <port type="input" prefix="CFG_DONE" lib_name="CFG_DONE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
-	  <port type="sram" prefix="io_dir" lib_name="FPGA_IO_DIR" size="1" mode_select="true" circuit_model_name="CFGSDFFR" default_val="1"/>
-	  <!-- 20210105 -->
 
+      <port type="input" prefix="CFG_DONE" lib_name="CFG_DONE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
+      <port type="sram" prefix="io_dir" lib_name="FPGA_IO_DIR" size="1" mode_select="true" circuit_model_name="CFGSDFFR" default_val="1"/>
     </circuit_model>
     <circuit_model type="hard_logic" name="sky130_fd_sc_hd__mux2_1_wrapper" prefix="sky130_fd_sc_hd__mux2_1_wrapper" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/sky130_fd_sc_hd_wrapper.v">
       <design_technology type="cmos"/>
@@ -382,27 +368,25 @@
     <direct name="scan_chain" circuit_model_name="direct_interc" type="column" x_dir="positive" y_dir="positive"/>
   </direct_connection>
   <tile_annotations>
-    <!--global_port name="clk" tile_port="clb.clk" is_clock="true" default_val="0"/-->
-	<global_port name="clk" is_clock="true" default_val="0">
-		<tile name="clb" port="clk" x="-1" y="-1"/>
-		<tile name="io_top" port="clk" x="-1" y="-1"/>
-		<tile name="io_right" port="clk" x="-1" y="-1"/>
-		<tile name="io_bottom" port="clk" x="-1" y="-1"/>
-		<tile name="io_left" port="clk" x="-1" y="-1"/>
-	</global_port>
-    <!--global_port name="Reset" tile_port="clb.reset" is_reset="true" default_val="1"/-->
-	<global_port name="reset" is_reset="true" default_val="0">
-		<tile name="clb" port="reset" x="-1" y="-1"/>
-		<tile name="io_top" port="reset" x="-1" y="-1"/>
-		<tile name="io_right" port="reset" x="-1" y="-1"/>
-		<tile name="io_bottom" port="reset" x="-1" y="-1"/>
-		<tile name="io_left" port="reset" x="-1" y="-1"/>
-	</global_port>
+    <global_port name="clk" is_clock="true" default_val="0">
+      <tile name="clb" port="clk" x="-1" y="-1"/>
+      <tile name="io_top" port="clk" x="-1" y="-1"/>
+      <tile name="io_right" port="clk" x="-1" y="-1"/>
+      <tile name="io_bottom" port="clk" x="-1" y="-1"/>
+      <tile name="io_left" port="clk" x="-1" y="-1"/>
+    </global_port>
+    <global_port name="reset" is_reset="true" default_val="0">
+      <tile name="clb" port="reset" x="-1" y="-1"/>
+      <tile name="io_top" port="reset" x="-1" y="-1"/>
+      <tile name="io_right" port="reset" x="-1" y="-1"/>
+      <tile name="io_bottom" port="reset" x="-1" y="-1"/>
+      <tile name="io_left" port="reset" x="-1" y="-1"/>
+    </global_port>
   </tile_annotations>
   <pb_type_annotations>
     <!-- physical pb_type binding in complex block IO -->
     <pb_type name="io" physical_mode_name="physical" idle_mode_name="inpad"/>
-    <!-- IMPORTANT: must set unused I/Os to operating in INPUT mode !!! -->
+      <!-- IMPORTANT: must set unused I/Os to operating in INPUT mode !!! -->
     <pb_type name="io[physical].iopad">
       <interconnect name="mux1" circuit_model_name="mux_1level_io"/>
       <interconnect name="mux2" circuit_model_name="mux_1level_io"/>
@@ -414,9 +398,9 @@
     <pb_type name="io[physical].iopad.ff" circuit_model_name="sky130_fd_sc_hd__sdfrtp_1"/>
     <pb_type name="io[io_input].io_input.ff" physical_pb_type_name="io[physical].iopad.ff"/>
     <pb_type name="io[io_output].io_output.ff" physical_pb_type_name="io[physical].iopad.ff"/>
-    <!-- End physical pb_type binding in complex block IO -->
+      <!-- End physical pb_type binding in complex block IO -->
 
-    <!-- physical pb_type binding in complex block CLB -->
+      <!-- physical pb_type binding in complex block CLB -->
     <pb_type name="clb.fle[physical].fabric">
       <!-- Binding interconnect to circuit models as their physical implementation, if not defined, we use the default model -->
       <interconnect name="mux1" circuit_model_name="mux_1level_fabric"/>
@@ -427,36 +411,23 @@
     </pb_type>	
     <!-- physical mode will be the default mode if not specified -->
     <pb_type name="clb.fle" physical_mode_name="physical"/>
-    <!--pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4" mode_bits="0"/-->
-	<pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4"/>
+    <pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4"/>
     <pb_type name="clb.fle[physical].fabric.frac_logic.carry_follower" circuit_model_name="sky130_fd_sc_hd__mux2_1_wrapper"/>
     <pb_type name="clb.fle[physical].fabric.ff" circuit_model_name="sky130_fd_sc_hd__sdfrtp_1"/>
     <!-- Binding operating pb_type to physical pb_type -->
-    <!--pb_type name="clb.fle[n2_lut3].lut3inter.ble3.lut3" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="1" physical_pb_type_index_factor="0.5"-->
-      <!-- Binding the lut3 to the first 3 inputs of fracturable lut4 -->
-      <!--port name="in" physical_mode_port="in[0:2]"/-->
-      <!--port name="out" physical_mode_port="lut3_out[0:0]" physical_mode_pin_rotate_offset="1"/-->
-    <!--/pb_type-->
-    <!--pb_type name="clb.fle[n2_lut3].lut3inter.ble3.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/-->
-    <!-- Binding operating pb_types in mode 'ble4' -->
-    <!--pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="0"-->
-	<pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4">
+    <pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4">
       <!-- Binding the lut4 to the first 4 inputs of fracturable lut4 -->
       <port name="in" physical_mode_port="in[0:3]"/>
       <port name="out" physical_mode_port="lut4_out"/>
     </pb_type>
     <pb_type name="clb.fle[n1_lut4].ble4.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
-    <!-- Binding operating pb_types in mode 'shift_register' -->
+      <!-- Binding operating pb_types in mode 'shift_register' -->
     <pb_type name="clb.fle[shift_register].shift_reg.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
-	<!-- kliao 2021-0112-->
-	<pb_type name="clb.fle[soft_adder].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4">
+    <pb_type name="clb.fle[soft_adder].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4">
       <port name="in" physical_mode_port="in[0:3]"/>
       <port name="out" physical_mode_port="lut4_out"/>
     </pb_type>
     <pb_type name="clb.fle[soft_adder].ble4.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
-	
-	
-	
     <!-- End physical pb_type binding in complex block IO -->
   </pb_type_annotations>
 </openfpga_architecture>
