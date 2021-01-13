@@ -214,7 +214,9 @@
     <direct name="adder_carry" circuit_model_name="direct_interc"/>
   </direct_connection>
   <tile_annotations>
-    <global_port name="clk" tile_port="SUPER_LOGIC_CELL.QCK" is_clock="true" default_val="0"/>
+      <global_port name="clk" is_clock="true" default_val="0">
+          <tile name="SUPER_LOGIC_CELL" port="QCK" x="-1" y="-1"/>
+      </global_port>
   </tile_annotations>
   <pb_type_annotations>
     <!-- physical pb_type binding in complex block IO -->
