@@ -115,7 +115,7 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-	<circuit_model type="inv_buf" name="sky130_fd_sc_hd__inv_4" prefix="sky130_fd_sc_hd__inv_4" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/inv/sky130_fd_sc_hd__inv_4.v">
+    <circuit_model type="inv_buf" name="sky130_fd_sc_hd__inv_4" prefix="sky130_fd_sc_hd__inv_4" is_default="false" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/inv/sky130_fd_sc_hd__inv_4.v">
       <design_technology type="cmos" topology="buffer" size="1"/>
       <device_technology device_model_name="logic"/>
       <port type="input" prefix="in" lib_name="A" size="1"/>
@@ -249,6 +249,15 @@
       <port type="output" prefix="out" size="1"/>
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
+	<circuit_model type="mux" name="mux_1level_fabric" prefix="mux_1level_fabric" dump_structural_verilog="true">
+      <design_technology type="cmos" structure="multi_level" num_level="1" local_encoder="false"/>
+      <input_buffer exist="false"/>
+      <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_1"/>
+      <pass_gate_logic circuit_model_name="sky130_fd_sc_hd__mux2_1"/>
+      <port type="input" prefix="in" size="1"/>
+      <port type="output" prefix="out" size="1"/>
+      <port type="sram" prefix="sram" size="1"/>
+    </circuit_model>
     <circuit_model type="mux" name="mux_1level_tapbuf" prefix="mux_1level_tapbuf" dump_structural_verilog="true">
       <design_technology type="cmos" structure="multi_level" num_level="1" add_const_input="true" const_input_val="1" local_encoder="true"/>
       <input_buffer exist="false"/>
@@ -296,12 +305,13 @@
       <lut_input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2"/>
       <lut_intermediate_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2" location_map="-1-"/>
       <pass_gate_logic circuit_model_name="sky130_fd_sc_hd__mux2_1"/>
-      <port type="input" prefix="in" size="4" tri_state_map="---1" circuit_model_name="sky130_fd_sc_hd__or2_1"/>
+      <!--port type="input" prefix="in" size="4" tri_state_map="---1" circuit_model_name="sky130_fd_sc_hd__or2_1"/-->
+	  <port type="input" prefix="in" size="4"/>
       <port type="output" prefix="lut2_out" size="2" lut_frac_level="2" lut_output_mask="2,3"/>
-      <port type="output" prefix="lut3_out" size="2" lut_frac_level="3" lut_output_mask="0,1"/>
+      <!--port type="output" prefix="lut3_out" size="2" lut_frac_level="3" lut_output_mask="0,1"/-->
       <port type="output" prefix="lut4_out" size="1" lut_output_mask="0"/>
       <port type="sram" prefix="sram" size="16"/>
-      <port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="CFGSDFFR" default_val="1"/>
+      <!--port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="CFGSDFFR" default_val="1"/-->
     </circuit_model>
     <!-- new ccFF  -->
 	<circuit_model type="ccff" name="CFGSDFFR" prefix="CFGSDFFR" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
@@ -318,7 +328,7 @@
        <port type="output" prefix="CFGQ" size="1"/>
        <port type="clock" prefix="prog_clk" lib_name="CK" size="1" is_global="true" default_val="0" is_prog="true"/>
     </circuit_model>
-    <circuit_model type="iopad" name="EMBEDDED_IO_HD" prefix="EMBEDDED_IO_HD" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/digital_io_hd_0108.v">
+    <circuit_model type="iopad" name="EMBEDDED_IO_HD" prefix="EMBEDDED_IO_HD" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_io_logic.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
@@ -409,23 +419,28 @@
     <!-- physical pb_type binding in complex block CLB -->
     <pb_type name="clb.fle[physical].fabric">
       <!-- Binding interconnect to circuit models as their physical implementation, if not defined, we use the default model -->
-      <interconnect name="mux3" circuit_model_name="mux_1level_tapbuf"/>
-      <interconnect name="mux4" circuit_model_name="mux_1level_tapbuf"/>
-    </pb_type>    
+      <interconnect name="mux1" circuit_model_name="mux_1level_fabric"/>
+      <interconnect name="mux2" circuit_model_name="mux_1level_fabric"/>
+    </pb_type>  
+    <pb_type name="clb.fle[physical].fabric.frac_logic">
+      <interconnect name="cin_mux" circuit_model_name="mux_1level_fabric"/>
+    </pb_type>	
     <!-- physical mode will be the default mode if not specified -->
     <pb_type name="clb.fle" physical_mode_name="physical"/>
-    <pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4" mode_bits="0"/>
+    <!--pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4" mode_bits="0"/-->
+	<pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4"/>
     <pb_type name="clb.fle[physical].fabric.frac_logic.carry_follower" circuit_model_name="sky130_fd_sc_hd__mux2_1_wrapper"/>
     <pb_type name="clb.fle[physical].fabric.ff" circuit_model_name="sky130_fd_sc_hd__sdfrtp_1"/>
     <!-- Binding operating pb_type to physical pb_type -->
-    <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.lut3" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="1" physical_pb_type_index_factor="0.5">
+    <!--pb_type name="clb.fle[n2_lut3].lut3inter.ble3.lut3" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="1" physical_pb_type_index_factor="0.5"-->
       <!-- Binding the lut3 to the first 3 inputs of fracturable lut4 -->
-      <port name="in" physical_mode_port="in[0:2]"/>
-      <port name="out" physical_mode_port="lut3_out[0:0]" physical_mode_pin_rotate_offset="1"/>
-    </pb_type>
-    <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
+      <!--port name="in" physical_mode_port="in[0:2]"/-->
+      <!--port name="out" physical_mode_port="lut3_out[0:0]" physical_mode_pin_rotate_offset="1"/-->
+    <!--/pb_type-->
+    <!--pb_type name="clb.fle[n2_lut3].lut3inter.ble3.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/-->
     <!-- Binding operating pb_types in mode 'ble4' -->
-    <pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="0">
+    <!--pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="0"-->
+	<pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4">
       <!-- Binding the lut4 to the first 4 inputs of fracturable lut4 -->
       <port name="in" physical_mode_port="in[0:3]"/>
       <port name="out" physical_mode_port="lut4_out"/>
@@ -433,6 +448,15 @@
     <pb_type name="clb.fle[n1_lut4].ble4.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
     <!-- Binding operating pb_types in mode 'shift_register' -->
     <pb_type name="clb.fle[shift_register].shift_reg.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
+	<!-- kliao 2021-0112-->
+	<pb_type name="clb.fle[soft_adder].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4">
+      <port name="in" physical_mode_port="in[0:3]"/>
+      <port name="out" physical_mode_port="lut4_out"/>
+    </pb_type>
+    <pb_type name="clb.fle[soft_adder].ble4.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
+	
+	
+	
     <!-- End physical pb_type binding in complex block IO -->
   </pb_type_annotations>
 </openfpga_architecture>
