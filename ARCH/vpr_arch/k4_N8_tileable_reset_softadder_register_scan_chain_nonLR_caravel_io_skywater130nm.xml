@@ -134,7 +134,7 @@
       <output name="sc_out" num_pins="1"/>
       <output name="cout" num_pins="1"/>
       <output name="cout_copy" num_pins="1"/>
-      <clock name="clk" num_pins="1"/>
+      <clock name="clk" num_pins="4"/>
       <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
         <fc_override port_name="reg_in" fc_type="frac" fc_val="0"/>
         <fc_override port_name="reg_out" fc_type="frac" fc_val="0"/>
@@ -344,7 +344,7 @@
       <output name="sc_out" num_pins="1"/>
       <output name="cout" num_pins="1"/>
       <output name="cout_copy" num_pins="1"/>
-      <clock name="clk" num_pins="1"/>
+      <clock name="clk" num_pins="4"/>
       <!-- Describe fracturable logic element.  
              Each fracturable logic element has a 6-LUT that can alternatively operate as two 5-LUTs with shared inputs. 
              The outputs of the fracturable logic element can be optionally registered
