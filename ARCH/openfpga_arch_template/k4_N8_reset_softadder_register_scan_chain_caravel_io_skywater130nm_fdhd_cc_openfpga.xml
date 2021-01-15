@@ -314,7 +314,7 @@ foundry middle-speed (ms) standard cell library
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <port type="input" prefix="pReset" lib_name="RST" size="1" is_global="true" default_val="0" is_reset="true" is_prog="true"/>
-      <port type="input" prefix="SE" size="1" is_global="true" default_val="0"/>
+      <port type="input" prefix="Test_en" lib_name="SE" size="1" is_global="true" default_val="0"/>
       <port type="input" prefix="CFG_DONE" lib_name="CFGE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
       <port type="input" prefix="D" size="1"/>
       <port type="input" prefix="SI" size="1"/>
@@ -407,7 +407,7 @@ foundry middle-speed (ms) standard cell library
       <interconnect name="mux2" circuit_model_name="mux_1level_fabric"/>
     </pb_type>  
     <pb_type name="clb.fle[physical].fabric.frac_logic">
-      <interconnect name="cin_mux" circuit_model_name="mux_1level_fabric"/>
+      <interconnect name="mux2" circuit_model_name="mux_1level_fabric"/>
     </pb_type>	
     <!-- physical mode will be the default mode if not specified -->
     <pb_type name="clb.fle" physical_mode_name="physical"/>
@@ -423,11 +423,6 @@ foundry middle-speed (ms) standard cell library
     <pb_type name="clb.fle[n1_lut4].ble4.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
       <!-- Binding operating pb_types in mode 'shift_register' -->
     <pb_type name="clb.fle[shift_register].shift_reg.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
-    <pb_type name="clb.fle[soft_adder].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4">
-      <port name="in" physical_mode_port="in[0:3]"/>
-      <port name="out" physical_mode_port="lut4_out"/>
-    </pb_type>
-    <pb_type name="clb.fle[soft_adder].ble4.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
     <!-- End physical pb_type binding in complex block IO -->
   </pb_type_annotations>
 </openfpga_architecture>
