@@ -323,7 +323,7 @@ foundry middle-speed (ms) standard cell library
       <port type="output" prefix="CFGQ" size="1"/>
       <port type="clock" prefix="prog_clk" lib_name="CK" size="1" is_global="true" default_val="0" is_prog="true"/>
     </circuit_model>
-    <circuit_model type="iopad" name="EMBEDDED_IO_HD" prefix="EMBEDDED_IO_HD" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_io_logic.v">
+    <circuit_model type="iopad" name="EMBEDDED_IO_HD" prefix="EMBEDDED_IO_HD" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_iso_io_logic.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
