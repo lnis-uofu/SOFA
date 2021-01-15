@@ -2,4 +2,4 @@ SrcLoc, DestLoc
 FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_task/,OpenFPGA_task
 FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_Verilog/SRC/,verilog/OpenFPGA_Verilog/
 FPGA1212_QLSOFA_HD_PNR/fpga_top/fpga_top_icv_in_design.lvs.v,verilog/gl/caravel_${PROJ_SUFFIX,,}_top.v
-SOFA-Chips/HDL/common/user_project_wrapper_integration.v,verilog/gl/user_project_wrapper.v
+HDL/common/user_project_wrapper_integration.v,verilog/gl/user_project_wrapper.v
