@@ -76,7 +76,7 @@ Authors: Xifan Tang
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
-      <clock name="clk" num_pins="1"/>
+      <clock name="clk" num_pins="4"/>
       <input name="f2a_i" num_pins="1"/>
       <output name="a2f_o" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
@@ -97,7 +97,7 @@ Authors: Xifan Tang
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
-      <clock name="clk" num_pins="1"/>
+      <clock name="clk" num_pins="4"/>
       <input name="f2a_i" num_pins="1"/>
       <output name="a2f_o" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
@@ -118,7 +118,7 @@ Authors: Xifan Tang
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
-      <clock name="clk" num_pins="1"/>
+      <clock name="clk" num_pins="4"/>
       <input name="f2a_i" num_pins="1"/>
       <output name="a2f_o" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
@@ -139,7 +139,7 @@ Authors: Xifan Tang
       <equivalent_sites>
         <site pb_type="io"/>
       </equivalent_sites>
-      <clock name="clk" num_pins="1"/>
+      <clock name="clk" num_pins="4"/>
       <input name="f2a_i" num_pins="1"/>
       <output name="a2f_o" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
@@ -311,7 +311,7 @@ Authors: Xifan Tang
   <complexblocklist>
     <!-- Define input pads begin -->
     <pb_type name="io">
-      <clock name="clk" num_pins="1"/>
+      <clock name="clk" num_pins="4"/>
       <input name="f2a_i" num_pins="1"/>
       <output name="a2f_o" num_pins="1"/>
       <input name="sc_in" num_pins="1"/>
@@ -350,7 +350,7 @@ Authors: Xifan Tang
             <direct name="ff[1:1]-DI" input="ff[0:0].Q" output="ff[1:1].DI"/>
             <direct name="iopad-sc_out" input="ff[1:1].Q" output="iopad.sc_out"/>
             <complete name="complete1" input="iopad.reset" output="ff[1:0].reset"/>
-            <mux name="mux1" input="iopad.f2a_i ff[0:0].Q" output="pad.outpad">
+            <mux name="mux1" input="iopad.f2a_i ff[0:0].Q iopad.clk" output="pad.outpad">
               <delay_constant max="25e-12" in_port="iopad.f2a_i" out_port="pad.outpad"/>
               <delay_constant max="45e-12" in_port="ff[0:0].Q" out_port="pad.outpad"/>
             </mux>
@@ -361,7 +361,7 @@ Authors: Xifan Tang
           </interconnect>
         </pb_type>
         <interconnect>
-          <direct name="direct1" input="io.clk" output="iopad.clk"/>
+          <complete name="clks" input="io.clk" output="iopad.clk"/>
           <direct name="direct3" input="io.f2a_i" output="iopad.f2a_i"/>
           <direct name="direct4" input="iopad.a2f_o" output="io.a2f_o"/>
           <direct name="direct6" input="io.sc_in" output="iopad.sc_in"/>
@@ -395,7 +395,7 @@ Authors: Xifan Tang
           </interconnect>
         </pb_type>
         <interconnect>
-          <direct name="io_output-clk" input="io.clk" output="io_output.clk"/>
+          <complete name="io_output-clk" input="io.clk" output="io_output.clk"/>
           <direct name="io_output-f2a_i" input="io.f2a_i" output="io_output.f2a_i"/>
         </interconnect>
       </mode>
@@ -425,7 +425,7 @@ Authors: Xifan Tang
         </pb_type>
         <interconnect>
           <direct name="io-a2f_o" input="io_input.a2f_o" output="io.a2f_o"/>
-          <direct name="io_input-clk" input="io.clk" output="io_input.clk"/>
+          <complete name="io_input-clk" input="io.clk" output="io_input.clk"/>
         </interconnect>
       </mode>
     </pb_type>

@@ -370,10 +370,10 @@ foundry middle-speed (ms) standard cell library
   <tile_annotations>
     <global_port name="clk" is_clock="true" default_val="0">
       <tile name="clb" port="clk[0:3]" x="-1" y="-1"/>
-      <tile name="io_top" port="clk" x="-1" y="-1"/>
-      <tile name="io_right" port="clk" x="-1" y="-1"/>
-      <tile name="io_bottom" port="clk" x="-1" y="-1"/>
-      <tile name="io_left" port="clk" x="-1" y="-1"/>
+      <tile name="io_top" port="clk[0:3]" x="-1" y="-1"/>
+      <tile name="io_right" port="clk[0:3]" x="-1" y="-1"/>
+      <tile name="io_bottom" port="clk[0:3]" x="-1" y="-1"/>
+      <tile name="io_left" port="clk[0:3]" x="-1" y="-1"/>
     </global_port>
     <global_port name="reset" is_reset="true" default_val="0">
       <tile name="clb" port="reset" x="-1" y="-1"/>
