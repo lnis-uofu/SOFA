@@ -44,7 +44,7 @@ The truth table of the I/O cell is consistent with the GPIO cell of Caravel SoC 
 .. _fig_sofa_hd_embedded_io_test_waveform:
 
 .. figure:: ./figures/sofa_hd_embedded_io_test_waveform.svg
-  :scale: 30%
+  :scale: 100%
   :alt: Schematic of embedded I/O cell used in FPGA
 
   An example of waveforms of embedded I/O cell used in FPGA
