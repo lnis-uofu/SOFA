@@ -350,7 +350,7 @@ Authors: Xifan Tang
             <direct name="ff[1:1]-DI" input="ff[0:0].Q" output="ff[1:1].DI"/>
             <direct name="iopad-sc_out" input="ff[1:1].Q" output="iopad.sc_out"/>
             <complete name="complete1" input="iopad.reset" output="ff[1:0].reset"/>
-            <mux name="mux1" input="iopad.f2a_i ff[0:0].Q iopad.clk" output="pad.outpad">
+            <mux name="mux1" input="iopad.f2a_i ff[0:0].Q" output="pad.outpad">
               <delay_constant max="25e-12" in_port="iopad.f2a_i" out_port="pad.outpad"/>
               <delay_constant max="45e-12" in_port="ff[0:0].Q" out_port="pad.outpad"/>
             </mux>
