@@ -323,12 +323,12 @@ foundry middle-speed (ms) standard cell library
       <port type="output" prefix="CFGQ" size="1"/>
       <port type="clock" prefix="prog_clk" lib_name="CK" size="1" is_global="true" default_val="0" is_prog="true"/>
     </circuit_model>
-    <circuit_model type="iopad" name="EMBEDDED_IO_HD" prefix="EMBEDDED_IO_HD" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_iso_io_logic.v">
+    <circuit_model type="iopad" name="IO" prefix="_" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_iso_io_logic.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
-      <port type="input" prefix="SOC_IN" lib_name="SOC_IN" size="1" is_global="true" is_io="true" is_data_io="true"/>
-      <port type="output" prefix="SOC_OUT" lib_name="SOC_OUT" size="1" is_global="true" is_io="true" is_data_io="true"/>
+      <port type="input" prefix="A2F" lib_name="SOC_IN" size="1" is_global="true" is_io="true" is_data_io="true"/>
+      <port type="output" prefix="F2A" lib_name="SOC_OUT" size="1" is_global="true" is_io="true" is_data_io="true"/>
       <port type="output" prefix="inpad" lib_name="FPGA_IN" size="1"/>
       <port type="input" prefix="outpad" lib_name="FPGA_OUT" size="1"/>
       <port type="input" prefix="IO_ISOL_N" lib_name="IO_ISOL_N" size="1" is_global="true" default_val="1" is_config_enable="true"/>
@@ -391,7 +391,7 @@ foundry middle-speed (ms) standard cell library
       <interconnect name="mux1" circuit_model_name="mux_1level_io"/>
       <interconnect name="mux2" circuit_model_name="mux_1level_io"/>
     </pb_type>
-    <pb_type name="io[physical].iopad.pad" circuit_model_name="EMBEDDED_IO_HD" mode_bits="1"/>
+    <pb_type name="io[physical].iopad.pad" circuit_model_name="IO" mode_bits="1"/>
     <pb_type name="io[io_input].io_input.inpad" physical_pb_type_name="io[physical].iopad.pad" mode_bits="1"/>
     <pb_type name="io[io_output].io_output.outpad" physical_pb_type_name="io[physical].iopad.pad" mode_bits="0"/>
 
