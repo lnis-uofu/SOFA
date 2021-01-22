@@ -119,6 +119,17 @@
         <loc side="right">io_left.outpad io_left.inpad</loc>
       </pinlocations>
     </tile>
+    <tile name="ckbuf_bottom" capacity="1" area="0">
+      <equivalent_sites>
+        <site pb_type="ckbuf"/>
+      </equivalent_sites>
+      <input name="clkin" num_pins="1"/>
+      <output name="clkout" num_pins="1"/>
+      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
+      <pinlocations pattern="custom">
+        <loc side="top">ckbuf.clkin ckbuf.clkout</loc>
+      </pinlocations>
+    </tile>
     <!-- CLB has most pins on the top and right sides -->
     <tile name="clb" area="53894">
       <equivalent_sites>
@@ -194,6 +205,7 @@
       <col type="io_left" startx="0" priority="100"/>
       <col type="io_right" startx="W-1" priority="100"/>
       <corners type="EMPTY" priority="101"/>
+      <single type="ckbuf_bot" x="H/2" y="0" priority="20"/>
       <!--Fill with 'clb'-->
       <fill type="clb" priority="10"/>
     </fixed_layout>
@@ -305,6 +317,47 @@
 	     today and that is when you timing analyze them.
 	     -->
       <mode name="inpad">
+        <pb_type name="inpad" blif_model=".input" num_pb="1">
+          <output name="inpad" num_pins="1"/>
+        </pb_type>
+        <interconnect>
+          <direct name="inpad" input="inpad.inpad" output="io.inpad">
+            <delay_constant max="4.243e-11" in_port="inpad.inpad" out_port="io.inpad"/>
+          </direct>
+        </interconnect>
+      </mode>
+      <mode name="outpad">
+        <pb_type name="outpad" blif_model=".output" num_pb="1">
+          <input name="outpad" num_pins="1"/>
+        </pb_type>
+        <interconnect>
+          <direct name="outpad" input="io.outpad" output="outpad.outpad">
+            <delay_constant max="1.394e-11" in_port="io.outpad" out_port="outpad.outpad"/>
+          </direct>
+        </interconnect>
+      </mode>
+      <power method="ignore"/>
+    </pb_type>
+    <!-- Define I/O pads ends -->
+    <!-- Define clock buffers begin -->
+    <pb_type name="ckbuf">
+      <input name="clkin" num_pins="1"/>
+      <output name="clkout" num_pins="1"/>
+      <!-- A mode denotes the physical implementation of an I/O 
+           This mode will be not packable but is mainly used for fabric verilog generation   
+        -->
+      <mode name="physical" disabled_in_pack="true">
+        <pb_type name="BUF" blif_model=".subckt ckbuf" num_pb="1">
+          <input name="in" num_pins="1"/>
+          <output name="out" num_pins="1"/>
+        </pb_type>
+        <interconnect>
+          <direct name="in" input="ckbuf.clkin" output="BUF.in">
+          <direct name="out" input="BUF.out" output="ckbuf.clkout">
+        </interconnect>
+      </mode>
+
+      <mode name="default">
         <pb_type name="inpad" blif_model=".input" num_pb="1">
           <output name="inpad" num_pins="1"/>
         </pb_type>
