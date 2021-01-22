@@ -21,7 +21,7 @@
 //       It is already technology mapped and can be directly used
 //       for physical design
 //-----------------------------------------------------
-module EMBEDDED_IO_HD (
+module IO (
   input SOC_IN,   // Input to drive the inpad signal
   output SOC_OUT, // Output the outpad signal
   output FPGA_IN, // Input data to FPGA
