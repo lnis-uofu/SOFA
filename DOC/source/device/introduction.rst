@@ -13,7 +13,7 @@ We aims to empower embedded applications with its low-cost design approach but h
 .. _fig_sofa_motivation:
 
 .. figure:: ./figures/sofa_motivation.png
-  :scale: 15%
+  :scale: 40%
   :alt: 24-hour FPGA IP development: from PDK to production-ready layout
 
   24-hour FPGA IP development: from PDK to production-ready layout
