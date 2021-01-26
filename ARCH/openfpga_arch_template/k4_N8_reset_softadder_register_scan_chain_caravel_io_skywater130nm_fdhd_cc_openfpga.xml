@@ -324,16 +324,16 @@ foundry middle-speed (ms) standard cell library
       <port type="clock" prefix="prog_clk" lib_name="CLK" size="1" is_global="true" default_val="0" is_prog="true"/>
     </circuit_model>
     <!-- dummy stdcell pointer -->
-    <circuit_model type="inv_buf" name="dummy1" prefix="dummy1" verilog_netlist="${TASK_DIR}/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/nor2/sky130_fd_sc_hd__nor2_1.v"> 
+    <circuit_model type="inv_buf" name="dummy1" prefix="dummy1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/nor2/sky130_fd_sc_hd__nor2_1.v"> 
       <design_technology type="cmos" topology="inverter" size="1"/> 
     </circuit_model>
-    <circuit_model type="inv_buf" name="dummy2" prefix="dummy2" verilog_netlist="${TASK_DIR}/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/nand2/sky130_fd_sc_hd__nand2_1.v"> 
+    <circuit_model type="inv_buf" name="dummy2" prefix="dummy2" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/nand2/sky130_fd_sc_hd__nand2_1.v"> 
       <design_technology type="cmos" topology="inverter" size="1"/> 
     </circuit_model>
-    <circuit_model type="inv_buf" name="dummy3" prefix="dummy3" verilog_netlist="${TASK_DIR}/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/einvn/sky130_fd_sc_hd__einvn_4.v"> 
+    <circuit_model type="inv_buf" name="dummy3" prefix="dummy3" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/einvn/sky130_fd_sc_hd__einvn_4.v"> 
       <design_technology type="cmos" topology="inverter" size="1"/> 
     </circuit_model>
-    <circuit_model type="inv_buf" name="dummy4" prefix="dummy4" verilog_netlist="${TASK_DIR}/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/and3/sky130_fd_sc_hd__and3_1.v"> 
+    <circuit_model type="inv_buf" name="dummy4" prefix="dummy4" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/and3/sky130_fd_sc_hd__and3_1.v"> 
       <design_technology type="cmos" topology="inverter" size="1"/> 
     </circuit_model>
     <circuit_model type="iopad" name="IO" prefix="IO" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_iso_io_logic.v">
