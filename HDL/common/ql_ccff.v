@@ -1,21 +1,10 @@
 `timescale 1ns/1ps
 
 //-----------------------------------------------------
-// Function    : An embedded I/O with
-//               - An I/O isolation signal to set 
-//                 the I/O in input mode. This is to avoid
-//                 any unexpected output signals to damage
-//                 circuits outside the FPGA due to configurable
-//                 memories are not properly initialized
-//                 This feature may not be needed if the configurable
-//                 memory cell has a built-in set/reset functionality
-//               - Internal protection circuitry to ensure
-//                 clean signals at all the SOC I/O ports
-//                 This is to avoid 
-//                   - output any random signal
-//                     when the I/O is in input mode, also avoid
-//                   - driven by any random signal
-//                     when the I/O is output mode
+// Function    : QuickLogic physical CCFF
+//		 - intorduce CFGE to gate CCFF output for 
+//		   un-wanted toggling during configuration
+//		 - intorduce test data in, SI, for DFM
 //
 // Note: This cell is built with Standard Cells from HD library
 //       It is already technology mapped and can be directly used
