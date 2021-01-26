@@ -31,7 +31,7 @@ module QL_CCFF (
 	  				.A(CFGQN),
 					.Y(CFGQ)
 					);
-  sky130_fd_sc_hd__sdfrtp SDFRTP (
+  sky130_fd_sc_hd__sdfrtp_1 SDFRTP (
         .Q(Q),
         .CLK(CLK),
         .D(D),
