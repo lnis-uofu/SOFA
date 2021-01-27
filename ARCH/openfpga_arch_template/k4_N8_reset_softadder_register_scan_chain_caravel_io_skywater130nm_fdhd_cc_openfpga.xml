@@ -309,19 +309,32 @@ foundry middle-speed (ms) standard cell library
       <port type="sram" prefix="sram" size="16"/>
     </circuit_model>
     <!-- new ccFF  -->
-    <circuit_model type="ccff" name="CFGSDFFR" prefix="CFGSDFFR" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
+    <circuit_model type="ccff" name="QL_CCFF" prefix="QL_CCFF" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_ccff.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
-      <port type="input" prefix="pReset" lib_name="RST" size="1" is_global="true" default_val="0" is_reset="true" is_prog="true"/>
+      <port type="input" prefix="pReset" lib_name="RESET_B" size="1" is_global="true" default_val="1" is_reset="true" is_prog="true"/>
       <port type="input" prefix="Test_en" lib_name="SE" size="1" is_global="true" default_val="0"/>
-      <port type="input" prefix="CFG_DONE" lib_name="CFGE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
+      <port type="input" prefix="CFG_DONE" lib_name="CFGE" size="1" is_global="true" default_val="0"/>
       <port type="input" prefix="D" size="1"/>
       <port type="input" prefix="SI" size="1"/>
       <port type="output" prefix="Q" size="1"/>
       <port type="output" prefix="CFGQN" size="1"/>
       <port type="output" prefix="CFGQ" size="1"/>
-      <port type="clock" prefix="prog_clk" lib_name="CK" size="1" is_global="true" default_val="0" is_prog="true"/>
+      <port type="clock" prefix="prog_clk" lib_name="CLK" size="1" is_global="true" default_val="0" is_prog="true"/>
+    </circuit_model>
+    <!-- dummy stdcell pointer -->
+    <circuit_model type="inv_buf" name="dummy1" prefix="dummy1" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/nor2/sky130_fd_sc_hd__nor2_1.v"> 
+      <design_technology type="cmos" topology="inverter" size="1"/> 
+    </circuit_model>
+    <circuit_model type="inv_buf" name="dummy2" prefix="dummy2" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/nand2/sky130_fd_sc_hd__nand2_1.v"> 
+      <design_technology type="cmos" topology="inverter" size="1"/> 
+    </circuit_model>
+    <circuit_model type="inv_buf" name="dummy3" prefix="dummy3" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/einvn/sky130_fd_sc_hd__einvn_4.v"> 
+      <design_technology type="cmos" topology="inverter" size="1"/> 
+    </circuit_model>
+    <circuit_model type="inv_buf" name="dummy4" prefix="dummy4" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/PDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/and3/sky130_fd_sc_hd__and3_1.v"> 
+      <design_technology type="cmos" topology="inverter" size="1"/> 
     </circuit_model>
     <circuit_model type="iopad" name="IO" prefix="IO" is_default="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_iso_io_logic.v">
       <design_technology type="cmos"/>
@@ -331,9 +344,9 @@ foundry middle-speed (ms) standard cell library
       <port type="output" prefix="F2A" lib_name="SOC_OUT" size="1" is_global="true" is_io="true" is_data_io="true"/>
       <port type="output" prefix="inpad" lib_name="FPGA_IN" size="1"/>
       <port type="input" prefix="outpad" lib_name="FPGA_OUT" size="1"/>
-      <port type="input" prefix="IO_ISOL_N" lib_name="IO_ISOL_N" size="1" is_global="true" default_val="1" is_config_enable="true"/>
-      <port type="input" prefix="CFG_DONE" lib_name="CFG_DONE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
-      <port type="sram" prefix="io_dir" lib_name="FPGA_IO_DIR" size="1" mode_select="true" circuit_model_name="CFGSDFFR" default_val="1"/>
+      <port type="input" prefix="IO_ISOL_N" lib_name="IO_ISOL_N" size="1" is_global="true" default_val="1"/>
+      <port type="input" prefix="CFG_DONE" lib_name="CFG_DONE" size="1" is_global="true" default_val="0"/>
+      <port type="sram" prefix="io_dir" lib_name="FPGA_IO_DIR" size="1" mode_select="true" circuit_model_name="QL_CCFF" default_val="1"/>
     </circuit_model>
     <circuit_model type="hard_logic" name="sky130_fd_sc_hd__mux2_1_wrapper" prefix="sky130_fd_sc_hd__mux2_1_wrapper" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/sky130_fd_sc_hd_wrapper.v">
       <design_technology type="cmos"/>
@@ -347,7 +360,7 @@ foundry middle-speed (ms) standard cell library
     </circuit_model>
   </circuit_library>
   <configuration_protocol>
-    <organization type="scan_chain" circuit_model_name="CFGSDFFR" num_regions="1"/>
+    <organization type="scan_chain" circuit_model_name="QL_CCFF" num_regions="1"/>
   </configuration_protocol>
   <connection_block>
     <switch name="ipin_cblock" circuit_model_name="mux_tree_tapbuf"/>
