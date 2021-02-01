@@ -36,7 +36,7 @@ Authors: Xifan Tang
 
     <model name="frac_lut4">
       <input_ports>
-        <port name="in"/>
+        <port name="in" combinational_sink_ports="lut2_out lut4_out"/>
       </input_ports>
       <output_ports>
         <port name="lut2_out"/>
@@ -45,9 +45,9 @@ Authors: Xifan Tang
     </model>
     <model name="carry_follower">
       <input_ports>
-        <port name="a"/>
-        <port name="b"/>
-        <port name="cin"/>
+        <port name="a" combinational_sink_ports="cout"/>
+        <port name="b" combinational_sink_ports="cout"/>
+        <port name="cin" combinational_sink_ports="cout"/>
       </input_ports>
       <output_ports>
         <port name="cout"/>
@@ -486,12 +486,34 @@ Authors: Xifan Tang
                 <input name="in" num_pins="4"/>
                 <output name="lut2_out" num_pins="2"/>
                 <output name="lut4_out" num_pins="1"/>
+                <!-- FIXME: Timing values taken from the pb_type implementing .names.
+                     May require adjustments as delays may differ between lut2_out and lut4_out -->
+                <delay_matrix type="max" in_port="frac_lut4.in" out_port="frac_lut4.lut2_out">
+                  261e-12
+                  261e-12
+                  261e-12
+                  261e-12
+                  261e-12
+                  261e-12
+                  261e-12
+                  261e-12
+                </delay_matrix>
+                <delay_matrix type="max" in_port="frac_lut4.in" out_port="frac_lut4.lut4_out">
+                  261e-12
+                  261e-12
+                  261e-12
+                  261e-12
+                </delay_matrix>
               </pb_type>
               <pb_type name="carry_follower" blif_model=".subckt carry_follower" num_pb="1">
                 <input name="a" num_pins="1"/>
                 <input name="b" num_pins="1"/>
                 <input name="cin" num_pins="1"/>
                 <output name="cout" num_pins="1"/>
+                <!-- FIXME: Completely fake timing data -->
+                <delay_constant max="100e-12" in_port="carry_follower.a" out_port="carry_follower.cout"/>
+                <delay_constant max="100e-12" in_port="carry_follower.b" out_port="carry_follower.cout"/>
+                <delay_constant max="100e-12" in_port="carry_follower.cin" out_port="carry_follower.cout"/>
               </pb_type>
               <interconnect>
                 <direct name="direct1" input="frac_logic.in[0:1]" output="frac_lut4.in[0:1]"/>
