@@ -33,7 +33,25 @@
         <port name="inpad"/>
       </output_ports>
     </model>
+    <model name="ck_buff">
+      <input_ports>
+        <port name="in" combinational_sink_ports="out"/>
+        <!--port name="in"/-->
+      </input_ports>
+      <output_ports>
+        <port name="out"/>
+      </output_ports>
+    </model>
 
+    <model name="ck_buff_int">
+      <input_ports>
+        <port name="in" combinational_sink_ports="out"/>
+        <!--port name="in"/-->
+      </input_ports>
+      <output_ports>
+        <port name="out"/>
+      </output_ports>
+    </model>
     <model name="frac_lut4">
       <input_ports>
         <port name="in"/>
@@ -63,6 +81,15 @@
       </input_ports>
       <output_ports>
         <port name="Q" clock="clk"/>
+      </output_ports>
+    </model>
+    <model name="openfpga_ff">
+      <input_ports>
+        <port name="D" clock="C"/>
+        <port name="C" is_clock="1"/>
+      </input_ports>
+      <output_ports>
+        <port name="Q" clock="C"/>
       </output_ports>
     </model>
   </models>
@@ -123,11 +150,56 @@
       <equivalent_sites>
         <site pb_type="ckbuf"/>
       </equivalent_sites>
-      <input name="clkin" num_pins="1"/>
+      <input name="clkin_int" num_pins="1"/>
+      <input name="clkin_ext" num_pins="1" is_non_clock_global="true"/>
       <output name="clkout" num_pins="1"/>
-      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
+      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
+        <fc_override port_name="clkin_ext" fc_type="frac" fc_val="0"/>
+      </fc>
       <pinlocations pattern="custom">
-        <loc side="top">ckbuf.clkin ckbuf.clkout</loc>
+        <loc side="top">ckbuf_bottom.clkin_int ckbuf_bottom.clkin_ext ckbuf_bottom.clkout</loc>
+      </pinlocations>
+    </tile>
+    <tile name="ckbuf_top" capacity="1" area="0">
+      <equivalent_sites>
+        <site pb_type="ckbuf"/>
+      </equivalent_sites>
+      <input name="clkin_int" num_pins="1"/>
+      <input name="clkin_ext" num_pins="1" is_non_clock_global="true"/>
+      <output name="clkout" num_pins="1"/>
+      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
+        <fc_override port_name="clkin_ext" fc_type="frac" fc_val="0"/>
+      </fc>
+      <pinlocations pattern="custom">
+        <loc side="bottom">ckbuf_top.clkin_int ckbuf_top.clkin_ext ckbuf_top.clkout</loc>
+      </pinlocations>
+    </tile>
+    <tile name="ckbuf_left" capacity="1" area="0">
+      <equivalent_sites>
+        <site pb_type="ckbuf"/>
+      </equivalent_sites>
+      <input name="clkin_int" num_pins="1"/>
+      <input name="clkin_ext" num_pins="1" is_non_clock_global="true"/>
+      <output name="clkout" num_pins="1"/>
+      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
+        <fc_override port_name="clkin_ext" fc_type="frac" fc_val="0"/>
+      </fc>
+      <pinlocations pattern="custom">
+        <loc side="right">ckbuf_left.clkin_int ckbuf_left.clkin_ext ckbuf_left.clkout</loc>
+      </pinlocations>
+    </tile>
+    <tile name="ckbuf_right" capacity="1" area="0">
+      <equivalent_sites>
+        <site pb_type="ckbuf"/>
+      </equivalent_sites>
+      <input name="clkin_int" num_pins="1"/>
+      <input name="clkin_ext" num_pins="1" is_non_clock_global="true"/>
+      <output name="clkout" num_pins="1"/>
+      <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
+        <fc_override port_name="clkin_ext" fc_type="frac" fc_val="0"/>
+      </fc>
+      <pinlocations pattern="custom">
+        <loc side="left">ckbuf_right.clkin_int ckbuf_right.clkin_ext ckbuf_right.clkout</loc>
       </pinlocations>
     </tile>
     <!-- CLB has most pins on the top and right sides -->
@@ -205,7 +277,10 @@
       <col type="io_left" startx="0" priority="100"/>
       <col type="io_right" startx="W-1" priority="100"/>
       <corners type="EMPTY" priority="101"/>
-      <single type="ckbuf_bot" x="H/2" y="0" priority="20"/>
+      <single type="ckbuf_bottom" x="W/2" y="0" priority="120"/>
+      <single type="ckbuf_top" x="W/2" y="H-1" priority="120"/>
+      <single type="ckbuf_left" x="0" y="H/2" priority="120"/>
+      <single type="ckbuf_right" x="W-1" y="H/2" priority="120"/>
       <!--Fill with 'clb'-->
       <fill type="clb" priority="10"/>
     </fixed_layout>
@@ -341,42 +416,83 @@
     <!-- Define I/O pads ends -->
     <!-- Define clock buffers begin -->
     <pb_type name="ckbuf">
-      <input name="clkin" num_pins="1"/>
+      <input name="clkin_int" num_pins="1"/>
+      <input name="clkin_ext" num_pins="1"/>
       <output name="clkout" num_pins="1"/>
       <!-- A mode denotes the physical implementation of an I/O 
            This mode will be not packable but is mainly used for fabric verilog generation   
         -->
       <mode name="physical" disabled_in_pack="true">
-        <pb_type name="BUF" blif_model=".subckt ckbuf" num_pb="1">
+        <pb_type name="ck_buff" blif_model=".subckt ck_buff" num_pb="1">
           <input name="in" num_pins="1"/>
           <output name="out" num_pins="1"/>
+          <delay_matrix type="max" in_port="ck_buff.in" out_port="ck_buff.out">
+            261e-12
+          </delay_matrix>
         </pb_type>
         <interconnect>
-          <direct name="in" input="ckbuf.clkin" output="BUF.in">
-          <direct name="out" input="BUF.out" output="ckbuf.clkout">
+          <mux name="mux2" input="ckbuf.clkin_int ckbuf.clkin_ext" output="ck_buff.in"/>
+	  <!--direct name="in" input="ckbuf.clkin_int" output="ck_buff.in">
+            <delay_constant max="4.243e-11" in_port="ckbuf.clkin_int" out_port="ck_buff.in"/>
+          </direct>
+	  <direct name="ded_in" input="ckbuf.clkin_ext" output="ck_buff.ded_in">
+            <delay_constant max="4.243e-11" in_port="ckbuf.clkin_ext" out_port="ck_buff.ded_in"/>
+          </direct -->
+	  <direct name="out" input="ck_buff.out" output="ckbuf.clkout">
+            <delay_constant max="4.243e-11" in_port="ck_buff.out" out_port="ckbuf.clkout"/>
+          </direct>
         </interconnect>
       </mode>
 
-      <mode name="default">
-        <pb_type name="inpad" blif_model=".input" num_pb="1">
-          <output name="inpad" num_pins="1"/>
+      <mode name="internal">
+        <pb_type name="CKBUFFINT" blif_model=".subckt ck_buff_int" num_pb="1">
+          <output name="out" num_pins="1"/>
+          <input name="in" num_pins="1"/>
+          <delay_matrix type="max" in_port="CKBUFFINT.in" out_port="CKBUFFINT.out">
+            261e-12
+          </delay_matrix>
         </pb_type>
         <interconnect>
-          <direct name="inpad" input="inpad.inpad" output="io.inpad">
-            <delay_constant max="4.243e-11" in_port="inpad.inpad" out_port="io.inpad"/>
+          <direct name="CLKIN" input="ckbuf.clkin_int" output="CKBUFFINT.in">
+            <delay_constant max="4.243e-11" in_port="ckbuf.clkin_int" out_port="CKBUFFINT.in"/>
+          </direct>
+          <direct name="CLKOUT" output="ckbuf.clkout" input="CKBUFFINT.out">
+            <delay_constant max="4.243e-11" in_port="CKBUFFINT.out" out_port="ckbuf.clkout"/>
           </direct>
         </interconnect>
       </mode>
-      <mode name="outpad">
-        <pb_type name="outpad" blif_model=".output" num_pb="1">
-          <input name="outpad" num_pins="1"/>
+
+      <mode name="external">
+        <pb_type name="CKPAD" blif_model=".subckt ck_buff" num_pb="1">
+          <output name="out" num_pins="1"/>
+          <input name="in" num_pins="1"/>
+          <delay_matrix type="max" in_port="CKPAD.in" out_port="CKPAD.out">
+            261e-12
+          </delay_matrix>
+        </pb_type>
+        <pb_type name="CKBUFF" blif_model=".subckt ck_buff_int" num_pb="1">
+          <output name="out" num_pins="1"/>
+          <input name="in" num_pins="1"/>
+          <delay_matrix type="max" in_port="CKBUFF.in" out_port="CKBUFF.out">
+            261e-12
+          </delay_matrix>
         </pb_type>
         <interconnect>
-          <direct name="outpad" input="io.outpad" output="outpad.outpad">
-            <delay_constant max="1.394e-11" in_port="io.outpad" out_port="outpad.outpad"/>
+          <direct name="CLKIN" input="ckbuf.clkin_ext" output="CKPAD.in">
+            <delay_constant max="4.243e-11" in_port="ckbuf.clkin_ext" out_port="CKPAD.in"/>
+          </direct>
+          <direct name="CLKOUT" output="ckbuf.clkout" input="CKBUFF.out">
+            <delay_constant max="4.243e-11" in_port="CKBUFF.out" out_port="ckbuf.clkout"/>
+          </direct>
+          <direct name="direct1" input="CKPAD.out" output="CKBUFF.in">
+            <delay_constant max="4.243e-11" in_port="CKPAD.out" out_port="CKBUFF.in"/>
+            <pack_pattern name="ckbuf" in_port="CKPAD.out" out_port="CKBUFF.in"/>
           </direct>
         </interconnect>
       </mode>
+      <interconnect>
+        <mux name="mux2" input="ckbuf.clkin_int ckbuf.clkin_ext" output="ckbuf.clkout"/>
+      </interconnect>
       <power method="ignore"/>
     </pb_type>
     <!-- Define I/O pads ends -->
@@ -528,13 +644,43 @@
                 261e-12
               </delay_matrix>
             </pb_type>
-            <!-- Define flip-flop -->
-            <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
-              <input name="D" num_pins="1" port_class="D"/>
-              <output name="Q" num_pins="1" port_class="Q"/>
-              <clock name="clk" num_pins="1" port_class="clock"/>
-              <T_setup value="66e-12" port="ff.D" clock="clk"/>
-              <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
+	    <!-- Define flip-flop -->
+            <pb_type name="ff"  num_pb="1">
+              <input name="D" num_pins="1"/>
+              <output name="Q" num_pins="1"/>
+	      <clock name="clk" num_pins="1"/>
+	      <mode name="VPR_FF">
+                <pb_type name="VPR_FF" blif_model=".latch" num_pb="1" class="flipflop">
+                  <input name="D" num_pins="1" port_class="D"/>
+                  <output name="Q" num_pins="1" port_class="Q"/>
+                  <clock name="clk" num_pins="1" port_class="clock"/>
+                  <T_setup value="66e-12" port="VPR_FF.D" clock="clk"/>
+                  <T_clock_to_Q max="124e-12" port="VPR_FF.Q" clock="clk"/>
+	        </pb_type>
+                <interconnect>
+                  <direct input="VPR_FF.Q" name="FF-Q" output="ff.Q"/>
+                  <direct input="ff.D" name="VPR_FF-D" output="VPR_FF.D">
+                    <!--pack_pattern in_port="ff.D" name="LUT+FFA" out_port="VPR_FF.D"/ -->
+                  </direct>
+                  <direct input="ff.clk" name="VPR_FF-clk" output="VPR_FF.clk"/>
+                </interconnect>
+	      </mode>
+	      <mode name="DFF">
+                <pb_type name="DFF" blif_model=".subckt openfpga_ff" num_pb="1">
+                  <input name="D" num_pins="1"/>
+                  <output name="Q" num_pins="1"/>
+                  <clock name="C" num_pins="1"/>
+                  <T_setup value="66e-12" port="DFF.D" clock="C"/>
+                  <T_clock_to_Q max="124e-12" port="DFF.Q" clock="C"/>
+	        </pb_type>
+                <interconnect>
+                  <direct input="DFF.Q" name="FF-Q" output="ff.Q"/>
+                  <direct input="ff.D" name="DFF-D" output="DFF.D">
+                    <!-- pack_pattern in_port="ff.D" name="LUT+FFB" out_port="DFF.D"/-->
+                  </direct>
+                  <direct input="ff.clk" name="DFF-clk" output="DFF.C"/>
+                </interconnect>
+	      </mode>
             </pb_type>
             <interconnect>
               <direct name="direct1" input="ble4.in" output="lut4[0:0].in"/>
