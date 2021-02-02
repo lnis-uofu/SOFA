@@ -415,9 +415,10 @@ Authors: Xifan Tang
           </pb_type>
           <interconnect>
             <direct name="ff-clk" input="io_input.clk" output="ff.clk"/>
-            <direct name="ff-D" input="inpad.inpad" output="ff.D"/>
+            <direct name="ff-D" input="inpad.inpad" output="ff.D">
+              <pack_pattern name="pack-IREG" in_port="inpad.inpad" out_port="ff.D"/>
+            </direct>
             <mux name="mux2" input="inpad.inpad ff.Q" output="io_input.a2f_o">
-              <pack_pattern name="pack-IREG" in_port="ff.Q" out_port="io_input.a2f_o"/>
               <delay_constant max="25e-12" in_port="inpad.inpad" out_port="io_input.a2f_o"/>
               <delay_constant max="45e-12" in_port="ff.Q" out_port="io_input.a2f_o"/>
             </mux>
