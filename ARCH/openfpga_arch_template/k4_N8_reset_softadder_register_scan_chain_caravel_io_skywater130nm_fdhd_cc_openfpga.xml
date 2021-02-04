@@ -315,7 +315,7 @@ foundry middle-speed (ms) standard cell library
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <port type="input" prefix="pReset" lib_name="RESET_B" size="1" is_global="true" default_val="1" is_reset="true" is_prog="true"/>
       <port type="input" prefix="Test_en" lib_name="SE" size="1" is_global="true" default_val="0"/>
-      <port type="input" prefix="CFG_DONE" lib_name="CFGE" size="1" is_global="true" default_val="0"/>
+      <port type="input" prefix="CFG_DONE" lib_name="CFGE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
       <port type="input" prefix="D" size="1"/>
       <port type="input" prefix="SI" size="1"/>
       <port type="output" prefix="Q" size="1"/>
@@ -345,7 +345,7 @@ foundry middle-speed (ms) standard cell library
       <port type="output" prefix="inpad" lib_name="FPGA_IN" size="1"/>
       <port type="input" prefix="outpad" lib_name="FPGA_OUT" size="1"/>
       <port type="input" prefix="IO_ISOL_N" lib_name="IO_ISOL_N" size="1" is_global="true" default_val="1"/>
-      <port type="input" prefix="CFG_DONE" lib_name="CFG_DONE" size="1" is_global="true" default_val="0"/>
+      <port type="input" prefix="CFG_DONE" lib_name="CFG_DONE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
       <port type="sram" prefix="io_dir" lib_name="FPGA_IO_DIR" size="1" mode_select="true" circuit_model_name="QL_CCFF" default_val="1"/>
     </circuit_model>
     <circuit_model type="hard_logic" name="sky130_fd_sc_hd__mux2_1_wrapper" prefix="sky130_fd_sc_hd__mux2_1_wrapper" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/sky130_fd_sc_hd_wrapper.v">
@@ -388,7 +388,7 @@ foundry middle-speed (ms) standard cell library
       <tile name="io_bottom" port="clk[0:3]" x="-1" y="-1"/>
       <tile name="io_left" port="clk[0:3]" x="-1" y="-1"/>
     </global_port>
-    <global_port name="reset" is_reset="true" default_val="0">
+    <global_port name="reset" is_reset="true" default_val="1">
       <tile name="clb" port="reset" x="-1" y="-1"/>
       <tile name="io_top" port="reset" x="-1" y="-1"/>
       <tile name="io_right" port="reset" x="-1" y="-1"/>
