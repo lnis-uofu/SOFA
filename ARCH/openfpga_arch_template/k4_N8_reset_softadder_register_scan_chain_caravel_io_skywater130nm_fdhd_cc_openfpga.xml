@@ -409,8 +409,8 @@ foundry middle-speed (ms) standard cell library
     <pb_type name="io[io_output].io_output.outpad" physical_pb_type_name="io[physical].iopad.pad" mode_bits="0"/>
 
     <pb_type name="io[physical].iopad.ff" circuit_model_name="sky130_fd_sc_hd__sdfrtp_1"/>
-    <pb_type name="io[io_input].io_input.ff" physical_pb_type_name="io[physical].iopad.ff"/>
-    <pb_type name="io[io_output].io_output.ff" physical_pb_type_name="io[physical].iopad.ff"/>
+    <pb_type name="io[io_input].io_input.ff" physical_pb_type_name="io[physical].iopad.ff" physical_pb_type_index_offset="1"/>
+    <pb_type name="io[io_output].io_output.ff" physical_pb_type_name="io[physical].iopad.ff" physical_pb_type_index_offset="0"/>
       <!-- End physical pb_type binding in complex block IO -->
 
       <!-- physical pb_type binding in complex block CLB -->
