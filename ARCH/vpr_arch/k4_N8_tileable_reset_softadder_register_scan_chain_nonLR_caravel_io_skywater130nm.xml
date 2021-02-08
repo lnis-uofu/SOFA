@@ -630,6 +630,18 @@ Authors: Xifan Tang
         </mode>
         <!-- 4-LUT mode definition end -->
         <!-- Define shift register begin -->
+
+        <!-- FIXME: Presence of a disabled mode with .latch site inside sometimes triggers
+             the VPR bug: https://github.com/verilog-to-routing/vtr-verilog-to-routing/issues/1655
+
+             FIXME: There is a bug in the following mode which prevents the
+             first register input from reaching the regular routing network.
+
+             Once both issues are fixed then the mode may be uncommented (and
+             enabled).
+        -->
+
+        <!--
         <mode name="shift_register" disable_packing="true">
           <pb_type name="shift_reg" num_pb="1">
             <input name="reg_in" num_pins="1"/>
@@ -657,6 +669,7 @@ Authors: Xifan Tang
             <direct name="direct4" input="fle.clk" output="shift_reg.clk"/>
           </interconnect>
         </mode>
+        -->
         <!-- Define shift register end --> 
       </pb_type>
       <interconnect>
