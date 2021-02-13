@@ -8,7 +8,7 @@ Architecture
 Floorplan
 ^^^^^^^^^
 
-QLSOFA HD FPGA share the same floroplan as SOFA HD FPGA.
+QLSOFA HD FPGA share the same floorplan as SOFA HD FPGA.
 See details at :ref:`sofa_hd_fpga_arch_floorplan`.
 
 Tiles
