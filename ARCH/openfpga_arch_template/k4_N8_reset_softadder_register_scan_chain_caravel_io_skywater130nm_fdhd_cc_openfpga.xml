@@ -295,7 +295,7 @@ foundry middle-speed (ms) standard cell library
       <port type="output" prefix="Q" size="1"/>
       <port type="clock" prefix="clk" lib_name="CLK" size="1" is_global="false" default_val="0" />
     </circuit_model>
-    <circuit_model type="lut" name="frac_lut4" prefix="frac_lut4" dump_structural_verilog="true">
+    <circuit_model type="lut" name="frac_lut4_arith" prefix="frac_lut4_arith" dump_structural_verilog="true" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_frac_lut4_arith.v">
       <design_technology type="cmos" fracturable_lut="true"/>
       <input_buffer exist="false"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2"/>
@@ -304,9 +304,12 @@ foundry middle-speed (ms) standard cell library
       <lut_intermediate_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2" location_map="-1-"/>
       <pass_gate_logic circuit_model_name="sky130_fd_sc_hd__mux2_1"/>
       <port type="input" prefix="in" size="4"/>
+      <port type="input" prefix="cin" size="1" is_harden_lut_port="true"/>
       <port type="output" prefix="lut2_out" size="2" lut_frac_level="2" lut_output_mask="2,3"/>
       <port type="output" prefix="lut4_out" size="1" lut_output_mask="0"/>
+      <port type="output" prefix="cout" size="1" is_harden_lut_port="true"/>
       <port type="sram" prefix="sram" size="16"/>
+      <port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="QL_CCFF" default_val="1"/>
     </circuit_model>
     <!-- new ccFF  -->
     <circuit_model type="ccff" name="QL_CCFF" prefix="QL_CCFF" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/ql_ccff.v">
@@ -347,16 +350,6 @@ foundry middle-speed (ms) standard cell library
       <port type="input" prefix="IO_ISOL_N" lib_name="IO_ISOL_N" size="1" is_global="true" default_val="1"/>
       <port type="input" prefix="CFG_DONE" lib_name="CFG_DONE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
       <port type="sram" prefix="io_dir" lib_name="FPGA_IO_DIR" size="1" mode_select="true" circuit_model_name="QL_CCFF" default_val="1"/>
-    </circuit_model>
-    <circuit_model type="hard_logic" name="sky130_fd_sc_hd__mux2_1_wrapper" prefix="sky130_fd_sc_hd__mux2_1_wrapper" verilog_netlist="${SKYWATER_OPENFPGA_HOME}/HDL/common/sky130_fd_sc_hd_wrapper.v">
-      <design_technology type="cmos"/>
-      <device_technology device_model_name="logic"/>
-      <input_buffer exist="false"/>
-      <output_buffer exist="false"/>
-      <port type="input" prefix="a" lib_name="A0" size="1"/>
-      <port type="input" prefix="b" lib_name="A1" size="1"/>
-      <port type="input" prefix="cin" lib_name="S" size="1"/>
-      <port type="output" prefix="cout" lib_name="X" size="1"/>
     </circuit_model>
   </circuit_library>
   <configuration_protocol>
@@ -419,23 +412,27 @@ foundry middle-speed (ms) standard cell library
       <interconnect name="mux1" circuit_model_name="mux_1level_fabric"/>
       <interconnect name="mux2" circuit_model_name="mux_1level_fabric"/>
     </pb_type>  
-    <pb_type name="clb.fle[physical].fabric.frac_logic">
-      <interconnect name="mux2" circuit_model_name="mux_1level_fabric"/>
-    </pb_type>	
     <!-- physical mode will be the default mode if not specified -->
     <pb_type name="clb.fle" physical_mode_name="physical"/>
-    <pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4"/>
-    <pb_type name="clb.fle[physical].fabric.frac_logic.carry_follower" circuit_model_name="sky130_fd_sc_hd__mux2_1_wrapper"/>
+    <pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4_arith" circuit_model_name="frac_lut4_arith" mode_bits="0"/>
     <pb_type name="clb.fle[physical].fabric.ff" circuit_model_name="sky130_fd_sc_hd__sdfrtp_1"/>
     <!-- Binding operating pb_type to physical pb_type -->
-    <pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4">
+    <pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4_arith" mode_bits="0">
       <!-- Binding the lut4 to the first 4 inputs of fracturable lut4 -->
       <port name="in" physical_mode_port="in[0:3]"/>
       <port name="out" physical_mode_port="lut4_out"/>
     </pb_type>
     <pb_type name="clb.fle[n1_lut4].ble4.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
       <!-- Binding operating pb_types in mode 'shift_register' -->
-    <pb_type name="clb.fle[shift_register].shift_reg.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
-    <!-- End physical pb_type binding in complex block IO -->
+    <!--pb_type name="clb.fle[shift_register].shift_reg.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/-->
+      <!-- Binding operating pb_types in mode 'arithmetic' -->
+    <pb_type name="clb.fle[arithmetic].soft_adder.adder_lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4_arith" mode_bits="1">
+      <!-- Binding the adder_lut4 to the first 4 inputs of fracturable lut4 -->
+      <port name="cin" physical_mode_port="cin"/>
+      <port name="in"  physical_mode_port="in[0:3]"/>
+      <port name="lut4_out" physical_mode_port="lut4_out"/>
+      <port name="cout" physical_mode_port="cout"/>
+    </pb_type>
+    <!-- End physical pb_type binding in complex block CLB -->
   </pb_type_annotations>
 </openfpga_architecture>
