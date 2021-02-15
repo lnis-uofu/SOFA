@@ -53,25 +53,6 @@ Authors: Xifan Tang
         <port name="cout"/>
       </output_ports>
     </model>
-    <!--model name="frac_lut4">
-      <input_ports>
-        <port name="in" combinational_sink_ports="lut2_out lut4_out"/>
-      </input_ports>
-      <output_ports>
-        <port name="lut2_out"/>
-        <port name="lut4_out"/>
-      </output_ports>
-    </model-->
-    <!--model name="carry_follower">
-      <input_ports>
-        <port name="a" combinational_sink_ports="cout"/>
-        <port name="b" combinational_sink_ports="cout"/>
-        <port name="cin" combinational_sink_ports="cout"/>
-      </input_ports>
-      <output_ports>
-        <port name="cout"/>
-      </output_ports>
-    </model-->
     <!-- A virtual model for scan-chain flip-flop to be used in the physical mode of FF -->
     <model name="scff">
       <input_ports>
