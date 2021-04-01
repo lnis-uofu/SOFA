@@ -35,53 +35,41 @@ read_db "${SKYWATER_PDK_HOME}/vendor/synopsys/PlaceRoute/sky130_fd_sc_hd/db_nldm
 # Read post-PnR netlists
 read_verilog ${FPGA_NETLIST_HOME}/${FPGA_NETLIST_FILES}
 # Top-level module name
-set DESIGN_NAME fpga_top;
-#set DESIGN_NAME fpga_core;
+#set DESIGN_NAME "cbx_1__0_";
+#set DESIGN_NAME "cbx_1__1_";
+#set DESIGN_NAME "cbx_1__12_";
+#set DESIGN_NAME "cby_0__1_";
+#set DESIGN_NAME "cby_1__1_";
+set DESIGN_NAME "cby_12__1_";
 link_design ${DESIGN_NAME}
 
 #########################################
 # Setup constraints to break combinational loops
 #source ${SDC_HOME}/disable_configurable_memory_outputs.sdc
-set_disable_timing [get_pins */*/*chan*]
-set_disable_timing [get_pins */*/*grid_pin*]
+set_disable_timing mem*/sky*_fd_sc_hd__dfxtp_*_*_/D
 
 #########################################
 # Setup constraints for clocks
 #source ${SDC_HOME}/global_ports.sdc
 
-##################################################
-# Create programmable clock                       
-##################################################
-create_clock -name prog_clk[0] -period 1.999999988e-08 -waveform {0 9.999999939e-09} [get_ports {io_in[37]}]
-##################################################
-# Create clock                                    
-##################################################
-create_clock -name clk[0] -period 1.999999988e-08 -waveform {0 9.999999939e-09} [get_ports {io_in[36]}]
-
 #########################################
 # Setup constraints for paths
 # Connection block name
-set CB_NAME "cbx_1__0_";
-#set CB_NAME "cbx_1__1_";
-#set CB_NAME "cbx_1__12_";
-#set CB_NAME "cby_0__1_";
-#set CB_NAME "cby_1__1_";
-#set CB_NAME "cby_12__1_";
 set CB_CHAN_NAME "chan*";
 set CB_PIN_NAME "*grid_pin*";
-set_max_delay -from fpga_core_uut/${CB_NAME}/${CB_CHAN_NAME} -to fpga_core_uut/${CB_NAME}/${CB_CHAN_NAME} 2.272500113e-12
-set_max_delay -from fpga_core_uut/${CB_NAME}/${CB_CHAN_NAME} -to fpga_core_uut/${CB_NAME}/${CB_PIN_NAME} 7.247000222e-11
+set_max_delay -from ${CB_CHAN_NAME} -to ${CB_CHAN_NAME} 6.02e-11
+set_max_delay -from ${CB_CHAN_NAME} -to ${CB_PIN_NAME} 6.02e-11
 
 ##################################
 # Read post-PnR parasitics
-#read_parasitics ${FPGA_NETLIST_HOME}/fpga_top_icv_in_design.nominal_25.spef
+read_parasitics ${FPGA_NETLIST_HOME}/fpga_top_icv_in_design.nominal_25.spef
 
 ##################################
 # Report timing of Connect block
-report_timing -from fpga_core_uut/${CB_NAME}/${CB_CHAN_NAME} -to fpga_core_uut/${CB_NAME}/${CB_CHAN_NAME} > ${TIMING_REPORT_HOME}/${DEVICE_NAME}_${CB_NAME}_timing.rpt
-report_timing -from fpga_core_uut/${CB_NAME}/${CB_CHAN_NAME} -to fpga_core_uut/${CB_NAME}/${CB_PIN_NAME} >> ${TIMING_REPORT_HOME}/${DEVICE_NAME}_${CB_NAME}_timing.rpt
+report_timing -from ${CB_CHAN_NAME} -to ${CB_CHAN_NAME} > ${TIMING_REPORT_HOME}/${DEVICE_NAME}_${DESIGN_NAME}_timing.rpt
+report_timing -from ${CB_CHAN_NAME} -to ${CB_PIN_NAME} >> ${TIMING_REPORT_HOME}/${DEVICE_NAME}_${DESIGN_NAME}_timing.rpt
 
 ##################################
 # Finish and quit 
 # Comment it out if you want to debug
-#exit
+exit
