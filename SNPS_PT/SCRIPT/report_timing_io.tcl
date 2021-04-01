@@ -34,6 +34,7 @@ read_db "${SKYWATER_PDK_HOME}/vendor/synopsys/PlaceRoute/sky130_fd_sc_hd/db_nldm
 # Read post-PnR netlists
 read_verilog ${FPGA_NETLIST_HOME}/${FPGA_NETLIST_FILES}
 # Top-level module name
+# May sweep for all the io modules
 set DESIGN_NAME "cbx_1__0__logical_tile_io_mode_physical__iopad_0";
 
 link_design ${DESIGN_NAME}
