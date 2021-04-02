@@ -530,7 +530,7 @@
               <output name="Q" num_pins="1" port_class="Q"/>
               <clock name="clk" num_pins="1" port_class="clock"/>
               <T_setup value="${FF_T_SETUP}" port="ff.D" clock="clk"/>
-              <T_clock_to_Q max="{FF_T_CLK2Q}" port="ff.Q" clock="clk"/>
+              <T_clock_to_Q max="${FF_T_CLK2Q}" port="ff.Q" clock="clk"/>
             </pb_type>
             <interconnect>
               <direct name="direct1" input="ble4.in" output="lut4[0:0].in"/>
