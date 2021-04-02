@@ -11,8 +11,7 @@
       - 80% L = 4, fc_in = 0.15, Fc_out = 0.10
       - 100 routing tracks per channel
 
-  - The timing is extracted from a TT corner (1.8V, 25C)
-  - TODO: Add multi-corners, in particular, SS corner
+  - Timing is loaded through an external yml file, so that we can model multiple corners
 
   Authors: Xifan Tang
 -->
@@ -205,11 +204,11 @@
     <!-- Give uniform delays for all the MUXes driving different length of wires
          TODO: Can be more accurate once the report timing strategies are elaborated
        -->
-    <switch type="mux" name="L1_mux" R="0" Cin="0" Cout="0" Tdel="1.61e-9" mux_trans_size="2.630740" buf_size="27.645901"/>
-    <switch type="mux" name="L2_mux" R="0" Cin="0" Cout="0" Tdel="1.61e-9" mux_trans_size="2.630740" buf_size="27.645901"/>
-    <switch type="mux" name="L4_mux" R="0" Cin="0" Cout="0" Tdel="1.61e-9" mux_trans_size="2.630740" buf_size="27.645901"/>
+    <switch type="mux" name="L1_mux" R="0" Cin="0" Cout="0" Tdel="${L1_SB_MUX_DELAY}" mux_trans_size="2.630740" buf_size="27.645901"/>
+    <switch type="mux" name="L2_mux" R="0" Cin="0" Cout="0" Tdel="${L2_SB_MUX_DELAY}" mux_trans_size="2.630740" buf_size="27.645901"/>
+    <switch type="mux" name="L4_mux" R="0" Cin="0" Cout="0" Tdel="${L4_SB_MUX_DELAY}" mux_trans_size="2.630740" buf_size="27.645901"/>
     <!--switch ipin_cblock resistance set to yeild for 4x minimum drive strength buffer-->
-    <switch type="mux" name="ipin_cblock" R="0" Cout="0." Cin="0" Tdel="1.38e-9" mux_trans_size="1.222260" buf_size="auto"/>
+    <switch type="mux" name="ipin_cblock" R="0" Cout="0." Cin="0" Tdel="${CB_MUX_DELAY}" mux_trans_size="1.222260" buf_size="auto"/>
   </switchlist>
   <segmentlist>
     <!--- The wire delay is around 0.1ns in post PnR netlist.
@@ -217,17 +216,17 @@
           This is o.k. because other RC values are all zero
       -->
     <!-- GIVE a specific name for the segment! OpenFPGA appreciate that! -->
-    <segment name="L1" freq="0.10" length="1" type="unidir" Rmetal="100" Cmetal="1e-12">
+    <segment name="L1" freq="0.10" length="1" type="unidir" Rmetal="${L1_WIRE_R}" Cmetal="${L1_WIRE_C}">
       <mux name="L1_mux"/>
       <sb type="pattern">1 1</sb>
       <cb type="pattern">1</cb>
     </segment>
-    <segment name="L2" freq="0.10" length="2" type="unidir" Rmetal="100" Cmetal="1e-12">
+    <segment name="L2" freq="0.10" length="2" type="unidir" Rmetal="${L2_WIRE_R}" Cmetal="${L2_WIRE_C}">
       <mux name="L2_mux"/>
       <sb type="pattern">1 1 1</sb>
       <cb type="pattern">1 1</cb>
     </segment>
-    <segment name="L4" freq="0.80" length="4" type="unidir" Rmetal="100" Cmetal="1e-12">
+    <segment name="L4" freq="0.80" length="4" type="unidir" Rmetal="${L4_WIRE_R}" Cmetal="${L4_WIRE_C}">
       <mux name="L4_mux"/>
       <sb type="pattern">1 1 1 1 1</sb>
       <cb type="pattern">1 1 1 1</cb>
@@ -256,10 +255,10 @@
         </pb_type>
         <interconnect>
           <direct name="outpad" input="io.outpad" output="iopad.outpad">
-            <delay_constant max="0.11e-9" in_port="io.outpad" out_port="iopad.outpad"/>
+            <delay_constant max="${INPAD_DELAY}" in_port="io.outpad" out_port="iopad.outpad"/>
           </direct>
           <direct name="inpad" input="iopad.inpad" output="io.inpad">
-            <delay_constant max="0.11e-9" in_port="iopad.inpad" out_port="io.inpad"/>
+            <delay_constant max="${OUTPAD_DELAY}" in_port="iopad.inpad" out_port="io.inpad"/>
           </direct>
         </interconnect>
       </mode>
@@ -274,7 +273,7 @@
         </pb_type>
         <interconnect>
           <direct name="inpad" input="inpad.inpad" output="io.inpad">
-            <delay_constant max="0.11e-9" in_port="inpad.inpad" out_port="io.inpad"/>
+            <delay_constant max="${INPAD_DELAY}" in_port="inpad.inpad" out_port="io.inpad"/>
           </direct>
         </interconnect>
       </mode>
@@ -284,7 +283,7 @@
         </pb_type>
         <interconnect>
           <direct name="outpad" input="io.outpad" output="outpad.outpad">
-            <delay_constant max="0.11e-9" in_port="io.outpad" out_port="outpad.outpad"/>
+            <delay_constant max="${OUTPAD_DELAY}" in_port="io.outpad" out_port="outpad.outpad"/>
           </direct>
         </interconnect>
       </mode>
@@ -364,9 +363,9 @@
               <input name="DI" num_pins="1"/>
               <output name="Q" num_pins="1"/>
               <clock name="clk" num_pins="1"/>
-              <T_setup value="0.39e-9" port="ff.D" clock="clk"/>
-              <T_setup value="0.39e-9" port="ff.DI" clock="clk"/>
-              <T_clock_to_Q max="0.43e-9" port="ff.Q" clock="clk"/>
+              <T_setup value="${FF_T_SETUP}" port="ff.D" clock="clk"/>
+              <T_setup value="${FF_T_SETUP}" port="ff.DI" clock="clk"/>
+              <T_clock_to_Q max="${FF_CLK2Q_DELAY}" port="ff.Q" clock="clk"/>
             </pb_type>         
             <interconnect>
               <direct name="direct1" input="fabric.in" output="frac_logic.in"/>
@@ -376,22 +375,22 @@
               <direct name="direct5" input="ff[1].Q" output="fabric.reg_out"/>
               <complete name="complete1" input="fabric.clk" output="ff[1:0].clk"/>
               <mux name="mux1" input="frac_logic.out[0:0] fabric.reg_in" output="ff[0:0].D">
-                <delay_constant max="1.14e-9" in_port="frac_logic.out[0:0]" out_port="ff[0:0].D"/>
-                <delay_constant max="1.14e-9" in_port="fabric.reg_in" out_port="ff[0:0].D"/>
+                <delay_constant max="${LUT_OUT0_TO_FF_D_DELAY}" in_port="frac_logic.out[0:0]" out_port="ff[0:0].D"/>
+                <delay_constant max="${LUT_OUT0_TO_FF_D_DELAY}" in_port="fabric.reg_in" out_port="ff[0:0].D"/>
               </mux>
               <mux name="mux2" input="frac_logic.out[1:1] ff[0:0].Q" output="ff[1:1].D">
-                <delay_constant max="0.56e-9" in_port="frac_logic.out[1:1]" out_port="ff[1:1].D"/>
-                <delay_constant max="0.56e-9" in_port="ff[0:0].Q" out_port="ff[1:1].D"/>
+                <delay_constant max="${LUT_OUT1_TO_FF_D_DELAY}" in_port="frac_logic.out[1:1]" out_port="ff[1:1].D"/>
+                <delay_constant max="${LUT_OUT1_TO_FF_D_DELAY}" in_port="ff[0:0].Q" out_port="ff[1:1].D"/>
               </mux>
               <mux name="mux3" input="ff[0].Q frac_logic.out[0]" output="fabric.out[0]">
                 <!-- LUT to output is faster than FF to output on a Stratix IV -->
-                <delay_constant max="0.89e-9" in_port="frac_logic.out[0]" out_port="fabric.out[0]"/>
-                <delay_constant max="0.88e-9" in_port="ff[0].Q" out_port="fabric.out[0]"/>
+                <delay_constant max="${LUT_OUT0_TO_FLE_OUT_DELAY}" in_port="frac_logic.out[0]" out_port="fabric.out[0]"/>
+                <delay_constant max="${FF0_Q_TO_FLE_OUT_DELAY}" in_port="ff[0].Q" out_port="fabric.out[0]"/>
               </mux>
               <mux name="mux4" input="ff[1].Q frac_logic.out[1]" output="fabric.out[1]">
                 <!-- LUT to output is faster than FF to output on a Stratix IV -->
-                <delay_constant max="0.78e-9" in_port="frac_logic.out[1]" out_port="fabric.out[1]"/>
-                <delay_constant max="0.89e-9" in_port="ff[1].Q" out_port="fabric.out[1]"/>
+                <delay_constant max="${LUT_OUT1_TO_FLE_OUT_DELAY}" in_port="frac_logic.out[1]" out_port="fabric.out[1]"/>
+                <delay_constant max="${FF1_Q_TO_FLE_OUT_DELAY}" in_port="ff[1].Q" out_port="fabric.out[1]"/>
               </mux>
             </interconnect>
           </pb_type>
@@ -422,9 +421,9 @@
                 <output name="out" num_pins="1" port_class="lut_out"/>
                 <!-- LUT timing using delay matrix -->
                 <delay_matrix type="max" in_port="lut3.in" out_port="lut3.out">
-                  2.31e-9
-                  2.31e-9
-                  2.31e-9
+                  ${LUT3_DELAY}
+                  ${LUT3_DELAY}
+                  ${LUT3_DELAY}
                 </delay_matrix>
               </pb_type>
               <!-- Define the flip-flop -->
@@ -432,8 +431,8 @@
                 <input name="D" num_pins="1" port_class="D"/>
                 <output name="Q" num_pins="1" port_class="Q"/>
                 <clock name="clk" num_pins="1" port_class="clock"/>
-                <T_setup value="0.39e-9" port="ff.D" clock="clk"/>
-                <T_clock_to_Q max="0.43e-9" port="ff.Q" clock="clk"/>
+                <T_setup value="${FF_T_SETUP}" port="ff.D" clock="clk"/>
+                <T_clock_to_Q max="${FF_CLK2Q_DELAY}" port="ff.Q" clock="clk"/>
               </pb_type>
               <interconnect>
                 <direct name="direct1" input="ble3.in[2:0]" output="lut3[0:0].in[2:0]"/>
@@ -441,13 +440,13 @@
                   <!-- Advanced user option that tells CAD tool to find LUT+FF pairs in netlist -->
                   <pack_pattern name="ble3" in_port="lut3[0:0].out" out_port="ff[0:0].D"/>
                   <!-- Consider the delay of the MUX between LUT3 and FF -->
-                  <delay_constant max="1.14e-9" in_port="lut3[0:0].out" out_port="ff[0:0].D"/>
+                  <delay_constant max="${LUT_OUT0_TO_FF_D_DELAY}" in_port="lut3[0:0].out" out_port="ff[0:0].D"/>
                 </direct>
                 <direct name="direct3" input="ble3.clk" output="ff[0:0].clk"/>
                 <mux name="mux1" input="ff[0:0].Q lut3.out[0:0]" output="ble3.out[0:0]">
                   <!-- Combine the delay of LUT4/LUT3 output MUX and fabric output mux -->
-                  <delay_constant max="2.03e-9" in_port="lut3.out[0:0]" out_port="ble3.out[0:0]"/>
-                  <delay_constant max="0.89e-9" in_port="ff[0:0].Q" out_port="ble3.out[0:0]"/>
+                  <delay_constant max="${LUT3_OUT_TO_FLE_OUT_DELAY}" in_port="lut3.out[0:0]" out_port="ble3.out[0:0]"/>
+                  <delay_constant max="${FF1_Q_TO_FLE_OUT_DELAY}" in_port="ff[0:0].Q" out_port="ble3.out[0:0]"/>
                 </mux>
               </interconnect>
             </pb_type>
@@ -478,10 +477,10 @@
               <output name="out" num_pins="1" port_class="lut_out"/>
               <!-- LUT timing using delay matrix -->
               <delay_matrix type="max" in_port="lut4.in" out_port="lut4.out">
-                2.6e-9
-                2.6e-9
-                2.6e-9
-                2.6e-9
+                ${LUT4_DELAY}
+                ${LUT4_DELAY}
+                ${LUT4_DELAY}
+                ${LUT4_DELAY}
               </delay_matrix>
             </pb_type>
             <!-- Define flip-flop -->
@@ -489,8 +488,8 @@
               <input name="D" num_pins="1" port_class="D"/>
               <output name="Q" num_pins="1" port_class="Q"/>
               <clock name="clk" num_pins="1" port_class="clock"/>
-              <T_setup value="0.39e-9" port="ff.D" clock="clk"/>
-              <T_clock_to_Q max="0.43e-9" port="ff.Q" clock="clk"/>
+              <T_setup value="${FF_T_SETUP}" port="ff.D" clock="clk"/>
+              <T_clock_to_Q max="${FF_CLK2Q_DELAY}" port="ff.Q" clock="clk"/>
             </pb_type>
             <interconnect>
               <direct name="direct1" input="ble4.in" output="lut4[0:0].in"/>
@@ -498,13 +497,13 @@
                 <!-- Advanced user option that tells CAD tool to find LUT+FF pairs in netlist -->
                 <pack_pattern name="ble4" in_port="lut4.out" out_port="ff.D"/>
                   <!-- Consider the delay of the MUX between LUT4 and FF -->
-                <delay_constant max="1.14e-9" in_port="lut4.out" out_port="ff.D"/>
+                <delay_constant max="${LUT_OUT0_TO_FF_D_DELAY}" in_port="lut4.out" out_port="ff.D"/>
               </direct>
               <direct name="direct3" input="ble4.clk" output="ff.clk"/>
               <mux name="mux1" input="ff.Q lut4.out" output="ble4.out">
                 <!-- Combine the delay of LUT4/LUT3 output MUX and fabric output mux -->
-                <delay_constant max="2.03e-9" in_port="lut4.out" out_port="ble4.out"/>
-                <delay_constant max="0.89e-9" in_port="ff.Q" out_port="ble4.out"/>
+                <delay_constant max="${LUT4_OUT_TO_FLE_OUT_DELAY}" in_port="lut4.out" out_port="ble4.out"/>
+                <delay_constant max="${FF1_Q_TO_FILE_OUT_DELAY}" in_port="ff.Q" out_port="ble4.out"/>
               </mux>
             </interconnect>
           </pb_type>
@@ -526,26 +525,26 @@
               <input name="D" num_pins="1" port_class="D"/>
               <output name="Q" num_pins="1" port_class="Q"/>
               <clock name="clk" num_pins="1" port_class="clock"/>
-              <T_setup value="0.39e-9" port="ff.D" clock="clk"/>
-              <T_clock_to_Q max="0.43e-9" port="ff.Q" clock="clk"/>
+              <T_setup value="${FF_T_SETUP}" port="ff.D" clock="clk"/>
+              <T_clock_to_Q max="${FF_CLK2Q_DELAY}" port="ff.Q" clock="clk"/>
             </pb_type>
             <interconnect>
               <direct name="direct1" input="shift_reg.reg_in" output="ff[0].D">
                 <!-- Consider the delay of the MUX between LUT4 and FF -->
-                <delay_constant max="1.12e-9" in_port="shift_reg.reg_in" out_port="ff[0].D"/>
+                <delay_constant max="${REGIN_TO_FF0_DELAY}" in_port="shift_reg.reg_in" out_port="ff[0].D"/>
               </direct>
               <direct name="direct2" input="ff[0].Q" output="ff[1].D">
                 <!-- Consider the delay of the MUX between LUT4 and FF -->
-                <delay_constant max="0.56e-9" in_port="ff[0].Q" out_port="ff[1].D"/>
+                <delay_constant max="${FF0_TO_FF1_DELAY}" in_port="ff[0].Q" out_port="ff[1].D"/>
               </direct>
               <direct name="direct3" input="ff[1].Q" output="shift_reg.reg_out"/>
               <direct name="direct4" input="ff[0].Q" output="shift_reg.ff_out[0:0]">
                 <!-- Consider the delay of the MUX between LUT4 and FF -->
-                <delay_constant max="0.88e-9" in_port="ff[0].Q" out_port="shift_reg.ff_out[0:0]"/>
+                <delay_constant max="${FF0_Q_TO_FLE_OUT_DELAY}" in_port="ff[0].Q" out_port="shift_reg.ff_out[0:0]"/>
               </direct>
               <direct name="direct5" input="ff[1].Q" output="shift_reg.ff_out[1:1]">
                 <!-- Consider the delay of the MUX between LUT4 and FF -->
-                <delay_constant max="0.89e-9" in_port="ff[1].Q" out_port="shift_reg.ff_out[1:1]"/>
+                <delay_constant max="${FF1_Q_TO_FLE_OUT_DELAY}" in_port="ff[1].Q" out_port="shift_reg.ff_out[1:1]"/>
               </direct>
               <complete name="complete1" input="shift_reg.clk" output="ff.clk"/>
             </interconnect>
