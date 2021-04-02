@@ -6,6 +6,12 @@
 
 SOFA (**S**kywater **O**pensource **F**PG**A**s) are a series of open-source FPGA IPs using the open-source [Skywater 130nm PDK](https://github.com/google/skywater-pdk) and [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) framework
 
+<p float="left">
+  <img src="./DOC/source/device/hd_fpga/figures/sofa_hd_layout.png" width="200" align="right">
+  <img src="./DOC/source/device/hd_fpga/figures/qlsofa_hd_layout.png" width="200" align="right">
+  <img src="./DOC/source/device/hd_fpga/figures/sofa_chd_layout.png" width="200" align="right">
+</p>
+
 ## Quick Start
 
 ```bash
@@ -21,6 +27,11 @@ python3 SCRIPT/repo_setup.py --openfpga_root_path ${OPENFPGA_PROJECT_DIRECTORY}
 ``` 
 
 Otherwise, you should provide full path using the option _--openfpga\_root\_path_ 
+
+
+## Chip Gallery
+
+You can find a chip gallery in the online documentation.
 
 ## Directory Organization
 
