@@ -255,10 +255,10 @@
         </pb_type>
         <interconnect>
           <direct name="outpad" input="io.outpad" output="iopad.outpad">
-            <delay_constant max="${INPAD_DELAY}" in_port="io.outpad" out_port="iopad.outpad"/>
+            <delay_constant max="${OUTPAD_DELAY}" in_port="io.outpad" out_port="iopad.outpad"/>
           </direct>
           <direct name="inpad" input="iopad.inpad" output="io.inpad">
-            <delay_constant max="${OUTPAD_DELAY}" in_port="iopad.inpad" out_port="io.inpad"/>
+            <delay_constant max="${INPAD_DELAY}" in_port="iopad.inpad" out_port="io.inpad"/>
           </direct>
         </interconnect>
       </mode>
