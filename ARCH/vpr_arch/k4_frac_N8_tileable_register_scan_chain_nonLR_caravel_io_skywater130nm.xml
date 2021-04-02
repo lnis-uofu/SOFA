@@ -503,7 +503,7 @@
               <mux name="mux1" input="ff.Q lut4.out" output="ble4.out">
                 <!-- Combine the delay of LUT4/LUT3 output MUX and fabric output mux -->
                 <delay_constant max="${LUT4_OUT_TO_FLE_OUT_DELAY}" in_port="lut4.out" out_port="ble4.out"/>
-                <delay_constant max="${FF1_Q_TO_FILE_OUT_DELAY}" in_port="ff.Q" out_port="ble4.out"/>
+                <delay_constant max="${FF1_Q_TO_FLE_OUT_DELAY}" in_port="ff.Q" out_port="ble4.out"/>
               </mux>
             </interconnect>
           </pb_type>
