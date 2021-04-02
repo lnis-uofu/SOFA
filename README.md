@@ -7,9 +7,9 @@
 SOFA (**S**kywater **O**pensource **F**PG**A**s) are a series of open-source FPGA IPs using the open-source [Skywater 130nm PDK](https://github.com/google/skywater-pdk) and [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) framework
 
 <p>
-  <img src="./DOC/source/device/hd_fpga/figures/sofa_hd_layout.png" width="200" align="right">
-  <img src="./DOC/source/device/hd_fpga/figures/qlsofa_hd_layout.png" width="200" align="right">
-  <img src="./DOC/source/device/hd_fpga/figures/sofa_chd_layout.png" width="200" align="right">
+  <img src="./DOC/source/device/hd_fpga/figures/sofa_hd_layout.png" width="200">
+  <img src="./DOC/source/device/hd_fpga/figures/qlsofa_hd_layout.png" width="200">
+  <img src="./DOC/source/device/hd_fpga/figures/sofa_chd_layout.png" width="200">
 </p>
 
 ## Quick Start
