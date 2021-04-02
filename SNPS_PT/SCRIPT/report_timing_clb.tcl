@@ -51,7 +51,13 @@ link_design ${DESIGN_NAME}
 
 #########################################
 # Setup constraints to break combinational loops
-set_disable_timing */*/*/mem*/sky*_fd_sc_hd__dfxtp_*_*_/Q
+if {${DEVICE_NAME} eq "SOFA_HD"} {
+  set_disable_timing */*/*/mem*/sky*_fd_sc_hd__dfxtp_*_*_/Q
+} else {
+  # QLSOFA and SOFA CHD use a LUT with carry logic, the memory is deeper in hierarchy
+  # Also QLSOFA and SOFA CHD use a different FF cell as configuration memory
+  set_disable_timing */*/*/*/*/*mem/sky*_fd_sc_hd__dfrtp_*_*_/Q
+}
 #
 ##########################################
 ## Setup constraints for clocks
