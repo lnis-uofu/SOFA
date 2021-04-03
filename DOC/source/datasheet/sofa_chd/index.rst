@@ -14,3 +14,5 @@ SOFA CHD
    sofa_chd_clb_arch
 
    sofa_chd_circuit_design
+
+   custom_cells/index

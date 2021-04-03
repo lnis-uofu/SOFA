@@ -25,7 +25,7 @@ Single level multiplexers are controlled through configuration SRAM cells which 
 .. INVMUX2_1
 
 SKY130_UUOPENFPGA_CC_HD_INVMUX2_1
----------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Usage: 2-Input Transmission Gate Multiplexer with Unity Drive Strength Inverter Input
     -Pins: 
@@ -80,7 +80,7 @@ Our custom multiplexer provides over a 31\% reduction in propagation delay.
 .. INVMUX3_1
 
 SKY130_UUOPENFPGA_CC_HD_INVMUX3_1
----------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Usage: 3-Input Transmission Gate Multiplexer with Unity Drive Strength Inverter Input
     - Pins:
