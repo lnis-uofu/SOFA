@@ -8,6 +8,7 @@ SOFA (**S**kywater **O**pensource **F**PG**A**s) are a series of open-source FPG
 
 This repository provide the following support for the eFPGA IPs
 - **Architecture description file** : Users can inspect architecture details and try architecture evalution using the [VTR project](https://github.com/verilog-to-routing/vtr-verilog-to-routing) and the [OpenFPGA project](https://github.com/lnis-uofu/OpenFPGA).
+- **Fabrication-ready GDSII layouts**: Users can integrate to their chip designs.
 - **Post-layout Verilog Netlists**: Users can run HDL simulations on the eFPGA IPs to validate their applications
 - **Benchmark suites**: An example benchmarking suite with which users can run quick examples on the eFPGA IPs
 - **Documentation**: Datasheets for each eFPGA IPs downto circuit-level details
