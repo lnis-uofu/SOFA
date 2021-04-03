@@ -23,7 +23,6 @@ if {"SOFA_HD" == ${DEVICE_NAME}} {
   set SDC_HOME "../../SDC/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc";
 }
 
-
 set TIMING_REPORT_HOME "../TIMING_REPORTS/";
 
 # Enable preprocessing in Verilog parser
