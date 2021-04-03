@@ -17,4 +17,3 @@ We aims to empower embedded applications with its low-cost design approach but h
   :alt: 24-hour FPGA IP development: from PDK to production-ready layout
 
   24-hour FPGA IP development: from PDK to production-ready layout
-

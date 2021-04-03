@@ -14,3 +14,5 @@ SOFA HD
    sofa_hd_clb_arch
 
    sofa_hd_circuit_design
+
+   sofa_hd_timing

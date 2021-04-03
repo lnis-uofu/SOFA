@@ -4,7 +4,20 @@
       
 ## Introduction
 
-SOFA (**S**kywater **O**pensource **F**PG**A**s) are a series of open-source FPGA IPs using the open-source [Skywater 130nm PDK](https://github.com/google/skywater-pdk) and [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) framework
+SOFA (**S**kywater **O**pensource **F**PG**A**s) are a series of open-source FPGA IPs using the open-source [Skywater 130nm PDK](https://github.com/google/skywater-pdk) and [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) framework.
+
+This repository provide the following support for the eFPGA IPs
+- **Architecture description file** : Users can inspect architecture details and try architecture evalution using the [VTR project](https://github.com/verilog-to-routing/vtr-verilog-to-routing) and the [OpenFPGA project](https://github.com/lnis-uofu/OpenFPGA).
+- **Fabrication-ready GDSII layouts**: Users can integrate to their chip designs.
+- **Post-layout Verilog Netlists**: Users can run HDL simulations on the eFPGA IPs to validate their applications
+- **Benchmark suites**: An example benchmarking suite with which users can run quick examples on the eFPGA IPs
+- **Documentation**: Datasheets for each eFPGA IPs downto circuit-level details
+
+<p>
+  <img src="./DOC/source/device/hd_fpga/figures/sofa_hd_layout.png" width="200">
+  <img src="./DOC/source/device/hd_fpga/figures/qlsofa_hd_layout.png" width="200">
+  <img src="./DOC/source/device/hd_fpga/figures/sofa_chd_layout.png" width="200">
+</p>
 
 ## Quick Start
 
@@ -21,6 +34,11 @@ python3 SCRIPT/repo_setup.py --openfpga_root_path ${OPENFPGA_PROJECT_DIRECTORY}
 ``` 
 
 Otherwise, you should provide full path using the option _--openfpga\_root\_path_ 
+
+
+## Chip Gallery
+
+You can find a chip gallery in the online documentation.
 
 ## Directory Organization
 
