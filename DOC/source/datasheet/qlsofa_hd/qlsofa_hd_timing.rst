@@ -1,26 +1,26 @@
-.. _sofa_hd_timing:
+.. _qlsofa_hd_timing:
 
 Timing Annotation
 -----------------
 
-.. _sofa_hd_timing_clb:
+.. _qlsofa_hd_timing_clb:
 
 Configurable Logic Block
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 The path delays in :numref:`fig_sofa_hd_fle_arch_timing` are listed in :numref:`table_sofa_hd_fle_arch_timing`.
 
-.. _fig_sofa_hd_fle_arch_timing:
+.. _fig_qlsofa_hd_fle_arch_timing:
 
-.. figure:: ./figures/sofa_hd_fle_arch_timing.svg
+.. figure:: ./figures/qlsofa_hd_fle_arch_timing.svg
   :scale: 30%
-  :alt: Schematic of a logic element used in SOFA HD FPGA
+  :alt: Schematic of a logic element used in QLSOFA HD FPGA
 
-  Schematic of a logic element used in SOFA HD FPGA
+  Schematic of a logic element used in QLSOFA HD FPGA
 
-.. _table_sofa_hd_fle_arch_timing:
+.. _table_qlsofa_hd_fle_arch_timing:
 
-.. table:: Path delays of logic element in the SOFA HD FPGA
+.. table:: Path delays of logic element in the QLSOFA HD FPGA
 
   +-------------------------+------------------------------+
   | Path / Delay            | TT (unit: ns)                |
@@ -68,44 +68,32 @@ The path delays in :numref:`fig_sofa_hd_fle_arch_timing` are listed in :numref:`
 
 .. [1] The LUT input-to-output delay should be different as some inputs are close to output. However, we consider a uniform path delay considering the delay from the farest input ``in[0]`` to output. This is because VPR currently does not have LUT rebalancing techniques.
 
-.. _sofa_hd_timing_io:
+.. _qlsofa_hd_timing_io:
 
 I/O Block
 ^^^^^^^^^
 
-The path delays in :numref:`fig_sofa_hd_embedded_io_schematic` are listed in :numref:`table_sofa_hd_io_timing`.
+The path delays of I/O blocks in QLSOFA HD FPGA is same as the SOFA HD FPGA. See details in :ref:`sofa_hd_timing_io`. 
 
-.. _table_sofa_hd_io_timing:
-
-.. table:: Path delays of I/O circuit in the SOFA HD FPGA
-
-  +-------------------------+------------------------------+
-  | Path / Delay            | TT (unit: ns)                |
-  +=========================+==============================+
-  | SOC_IN -> FPGA_IN       | 0.11                         |
-  +-------------------------+------------------------------+
-  | FPGA_OUT -> SOC_OUT     | 0.11                         |
-  +-------------------------+------------------------------+
-
-.. _sofa_hd_timing_routing:
+.. _qlsofa_hd_timing_routing:
 
 Routing Architecture
 ^^^^^^^^^^^^^^^^^^^^
 
-The path delays in :numref:`fig_sofa_hd_routing_arch` are listed in :numref:`table_sofa_hd_routing_arch_timing`.
+The path delays in :numref:`fig_sofa_hd_routing_arch` are listed in :numref:`table_qlsofa_hd_routing_arch_timing`.
 
-.. _table_sofa_hd_routing_arch_timing:
+.. _table_qlsofa_hd_routing_arch_timing:
 
-.. table:: Path delays of routing blocks in the SOFA HD FPGA
+.. table:: Path delays of routing blocks in the QLSOFA HD FPGA
 
   +---------------------------+------------------------------+
   | Path / Delay              | TT (unit: ns)                |
   +===========================+==============================+
-  | A -> B                    | 1.61                         |
+  | A -> B                    | 1.44                         |
   +---------------------------+------------------------------+
-  | A -> C                    | 1.61                         |
+  | A -> C                    | 1.44                         |
   +---------------------------+------------------------------+
-  | A -> D                    | 1.61                         |
+  | A -> D                    | 1.44                         |
   +---------------------------+------------------------------+
   | B -> E                    | 1.38                         |
   +---------------------------+------------------------------+

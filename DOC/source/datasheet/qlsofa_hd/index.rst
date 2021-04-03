@@ -14,3 +14,5 @@ QLSOFA HD
    qlsofa_hd_clb_arch
 
    qlsofa_hd_circuit_design
+
+   qlsofa_hd_timing
