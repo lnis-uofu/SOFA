@@ -13,7 +13,7 @@ The path delays in :numref:`fig_sofa_chd_fle_arch_timing` are listed in :numref:
 .. _fig_sofa_chd_fle_arch_timing:
 
 .. figure:: ./figures/sofa_chd_fle_arch_timing.svg
-  :scale: 30%
+  :width: 80%
   :alt: Schematic of a logic element used in SOFA CHD FPGA
 
   Schematic of a logic element used in SOFA CHD FPGA
@@ -25,25 +25,27 @@ The path delays in :numref:`fig_sofa_chd_fle_arch_timing` are listed in :numref:
   +-------------------------+------------------------------+
   | Path / Delay            | TT (unit: ns)                |
   +=========================+==============================+
-  | in0 -> LUT3_out[0] [1]_ | 2.31                         |
+  | in0 -> LUT3_out[0]      | 0.85                         |
   +-------------------------+------------------------------+
-  | in1 -> LUT3_out[0] [1]_ | 2.31                         |
+  | in1 -> LUT3_out[0]      | 0.57                         |
   +-------------------------+------------------------------+
-  | in2 -> LUT3_out[0] [1]_ | 2.31                         |
+  | in2 -> B                | 0.60                         |
   +-------------------------+------------------------------+
-  | in0 -> LUT3_out[1] [1]_ | 2.31                         |
+  |   B -> LUT3_out[0]      | 0.32                         |
   +-------------------------+------------------------------+
-  | in1 -> LUT3_out[1] [1]_ | 2.31                         |
+  | in0 -> LUT3_out[1]      | 0.90                         |
   +-------------------------+------------------------------+
-  | in2 -> LUT3_out[1] [1]_ | 2.31                         |
+  | in1 -> LUT3_out[1]      | 0.62                         |
   +-------------------------+------------------------------+
-  | in0 -> LUT4_out [1]_    | 2.60                         |
+  |   B -> LUT3_out[1]      | 0.33                         |
   +-------------------------+------------------------------+
-  | in1 -> LUT4_out [1]_    | 2.60                         |
+  | in0 -> LUT4_out         | 1.17                         |
   +-------------------------+------------------------------+
-  | in2 -> LUT4_out [1]_    | 2.60                         |
+  | in1 -> LUT4_out         | 0.89                         |
   +-------------------------+------------------------------+
-  | in3 -> LUT4_out [1]_    | 2.60                         |
+  | in2 -> LUT4_out         | 1.21                         |
+  +-------------------------+------------------------------+
+  | in3 -> LUT4_out         | 0.79                         |
   +-------------------------+------------------------------+
   | LUT3_out[0] -> A        | 0.56                         |
   +-------------------------+------------------------------+
@@ -66,7 +68,6 @@ The path delays in :numref:`fig_sofa_chd_fle_arch_timing` are listed in :numref:
   | FF[0] -> FF[1]          | 0.56                         |
   +-------------------------+------------------------------+
 
-.. [1] The LUT input-to-output delay should be different as some inputs are close to output. However, we consider a uniform path delay considering the delay from the farest input ``in[0]`` to output. This is because VPR currently does not have LUT rebalancing techniques.
 
 .. _sofa_chd_timing_io:
 

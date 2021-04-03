@@ -5,19 +5,24 @@
  
 ##################################
 # Define environment variables
+#
+set DEVICE_NAME "SOFA_HD"
+#set DEVICE_NAME "QLSOFA_HD"
+#set DEVICE_NAME "SOFA_CHD"
+
 set SKYWATER_PDK_HOME "../../PDK/skywater-pdk";
 
-#set FPGA_NETLIST_HOME "../../FPGA1212_SOFA_HD_PNR/fpga_top";
-set FPGA_NETLIST_HOME "../../FPGA1212_QLSOFA_HD_PNR/fpga_top";
-#set FPGA_NETLIST_HOME "../../FPGA1212_SOFA_CHD_PNR/fpga_top";
+if {"SOFA_HD" == ${DEVICE_NAME}} {
+  set FPGA_NETLIST_HOME "../../FPGA1212_SOFA_HD_PNR/fpga_top";
+  set SDC_HOME "../../SDC/k4_N8_caravel_io_FPGA_12x12_fdhd_cc";
+} elseif {"QLSOFA_HD" == ${DEVICE_NAME}} { 
+  set FPGA_NETLIST_HOME "../../FPGA1212_QLSOFA_HD_PNR/fpga_top";
+  set SDC_HOME "../../SDC/k4_N8_reset_softadder_caravel_io_FPGA_12x12_fdhd_cc";
+} elseif {"SOFA_CHD" == ${DEVICE_NAME}} {
+  set FPGA_NETLIST_HOME "../../FPGA1212_SOFA_CHD_PNR/fpga_top";
+  set SDC_HOME "../../SDC/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc";
+}
 
-#set SDC_HOME "../../SDC/k4_N8_caravel_io_FPGA_12x12_fdhd_cc";
-set SDC_HOME "../../SDC/k4_N8_reset_softadder_caravel_io_FPGA_12x12_fdhd_cc";
-#set SDC_HOME "../../SDC/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc";
-
-#set DEVICE_NAME "SOFA_HD"
-set DEVICE_NAME "QLSOFA_HD"
-#set DEVICE_NAME "SOFA_CHD"
 
 set TIMING_REPORT_HOME "../TIMING_REPORTS/";
 
