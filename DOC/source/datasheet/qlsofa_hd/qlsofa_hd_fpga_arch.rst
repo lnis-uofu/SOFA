@@ -8,7 +8,7 @@ Architecture
 Floorplan
 ^^^^^^^^^
 
-QLSOFA HD FPGA share the same floroplan as SOFA HD FPGA.
+QLSOFA HD FPGA share the same floorplan as SOFA HD FPGA.
 See details at :ref:`sofa_hd_fpga_arch_floorplan`.
 
 Tiles
@@ -45,6 +45,32 @@ The FPGA architecture follows a tile-based organization, to exploit the fine-gra
   |      |          || Each I/O-B tile consists of 9 digitial I/O  |
   |      |          |  cells.                                      |
   +------+----------+----------------------------------------------+
+
+.. _qlsofa_hd_fpga_arch_routing_arch:
+
+Routing Architecture
+^^^^^^^^^^^^^^^^^^^^
+
+The routing architecture shares the same principle as the SOFA HD routing architecture (See details in :ref:`sofa_hd_fpga_arch_routing_arch`).
+
+.. note:: Different from SOFA HD, each routing channel consists of 60 routing tracks. See details in :numref:`table_qlsofa_hd_fpga_arch_routing_track_distribution`.
+
+.. _table_qlsofa_hd_fpga_arch_routing_track_distribution:
+
+.. table:: Routing track distribution of QLSOFA HD FPGA 
+
+  +------------+------------------------------+
+  | Track type | Number of tracks per channel |
+  +============+==============================+
+  | Length-1   | 6  (10%)                     |
+  +------------+------------------------------+
+  | Length-2   | 6  (10%)                     |
+  +------------+------------------------------+
+  | Length-4   | 48 (80%)                     |
+  +------------+------------------------------+
+  | Total      | 60                           |
+  +------------+------------------------------+
+
 
 .. _qlsofa_hd_fpga_arch_scan_chain:
 
