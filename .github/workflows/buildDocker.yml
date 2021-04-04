@@ -1,0 +1,50 @@
+# ##############################################################################
+# TODO: Add verification task after the netlist modification
+################################################################################
+
+name: Architecture XML Regression
+
+# Run CI on push on each branch
+on:
+  push:
+  pull_request:
+
+jobs:
+  generate_netlist:
+    name: Architecture development
+    runs-on: ubuntu-18.04
+    container: ghcr.io/lnis-uofu/openfpga-master:latest
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - name: "FPGA1212_QLSOFA_HD"
+          - name: "FPGA1212_SOFA_CHD"
+          - name: "FPGA1212_SOFA_HD"
+    steps:
+      - name: Runner workspace path
+        run: |
+          echo "Cleaning up previous run"
+          rm -rf "${{ github.workspace }}"
+          mkdir -p "${{ github.workspace }}"
+      - name: Checkout OpenFPGA-ArcticPro3 repo
+        uses: actions/checkout@v2
+      - name: Detect changes
+        uses: technote-space/get-diff-action@v4
+        with:
+          PATTERNS: |
+            ${{ matrix.config.name }}_PNR/*_task/**
+      - name: Running benchmark
+        shell: bash
+        if: ${{ env.GIT_DIFF || (github.event_name == 'pull_request' && github.ref == 'refs/heads/master') }}
+        run: |
+          ${PYTHON_EXEC} -m pip install -r requirements.txt
+          cat ${{ matrix.config.name }}_PNR/${{ matrix.config.name }}_task/config/task_simulation.conf
+          cd ${{ matrix.config.name }}_PNR && make clean runOpenFPGA
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        if: ${{ failure() }}
+        with:
+          name: failed_${{matrix.config.name}}_regression_log
+          retention-days: 1
+          path: "${{ matrix.config.name }}_PNR/*_task/latest/*.log"
