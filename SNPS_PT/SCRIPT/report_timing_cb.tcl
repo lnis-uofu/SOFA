@@ -6,9 +6,9 @@
 ##################################
 # Define environment variables
 #
-set DEVICE_NAME "SOFA_HD"
+#set DEVICE_NAME "SOFA_HD"
 #set DEVICE_NAME "QLSOFA_HD"
-#set DEVICE_NAME "SOFA_CHD"
+set DEVICE_NAME "SOFA_CHD"
 
 set SKYWATER_PDK_HOME "../../PDK/skywater-pdk";
 
@@ -30,9 +30,13 @@ set_app_var svr_enable_vpp true
 # Enable reporting ALL the timing paths even those are NOT constrained
 set_app_var timing_report_unconstrained_paths true
 
-set search_path ". * ${SKYWATER_PDK_HOME}/vendor/synopsys/PlaceRoute/sky130_fd_sc_hd/db_nldm"
-
-set link_path "* sky130_fd_sc_hd__tt_025C_1v80.db"
+if {"SOFA_CHD" == ${DEVICE_NAME}} {
+  set search_path ". * ${SKYWATER_PDK_HOME}/vendor/synopsys/PlaceRoute/sky130_fd_sc_hd/db_nldm ${SKYWATER_PDK_HOME}/../../LIB"
+  set link_path "* sky130_fd_sc_hd__tt_025C_1v80.db sky130_uuopenfpga_cc_hd_tt_025C_1v80.lib"
+} else {
+  set search_path ". * ${SKYWATER_PDK_HOME}/vendor/synopsys/PlaceRoute/sky130_fd_sc_hd/db_nldm"
+  set link_path "* sky130_fd_sc_hd__tt_025C_1v80.db"
+}
 
 set FPGA_NETLIST_FILES "fpga_top_icv_in_design.pt.v"
  
@@ -49,6 +53,9 @@ foreach DESIGN_NAME ${DESIGN_NAMES} {
   ##################################
   # Read timing libraries
   read_db "${SKYWATER_PDK_HOME}/vendor/synopsys/PlaceRoute/sky130_fd_sc_hd/db_nldm/sky130_fd_sc_hd__tt_025C_1v80.db"
+  if {"SOFA_CHD" == ${DEVICE_NAME}} {
+    read_lib "${SKYWATER_PDK_HOME}/../../LIB/sky130_uuopenfpga_cc_hd__tt_025C_1v80.lib"
+  }
   
   ##################################
   # Read post-PnR netlists
