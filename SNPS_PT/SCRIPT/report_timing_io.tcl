@@ -23,7 +23,6 @@ if {"SOFA_HD" == ${DEVICE_NAME}} {
   set SDC_HOME "../../SDC/k4_N8_reset_softadder_caravel_io_FPGA_12x12_customhd_cc";
 }
 
-
 set TIMING_REPORT_HOME "../TIMING_REPORTS/";
 
 # Enable preprocessing in Verilog parser
@@ -31,9 +30,13 @@ set_app_var svr_enable_vpp true
 # Enable reporting ALL the timing paths even those are NOT constrained
 set_app_var timing_report_unconstrained_paths tr
 
-set search_path ". * ${SKYWATER_PDK_HOME}/vendor/synopsys/PlaceRoute/sky130_fd_sc_hd/db_nldm"
-
-set link_path "* sky130_fd_sc_hd__tt_025C_1v80.db"
+if {"SOFA_CHD" == ${DEVICE_NAME}} {
+  set search_path ". * ${SKYWATER_PDK_HOME}/vendor/synopsys/PlaceRoute/sky130_fd_sc_hd/db_nldm ${SKYWATER_PDK_HOME}/../../LIB"
+  set link_path "* sky130_fd_sc_hd__tt_025C_1v80.db sky130_uuopenfpga_cc_hd_tt_025C_1v80.lib"
+} else {
+  set search_path ". * ${SKYWATER_PDK_HOME}/vendor/synopsys/PlaceRoute/sky130_fd_sc_hd/db_nldm"
+  set link_path "* sky130_fd_sc_hd__tt_025C_1v80.db"
+}
 
 set FPGA_NETLIST_FILES "fpga_top_icv_in_design.pt.v"
 
@@ -45,6 +48,9 @@ remove_lib -all
 ##################################
 # Read timing libraries
 read_db "${SKYWATER_PDK_HOME}/vendor/synopsys/PlaceRoute/sky130_fd_sc_hd/db_nldm/sky130_fd_sc_hd__tt_025C_1v80.db"
+if {"SOFA_CHD" == ${DEVICE_NAME}} {
+  read_lib "${SKYWATER_PDK_HOME}/../../LIB/sky130_uuopenfpga_cc_hd__tt_025C_1v80.lib"
+}
 
 ##################################
 # Read post-PnR netlists
