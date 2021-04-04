@@ -2,7 +2,7 @@
 # TODO: Add verification task after the netlist modification
 ################################################################################
 
-name: Architecture XML Regression
+name: Arch XML Regression
 
 # Run CI on push on each branch
 on:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   generate_netlist:
-    name: Architecture development
+    name: Arch development
     runs-on: ubuntu-18.04
     container: ghcr.io/lnis-uofu/openfpga-master:latest
     strategy:
