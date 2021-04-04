@@ -59,6 +59,47 @@ The FPGA architecture follows a tile-based organization, to exploit the fine-gra
   |      |          |  cells.                                      |
   +------+----------+----------------------------------------------+
 
+.. _sofa_hd_fpga_arch_routing_arch:
+
+Routing Architecture
+^^^^^^^^^^^^^^^^^^^^
+
+The routing architecture is based on uni-directional routing tracks, which are interconnected by routing multiplexers.
+:numref:`fig_sofa_hd_routing_arch` illustrates the detailed organization of the routing architecture.
+
+.. _fig_sofa_hd_routing_arch:
+
+.. figure:: ./figures/sofa_hd_routing_arch.svg
+  :width: 80%
+  :alt: Detailed routing architecture
+
+  Detailed routing architecture
+
+The routing architecture consists the following type of routing tracks:
+
+- Length-1 wires (``L1 wires``), which hop over 1 logic block (including I/O block)
+- Length-2 wires (``L2 wires``), which hop over 2 logic block (including I/O block)
+- Length-4 wires (``L4 wires``), which hop over 4 logic block (including I/O block)
+
+Each tile includes two routing channels, i.e., the X-direction routing channel and the Y-direction routing channel, providing horizental and vertical connections to adjacent tiles.
+Each routing channel consists of 40 routing tracks. See details in :numref:`table_sofa_hd_fpga_arch_routing_track_distribution`.
+
+.. _table_sofa_hd_fpga_arch_routing_track_distribution:
+
+.. table:: Routing track distribution of SOFA HD FPGA 
+
+  +------------+------------------------------+
+  | Track type | Number of tracks per channel |
+  +============+==============================+
+  | Length-1   | 4  (10%)                     |
+  +------------+------------------------------+
+  | Length-2   | 4  (10%)                     |
+  +------------+------------------------------+
+  | Length-4   | 32 (80%)                     |
+  +------------+------------------------------+
+  | Total      | 40                           |
+  +------------+------------------------------+
+
 .. _sofa_hd_fpga_arch_scan_chain:
 
 Scan-chain

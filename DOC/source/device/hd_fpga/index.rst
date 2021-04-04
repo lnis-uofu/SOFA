@@ -10,3 +10,5 @@ HD FPGAs
    hd_device_comp
 
    hd_device_dcac
+
+   hd_device_gallery

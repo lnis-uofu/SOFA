@@ -15,4 +15,6 @@ SOFA CHD
 
    sofa_chd_circuit_design
 
+   sofa_chd_timing
+
    custom_cells/index
