@@ -15,7 +15,7 @@ Traditionally, larger multiplexers are built using trees of smaller multiplexers
 Multiplexers trees lead to large power and timing constraints that limit FPGA performance. FPGA fabrics use complementary pass gate logic (CPL) to replace multiplexer trees with single level inverted transmission gate derived multiplexers, as illustrated below:
 
 .. image:: figures/fpga_mux.png
-    :height: 400px
+    :height: 300px
     :width: 800px
     :align: center
     :alt: Single Level FPGA Multiplexer
@@ -36,7 +36,7 @@ SKY130_UUOPENFPGA_CC_HD_INVMUX2_1
 - Schematic:
 
 .. image:: figures/sky130_fd_sc_hd_mux2_1\ schematic.png
-    :height: 400px
+    :height: 350px
     :width: 500px
     :align: center
     :alt: Sky130_uuopenfpga_cc_hd_invmux2_1 Schematic
@@ -44,7 +44,7 @@ SKY130_UUOPENFPGA_CC_HD_INVMUX2_1
 - Layout:\
 
 .. image:: figures/sky130_fd_sc_hd_mux2_1\ gds.png
-    :height: 450px
+    :height: 400px
     :width: 800px
     :align: center
     :alt: Sky130_uuopenfpga_cc_hd_invmux2_1 Layout
@@ -73,7 +73,7 @@ Our custom multiplexer provides over a 31\% reduction in propagation delay.
 
 `SKY130_UUOPENFPGA_CC_HD_INVMUX2_1 Cell Characterization`_
 
-.. _`SKY130_UUOPENFPGA_CC_HD_INVMUX2_1 Cell Characterization`: https://github.com/GrantBrown1994/SOFA/blob/documentation/DOC/source/datasheet/sofa_chd/custom_cells/cell_eval/SKY130_UUOPENFPGA_CC_HD_INVMUX2_1.pdf
+.. _`SKY130_UUOPENFPGA_CC_HD_INVMUX2_1 Cell Characterization`: https://github.com/lnis-uofu/SOFA/blob/master/DOC/source/datasheet/sofa_chd/custom_cells/cell_eval/SKY130_UUOPENFPGA_CC_HD_INVMUX2_1.pdf
 
 .. INVMUX2_1
 
@@ -91,15 +91,15 @@ SKY130_UUOPENFPGA_CC_HD_INVMUX3_1
 - Schematic:
 
 .. image:: figures/sky130_fd_sc_hd_mux3_1\ schematic.png
-    :height: 600px
-    :width: 600px
+    :height: 550px
+    :width: 500px
     :align: center
     :alt: Sky130_uuopenfpga_cc_hd_invmux3_1 Schematic
 
 - Layout:
 
 .. image:: figures/sky130_fd_sc_hd_mux3_1\ gds.png
-    :height: 400px
+    :height: 350px
     :width: 1100px
     :align: center
     :alt: Sky130_uuopenfpga_cc_hd_invmux3_1 Layout
@@ -128,6 +128,6 @@ Our custom multiplexer provides over a 27\% reduction in propagation delay.
 
 `SKY130_UUOPENFPGA_CC_HD_INVMUX3_1 Cell Characterization`_
 
-.. _`SKY130_UUOPENFPGA_CC_HD_INVMUX3_1 Cell Characterization`: https://github.com/GrantBrown1994/SOFA/blob/documentation/DOC/source/datasheet/sofa_chd/custom_cells/cell_eval/SKY130_UUOPENFPGA_CC_HD_INVMUX3_1.pdf
+.. _`SKY130_UUOPENFPGA_CC_HD_INVMUX3_1 Cell Characterization`: https://github.com/lnis-uofu/SOFA/blob/master/DOC/source/datasheet/sofa_chd/custom_cells/cell_eval/SKY130_UUOPENFPGA_CC_HD_INVMUX3_1.pdf
 
 .. INVMUX3_1
