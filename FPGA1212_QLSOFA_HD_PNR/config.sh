@@ -3,8 +3,8 @@
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
 export PROJ_NAME=FPGA1212_QLSOFA_HD # Project Name
-export FPGA_SIZE_X=12        # Grid X Size
-export FPGA_SIZE_Y=12        # Grid Y Size
+export FPGA_SIZE_X=12               # Grid X Size
+export FPGA_SIZE_Y=12               # Grid Y Size
 # Design Style [hier/flat], mostly hier
 export DESIGN_STYLE=hier
 export TECHNOLOGY="skywater"

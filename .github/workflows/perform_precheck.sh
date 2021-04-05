@@ -8,6 +8,13 @@ cd ./${DEST_DIR}
 echo "[Info] Running in directory ${PWD}"
 
 cp ../SOFA-Chips/${SCAN_DIRECTORY}/fpga_top_icv_in_design.gds.gz ./gds/
+if test -f "./gds/fpga_top_icv_in_design.gds.gz.sha1"; then
+    sha1sum --status -c ./gds/fpga_top_icv_in_design.gds.gz.sha1
+    status=$?
+    [ $status -eq 0 ] && echo "SHA1 matched GDS is already merged ... skipping drc" && exit
+fi
+fpga_top_sha1=$(sha1sum ./gds/fpga_top_icv_in_design.gds.gz)
+
 make uncompress
 echo "[Info] All files are uncompressed"
 
@@ -80,3 +87,4 @@ if [[ 0 -eq $(git cat-file -e $CARAVEL_COMPARE_COMMIT) ]]; then
     /usr/local/workspace/${DEST_DIR}/checks/compare_caravel.txt
     echo "[Info] Create compare_caravel.txt"
 fi
+echo $fpga_top_sha1 > ./gds/fpga_top_icv_in_design.gds.gz.sha1
