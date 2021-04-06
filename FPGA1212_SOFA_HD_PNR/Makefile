@@ -6,6 +6,7 @@ PYTHON_EXEC=python3.8
 RERUN = 0
 TB = top
 OPTIONS =
+TASK_FILENAME ?= task_simulation.conf
 
 .SILENT:
 .ONESHELL:
@@ -19,9 +20,10 @@ runOpenFPGA:
 		echo "xxxxxxxx Python version 3.8 is required xxxxxxxx"; exit;
 	fi
 
+	echo "Running ${TASK_FILENAME} task"
 	# ===================  Clean Previous Run  =================================
 	rm -f $${OPENFPGA_PATH}/openfpga_flow/tasks/$${TASK_DIR_NAME}
-	(cd ./$${TASK_DIR_NAME}/config && rm -f task.conf && cp task_simulation.conf task.conf)
+	(cd ./$${TASK_DIR_NAME}/config && rm -f task.conf && ln -s ${TASK_FILENAME} task.conf)
 
 	# =====================  Generate Netlist  =================================
 	(currDir=$${PWD} && cd $$OPENFPGA_PATH && source openfpga.sh && cd $$currDir &&

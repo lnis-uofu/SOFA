@@ -23,16 +23,16 @@ import sphinx_rtd_theme
 #html_theme = "sphinx_rtd_theme"
 #html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-# Import sphinxcontrib.bibtex
-have_sphinxcontrib_bibtex = True
-try:
-    import sphinxcontrib.bibtex
-except ImportError:
-    have_sphinxcontrib_bibtex = False
+# For bibtex support
+import sphinxcontrib.bibtex
+# For embedded youtube
+import sphinxcontrib.yt
+# For converting SVG to PNG using rsvg
+import sphinxcontrib.rsvgconverter
 
 # -- Project information -----------------------------------------------------
 
-project = u'Skywater-OpenFPGA Chips'
+project = u'SOFA eFPGAs'
 copyright = u'2020, Xifan Tang'
 author = u'Xifan Tang'
 
@@ -57,6 +57,8 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinxcontrib.bibtex',
     'sphinx.ext.autosectionlabel',
+    'sphinxcontrib.yt',
+    'sphinxcontrib.rsvgconverter',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -129,7 +131,7 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'OpenFPGAdoc'
+htmlhelp_basename = 'SOFAdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -156,7 +158,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'OpenFPGA.tex', u'OpenFPGA Documentation',
+    (master_doc, 'SOFA.tex', u'SOFA Documentation',
      u'Xifan Tang', 'manual'),
 ]
 
@@ -166,7 +168,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'openfpga', u'OpenFPGA Documentation',
+    (master_doc, 'sofa', u'SOFA Documentation',
      [author], 1)
 ]
 
@@ -177,8 +179,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Skywater-OpenFPGA', u'Skywater-OpenFPGA Documentation',
-     author, 'Skywater-OpenFPGA', 'Open-source FPGA chips built with Skywater PDK and OpenFPGA.',
+    (master_doc, 'SOFA', u'SOFA Documentation',
+     author, 'SOFA', 'Open-source FPGA chips built with Skywater PDK and OpenFPGA.',
      'Miscellaneous'),
 ]
 

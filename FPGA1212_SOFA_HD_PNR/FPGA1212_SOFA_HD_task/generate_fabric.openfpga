@@ -36,9 +36,19 @@ write_fabric_bitstream --format xml --file fabric_bitstream.xml
 
 # Write the Verilog netlist for FPGA fabric
 #  - Enable the use of explicit port mapping in Verilog netlist
-write_fabric_verilog --file ./SRC --explicit_port_mapping --include_timing --include_signal_init --support_icarus_simulator --verbose
+write_fabric_verilog \
+    --file ./SRC \
+    --explicit_port_mapping \
+    --include_timing \
+    --verbose
 
-write_verilog_testbench --file ./SRC --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --explicit_port_mapping
+write_verilog_testbench \
+    --file ./SRC \
+    --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} \
+    --print_top_testbench \
+    --print_preconfig_top_testbench \
+    --print_simulation_ini ./SimulationDeck/simulation_deck.ini \
+    --explicit_port_mapping
 
 # Write the SDC files for PnR backend
 #  - Turn on every options here
