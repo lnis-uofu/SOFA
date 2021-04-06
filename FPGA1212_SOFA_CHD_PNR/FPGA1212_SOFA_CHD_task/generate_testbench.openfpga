@@ -1,6 +1,12 @@
-# Run VPR for the 'and' design
+# This script is designed to generate Verilog testbenches
+# with a fixed device layout
+# It will only output netlists to be used by verification tools
+# including
+#   - Verilog testbenches, used by ModelSim
+#   - SDC for a mapped FPGA fabric, used by Synopsys PrimeTime
+#
 #--write_rr_graph example_rr_graph.xml
-vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} --clock_modeling route --route_chan_width 200
+vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} --clock_modeling ideal --device ${OPENFPGA_VPR_DEVICE_LAYOUT} --route_chan_width ${OPENFPGA_VPR_ROUTE_CHAN_WIDTH} --absorb_buffer_luts off
 
 # Read OpenFPGA architecture definition
 read_openfpga_arch -f ${OPENFPGA_ARCH_FILE}
@@ -24,11 +30,7 @@ lut_truth_table_fixup
 # Build the module graph
 #  - Enabled compression on routing architecture modules
 #  - Enable pin duplication on grid modules
-build_fabric --compress_routing --duplicate_grid_pin --load_fabric_key ${EXTERNAL_FABRIC_KEY_FILE}
-
-# Write the fabric hierarchy of module graph to a file
-# This is used by hierarchical PnR flows
-write_fabric_hierarchy --file ./fabric_hierarchy.txt
+build_fabric --compress_routing --duplicate_grid_pin --load_fabric_key ${EXTERNAL_FABRIC_KEY_FILE} #--verbose
 
 # Repack the netlist to physical pbs
 # This must be done before bitstream generator and testbench generation
@@ -37,28 +39,29 @@ repack #--verbose
 
 # Build the bitstream
 #  - Output the fabric-independent bitstream to a file
-build_architecture_bitstream --verbose --write_file fabric_indepenent_bitstream.xml
-
-build_fabric_bitstream
+build_architecture_bitstream --verbose --write_file arch_bitstream.xml
 
 # Build fabric-dependent bitstream
-build_fabric_bitstream
-write_fabric_bitstream --format plain_text --file fabric_bitstream.bit
-write_fabric_bitstream --format xml --file fabric_bitstream.xml
+build_fabric_bitstream --verbose
+
+# Write fabric-dependent bitstream
+write_fabric_bitstream --file fabric_bitstream.xml --format xml
+
 # Write the Verilog testbench for FPGA fabric
 #  - We suggest the use of same output directory as fabric Verilog netlists
 #  - Must specify the reference benchmark file if you want to output any testbenches
 #  - Enable top-level testbench which is a full verification including programming circuit and core logic of FPGA
 #  - Enable pre-configured top-level testbench which is a fast verification skipping programming phase
 #  - Simulation ini file is optional and is needed only when you need to interface different HDL simulators using openfpga flow-run scripts
-write_verilog_testbench --file ./SRC --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --explicit_port_mapping
-
-# Write the SDC files for PnR backend
-#  - Turn on every options here
-write_pnr_sdc --file ./SDC
-
-# Write SDC to disable timing for configure ports
-write_sdc_disable_timing_configure_ports --file ./SDC/disable_configure_ports.sdc
+write_verilog_testbench --file ./SRC \
+        --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} \
+        --print_top_testbench \
+        --print_preconfig_top_testbench \
+        --print_simulation_ini ./SimulationDeck/simulation_deck.ini \
+        --explicit_port_mapping
+# Exclude signal initialization since it does not help simulator converge
+# due to the lack of reset pins for flip-flops
+#--include_signal_init
 
 # Write the SDC to run timing analysis for a mapped FPGA fabric
 write_analysis_sdc --file ./SDC_analysis
