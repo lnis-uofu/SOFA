@@ -1,0 +1,4 @@
+[submodule "skywater-pdk"]
+	path = skywater-pdk
+	url = https://github.com/ganeshgore/skywater-pdk.git
+	branch = ganesh_dev
