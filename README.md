@@ -59,9 +59,9 @@ vi FPGA1212_QLSOFA_HD_task/config/task_simulation.conf
 
 ---
 
-## Chip Gallery
+## Documentation
 
-You can find a chip gallery in the online documentation
+You can find a chip gallery as well as datasheets in the [online documentation](https://skywater-openfpga.readthedocs.io/en/latest/)
 
 ## Directory Organization
 
