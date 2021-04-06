@@ -11,3 +11,7 @@
 **/SRC**/*_tb.v
 **/SDC/**/*.sdc
 !**/SDC/**/disable_configure_ports.sdc
+*/runOpenFPGA
+**/*_task/latest
+**/*_task/run**
+**/*_task/config/task.conf

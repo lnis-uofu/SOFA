@@ -2,7 +2,7 @@
 # = = = = = = = = = = = = = = Variables Sections  = = = = = = = = = = = = = = =
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-export PROJ_NAME=FPGA1212_SOFA_HD_PNR # Project Name
+export PROJ_NAME=FPGA1212_SOFA_HD # Project Name
 export FPGA_SIZE_X=12        # Grid X Size
 export FPGA_SIZE_Y=12        # Grid Y Size
 # Design Style [hier/flat], mostly hier

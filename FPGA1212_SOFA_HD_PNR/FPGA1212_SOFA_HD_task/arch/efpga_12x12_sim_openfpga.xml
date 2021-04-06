@@ -1,0 +1,48 @@
+<!-- Simulation Setting for OpenFPGA framework
+     This file will use 
+     - a fixed operating clock frequency
+     - a fixed programming clock frequency
+
+     Note: all the numbers are tuned to STA results from physical layouts
+  -->
+<openfpga_simulation_setting>
+  <clock_setting>
+    <!-- Use 50MHz as the Caravel SoC can operate at 50MHz
+         As the FPGA core does not share the clock with Caravel SoC
+         the actual clock frequency could be higher 
+      -->
+    <operating frequency="50e6" num_cycles="auto" slack="0.2"/>
+    <!-- Use 50MHz as the Caravel SoC can operate at 50MHz 
+         As the FPGA core does not share the clock with Caravel SoC
+         the actual programming clock frequency could be higher 
+      -->
+    <programming frequency="50e6"/>
+  </clock_setting>
+  <simulator_option>
+    <operating_condition temperature="25"/>
+    <output_log verbose="false" captab="false"/>
+    <accuracy type="abs" value="1e-13"/>
+    <runtime fast_simulation="true"/>
+  </simulator_option>
+  <monte_carlo num_simulation_points="2"/>
+  <measurement_setting>
+    <slew>
+      <rise upper_thres_pct="0.95" lower_thres_pct="0.05"/>
+      <fall upper_thres_pct="0.05" lower_thres_pct="0.95"/>
+    </slew>
+    <delay>
+      <rise input_thres_pct="0.5" output_thres_pct="0.5"/>
+      <fall input_thres_pct="0.5" output_thres_pct="0.5"/>
+    </delay>
+  </measurement_setting>
+  <stimulus>
+    <clock>
+      <rise slew_type="abs" slew_time="20e-12" />
+      <fall slew_type="abs" slew_time="20e-12" />
+    </clock>
+    <input>
+      <rise slew_type="abs" slew_time="25e-12" />
+      <fall slew_type="abs" slew_time="25e-12" />
+    </input>
+  </stimulus>
+</openfpga_simulation_setting>
