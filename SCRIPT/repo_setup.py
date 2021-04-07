@@ -26,6 +26,9 @@ parser = argparse.ArgumentParser(description='Setup repository');
 parser.add_argument('--openfpga_root_path',
                     default='../OpenFPGA',
                     help='Specify the root directory of OpenFPGA project');
+parser.add_argument('--noruns',
+                    action='store_true',
+                    help='Just setup SOFA, don\'t do task runs');
 args = parser.parse_args();
 
 #####################################################################
@@ -116,18 +119,21 @@ logging.info("Processed for " + str(num_task_config_file_processed) + "openfpga 
 openfpga_task_src_dir = skywater_openfpga_homepath + "/SCRIPT/skywater_openfpga_task";
 openfpga_task_des_dir = openfpga_root_path + "/openfpga_flow/tasks/skywater_openfpga_task";
 
-if (os.path.isdir(openfpga_task_des_dir) or os.path.isfile(openfpga_task_des_dir)):
-  logging.warning("There is already a skywater_openfpga_task directory/file at " + openfpga_task_des_dir);
-  logging.error("Failed to create symbolic link!");
-  exit(1);
-elif (os.path.islink(openfpga_task_des_dir)):
+if (os.path.islink(openfpga_task_des_dir)):
   logging.warning("There is already a skywater_openfpga_task symbolic link at " + openfpga_task_des_dir);
   os.unlink(openfpga_task_des_dir);
   logging.warning("Removed the symbolic link");
+elif (os.path.isdir(openfpga_task_des_dir) or os.path.isfile(openfpga_task_des_dir)):
+  logging.warning("There is already a skywater_openfpga_task directory/file at " + openfpga_task_des_dir);
+  logging.error("Failed to create symbolic link!");
+  exit(1);
 
 os.symlink(openfpga_task_src_dir, openfpga_task_des_dir, True);
 
 logging.info("Created OpenFPGA task symbolic link at " + openfpga_task_des_dir);
+
+if (args.noruns):
+  exit(0);
 
 #####################################################################
 # Execute openfpga task runs
