@@ -10,6 +10,7 @@ OPTIONS =
 .SILENT:
 .ONESHELL:
 
+.PHONY: runOpenFPGA
 runOpenFPGA:
 	SECONDS=0
 	source config.sh
