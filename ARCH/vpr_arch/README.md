@@ -12,6 +12,7 @@ Please reveal the following architecture features in the names to help quickly s
 - aib: If the Advanced Interface Bus (AIB) is used in place of some I/Os.
 - multi\_io\_capacity: If I/O capacity is different on each side of FPGAs.
 - reduced\_io: If I/Os only appear a certain or multiple sides of FPGAs 
+- <frac>\_dsp<M>: If the FPGA includes M-bit DSP blocks. The keyword 'frac' is to specify if the DSP block is fracturable to operate in different modes.
 - <feature\_size>: The technology node which the delay numbers are extracted from.
 
 Other features are used in naming should be listed here.
