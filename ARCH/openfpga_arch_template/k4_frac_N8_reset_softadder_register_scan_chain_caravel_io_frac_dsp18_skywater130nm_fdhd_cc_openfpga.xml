@@ -217,7 +217,7 @@
       <port type="input" prefix="cin" lib_name="S" size="1"/>
       <port type="output" prefix="cout" lib_name="Y" size="1"/>
     </circuit_model>
-    <circuit_model type="hard_logic" name="mult_18x18" prefix="mult_18x18" is_default="true" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/mult_18x18.sp" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/mult_18x18.v">
+    <circuit_model type="hard_logic" name="frac_mult_18x18" prefix="frac_mult_18x18" is_default="true" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/frac_mult_18x18.sp" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/frac_mult_18x18.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="INVTX1"/>
       <output_buffer exist="true" circuit_model_name="INVTX1"/>
