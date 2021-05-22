@@ -159,16 +159,17 @@
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <!--DFF subckt ports should be defined as <D> <Q> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ff" name="SDFFRQ" prefix="SDFFRQ" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
+    <circuit_model type="ff" name="CUSTOM_DATAFF" prefix="CUSTOM_DATAFF" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <port type="input" prefix="D" size="1"/>
       <port type="input" prefix="DI" lib_name="SI" size="1"/>
       <port type="input" prefix="Test_en" lib_name="SE" size="1" is_global="true" default_val="0"/>
-      <port type="input" prefix="reset" lib_name="RST" size="1" default_val="0"/>
+      <port type="input" prefix="R" size="1" default_val="0"/>
       <port type="output" prefix="Q" size="1"/>
-      <port type="clock" prefix="clk" lib_name="CK" size="1" default_val="0" />
+      <port type="clock" prefix="C" lib_name="CK" size="1" default_val="0" />
+      <port type="sram" prefix="mode" lib_name="MODE" size="1" mode_select="true" circuit_model_name="CUSTOM_CCFF" default_val="0"/>
     </circuit_model>
     <circuit_model type="lut" name="frac_lut4" prefix="frac_lut4" dump_structural_verilog="true">
       <design_technology type="cmos" fracturable_lut="true"/>
@@ -183,17 +184,22 @@
       <port type="output" prefix="lut3_out" size="2" lut_frac_level="3" lut_output_mask="0,1"/>
       <port type="output" prefix="lut4_out" size="1" lut_output_mask="0"/>
       <port type="sram" prefix="sram" size="16"/>
-      <port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="DFFRQ" default_val="1"/>
+      <port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="CUSTOM_CCFF" default_val="1"/>
     </circuit_model>
     <!--Scan-chain DFF subckt ports should be defined as <D> <Q> <Qb> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ccff" name="DFFRQ" prefix="DFFRQ" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
+    <circuit_model type="ccff" name="CUSTOM_CCFF" prefix="CUSTOM_CCFF" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <port type="input" prefix="D" size="1"/>
+      <port type="input" prefix="scan_data_in" lib_name="SCD" size="1"/>
+      <!-- This port allows readback configurable memories without modifying the storage -->
+      <port type="input" prefix="config_readback" lib_name="SCE" size="1" is_global="true" default_val="0"/>
+      <!-- This port allows programming circuitry is be isolated from datapath logic during programming -->
+      <port type="input" prefix="config_enable" lib_name="CFGE" size="1" is_global="true" default_val="0" is_config_enable="true"/>
       <port type="output" prefix="Q" size="1"/>
-      <port type="clock" prefix="prog_clk" lib_name="CK" size="1" is_global="true" default_val="0" is_prog="true"/>
-      <port type="input" prefix="pReset" lib_name="RST" size="1" is_global="true" default_val="0" is_prog="true" is_reset="true"/>
+      <port type="clock" prefix="prog_clk" lib_name="CLK" size="1" is_global="true" default_val="0" is_prog="true"/>
+      <port type="input" prefix="pReset" lib_name="RESET_B" size="1" is_global="true" default_val="1" is_prog="true" is_reset="true"/>
     </circuit_model>
     <circuit_model type="iopad" name="EMBEDDED_IO_ISOLN" prefix="EMBEDDED_IO_ISOLN" is_default="true" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/gpio.v">
       <design_technology type="cmos"/>
@@ -205,7 +211,7 @@
       <port type="input" prefix="IO_ISOL_N" lib_name="IO_ISOL_N" size="1" is_global="true" default_val="1"/>
       <port type="output" prefix="inpad" lib_name="FPGA_IN" size="1"/>
       <port type="input" prefix="outpad" lib_name="FPGA_OUT" size="1"/>
-      <port type="sram" prefix="en" lib_name="FPGA_DIR" size="1" mode_select="true" circuit_model_name="DFFRQ" default_val="1"/>
+      <port type="sram" prefix="en" lib_name="FPGA_DIR" size="1" mode_select="true" circuit_model_name="CUSTOM_CCFF" default_val="1"/>
     </circuit_model>
     <circuit_model type="hard_logic" name="CARRY_MUX2" prefix="CARRY_MUX2" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/mux2.v">
       <design_technology type="cmos"/>
@@ -224,11 +230,11 @@
       <port type="input" prefix="A" lib_name="A" size="18"/>
       <port type="input" prefix="B" lib_name="B" size="18"/>
       <port type="output" prefix="Y" lib_name="Y" size="36"/>
-      <port type="sram" prefix="mode" lib_name="MODE" size="1" mode_select="true" circuit_model_name="DFFRQ" default_val="1"/>
+      <port type="sram" prefix="mode" lib_name="MODE" size="1" mode_select="true" circuit_model_name="CUSTOM_CCFF" default_val="1"/>
     </circuit_model>
   </circuit_library>
   <configuration_protocol>
-    <organization type="scan_chain" circuit_model_name="DFFRQ" num_regions="1"/>
+    <organization type="scan_chain" circuit_model_name="CUSTOM_CCFF" num_regions="1"/>
   </configuration_protocol>
   <connection_block>
     <switch name="ipin_cblock" circuit_model_name="mux_tree_tapbuf"/>
@@ -245,7 +251,6 @@
   </routing_segment>
   <direct_connection>
     <direct name="carry_chain" circuit_model_name="direct_interc"/>
-    <direct name="shift_register" circuit_model_name="direct_interc"/>
     <direct name="scan_chain" circuit_model_name="direct_interc" type="column" x_dir="positive" y_dir="positive"/>
   </direct_connection>
   <tile_annotations>
@@ -270,7 +275,7 @@
     <pb_type name="clb.fle" physical_mode_name="physical"/>
     <pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4" mode_bits="0"/>
     <pb_type name="clb.fle[physical].fabric.frac_logic.carry_follower" circuit_model_name="CARRY_MUX2"/>
-    <pb_type name="clb.fle[physical].fabric.ff" circuit_model_name="SDFFRQ"/>
+    <pb_type name="clb.fle[physical].fabric.ff" circuit_model_name="CUSTOM_DATAFF" mode_bits="0"/>
     <!-- Binding operating pb_type to physical pb_type -->
     <!-- Binding operating pb_types in mode 'arithmetic' -->
     <pb_type name="clb.fle[arithmetic].soft_adder.adder_lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="1"/>
@@ -281,17 +286,29 @@
       <port name="in" physical_mode_port="in[0:2]"/>
       <port name="out" physical_mode_port="lut3_out[0:0]" physical_mode_pin_rotate_offset="1"/>
     </pb_type>
-    <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
+    <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.ff[latch].latch" physical_pb_type_name="clb.fle[physical].fabric.ff" mode_bits="0">
+      <port name="clk" physical_mode_port="C"/>
+    </pb_type>
+    <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.ff[dff].dff" physical_pb_type_name="clb.fle[physical].fabric.ff" mode_bits="0"/>
+    <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.ff[dffr].dffr" physical_pb_type_name="clb.fle[physical].fabric.ff" mode_bits="0"/>
+    <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.ff[dffrn].dffrn" physical_pb_type_name="clb.fle[physical].fabric.ff" mode_bits="1">
+      <port name="RN" physical_mode_port="R"/>
+    </pb_type>
     <!-- Binding operating pb_types in mode 'ble4' -->
     <pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="0">
       <!-- Binding the lut4 to the first 4 inputs of fracturable lut4 -->
       <port name="in" physical_mode_port="in[0:3]"/>
       <port name="out" physical_mode_port="lut4_out"/>
     </pb_type>
-    <pb_type name="clb.fle[n1_lut4].ble4.ff" physical_pb_type_name="clb.fle[physical].fabric.ff" physical_pb_type_index_factor="2" physical_pb_type_index_offset="0"/>
-    <!-- Binding operating pb_types in mode 'shift_register' -->
-    <pb_type name="clb.fle[shift_register].shift_reg.ff" physical_pb_type_name="clb.fle[physical].fabric.ff"/>
-    <!-- End physical pb_type binding in complex block IO -->
+    <pb_type name="clb.fle[n1_lut4].ble4.ff[latch].latch" physical_pb_type_name="clb.fle[physical].fabric.ff" mode_bits="0" physical_pb_type_index_factor="2" physical_pb_type_index_offset="0">
+      <port name="clk" physical_mode_port="C"/>
+    </pb_type>
+    <pb_type name="clb.fle[n1_lut4].ble4.ff[dff].dff" physical_pb_type_name="clb.fle[physical].fabric.ff" mode_bits="0" physical_pb_type_index_factor="2" physical_pb_type_index_offset="0"/>
+    <pb_type name="clb.fle[n1_lut4].ble4.ff[dffr].dffr" physical_pb_type_name="clb.fle[physical].fabric.ff" mode_bits="0" physical_pb_type_index_factor="2" physical_pb_type_index_offset="0"/>
+    <pb_type name="clb.fle[n1_lut4].ble4.ff[dffrn].dffrn" physical_pb_type_name="clb.fle[physical].fabric.ff" mode_bits="1" physical_pb_type_index_factor="2" physical_pb_type_index_offset="0">
+      <port name="RN" physical_mode_port="R"/>
+    </pb_type>
+    <!-- End physical pb_type binding in complex block CLB -->
 
     <!-- physical pb_type binding in complex block dsp -->
     <pb_type name="mult_18" physical_mode_name="mult_18x18"/>
@@ -301,5 +318,6 @@
       <port name="A" physical_mode_port="A[0:8]" physical_mode_port_rotate_offset="9"/>
       <port name="B" physical_mode_port="B[0:8]" physical_mode_port_rotate_offset="9"/>
       <port name="Y" physical_mode_port="Y[0:17]" physical_mode_port_rotate_offset="18"/>
-    </pb_type>  </pb_type_annotations>
+    </pb_type>
+  </pb_type_annotations>
 </openfpga_architecture>
