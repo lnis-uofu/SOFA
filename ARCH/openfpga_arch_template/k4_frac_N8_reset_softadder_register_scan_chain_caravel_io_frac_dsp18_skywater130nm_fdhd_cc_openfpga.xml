@@ -171,7 +171,7 @@
       <port type="clock" prefix="C" lib_name="CK" size="1" default_val="0" />
       <port type="sram" prefix="mode" lib_name="MODE" size="1" mode_select="true" circuit_model_name="CUSTOM_CCFF" default_val="0"/>
     </circuit_model>
-    <circuit_model type="lut" name="frac_lut4" prefix="frac_lut4" dump_structural_verilog="true">
+    <circuit_model type="lut" name="frac_lut4_arith" prefix="frac_lut4_arith" dump_structural_verilog="true" verilog_netlist="frac_lut4_arith.v">
       <design_technology type="cmos" fracturable_lut="true"/>
       <input_buffer exist="false"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2"/>
@@ -180,11 +180,12 @@
       <lut_intermediate_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__buf_2" location_map="-1-"/>
       <pass_gate_logic circuit_model_name="sky130_fd_sc_hd__mux2_1"/>
       <port type="input" prefix="in" size="4" tri_state_map="---1" circuit_model_name="sky130_fd_sc_hd__or2_1"/>
-      <port type="output" prefix="lut2_out" size="2" lut_frac_level="2" lut_output_mask="2,3"/>
+      <port type="input" prefix="cin" size="1" is_harden_lut_port="true"/>
       <port type="output" prefix="lut3_out" size="2" lut_frac_level="3" lut_output_mask="0,1"/>
       <port type="output" prefix="lut4_out" size="1" lut_output_mask="0"/>
+      <port type="output" prefix="cout" size="1" is_harden_lut_port="true"/>
       <port type="sram" prefix="sram" size="16"/>
-      <port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="CUSTOM_CCFF" default_val="1"/>
+      <port type="sram" prefix="mode" size="2" mode_select="true" circuit_model_name="CUSTOM_CCFF" default_val="1"/>
     </circuit_model>
     <!--Scan-chain DFF subckt ports should be defined as <D> <Q> <Qb> <CLK> <RESET> <SET>  -->
     <circuit_model type="ccff" name="CUSTOM_CCFF" prefix="CUSTOM_CCFF" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
@@ -273,15 +274,13 @@
     <!-- physical pb_type binding in complex block CLB -->
     <!-- physical mode will be the default mode if not specified -->
     <pb_type name="clb.fle" physical_mode_name="physical"/>
-    <pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4" circuit_model_name="frac_lut4" mode_bits="0"/>
-    <pb_type name="clb.fle[physical].fabric.frac_logic.carry_follower" circuit_model_name="CARRY_MUX2"/>
+    <pb_type name="clb.fle[physical].fabric.frac_logic.frac_lut4_arith" circuit_model_name="frac_lut4_arith" mode_bits="00"/>
     <pb_type name="clb.fle[physical].fabric.ff" circuit_model_name="CUSTOM_DATAFF" mode_bits="0"/>
     <!-- Binding operating pb_type to physical pb_type -->
     <!-- Binding operating pb_types in mode 'arithmetic' -->
-    <pb_type name="clb.fle[arithmetic].soft_adder.adder_lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="1"/>
-    <pb_type name="clb.fle[arithmetic].soft_adder.carry_follower" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.carry_follower"/>
+    <pb_type name="clb.fle[arithmetic].soft_adder.adder_lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4_arith" mode_bits="11"/>
     <!-- Binding operating pb_types in mode 'n2_lut3' -->
-    <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.lut3" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="1" physical_pb_type_index_factor="0.5">
+    <pb_type name="clb.fle[n2_lut3].lut3inter.ble3.lut3" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4_arith" mode_bits="01" physical_pb_type_index_factor="0.5">
       <!-- Binding the lut3 to the first 3 inputs of fracturable lut4 -->
       <port name="in" physical_mode_port="in[0:2]"/>
       <port name="out" physical_mode_port="lut3_out[0:0]" physical_mode_pin_rotate_offset="1"/>
@@ -295,7 +294,7 @@
       <port name="RN" physical_mode_port="R"/>
     </pb_type>
     <!-- Binding operating pb_types in mode 'ble4' -->
-    <pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4" mode_bits="0">
+    <pb_type name="clb.fle[n1_lut4].ble4.lut4" physical_pb_type_name="clb.fle[physical].fabric.frac_logic.frac_lut4_arith" mode_bits="00">
       <!-- Binding the lut4 to the first 4 inputs of fracturable lut4 -->
       <port name="in" physical_mode_port="in[0:3]"/>
       <port name="out" physical_mode_port="lut4_out"/>

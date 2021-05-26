@@ -70,40 +70,22 @@
     </model>
     <model name="adder_lut4">
       <input_ports>
-        <port name="in" combinational_sink_ports="lut2_out lut4_out"/>
+        <port name="in" combinational_sink_ports="lut4_out cout"/>
+        <port name="cin" combinational_sink_ports="lut4_out cout"/>
       </input_ports>
       <output_ports>
-        <port name="lut2_out"/>
         <port name="lut4_out"/>
-      </output_ports>
-    </model>
-    <model name="carry_follower">
-      <input_ports>
-        <port name="a" combinational_sink_ports="cout"/>
-        <port name="b" combinational_sink_ports="cout"/>
-        <port name="cin" combinational_sink_ports="cout"/>
-      </input_ports>
-      <output_ports>
         <port name="cout"/>
       </output_ports>
     </model>
-    <model name="frac_lut4">
+    <model name="frac_lut4_arith">
       <input_ports>
-        <port name="in" combinational_sink_ports="lut2_out lut3_out lut4_out"/>
+        <port name="in" combinational_sink_ports="lut3_out lut4_out cout"/>
+        <port name="cin" combinational_sink_ports="lut3_out lut4_out cout"/>
       </input_ports>
       <output_ports>
-        <port name="lut2_out"/>
         <port name="lut3_out"/>
         <port name="lut4_out"/>
-      </output_ports>
-    </model>
-    <model name="carry_follower_physical">
-      <input_ports>
-        <port name="a" combinational_sink_ports="cout"/>
-        <port name="b" combinational_sink_ports="cout"/>
-        <port name="cin" combinational_sink_ports="cout"/>
-      </input_ports>
-      <output_ports>
         <port name="cout"/>
       </output_ports>
     </model>
@@ -517,35 +499,26 @@
               <output name="out" num_pins="2"/>
               <output name="cout" num_pins="1"/>
               <!-- Define LUT -->
-              <pb_type name="frac_lut4" blif_model=".subckt frac_lut4" num_pb="1">
+              <pb_type name="frac_lut4_arith" blif_model=".subckt frac_lut4_arith" num_pb="1">
                 <input name="in" num_pins="4"/>
-                <output name="lut2_out" num_pins="2"/>
+                <input name="cin" num_pins="1"/>
                 <output name="lut3_out" num_pins="2"/>
                 <output name="lut4_out" num_pins="1"/>
-                <delay_constant max="${LUT2_DELAY}" in_port="frac_lut4.in" out_port="frac_lut4.lut2_out"/>
-                <delay_constant max="${LUT3_DELAY}" in_port="frac_lut4.in" out_port="frac_lut4.lut3_out"/>
-                <delay_constant max="${LUT4_DELAY}" in_port="frac_lut4.in" out_port="frac_lut4.lut4_out"/>
-              </pb_type>
-              <pb_type name="carry_follower" blif_model=".subckt carry_follower_physical" num_pb="1">
-                <input name="a" num_pins="1"/>
-                <input name="b" num_pins="1"/>
-                <input name="cin" num_pins="1"/>
                 <output name="cout" num_pins="1"/>
-                <delay_constant max="0.3e-9" in_port="carry_follower.a" out_port="carry_follower.cout"/>
-                <delay_constant max="0.3e-9" in_port="carry_follower.b" out_port="carry_follower.cout"/>
-                <delay_constant max="0.3e-9" in_port="carry_follower.cin" out_port="carry_follower.cout"/>
+                <delay_constant max="${LUT_CIN2LUT3_OUT_DELAY}" in_port="frac_lut4_arith.cin" out_port="frac_lut4_arith.lut3_out"/>
+                <delay_constant max="${LUT_CIN2LUT4_OUT_DELAY}" in_port="frac_lut4_arith.cin" out_port="frac_lut4_arith.lut4_out"/>
+                <delay_constant max="${LUT_CIN2COUT_DELAY}" in_port="frac_lut4_arith.cin" out_port="frac_lut4_arith.cout"/>
+                <delay_constant max="${LUT3_DELAY}" in_port="frac_lut4_arith.in" out_port="frac_lut4_arith.lut3_out"/>
+                <delay_constant max="${LUT4_DELAY}" in_port="frac_lut4_arith.in" out_port="frac_lut4_arith.lut4_out"/>
+                <delay_constant max="${LUT_IN2COUT_DELAY}" in_port="frac_lut4_arith.in" out_port="frac_lut4_arith.cout"/>
               </pb_type>
               <interconnect>
-                <direct name="direct1" input="frac_logic.in[0:1]" output="frac_lut4.in[0:1]"/>
-                <direct name="direct2" input="frac_logic.in[3:3]" output="frac_lut4.in[3:3]"/>
-                <direct name="direct3" input="frac_logic.cin" output="carry_follower.b"/>
-                <direct name="direct4" input="frac_lut4.lut2_out[1:1]" output="carry_follower.a"/>
-                <direct name="direct5" input="frac_lut4.lut2_out[0:0]" output="carry_follower.cin"/>
-                <direct name="direct6" input="carry_follower.cout" output="frac_logic.cout"/>
-                <direct name="direct7" input="frac_lut4.lut3_out[1]" output="frac_logic.out[1]"/>
+                <direct name="direct_in" input="frac_logic.in[0:3]" output="frac_lut4_arith.in[0:3]"/>
+                <direct name="direct_cin" input="frac_logic.cin" output="frac_lut4_arith.cin"/>
+                <direct name="direct_cout" input="frac_lut4_arith.cout" output="frac_logic.cout"/>
+                <direct name="direct_lut_out" input="frac_lut4_arith.lut3_out[1]" output="frac_logic.out[1]"/>
                 <!-- Xifan Tang: I use out[0] because the output of lut6 in lut6 mode is wired to the out[0] -->
-                <mux name="mux1" input="frac_lut4.lut4_out frac_lut4.lut3_out[0]" output="frac_logic.out[0]"/>
-                <mux name="mux2" input="frac_logic.cin frac_logic.in[2:2]" output="frac_lut4.in[2:2]"/>
+                <mux name="mux1" input="frac_lut4_arith.lut4_out frac_lut4_arith.lut3_out[0]" output="frac_logic.out[0]"/>
               </interconnect>
             </pb_type>
             <!-- Define flip-flop with scan-chain capability, DI is the scan-chain data input -->
@@ -608,43 +581,27 @@
             <output name="cout" num_pins="1"/>
             <!-- Define special LUT marco to be used as adder -->
             <pb_type name="adder_lut4" blif_model=".subckt adder_lut4" num_pb="1">
-              <input name="in" num_pins="4"/>
-              <output name="lut2_out" num_pins="2"/>
-              <output name="lut4_out" num_pins="1"/>
-              <delay_constant max="${LUT2_DELAY}" in_port="adder_lut4.in" out_port="adder_lut4.lut2_out"/>
-              <delay_constant max="${LUT4_DELAY}" in_port="adder_lut4.in" out_port="adder_lut4.lut4_out"/>
-            </pb_type>
-            <pb_type name="carry_follower" blif_model=".subckt carry_follower" num_pb="1">
-              <input name="a" num_pins="1"/>
-              <input name="b" num_pins="1"/>
               <input name="cin" num_pins="1"/>
+              <input name="in" num_pins="4"/>
+              <output name="lut4_out" num_pins="1"/>
               <output name="cout" num_pins="1"/>
-              <delay_constant max="0.3e-9" in_port="carry_follower.a" out_port="carry_follower.cout"/>
-              <delay_constant max="0.3e-9" in_port="carry_follower.b" out_port="carry_follower.cout"/>
-              <delay_constant max="0.3e-9" in_port="carry_follower.cin" out_port="carry_follower.cout"/>
+              <delay_constant max="${ADDER_LUT4_CIN2OUT_DELAY}" in_port="adder_lut4.cin" out_port="adder_lut4.lut4_out"/>
+              <delay_constant max="${ADDER_LUT4_CIN2COUT_DELAY}" in_port="adder_lut4.cin" out_port="adder_lut4.cout"/>
+              <delay_constant max="${ADDER_LUT4_IN2OUT_DELAY}" in_port="adder_lut4.in" out_port="adder_lut4.lut4_out"/>
+              <delay_constant max="${ADDER_LUT4_IN2COUT_DELAY}" in_port="adder_lut4.in" out_port="adder_lut4.cout"/>
             </pb_type>
             <interconnect>
-              <direct name="direct_in0to1" input="soft_adder.in[0:1]" output="adder_lut4.in[0:1]"/>
-              <direct name="direct_in3" input="soft_adder.in[3:3]" output="adder_lut4.in[3:3]"/>
-              <direct name="direct_cin" input="soft_adder.cin" output="carry_follower.b">
+              <direct name="direct_in" input="soft_adder.in[0:3]" output="adder_lut4.in[0:3]"/>
+              <direct name="direct_cin" input="soft_adder.cin" output="adder_lut4.cin">
                 <!-- Pack pattern to build an adder chain connection considered by packer -->
-                <pack_pattern name="chain" in_port="soft_adder.cin" out_port="carry_follower.b"/>
+                <pack_pattern name="chain" in_port="soft_adder.cin" out_port="adder_lut4.cin"/>
               </direct>
-              <direct name="direct_carry" input="adder_lut4.lut2_out[1:1]" output="carry_follower.a">
-                <!-- Pack pattern to pair adder_lut4 and carry_follower into a molecule
-                     considered by packer -->
-                <pack_pattern name="lut_follower" in_port="adder_lut4.lut2_out[1:1]" out_port="carry_follower.a"/>
-              </direct>
-              <direct name="direct_lut2cin" input="adder_lut4.lut2_out[0:0]" output="carry_follower.cin">
-              </direct>
-              <direct name="direct_cout" input="carry_follower.cout" output="soft_adder.cout">
+              <direct name="direct_cout" input="adder_lut4.cout" output="soft_adder.cout">
                 <!-- Pack pattern to build an adder chain connection considered by packer -->
-                <pack_pattern name="chain" in_port="carry_follower.cout" out_port="soft_adder.cout"/>
+                <pack_pattern name="chain" in_port="adder_lut4.cout" out_port="soft_adder.cout"/>
               </direct>
               <direct name="direct_sumout" input="adder_lut4.lut4_out" output="soft_adder.sumout[0:0]">
               </direct>
-              <mux name="mux_out" input="soft_adder.cin soft_adder.in[2:2]" output="adder_lut4.in[2:2]">
-              </mux>
             </interconnect>
           </pb_type>
           <interconnect>
