@@ -44,13 +44,10 @@ build_fabric_bitstream
 write_fabric_bitstream --format plain_text --file fabric_bitstream.bit
 write_fabric_bitstream --format xml --file fabric_bitstream.xml
 
-write_verilog_testbench \
-    --file ./SRC \
-    --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} \
-    --print_top_testbench \
-    --print_preconfig_top_testbench \
-    --print_simulation_ini ./SimulationDeck/simulation_deck.ini \
-    --explicit_port_mapping
+write_full_testbench --file ./SRC \
+        --bitstream fabric_bitstream.bit
+        --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} \
+        --explicit_port_mapping
 
 # Finish and exit OpenFPGA
 exit
