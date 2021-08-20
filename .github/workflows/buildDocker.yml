@@ -36,7 +36,7 @@ jobs:
             ${{ matrix.config.name }}_PNR/*_task/**
       - name: Running benchmark
         shell: bash
-        if: ${{ env.GIT_DIFF || (github.event_name == 'pull_request' && github.ref == 'refs/heads/master') }}
+        if: ${{ env.GIT_DIFF || (github.event_name == 'pull_request' && github.ref == 'refs/heads/master') || (github.ref == 'refs/heads/master') }}
         run: |
           ${PYTHON_EXEC} -m pip install -r requirements.txt
           cat ${{ matrix.config.name }}_PNR/${{ matrix.config.name }}_task/config/task_simulation.conf
