@@ -53,13 +53,13 @@ write_fabric_bitstream --file fabric_bitstream.xml --format xml
 #  - Enable top-level testbench which is a full verification including programming circuit and core logic of FPGA
 #  - Enable pre-configured top-level testbench which is a fast verification skipping programming phase
 #  - Simulation ini file is optional and is needed only when you need to interface different HDL simulators using openfpga flow-run scripts
-write_verilog_testbench --file ${OPENFPGA_VERILOG_OUTPUT_DIR}/verilog_testbench \
-  --fabric_netlist_file_path ${OPENFPGA_FABRIC_VERILOG_NETLIST} \
-  --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} \
-  --print_top_testbench \
+# write_verilog_testbench --file ${OPENFPGA_VERILOG_OUTPUT_DIR}/verilog_testbench \
+#  --fabric_netlist_file_path ${OPENFPGA_FABRIC_VERILOG_NETLIST} \
+#  --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} \
+#  --print_top_testbench \
 #  --print_preconfig_top_testbench \ disabled for now due to disk space limitation on github actions
-  --print_simulation_ini ${OPENFPGA_VERILOG_OUTPUT_DIR}/SimulationDeck/simulation_deck.ini \
-  --explicit_port_mapping
+#  --print_simulation_ini ${OPENFPGA_VERILOG_OUTPUT_DIR}/SimulationDeck/simulation_deck.ini \
+#  --explicit_port_mapping
 # Exclude signal initialization since it does not help simulator converge 
 # due to the lack of reset pins for flip-flops
 #--include_signal_init 
