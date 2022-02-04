@@ -54,7 +54,7 @@ write_fabric_bitstream --file fabric_bitstream.xml --format xml
 #  - Enable pre-configured top-level testbench which is a fast verification skipping programming phase
 #  - Simulation ini file is optional and is needed only when you need to interface different HDL simulators using openfpga flow-run scripts
 write_full_testbench --file ./SRC \
-        --bitstream fabric_bitstream.bit
+        --bitstream fabric_bitstream.bit \
         --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} \
         --explicit_port_mapping
 # Exclude signal initialization since it does not help simulator converge
