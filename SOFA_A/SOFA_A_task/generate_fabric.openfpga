@@ -1,12 +1,6 @@
-# This script is designed to generate fabric Verilog netlists
-# with a fixed device layout
-# It will only output netlists to be used by backend tools,
-# i.e., Synopsys ICC2, including
-#   - Verilog netlists
-#   - fabric hierarchy description for ICC2's hierarchical flow
-#   - Timing/Design constraints
-
-vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} --device ${OPENFPGA_VPR_DEVICE_LAYOUT} --route_chan_width ${OPENFPGA_VPR_ROUTE_CHAN_WIDTH} --constant_net_method route --absorb_buffer_luts off --clock_modeling ideal
+# Run VPR for the 'and' design
+#--write_rr_graph example_rr_graph.xml
+vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} --clock_modeling route
 
 # Read OpenFPGA architecture definition
 read_openfpga_arch -f ${OPENFPGA_ARCH_FILE}
@@ -16,7 +10,7 @@ read_openfpga_simulation_setting -f ${OPENFPGA_SIM_SETTING_FILE}
 
 # Annotate the OpenFPGA architecture to VPR data base
 # to debug use --verbose options
-link_openfpga_arch --sort_gsb_chan_node_in_edges
+link_openfpga_arch --activity_file ${ACTIVITY_FILE} --sort_gsb_chan_node_in_edges
 
 # Check and correct any naming conflicts in the BLIF netlist
 check_netlist_naming_conflict --fix --report ./netlist_renaming.xml
@@ -49,7 +43,7 @@ build_architecture_bitstream --verbose --write_file fabric_independent_bitstream
 build_fabric_bitstream --verbose
 
 # Write fabric-dependent bitstream
-write_fabric_bitstream --file fabric_bitstream.xml --format xml
+write_fabric_bitstream --file fabric_bitstream.bit --format plain_text
 
 # Write the Verilog netlist for FPGA fabric
 #  - Enable the use of explicit port mapping in Verilog netlist
@@ -61,7 +55,9 @@ write_fabric_verilog --file ./SRC --explicit_port_mapping --include_timing --pri
 #  - Enable top-level testbench which is a full verification including programming circuit and core logic of FPGA
 #  - Enable pre-configured top-level testbench which is a fast verification skipping programming phase
 #  - Simulation ini file is optional and is needed only when you need to interface different HDL simulators using openfpga flow-run scripts
-write_verilog_testbench --file ./SRC --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} --print_top_testbench --print_preconfig_top_testbench --print_simulation_ini ./SimulationDeck/simulation_deck.ini --include_signal_init --support_icarus_simulator #--explicit_port_mapping
+write_full_testbench --file ./SRC --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} --explicit_port_mapping --include_signal_init --bitstream fabric_bitstream.bit
+write_preconfigured_fabric_wrapper --embed_bitstream iverilog --file ./SRC  --explicit_port_mapping
+write_preconfigured_testbench --file ./SRC --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} --explicit_port_mapping
 
 # Write the SDC files for PnR backend
 #  - Turn on every options here
