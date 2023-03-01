@@ -21,10 +21,6 @@ symbol[id="sb09"] * { fill:#ceefe4;}
 symbol[id="sb10"] * { fill:#ceefe4;}
 rect[class="lb"] { fill:#f4f0e6; }
 symbol[id*="io_"] * { fill:#f8b155;}
-symbol[id*='sides_merged'] * { fill:green; opacity:0.5 }
-symbol[id*='corner'] * { fill:#28f7c7; opacity:0.5 }
-symbol[id*='main_tile'] * { fill:#F0A35E; opacity:0.5 }
-symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
 ]]></style>
         <symbol id="cbx">
             <rect class="routing" height="4" width="10" x="0.0" y="0"/>
@@ -83,202 +79,19 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
         <symbol id="sb10" x="-0.0" y="-0.0">
             <path d="M 0.0 0 v 0.0 h -0.0 v 4 h 0.0 v 0.0 h 4 v -0.0 h 0.0 v -4 h -0.0 v -0.0 z"/>
         </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_2" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_8_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_3" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_8_3" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_4" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_8_4" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_5" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_8_5" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_6" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_8_6" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_7" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_8_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="18.0" id="sides_merged_at_2_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_2_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="18.0" id="sides_merged_at_3_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_3_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="18.0" id="sides_merged_at_4_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_4_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="18.0" id="sides_merged_at_5_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_5_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="18.0" id="sides_merged_at_6_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_6_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="18.0" id="sides_merged_at_7_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
-        </symbol>
-        <symbol height="14.0" id="sides_merged_at_7_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_2_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_2_3" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_2_4" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_2_5" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_2_6" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_2_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_3_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_3_3" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_3_4" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_3_5" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_3_6" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_3_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_4_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_4_3" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_4_4" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_4_5" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_4_6" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_4_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_5_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_5_3" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_5_4" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_5_5" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_5_6" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_5_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_6_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_6_3" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_6_4" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_6_5" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_6_6" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_6_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_7_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_7_3" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_7_4" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_7_5" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_7_6" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="main_tile_merged_7_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="corner_merged_ltop" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
-        </symbol>
-        <symbol height="14.0" id="corner_merged_rtop" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
-        </symbol>
-        <symbol height="18.0" id="corner_merged_rbottom" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
-        </symbol>
-        <symbol height="18.0" id="corner_merged_lbottom" viewBox="0.0 0.0 18.0 18.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 18 h -18 v -18  z"/>
-        </symbol>
+        <style type="text/css"><![CDATA[.connection{stroke-width:0.6 !important;}]]></style>
     </defs>
     <g id="main" transform="scale(1,-1)">
         <rect class="boundary" height="138" id="core_boundary" width="138" x="0" y="0"/>
         <g id="main_shapes">
+            <use id="io_left_0__1_" x="0.0" xlink:href="#io_left" y="14.0"/>
+            <use id="io_left_0__2_" x="0.0" xlink:href="#io_left" y="28.0"/>
+            <use id="io_left_0__3_" x="0.0" xlink:href="#io_left" y="42.0"/>
+            <use id="io_left_0__4_" x="0.0" xlink:href="#io_left" y="56.0"/>
+            <use id="io_left_0__5_" x="0.0" xlink:href="#io_left" y="70.0"/>
+            <use id="io_left_0__6_" x="0.0" xlink:href="#io_left" y="84.0"/>
+            <use id="io_left_0__7_" x="0.0" xlink:href="#io_left" y="98.0"/>
+            <use id="io_left_0__8_" x="0.0" xlink:href="#io_left" y="112.0"/>
             <use id="sb_0__0_" x="10" xlink:href="#sb01" y="10"/>
             <use id="cby_0__1_" x="10" xlink:href="#cby" y="14.0"/>
             <use id="sb_0__1_" x="10" xlink:href="#sb02" y="24"/>
@@ -296,6 +109,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="sb_0__7_" x="10" xlink:href="#sb02" y="108"/>
             <use id="cby_0__8_" x="10" xlink:href="#cby" y="112.0"/>
             <use id="sb_0__8_" x="10" xlink:href="#sb03" y="122"/>
+            <use id="io_bottom_1__0_" x="14.0" xlink:href="#io_bottom" y="0.0"/>
             <use id="cbx_1__0_" x="14.0" xlink:href="#cbx" y="10"/>
             <use id="clb_1__1_" x="14.0" xlink:href="#clb" y="14.0"/>
             <use id="cbx_1__1_" x="14.0" xlink:href="#cbx" y="24"/>
@@ -313,6 +127,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="cbx_1__7_" x="14.0" xlink:href="#cbx" y="108"/>
             <use id="clb_1__8_" x="14.0" xlink:href="#clb" y="112.0"/>
             <use id="cbx_1__8_" x="14.0" xlink:href="#cbx" y="122"/>
+            <use id="io_top_1__9_" x="14.0" xlink:href="#io_top" y="126.0"/>
             <use id="sb_1__0_" x="24" xlink:href="#sb08" y="10"/>
             <use id="cby_1__1_" x="24" xlink:href="#cby" y="14.0"/>
             <use id="sb_1__1_" x="24" xlink:href="#sb00" y="24"/>
@@ -330,6 +145,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="sb_1__7_" x="24" xlink:href="#sb00" y="108"/>
             <use id="cby_1__8_" x="24" xlink:href="#cby" y="112.0"/>
             <use id="sb_1__8_" x="24" xlink:href="#sb04" y="122"/>
+            <use id="io_bottom_2__0_" x="28.0" xlink:href="#io_bottom" y="0.0"/>
             <use id="cbx_2__0_" x="28.0" xlink:href="#cbx" y="10"/>
             <use id="clb_2__1_" x="28.0" xlink:href="#clb" y="14.0"/>
             <use id="cbx_2__1_" x="28.0" xlink:href="#cbx" y="24"/>
@@ -347,6 +163,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="cbx_2__7_" x="28.0" xlink:href="#cbx" y="108"/>
             <use id="clb_2__8_" x="28.0" xlink:href="#clb" y="112.0"/>
             <use id="cbx_2__8_" x="28.0" xlink:href="#cbx" y="122"/>
+            <use id="io_top_2__9_" x="28.0" xlink:href="#io_top" y="126.0"/>
             <use id="sb_2__0_" x="38" xlink:href="#sb08" y="10"/>
             <use id="cby_2__1_" x="38" xlink:href="#cby" y="14.0"/>
             <use id="sb_2__1_" x="38" xlink:href="#sb00" y="24"/>
@@ -364,6 +181,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="sb_2__7_" x="38" xlink:href="#sb00" y="108"/>
             <use id="cby_2__8_" x="38" xlink:href="#cby" y="112.0"/>
             <use id="sb_2__8_" x="38" xlink:href="#sb04" y="122"/>
+            <use id="io_bottom_3__0_" x="42.0" xlink:href="#io_bottom" y="0.0"/>
             <use id="cbx_3__0_" x="42.0" xlink:href="#cbx" y="10"/>
             <use id="clb_3__1_" x="42.0" xlink:href="#clb" y="14.0"/>
             <use id="cbx_3__1_" x="42.0" xlink:href="#cbx" y="24"/>
@@ -381,6 +199,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="cbx_3__7_" x="42.0" xlink:href="#cbx" y="108"/>
             <use id="clb_3__8_" x="42.0" xlink:href="#clb" y="112.0"/>
             <use id="cbx_3__8_" x="42.0" xlink:href="#cbx" y="122"/>
+            <use id="io_top_3__9_" x="42.0" xlink:href="#io_top" y="126.0"/>
             <use id="sb_3__0_" x="52" xlink:href="#sb08" y="10"/>
             <use id="cby_3__1_" x="52" xlink:href="#cby" y="14.0"/>
             <use id="sb_3__1_" x="52" xlink:href="#sb00" y="24"/>
@@ -398,6 +217,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="sb_3__7_" x="52" xlink:href="#sb00" y="108"/>
             <use id="cby_3__8_" x="52" xlink:href="#cby" y="112.0"/>
             <use id="sb_3__8_" x="52" xlink:href="#sb04" y="122"/>
+            <use id="io_bottom_4__0_" x="56.0" xlink:href="#io_bottom" y="0.0"/>
             <use id="cbx_4__0_" x="56.0" xlink:href="#cbx" y="10"/>
             <use id="clb_4__1_" x="56.0" xlink:href="#clb" y="14.0"/>
             <use id="cbx_4__1_" x="56.0" xlink:href="#cbx" y="24"/>
@@ -415,6 +235,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="cbx_4__7_" x="56.0" xlink:href="#cbx" y="108"/>
             <use id="clb_4__8_" x="56.0" xlink:href="#clb" y="112.0"/>
             <use id="cbx_4__8_" x="56.0" xlink:href="#cbx" y="122"/>
+            <use id="io_top_4__9_" x="56.0" xlink:href="#io_top" y="126.0"/>
             <use id="sb_4__0_" x="66" xlink:href="#sb08" y="10"/>
             <use id="cby_4__1_" x="66" xlink:href="#cby" y="14.0"/>
             <use id="sb_4__1_" x="66" xlink:href="#sb00" y="24"/>
@@ -432,6 +253,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="sb_4__7_" x="66" xlink:href="#sb00" y="108"/>
             <use id="cby_4__8_" x="66" xlink:href="#cby" y="112.0"/>
             <use id="sb_4__8_" x="66" xlink:href="#sb04" y="122"/>
+            <use id="io_bottom_5__0_" x="70.0" xlink:href="#io_bottom" y="0.0"/>
             <use id="cbx_5__0_" x="70.0" xlink:href="#cbx" y="10"/>
             <use id="clb_5__1_" x="70.0" xlink:href="#clb" y="14.0"/>
             <use id="cbx_5__1_" x="70.0" xlink:href="#cbx" y="24"/>
@@ -449,6 +271,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="cbx_5__7_" x="70.0" xlink:href="#cbx" y="108"/>
             <use id="clb_5__8_" x="70.0" xlink:href="#clb" y="112.0"/>
             <use id="cbx_5__8_" x="70.0" xlink:href="#cbx" y="122"/>
+            <use id="io_top_5__9_" x="70.0" xlink:href="#io_top" y="126.0"/>
             <use id="sb_5__0_" x="80" xlink:href="#sb08" y="10"/>
             <use id="cby_5__1_" x="80" xlink:href="#cby" y="14.0"/>
             <use id="sb_5__1_" x="80" xlink:href="#sb00" y="24"/>
@@ -466,6 +289,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="sb_5__7_" x="80" xlink:href="#sb00" y="108"/>
             <use id="cby_5__8_" x="80" xlink:href="#cby" y="112.0"/>
             <use id="sb_5__8_" x="80" xlink:href="#sb04" y="122"/>
+            <use id="io_bottom_6__0_" x="84.0" xlink:href="#io_bottom" y="0.0"/>
             <use id="cbx_6__0_" x="84.0" xlink:href="#cbx" y="10"/>
             <use id="clb_6__1_" x="84.0" xlink:href="#clb" y="14.0"/>
             <use id="cbx_6__1_" x="84.0" xlink:href="#cbx" y="24"/>
@@ -483,6 +307,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="cbx_6__7_" x="84.0" xlink:href="#cbx" y="108"/>
             <use id="clb_6__8_" x="84.0" xlink:href="#clb" y="112.0"/>
             <use id="cbx_6__8_" x="84.0" xlink:href="#cbx" y="122"/>
+            <use id="io_top_6__9_" x="84.0" xlink:href="#io_top" y="126.0"/>
             <use id="sb_6__0_" x="94" xlink:href="#sb08" y="10"/>
             <use id="cby_6__1_" x="94" xlink:href="#cby" y="14.0"/>
             <use id="sb_6__1_" x="94" xlink:href="#sb00" y="24"/>
@@ -500,6 +325,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="sb_6__7_" x="94" xlink:href="#sb00" y="108"/>
             <use id="cby_6__8_" x="94" xlink:href="#cby" y="112.0"/>
             <use id="sb_6__8_" x="94" xlink:href="#sb04" y="122"/>
+            <use id="io_bottom_7__0_" x="98.0" xlink:href="#io_bottom" y="0.0"/>
             <use id="cbx_7__0_" x="98.0" xlink:href="#cbx" y="10"/>
             <use id="clb_7__1_" x="98.0" xlink:href="#clb" y="14.0"/>
             <use id="cbx_7__1_" x="98.0" xlink:href="#cbx" y="24"/>
@@ -517,6 +343,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="cbx_7__7_" x="98.0" xlink:href="#cbx" y="108"/>
             <use id="clb_7__8_" x="98.0" xlink:href="#clb" y="112.0"/>
             <use id="cbx_7__8_" x="98.0" xlink:href="#cbx" y="122"/>
+            <use id="io_top_7__9_" x="98.0" xlink:href="#io_top" y="126.0"/>
             <use id="sb_7__0_" x="108" xlink:href="#sb08" y="10"/>
             <use id="cby_7__1_" x="108" xlink:href="#cby" y="14.0"/>
             <use id="sb_7__1_" x="108" xlink:href="#sb00" y="24"/>
@@ -534,6 +361,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="sb_7__7_" x="108" xlink:href="#sb00" y="108"/>
             <use id="cby_7__8_" x="108" xlink:href="#cby" y="112.0"/>
             <use id="sb_7__8_" x="108" xlink:href="#sb04" y="122"/>
+            <use id="io_bottom_8__0_" x="112.0" xlink:href="#io_bottom" y="0.0"/>
             <use id="cbx_8__0_" x="112.0" xlink:href="#cbx" y="10"/>
             <use id="clb_8__1_" x="112.0" xlink:href="#clb" y="14.0"/>
             <use id="cbx_8__1_" x="112.0" xlink:href="#cbx" y="24"/>
@@ -551,6 +379,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="cbx_8__7_" x="112.0" xlink:href="#cbx" y="108"/>
             <use id="clb_8__8_" x="112.0" xlink:href="#clb" y="112.0"/>
             <use id="cbx_8__8_" x="112.0" xlink:href="#cbx" y="122"/>
+            <use id="io_top_8__9_" x="112.0" xlink:href="#io_top" y="126.0"/>
             <use id="sb_8__0_" x="122" xlink:href="#sb07" y="10"/>
             <use id="cby_8__1_" x="122" xlink:href="#cby" y="14.0"/>
             <use id="sb_8__1_" x="122" xlink:href="#sb06" y="24"/>
@@ -568,72 +397,24 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <use id="sb_8__7_" x="122" xlink:href="#sb06" y="108"/>
             <use id="cby_8__8_" x="122" xlink:href="#cby" y="112.0"/>
             <use id="sb_8__8_" x="122" xlink:href="#sb05" y="122"/>
-            <use x="10" xlink:href="#sides_merged_at_0_2" y="28.0"/>
-            <use x="112.0" xlink:href="#sides_merged_at_8_2" y="28.0"/>
-            <use x="10" xlink:href="#sides_merged_at_0_3" y="42.0"/>
-            <use x="112.0" xlink:href="#sides_merged_at_8_3" y="42.0"/>
-            <use x="10" xlink:href="#sides_merged_at_0_4" y="56.0"/>
-            <use x="112.0" xlink:href="#sides_merged_at_8_4" y="56.0"/>
-            <use x="10" xlink:href="#sides_merged_at_0_5" y="70.0"/>
-            <use x="112.0" xlink:href="#sides_merged_at_8_5" y="70.0"/>
-            <use x="10" xlink:href="#sides_merged_at_0_6" y="84.0"/>
-            <use x="112.0" xlink:href="#sides_merged_at_8_6" y="84.0"/>
-            <use x="10" xlink:href="#sides_merged_at_0_7" y="98.0"/>
-            <use x="112.0" xlink:href="#sides_merged_at_8_7" y="98.0"/>
-            <use x="28.0" xlink:href="#sides_merged_at_2_0" y="10"/>
-            <use x="28.0" xlink:href="#sides_merged_at_2_8" y="112.0"/>
-            <use x="42.0" xlink:href="#sides_merged_at_3_0" y="10"/>
-            <use x="42.0" xlink:href="#sides_merged_at_3_8" y="112.0"/>
-            <use x="56.0" xlink:href="#sides_merged_at_4_0" y="10"/>
-            <use x="56.0" xlink:href="#sides_merged_at_4_8" y="112.0"/>
-            <use x="70.0" xlink:href="#sides_merged_at_5_0" y="10"/>
-            <use x="70.0" xlink:href="#sides_merged_at_5_8" y="112.0"/>
-            <use x="84.0" xlink:href="#sides_merged_at_6_0" y="10"/>
-            <use x="84.0" xlink:href="#sides_merged_at_6_8" y="112.0"/>
-            <use x="98.0" xlink:href="#sides_merged_at_7_0" y="10"/>
-            <use x="98.0" xlink:href="#sides_merged_at_7_8" y="112.0"/>
-            <use x="28.0" xlink:href="#main_tile_merged_2_2" y="28.0"/>
-            <use x="28.0" xlink:href="#main_tile_merged_2_3" y="42.0"/>
-            <use x="28.0" xlink:href="#main_tile_merged_2_4" y="56.0"/>
-            <use x="28.0" xlink:href="#main_tile_merged_2_5" y="70.0"/>
-            <use x="28.0" xlink:href="#main_tile_merged_2_6" y="84.0"/>
-            <use x="28.0" xlink:href="#main_tile_merged_2_7" y="98.0"/>
-            <use x="42.0" xlink:href="#main_tile_merged_3_2" y="28.0"/>
-            <use x="42.0" xlink:href="#main_tile_merged_3_3" y="42.0"/>
-            <use x="42.0" xlink:href="#main_tile_merged_3_4" y="56.0"/>
-            <use x="42.0" xlink:href="#main_tile_merged_3_5" y="70.0"/>
-            <use x="42.0" xlink:href="#main_tile_merged_3_6" y="84.0"/>
-            <use x="42.0" xlink:href="#main_tile_merged_3_7" y="98.0"/>
-            <use x="56.0" xlink:href="#main_tile_merged_4_2" y="28.0"/>
-            <use x="56.0" xlink:href="#main_tile_merged_4_3" y="42.0"/>
-            <use x="56.0" xlink:href="#main_tile_merged_4_4" y="56.0"/>
-            <use x="56.0" xlink:href="#main_tile_merged_4_5" y="70.0"/>
-            <use x="56.0" xlink:href="#main_tile_merged_4_6" y="84.0"/>
-            <use x="56.0" xlink:href="#main_tile_merged_4_7" y="98.0"/>
-            <use x="70.0" xlink:href="#main_tile_merged_5_2" y="28.0"/>
-            <use x="70.0" xlink:href="#main_tile_merged_5_3" y="42.0"/>
-            <use x="70.0" xlink:href="#main_tile_merged_5_4" y="56.0"/>
-            <use x="70.0" xlink:href="#main_tile_merged_5_5" y="70.0"/>
-            <use x="70.0" xlink:href="#main_tile_merged_5_6" y="84.0"/>
-            <use x="70.0" xlink:href="#main_tile_merged_5_7" y="98.0"/>
-            <use x="84.0" xlink:href="#main_tile_merged_6_2" y="28.0"/>
-            <use x="84.0" xlink:href="#main_tile_merged_6_3" y="42.0"/>
-            <use x="84.0" xlink:href="#main_tile_merged_6_4" y="56.0"/>
-            <use x="84.0" xlink:href="#main_tile_merged_6_5" y="70.0"/>
-            <use x="84.0" xlink:href="#main_tile_merged_6_6" y="84.0"/>
-            <use x="84.0" xlink:href="#main_tile_merged_6_7" y="98.0"/>
-            <use x="98.0" xlink:href="#main_tile_merged_7_2" y="28.0"/>
-            <use x="98.0" xlink:href="#main_tile_merged_7_3" y="42.0"/>
-            <use x="98.0" xlink:href="#main_tile_merged_7_4" y="56.0"/>
-            <use x="98.0" xlink:href="#main_tile_merged_7_5" y="70.0"/>
-            <use x="98.0" xlink:href="#main_tile_merged_7_6" y="84.0"/>
-            <use x="98.0" xlink:href="#main_tile_merged_7_7" y="98.0"/>
-            <use x="10" xlink:href="#corner_merged_ltop" y="112.0"/>
-            <use x="112.0" xlink:href="#corner_merged_rtop" y="112.0"/>
-            <use x="112.0" xlink:href="#corner_merged_rbottom" y="10"/>
-            <use x="10.0" xlink:href="#corner_merged_lbottom" y="10.0"/>
+            <use id="io_right_9__1_" x="126.0" xlink:href="#io_right" y="14.0"/>
+            <use id="io_right_9__2_" x="126.0" xlink:href="#io_right" y="28.0"/>
+            <use id="io_right_9__3_" x="126.0" xlink:href="#io_right" y="42.0"/>
+            <use id="io_right_9__4_" x="126.0" xlink:href="#io_right" y="56.0"/>
+            <use id="io_right_9__5_" x="126.0" xlink:href="#io_right" y="70.0"/>
+            <use id="io_right_9__6_" x="126.0" xlink:href="#io_right" y="84.0"/>
+            <use id="io_right_9__7_" x="126.0" xlink:href="#io_right" y="98.0"/>
+            <use id="io_right_9__8_" x="126.0" xlink:href="#io_right" y="112.0"/>
         </g>
         <g id="main_text">
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="5.0" y="-19.0">io_left_0__1_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="5.0" y="-33.0">io_left_0__2_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="5.0" y="-47.0">io_left_0__3_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="5.0" y="-61.0">io_left_0__4_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="5.0" y="-75.0">io_left_0__5_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="5.0" y="-89.0">io_left_0__6_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="5.0" y="-103.0">io_left_0__7_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="5.0" y="-117.0">io_left_0__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="12.0" y="-12.0">sb_0__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="12.0" y="-19.0">cby_0__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="12.0" y="-26.0">sb_0__1_</text>
@@ -651,6 +432,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="12.0" y="-110.0">sb_0__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="12.0" y="-117.0">cby_0__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="12.0" y="-124.0">sb_0__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="19.0" y="-5.0">io_bottom_1__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="19.0" y="-12.0">cbx_1__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="19.0" y="-19.0">clb_1__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="19.0" y="-26.0">cbx_1__1_</text>
@@ -668,6 +450,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="19.0" y="-110.0">cbx_1__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="19.0" y="-117.0">clb_1__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="19.0" y="-124.0">cbx_1__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="19.0" y="-131.0">io_top_1__9_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="26.0" y="-12.0">sb_1__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="26.0" y="-19.0">cby_1__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="26.0" y="-26.0">sb_1__1_</text>
@@ -685,6 +468,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="26.0" y="-110.0">sb_1__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="26.0" y="-117.0">cby_1__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="26.0" y="-124.0">sb_1__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="33.0" y="-5.0">io_bottom_2__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="33.0" y="-12.0">cbx_2__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="33.0" y="-19.0">clb_2__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="33.0" y="-26.0">cbx_2__1_</text>
@@ -702,6 +486,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="33.0" y="-110.0">cbx_2__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="33.0" y="-117.0">clb_2__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="33.0" y="-124.0">cbx_2__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="33.0" y="-131.0">io_top_2__9_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="40.0" y="-12.0">sb_2__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="40.0" y="-19.0">cby_2__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="40.0" y="-26.0">sb_2__1_</text>
@@ -719,6 +504,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="40.0" y="-110.0">sb_2__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="40.0" y="-117.0">cby_2__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="40.0" y="-124.0">sb_2__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="47.0" y="-5.0">io_bottom_3__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="47.0" y="-12.0">cbx_3__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="47.0" y="-19.0">clb_3__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="47.0" y="-26.0">cbx_3__1_</text>
@@ -736,6 +522,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="47.0" y="-110.0">cbx_3__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="47.0" y="-117.0">clb_3__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="47.0" y="-124.0">cbx_3__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="47.0" y="-131.0">io_top_3__9_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="54.0" y="-12.0">sb_3__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="54.0" y="-19.0">cby_3__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="54.0" y="-26.0">sb_3__1_</text>
@@ -753,6 +540,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="54.0" y="-110.0">sb_3__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="54.0" y="-117.0">cby_3__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="54.0" y="-124.0">sb_3__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="61.0" y="-5.0">io_bottom_4__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="61.0" y="-12.0">cbx_4__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="61.0" y="-19.0">clb_4__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="61.0" y="-26.0">cbx_4__1_</text>
@@ -770,6 +558,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="61.0" y="-110.0">cbx_4__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="61.0" y="-117.0">clb_4__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="61.0" y="-124.0">cbx_4__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="61.0" y="-131.0">io_top_4__9_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="68.0" y="-12.0">sb_4__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="68.0" y="-19.0">cby_4__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="68.0" y="-26.0">sb_4__1_</text>
@@ -787,6 +576,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="68.0" y="-110.0">sb_4__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="68.0" y="-117.0">cby_4__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="68.0" y="-124.0">sb_4__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="75.0" y="-5.0">io_bottom_5__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="75.0" y="-12.0">cbx_5__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="75.0" y="-19.0">clb_5__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="75.0" y="-26.0">cbx_5__1_</text>
@@ -804,6 +594,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="75.0" y="-110.0">cbx_5__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="75.0" y="-117.0">clb_5__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="75.0" y="-124.0">cbx_5__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="75.0" y="-131.0">io_top_5__9_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="82.0" y="-12.0">sb_5__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="82.0" y="-19.0">cby_5__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="82.0" y="-26.0">sb_5__1_</text>
@@ -821,6 +612,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="82.0" y="-110.0">sb_5__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="82.0" y="-117.0">cby_5__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="82.0" y="-124.0">sb_5__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="89.0" y="-5.0">io_bottom_6__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="89.0" y="-12.0">cbx_6__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="89.0" y="-19.0">clb_6__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="89.0" y="-26.0">cbx_6__1_</text>
@@ -838,6 +630,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="89.0" y="-110.0">cbx_6__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="89.0" y="-117.0">clb_6__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="89.0" y="-124.0">cbx_6__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="89.0" y="-131.0">io_top_6__9_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="96.0" y="-12.0">sb_6__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="96.0" y="-19.0">cby_6__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="96.0" y="-26.0">sb_6__1_</text>
@@ -855,6 +648,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="96.0" y="-110.0">sb_6__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="96.0" y="-117.0">cby_6__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="96.0" y="-124.0">sb_6__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="103.0" y="-5.0">io_bottom_7__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="103.0" y="-12.0">cbx_7__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="103.0" y="-19.0">clb_7__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="103.0" y="-26.0">cbx_7__1_</text>
@@ -872,6 +666,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="103.0" y="-110.0">cbx_7__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="103.0" y="-117.0">clb_7__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="103.0" y="-124.0">cbx_7__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="103.0" y="-131.0">io_top_7__9_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="110.0" y="-12.0">sb_7__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="110.0" y="-19.0">cby_7__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="110.0" y="-26.0">sb_7__1_</text>
@@ -889,6 +684,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="110.0" y="-110.0">sb_7__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="110.0" y="-117.0">cby_7__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="110.0" y="-124.0">sb_7__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="117.0" y="-5.0">io_bottom_8__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="117.0" y="-12.0">cbx_8__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="117.0" y="-19.0">clb_8__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="117.0" y="-26.0">cbx_8__1_</text>
@@ -906,6 +702,7 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="117.0" y="-110.0">cbx_8__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="117.0" y="-117.0">clb_8__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="117.0" y="-124.0">cbx_8__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="117.0" y="-131.0">io_top_8__9_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="124.0" y="-12.0">sb_8__0_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="124.0" y="-19.0">cby_8__1_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="124.0" y="-26.0">sb_8__1_</text>
@@ -923,6 +720,135 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="124.0" y="-110.0">sb_8__7_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="124.0" y="-117.0">cby_8__8_</text>
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="124.0" y="-124.0">sb_8__8_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="131.0" y="-19.0">io_right_9__1_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="131.0" y="-33.0">io_right_9__2_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="131.0" y="-47.0">io_right_9__3_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="131.0" y="-61.0">io_right_9__4_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="131.0" y="-75.0">io_right_9__5_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="131.0" y="-89.0">io_right_9__6_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="131.0" y="-103.0">io_right_9__7_</text>
+            <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="131.0" y="-117.0">io_right_9__8_</text>
         </g>
     </g>
+    <g id="main" transform="scale(1.02,-1.02) translate(5.2, 5.2)">
+        <line class="connection top" stroke=" black" x1="0" x2="14" y1="69" y2="69"/>
+        <line class="connection same" stroke=" black" x1="14" x2="14" y1="69" y2="55"/>
+        <line class="connection same" stroke=" black" x1="14" x2="14" y1="55" y2="41"/>
+        <line class="connection same" stroke=" black" x1="14" x2="14" y1="41" y2="28"/>
+        <line class="connection same" stroke=" black" x1="14" x2="14" y1="28" y2="14"/>
+        <line class="connection same" stroke=" black" x1="14" x2="14" y1="69" y2="83"/>
+        <line class="connection same" stroke=" black" x1="14" x2="14" y1="83" y2="97"/>
+        <line class="connection same" stroke=" black" x1="14" x2="14" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="14" x2="28" y1="69" y2="69"/>
+        <line class="connection same" stroke=" black" x1="28" x2="28" y1="69" y2="55"/>
+        <line class="connection same" stroke=" black" x1="28" x2="28" y1="55" y2="41"/>
+        <line class="connection same" stroke=" black" x1="28" x2="28" y1="41" y2="28"/>
+        <line class="connection same" stroke=" black" x1="28" x2="28" y1="28" y2="14"/>
+        <line class="connection same" stroke=" black" x1="28" x2="28" y1="69" y2="83"/>
+        <line class="connection same" stroke=" black" x1="28" x2="28" y1="83" y2="97"/>
+        <line class="connection same" stroke=" black" x1="28" x2="28" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="28" x2="41" y1="69" y2="69"/>
+        <line class="connection same" stroke=" black" x1="41" x2="41" y1="69" y2="55"/>
+        <line class="connection same" stroke=" black" x1="41" x2="41" y1="55" y2="41"/>
+        <line class="connection same" stroke=" black" x1="41" x2="41" y1="41" y2="28"/>
+        <line class="connection same" stroke=" black" x1="41" x2="41" y1="28" y2="14"/>
+        <line class="connection same" stroke=" black" x1="41" x2="41" y1="69" y2="83"/>
+        <line class="connection same" stroke=" black" x1="41" x2="41" y1="83" y2="97"/>
+        <line class="connection same" stroke=" black" x1="41" x2="41" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="41" x2="55" y1="69" y2="69"/>
+        <line class="connection same" stroke=" black" x1="55" x2="55" y1="69" y2="55"/>
+        <line class="connection same" stroke=" black" x1="55" x2="55" y1="55" y2="41"/>
+        <line class="connection same" stroke=" black" x1="55" x2="55" y1="41" y2="28"/>
+        <line class="connection same" stroke=" black" x1="55" x2="55" y1="28" y2="14"/>
+        <line class="connection same" stroke=" black" x1="55" x2="55" y1="69" y2="83"/>
+        <line class="connection same" stroke=" black" x1="55" x2="55" y1="83" y2="97"/>
+        <line class="connection same" stroke=" black" x1="55" x2="55" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="55" x2="69" y1="69" y2="69"/>
+        <line class="connection same" stroke=" black" x1="69" x2="69" y1="69" y2="55"/>
+        <line class="connection same" stroke=" black" x1="69" x2="69" y1="55" y2="41"/>
+        <line class="connection same" stroke=" black" x1="69" x2="69" y1="41" y2="28"/>
+        <line class="connection same" stroke=" black" x1="69" x2="69" y1="28" y2="14"/>
+        <line class="connection same" stroke=" black" x1="69" x2="69" y1="69" y2="83"/>
+        <line class="connection same" stroke=" black" x1="69" x2="69" y1="83" y2="97"/>
+        <line class="connection same" stroke=" black" x1="69" x2="69" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="69" x2="83" y1="69" y2="69"/>
+        <line class="connection same" stroke=" black" x1="83" x2="83" y1="69" y2="55"/>
+        <line class="connection same" stroke=" black" x1="83" x2="83" y1="55" y2="41"/>
+        <line class="connection same" stroke=" black" x1="83" x2="83" y1="41" y2="28"/>
+        <line class="connection same" stroke=" black" x1="83" x2="83" y1="28" y2="14"/>
+        <line class="connection same" stroke=" black" x1="83" x2="83" y1="69" y2="83"/>
+        <line class="connection same" stroke=" black" x1="83" x2="83" y1="83" y2="97"/>
+        <line class="connection same" stroke=" black" x1="83" x2="83" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="83" x2="97" y1="69" y2="69"/>
+        <line class="connection same" stroke=" black" x1="97" x2="97" y1="69" y2="55"/>
+        <line class="connection same" stroke=" black" x1="97" x2="97" y1="55" y2="41"/>
+        <line class="connection same" stroke=" black" x1="97" x2="97" y1="41" y2="28"/>
+        <line class="connection same" stroke=" black" x1="97" x2="97" y1="28" y2="14"/>
+        <line class="connection same" stroke=" black" x1="97" x2="97" y1="69" y2="83"/>
+        <line class="connection same" stroke=" black" x1="97" x2="97" y1="83" y2="97"/>
+        <line class="connection same" stroke=" black" x1="97" x2="97" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="97" x2="110" y1="69" y2="69"/>
+        <line class="connection same" stroke=" black" x1="110" x2="110" y1="69" y2="55"/>
+        <line class="connection same" stroke=" black" x1="110" x2="110" y1="55" y2="41"/>
+        <line class="connection same" stroke=" black" x1="110" x2="110" y1="41" y2="28"/>
+        <line class="connection same" stroke=" black" x1="110" x2="110" y1="28" y2="14"/>
+        <line class="connection same" stroke=" black" x1="110" x2="110" y1="69" y2="83"/>
+        <line class="connection same" stroke=" black" x1="110" x2="110" y1="83" y2="97"/>
+        <line class="connection same" stroke=" black" x1="110" x2="110" y1="97" y2="110"/>
+        <g id="text">
+            <text alignment-baseline="middle" class="moduleLabel" fill="black" font-size="11.040000000000001" text-anchor="middle" transform="scale(1,-1)" x="62.1" y="6.9">8 x 8 FPGA </text>
+        </g>
+    </g>
+    <g id="markers" transform="scale(1.02,-1.02) translate(5.2, 5.2)">
+        <line class="gridmarker" x1="7" x2="7" y1="7" y2="117"/>
+        <line class="gridmarker" x1="21" x2="21" y1="7" y2="117"/>
+        <line class="gridmarker" x1="34" x2="34" y1="7" y2="117"/>
+        <line class="gridmarker" x1="48" x2="48" y1="7" y2="117"/>
+        <line class="gridmarker" x1="62" x2="62" y1="7" y2="117"/>
+        <line class="gridmarker" x1="76" x2="76" y1="7" y2="117"/>
+        <line class="gridmarker" x1="90" x2="90" y1="7" y2="117"/>
+        <line class="gridmarker" x1="104" x2="104" y1="7" y2="117"/>
+        <line class="gridmarker" x1="117" x2="117" y1="7" y2="117"/>
+        <line class="gridmarker" x1="7" x2="117" y1="7" y2="7"/>
+        <line class="gridmarker" x1="7" x2="117" y1="21" y2="21"/>
+        <line class="gridmarker" x1="7" x2="117" y1="34" y2="34"/>
+        <line class="gridmarker" x1="7" x2="117" y1="48" y2="48"/>
+        <line class="gridmarker" x1="7" x2="117" y1="62" y2="62"/>
+        <line class="gridmarker" x1="7" x2="117" y1="76" y2="76"/>
+        <line class="gridmarker" x1="7" x2="117" y1="90" y2="90"/>
+        <line class="gridmarker" x1="7" x2="117" y1="104" y2="104"/>
+        <line class="gridmarker" x1="7" x2="117" y1="117" y2="117"/>
+    </g>
+    <marker id="id6" markerHeight="10" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="30" refY="30" viewBox="0 0 120 120">
+        <path d="M 0 0 L 60 30 L 0 60 z" fill="blue"/>
+    </marker>
+    <marker id="id7" markerHeight="10" markerUnits="strokeWidth" markerWidth="5" orient="auto" viewBox="-15 -15 30 30">
+        <rect fill="green" height="20" width="20" x="-10" y="-10"/>
+        <path d="M 8 0 L -8 8 L -8 -8 z" fill="blue"/>
+    </marker>
+    <marker id="id8" markerHeight="10" markerUnits="strokeWidth" markerWidth="5" orient="auto" viewBox="-15 -15 30 30">
+        <rect fill="green" height="20" width="20" x="-10" y="-10"/>
+        <path d="M 8 0 L -8 8 L -8 -8 z" fill="blue"/>
+    </marker>
+    <marker id="id9" markerHeight="10" markerUnits="strokeWidth" markerWidth="5" orient="auto" viewBox="-15 -15 30 30">
+        <line stroke="red" stroke-width="5px" x1="0" x2="0" y1="-15" y2="15"/>
+    </marker>
+    <style type="text/css"><![CDATA[
+                text{font-family: Lato;}
+                span{text-anchor: "middle"; alignment_baseline: "middle"}
+                .gridLabels{fill: grey;font-style: italic;font-weight: 900}
+                .gridmarker{stroke:red; stroke-width:0.2; opacity: 0.7;}
+                
+                .connection{ opacity: 0.5;
+                            marker-end:url(#id6);
+                            stroke-width:1.2;}
+                .down{stroke-dasharray: 2;
+                    marker-end:url(#id8);}
+                .up{stroke-dasharray: 2;
+                    marker-start:url(#id7);}
+                .top{stroke-dasharray: 2;
+                    marker-start:url(#id9);}
+                .buffer{ filter: hue-rotate(90deg);
+                          stroke-width:2; stroke-dasharray:1;}
+                ]]></style>
 </svg>

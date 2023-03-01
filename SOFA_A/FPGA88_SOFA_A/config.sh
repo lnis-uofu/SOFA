@@ -17,6 +17,7 @@ export_ GENERATE_FABRIC_KEY  = "../CommonFiles/render_sofa_a_fabric_key.py"
 export_ NETLIST_SYNTH_SCRIPT = "../CommonFiles/sofa_netlist_synth_script.sh"
 export_ RESTRUCT_NETLIST     = "../CommonFiles/restructure_fabric_sofa_a.py"
 export_ CUSTOM_MODULES_LIST  = "./${TASK_DIR_NAME}/CustomModules/custom_module.txt"
+export_ GLOBAL_FT_SCRIPT     = "../CommonFiles/generate_global_signals_connectivity.py"
 
 # Complete Chip (fpga_top) or eFPGA (fpga_core)
 export_ DESIGN_NAME          = fpga_core

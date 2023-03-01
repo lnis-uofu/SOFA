@@ -49,7 +49,15 @@ def main():
 
     dwg.save(pretty=True, indent=4)
     pickle.dump(dwg, open(f"{PICKLE_DIR}/{PROJ_NAME}_render.pickle", "wb"))
+    dwg.save(pretty=True, indent=4)
+    pickle.dump(dwg, open(f"{PICKLE_DIR}/{PROJ_NAME}_render.pickle", "wb"))
     logger.info("Saving file %s/%s_render.svg", SVG_DIR, PROJ_NAME)
+    pickle.dump(fpga, open(
+        f"{PICKLE_DIR}/{PROJ_NAME}_fpgagridgen_pre_tile_grid.pickle", "wb"))
+
+    dwg = fpga.render_layout(filename="_tmp.svg", grid_io=False)
+    pickle.dump(fpga, open(
+        f"{PICKLE_DIR}/{PROJ_NAME}_fpgagridgen_pre_tile.pickle", "wb"))
 
     # ============ Modify your floorplan here ============
     # Adding stylesheet
