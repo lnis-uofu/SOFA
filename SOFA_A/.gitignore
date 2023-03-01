@@ -1,0 +1,24 @@
+# Ignore all
+*
+# Unignore all with extensions
+!*.*
+# Unignore all dirs
+!*/
+# Unignore makefiles
+!Makefile*
+# Ignore directories starting with . in from root directory
+/.*/
+# All files starting underscroll
+_*.*
+# All directories starting underscroll
+_*
+# Unignore python init_file
+!__init__.py
+
+
+# OpenFPGA Task ignore files
+task.conf
+!*_pnr/*_task/**
+**/*_task/latest
+**/*_task/run*
+**/release/pickle/

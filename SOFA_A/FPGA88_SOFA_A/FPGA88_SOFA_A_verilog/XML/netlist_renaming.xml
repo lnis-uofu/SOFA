@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Netlist naming fix-up report -->
+<netlist>
+  <blocks>
+    <block previous="out:c" current="out_c"/>
+  </blocks>
+  <nets>
+	</nets>
+</netlist>

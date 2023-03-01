@@ -16,3 +16,4 @@
 **/*_task/run**
 **/*_task/config/task.conf
 .vscode/
+LoadTools.sh

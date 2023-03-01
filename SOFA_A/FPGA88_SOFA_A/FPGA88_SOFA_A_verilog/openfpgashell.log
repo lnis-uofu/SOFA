@@ -1,0 +1,1322 @@
+--line removed-- openfpga -batch -f top_run.openfpga
+Reading script file top_run.openfpga...
+
+            ___                   _____ ____   ____    _     
+           / _ \ _ __   ___ _ __ |  ___|  _ \ / ___|  / \    
+          | | | | '_ \ / _ \ '_ \| |_  | |_) | |  _  / _ \   
+          | |_| | |_) |  __/ | | |  _| |  __/| |_| |/ ___ \  
+           \___/| .__/ \___|_| |_|_|   |_|    \____/_/   \_\ 
+                |_|                                          
+
+               OpenFPGA: An Open-source FPGA IP Generator
+                     Versatile Place and Route (VPR)
+                           FPGA-Verilog
+                           FPGA-SPICE
+                           FPGA-SDC
+                           FPGA-Bitstream
+
+             This is a free software under the MIT License
+
+             Copyright (c) 2018 LNIS - The University of Utah
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+
+Command line to execute: vpr --line removed--   --skip_sync_clustering_and_routing_results on
+VPR FPGA Placement and Routing.
+Version: 8.1.0-dev+9e53e9a0a
+Revision: v8.0.0-7093-g9e53e9a0a
+--line removed--
+Compiler: GNU 8.4.0 on Linux-4.18.0-372.13.1.el8_6.x86_64 x86_64
+Build Info: release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+vpr --line removed-- --skip_sync_clustering_and_routing_results on
+
+
+Architecture file: --line removed--
+Circuit name: top
+
+# Loading Architecture Description
+Warning 1: Model 'io' input port 'outpad' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 2: Model 'io' output port 'inpad' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 3: Model 'frac_lut4' input port 'in' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 4: Model 'frac_lut4' output port 'lut4_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 5: Model 'frac_lut4' output port 'lut3_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 6: Model 'frac_lut4' output port 'lut2_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 7: Model 'carry_follower' input port 'cin' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 8: Model 'carry_follower' input port 'b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 9: Model 'carry_follower' input port 'a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 10: Model 'carry_follower' output port 'cout' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+--line removed--
+
+Timing analysis: ON
+Circuit netlist file: top.net
+Circuit placement file: top.place
+Circuit routing file: top.route
+Circuit SDC file: top.sdc
+Vpr floorplanning constraints file: not specified
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+VPR was run with the following options:
+
+NetlistOpts.abosrb_buffer_luts            : false
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+NetlistOpts.netlist_verbosity             : 1
+NetlistOpts.const_gen_inference           : COMB_SEQ
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: CRITICALITY_TIMING_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.constraints_file: No constraints file given
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 60
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlacerOpts.delay_offset: 0.000000
+PlacerOpts.delay_ramp_delta_threshold: -1
+PlacerOpts.delay_ramp_slope: 0.000000
+PlacerOpts.tsu_rel_margin: 1.000000
+PlacerOpts.tsu_abs_margin: 0.000000
+PlacerOpts.post_place_timing_report_file: 
+PlacerOpts.allowed_tiles_for_delay_model: 
+PlacerOpts.delay_model_reducer: MIN
+PlacerOpts.delay_model_type: DELTA
+PlacerOpts.rlim_escape_fraction: 0.000000
+PlacerOpts.move_stats_file: 
+PlacerOpts.placement_saves_per_temperature: 0
+PlacerOpts.effort_scaling: CIRCUIT
+PlacerOpts.place_delta_delay_matrix_calculation_method: ASTAR_ROUTE
+PlaceOpts.seed: 0
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 0.500000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.flat_routing: false
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 60
+RouterOpts.check_route: FULL
+RouterOpts.trim_empty_chan: false
+RouterOpts.trim_obs_chan: false
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.do_check_rr_graph: true
+RouterOpts.verify_binary_search: false
+RouterOpts.min_channel_width_hint: 0
+RouterOpts.read_rr_edge_metadata: false
+RouterOpts.exit_after_first_routing_iteration: false
+RouterOpts.astar_fac: 1.200000
+RouterOpts.router_profiler_astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.init_wirelength_abort_threshold: 0.850000
+RouterOpts.save_routing_per_iteration: false
+RouterOpts.congested_routing_iteration_threshold_frac: 1.000000
+RouterOpts.high_fanout_threshold: 64
+RouterOpts.router_debug_net: -2
+RouterOpts.router_debug_sink_rr: -2
+RouterOpts.router_debug_iteration: -2
+RouterOpts.max_convergence_count: 1
+RouterOpts.reconvergence_cpd_threshold: 0.990000
+RouterOpts.update_lower_bound_delays: true
+RouterOpts.first_iteration_timing_report_file: 
+RouterOpts.incr_reroute_delay_ripup: AUTO
+RouterOpts.route_bb_update: DYNAMIC
+RouterOpts.lookahead_type: MAP
+RouterOpts.initial_timing: LOOKAHEAD
+RouterOpts.router_heap: BINARY_HEAP
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+AnalysisOpts.timing_report_npaths: 100
+AnalysisOpts.timing_report_skew: false
+AnalysisOpts.echo_dot_timing_graph_node: -1
+AnalysisOpts.timing_report_detail: NETLIST
+AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
+AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
+
+# Building complex block graph
+Warning 11: [LINE 607] false logically-equivalent pin clb[0].I0[1].
+Warning 12: [LINE 611] false logically-equivalent pin clb[0].I1[1].
+Warning 13: [LINE 615] false logically-equivalent pin clb[0].I2[1].
+Warning 14: [LINE 619] false logically-equivalent pin clb[0].I3[1].
+Warning 15: [LINE 623] false logically-equivalent pin clb[0].I4[1].
+Warning 16: [LINE 627] false logically-equivalent pin clb[0].I5[1].
+Warning 17: [LINE 631] false logically-equivalent pin clb[0].I6[1].
+Warning 18: [LINE 635] false logically-equivalent pin clb[0].I7[1].
+--line removed--
+Circuit file: top.blif
+# Load circuit
+--line removed--
+# Clean circuit
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 0
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 0
+Swept block(s)      : 0
+Constant Pins Marked: 0
+--line removed--
+# Compress circuit
+--line removed--
+# Verify circuit
+--line removed--
+Circuit Statistics:
+  Blocks: 4
+    .input :       2
+    .output:       1
+    4-LUT  :       1
+  Nets  : 3
+    Avg Fanout:     1.0
+    Max Fanout:     1.0
+    Min Fanout:     1.0
+  Netlist Clocks: 0
+# Build Timing Graph
+  Timing Graph Nodes: 6
+  Timing Graph Edges: 5
+  Timing Graph Levels: 4
+--line removed--
+Netlist contains 0 clocks
+# Load Timing Constraints
+
+SDC file 'top.sdc' not found
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on a virtual external clock 'virtual_io_clock'
+   * optimize virtual clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'virtual_io_clock' (Virtual Clock)
+
+--line removed--
+# Packing
+Warning 19: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 20: Ambiguous block type specification at grid location (0,9). Existing block type 'io_top' at (0,9) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 21: Ambiguous block type specification at grid location (9,0). Existing block type 'io_bottom' at (9,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 22: Ambiguous block type specification at grid location (9,9). Existing block type 'io_top' at (9,9) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Begin packing 'top.blif'.
+
+After removing unused inputs...
+	total blocks: 4, total nets: 3, total inputs: 2, total outputs: 1
+Begin prepacking.
+0 attraction groups were created during prepacking.
+Finish prepacking.
+Using inter-cluster delay: 2.344e-08
+Packing with pin utilization targets: io_top:1,1 io_right:1,1 io_bottom:1,1 io_left:1,1 clb:0.8,1
+Packing with high fanout thresholds: io_top:128 io_right:128 io_bottom:128 io_left:128 clb:32
+Starting Clustering - Clustering Progress: 
+-------------------   --------------------------   ---------
+Molecules processed   Number of clusters created   FPGA size
+-------------------   --------------------------   ---------
+Warning 23: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 24: Ambiguous block type specification at grid location (0,9). Existing block type 'io_top' at (0,9) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 25: Ambiguous block type specification at grid location (9,0). Existing block type 'io_bottom' at (9,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 26: Ambiguous block type specification at grid location (9,9). Existing block type 'io_top' at (9,9) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+
+Logic Element (fle) detailed count:
+  Total number of Logic Elements used : 1
+  LEs used for logic and registers    : 0
+  LEs used for logic only             : 1
+  LEs used for registers only         : 0
+
+Incr Slack updates 1 in 2.246e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.637e-06 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 1.825e-06 sec
+Warning 27: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 28: Ambiguous block type specification at grid location (0,9). Existing block type 'io_top' at (0,9) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 29: Ambiguous block type specification at grid location (9,0). Existing block type 'io_bottom' at (9,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 30: Ambiguous block type specification at grid location (9,9). Existing block type 'io_top' at (9,9) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+FPGA sized to 10 x 10 (FPGA88)
+Device Utilization: 0.02 (target 1.00)
+	Block Utilization: 0.02 Type: io
+	Block Utilization: 0.02 Type: clb
+
+Start the iterative improvement process
+the iterative improvement process is done
+Final Clustering Statistics: 
+----------   --------   ------------------------------------   --------------------------
+Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output pins used
+----------   --------   ------------------------------------   --------------------------
+     EMPTY          0                                      0                            0   
+        io          3                               0.333333                     0.666667   
+       clb          1                                      2                            1   
+Absorbed logical nets 0 out of 3 nets, 3 nets not absorbed.
+
+Netlist conversion complete.
+
+--line removed--
+# Load packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'top.net'.
+Detected 0 constant generators (to see names run with higher pack verbosity)
+--line removed--
+Warning 31: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
+--line removed--
+Warning 32: Netlist contains 0 global net to non-global architecture pin connections
+Cluster level netlist and block usage statistics
+Netlist num_nets: 3
+Netlist num_blocks: 4
+Netlist EMPTY blocks: 0.
+Netlist io blocks: 3.
+Netlist clb blocks: 1.
+Netlist inputs pins: 2
+Netlist output pins: 1
+
+Pb types usage...
+  io             : 3
+   inpad         : 2
+   outpad        : 1
+  clb            : 1
+   fle           : 1
+    lut3inter    : 1
+     ble3        : 1
+      lut3       : 1
+       lut       : 1
+
+# Create Device
+## Build Device Grid
+Warning 33: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 34: Ambiguous block type specification at grid location (0,9). Existing block type 'io_top' at (0,9) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 35: Ambiguous block type specification at grid location (9,0). Existing block type 'io_bottom' at (9,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 36: Ambiguous block type specification at grid location (9,9). Existing block type 'io_top' at (9,9) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+FPGA sized to 10 x 10: 100 grid tiles (FPGA88)
+
+Resource usage...
+	Netlist
+		3	blocks of type: io
+	Architecture
+		32	blocks of type: io_top
+		32	blocks of type: io_right
+		32	blocks of type: io_bottom
+		32	blocks of type: io_left
+	Netlist
+		1	blocks of type: clb
+	Architecture
+		64	blocks of type: clb
+
+Device Utilization: 0.02 (target 1.00)
+	Physical Tile io_top:
+	Block Utilization: 0.09 Logical Block: io
+	Physical Tile io_right:
+	Block Utilization: 0.09 Logical Block: io
+	Physical Tile io_bottom:
+	Block Utilization: 0.09 Logical Block: io
+	Physical Tile io_left:
+	Block Utilization: 0.09 Logical Block: io
+	Physical Tile clb:
+	Block Utilization: 0.02 Logical Block: clb
+
+--line removed--
+Warning 37: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+## Build tileable routing resource graph
+X-direction routing channel width is 60
+Y-direction routing channel width is 60
+Warning 38: Sized nonsensical R=0 transistor to minimum width
+Warning 39: Sized nonsensical R=0 transistor to minimum width
+Warning 40: Sized nonsensical R=0 transistor to minimum width
+Warning 41: Sized nonsensical R=0 transistor to minimum width
+Warning 42: Node: 7440 with RR_type: CHANX  at Location:CHANX:7440 L4 length:1 (1,1)->(1,1), had no out-going switches
+Warning 43: Node: 7654 with RR_type: CHANX  at Location:CHANX:7654 L4 length:1 (1,2)->(1,2), had no out-going switches
+Warning 44: Node: 7868 with RR_type: CHANX  at Location:CHANX:7868 L4 length:1 (1,3)->(1,3), had no out-going switches
+Warning 45: Node: 8082 with RR_type: CHANX  at Location:CHANX:8082 L4 length:1 (1,4)->(1,4), had no out-going switches
+Warning 46: Node: 8296 with RR_type: CHANX  at Location:CHANX:8296 L4 length:1 (1,5)->(1,5), had no out-going switches
+Warning 47: Node: 8510 with RR_type: CHANX  at Location:CHANX:8510 L4 length:1 (1,6)->(1,6), had no out-going switches
+Warning 48: Node: 8724 with RR_type: CHANX  at Location:CHANX:8724 L4 length:1 (1,7)->(1,7), had no out-going switches
+Warning 49: in check_rr_graph: fringe node 7440 CHANX at (1,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+--line removed--
+  RR Graph Nodes: 11020
+  RR Graph Edges: 55564
+--line removed--
+
+# Computing router lookahead map
+## Computing wire lookahead
+--line removed--
+## Computing src/opin lookahead
+--line removed--
+--line removed--
+# Computing placement delta delay look-up
+RR graph channel widths unchanged, skipping RR graph rebuild
+## Computing delta delays
+--line removed--
+--line removed--
+Using simple RL 'Softmax agent' for choosing move types
+# Placement
+## Initial Placement
+Initial placement iteration 0 has finished successfully
+--line removed--
+
+There are 3 point to point connections in this circuit.
+
+
+BB estimate of min-dist (placement) wire length: 19
+
+Completed placement consistency check successfully.
+Initial placement cost: 1 bb_cost: 0.316667 td_cost: 1.566e-08
+Initial placement estimated Critical Path Delay (CPD): 12.54 ns
+Initial placement estimated setup Total Negative Slack (sTNS): -12.54 ns
+Initial placement estimated setup Worst Negative Slack (sWNS): -12.54 ns
+
+Initial placement estimated setup slack histogram:
+[ -1.3e-08: -1.3e-08) 1 (100.0%) |**************************************************
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+Placement contains 0 placement macros involving 0 blocks (average macro size -nan)
+
+Moves per temperature: 3
+Warning 50: Starting t: 0 of 3 configurations accepted.
+
+---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
+Tnum   Time       T Av Cost Av BB Cost Av TD Cost     CPD       sTNS     sWNS Ac Rate Std Dev  R lim Crit Exp Tot Moves  Alpha
+      (sec)                                          (ns)       (ns)     (ns)                                                 
+---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
+   1    0.0 0.0e+00   0.947       0.28 1.566e-08   12.540      -12.5  -12.540   0.667  0.0000    9.0     1.00         3  0.200
+   2    0.0 0.0e+00   0.971       0.27 1.566e-08   12.540      -12.5  -12.540   0.333  0.0000    9.0     1.00         6  0.950
+--line removed--
+post-quench CPD = 12.54 (ns) 
+
+BB estimate of min-dist (placement) wire length: 16
+
+Completed placement consistency check successfully.
+
+Swaps called: 9
+
+Aborted Move Reasons:
+  No moves aborted
+
+Placement estimated critical path delay (least slack): 12.54 ns, Fmax: 79.7448 MHz
+Placement estimated setup Worst Negative Slack (sWNS): -12.54 ns
+Placement estimated setup Total Negative Slack (sTNS): -12.54 ns
+
+Placement estimated setup slack histogram:
+[ -1.3e-08: -1.3e-08) 1 (100.0%) |**************************************************
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+[ -1.3e-08: -1.3e-08) 0 (  0.0%) |
+
+Placement estimated geomean non-virtual intra-domain period: nan ns (nan MHz)
+Placement estimated fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
+
+Placement cost: 0.970588, bb_cost: 0.266667, td_cost: 1.566e-08, 
+
+Placement resource usage:
+  io  implemented as io_top   : 1
+  io  implemented as io_bottom: 2
+  clb implemented as clb      : 1
+
+Placement number of temperatures: 2
+Placement total # of swap attempts: 9
+	Swaps accepted: 3 (33.3 %)
+	Swaps rejected: 6 (66.7 %)
+	Swaps aborted : 0 ( 0.0 %)
+
+
+Percentage of different move types:
+	Uniform move: 22.22 % (acc=0.00 %, rej=100.00 %, aborted=0.00 %)
+	W. Centroid move: 44.44 % (acc=50.00 %, rej=50.00 %, aborted=0.00 %)
+	Centroid move: 11.11 % (acc=0.00 %, rej=100.00 %, aborted=0.00 %)
+	Crit. Uniform move: 22.22 % (acc=50.00 %, rej=50.00 %, aborted=0.00 %)
+
+--line removed--
+--line removed--
+update_td_costs: connections 0 nets 0 sum_nets 0 total 0
+--line removed--
+
+# Routing
+RR graph channel widths unchanged, skipping RR graph rebuild
+Confirming router algorithm: TIMING_DRIVEN.
+## Initializing router criticalities
+Initial Net Connection Criticality Histogram:
+[        0:      0.1) 0 (  0.0%) |
+[      0.1:      0.2) 0 (  0.0%) |
+[      0.2:      0.3) 0 (  0.0%) |
+[      0.3:      0.4) 0 (  0.0%) |
+[      0.4:      0.5) 0 (  0.0%) |
+[      0.5:      0.6) 0 (  0.0%) |
+[      0.6:      0.7) 0 (  0.0%) |
+[      0.7:      0.8) 0 (  0.0%) |
+[      0.8:      0.9) 0 (  0.0%) |
+[      0.9:        1) 3 (100.0%) |*************************************************
+--line removed--
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.0     0.0    0     226       3       3       0 ( 0.000%)      27 ( 0.3%)   13.980     -13.98    -13.980      0.000      0.000      N/A
+Incr Slack updates 4 in 1.4576e-05 sec
+Full Max Req/Worst Slack updates 1 in 1.984e-06 sec
+Incr Max Req/Worst Slack updates 3 in 8.537e-06 sec
+Incr Criticality updates 3 in 7.854e-06 sec
+Full Criticality updates 1 in 1.766e-06 sec
+Restoring best routing
+Critical path: 13.98 ns
+Successfully routed after 1 routing iterations.
+Final Net Connection Criticality Histogram:
+[        0:      0.1) 0 (  0.0%) |
+[      0.1:      0.2) 0 (  0.0%) |
+[      0.2:      0.3) 0 (  0.0%) |
+[      0.3:      0.4) 0 (  0.0%) |
+[      0.4:      0.5) 0 (  0.0%) |
+[      0.5:      0.6) 0 (  0.0%) |
+[      0.6:      0.7) 0 (  0.0%) |
+[      0.7:      0.8) 0 (  0.0%) |
+[      0.8:      0.9) 1 ( 33.3%) |*************************
+[      0.9:        1) 2 ( 66.7%) |*************************************************
+Router Stats: total_nets_routed: 3 total_connections_routed: 3 total_heap_pushes: 226 total_heap_pops: 67
+--line removed--
+
+Checking to ensure routing is legal...
+# Checking to ensure non-configurable edges are legal
+--line removed--
+Completed routing consistency check successfully.
+
+Serial number (magic cookie) for the routing is: -17767
+Circuit successfully routed with a channel width factor of 60.
+Warning 51: Sychronization between packing and routing results is not applied due to users select to skip it
+
+
+Average number of bends per net: 1.00000  Maximum # of bends: 1
+
+Number of global nets: 0
+Number of routed nets (nonglobal): 3
+Wire length results (in units of 1 clb segments)...
+	Total wirelength: 27, average net length: 9.00000
+	Maximum net length: 10
+
+Wire length results in terms of physical segments...
+	Total wiring segments used: 8, average wire segments per net: 2.66667
+	Maximum segments used by a net: 3
+	Total local nets with reserved CLB opins: 0
+
+Routing channel utilization histogram:
+[        1:      inf)   0 (  0.0%) |
+[      0.9:        1)   0 (  0.0%) |
+[      0.8:      0.9)   0 (  0.0%) |
+[      0.7:      0.8)   0 (  0.0%) |
+[      0.5:      0.6)   0 (  0.0%) |
+[      0.4:      0.5)   0 (  0.0%) |
+[      0.3:      0.4)   0 (  0.0%) |
+[      0.2:      0.3)   0 (  0.0%) |
+[      0.1:      0.2)   0 (  0.0%) |
+[        0:      0.1) 162 (100.0%) |***********************************************
+Maximum routing channel utilization:     0.033 at (5,0)
+
+X - Directed channels:   j max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0       2   0.500       60
+                         1       0   0.000       60
+                         2       0   0.000       60
+                         3       0   0.000       60
+                         4       0   0.000       60
+                         5       0   0.000       60
+                         6       0   0.000       60
+                         7       0   0.000       60
+                         8       1   0.400       60
+Y - Directed channels:   i max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0       0   0.000       60
+                         1       0   0.000       60
+                         2       0   0.000       60
+                         3       0   0.000       60
+                         4       0   0.000       60
+                         5       4   1.800       60
+                         6       0   0.000       60
+                         7       0   0.000       60
+                         8       0   0.000       60
+
+Total tracks in x-direction: 540, in y-direction: 540
+
+Logic area (in minimum width transistor areas, excludes I/Os and empty grid tiles)...
+	Total logic block area (Warning, need to add pitch of routing to blocks with height > 3): 3.44922e+06
+	Total used logic block area: 53894
+
+Routing area (in minimum width transistor areas)...
+	Total routing area: 373865., per logic tile: 3738.65
+
+Total Number of Wiring Segments by Direction: direction length number
+                                              --------- ------ -------
+                                                      X      1    432
+                                                      Y      1    432
+                                                      X      2    306
+                                                      Y      2    306
+                                                      X      4   1188
+                                                      Y      4   1188
+
+X - Directed Wiring Segment usage by length: length utilization
+                                             ------ -----------
+                                            1           0
+                                            2     0.00327
+                                            4     0.00168
+
+Y - Directed Wiring Segment usage by length: length utilization
+                                             ------ -----------
+                                            1           0
+                                            2     0.00327
+                                            4     0.00337
+
+Segment usage by type (index): name type utilization
+                               ---- ---- -----------
+                                 L1    0           0
+                                 L2    1     0.00654
+                                 L4    2     0.00505
+
+Final hold Worst Negative Slack (hWNS): 0 ns
+Final hold Total Negative Slack (hTNS): 0 ns
+
+Final hold slack histogram:
+[  1.1e-08:  1.1e-08) 1 (100.0%) |**************************************************
+[  1.1e-08:  1.1e-08) 0 (  0.0%) |
+[  1.1e-08:  1.1e-08) 0 (  0.0%) |
+[  1.1e-08:  1.1e-08) 0 (  0.0%) |
+[  1.1e-08:  1.1e-08) 0 (  0.0%) |
+[  1.1e-08:  1.1e-08) 0 (  0.0%) |
+[  1.1e-08:  1.1e-08) 0 (  0.0%) |
+[  1.1e-08:  1.1e-08) 0 (  0.0%) |
+[  1.1e-08:  1.1e-08) 0 (  0.0%) |
+[  1.1e-08:  1.1e-08) 0 (  0.0%) |
+
+Final critical path delay (least slack): 13.98 ns, Fmax: 71.5308 MHz
+Final setup Worst Negative Slack (sWNS): -13.98 ns
+Final setup Total Negative Slack (sTNS): -13.98 ns
+
+Final setup slack histogram:
+[ -1.4e-08: -1.4e-08) 1 (100.0%) |**************************************************
+[ -1.4e-08: -1.4e-08) 0 (  0.0%) |
+[ -1.4e-08: -1.4e-08) 0 (  0.0%) |
+[ -1.4e-08: -1.4e-08) 0 (  0.0%) |
+[ -1.4e-08: -1.4e-08) 0 (  0.0%) |
+[ -1.4e-08: -1.4e-08) 0 (  0.0%) |
+[ -1.4e-08: -1.4e-08) 0 (  0.0%) |
+[ -1.4e-08: -1.4e-08) 0 (  0.0%) |
+[ -1.4e-08: -1.4e-08) 0 (  0.0%) |
+[ -1.4e-08: -1.4e-08) 0 (  0.0%) |
+
+Final geomean non-virtual intra-domain period: nan ns (nan MHz)
+Final fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
+
+Incr Slack updates 1 in 1.9716e-05 sec
+Full Max Req/Worst Slack updates 1 in 3.349e-06 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 3.35e-06 sec
+--line removed--
+VPR suceeded
+--line removed--
+
+Command line to execute: read_openfpga_arch -f --line removed--
+
+Confirm selected options when call command 'read_openfpga_arch':
+--file, -f: --line removed--
+Reading XML architecture '--line removed--'...
+Read OpenFPGA architecture
+Warning 52: Automatically set circuit model 'frac_lut4' to be default in its type.
+Warning 53: Automatically set circuit model 'sky130_fd_sc_hd__sdfrtp_1' to be default in its type.
+Warning 54: Automatically set circuit model 'sky130_fd_sc_hd__mux2_1_wrapper' to be default in its type.
+Warning 55: Automatically set circuit model 'sky130_fd_sc_hd__dfrtp_1' to be default in its type.
+Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'mux_tree' port 'sram')
+Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'mux_tree_tapbuf' port 'sram')
+Use the default configurable memory model 'sky130_fd_sc_hd__dfrtp_1' for circuit model 'frac_lut4' port 'sram')
+--line removed--
+Check circuit library
+Checking circuit library passed.
+--line removed--
+Found 0 errors when checking configurable memory circuit models!
+Found 0 errors when checking tile annotation!
+
+Command line to execute: read_openfpga_simulation_setting -f --line removed--
+
+Confirm selected options when call command 'read_openfpga_simulation_setting':
+--file, -f: --line removed--
+Reading XML simulation setting '--line removed--'...
+Read OpenFPGA simulation settings
+--line removed--
+
+Command line to execute: link_openfpga_arch --activity_file top_ace_out.act --sort_gsb_chan_node_in_edges
+
+Confirm selected options when call command 'link_openfpga_arch':
+--activity_file: top_ace_out.act
+--sort_gsb_chan_node_in_edges: on
+--verbose: off
+Link OpenFPGA architecture to VPR architecture
+# Build fast look-up for physical tile pins
+--line removed--
+
+Building annotation for physical modes in pb_type...Done
+Check physical mode annotation for pb_types passed.
+
+Building annotation about physical types for pb_type interconnection...Done
+
+Building annotation between operating and physical pb_types...Done
+Check physical pb_type annotation for pb_types passed.
+
+Building annotation between physical pb_types and circuit models...Done
+Check physical pb_type annotation for circuit model passed.
+
+Building annotation between physical pb_types and mode selection bits...Done
+Check pb_type annotation for mode selection bits passed.
+Assigning unique indices for primitive pb_graph nodes...Done
+Binding operating pb_graph nodes/pins to physical pb_graph nodes/pins...Done
+Check pb_graph annotation for physical nodes and pins passed.
+Binded 4 routing resource graph switches to circuit models
+Binded 3 routing segments to circuit models
+Binded 3 direct connections to circuit models
+# Annotating rr_node with routed nets
+--line removed--
+Loaded node-to-net mapping
+Annotating previous nodes for rr_node...Done with 17 nodes mapping
+Built 55564 incoming edges for routing resource graph
+# Build General Switch Block(GSB) annotation on top of routing resource graph
+[1%] Backannotated GSB[0][0]
+[2%] Backannotated GSB[0][1]
+[3%] Backannotated GSB[0][2]
+[4%] Backannotated GSB[0][3]
+[6%] Backannotated GSB[0][4]
+[7%] Backannotated GSB[0][5]
+[8%] Backannotated GSB[0][6]
+[9%] Backannotated GSB[0][7]
+[11%] Backannotated GSB[0][8]
+[12%] Backannotated GSB[1][0]
+[13%] Backannotated GSB[1][1]
+[14%] Backannotated GSB[1][2]
+[16%] Backannotated GSB[1][3]
+[17%] Backannotated GSB[1][4]
+[18%] Backannotated GSB[1][5]
+[19%] Backannotated GSB[1][6]
+[20%] Backannotated GSB[1][7]
+[22%] Backannotated GSB[1][8]
+[23%] Backannotated GSB[2][0]
+[24%] Backannotated GSB[2][1]
+[25%] Backannotated GSB[2][2]
+[27%] Backannotated GSB[2][3]
+[28%] Backannotated GSB[2][4]
+[29%] Backannotated GSB[2][5]
+[30%] Backannotated GSB[2][6]
+[32%] Backannotated GSB[2][7]
+[33%] Backannotated GSB[2][8]
+[34%] Backannotated GSB[3][0]
+[35%] Backannotated GSB[3][1]
+[37%] Backannotated GSB[3][2]
+[38%] Backannotated GSB[3][3]
+[39%] Backannotated GSB[3][4]
+[40%] Backannotated GSB[3][5]
+[41%] Backannotated GSB[3][6]
+[43%] Backannotated GSB[3][7]
+[44%] Backannotated GSB[3][8]
+[45%] Backannotated GSB[4][0]
+[46%] Backannotated GSB[4][1]
+[48%] Backannotated GSB[4][2]
+[49%] Backannotated GSB[4][3]
+[50%] Backannotated GSB[4][4]
+[51%] Backannotated GSB[4][5]
+[53%] Backannotated GSB[4][6]
+[54%] Backannotated GSB[4][7]
+[55%] Backannotated GSB[4][8]
+[56%] Backannotated GSB[5][0]
+[58%] Backannotated GSB[5][1]
+[59%] Backannotated GSB[5][2]
+[60%] Backannotated GSB[5][3]
+[61%] Backannotated GSB[5][4]
+[62%] Backannotated GSB[5][5]
+[64%] Backannotated GSB[5][6]
+[65%] Backannotated GSB[5][7]
+[66%] Backannotated GSB[5][8]
+[67%] Backannotated GSB[6][0]
+[69%] Backannotated GSB[6][1]
+[70%] Backannotated GSB[6][2]
+[71%] Backannotated GSB[6][3]
+[72%] Backannotated GSB[6][4]
+[74%] Backannotated GSB[6][5]
+[75%] Backannotated GSB[6][6]
+[76%] Backannotated GSB[6][7]
+[77%] Backannotated GSB[6][8]
+[79%] Backannotated GSB[7][0]
+[80%] Backannotated GSB[7][1]
+[81%] Backannotated GSB[7][2]
+[82%] Backannotated GSB[7][3]
+[83%] Backannotated GSB[7][4]
+[85%] Backannotated GSB[7][5]
+[86%] Backannotated GSB[7][6]
+[87%] Backannotated GSB[7][7]
+[88%] Backannotated GSB[7][8]
+[90%] Backannotated GSB[8][0]
+[91%] Backannotated GSB[8][1]
+[92%] Backannotated GSB[8][2]
+[93%] Backannotated GSB[8][3]
+[95%] Backannotated GSB[8][4]
+[96%] Backannotated GSB[8][5]
+[97%] Backannotated GSB[8][6]
+[98%] Backannotated GSB[8][7]
+[100%] Backannotated GSB[8][8]
+Backannotated 81 General Switch Blocks (GSBs).
+--line removed--
+# Sort incoming edges for each routing track output node of General Switch Block(GSB)
+[1%] Sorted incoming edges for each routing track output node of GSB[0][0]
+[2%] Sorted incoming edges for each routing track output node of GSB[0][1]
+[3%] Sorted incoming edges for each routing track output node of GSB[0][2]
+[4%] Sorted incoming edges for each routing track output node of GSB[0][3]
+[6%] Sorted incoming edges for each routing track output node of GSB[0][4]
+[7%] Sorted incoming edges for each routing track output node of GSB[0][5]
+[8%] Sorted incoming edges for each routing track output node of GSB[0][6]
+[9%] Sorted incoming edges for each routing track output node of GSB[0][7]
+[11%] Sorted incoming edges for each routing track output node of GSB[0][8]
+[12%] Sorted incoming edges for each routing track output node of GSB[1][0]
+[13%] Sorted incoming edges for each routing track output node of GSB[1][1]
+[14%] Sorted incoming edges for each routing track output node of GSB[1][2]
+[16%] Sorted incoming edges for each routing track output node of GSB[1][3]
+[17%] Sorted incoming edges for each routing track output node of GSB[1][4]
+[18%] Sorted incoming edges for each routing track output node of GSB[1][5]
+[19%] Sorted incoming edges for each routing track output node of GSB[1][6]
+[20%] Sorted incoming edges for each routing track output node of GSB[1][7]
+[22%] Sorted incoming edges for each routing track output node of GSB[1][8]
+[23%] Sorted incoming edges for each routing track output node of GSB[2][0]
+[24%] Sorted incoming edges for each routing track output node of GSB[2][1]
+[25%] Sorted incoming edges for each routing track output node of GSB[2][2]
+[27%] Sorted incoming edges for each routing track output node of GSB[2][3]
+[28%] Sorted incoming edges for each routing track output node of GSB[2][4]
+[29%] Sorted incoming edges for each routing track output node of GSB[2][5]
+[30%] Sorted incoming edges for each routing track output node of GSB[2][6]
+[32%] Sorted incoming edges for each routing track output node of GSB[2][7]
+[33%] Sorted incoming edges for each routing track output node of GSB[2][8]
+[34%] Sorted incoming edges for each routing track output node of GSB[3][0]
+[35%] Sorted incoming edges for each routing track output node of GSB[3][1]
+[37%] Sorted incoming edges for each routing track output node of GSB[3][2]
+[38%] Sorted incoming edges for each routing track output node of GSB[3][3]
+[39%] Sorted incoming edges for each routing track output node of GSB[3][4]
+[40%] Sorted incoming edges for each routing track output node of GSB[3][5]
+[41%] Sorted incoming edges for each routing track output node of GSB[3][6]
+[43%] Sorted incoming edges for each routing track output node of GSB[3][7]
+[44%] Sorted incoming edges for each routing track output node of GSB[3][8]
+[45%] Sorted incoming edges for each routing track output node of GSB[4][0]
+[46%] Sorted incoming edges for each routing track output node of GSB[4][1]
+[48%] Sorted incoming edges for each routing track output node of GSB[4][2]
+[49%] Sorted incoming edges for each routing track output node of GSB[4][3]
+[50%] Sorted incoming edges for each routing track output node of GSB[4][4]
+[51%] Sorted incoming edges for each routing track output node of GSB[4][5]
+[53%] Sorted incoming edges for each routing track output node of GSB[4][6]
+[54%] Sorted incoming edges for each routing track output node of GSB[4][7]
+[55%] Sorted incoming edges for each routing track output node of GSB[4][8]
+[56%] Sorted incoming edges for each routing track output node of GSB[5][0]
+[58%] Sorted incoming edges for each routing track output node of GSB[5][1]
+[59%] Sorted incoming edges for each routing track output node of GSB[5][2]
+[60%] Sorted incoming edges for each routing track output node of GSB[5][3]
+[61%] Sorted incoming edges for each routing track output node of GSB[5][4]
+[62%] Sorted incoming edges for each routing track output node of GSB[5][5]
+[64%] Sorted incoming edges for each routing track output node of GSB[5][6]
+[65%] Sorted incoming edges for each routing track output node of GSB[5][7]
+[66%] Sorted incoming edges for each routing track output node of GSB[5][8]
+[67%] Sorted incoming edges for each routing track output node of GSB[6][0]
+[69%] Sorted incoming edges for each routing track output node of GSB[6][1]
+[70%] Sorted incoming edges for each routing track output node of GSB[6][2]
+[71%] Sorted incoming edges for each routing track output node of GSB[6][3]
+[72%] Sorted incoming edges for each routing track output node of GSB[6][4]
+[74%] Sorted incoming edges for each routing track output node of GSB[6][5]
+[75%] Sorted incoming edges for each routing track output node of GSB[6][6]
+[76%] Sorted incoming edges for each routing track output node of GSB[6][7]
+[77%] Sorted incoming edges for each routing track output node of GSB[6][8]
+[79%] Sorted incoming edges for each routing track output node of GSB[7][0]
+[80%] Sorted incoming edges for each routing track output node of GSB[7][1]
+[81%] Sorted incoming edges for each routing track output node of GSB[7][2]
+[82%] Sorted incoming edges for each routing track output node of GSB[7][3]
+[83%] Sorted incoming edges for each routing track output node of GSB[7][4]
+[85%] Sorted incoming edges for each routing track output node of GSB[7][5]
+[86%] Sorted incoming edges for each routing track output node of GSB[7][6]
+[87%] Sorted incoming edges for each routing track output node of GSB[7][7]
+[88%] Sorted incoming edges for each routing track output node of GSB[7][8]
+[90%] Sorted incoming edges for each routing track output node of GSB[8][0]
+[91%] Sorted incoming edges for each routing track output node of GSB[8][1]
+[92%] Sorted incoming edges for each routing track output node of GSB[8][2]
+[93%] Sorted incoming edges for each routing track output node of GSB[8][3]
+[95%] Sorted incoming edges for each routing track output node of GSB[8][4]
+[96%] Sorted incoming edges for each routing track output node of GSB[8][5]
+[97%] Sorted incoming edges for each routing track output node of GSB[8][6]
+[98%] Sorted incoming edges for each routing track output node of GSB[8][7]
+[100%] Sorted incoming edges for each routing track output node of GSB[8][8]
+Sorted incoming edges for each routing track output node of 81 General Switch Blocks (GSBs).
+--line removed--
+# Sort incoming edges for each input pin node of General Switch Block(GSB)
+[1%] Sorted incoming edges for each input pin node of GSB[0][0]
+[2%] Sorted incoming edges for each input pin node of GSB[0][1]
+[3%] Sorted incoming edges for each input pin node of GSB[0][2]
+[4%] Sorted incoming edges for each input pin node of GSB[0][3]
+[6%] Sorted incoming edges for each input pin node of GSB[0][4]
+[7%] Sorted incoming edges for each input pin node of GSB[0][5]
+[8%] Sorted incoming edges for each input pin node of GSB[0][6]
+[9%] Sorted incoming edges for each input pin node of GSB[0][7]
+[11%] Sorted incoming edges for each input pin node of GSB[0][8]
+[12%] Sorted incoming edges for each input pin node of GSB[1][0]
+[13%] Sorted incoming edges for each input pin node of GSB[1][1]
+[14%] Sorted incoming edges for each input pin node of GSB[1][2]
+[16%] Sorted incoming edges for each input pin node of GSB[1][3]
+[17%] Sorted incoming edges for each input pin node of GSB[1][4]
+[18%] Sorted incoming edges for each input pin node of GSB[1][5]
+[19%] Sorted incoming edges for each input pin node of GSB[1][6]
+[20%] Sorted incoming edges for each input pin node of GSB[1][7]
+[22%] Sorted incoming edges for each input pin node of GSB[1][8]
+[23%] Sorted incoming edges for each input pin node of GSB[2][0]
+[24%] Sorted incoming edges for each input pin node of GSB[2][1]
+[25%] Sorted incoming edges for each input pin node of GSB[2][2]
+[27%] Sorted incoming edges for each input pin node of GSB[2][3]
+[28%] Sorted incoming edges for each input pin node of GSB[2][4]
+[29%] Sorted incoming edges for each input pin node of GSB[2][5]
+[30%] Sorted incoming edges for each input pin node of GSB[2][6]
+[32%] Sorted incoming edges for each input pin node of GSB[2][7]
+[33%] Sorted incoming edges for each input pin node of GSB[2][8]
+[34%] Sorted incoming edges for each input pin node of GSB[3][0]
+[35%] Sorted incoming edges for each input pin node of GSB[3][1]
+[37%] Sorted incoming edges for each input pin node of GSB[3][2]
+[38%] Sorted incoming edges for each input pin node of GSB[3][3]
+[39%] Sorted incoming edges for each input pin node of GSB[3][4]
+[40%] Sorted incoming edges for each input pin node of GSB[3][5]
+[41%] Sorted incoming edges for each input pin node of GSB[3][6]
+[43%] Sorted incoming edges for each input pin node of GSB[3][7]
+[44%] Sorted incoming edges for each input pin node of GSB[3][8]
+[45%] Sorted incoming edges for each input pin node of GSB[4][0]
+[46%] Sorted incoming edges for each input pin node of GSB[4][1]
+[48%] Sorted incoming edges for each input pin node of GSB[4][2]
+[49%] Sorted incoming edges for each input pin node of GSB[4][3]
+[50%] Sorted incoming edges for each input pin node of GSB[4][4]
+[51%] Sorted incoming edges for each input pin node of GSB[4][5]
+[53%] Sorted incoming edges for each input pin node of GSB[4][6]
+[54%] Sorted incoming edges for each input pin node of GSB[4][7]
+[55%] Sorted incoming edges for each input pin node of GSB[4][8]
+[56%] Sorted incoming edges for each input pin node of GSB[5][0]
+[58%] Sorted incoming edges for each input pin node of GSB[5][1]
+[59%] Sorted incoming edges for each input pin node of GSB[5][2]
+[60%] Sorted incoming edges for each input pin node of GSB[5][3]
+[61%] Sorted incoming edges for each input pin node of GSB[5][4]
+[62%] Sorted incoming edges for each input pin node of GSB[5][5]
+[64%] Sorted incoming edges for each input pin node of GSB[5][6]
+[65%] Sorted incoming edges for each input pin node of GSB[5][7]
+[66%] Sorted incoming edges for each input pin node of GSB[5][8]
+[67%] Sorted incoming edges for each input pin node of GSB[6][0]
+[69%] Sorted incoming edges for each input pin node of GSB[6][1]
+[70%] Sorted incoming edges for each input pin node of GSB[6][2]
+[71%] Sorted incoming edges for each input pin node of GSB[6][3]
+[72%] Sorted incoming edges for each input pin node of GSB[6][4]
+[74%] Sorted incoming edges for each input pin node of GSB[6][5]
+[75%] Sorted incoming edges for each input pin node of GSB[6][6]
+[76%] Sorted incoming edges for each input pin node of GSB[6][7]
+[77%] Sorted incoming edges for each input pin node of GSB[6][8]
+[79%] Sorted incoming edges for each input pin node of GSB[7][0]
+[80%] Sorted incoming edges for each input pin node of GSB[7][1]
+[81%] Sorted incoming edges for each input pin node of GSB[7][2]
+[82%] Sorted incoming edges for each input pin node of GSB[7][3]
+[83%] Sorted incoming edges for each input pin node of GSB[7][4]
+[85%] Sorted incoming edges for each input pin node of GSB[7][5]
+[86%] Sorted incoming edges for each input pin node of GSB[7][6]
+[87%] Sorted incoming edges for each input pin node of GSB[7][7]
+[88%] Sorted incoming edges for each input pin node of GSB[7][8]
+[90%] Sorted incoming edges for each input pin node of GSB[8][0]
+[91%] Sorted incoming edges for each input pin node of GSB[8][1]
+[92%] Sorted incoming edges for each input pin node of GSB[8][2]
+[93%] Sorted incoming edges for each input pin node of GSB[8][3]
+[95%] Sorted incoming edges for each input pin node of GSB[8][4]
+[96%] Sorted incoming edges for each input pin node of GSB[8][5]
+[97%] Sorted incoming edges for each input pin node of GSB[8][6]
+[98%] Sorted incoming edges for each input pin node of GSB[8][7]
+[100%] Sorted incoming edges for each input pin node of GSB[8][8]
+Sorted incoming edges for each input pin node of 81 General Switch Blocks (GSBs).
+--line removed--
+# Build a library of physical multiplexers
+Built a multiplexer library of 13 physical multiplexers.
+Maximum multiplexer size is 16.
+--line removed--
+# Build the annotation about direct connection between tiles
+Built 175 tile-to-tile direct connections
+--line removed--
+Building annotation for post-routing and clustering synchornization results...Done
+Building annotation for mapped blocks on grid locations...Done
+User specified the operating clock frequency to use VPR results
+Use VPR critical path delay 1.6776e-17 [ns] with a 20 [%] slack in OpenFPGA.
+Incr Slack updates 1 in 6.449e-06 sec
+Full Max Req/Worst Slack updates 1 in 3.564e-06 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 4.624e-06 sec
+Will apply operating clock frequency 59.609 [MHz] to simulations
+User specified the number of operating clock cycles to be inferred from signal activities
+Average net density: 0.42
+Median net density: 0.00
+Average net density after weighting: 0.42
+Will apply 2 operating clock cycles to simulations
+--line removed--
+
+Command line to execute: check_netlist_naming_conflict --fix --report .--line removed--
+
+Confirm selected options when call command 'check_netlist_naming_conflict':
+--fix: on
+--report: .--line removed--
+Check naming violations of netlist blocks and nets
+Fixed 1 naming conflicts in the netlist.
+Naming fix-up report is generated to file '.--line removed--'
+--line removed--
+
+Command line to execute: pb_pin_fixup --verbose
+
+Confirm selected options when call command 'pb_pin_fixup':
+--verbose: on
+Fix up pb pin mapping results after routing optimization
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I0[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I0[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I0i[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I0i[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I1[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I1[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I1i[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I1i[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I2[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I2[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I2i[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I2i[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I3[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I3[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I3i[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I3i[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I4[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I4[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I4i[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I4i[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I5[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I5[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I5i[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I5i[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I6[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I6[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I6i[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I6i[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I7[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I7[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I7i[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.I7i[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.reg_in[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.sc_in[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.cin[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.reset[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[1]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[2]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[3]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[4]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[5]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[6]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[7]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[8]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[9]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[10]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[11]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[12]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[13]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[14]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.O[15]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.reg_out[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.sc_out[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.cout[0]' as it matches cluster routing
+Bypass net at clustered block 'c' pin 'grid[5][4].clb.clk[0]' as it matches cluster routing
+Bypass net at clustered block 'out:c' pin 'grid[5][9].io.outpad[0]' as it matches cluster routing
+Bypass net at clustered block 'out:c' pin 'grid[5][9].io.inpad[0]' as it matches cluster routing
+Bypass net at clustered block 'a' pin 'grid[5][0].io.outpad[0]' as it matches cluster routing
+Bypass net at clustered block 'a' pin 'grid[5][0].io.inpad[0]' as it matches cluster routing
+Bypass net at clustered block 'b' pin 'grid[5][0].io.outpad[0]' as it matches cluster routing
+Bypass net at clustered block 'b' pin 'grid[5][0].io.inpad[0]' as it matches cluster routing
+--line removed--
+
+Command line to execute: lut_truth_table_fixup
+
+Confirm selected options when call command 'lut_truth_table_fixup':
+--verbose: off
+Fix up LUT truth tables after packing optimization
+--line removed--
+
+Command line to execute: build_fabric --compress_routing
+
+Confirm selected options when call command 'build_fabric':
+--frame_view: off
+--compress_routing: on
+--duplicate_grid_pin: off
+--load_fabric_key: off
+--write_fabric_key: off
+--generate_random_fabric_key: off
+--verbose: off
+Identify unique General Switch Blocks (GSBs)
+Detected 9 unique general switch blocks from a total of 81 (compression rate=800.00%)
+--line removed--
+
+
+Build fabric module graph
+# Build constant generator modules
+--line removed--
+# Build user-defined modules
+--line removed--
+# Build essential (inverter/buffer/logic gate) modules
+--line removed--
+# Build local encoder (for multiplexers) modules
+--line removed--
+# Building multiplexer modules
+--line removed--
+# Build Look-Up Table (LUT) modules
+--line removed--
+# Build wire modules
+--line removed--
+# Build memory modules
+--line removed--
+# Build grid modules
+Building logical tiles...Done
+Building physical tiles...Done
+--line removed--
+# Build unique routing modules...
+--line removed--
+# Build FPGA fabric module
+## Add grid instances to top module
+--line removed--
+## Add switch block instances to top module
+--line removed--
+## Add connection block instances to top module
+--line removed--
+## Add connection block instances to top module
+--line removed--
+## Add module nets between grids and GSBs
+--line removed--
+## Add module nets for inter-tile connections
+--line removed--
+## Build configurable regions for the top module
+--line removed--
+## Add module nets for configuration buses
+--line removed--
+--line removed--
+--line removed--
+Create I/O location mapping for top module
+--line removed--
+Create global port info for top module
+--line removed--
+
+Command line to execute: write_fabric_hierarchy --file ./fabric_hierarchy.txt
+
+Confirm selected options when call command 'write_fabric_hierarchy':
+--file, -f: ./fabric_hierarchy.txt
+--depth: off
+--verbose: off
+Warning 56: Directory '.' already exists. Will overwrite contents
+Write fabric hierarchy to plain-text file './fabric_hierarchy.txt'
+--line removed--
+
+Command line to execute: repack
+
+Confirm selected options when call command 'repack':
+--design_constraints: off
+--ignore_global_nets_on_pins: off
+--verbose: off
+Build routing resource graph for the physical implementation of logical tile
+--line removed--
+Repack clustered blocks to physical implementation of logical tile
+Repack clustered block 'c'...Done
+Repack clustered block 'out:c'...Done
+Repack clustered block 'a'...Done
+Repack clustered block 'b'...Done
+--line removed--
+Identify wire LUTs created by repacking
+Identified 0 wire LUTs created by repacker
+--line removed--
+Build truth tables for physical LUTs
+--line removed--
+
+Command line to execute: build_architecture_bitstream --verbose --write_file fabric_independent_bitstream.xml
+
+Confirm selected options when call command 'build_architecture_bitstream':
+--write_file: fabric_independent_bitstream.xml
+--read_file: off
+--no_time_stamp: off
+--verbose: on
+
+Build fabric-independent bitstream for implementation 'top'
+
+Reserved 12283 configurable blocks
+Reserved 35888 configuration bits
+Building grid bitstream...
+Generating bitstream for core grids...Done
+Generating bitstream for I/O grids...Done
+Done
+Building routing bitstream...
+Generating bitstream for Switch blocks...Done
+Generating bitstream for X-direction Connection blocks ...Done
+Generating bitstream for Y-direction Connection blocks ...Done
+Done
+Decoded 35888 configuration bits into 12283 blocks
+
+Build fabric-independent bitstream for implementation 'top'
+--line removed--
+Warning 57: Directory path is empty and nothing will be created.
+Write 35888 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml'
+--line removed--
+
+Command line to execute: build_fabric_bitstream --verbose
+
+Confirm selected options when call command 'build_fabric_bitstream':
+--verbose: on
+
+Build fabric dependent bitstream
+
+Built 35888 configuration bits for fabric
+
+Build fabric dependent bitstream
+--line removed--
+
+Command line to execute: write_fabric_bitstream --file fabric_bitstream.bit --format plain_text
+
+Confirm selected options when call command 'write_fabric_bitstream':
+--file, -f: fabric_bitstream.bit
+--format: plain_text
+--fast_configuration: off
+--keep_dont_care_bits: off
+--no_time_stamp: off
+--verbose: off
+Warning 58: Directory path is empty and nothing will be created.
+Write 35888 fabric bitstream into plain text file 'fabric_bitstream.bit'
+--line removed--
+
+Command line to execute: write_fabric_verilog --file ./SRC --explicit_port_mapping --include_timing --print_user_defined_template --verbose
+
+Confirm selected options when call command 'write_fabric_verilog':
+--file, -f: ./SRC
+--explicit_port_mapping: on
+--include_timing: on
+--print_user_defined_template: on
+--default_net_type: off
+--no_time_stamp: off
+--use_relative_path: off
+--verbose: on
+Write Verilog netlists for FPGA fabric
+
+Succeed to create directory './SRC'
+Succeed to create directory './SRC/sub_module'
+Succeed to create directory './SRC/lb'
+Succeed to create directory './SRC/routing'
+Generating Verilog netlist './SRC/sub_module/inv_buf_passgate.v' for essential gates...Done
+Writing Verilog netlist for configuration decoders './SRC/sub_module/arch_encoder.v'...Done
+Writing Verilog netlist for local decoders for multiplexers './SRC/sub_module/local_encoder.v'...Done
+Writing Verilog netlist for Multiplexer primitives './SRC/sub_module/mux_primitives.v' ...Done
+Writing Verilog netlist for Multiplexers './SRC/sub_module/muxes.v' ...Done
+Writing Verilog netlist for LUTs './SRC/sub_module/luts.v'...Done
+Writing Verilog netlist for wires './SRC/sub_module/wires.v'...Done
+Writing Verilog netlist for memories './SRC/sub_module/memories.v' ...Done
+Writing Verilog netlist for shift register banks './SRC/sub_module/shift_register_banks.v' ...Done
+Creating template for user-defined Verilog modules './SRC/sub_module/user_defined_templates.v'...Done
+
+Writing logical tiles...
+Writing Verilog netlists for logic tile 'io' ...
+Writing Verilog netlist './SRC/lb/logical_tile_io_mode_physical__iopad.v' for primitive pb_type 'iopad' ...
+Writing Verilog codes of logical tile primitive block 'logical_tile_io_mode_physical__iopad'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_io_mode_io_.v' for pb_type 'io' ...
+Writing Verilog codes of pb_type 'logical_tile_io_mode_io_'...Done
+Done
+
+Writing Verilog netlists for logic tile 'clb' ...
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4.v' for primitive pb_type 'frac_lut4' ...
+Writing Verilog codes of logical tile primitive block 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__carry_follower.v' for primitive pb_type 'carry_follower' ...
+Writing Verilog codes of logical tile primitive block 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__carry_follower'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.v' for pb_type 'frac_logic' ...
+Writing Verilog codes of pb_type 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.v' for primitive pb_type 'ff' ...
+Writing Verilog codes of logical tile primitive block 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric.v' for pb_type 'fabric' ...
+Writing Verilog codes of pb_type 'logical_tile_clb_mode_default__fle_mode_physical__fabric'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_default__fle.v' for pb_type 'fle' ...
+Writing Verilog codes of pb_type 'logical_tile_clb_mode_default__fle'...Done
+Writing Verilog netlist './SRC/lb/logical_tile_clb_mode_clb_.v' for pb_type 'clb' ...
+Writing Verilog codes of pb_type 'logical_tile_clb_mode_clb_'...Done
+Done
+
+Writing logical tiles...Done
+
+Building physical tiles...
+Writing Verilog Netlist './SRC/lb/grid_io_top_top.v' for physical tile 'io_top' at top side ...Done
+Writing Verilog Netlist './SRC/lb/grid_io_right_right.v' for physical tile 'io_right' at right side ...Done
+Writing Verilog Netlist './SRC/lb/grid_io_bottom_bottom.v' for physical tile 'io_bottom' at bottom side ...Done
+Writing Verilog Netlist './SRC/lb/grid_io_left_left.v' for physical tile 'io_left' at left side ...Done
+Writing Verilog Netlist './SRC/lb/grid_clb.v' for physical_tile 'clb'...Done
+Building physical tiles...Done
+
+Writing Verilog netlist for top-level module of FPGA fabric './SRC/fpga_top.v'...Done
+Written 71 Verilog modules in total
+Write Verilog netlists for FPGA fabric
+--line removed--
+
+Command line to execute: exit
+
+Confirm selected options when call command 'exit':
+
+Finish execution with 0 errors
+
+--line removed--
+
+Thank you for using OpenFPGA!
+Incr Slack updates 2 in 1.4547e-05 sec
+Full Max Req/Worst Slack updates 1 in 3.044e-06 sec
+Incr Max Req/Worst Slack updates 1 in 5.177e-06 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 2 in 8.542e-06 sec
+0

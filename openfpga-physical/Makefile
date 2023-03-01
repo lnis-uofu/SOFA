@@ -226,7 +226,7 @@ netlist_cleanup: run_openfpga
 # 	=====================  Copy Custom Modules =================================
 #	============================================================================
 	if test -f "$${CUSTOM_MODULES_LIST}"; then
-		cat $${CUSTOM_MODULES_LIST} | while read line; do
+		cat $${CUSTOM_MODULES_LIST} | grep -v '^#' | while read line; do
 			cp $$line $${VERILOG_PROJ_DIR}/SRCOriginal/CustomModules/;
 			echo "[ Info] Copied custom module $$line"
 		done
