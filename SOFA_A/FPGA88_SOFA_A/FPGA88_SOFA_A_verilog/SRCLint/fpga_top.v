@@ -3,39 +3,39 @@
 module fpga_top
 (
     clk,
-    Reset,
-    IO_ISOL_N,
-    pReset,
+    reset,
+    isol_n,
+    prog_reset,
     prog_clk,
-    Test_en,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_IN,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_OUT,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_DIR,
+    scan_enable,
+    gfpga_pad_io_soc_in,
+    gfpga_pad_io_soc_out,
+    gfpga_pad_io_soc_dir,
     ccff_head,
     ccff_tail
 );
 
     input clk;
-    input Reset;
-    input IO_ISOL_N;
-    input pReset;
+    input reset;
+    input isol_n;
+    input prog_reset;
     input prog_clk;
-    input Test_en;
-    input [0:127]gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
-    output [0:127]gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
-    output [0:127]gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
+    input scan_enable;
+    input [0:127]gfpga_pad_io_soc_in;
+    output [0:127]gfpga_pad_io_soc_out;
+    output [0:127]gfpga_pad_io_soc_dir;
     input ccff_head;
     output ccff_tail;
 
     wire clk;
-    wire Reset;
-    wire IO_ISOL_N;
-    wire pReset;
+    wire reset;
+    wire isol_n;
+    wire prog_reset;
     wire prog_clk;
-    wire Test_en;
-    wire [0:127]gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
-    wire [0:127]gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
-    wire [0:127]gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
+    wire scan_enable;
+    wire [0:127]gfpga_pad_io_soc_in;
+    wire [0:127]gfpga_pad_io_soc_out;
+    wire [0:127]gfpga_pad_io_soc_dir;
     wire ccff_head;
     wire ccff_tail;
     wire cbx_1__0__0_bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_;
@@ -4649,12 +4649,12 @@ module fpga_top
 
     grid_io_top_top grid_io_top_top_1__9_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[0:3]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[0:3]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[0:3]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[0:3]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[0:3]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[0:3]),
         .bottom_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__8__0_top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__8__0_top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__8__0_top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4668,12 +4668,12 @@ module fpga_top
     );
     grid_io_top_top grid_io_top_top_2__9_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[4:7]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[4:7]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[4:7]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[4:7]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[4:7]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[4:7]),
         .bottom_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__8__1_top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__8__1_top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__8__1_top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4687,12 +4687,12 @@ module fpga_top
     );
     grid_io_top_top grid_io_top_top_3__9_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[8:11]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[8:11]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[8:11]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[8:11]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[8:11]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[8:11]),
         .bottom_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__8__2_top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__8__2_top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__8__2_top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4706,12 +4706,12 @@ module fpga_top
     );
     grid_io_top_top grid_io_top_top_4__9_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[12:15]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[12:15]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[12:15]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[12:15]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[12:15]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[12:15]),
         .bottom_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__8__3_top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__8__3_top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__8__3_top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4725,12 +4725,12 @@ module fpga_top
     );
     grid_io_top_top grid_io_top_top_5__9_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[16:19]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[16:19]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[16:19]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[16:19]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[16:19]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[16:19]),
         .bottom_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__8__4_top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__8__4_top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__8__4_top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4744,12 +4744,12 @@ module fpga_top
     );
     grid_io_top_top grid_io_top_top_6__9_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[20:23]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[20:23]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[20:23]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[20:23]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[20:23]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[20:23]),
         .bottom_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__8__5_top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__8__5_top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__8__5_top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4763,12 +4763,12 @@ module fpga_top
     );
     grid_io_top_top grid_io_top_top_7__9_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[24:27]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[24:27]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[24:27]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[24:27]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[24:27]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[24:27]),
         .bottom_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__8__6_top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__8__6_top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__8__6_top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4782,12 +4782,12 @@ module fpga_top
     );
     grid_io_top_top grid_io_top_top_8__9_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[28:31]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[28:31]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[28:31]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[28:31]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[28:31]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[28:31]),
         .bottom_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__8__7_top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__8__7_top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_),
         .bottom_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__8__7_top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4801,12 +4801,12 @@ module fpga_top
     );
     grid_io_right_right grid_io_right_right_9__8_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[32:35]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[32:35]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[32:35]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[32:35]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[32:35]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[32:35]),
         .left_width_0_height_0_subtile_0__pin_outpad_0_(cby_8__1__7_right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_),
         .left_width_0_height_0_subtile_1__pin_outpad_0_(cby_8__1__7_right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_),
         .left_width_0_height_0_subtile_2__pin_outpad_0_(cby_8__1__7_right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4820,12 +4820,12 @@ module fpga_top
     );
     grid_io_right_right grid_io_right_right_9__7_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[36:39]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[36:39]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[36:39]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[36:39]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[36:39]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[36:39]),
         .left_width_0_height_0_subtile_0__pin_outpad_0_(cby_8__1__6_right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_),
         .left_width_0_height_0_subtile_1__pin_outpad_0_(cby_8__1__6_right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_),
         .left_width_0_height_0_subtile_2__pin_outpad_0_(cby_8__1__6_right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4839,12 +4839,12 @@ module fpga_top
     );
     grid_io_right_right grid_io_right_right_9__6_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[40:43]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[40:43]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[40:43]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[40:43]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[40:43]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[40:43]),
         .left_width_0_height_0_subtile_0__pin_outpad_0_(cby_8__1__5_right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_),
         .left_width_0_height_0_subtile_1__pin_outpad_0_(cby_8__1__5_right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_),
         .left_width_0_height_0_subtile_2__pin_outpad_0_(cby_8__1__5_right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4858,12 +4858,12 @@ module fpga_top
     );
     grid_io_right_right grid_io_right_right_9__5_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[44:47]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[44:47]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[44:47]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[44:47]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[44:47]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[44:47]),
         .left_width_0_height_0_subtile_0__pin_outpad_0_(cby_8__1__4_right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_),
         .left_width_0_height_0_subtile_1__pin_outpad_0_(cby_8__1__4_right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_),
         .left_width_0_height_0_subtile_2__pin_outpad_0_(cby_8__1__4_right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4877,12 +4877,12 @@ module fpga_top
     );
     grid_io_right_right grid_io_right_right_9__4_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[48:51]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[48:51]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[48:51]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[48:51]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[48:51]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[48:51]),
         .left_width_0_height_0_subtile_0__pin_outpad_0_(cby_8__1__3_right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_),
         .left_width_0_height_0_subtile_1__pin_outpad_0_(cby_8__1__3_right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_),
         .left_width_0_height_0_subtile_2__pin_outpad_0_(cby_8__1__3_right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4896,12 +4896,12 @@ module fpga_top
     );
     grid_io_right_right grid_io_right_right_9__3_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[52:55]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[52:55]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[52:55]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[52:55]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[52:55]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[52:55]),
         .left_width_0_height_0_subtile_0__pin_outpad_0_(cby_8__1__2_right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_),
         .left_width_0_height_0_subtile_1__pin_outpad_0_(cby_8__1__2_right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_),
         .left_width_0_height_0_subtile_2__pin_outpad_0_(cby_8__1__2_right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4915,12 +4915,12 @@ module fpga_top
     );
     grid_io_right_right grid_io_right_right_9__2_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[56:59]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[56:59]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[56:59]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[56:59]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[56:59]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[56:59]),
         .left_width_0_height_0_subtile_0__pin_outpad_0_(cby_8__1__1_right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_),
         .left_width_0_height_0_subtile_1__pin_outpad_0_(cby_8__1__1_right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_),
         .left_width_0_height_0_subtile_2__pin_outpad_0_(cby_8__1__1_right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4934,12 +4934,12 @@ module fpga_top
     );
     grid_io_right_right grid_io_right_right_9__1_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[60:63]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[60:63]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[60:63]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[60:63]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[60:63]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[60:63]),
         .left_width_0_height_0_subtile_0__pin_outpad_0_(cby_8__1__0_right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_),
         .left_width_0_height_0_subtile_1__pin_outpad_0_(cby_8__1__0_right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_),
         .left_width_0_height_0_subtile_2__pin_outpad_0_(cby_8__1__0_right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4953,12 +4953,12 @@ module fpga_top
     );
     grid_io_bottom_bottom grid_io_bottom_bottom_8__0_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[64:67]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[64:67]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[64:67]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[64:67]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[64:67]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[64:67]),
         .top_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__0__7_bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_),
         .top_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__0__7_bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_),
         .top_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__0__7_bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4972,12 +4972,12 @@ module fpga_top
     );
     grid_io_bottom_bottom grid_io_bottom_bottom_7__0_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[68:71]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[68:71]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[68:71]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[68:71]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[68:71]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[68:71]),
         .top_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__0__6_bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_),
         .top_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__0__6_bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_),
         .top_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__0__6_bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -4991,12 +4991,12 @@ module fpga_top
     );
     grid_io_bottom_bottom grid_io_bottom_bottom_6__0_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[72:75]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[72:75]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[72:75]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[72:75]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[72:75]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[72:75]),
         .top_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__0__5_bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_),
         .top_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__0__5_bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_),
         .top_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__0__5_bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5010,12 +5010,12 @@ module fpga_top
     );
     grid_io_bottom_bottom grid_io_bottom_bottom_5__0_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[76:79]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[76:79]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[76:79]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[76:79]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[76:79]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[76:79]),
         .top_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__0__4_bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_),
         .top_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__0__4_bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_),
         .top_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__0__4_bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5029,12 +5029,12 @@ module fpga_top
     );
     grid_io_bottom_bottom grid_io_bottom_bottom_4__0_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[80:83]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[80:83]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[80:83]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[80:83]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[80:83]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[80:83]),
         .top_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__0__3_bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_),
         .top_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__0__3_bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_),
         .top_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__0__3_bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5048,12 +5048,12 @@ module fpga_top
     );
     grid_io_bottom_bottom grid_io_bottom_bottom_3__0_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[84:87]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[84:87]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[84:87]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[84:87]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[84:87]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[84:87]),
         .top_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__0__2_bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_),
         .top_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__0__2_bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_),
         .top_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__0__2_bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5067,12 +5067,12 @@ module fpga_top
     );
     grid_io_bottom_bottom grid_io_bottom_bottom_2__0_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[88:91]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[88:91]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[88:91]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[88:91]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[88:91]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[88:91]),
         .top_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__0__1_bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_),
         .top_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__0__1_bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_),
         .top_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__0__1_bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5086,12 +5086,12 @@ module fpga_top
     );
     grid_io_bottom_bottom grid_io_bottom_bottom_1__0_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[92:95]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[92:95]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[92:95]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[92:95]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[92:95]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[92:95]),
         .top_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__0__0_bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_),
         .top_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__0__0_bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_),
         .top_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__0__0_bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5105,12 +5105,12 @@ module fpga_top
     );
     grid_io_left_left grid_io_left_left_0__1_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[96:99]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[96:99]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[96:99]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[96:99]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[96:99]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[96:99]),
         .right_width_0_height_0_subtile_0__pin_outpad_0_(cby_0__1__0_left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_),
         .right_width_0_height_0_subtile_1__pin_outpad_0_(cby_0__1__0_left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_),
         .right_width_0_height_0_subtile_2__pin_outpad_0_(cby_0__1__0_left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5124,12 +5124,12 @@ module fpga_top
     );
     grid_io_left_left grid_io_left_left_0__2_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[100:103]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[100:103]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[100:103]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[100:103]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[100:103]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[100:103]),
         .right_width_0_height_0_subtile_0__pin_outpad_0_(cby_0__1__1_left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_),
         .right_width_0_height_0_subtile_1__pin_outpad_0_(cby_0__1__1_left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_),
         .right_width_0_height_0_subtile_2__pin_outpad_0_(cby_0__1__1_left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5143,12 +5143,12 @@ module fpga_top
     );
     grid_io_left_left grid_io_left_left_0__3_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[104:107]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[104:107]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[104:107]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[104:107]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[104:107]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[104:107]),
         .right_width_0_height_0_subtile_0__pin_outpad_0_(cby_0__1__2_left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_),
         .right_width_0_height_0_subtile_1__pin_outpad_0_(cby_0__1__2_left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_),
         .right_width_0_height_0_subtile_2__pin_outpad_0_(cby_0__1__2_left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5162,12 +5162,12 @@ module fpga_top
     );
     grid_io_left_left grid_io_left_left_0__4_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[108:111]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[108:111]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[108:111]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[108:111]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[108:111]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[108:111]),
         .right_width_0_height_0_subtile_0__pin_outpad_0_(cby_0__1__3_left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_),
         .right_width_0_height_0_subtile_1__pin_outpad_0_(cby_0__1__3_left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_),
         .right_width_0_height_0_subtile_2__pin_outpad_0_(cby_0__1__3_left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5181,12 +5181,12 @@ module fpga_top
     );
     grid_io_left_left grid_io_left_left_0__5_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[112:115]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[112:115]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[112:115]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[112:115]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[112:115]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[112:115]),
         .right_width_0_height_0_subtile_0__pin_outpad_0_(cby_0__1__4_left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_),
         .right_width_0_height_0_subtile_1__pin_outpad_0_(cby_0__1__4_left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_),
         .right_width_0_height_0_subtile_2__pin_outpad_0_(cby_0__1__4_left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5200,12 +5200,12 @@ module fpga_top
     );
     grid_io_left_left grid_io_left_left_0__6_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[116:119]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[116:119]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[116:119]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[116:119]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[116:119]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[116:119]),
         .right_width_0_height_0_subtile_0__pin_outpad_0_(cby_0__1__5_left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_),
         .right_width_0_height_0_subtile_1__pin_outpad_0_(cby_0__1__5_left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_),
         .right_width_0_height_0_subtile_2__pin_outpad_0_(cby_0__1__5_left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5219,12 +5219,12 @@ module fpga_top
     );
     grid_io_left_left grid_io_left_left_0__7_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[120:123]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[120:123]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[120:123]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[120:123]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[120:123]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[120:123]),
         .right_width_0_height_0_subtile_0__pin_outpad_0_(cby_0__1__6_left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_),
         .right_width_0_height_0_subtile_1__pin_outpad_0_(cby_0__1__6_left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_),
         .right_width_0_height_0_subtile_2__pin_outpad_0_(cby_0__1__6_left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5238,12 +5238,12 @@ module fpga_top
     );
     grid_io_left_left grid_io_left_left_0__8_
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[124:127]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[124:127]),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[124:127]),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[124:127]),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[124:127]),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[124:127]),
         .right_width_0_height_0_subtile_0__pin_outpad_0_(cby_0__1__7_left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_),
         .right_width_0_height_0_subtile_1__pin_outpad_0_(cby_0__1__7_left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_),
         .right_width_0_height_0_subtile_2__pin_outpad_0_(cby_0__1__7_left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -5257,9 +5257,9 @@ module fpga_top
     );
     grid_clb grid_clb_1__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5295,7 +5295,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__0_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__0_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__0_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__0_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_0_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5321,9 +5321,9 @@ module fpga_top
     );
     grid_clb grid_clb_1__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5359,7 +5359,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__1_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__1_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__1_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__1_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_1_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5385,9 +5385,9 @@ module fpga_top
     );
     grid_clb grid_clb_1__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5423,7 +5423,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__2_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__2_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__2_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__2_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_2_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5449,9 +5449,9 @@ module fpga_top
     );
     grid_clb grid_clb_1__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5487,7 +5487,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__3_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__3_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__3_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__3_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_3_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5513,9 +5513,9 @@ module fpga_top
     );
     grid_clb grid_clb_1__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5551,7 +5551,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__4_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__4_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__4_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__4_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_4_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5577,9 +5577,9 @@ module fpga_top
     );
     grid_clb grid_clb_1__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5615,7 +5615,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__5_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__5_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__5_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__5_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_5_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5641,9 +5641,9 @@ module fpga_top
     );
     grid_clb grid_clb_1__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5679,7 +5679,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__6_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__6_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__6_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__6_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_6_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5705,9 +5705,9 @@ module fpga_top
     );
     grid_clb grid_clb_1__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5743,7 +5743,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__7_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__7_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__7_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__7_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_7_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5769,9 +5769,9 @@ module fpga_top
     );
     grid_clb grid_clb_2__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5807,7 +5807,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__8_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__8_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__8_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__8_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_8_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5833,9 +5833,9 @@ module fpga_top
     );
     grid_clb grid_clb_2__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__8_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__8_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__8_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5871,7 +5871,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__9_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__9_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__9_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__9_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_9_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5897,9 +5897,9 @@ module fpga_top
     );
     grid_clb grid_clb_2__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__9_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__9_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__9_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5935,7 +5935,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__10_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__10_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__10_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__10_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_10_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -5961,9 +5961,9 @@ module fpga_top
     );
     grid_clb grid_clb_2__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__10_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__10_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__10_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5999,7 +5999,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__11_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__11_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__11_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__11_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_11_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6025,9 +6025,9 @@ module fpga_top
     );
     grid_clb grid_clb_2__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__11_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__11_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__11_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6063,7 +6063,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__12_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__12_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__12_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__12_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_12_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6089,9 +6089,9 @@ module fpga_top
     );
     grid_clb grid_clb_2__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__12_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__12_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__12_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6127,7 +6127,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__13_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__13_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__13_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__13_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_13_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6153,9 +6153,9 @@ module fpga_top
     );
     grid_clb grid_clb_2__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__13_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__13_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__13_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6191,7 +6191,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__14_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__14_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__14_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__14_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_14_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6217,9 +6217,9 @@ module fpga_top
     );
     grid_clb grid_clb_2__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6255,7 +6255,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__15_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__15_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__15_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__15_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_15_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6281,9 +6281,9 @@ module fpga_top
     );
     grid_clb grid_clb_3__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__14_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__14_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__14_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6319,7 +6319,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__16_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__16_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__16_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__16_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_16_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6345,9 +6345,9 @@ module fpga_top
     );
     grid_clb grid_clb_3__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__15_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__15_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__15_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6383,7 +6383,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__17_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__17_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__17_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__17_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_17_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6409,9 +6409,9 @@ module fpga_top
     );
     grid_clb grid_clb_3__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__16_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__16_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__16_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6447,7 +6447,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__18_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__18_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__18_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__18_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_18_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6473,9 +6473,9 @@ module fpga_top
     );
     grid_clb grid_clb_3__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__17_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__17_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__17_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6511,7 +6511,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__19_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__19_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__19_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__19_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_19_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6537,9 +6537,9 @@ module fpga_top
     );
     grid_clb grid_clb_3__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__18_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__18_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__18_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6575,7 +6575,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__20_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__20_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__20_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__20_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_20_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6601,9 +6601,9 @@ module fpga_top
     );
     grid_clb grid_clb_3__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__19_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__19_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__19_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6639,7 +6639,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__21_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__21_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__21_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__21_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_21_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6665,9 +6665,9 @@ module fpga_top
     );
     grid_clb grid_clb_3__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__20_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__20_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__20_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6703,7 +6703,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__22_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__22_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__22_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__22_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_22_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6729,9 +6729,9 @@ module fpga_top
     );
     grid_clb grid_clb_3__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6767,7 +6767,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__23_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__23_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__23_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__23_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_23_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6793,9 +6793,9 @@ module fpga_top
     );
     grid_clb grid_clb_4__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__21_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__21_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__21_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6831,7 +6831,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__24_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__24_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__24_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__24_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_24_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6857,9 +6857,9 @@ module fpga_top
     );
     grid_clb grid_clb_4__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__22_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__22_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__22_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6895,7 +6895,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__25_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__25_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__25_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__25_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_25_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6921,9 +6921,9 @@ module fpga_top
     );
     grid_clb grid_clb_4__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__23_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__23_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__23_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6959,7 +6959,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__26_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__26_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__26_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__26_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_26_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -6985,9 +6985,9 @@ module fpga_top
     );
     grid_clb grid_clb_4__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__24_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__24_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__24_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7023,7 +7023,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__27_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__27_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__27_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__27_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_27_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7049,9 +7049,9 @@ module fpga_top
     );
     grid_clb grid_clb_4__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__25_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__25_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__25_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7087,7 +7087,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__28_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__28_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__28_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__28_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_28_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7113,9 +7113,9 @@ module fpga_top
     );
     grid_clb grid_clb_4__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__26_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__26_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__26_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7151,7 +7151,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__29_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__29_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__29_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__29_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_29_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7177,9 +7177,9 @@ module fpga_top
     );
     grid_clb grid_clb_4__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__27_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__27_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__27_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7215,7 +7215,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__30_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__30_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__30_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__30_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_30_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7241,9 +7241,9 @@ module fpga_top
     );
     grid_clb grid_clb_4__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7279,7 +7279,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__31_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__31_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__31_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__31_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_31_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7305,9 +7305,9 @@ module fpga_top
     );
     grid_clb grid_clb_5__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__28_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__28_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__28_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7343,7 +7343,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__32_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__32_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__32_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__32_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_32_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7369,9 +7369,9 @@ module fpga_top
     );
     grid_clb grid_clb_5__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__29_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__29_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__29_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7407,7 +7407,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__33_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__33_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__33_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__33_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_33_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7433,9 +7433,9 @@ module fpga_top
     );
     grid_clb grid_clb_5__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__30_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__30_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__30_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7471,7 +7471,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__34_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__34_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__34_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__34_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_34_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7497,9 +7497,9 @@ module fpga_top
     );
     grid_clb grid_clb_5__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__31_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__31_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__31_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7535,7 +7535,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__35_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__35_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__35_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__35_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_35_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7561,9 +7561,9 @@ module fpga_top
     );
     grid_clb grid_clb_5__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__32_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__32_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__32_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7599,7 +7599,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__36_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__36_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__36_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__36_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_36_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7625,9 +7625,9 @@ module fpga_top
     );
     grid_clb grid_clb_5__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__33_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__33_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__33_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7663,7 +7663,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__37_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__37_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__37_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__37_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_37_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7689,9 +7689,9 @@ module fpga_top
     );
     grid_clb grid_clb_5__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__34_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__34_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__34_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7727,7 +7727,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__38_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__38_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__38_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__38_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_38_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7753,9 +7753,9 @@ module fpga_top
     );
     grid_clb grid_clb_5__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7791,7 +7791,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__39_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__39_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__39_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__39_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_39_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7817,9 +7817,9 @@ module fpga_top
     );
     grid_clb grid_clb_6__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__35_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__35_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__35_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7855,7 +7855,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__40_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__40_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__40_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__40_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_40_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7881,9 +7881,9 @@ module fpga_top
     );
     grid_clb grid_clb_6__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__36_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__36_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__36_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7919,7 +7919,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__41_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__41_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__41_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__41_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_41_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -7945,9 +7945,9 @@ module fpga_top
     );
     grid_clb grid_clb_6__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__37_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__37_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__37_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7983,7 +7983,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__42_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__42_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__42_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__42_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_42_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8009,9 +8009,9 @@ module fpga_top
     );
     grid_clb grid_clb_6__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__38_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__38_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__38_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8047,7 +8047,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__43_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__43_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__43_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__43_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_43_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8073,9 +8073,9 @@ module fpga_top
     );
     grid_clb grid_clb_6__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__39_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__39_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__39_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8111,7 +8111,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__44_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__44_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__44_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__44_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_44_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8137,9 +8137,9 @@ module fpga_top
     );
     grid_clb grid_clb_6__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__40_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__40_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__40_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8175,7 +8175,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__45_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__45_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__45_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__45_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_45_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8201,9 +8201,9 @@ module fpga_top
     );
     grid_clb grid_clb_6__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__41_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__41_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__41_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8239,7 +8239,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__46_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__46_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__46_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__46_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_46_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8265,9 +8265,9 @@ module fpga_top
     );
     grid_clb grid_clb_6__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8303,7 +8303,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__47_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__47_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__47_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__47_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_47_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8329,9 +8329,9 @@ module fpga_top
     );
     grid_clb grid_clb_7__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__42_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__42_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__42_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8367,7 +8367,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__48_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__48_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__48_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__48_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_48_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8393,9 +8393,9 @@ module fpga_top
     );
     grid_clb grid_clb_7__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__43_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__43_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__43_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8431,7 +8431,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__49_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__49_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__49_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__49_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_49_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8457,9 +8457,9 @@ module fpga_top
     );
     grid_clb grid_clb_7__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__44_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__44_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__44_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8495,7 +8495,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__50_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__50_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__50_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__50_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_50_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8521,9 +8521,9 @@ module fpga_top
     );
     grid_clb grid_clb_7__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__45_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__45_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__45_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8559,7 +8559,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__51_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__51_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__51_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__51_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_51_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8585,9 +8585,9 @@ module fpga_top
     );
     grid_clb grid_clb_7__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__46_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__46_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__46_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8623,7 +8623,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__52_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__52_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__52_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__52_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_52_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8649,9 +8649,9 @@ module fpga_top
     );
     grid_clb grid_clb_7__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__47_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__47_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__47_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8687,7 +8687,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__53_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__53_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__53_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__53_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_53_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8713,9 +8713,9 @@ module fpga_top
     );
     grid_clb grid_clb_7__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__48_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__48_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__48_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8751,7 +8751,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__54_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__54_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__54_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__54_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_54_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8777,9 +8777,9 @@ module fpga_top
     );
     grid_clb grid_clb_7__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8815,7 +8815,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_1__1__55_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_1__1__55_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_1__1__55_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_1__1__55_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_55_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8841,9 +8841,9 @@ module fpga_top
     );
     grid_clb grid_clb_8__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__49_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__49_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__49_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8879,7 +8879,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_8__1__0_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_8__1__0_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_8__1__0_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_8__1__0_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_56_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8905,9 +8905,9 @@ module fpga_top
     );
     grid_clb grid_clb_8__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__50_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__50_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__50_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8943,7 +8943,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_8__1__1_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_8__1__1_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_8__1__1_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_8__1__1_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_57_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -8969,9 +8969,9 @@ module fpga_top
     );
     grid_clb grid_clb_8__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__51_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__51_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__51_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -9007,7 +9007,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_8__1__2_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_8__1__2_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_8__1__2_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_8__1__2_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_58_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -9033,9 +9033,9 @@ module fpga_top
     );
     grid_clb grid_clb_8__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__52_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__52_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__52_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -9071,7 +9071,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_8__1__3_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_8__1__3_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_8__1__3_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_8__1__3_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_59_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -9097,9 +9097,9 @@ module fpga_top
     );
     grid_clb grid_clb_8__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__53_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__53_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__53_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -9135,7 +9135,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_8__1__4_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_8__1__4_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_8__1__4_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_8__1__4_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_60_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -9161,9 +9161,9 @@ module fpga_top
     );
     grid_clb grid_clb_8__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__54_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__54_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__54_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -9199,7 +9199,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_8__1__5_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_8__1__5_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_8__1__5_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_8__1__5_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_61_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -9225,9 +9225,9 @@ module fpga_top
     );
     grid_clb grid_clb_8__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__55_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__55_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__55_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -9263,7 +9263,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_8__1__6_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_8__1__6_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_8__1__6_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_8__1__6_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_62_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -9289,9 +9289,9 @@ module fpga_top
     );
     grid_clb grid_clb_8__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -9327,7 +9327,7 @@ module fpga_top
         .right_width_0_height_0_subtile_0__pin_I7_1_(cby_8__1__7_left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(cby_8__1__7_left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(cby_8__1__7_left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(Reset),
+        .left_width_0_height_0_subtile_0__pin_reset_0_(reset),
         .left_width_0_height_0_subtile_0__pin_clk_0_(clk),
         .ccff_head(cby_8__1__7_ccff_tail),
         .top_width_0_height_0_subtile_0__pin_O_0_(grid_clb_63_top_width_0_height_0_subtile_0__pin_O_0_),
@@ -9353,7 +9353,7 @@ module fpga_top
     );
     sb_0__0_ sb_0__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_0__1__0_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_left_left_0_right_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -9372,7 +9372,7 @@ module fpga_top
     );
     sb_0__1_ sb_0__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_0__1__1_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_left_left_1_right_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -9401,7 +9401,7 @@ module fpga_top
     );
     sb_0__1_ sb_0__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_0__1__2_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_left_left_2_right_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -9430,7 +9430,7 @@ module fpga_top
     );
     sb_0__1_ sb_0__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_0__1__3_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_left_left_3_right_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -9459,7 +9459,7 @@ module fpga_top
     );
     sb_0__1_ sb_0__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_0__1__4_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_left_left_4_right_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -9488,7 +9488,7 @@ module fpga_top
     );
     sb_0__1_ sb_0__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_0__1__5_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_left_left_5_right_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -9517,7 +9517,7 @@ module fpga_top
     );
     sb_0__1_ sb_0__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_0__1__6_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_left_left_6_right_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -9546,7 +9546,7 @@ module fpga_top
     );
     sb_0__1_ sb_0__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_0__1__7_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_left_left_7_right_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -9575,7 +9575,7 @@ module fpga_top
     );
     sb_0__8_ sb_0__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_right_in(cbx_1__8__0_chanx_left_out),
         .right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_top_top_0_bottom_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -9602,7 +9602,7 @@ module fpga_top
     );
     sb_1__0_ sb_1__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__0_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_0_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9631,7 +9631,7 @@ module fpga_top
     );
     sb_1__0_ sb_2__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__8_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_8_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9660,7 +9660,7 @@ module fpga_top
     );
     sb_1__0_ sb_3__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__16_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_16_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9689,7 +9689,7 @@ module fpga_top
     );
     sb_1__0_ sb_4__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__24_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_24_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9718,7 +9718,7 @@ module fpga_top
     );
     sb_1__0_ sb_5__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__32_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_32_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9747,7 +9747,7 @@ module fpga_top
     );
     sb_1__0_ sb_6__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__40_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_40_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9776,7 +9776,7 @@ module fpga_top
     );
     sb_1__0_ sb_7__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__48_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_48_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9805,7 +9805,7 @@ module fpga_top
     );
     sb_1__1_ sb_1__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__1_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_1_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9852,7 +9852,7 @@ module fpga_top
     );
     sb_1__1_ sb_1__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__2_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_2_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9899,7 +9899,7 @@ module fpga_top
     );
     sb_1__1_ sb_1__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__3_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_3_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9946,7 +9946,7 @@ module fpga_top
     );
     sb_1__1_ sb_1__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__4_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_4_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -9993,7 +9993,7 @@ module fpga_top
     );
     sb_1__1_ sb_1__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__5_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_5_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10040,7 +10040,7 @@ module fpga_top
     );
     sb_1__1_ sb_1__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__6_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_6_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10087,7 +10087,7 @@ module fpga_top
     );
     sb_1__1_ sb_1__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__7_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_7_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10134,7 +10134,7 @@ module fpga_top
     );
     sb_1__1_ sb_2__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__9_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_9_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10181,7 +10181,7 @@ module fpga_top
     );
     sb_1__1_ sb_2__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__10_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_10_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10228,7 +10228,7 @@ module fpga_top
     );
     sb_1__1_ sb_2__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__11_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_11_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10275,7 +10275,7 @@ module fpga_top
     );
     sb_1__1_ sb_2__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__12_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_12_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10322,7 +10322,7 @@ module fpga_top
     );
     sb_1__1_ sb_2__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__13_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_13_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10369,7 +10369,7 @@ module fpga_top
     );
     sb_1__1_ sb_2__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__14_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_14_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10416,7 +10416,7 @@ module fpga_top
     );
     sb_1__1_ sb_2__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__15_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_15_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10463,7 +10463,7 @@ module fpga_top
     );
     sb_1__1_ sb_3__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__17_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_17_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10510,7 +10510,7 @@ module fpga_top
     );
     sb_1__1_ sb_3__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__18_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_18_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10557,7 +10557,7 @@ module fpga_top
     );
     sb_1__1_ sb_3__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__19_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_19_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10604,7 +10604,7 @@ module fpga_top
     );
     sb_1__1_ sb_3__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__20_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_20_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10651,7 +10651,7 @@ module fpga_top
     );
     sb_1__1_ sb_3__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__21_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_21_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10698,7 +10698,7 @@ module fpga_top
     );
     sb_1__1_ sb_3__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__22_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_22_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10745,7 +10745,7 @@ module fpga_top
     );
     sb_1__1_ sb_3__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__23_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_23_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10792,7 +10792,7 @@ module fpga_top
     );
     sb_1__1_ sb_4__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__25_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_25_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10839,7 +10839,7 @@ module fpga_top
     );
     sb_1__1_ sb_4__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__26_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_26_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10886,7 +10886,7 @@ module fpga_top
     );
     sb_1__1_ sb_4__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__27_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_27_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10933,7 +10933,7 @@ module fpga_top
     );
     sb_1__1_ sb_4__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__28_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_28_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -10980,7 +10980,7 @@ module fpga_top
     );
     sb_1__1_ sb_4__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__29_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_29_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11027,7 +11027,7 @@ module fpga_top
     );
     sb_1__1_ sb_4__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__30_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_30_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11074,7 +11074,7 @@ module fpga_top
     );
     sb_1__1_ sb_4__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__31_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_31_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11121,7 +11121,7 @@ module fpga_top
     );
     sb_1__1_ sb_5__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__33_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_33_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11168,7 +11168,7 @@ module fpga_top
     );
     sb_1__1_ sb_5__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__34_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_34_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11215,7 +11215,7 @@ module fpga_top
     );
     sb_1__1_ sb_5__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__35_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_35_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11262,7 +11262,7 @@ module fpga_top
     );
     sb_1__1_ sb_5__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__36_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_36_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11309,7 +11309,7 @@ module fpga_top
     );
     sb_1__1_ sb_5__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__37_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_37_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11356,7 +11356,7 @@ module fpga_top
     );
     sb_1__1_ sb_5__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__38_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_38_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11403,7 +11403,7 @@ module fpga_top
     );
     sb_1__1_ sb_5__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__39_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_39_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11450,7 +11450,7 @@ module fpga_top
     );
     sb_1__1_ sb_6__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__41_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_41_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11497,7 +11497,7 @@ module fpga_top
     );
     sb_1__1_ sb_6__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__42_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_42_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11544,7 +11544,7 @@ module fpga_top
     );
     sb_1__1_ sb_6__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__43_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_43_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11591,7 +11591,7 @@ module fpga_top
     );
     sb_1__1_ sb_6__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__44_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_44_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11638,7 +11638,7 @@ module fpga_top
     );
     sb_1__1_ sb_6__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__45_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_45_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11685,7 +11685,7 @@ module fpga_top
     );
     sb_1__1_ sb_6__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__46_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_46_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11732,7 +11732,7 @@ module fpga_top
     );
     sb_1__1_ sb_6__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__47_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_47_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11779,7 +11779,7 @@ module fpga_top
     );
     sb_1__1_ sb_7__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__49_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_49_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11826,7 +11826,7 @@ module fpga_top
     );
     sb_1__1_ sb_7__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__50_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_50_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11873,7 +11873,7 @@ module fpga_top
     );
     sb_1__1_ sb_7__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__51_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_51_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11920,7 +11920,7 @@ module fpga_top
     );
     sb_1__1_ sb_7__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__52_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_52_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -11967,7 +11967,7 @@ module fpga_top
     );
     sb_1__1_ sb_7__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__53_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_53_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12014,7 +12014,7 @@ module fpga_top
     );
     sb_1__1_ sb_7__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__54_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_54_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12061,7 +12061,7 @@ module fpga_top
     );
     sb_1__1_ sb_7__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_1__1__55_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_55_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12108,7 +12108,7 @@ module fpga_top
     );
     sb_1__8_ sb_1__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_right_in(cbx_1__8__1_chanx_left_out),
         .right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_top_top_1_bottom_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -12153,7 +12153,7 @@ module fpga_top
     );
     sb_1__8_ sb_2__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_right_in(cbx_1__8__2_chanx_left_out),
         .right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_top_top_2_bottom_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -12198,7 +12198,7 @@ module fpga_top
     );
     sb_1__8_ sb_3__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_right_in(cbx_1__8__3_chanx_left_out),
         .right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_top_top_3_bottom_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -12243,7 +12243,7 @@ module fpga_top
     );
     sb_1__8_ sb_4__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_right_in(cbx_1__8__4_chanx_left_out),
         .right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_top_top_4_bottom_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -12288,7 +12288,7 @@ module fpga_top
     );
     sb_1__8_ sb_5__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_right_in(cbx_1__8__5_chanx_left_out),
         .right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_top_top_5_bottom_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -12333,7 +12333,7 @@ module fpga_top
     );
     sb_1__8_ sb_6__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_right_in(cbx_1__8__6_chanx_left_out),
         .right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_top_top_6_bottom_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -12378,7 +12378,7 @@ module fpga_top
     );
     sb_1__8_ sb_7__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_right_in(cbx_1__8__7_chanx_left_out),
         .right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_top_top_7_bottom_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -12423,7 +12423,7 @@ module fpga_top
     );
     sb_8__0_ sb_8__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_8__1__0_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_56_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12450,7 +12450,7 @@ module fpga_top
     );
     sb_8__1_ sb_8__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_8__1__1_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_57_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12495,7 +12495,7 @@ module fpga_top
     );
     sb_8__1_ sb_8__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_8__1__2_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_58_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12540,7 +12540,7 @@ module fpga_top
     );
     sb_8__1_ sb_8__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_8__1__3_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_59_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12585,7 +12585,7 @@ module fpga_top
     );
     sb_8__1_ sb_8__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_8__1__4_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_60_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12630,7 +12630,7 @@ module fpga_top
     );
     sb_8__1_ sb_8__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_8__1__5_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_61_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12675,7 +12675,7 @@ module fpga_top
     );
     sb_8__1_ sb_8__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_8__1__6_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_62_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12720,7 +12720,7 @@ module fpga_top
     );
     sb_8__1_ sb_8__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_top_in(cby_8__1__7_chany_bottom_out),
         .top_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_63_right_width_0_height_0_subtile_0__pin_O_8_),
@@ -12765,7 +12765,7 @@ module fpga_top
     );
     sb_8__8_ sb_8__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(cby_8__1__7_chany_top_out),
         .bottom_right_grid_left_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_right_right_0_left_width_0_height_0_subtile_0__pin_inpad_0_),
@@ -12800,7 +12800,7 @@ module fpga_top
     );
     cbx_1__0_ cbx_1__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_0__0__0_chanx_right_out),
         .chanx_right_in(sb_1__0__0_chanx_left_out),
@@ -12815,7 +12815,7 @@ module fpga_top
     );
     cbx_1__0_ cbx_2__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__0__0_chanx_right_out),
         .chanx_right_in(sb_1__0__1_chanx_left_out),
@@ -12830,7 +12830,7 @@ module fpga_top
     );
     cbx_1__0_ cbx_3__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__0__1_chanx_right_out),
         .chanx_right_in(sb_1__0__2_chanx_left_out),
@@ -12845,7 +12845,7 @@ module fpga_top
     );
     cbx_1__0_ cbx_4__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__0__2_chanx_right_out),
         .chanx_right_in(sb_1__0__3_chanx_left_out),
@@ -12860,7 +12860,7 @@ module fpga_top
     );
     cbx_1__0_ cbx_5__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__0__3_chanx_right_out),
         .chanx_right_in(sb_1__0__4_chanx_left_out),
@@ -12875,7 +12875,7 @@ module fpga_top
     );
     cbx_1__0_ cbx_6__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__0__4_chanx_right_out),
         .chanx_right_in(sb_1__0__5_chanx_left_out),
@@ -12890,7 +12890,7 @@ module fpga_top
     );
     cbx_1__0_ cbx_7__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__0__5_chanx_right_out),
         .chanx_right_in(sb_1__0__6_chanx_left_out),
@@ -12905,7 +12905,7 @@ module fpga_top
     );
     cbx_1__0_ cbx_8__0_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__0__6_chanx_right_out),
         .chanx_right_in(sb_8__0__0_chanx_left_out),
@@ -12920,7 +12920,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_1__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_0__1__0_chanx_right_out),
         .chanx_right_in(sb_1__1__0_chanx_left_out),
@@ -12947,7 +12947,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_1__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_0__1__1_chanx_right_out),
         .chanx_right_in(sb_1__1__1_chanx_left_out),
@@ -12974,7 +12974,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_1__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_0__1__2_chanx_right_out),
         .chanx_right_in(sb_1__1__2_chanx_left_out),
@@ -13001,7 +13001,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_1__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_0__1__3_chanx_right_out),
         .chanx_right_in(sb_1__1__3_chanx_left_out),
@@ -13028,7 +13028,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_1__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_0__1__4_chanx_right_out),
         .chanx_right_in(sb_1__1__4_chanx_left_out),
@@ -13055,7 +13055,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_1__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_0__1__5_chanx_right_out),
         .chanx_right_in(sb_1__1__5_chanx_left_out),
@@ -13082,7 +13082,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_1__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_0__1__6_chanx_right_out),
         .chanx_right_in(sb_1__1__6_chanx_left_out),
@@ -13109,7 +13109,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_2__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__0_chanx_right_out),
         .chanx_right_in(sb_1__1__7_chanx_left_out),
@@ -13136,7 +13136,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_2__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__1_chanx_right_out),
         .chanx_right_in(sb_1__1__8_chanx_left_out),
@@ -13163,7 +13163,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_2__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__2_chanx_right_out),
         .chanx_right_in(sb_1__1__9_chanx_left_out),
@@ -13190,7 +13190,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_2__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__3_chanx_right_out),
         .chanx_right_in(sb_1__1__10_chanx_left_out),
@@ -13217,7 +13217,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_2__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__4_chanx_right_out),
         .chanx_right_in(sb_1__1__11_chanx_left_out),
@@ -13244,7 +13244,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_2__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__5_chanx_right_out),
         .chanx_right_in(sb_1__1__12_chanx_left_out),
@@ -13271,7 +13271,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_2__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__6_chanx_right_out),
         .chanx_right_in(sb_1__1__13_chanx_left_out),
@@ -13298,7 +13298,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_3__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__7_chanx_right_out),
         .chanx_right_in(sb_1__1__14_chanx_left_out),
@@ -13325,7 +13325,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_3__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__8_chanx_right_out),
         .chanx_right_in(sb_1__1__15_chanx_left_out),
@@ -13352,7 +13352,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_3__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__9_chanx_right_out),
         .chanx_right_in(sb_1__1__16_chanx_left_out),
@@ -13379,7 +13379,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_3__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__10_chanx_right_out),
         .chanx_right_in(sb_1__1__17_chanx_left_out),
@@ -13406,7 +13406,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_3__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__11_chanx_right_out),
         .chanx_right_in(sb_1__1__18_chanx_left_out),
@@ -13433,7 +13433,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_3__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__12_chanx_right_out),
         .chanx_right_in(sb_1__1__19_chanx_left_out),
@@ -13460,7 +13460,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_3__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__13_chanx_right_out),
         .chanx_right_in(sb_1__1__20_chanx_left_out),
@@ -13487,7 +13487,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_4__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__14_chanx_right_out),
         .chanx_right_in(sb_1__1__21_chanx_left_out),
@@ -13514,7 +13514,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_4__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__15_chanx_right_out),
         .chanx_right_in(sb_1__1__22_chanx_left_out),
@@ -13541,7 +13541,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_4__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__16_chanx_right_out),
         .chanx_right_in(sb_1__1__23_chanx_left_out),
@@ -13568,7 +13568,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_4__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__17_chanx_right_out),
         .chanx_right_in(sb_1__1__24_chanx_left_out),
@@ -13595,7 +13595,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_4__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__18_chanx_right_out),
         .chanx_right_in(sb_1__1__25_chanx_left_out),
@@ -13622,7 +13622,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_4__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__19_chanx_right_out),
         .chanx_right_in(sb_1__1__26_chanx_left_out),
@@ -13649,7 +13649,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_4__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__20_chanx_right_out),
         .chanx_right_in(sb_1__1__27_chanx_left_out),
@@ -13676,7 +13676,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_5__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__21_chanx_right_out),
         .chanx_right_in(sb_1__1__28_chanx_left_out),
@@ -13703,7 +13703,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_5__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__22_chanx_right_out),
         .chanx_right_in(sb_1__1__29_chanx_left_out),
@@ -13730,7 +13730,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_5__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__23_chanx_right_out),
         .chanx_right_in(sb_1__1__30_chanx_left_out),
@@ -13757,7 +13757,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_5__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__24_chanx_right_out),
         .chanx_right_in(sb_1__1__31_chanx_left_out),
@@ -13784,7 +13784,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_5__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__25_chanx_right_out),
         .chanx_right_in(sb_1__1__32_chanx_left_out),
@@ -13811,7 +13811,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_5__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__26_chanx_right_out),
         .chanx_right_in(sb_1__1__33_chanx_left_out),
@@ -13838,7 +13838,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_5__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__27_chanx_right_out),
         .chanx_right_in(sb_1__1__34_chanx_left_out),
@@ -13865,7 +13865,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_6__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__28_chanx_right_out),
         .chanx_right_in(sb_1__1__35_chanx_left_out),
@@ -13892,7 +13892,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_6__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__29_chanx_right_out),
         .chanx_right_in(sb_1__1__36_chanx_left_out),
@@ -13919,7 +13919,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_6__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__30_chanx_right_out),
         .chanx_right_in(sb_1__1__37_chanx_left_out),
@@ -13946,7 +13946,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_6__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__31_chanx_right_out),
         .chanx_right_in(sb_1__1__38_chanx_left_out),
@@ -13973,7 +13973,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_6__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__32_chanx_right_out),
         .chanx_right_in(sb_1__1__39_chanx_left_out),
@@ -14000,7 +14000,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_6__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__33_chanx_right_out),
         .chanx_right_in(sb_1__1__40_chanx_left_out),
@@ -14027,7 +14027,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_6__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__34_chanx_right_out),
         .chanx_right_in(sb_1__1__41_chanx_left_out),
@@ -14054,7 +14054,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_7__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__35_chanx_right_out),
         .chanx_right_in(sb_1__1__42_chanx_left_out),
@@ -14081,7 +14081,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_7__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__36_chanx_right_out),
         .chanx_right_in(sb_1__1__43_chanx_left_out),
@@ -14108,7 +14108,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_7__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__37_chanx_right_out),
         .chanx_right_in(sb_1__1__44_chanx_left_out),
@@ -14135,7 +14135,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_7__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__38_chanx_right_out),
         .chanx_right_in(sb_1__1__45_chanx_left_out),
@@ -14162,7 +14162,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_7__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__39_chanx_right_out),
         .chanx_right_in(sb_1__1__46_chanx_left_out),
@@ -14189,7 +14189,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_7__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__40_chanx_right_out),
         .chanx_right_in(sb_1__1__47_chanx_left_out),
@@ -14216,7 +14216,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_7__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__41_chanx_right_out),
         .chanx_right_in(sb_1__1__48_chanx_left_out),
@@ -14243,7 +14243,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_8__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__42_chanx_right_out),
         .chanx_right_in(sb_8__1__0_chanx_left_out),
@@ -14270,7 +14270,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_8__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__43_chanx_right_out),
         .chanx_right_in(sb_8__1__1_chanx_left_out),
@@ -14297,7 +14297,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_8__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__44_chanx_right_out),
         .chanx_right_in(sb_8__1__2_chanx_left_out),
@@ -14324,7 +14324,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_8__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__45_chanx_right_out),
         .chanx_right_in(sb_8__1__3_chanx_left_out),
@@ -14351,7 +14351,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_8__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__46_chanx_right_out),
         .chanx_right_in(sb_8__1__4_chanx_left_out),
@@ -14378,7 +14378,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_8__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__47_chanx_right_out),
         .chanx_right_in(sb_8__1__5_chanx_left_out),
@@ -14405,7 +14405,7 @@ module fpga_top
     );
     cbx_1__1_ cbx_8__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__1__48_chanx_right_out),
         .chanx_right_in(sb_8__1__6_chanx_left_out),
@@ -14432,7 +14432,7 @@ module fpga_top
     );
     cbx_1__8_ cbx_1__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_0__8__0_chanx_right_out),
         .chanx_right_in(sb_1__8__0_chanx_left_out),
@@ -14463,7 +14463,7 @@ module fpga_top
     );
     cbx_1__8_ cbx_2__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__8__0_chanx_right_out),
         .chanx_right_in(sb_1__8__1_chanx_left_out),
@@ -14494,7 +14494,7 @@ module fpga_top
     );
     cbx_1__8_ cbx_3__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__8__1_chanx_right_out),
         .chanx_right_in(sb_1__8__2_chanx_left_out),
@@ -14525,7 +14525,7 @@ module fpga_top
     );
     cbx_1__8_ cbx_4__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__8__2_chanx_right_out),
         .chanx_right_in(sb_1__8__3_chanx_left_out),
@@ -14556,7 +14556,7 @@ module fpga_top
     );
     cbx_1__8_ cbx_5__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__8__3_chanx_right_out),
         .chanx_right_in(sb_1__8__4_chanx_left_out),
@@ -14587,7 +14587,7 @@ module fpga_top
     );
     cbx_1__8_ cbx_6__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__8__4_chanx_right_out),
         .chanx_right_in(sb_1__8__5_chanx_left_out),
@@ -14618,7 +14618,7 @@ module fpga_top
     );
     cbx_1__8_ cbx_7__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__8__5_chanx_right_out),
         .chanx_right_in(sb_1__8__6_chanx_left_out),
@@ -14649,7 +14649,7 @@ module fpga_top
     );
     cbx_1__8_ cbx_8__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chanx_left_in(sb_1__8__6_chanx_right_out),
         .chanx_right_in(sb_8__8__0_chanx_left_out),
@@ -14680,7 +14680,7 @@ module fpga_top
     );
     cby_0__1_ cby_0__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_0__0__0_chany_top_out),
         .chany_top_in(sb_0__1__0_chany_bottom_out),
@@ -14695,7 +14695,7 @@ module fpga_top
     );
     cby_0__1_ cby_0__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_0__1__0_chany_top_out),
         .chany_top_in(sb_0__1__1_chany_bottom_out),
@@ -14710,7 +14710,7 @@ module fpga_top
     );
     cby_0__1_ cby_0__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_0__1__1_chany_top_out),
         .chany_top_in(sb_0__1__2_chany_bottom_out),
@@ -14725,7 +14725,7 @@ module fpga_top
     );
     cby_0__1_ cby_0__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_0__1__2_chany_top_out),
         .chany_top_in(sb_0__1__3_chany_bottom_out),
@@ -14740,7 +14740,7 @@ module fpga_top
     );
     cby_0__1_ cby_0__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_0__1__3_chany_top_out),
         .chany_top_in(sb_0__1__4_chany_bottom_out),
@@ -14755,7 +14755,7 @@ module fpga_top
     );
     cby_0__1_ cby_0__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_0__1__4_chany_top_out),
         .chany_top_in(sb_0__1__5_chany_bottom_out),
@@ -14770,7 +14770,7 @@ module fpga_top
     );
     cby_0__1_ cby_0__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_0__1__5_chany_top_out),
         .chany_top_in(sb_0__1__6_chany_bottom_out),
@@ -14785,7 +14785,7 @@ module fpga_top
     );
     cby_0__1_ cby_0__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_0__1__6_chany_top_out),
         .chany_top_in(sb_0__8__0_chany_bottom_out),
@@ -14800,7 +14800,7 @@ module fpga_top
     );
     cby_1__1_ cby_1__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__0__0_chany_top_out),
         .chany_top_in(sb_1__1__0_chany_bottom_out),
@@ -14827,7 +14827,7 @@ module fpga_top
     );
     cby_1__1_ cby_1__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__0_chany_top_out),
         .chany_top_in(sb_1__1__1_chany_bottom_out),
@@ -14854,7 +14854,7 @@ module fpga_top
     );
     cby_1__1_ cby_1__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__1_chany_top_out),
         .chany_top_in(sb_1__1__2_chany_bottom_out),
@@ -14881,7 +14881,7 @@ module fpga_top
     );
     cby_1__1_ cby_1__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__2_chany_top_out),
         .chany_top_in(sb_1__1__3_chany_bottom_out),
@@ -14908,7 +14908,7 @@ module fpga_top
     );
     cby_1__1_ cby_1__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__3_chany_top_out),
         .chany_top_in(sb_1__1__4_chany_bottom_out),
@@ -14935,7 +14935,7 @@ module fpga_top
     );
     cby_1__1_ cby_1__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__4_chany_top_out),
         .chany_top_in(sb_1__1__5_chany_bottom_out),
@@ -14962,7 +14962,7 @@ module fpga_top
     );
     cby_1__1_ cby_1__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__5_chany_top_out),
         .chany_top_in(sb_1__1__6_chany_bottom_out),
@@ -14989,7 +14989,7 @@ module fpga_top
     );
     cby_1__1_ cby_1__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__6_chany_top_out),
         .chany_top_in(sb_1__8__0_chany_bottom_out),
@@ -15016,7 +15016,7 @@ module fpga_top
     );
     cby_1__1_ cby_2__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__0__1_chany_top_out),
         .chany_top_in(sb_1__1__7_chany_bottom_out),
@@ -15043,7 +15043,7 @@ module fpga_top
     );
     cby_1__1_ cby_2__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__7_chany_top_out),
         .chany_top_in(sb_1__1__8_chany_bottom_out),
@@ -15070,7 +15070,7 @@ module fpga_top
     );
     cby_1__1_ cby_2__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__8_chany_top_out),
         .chany_top_in(sb_1__1__9_chany_bottom_out),
@@ -15097,7 +15097,7 @@ module fpga_top
     );
     cby_1__1_ cby_2__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__9_chany_top_out),
         .chany_top_in(sb_1__1__10_chany_bottom_out),
@@ -15124,7 +15124,7 @@ module fpga_top
     );
     cby_1__1_ cby_2__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__10_chany_top_out),
         .chany_top_in(sb_1__1__11_chany_bottom_out),
@@ -15151,7 +15151,7 @@ module fpga_top
     );
     cby_1__1_ cby_2__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__11_chany_top_out),
         .chany_top_in(sb_1__1__12_chany_bottom_out),
@@ -15178,7 +15178,7 @@ module fpga_top
     );
     cby_1__1_ cby_2__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__12_chany_top_out),
         .chany_top_in(sb_1__1__13_chany_bottom_out),
@@ -15205,7 +15205,7 @@ module fpga_top
     );
     cby_1__1_ cby_2__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__13_chany_top_out),
         .chany_top_in(sb_1__8__1_chany_bottom_out),
@@ -15232,7 +15232,7 @@ module fpga_top
     );
     cby_1__1_ cby_3__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__0__2_chany_top_out),
         .chany_top_in(sb_1__1__14_chany_bottom_out),
@@ -15259,7 +15259,7 @@ module fpga_top
     );
     cby_1__1_ cby_3__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__14_chany_top_out),
         .chany_top_in(sb_1__1__15_chany_bottom_out),
@@ -15286,7 +15286,7 @@ module fpga_top
     );
     cby_1__1_ cby_3__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__15_chany_top_out),
         .chany_top_in(sb_1__1__16_chany_bottom_out),
@@ -15313,7 +15313,7 @@ module fpga_top
     );
     cby_1__1_ cby_3__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__16_chany_top_out),
         .chany_top_in(sb_1__1__17_chany_bottom_out),
@@ -15340,7 +15340,7 @@ module fpga_top
     );
     cby_1__1_ cby_3__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__17_chany_top_out),
         .chany_top_in(sb_1__1__18_chany_bottom_out),
@@ -15367,7 +15367,7 @@ module fpga_top
     );
     cby_1__1_ cby_3__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__18_chany_top_out),
         .chany_top_in(sb_1__1__19_chany_bottom_out),
@@ -15394,7 +15394,7 @@ module fpga_top
     );
     cby_1__1_ cby_3__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__19_chany_top_out),
         .chany_top_in(sb_1__1__20_chany_bottom_out),
@@ -15421,7 +15421,7 @@ module fpga_top
     );
     cby_1__1_ cby_3__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__20_chany_top_out),
         .chany_top_in(sb_1__8__2_chany_bottom_out),
@@ -15448,7 +15448,7 @@ module fpga_top
     );
     cby_1__1_ cby_4__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__0__3_chany_top_out),
         .chany_top_in(sb_1__1__21_chany_bottom_out),
@@ -15475,7 +15475,7 @@ module fpga_top
     );
     cby_1__1_ cby_4__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__21_chany_top_out),
         .chany_top_in(sb_1__1__22_chany_bottom_out),
@@ -15502,7 +15502,7 @@ module fpga_top
     );
     cby_1__1_ cby_4__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__22_chany_top_out),
         .chany_top_in(sb_1__1__23_chany_bottom_out),
@@ -15529,7 +15529,7 @@ module fpga_top
     );
     cby_1__1_ cby_4__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__23_chany_top_out),
         .chany_top_in(sb_1__1__24_chany_bottom_out),
@@ -15556,7 +15556,7 @@ module fpga_top
     );
     cby_1__1_ cby_4__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__24_chany_top_out),
         .chany_top_in(sb_1__1__25_chany_bottom_out),
@@ -15583,7 +15583,7 @@ module fpga_top
     );
     cby_1__1_ cby_4__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__25_chany_top_out),
         .chany_top_in(sb_1__1__26_chany_bottom_out),
@@ -15610,7 +15610,7 @@ module fpga_top
     );
     cby_1__1_ cby_4__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__26_chany_top_out),
         .chany_top_in(sb_1__1__27_chany_bottom_out),
@@ -15637,7 +15637,7 @@ module fpga_top
     );
     cby_1__1_ cby_4__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__27_chany_top_out),
         .chany_top_in(sb_1__8__3_chany_bottom_out),
@@ -15664,7 +15664,7 @@ module fpga_top
     );
     cby_1__1_ cby_5__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__0__4_chany_top_out),
         .chany_top_in(sb_1__1__28_chany_bottom_out),
@@ -15691,7 +15691,7 @@ module fpga_top
     );
     cby_1__1_ cby_5__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__28_chany_top_out),
         .chany_top_in(sb_1__1__29_chany_bottom_out),
@@ -15718,7 +15718,7 @@ module fpga_top
     );
     cby_1__1_ cby_5__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__29_chany_top_out),
         .chany_top_in(sb_1__1__30_chany_bottom_out),
@@ -15745,7 +15745,7 @@ module fpga_top
     );
     cby_1__1_ cby_5__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__30_chany_top_out),
         .chany_top_in(sb_1__1__31_chany_bottom_out),
@@ -15772,7 +15772,7 @@ module fpga_top
     );
     cby_1__1_ cby_5__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__31_chany_top_out),
         .chany_top_in(sb_1__1__32_chany_bottom_out),
@@ -15799,7 +15799,7 @@ module fpga_top
     );
     cby_1__1_ cby_5__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__32_chany_top_out),
         .chany_top_in(sb_1__1__33_chany_bottom_out),
@@ -15826,7 +15826,7 @@ module fpga_top
     );
     cby_1__1_ cby_5__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__33_chany_top_out),
         .chany_top_in(sb_1__1__34_chany_bottom_out),
@@ -15853,7 +15853,7 @@ module fpga_top
     );
     cby_1__1_ cby_5__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__34_chany_top_out),
         .chany_top_in(sb_1__8__4_chany_bottom_out),
@@ -15880,7 +15880,7 @@ module fpga_top
     );
     cby_1__1_ cby_6__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__0__5_chany_top_out),
         .chany_top_in(sb_1__1__35_chany_bottom_out),
@@ -15907,7 +15907,7 @@ module fpga_top
     );
     cby_1__1_ cby_6__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__35_chany_top_out),
         .chany_top_in(sb_1__1__36_chany_bottom_out),
@@ -15934,7 +15934,7 @@ module fpga_top
     );
     cby_1__1_ cby_6__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__36_chany_top_out),
         .chany_top_in(sb_1__1__37_chany_bottom_out),
@@ -15961,7 +15961,7 @@ module fpga_top
     );
     cby_1__1_ cby_6__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__37_chany_top_out),
         .chany_top_in(sb_1__1__38_chany_bottom_out),
@@ -15988,7 +15988,7 @@ module fpga_top
     );
     cby_1__1_ cby_6__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__38_chany_top_out),
         .chany_top_in(sb_1__1__39_chany_bottom_out),
@@ -16015,7 +16015,7 @@ module fpga_top
     );
     cby_1__1_ cby_6__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__39_chany_top_out),
         .chany_top_in(sb_1__1__40_chany_bottom_out),
@@ -16042,7 +16042,7 @@ module fpga_top
     );
     cby_1__1_ cby_6__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__40_chany_top_out),
         .chany_top_in(sb_1__1__41_chany_bottom_out),
@@ -16069,7 +16069,7 @@ module fpga_top
     );
     cby_1__1_ cby_6__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__41_chany_top_out),
         .chany_top_in(sb_1__8__5_chany_bottom_out),
@@ -16096,7 +16096,7 @@ module fpga_top
     );
     cby_1__1_ cby_7__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__0__6_chany_top_out),
         .chany_top_in(sb_1__1__42_chany_bottom_out),
@@ -16123,7 +16123,7 @@ module fpga_top
     );
     cby_1__1_ cby_7__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__42_chany_top_out),
         .chany_top_in(sb_1__1__43_chany_bottom_out),
@@ -16150,7 +16150,7 @@ module fpga_top
     );
     cby_1__1_ cby_7__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__43_chany_top_out),
         .chany_top_in(sb_1__1__44_chany_bottom_out),
@@ -16177,7 +16177,7 @@ module fpga_top
     );
     cby_1__1_ cby_7__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__44_chany_top_out),
         .chany_top_in(sb_1__1__45_chany_bottom_out),
@@ -16204,7 +16204,7 @@ module fpga_top
     );
     cby_1__1_ cby_7__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__45_chany_top_out),
         .chany_top_in(sb_1__1__46_chany_bottom_out),
@@ -16231,7 +16231,7 @@ module fpga_top
     );
     cby_1__1_ cby_7__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__46_chany_top_out),
         .chany_top_in(sb_1__1__47_chany_bottom_out),
@@ -16258,7 +16258,7 @@ module fpga_top
     );
     cby_1__1_ cby_7__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__47_chany_top_out),
         .chany_top_in(sb_1__1__48_chany_bottom_out),
@@ -16285,7 +16285,7 @@ module fpga_top
     );
     cby_1__1_ cby_7__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_1__1__48_chany_top_out),
         .chany_top_in(sb_1__8__6_chany_bottom_out),
@@ -16312,7 +16312,7 @@ module fpga_top
     );
     cby_8__1_ cby_8__1_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_8__0__0_chany_top_out),
         .chany_top_in(sb_8__1__0_chany_bottom_out),
@@ -16343,7 +16343,7 @@ module fpga_top
     );
     cby_8__1_ cby_8__2_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_8__1__0_chany_top_out),
         .chany_top_in(sb_8__1__1_chany_bottom_out),
@@ -16374,7 +16374,7 @@ module fpga_top
     );
     cby_8__1_ cby_8__3_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_8__1__1_chany_top_out),
         .chany_top_in(sb_8__1__2_chany_bottom_out),
@@ -16405,7 +16405,7 @@ module fpga_top
     );
     cby_8__1_ cby_8__4_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_8__1__2_chany_top_out),
         .chany_top_in(sb_8__1__3_chany_bottom_out),
@@ -16436,7 +16436,7 @@ module fpga_top
     );
     cby_8__1_ cby_8__5_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_8__1__3_chany_top_out),
         .chany_top_in(sb_8__1__4_chany_bottom_out),
@@ -16467,7 +16467,7 @@ module fpga_top
     );
     cby_8__1_ cby_8__6_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_8__1__4_chany_top_out),
         .chany_top_in(sb_8__1__5_chany_bottom_out),
@@ -16498,7 +16498,7 @@ module fpga_top
     );
     cby_8__1_ cby_8__7_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_8__1__5_chany_top_out),
         .chany_top_in(sb_8__1__6_chany_bottom_out),
@@ -16529,7 +16529,7 @@ module fpga_top
     );
     cby_8__1_ cby_8__8_
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .chany_bottom_in(sb_8__1__6_chany_top_out),
         .chany_top_in(sb_8__8__0_chany_bottom_out),

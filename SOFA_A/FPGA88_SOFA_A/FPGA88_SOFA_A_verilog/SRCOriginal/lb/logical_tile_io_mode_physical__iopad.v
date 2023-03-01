@@ -11,28 +11,28 @@
 `default_nettype none
 
 // ----- Verilog module for logical_tile_io_mode_physical__iopad -----
-module logical_tile_io_mode_physical__iopad(IO_ISOL_N,
-                                            pReset,
+module logical_tile_io_mode_physical__iopad(isol_n,
+                                            prog_reset,
                                             prog_clk,
-                                            gfpga_pad_EMBEDDED_IO_HD_SOC_IN,
-                                            gfpga_pad_EMBEDDED_IO_HD_SOC_OUT,
-                                            gfpga_pad_EMBEDDED_IO_HD_SOC_DIR,
+                                            gfpga_pad_io_soc_in,
+                                            gfpga_pad_io_soc_out,
+                                            gfpga_pad_io_soc_dir,
                                             iopad_outpad,
                                             ccff_head,
                                             iopad_inpad,
                                             ccff_tail);
 //----- GLOBAL PORTS -----
-input [0:0] IO_ISOL_N;
+input [0:0] isol_n;
 //----- GLOBAL PORTS -----
-input [0:0] pReset;
+input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GPIN PORTS -----
-input [0:0] gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
+input [0:0] gfpga_pad_io_soc_in;
 //----- GPOUT PORTS -----
-output [0:0] gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
+output [0:0] gfpga_pad_io_soc_out;
 //----- GPOUT PORTS -----
-output [0:0] gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
+output [0:0] gfpga_pad_io_soc_dir;
 //----- INPUT PORTS -----
 input [0:0] iopad_outpad;
 //----- INPUT PORTS -----
@@ -52,28 +52,28 @@ wire [0:0] iopad_inpad;
 //----- END Registered ports -----
 
 
-wire [0:0] EMBEDDED_IO_HD_0_en;
+wire [0:0] io_0_en;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	EMBEDDED_IO_HD EMBEDDED_IO_HD_0_ (
-		.IO_ISOL_N(IO_ISOL_N),
-		.SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN),
-		.SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT),
-		.SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR),
+	io io_0_ (
+		.IO_ISOL_N(isol_n),
+		.SOC_IN(gfpga_pad_io_soc_in),
+		.SOC_OUT(gfpga_pad_io_soc_out),
+		.SOC_DIR(gfpga_pad_io_soc_dir),
 		.FPGA_OUT(iopad_outpad),
-		.FPGA_DIR(EMBEDDED_IO_HD_0_en),
+		.FPGA_DIR(io_0_en),
 		.FPGA_IN(iopad_inpad));
 
-	EMBEDDED_IO_HD_sky130_fd_sc_hd__dfrtp_1_mem EMBEDDED_IO_HD_sky130_fd_sc_hd__dfrtp_1_mem (
-		.pReset(pReset),
+	io_sky130_fd_sc_hd__dfrtp_1_mem io_sky130_fd_sc_hd__dfrtp_1_mem (
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.ccff_head(ccff_head),
 		.ccff_tail(ccff_tail),
-		.mem_out(EMBEDDED_IO_HD_0_en));
+		.mem_out(io_0_en));
 
 endmodule
 // ----- END Verilog module for logical_tile_io_mode_physical__iopad -----

@@ -274,18 +274,18 @@ endmodule
 `default_nettype none
 
 
-// ----- Template Verilog module for EMBEDDED_IO_HD -----
+// ----- Template Verilog module for io -----
 //----- Default net type -----
 `default_nettype none
 
-// ----- Verilog module for EMBEDDED_IO_HD -----
-module EMBEDDED_IO_HD(IO_ISOL_N,
-                      SOC_IN,
-                      SOC_OUT,
-                      SOC_DIR,
-                      FPGA_OUT,
-                      FPGA_DIR,
-                      FPGA_IN);
+// ----- Verilog module for io -----
+module io(IO_ISOL_N,
+          SOC_IN,
+          SOC_OUT,
+          SOC_DIR,
+          FPGA_OUT,
+          FPGA_DIR,
+          FPGA_IN);
 //----- GLOBAL PORTS -----
 input [0:0] IO_ISOL_N;
 //----- GPIN PORTS -----
@@ -313,7 +313,7 @@ output [0:0] FPGA_IN;
 
 // ----- Internal logic should end here -----
 endmodule
-// ----- END Verilog module for EMBEDDED_IO_HD -----
+// ----- END Verilog module for io -----
 
 //----- Default net type -----
 `default_nettype none

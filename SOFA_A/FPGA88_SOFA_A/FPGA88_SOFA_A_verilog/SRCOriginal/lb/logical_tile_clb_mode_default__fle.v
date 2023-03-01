@@ -12,9 +12,9 @@
 `default_nettype none
 
 // ----- Verilog module for logical_tile_clb_mode_default__fle -----
-module logical_tile_clb_mode_default__fle(pReset,
+module logical_tile_clb_mode_default__fle(prog_reset,
                                           prog_clk,
-                                          Test_en,
+                                          scan_enable,
                                           fle_in,
                                           fle_reg_in,
                                           fle_sc_in,
@@ -28,11 +28,11 @@ module logical_tile_clb_mode_default__fle(pReset,
                                           fle_cout,
                                           ccff_tail);
 //----- GLOBAL PORTS -----
-input [0:0] pReset;
+input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GLOBAL PORTS -----
-input [0:0] Test_en;
+input [0:0] scan_enable;
 //----- INPUT PORTS -----
 input [0:3] fle_in;
 //----- INPUT PORTS -----
@@ -96,9 +96,9 @@ wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_sc_
 // ----- END Local output short connections -----
 
 	logical_tile_clb_mode_default__fle_mode_physical__fabric logical_tile_clb_mode_default__fle_mode_physical__fabric_0 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.Test_en(Test_en),
+		.scan_enable(scan_enable),
 		.fabric_in({direct_interc_5_out, direct_interc_6_out, direct_interc_7_out, direct_interc_8_out}),
 		.fabric_reg_in(direct_interc_9_out),
 		.fabric_sc_in(direct_interc_10_out),

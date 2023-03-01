@@ -12,9 +12,9 @@
 `default_nettype none
 
 // ----- Verilog module for grid_clb -----
-module grid_clb(pReset,
+module grid_clb(prog_reset,
                 prog_clk,
-                Test_en,
+                scan_enable,
                 top_width_0_height_0_subtile_0__pin_I0_0_,
                 top_width_0_height_0_subtile_0__pin_I0_1_,
                 top_width_0_height_0_subtile_0__pin_I0i_0_,
@@ -74,11 +74,11 @@ module grid_clb(pReset,
                 bottom_width_0_height_0_subtile_0__pin_cout_0_,
                 ccff_tail);
 //----- GLOBAL PORTS -----
-input [0:0] pReset;
+input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GLOBAL PORTS -----
-input [0:0] Test_en;
+input [0:0] scan_enable;
 //----- INPUT PORTS -----
 input [0:0] top_width_0_height_0_subtile_0__pin_I0_0_;
 //----- INPUT PORTS -----
@@ -211,9 +211,9 @@ output [0:0] ccff_tail;
 // ----- END Local output short connections -----
 
 	logical_tile_clb_mode_clb_ logical_tile_clb_mode_clb__0 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.Test_en(Test_en),
+		.scan_enable(scan_enable),
 		.clb_I0({top_width_0_height_0_subtile_0__pin_I0_0_, top_width_0_height_0_subtile_0__pin_I0_1_}),
 		.clb_I0i({top_width_0_height_0_subtile_0__pin_I0i_0_, top_width_0_height_0_subtile_0__pin_I0i_1_}),
 		.clb_I1({top_width_0_height_0_subtile_0__pin_I1_0_, top_width_0_height_0_subtile_0__pin_I1_1_}),

@@ -12,28 +12,28 @@
 `default_nettype none
 
 // ----- Verilog module for logical_tile_io_mode_io_ -----
-module logical_tile_io_mode_io_(IO_ISOL_N,
-                                pReset,
+module logical_tile_io_mode_io_(isol_n,
+                                prog_reset,
                                 prog_clk,
-                                gfpga_pad_EMBEDDED_IO_HD_SOC_IN,
-                                gfpga_pad_EMBEDDED_IO_HD_SOC_OUT,
-                                gfpga_pad_EMBEDDED_IO_HD_SOC_DIR,
+                                gfpga_pad_io_soc_in,
+                                gfpga_pad_io_soc_out,
+                                gfpga_pad_io_soc_dir,
                                 io_outpad,
                                 ccff_head,
                                 io_inpad,
                                 ccff_tail);
 //----- GLOBAL PORTS -----
-input [0:0] IO_ISOL_N;
+input [0:0] isol_n;
 //----- GLOBAL PORTS -----
-input [0:0] pReset;
+input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GPIN PORTS -----
-input [0:0] gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
+input [0:0] gfpga_pad_io_soc_in;
 //----- GPOUT PORTS -----
-output [0:0] gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
+output [0:0] gfpga_pad_io_soc_out;
 //----- GPOUT PORTS -----
-output [0:0] gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
+output [0:0] gfpga_pad_io_soc_dir;
 //----- INPUT PORTS -----
 input [0:0] io_outpad;
 //----- INPUT PORTS -----
@@ -62,12 +62,12 @@ wire [0:0] logical_tile_io_mode_physical__iopad_0_iopad_inpad;
 // ----- END Local output short connections -----
 
 	logical_tile_io_mode_physical__iopad logical_tile_io_mode_physical__iopad_0 (
-		.IO_ISOL_N(IO_ISOL_N),
-		.pReset(pReset),
+		.isol_n(isol_n),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR),
+		.gfpga_pad_io_soc_in(gfpga_pad_io_soc_in),
+		.gfpga_pad_io_soc_out(gfpga_pad_io_soc_out),
+		.gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir),
 		.iopad_outpad(direct_interc_1_out),
 		.ccff_head(ccff_head),
 		.iopad_inpad(logical_tile_io_mode_physical__iopad_0_iopad_inpad),

@@ -12,9 +12,9 @@
 `default_nettype none
 
 // ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric -----
-module logical_tile_clb_mode_default__fle_mode_physical__fabric(pReset,
+module logical_tile_clb_mode_default__fle_mode_physical__fabric(prog_reset,
                                                                 prog_clk,
-                                                                Test_en,
+                                                                scan_enable,
                                                                 fabric_in,
                                                                 fabric_reg_in,
                                                                 fabric_sc_in,
@@ -28,11 +28,11 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric(pReset,
                                                                 fabric_cout,
                                                                 ccff_tail);
 //----- GLOBAL PORTS -----
-input [0:0] pReset;
+input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GLOBAL PORTS -----
-input [0:0] Test_en;
+input [0:0] scan_enable;
 //----- INPUT PORTS -----
 input [0:3] fabric_in;
 //----- INPUT PORTS -----
@@ -112,7 +112,7 @@ wire [0:0] mux_tree_size2_mem_2_ccff_tail;
 // ----- END Local output short connections -----
 
 	logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.frac_logic_in({direct_interc_3_out, direct_interc_4_out, direct_interc_5_out, direct_interc_6_out}),
 		.frac_logic_cin(direct_interc_7_out),
@@ -122,7 +122,7 @@ wire [0:0] mux_tree_size2_mem_2_ccff_tail;
 		.ccff_tail(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail));
 
 	logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0 (
-		.Test_en(Test_en),
+		.scan_enable(scan_enable),
 		.ff_D(mux_tree_size2_2_out),
 		.ff_DI(direct_interc_8_out),
 		.ff_reset(direct_interc_9_out),
@@ -130,7 +130,7 @@ wire [0:0] mux_tree_size2_mem_2_ccff_tail;
 		.ff_clk(direct_interc_10_out));
 
 	logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1 (
-		.Test_en(Test_en),
+		.scan_enable(scan_enable),
 		.ff_D(mux_tree_size2_3_out),
 		.ff_DI(direct_interc_11_out),
 		.ff_reset(direct_interc_12_out),
@@ -162,28 +162,28 @@ wire [0:0] mux_tree_size2_mem_2_ccff_tail;
 		.out(mux_tree_size2_3_out));
 
 	mux_tree_size2_mem mem_fabric_out_0 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.ccff_head(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail),
 		.ccff_tail(mux_tree_size2_mem_0_ccff_tail),
 		.mem_out(mux_tree_size2_0_sram[0:1]));
 
 	mux_tree_size2_mem mem_fabric_out_1 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.ccff_head(mux_tree_size2_mem_0_ccff_tail),
 		.ccff_tail(mux_tree_size2_mem_1_ccff_tail),
 		.mem_out(mux_tree_size2_1_sram[0:1]));
 
 	mux_tree_size2_mem mem_ff_0_D_0 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.ccff_head(mux_tree_size2_mem_1_ccff_tail),
 		.ccff_tail(mux_tree_size2_mem_2_ccff_tail),
 		.mem_out(mux_tree_size2_2_sram[0:1]));
 
 	mux_tree_size2_mem mem_ff_1_D_0 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.ccff_head(mux_tree_size2_mem_2_ccff_tail),
 		.ccff_tail(ccff_tail),

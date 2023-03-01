@@ -12,12 +12,12 @@
 `default_nettype none
 
 // ----- Verilog module for grid_io_bottom_bottom -----
-module grid_io_bottom_bottom(IO_ISOL_N,
-                             pReset,
+module grid_io_bottom_bottom(isol_n,
+                             prog_reset,
                              prog_clk,
-                             gfpga_pad_EMBEDDED_IO_HD_SOC_IN,
-                             gfpga_pad_EMBEDDED_IO_HD_SOC_OUT,
-                             gfpga_pad_EMBEDDED_IO_HD_SOC_DIR,
+                             gfpga_pad_io_soc_in,
+                             gfpga_pad_io_soc_out,
+                             gfpga_pad_io_soc_dir,
                              top_width_0_height_0_subtile_0__pin_outpad_0_,
                              top_width_0_height_0_subtile_1__pin_outpad_0_,
                              top_width_0_height_0_subtile_2__pin_outpad_0_,
@@ -29,17 +29,17 @@ module grid_io_bottom_bottom(IO_ISOL_N,
                              top_width_0_height_0_subtile_3__pin_inpad_0_,
                              ccff_tail);
 //----- GLOBAL PORTS -----
-input [0:0] IO_ISOL_N;
+input [0:0] isol_n;
 //----- GLOBAL PORTS -----
-input [0:0] pReset;
+input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GPIN PORTS -----
-input [0:3] gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
+input [0:3] gfpga_pad_io_soc_in;
 //----- GPOUT PORTS -----
-output [0:3] gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
+output [0:3] gfpga_pad_io_soc_out;
 //----- GPOUT PORTS -----
-output [0:3] gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
+output [0:3] gfpga_pad_io_soc_dir;
 //----- INPUT PORTS -----
 input [0:0] top_width_0_height_0_subtile_0__pin_outpad_0_;
 //----- INPUT PORTS -----
@@ -79,48 +79,48 @@ wire [0:0] logical_tile_io_mode_io__2_ccff_tail;
 // ----- END Local output short connections -----
 
 	logical_tile_io_mode_io_ logical_tile_io_mode_io__0 (
-		.IO_ISOL_N(IO_ISOL_N),
-		.pReset(pReset),
+		.isol_n(isol_n),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[0]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[0]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[0]),
+		.gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[0]),
+		.gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[0]),
+		.gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[0]),
 		.io_outpad(top_width_0_height_0_subtile_0__pin_outpad_0_),
 		.ccff_head(ccff_head),
 		.io_inpad(top_width_0_height_0_subtile_0__pin_inpad_0_),
 		.ccff_tail(logical_tile_io_mode_io__0_ccff_tail));
 
 	logical_tile_io_mode_io_ logical_tile_io_mode_io__1 (
-		.IO_ISOL_N(IO_ISOL_N),
-		.pReset(pReset),
+		.isol_n(isol_n),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[1]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[1]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[1]),
+		.gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[1]),
+		.gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[1]),
+		.gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[1]),
 		.io_outpad(top_width_0_height_0_subtile_1__pin_outpad_0_),
 		.ccff_head(logical_tile_io_mode_io__0_ccff_tail),
 		.io_inpad(top_width_0_height_0_subtile_1__pin_inpad_0_),
 		.ccff_tail(logical_tile_io_mode_io__1_ccff_tail));
 
 	logical_tile_io_mode_io_ logical_tile_io_mode_io__2 (
-		.IO_ISOL_N(IO_ISOL_N),
-		.pReset(pReset),
+		.isol_n(isol_n),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[2]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[2]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[2]),
+		.gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[2]),
+		.gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[2]),
+		.gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[2]),
 		.io_outpad(top_width_0_height_0_subtile_2__pin_outpad_0_),
 		.ccff_head(logical_tile_io_mode_io__1_ccff_tail),
 		.io_inpad(top_width_0_height_0_subtile_2__pin_inpad_0_),
 		.ccff_tail(logical_tile_io_mode_io__2_ccff_tail));
 
 	logical_tile_io_mode_io_ logical_tile_io_mode_io__3 (
-		.IO_ISOL_N(IO_ISOL_N),
-		.pReset(pReset),
+		.isol_n(isol_n),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[3]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[3]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[3]),
+		.gfpga_pad_io_soc_in(gfpga_pad_io_soc_in[3]),
+		.gfpga_pad_io_soc_out(gfpga_pad_io_soc_out[3]),
+		.gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir[3]),
 		.io_outpad(top_width_0_height_0_subtile_3__pin_outpad_0_),
 		.ccff_head(logical_tile_io_mode_io__2_ccff_tail),
 		.io_inpad(top_width_0_height_0_subtile_3__pin_inpad_0_),

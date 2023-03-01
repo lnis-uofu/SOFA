@@ -11,7 +11,7 @@
 `default_nettype none
 
 // ----- Verilog module for cbx_1__0_ -----
-module cbx_1__0_(pReset,
+module cbx_1__0_(prog_reset,
                  prog_clk,
                  chanx_left_in,
                  chanx_right_in,
@@ -24,7 +24,7 @@ module cbx_1__0_(pReset,
                  bottom_grid_top_width_0_height_0_subtile_3__pin_outpad_0_,
                  ccff_tail);
 //----- GLOBAL PORTS -----
-input [0:0] pReset;
+input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- INPUT PORTS -----
@@ -338,28 +338,28 @@ wire [0:0] mux_tree_tapbuf_size12_mem_2_ccff_tail;
 		.out(bottom_grid_top_width_0_height_0_subtile_3__pin_outpad_0_));
 
 	mux_tree_tapbuf_size12_mem mem_top_ipin_0 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.ccff_head(ccff_head),
 		.ccff_tail(mux_tree_tapbuf_size12_mem_0_ccff_tail),
 		.mem_out(mux_tree_tapbuf_size12_0_sram[0:3]));
 
 	mux_tree_tapbuf_size12_mem mem_top_ipin_1 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.ccff_head(mux_tree_tapbuf_size12_mem_0_ccff_tail),
 		.ccff_tail(mux_tree_tapbuf_size12_mem_1_ccff_tail),
 		.mem_out(mux_tree_tapbuf_size12_1_sram[0:3]));
 
 	mux_tree_tapbuf_size12_mem mem_top_ipin_2 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.ccff_head(mux_tree_tapbuf_size12_mem_1_ccff_tail),
 		.ccff_tail(mux_tree_tapbuf_size12_mem_2_ccff_tail),
 		.mem_out(mux_tree_tapbuf_size12_2_sram[0:3]));
 
 	mux_tree_tapbuf_size12_mem mem_top_ipin_3 (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.ccff_head(mux_tree_tapbuf_size12_mem_2_ccff_tail),
 		.ccff_tail(ccff_tail),

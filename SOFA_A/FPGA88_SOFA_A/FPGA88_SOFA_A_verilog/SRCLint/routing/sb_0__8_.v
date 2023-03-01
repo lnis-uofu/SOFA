@@ -2,7 +2,7 @@
 //netlist name: FPGA88_SOFA_A
 module sb_0__8_
 (
-    pReset,
+    prog_reset,
     prog_clk,
     chanx_right_in,
     right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_,
@@ -28,7 +28,7 @@ module sb_0__8_
     ccff_tail
 );
 
-    input pReset;
+    input prog_reset;
     input prog_clk;
     input [0:29]chanx_right_in;
     input right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_;
@@ -53,7 +53,7 @@ module sb_0__8_
     output [0:29]chany_bottom_out;
     output ccff_tail;
 
-    wire pReset;
+    wire prog_reset;
     wire prog_clk;
     wire [0:29]chanx_right_in;
     wire right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_;
@@ -277,7 +277,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size5_mem mem_right_track_0
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(ccff_head),
         .ccff_tail(mux_tree_tapbuf_size5_mem_0_ccff_tail),
@@ -285,7 +285,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size5_mem mem_right_track_2
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size5_mem_0_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size5_mem_1_ccff_tail),
@@ -293,7 +293,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size5_mem mem_right_track_4
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size5_mem_1_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size5_mem_2_ccff_tail),
@@ -301,7 +301,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size5_mem mem_right_track_6
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size5_mem_2_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size5_mem_3_ccff_tail),
@@ -309,7 +309,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size5_mem mem_right_track_8
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size5_mem_3_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size5_mem_4_ccff_tail),
@@ -317,7 +317,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size5_mem mem_right_track_10
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size5_mem_4_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size5_mem_5_ccff_tail),
@@ -416,7 +416,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_12
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size5_mem_5_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_0_ccff_tail),
@@ -424,7 +424,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_14
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_0_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_1_ccff_tail),
@@ -432,7 +432,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_16
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_1_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_2_ccff_tail),
@@ -440,7 +440,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_28
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_4_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_3_ccff_tail),
@@ -448,7 +448,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_30
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_3_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_4_ccff_tail),
@@ -456,7 +456,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_32
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_4_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_5_ccff_tail),
@@ -464,7 +464,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_34
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_5_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_6_ccff_tail),
@@ -472,7 +472,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_44
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_8_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_7_ccff_tail),
@@ -480,7 +480,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_46
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_7_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_8_ccff_tail),
@@ -488,7 +488,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_48
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_8_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_9_ccff_tail),
@@ -496,7 +496,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_right_track_58
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_12_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_10_ccff_tail),
@@ -504,7 +504,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_bottom_track_1
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_10_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_11_ccff_tail),
@@ -512,7 +512,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size3_mem mem_bottom_track_7
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_14_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size3_mem_12_ccff_tail),
@@ -723,7 +723,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_18
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_2_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_0_ccff_tail),
@@ -731,7 +731,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_20
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_0_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_1_ccff_tail),
@@ -739,7 +739,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_22
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_1_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_2_ccff_tail),
@@ -747,7 +747,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_24
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_2_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_3_ccff_tail),
@@ -755,7 +755,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_26
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_3_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_4_ccff_tail),
@@ -763,7 +763,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_36
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_6_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_5_ccff_tail),
@@ -771,7 +771,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_38
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_5_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_6_ccff_tail),
@@ -779,7 +779,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_40
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_6_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_7_ccff_tail),
@@ -787,7 +787,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_42
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_7_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_8_ccff_tail),
@@ -795,7 +795,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_50
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_9_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_9_ccff_tail),
@@ -803,7 +803,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_52
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_9_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_10_ccff_tail),
@@ -811,7 +811,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_54
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_10_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_11_ccff_tail),
@@ -819,7 +819,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_right_track_56
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_11_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_12_ccff_tail),
@@ -827,7 +827,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_3
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_11_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_13_ccff_tail),
@@ -835,7 +835,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_5
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_13_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_14_ccff_tail),
@@ -843,7 +843,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_9
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size3_mem_12_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_15_ccff_tail),
@@ -851,7 +851,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_11
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_15_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_16_ccff_tail),
@@ -859,7 +859,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_13
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_16_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_17_ccff_tail),
@@ -867,7 +867,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_15
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_17_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_18_ccff_tail),
@@ -875,7 +875,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_17
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_18_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_19_ccff_tail),
@@ -883,7 +883,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_19
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_19_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_20_ccff_tail),
@@ -891,7 +891,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_29
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_20_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_21_ccff_tail),
@@ -899,7 +899,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_31
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_21_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_22_ccff_tail),
@@ -907,7 +907,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_33
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_22_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_23_ccff_tail),
@@ -915,7 +915,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_35
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_23_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_24_ccff_tail),
@@ -923,7 +923,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_45
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_24_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_25_ccff_tail),
@@ -931,7 +931,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_47
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_25_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_26_ccff_tail),
@@ -939,7 +939,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_49
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_26_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size2_mem_27_ccff_tail),
@@ -947,7 +947,7 @@ assign chany_bottom_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size2_mem mem_bottom_track_51
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size2_mem_27_ccff_tail),
         .ccff_tail(ccff_tail),

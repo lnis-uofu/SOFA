@@ -154,7 +154,7 @@
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <port type="input" prefix="D" size="1"/>
       <port type="input" prefix="DI" lib_name="SCD" size="1"/>
-      <port type="input" prefix="Test_en" lib_name="SCE" size="1" is_global="true" default_val="0"/>
+      <port type="input" prefix="scan_enable" lib_name="SCE" size="1" is_global="true" default_val="0"/>
       <port type="input" prefix="reset" lib_name="RESET_B" size="1" default_val="1"/>
       <port type="output" prefix="Q" size="1"/>
       <port type="clock" prefix="clk" lib_name="CLK" size="1" is_global="false" default_val="0" />
@@ -182,16 +182,16 @@
       <port type="input" prefix="D" size="1"/>
       <port type="output" prefix="Q" size="1"/>
       <port type="clock" prefix="prog_clk" lib_name="CLK" size="1" is_global="true" default_val="0" is_prog="true"/>
-      <port type="input" prefix="pReset" lib_name="RESET_B" size="1" is_global="true" default_val="1" is_prog="true" is_reset="true"/>
+      <port type="input" prefix="prog_reset" lib_name="RESET_B" size="1" is_global="true" default_val="1" is_prog="true" is_reset="true"/>
     </circuit_model>
-    <circuit_model type="iopad" name="EMBEDDED_IO_HD" prefix="EMBEDDED_IO_HD" is_default="true" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/tasks/FPGA22_HIER_SKY_PNR/sc_verilog/digital_io_hd.v">
+    <circuit_model type="iopad" name="io" prefix="io" is_default="true" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/tasks/FPGA22_HIER_SKY_PNR/sc_verilog/digital_io_hd.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
-      <port type="input" prefix="SOC_IN" lib_name="SOC_IN" size="1" is_global="true" is_io="true" is_data_io="true"/>
-      <port type="output" prefix="SOC_OUT" lib_name="SOC_OUT" size="1" is_global="true" is_io="true" is_data_io="true"/>
-      <port type="output" prefix="SOC_DIR" lib_name="SOC_DIR" size="1" is_global="true" is_io="true"/>
-      <port type="input" prefix="IO_ISOL_N" lib_name="IO_ISOL_N" size="1" is_global="true" default_val="1"/>
+      <port type="input" prefix="soc_in" lib_name="SOC_IN" size="1" is_global="true" is_io="true" is_data_io="true"/>
+      <port type="output" prefix="soc_out" lib_name="SOC_OUT" size="1" is_global="true" is_io="true" is_data_io="true"/>
+      <port type="output" prefix="soc_dir" lib_name="SOC_DIR" size="1" is_global="true" is_io="true"/>
+      <port type="input" prefix="isol_n" lib_name="IO_ISOL_N" size="1" is_global="true" default_val="1"/>
       <port type="output" prefix="inpad" lib_name="FPGA_IN" size="1"/>
       <port type="input" prefix="outpad" lib_name="FPGA_OUT" size="1"/>
       <port type="sram" prefix="en" lib_name="FPGA_DIR" size="1" mode_select="true" circuit_model_name="sky130_fd_sc_hd__dfrtp_1" default_val="1"/>
@@ -232,7 +232,7 @@
       <global_port name="clk" is_clock="true" default_val="0">
           <tile name="clb" port="clk" x="-1" y="-1"/>
       </global_port>
-      <global_port name="Reset" is_reset="true" default_val="1">
+      <global_port name="reset" is_reset="true" default_val="1">
           <tile name="clb" port="reset" x="-1" y="-1"/>
       </global_port>
   </tile_annotations>
@@ -240,7 +240,7 @@
     <!-- physical pb_type binding in complex block IO -->
     <pb_type name="io" physical_mode_name="physical" idle_mode_name="inpad"/>
     <!-- IMPORTANT: must set unused I/Os to operating in INPUT mode !!! -->
-    <pb_type name="io[physical].iopad" circuit_model_name="EMBEDDED_IO_HD" mode_bits="1"/>
+    <pb_type name="io[physical].iopad" circuit_model_name="io" mode_bits="1"/>
     <pb_type name="io[inpad].inpad" physical_pb_type_name="io[physical].iopad" mode_bits="1"/>
     <pb_type name="io[outpad].outpad" physical_pb_type_name="io[physical].iopad" mode_bits="0"/>
     <!-- End physical pb_type binding in complex block IO -->

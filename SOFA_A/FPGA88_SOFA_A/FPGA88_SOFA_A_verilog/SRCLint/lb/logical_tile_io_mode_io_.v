@@ -2,35 +2,35 @@
 //netlist name: FPGA88_SOFA_A
 module logical_tile_io_mode_io_
 (
-    IO_ISOL_N,
-    pReset,
+    isol_n,
+    prog_reset,
     prog_clk,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_IN,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_OUT,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_DIR,
+    gfpga_pad_io_soc_in,
+    gfpga_pad_io_soc_out,
+    gfpga_pad_io_soc_dir,
     io_outpad,
     ccff_head,
     io_inpad,
     ccff_tail
 );
 
-    input IO_ISOL_N;
-    input pReset;
+    input isol_n;
+    input prog_reset;
     input prog_clk;
-    input gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
-    output gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
-    output gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
+    input gfpga_pad_io_soc_in;
+    output gfpga_pad_io_soc_out;
+    output gfpga_pad_io_soc_dir;
     input io_outpad;
     input ccff_head;
     output io_inpad;
     output ccff_tail;
 
-    wire IO_ISOL_N;
-    wire pReset;
+    wire isol_n;
+    wire prog_reset;
     wire prog_clk;
-    wire gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
-    wire gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
-    wire gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
+    wire gfpga_pad_io_soc_in;
+    wire gfpga_pad_io_soc_out;
+    wire gfpga_pad_io_soc_dir;
     wire io_outpad;
     wire ccff_head;
     wire io_inpad;
@@ -40,12 +40,12 @@ module logical_tile_io_mode_io_
 
     logical_tile_io_mode_physical__iopad logical_tile_io_mode_physical__iopad_0
     (
-        .IO_ISOL_N(IO_ISOL_N),
-        .pReset(pReset),
+        .isol_n(isol_n),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir),
         .iopad_outpad(direct_interc_1_out),
         .ccff_head(ccff_head),
         .iopad_inpad(logical_tile_io_mode_physical__iopad_0_iopad_inpad),

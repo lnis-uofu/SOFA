@@ -2,15 +2,15 @@
 //netlist name: FPGA88_SOFA_A
 module left_tile
 (
-    IO_ISOL_N,
     ccff_head,
     ccff_head_0,
     chanx_right_in,
     chany_bottom_in,
     chany_top_in_0,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_IN,
-    pReset,
+    gfpga_pad_io_soc_in,
+    isol_n,
     prog_clk,
+    prog_reset,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_,
@@ -28,23 +28,23 @@ module left_tile
     chanx_right_out,
     chany_bottom_out,
     chany_top_out_0,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_DIR,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_OUT,
+    gfpga_pad_io_soc_dir,
+    gfpga_pad_io_soc_out,
     right_width_0_height_0_subtile_0__pin_inpad_0_,
     right_width_0_height_0_subtile_1__pin_inpad_0_,
     right_width_0_height_0_subtile_2__pin_inpad_0_,
     right_width_0_height_0_subtile_3__pin_inpad_0_
 );
 
-    input IO_ISOL_N;
     input ccff_head;
     input ccff_head_0;
     input [29:0]chanx_right_in;
     input [29:0]chany_bottom_in;
     input [29:0]chany_top_in_0;
-    input [3:0]gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
-    input pReset;
+    input [3:0]gfpga_pad_io_soc_in;
+    input isol_n;
     input prog_clk;
+    input prog_reset;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_;
@@ -62,14 +62,13 @@ module left_tile
     output [29:0]chanx_right_out;
     output [29:0]chany_bottom_out;
     output [29:0]chany_top_out_0;
-    output [3:0]gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
-    output [3:0]gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
+    output [3:0]gfpga_pad_io_soc_dir;
+    output [3:0]gfpga_pad_io_soc_out;
     output right_width_0_height_0_subtile_0__pin_inpad_0_;
     output right_width_0_height_0_subtile_1__pin_inpad_0_;
     output right_width_0_height_0_subtile_2__pin_inpad_0_;
     output right_width_0_height_0_subtile_3__pin_inpad_0_;
 
-    wire IO_ISOL_N;
     wire ccff_head;
     wire ccff_head_0;
     wire ccff_tail;
@@ -82,11 +81,12 @@ module left_tile
     wire [29:0]chany_top_in_0;
     wire [29:0]chany_top_out;
     wire [29:0]chany_top_out_0;
-    wire [3:0]gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
-    wire [3:0]gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
-    wire [3:0]gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
-    wire pReset;
+    wire [3:0]gfpga_pad_io_soc_dir;
+    wire [3:0]gfpga_pad_io_soc_in;
+    wire [3:0]gfpga_pad_io_soc_out;
+    wire isol_n;
     wire prog_clk;
+    wire prog_reset;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_;
@@ -106,18 +106,18 @@ module left_tile
 
     cby_0__1_ cby_0__1_
     (
-        .IO_ISOL_N(IO_ISOL_N),
         .ccff_head_0(ccff_head_0),
         .chany_bottom_in(chany_bottom_in),
         .chany_top_in(chany_bottom_out_0),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN),
-        .pReset(pReset),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in),
+        .isol_n(isol_n),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(ccff_tail),
         .chany_bottom_out(chany_bottom_out),
         .chany_top_out(chany_top_out),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out),
         .right_width_0_height_0_subtile_0__pin_inpad_0_(right_width_0_height_0_subtile_0__pin_inpad_0_),
         .right_width_0_height_0_subtile_1__pin_inpad_0_(right_width_0_height_0_subtile_1__pin_inpad_0_),
         .right_width_0_height_0_subtile_2__pin_inpad_0_(right_width_0_height_0_subtile_2__pin_inpad_0_),
@@ -133,8 +133,8 @@ module left_tile
         .chanx_right_in(chanx_right_in),
         .chany_bottom_in(chany_top_out),
         .chany_top_in(chany_top_in_0),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_(right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_),
         .right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_(right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_),
         .right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_(right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_),

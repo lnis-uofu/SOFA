@@ -11,7 +11,7 @@
 `default_nettype none
 
 // ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4 -----
-module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4(pReset,
+module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4(prog_reset,
                                                                                                                  prog_clk,
                                                                                                                  frac_lut4_in,
                                                                                                                  ccff_head,
@@ -20,7 +20,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
                                                                                                                  frac_lut4_lut4_out,
                                                                                                                  ccff_tail);
 //----- GLOBAL PORTS -----
-input [0:0] pReset;
+input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- INPUT PORTS -----
@@ -69,7 +69,7 @@ wire [0:15] frac_lut4_0_sram;
 		.lut4_out(frac_lut4_lut4_out));
 
 	frac_lut4_sky130_fd_sc_hd__dfrtp_1_mem frac_lut4_sky130_fd_sc_hd__dfrtp_1_mem (
-		.pReset(pReset),
+		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
 		.ccff_head(ccff_head),
 		.ccff_tail(ccff_tail),

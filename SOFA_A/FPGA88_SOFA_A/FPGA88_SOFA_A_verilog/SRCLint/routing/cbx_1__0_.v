@@ -2,7 +2,7 @@
 //netlist name: FPGA88_SOFA_A
 module cbx_1__0_
 (
-    pReset,
+    prog_reset,
     prog_clk,
     chanx_left_in,
     chanx_right_in,
@@ -16,7 +16,7 @@ module cbx_1__0_
     ccff_tail
 );
 
-    input pReset;
+    input prog_reset;
     input prog_clk;
     input [0:29]chanx_left_in;
     input [0:29]chanx_right_in;
@@ -29,7 +29,7 @@ module cbx_1__0_
     output bottom_grid_top_width_0_height_0_subtile_3__pin_outpad_0_;
     output ccff_tail;
 
-    wire pReset;
+    wire prog_reset;
     wire prog_clk;
     wire [0:29]chanx_left_in;
     wire [0:29]chanx_right_in;
@@ -143,7 +143,7 @@ assign chanx_left_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size12_mem mem_top_ipin_0
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(ccff_head),
         .ccff_tail(mux_tree_tapbuf_size12_mem_0_ccff_tail),
@@ -151,7 +151,7 @@ assign chanx_left_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size12_mem mem_top_ipin_1
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size12_mem_0_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size12_mem_1_ccff_tail),
@@ -159,7 +159,7 @@ assign chanx_left_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size12_mem mem_top_ipin_2
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size12_mem_1_ccff_tail),
         .ccff_tail(mux_tree_tapbuf_size12_mem_2_ccff_tail),
@@ -167,7 +167,7 @@ assign chanx_left_out[29] = chanx_right_in[29];
     );
     mux_tree_tapbuf_size12_mem mem_top_ipin_3
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_tapbuf_size12_mem_2_ccff_tail),
         .ccff_tail(ccff_tail),

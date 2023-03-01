@@ -2,9 +2,9 @@
 //netlist name: FPGA88_SOFA_A
 module grid_clb
 (
-    pReset,
+    prog_reset,
     prog_clk,
-    Test_en,
+    scan_enable,
     top_width_0_height_0_subtile_0__pin_I0_0_,
     top_width_0_height_0_subtile_0__pin_I0_1_,
     top_width_0_height_0_subtile_0__pin_I0i_0_,
@@ -65,9 +65,9 @@ module grid_clb
     ccff_tail
 );
 
-    input pReset;
+    input prog_reset;
     input prog_clk;
-    input Test_en;
+    input scan_enable;
     input top_width_0_height_0_subtile_0__pin_I0_0_;
     input top_width_0_height_0_subtile_0__pin_I0_1_;
     input top_width_0_height_0_subtile_0__pin_I0i_0_;
@@ -127,9 +127,9 @@ module grid_clb
     output bottom_width_0_height_0_subtile_0__pin_cout_0_;
     output ccff_tail;
 
-    wire pReset;
+    wire prog_reset;
     wire prog_clk;
-    wire Test_en;
+    wire scan_enable;
     wire top_width_0_height_0_subtile_0__pin_I0_0_;
     wire top_width_0_height_0_subtile_0__pin_I0_1_;
     wire top_width_0_height_0_subtile_0__pin_I0i_0_;
@@ -191,9 +191,9 @@ module grid_clb
 
     logical_tile_clb_mode_clb_ logical_tile_clb_mode_clb__0
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .clb_I0({top_width_0_height_0_subtile_0__pin_I0_0_, top_width_0_height_0_subtile_0__pin_I0_1_}),
         .clb_I0i({top_width_0_height_0_subtile_0__pin_I0i_0_, top_width_0_height_0_subtile_0__pin_I0i_1_}),
         .clb_I1({top_width_0_height_0_subtile_0__pin_I1_0_, top_width_0_height_0_subtile_0__pin_I1_1_}),

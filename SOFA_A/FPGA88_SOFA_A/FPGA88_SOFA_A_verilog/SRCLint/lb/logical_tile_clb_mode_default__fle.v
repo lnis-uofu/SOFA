@@ -2,9 +2,9 @@
 //netlist name: FPGA88_SOFA_A
 module logical_tile_clb_mode_default__fle
 (
-    pReset,
+    prog_reset,
     prog_clk,
-    Test_en,
+    scan_enable,
     fle_in,
     fle_reg_in,
     fle_sc_in,
@@ -19,9 +19,9 @@ module logical_tile_clb_mode_default__fle
     ccff_tail
 );
 
-    input pReset;
+    input prog_reset;
     input prog_clk;
-    input Test_en;
+    input scan_enable;
     input [0:3]fle_in;
     input fle_reg_in;
     input fle_sc_in;
@@ -35,9 +35,9 @@ module logical_tile_clb_mode_default__fle
     output fle_cout;
     output ccff_tail;
 
-    wire pReset;
+    wire prog_reset;
     wire prog_clk;
-    wire Test_en;
+    wire scan_enable;
     wire [0:3]fle_in;
     wire fle_reg_in;
     wire fle_sc_in;
@@ -66,9 +66,9 @@ module logical_tile_clb_mode_default__fle
 
     logical_tile_clb_mode_default__fle_mode_physical__fabric logical_tile_clb_mode_default__fle_mode_physical__fabric_0
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .fabric_in({direct_interc_5_out, direct_interc_6_out, direct_interc_7_out, direct_interc_8_out}),
         .fabric_reg_in(direct_interc_9_out),
         .fabric_sc_in(direct_interc_10_out),

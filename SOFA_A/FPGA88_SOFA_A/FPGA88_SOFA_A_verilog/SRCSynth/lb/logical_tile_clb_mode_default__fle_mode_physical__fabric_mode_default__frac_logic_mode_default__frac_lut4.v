@@ -2,7 +2,7 @@
 //netlist name: FPGA88_SOFA_A
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4
 (
-    pReset,
+    prog_reset,
     prog_clk,
     frac_lut4_in,
     ccff_head,
@@ -12,7 +12,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     ccff_tail
 );
 
-    input pReset;
+    input prog_reset;
     input prog_clk;
     input [0:3]frac_lut4_in;
     input ccff_head;
@@ -21,7 +21,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     output frac_lut4_lut4_out;
     output ccff_tail;
 
-    wire pReset;
+    wire prog_reset;
     wire prog_clk;
     wire [0:3]frac_lut4_in;
     wire ccff_head;
@@ -47,7 +47,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     );
     frac_lut4_sky130_fd_sc_hd__dfrtp_1_mem frac_lut4_sky130_fd_sc_hd__dfrtp_1_mem
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(ccff_head),
         .ccff_tail(ccff_tail),

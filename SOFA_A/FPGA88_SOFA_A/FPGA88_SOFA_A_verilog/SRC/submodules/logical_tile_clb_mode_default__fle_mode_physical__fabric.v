@@ -2,7 +2,6 @@
 //netlist name: FPGA88_SOFA_A
 module logical_tile_clb_mode_default__fle_mode_physical__fabric
 (
-    Test_en,
     ccff_head,
     fabric_cin,
     fabric_clk,
@@ -10,8 +9,9 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
     fabric_reg_in,
     fabric_reset,
     fabric_sc_in,
-    pReset,
     prog_clk,
+    prog_reset,
+    scan_enable,
     ccff_tail,
     fabric_cout,
     fabric_out,
@@ -19,7 +19,6 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
     fabric_sc_out
 );
 
-    input Test_en;
     input ccff_head;
     input fabric_cin;
     input fabric_clk;
@@ -27,15 +26,15 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
     input fabric_reg_in;
     input fabric_reset;
     input fabric_sc_in;
-    input pReset;
     input prog_clk;
+    input prog_reset;
+    input scan_enable;
     output ccff_tail;
     output fabric_cout;
     output [0:1]fabric_out;
     output fabric_reg_out;
     output fabric_sc_out;
 
-    wire Test_en;
     wire ccff_head;
     wire ccff_tail;
     wire direct_interc_10_out;
@@ -77,8 +76,9 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
     wire mux_tree_size2_mem_0_ccff_tail;
     wire mux_tree_size2_mem_1_ccff_tail;
     wire mux_tree_size2_mem_2_ccff_tail;
-    wire pReset;
     wire prog_clk;
+    wire prog_reset;
+    wire scan_enable;
 
     direct_interc direct_interc_0_
     (
@@ -152,20 +152,20 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
     );
     logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0
     (
-        .Test_en(Test_en),
         .ff_D(mux_tree_size2_2_out),
         .ff_DI(direct_interc_8_out),
         .ff_clk(direct_interc_10_out),
         .ff_reset(direct_interc_9_out),
+        .scan_enable(scan_enable),
         .ff_Q(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q)
     );
     logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1
     (
-        .Test_en(Test_en),
         .ff_D(mux_tree_size2_3_out),
         .ff_DI(direct_interc_11_out),
         .ff_clk(direct_interc_13_out),
         .ff_reset(direct_interc_12_out),
+        .scan_enable(scan_enable),
         .ff_Q(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1_ff_Q)
     );
     logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0
@@ -173,8 +173,8 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
         .ccff_head(ccff_head),
         .frac_logic_cin(direct_interc_7_out),
         .frac_logic_in({direct_interc_3_out, direct_interc_4_out, direct_interc_5_out, direct_interc_6_out}),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail),
         .frac_logic_cout(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_cout),
         .frac_logic_out(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out)
@@ -182,32 +182,32 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
     mux_tree_size2_mem mem_fabric_out_0
     (
         .ccff_head(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(mux_tree_size2_mem_0_ccff_tail),
         .mem_out(mux_tree_size2_0_sram)
     );
     mux_tree_size2_mem mem_fabric_out_1
     (
         .ccff_head(mux_tree_size2_mem_0_ccff_tail),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(mux_tree_size2_mem_1_ccff_tail),
         .mem_out(mux_tree_size2_1_sram)
     );
     mux_tree_size2_mem mem_ff_0_D_0
     (
         .ccff_head(mux_tree_size2_mem_1_ccff_tail),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(mux_tree_size2_mem_2_ccff_tail),
         .mem_out(mux_tree_size2_2_sram)
     );
     mux_tree_size2_mem mem_ff_1_D_0
     (
         .ccff_head(mux_tree_size2_mem_2_ccff_tail),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(ccff_tail),
         .mem_out(mux_tree_size2_3_sram)
     );

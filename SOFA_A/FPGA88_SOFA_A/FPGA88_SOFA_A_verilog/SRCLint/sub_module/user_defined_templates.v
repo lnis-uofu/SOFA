@@ -139,7 +139,7 @@ module sky130_fd_sc_hd__dfrtp_1
 
 endmodule
 
-module EMBEDDED_IO_HD
+module io
 (
     IO_ISOL_N,
     SOC_IN,

@@ -218,6 +218,15 @@ def main():
             shapes[module]["PLACEMENT"][1] += 1
 
     fpga.create_placement()
+    # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+    # Feedthrough generation
+    # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+    instance_map = [[0 for _ in range(FPGA_HEIGHT + 1)]
+                    for _ in range(FPGA_WIDTH + 1)]
+    for inst in fpga.top_module.get_instances():
+        _, x, _, y, _ = inst.name.rsplit("_", 4)
+        instance_map[int(x)][int(y)] = inst.name
+    # create_global_feedthrough(fpga, "reset", instance_map)
 
     filename = SVG_DIR + f"{PROJ_NAME}_pre_tile_floorplan.svg"
     save_tiling_floorplan(fpga, filename, STYLE_SHEET=STYLE_SHEET)
@@ -233,6 +242,34 @@ def main():
     #     dwg, open(f"{PICKLE_DIR}/{PROJ_NAME}_floorplaned.pickle", "wb"))
     logger.info("Saved floorplan in %s", filename)
     # save_netlist_outline(fpga)
+
+
+def create_global_feedthrough(
+    fpga: OpenFPGA, signal, instance_map, down_port=None, top_cable=None
+):
+    """
+    This creates global feedthroughs
+    """
+    logger.debug("create_global_feedthrough [%s]", signal)
+    with open(PICKLE_DIR + f"{signal}_pattern.pickle", "rb") as fp:
+        sig_conn_patt: ConnectPointList = pickle.load(fp)
+    sig_conn_patt.get_top_instance_name = lambda x, y: instance_map[x][y]
+    signal_cable = next(fpga.top_module.get_cables(signal), None)
+    if not signal_cable:
+        signal_cable = fpga.top_module.create_cable(signal, wires=1)
+    else:
+        for pin in list(signal_cable.wires[0].pins):
+            if isinstance(pin, sdn.OuterPin):
+                signal_cable.wires[0].disconnect_pin(pin)
+    sig_conn_patt.create_ft_ports(fpga.netlist, signal, signal_cable)
+    sig_conn_patt.create_ft_connection(
+        fpga.netlist,
+        signal_cable,
+        down_port=down_port,
+        top_cable=top_cable or signal_cable,
+    )
+    rpt_file = f"{RELEASE_DIR}/rpts/pre_pnr/{signal}_ports.txt"
+    sig_conn_patt.print_port_stat(fpga.netlist, filename=rpt_file)
 
 def save_tiling_floorplan(fpga: OpenFPGA, filename: str, STYLE_SHEET=None):
     """

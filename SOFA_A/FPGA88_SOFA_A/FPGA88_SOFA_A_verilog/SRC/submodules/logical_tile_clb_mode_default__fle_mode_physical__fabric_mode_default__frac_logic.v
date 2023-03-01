@@ -5,8 +5,8 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     ccff_head,
     frac_logic_cin,
     frac_logic_in,
-    pReset,
     prog_clk,
+    prog_reset,
     ccff_tail,
     frac_logic_cout,
     frac_logic_out
@@ -15,8 +15,8 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     input ccff_head;
     input frac_logic_cin;
     input [0:3]frac_logic_in;
-    input pReset;
     input prog_clk;
+    input prog_reset;
     output ccff_tail;
     output frac_logic_cout;
     output [0:1]frac_logic_out;
@@ -44,8 +44,8 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     wire mux_tree_size2_1_out;
     wire [0:1]mux_tree_size2_1_sram;
     wire mux_tree_size2_mem_0_ccff_tail;
-    wire pReset;
     wire prog_clk;
+    wire prog_reset;
 
     direct_interc direct_interc_0_
     (
@@ -98,8 +98,8 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     (
         .ccff_head(ccff_head),
         .frac_lut4_in({direct_interc_2_out, direct_interc_3_out, mux_tree_size2_1_out, direct_interc_4_out}),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail),
         .frac_lut4_lut2_out(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_frac_lut4_lut2_out),
         .frac_lut4_lut3_out(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_frac_lut4_lut3_out),
@@ -108,16 +108,16 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     mux_tree_size2_mem mem_frac_logic_out_0
     (
         .ccff_head(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(mux_tree_size2_mem_0_ccff_tail),
         .mem_out(mux_tree_size2_0_sram)
     );
     mux_tree_size2_mem mem_frac_lut4_0_in_2
     (
         .ccff_head(mux_tree_size2_mem_0_ccff_tail),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(ccff_tail),
         .mem_out(mux_tree_size2_1_sram)
     );

@@ -5,8 +5,8 @@ module bottom_left_tile
     ccff_head,
     chanx_right_in,
     chany_top_in,
-    pReset,
     prog_clk,
+    prog_reset,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_inpad_0_,
     right_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_,
     right_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_,
@@ -23,8 +23,8 @@ module bottom_left_tile
     input ccff_head;
     input [29:0]chanx_right_in;
     input [29:0]chany_top_in;
-    input pReset;
     input prog_clk;
+    input prog_reset;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_inpad_0_;
     input right_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_;
     input right_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_;
@@ -43,8 +43,8 @@ module bottom_left_tile
     wire [29:0]chanx_right_out;
     wire [29:0]chany_top_in;
     wire [29:0]chany_top_out;
-    wire pReset;
     wire prog_clk;
+    wire prog_reset;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_inpad_0_;
     wire right_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_;
     wire right_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_;
@@ -59,8 +59,8 @@ module bottom_left_tile
         .ccff_head(ccff_head),
         .chanx_right_in(chanx_right_in),
         .chany_top_in(chany_top_in),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .right_bottom_grid_top_width_0_height_0_subtile_0__pin_inpad_0_(right_bottom_grid_top_width_0_height_0_subtile_0__pin_inpad_0_),
         .right_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_(right_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_),
         .right_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_(right_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_),

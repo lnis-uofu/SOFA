@@ -5,8 +5,8 @@ module cbx_1__0__old
     ccff_head,
     chanx_left_in,
     chanx_right_in,
-    pReset,
     prog_clk,
+    prog_reset,
     bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_,
     bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_,
     bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_,
@@ -19,8 +19,8 @@ module cbx_1__0__old
     input ccff_head;
     input [0:29]chanx_left_in;
     input [0:29]chanx_right_in;
-    input pReset;
     input prog_clk;
+    input prog_reset;
     output bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_;
     output bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_;
     output bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_;
@@ -50,8 +50,8 @@ module cbx_1__0__old
     wire mux_tree_tapbuf_size12_mem_0_ccff_tail;
     wire mux_tree_tapbuf_size12_mem_1_ccff_tail;
     wire mux_tree_tapbuf_size12_mem_2_ccff_tail;
-    wire pReset;
     wire prog_clk;
+    wire prog_reset;
 
 assign chanx_right_out[0] = chanx_left_in[0];
 assign chanx_right_out[1] = chanx_left_in[1];
@@ -116,32 +116,32 @@ assign chanx_right_out[9] = chanx_left_in[9];
     mux_tree_tapbuf_size12_mem mem_top_ipin_0
     (
         .ccff_head(ccff_head),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(mux_tree_tapbuf_size12_mem_0_ccff_tail),
         .mem_out(mux_tree_tapbuf_size12_0_sram)
     );
     mux_tree_tapbuf_size12_mem mem_top_ipin_1
     (
         .ccff_head(mux_tree_tapbuf_size12_mem_0_ccff_tail),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(mux_tree_tapbuf_size12_mem_1_ccff_tail),
         .mem_out(mux_tree_tapbuf_size12_1_sram)
     );
     mux_tree_tapbuf_size12_mem mem_top_ipin_2
     (
         .ccff_head(mux_tree_tapbuf_size12_mem_1_ccff_tail),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(mux_tree_tapbuf_size12_mem_2_ccff_tail),
         .mem_out(mux_tree_tapbuf_size12_2_sram)
     );
     mux_tree_tapbuf_size12_mem mem_top_ipin_3
     (
         .ccff_head(mux_tree_tapbuf_size12_mem_2_ccff_tail),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(ccff_tail),
         .mem_out(mux_tree_tapbuf_size12_3_sram)
     );

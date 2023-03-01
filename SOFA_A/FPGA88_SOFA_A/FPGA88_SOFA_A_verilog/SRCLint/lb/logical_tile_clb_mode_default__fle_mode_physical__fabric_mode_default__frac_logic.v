@@ -2,7 +2,7 @@
 //netlist name: FPGA88_SOFA_A
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic
 (
-    pReset,
+    prog_reset,
     prog_clk,
     frac_logic_in,
     frac_logic_cin,
@@ -12,7 +12,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     ccff_tail
 );
 
-    input pReset;
+    input prog_reset;
     input prog_clk;
     input [0:3]frac_logic_in;
     input frac_logic_cin;
@@ -21,7 +21,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     output frac_logic_cout;
     output ccff_tail;
 
-    wire pReset;
+    wire prog_reset;
     wire prog_clk;
     wire [0:3]frac_logic_in;
     wire frac_logic_cin;
@@ -49,7 +49,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
 
     logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4 logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .frac_lut4_in({direct_interc_2_out, direct_interc_3_out, mux_tree_size2_1_out, direct_interc_4_out}),
         .ccff_head(ccff_head),
@@ -81,7 +81,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     );
     mux_tree_size2_mem mem_frac_logic_out_0
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4_0_ccff_tail),
         .ccff_tail(mux_tree_size2_mem_0_ccff_tail),
@@ -89,7 +89,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__fr
     );
     mux_tree_size2_mem mem_frac_lut4_0_in_2
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
         .ccff_head(mux_tree_size2_mem_0_ccff_tail),
         .ccff_tail(ccff_tail),

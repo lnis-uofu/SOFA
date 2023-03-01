@@ -2,9 +2,9 @@
 //netlist name: FPGA88_SOFA_A
 module logical_tile_clb_mode_clb_
 (
-    pReset,
+    prog_reset,
     prog_clk,
-    Test_en,
+    scan_enable,
     clb_I0,
     clb_I0i,
     clb_I1,
@@ -34,9 +34,9 @@ module logical_tile_clb_mode_clb_
     ccff_tail
 );
 
-    input pReset;
+    input prog_reset;
     input prog_clk;
-    input Test_en;
+    input scan_enable;
     input [0:1]clb_I0;
     input [0:1]clb_I0i;
     input [0:1]clb_I1;
@@ -65,9 +65,9 @@ module logical_tile_clb_mode_clb_
     output clb_cout;
     output ccff_tail;
 
-    wire pReset;
+    wire prog_reset;
     wire prog_clk;
-    wire Test_en;
+    wire scan_enable;
     wire [0:1]clb_I0;
     wire [0:1]clb_I0i;
     wire [0:1]clb_I1;
@@ -209,9 +209,9 @@ module logical_tile_clb_mode_clb_
 
     logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_0
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .fle_in({direct_interc_19_out, direct_interc_20_out, direct_interc_21_out, direct_interc_22_out}),
         .fle_reg_in(direct_interc_23_out),
         .fle_sc_in(direct_interc_24_out),
@@ -227,9 +227,9 @@ module logical_tile_clb_mode_clb_
     );
     logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_1
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .fle_in({direct_interc_28_out, direct_interc_29_out, direct_interc_30_out, direct_interc_31_out}),
         .fle_reg_in(direct_interc_32_out),
         .fle_sc_in(direct_interc_33_out),
@@ -245,9 +245,9 @@ module logical_tile_clb_mode_clb_
     );
     logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_2
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .fle_in({direct_interc_37_out, direct_interc_38_out, direct_interc_39_out, direct_interc_40_out}),
         .fle_reg_in(direct_interc_41_out),
         .fle_sc_in(direct_interc_42_out),
@@ -263,9 +263,9 @@ module logical_tile_clb_mode_clb_
     );
     logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_3
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .fle_in({direct_interc_46_out, direct_interc_47_out, direct_interc_48_out, direct_interc_49_out}),
         .fle_reg_in(direct_interc_50_out),
         .fle_sc_in(direct_interc_51_out),
@@ -281,9 +281,9 @@ module logical_tile_clb_mode_clb_
     );
     logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_4
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .fle_in({direct_interc_55_out, direct_interc_56_out, direct_interc_57_out, direct_interc_58_out}),
         .fle_reg_in(direct_interc_59_out),
         .fle_sc_in(direct_interc_60_out),
@@ -299,9 +299,9 @@ module logical_tile_clb_mode_clb_
     );
     logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_5
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .fle_in({direct_interc_64_out, direct_interc_65_out, direct_interc_66_out, direct_interc_67_out}),
         .fle_reg_in(direct_interc_68_out),
         .fle_sc_in(direct_interc_69_out),
@@ -317,9 +317,9 @@ module logical_tile_clb_mode_clb_
     );
     logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_6
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .fle_in({direct_interc_73_out, direct_interc_74_out, direct_interc_75_out, direct_interc_76_out}),
         .fle_reg_in(direct_interc_77_out),
         .fle_sc_in(direct_interc_78_out),
@@ -335,9 +335,9 @@ module logical_tile_clb_mode_clb_
     );
     logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_7
     (
-        .pReset(pReset),
+        .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .Test_en(Test_en),
+        .scan_enable(scan_enable),
         .fle_in({direct_interc_82_out, direct_interc_83_out, direct_interc_84_out, direct_interc_85_out}),
         .fle_reg_in(direct_interc_86_out),
         .fle_sc_in(direct_interc_87_out),

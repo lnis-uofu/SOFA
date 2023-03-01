@@ -2,7 +2,6 @@
 //netlist name: FPGA88_SOFA_A
 module logical_tile_clb_mode_default__fle
 (
-    Test_en,
     ccff_head,
     fle_cin,
     fle_clk,
@@ -10,8 +9,9 @@ module logical_tile_clb_mode_default__fle
     fle_reg_in,
     fle_reset,
     fle_sc_in,
-    pReset,
     prog_clk,
+    prog_reset,
+    scan_enable,
     ccff_tail,
     fle_cout,
     fle_out,
@@ -19,7 +19,6 @@ module logical_tile_clb_mode_default__fle
     fle_sc_out
 );
 
-    input Test_en;
     input ccff_head;
     input fle_cin;
     input fle_clk;
@@ -27,15 +26,15 @@ module logical_tile_clb_mode_default__fle
     input fle_reg_in;
     input fle_reset;
     input fle_sc_in;
-    input pReset;
     input prog_clk;
+    input prog_reset;
+    input scan_enable;
     output ccff_tail;
     output fle_cout;
     output [0:1]fle_out;
     output fle_reg_out;
     output fle_sc_out;
 
-    wire Test_en;
     wire ccff_head;
     wire ccff_tail;
     wire direct_interc_10_out;
@@ -61,8 +60,9 @@ module logical_tile_clb_mode_default__fle
     wire [0:1]logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_out;
     wire logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_reg_out;
     wire logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_sc_out;
-    wire pReset;
     wire prog_clk;
+    wire prog_reset;
+    wire scan_enable;
 
     direct_interc direct_interc_0_
     (
@@ -136,7 +136,6 @@ module logical_tile_clb_mode_default__fle
     );
     logical_tile_clb_mode_default__fle_mode_physical__fabric logical_tile_clb_mode_default__fle_mode_physical__fabric_0
     (
-        .Test_en(Test_en),
         .ccff_head(ccff_head),
         .fabric_cin(direct_interc_11_out),
         .fabric_clk(direct_interc_13_out),
@@ -144,8 +143,9 @@ module logical_tile_clb_mode_default__fle
         .fabric_reg_in(direct_interc_9_out),
         .fabric_reset(direct_interc_12_out),
         .fabric_sc_in(direct_interc_10_out),
-        .pReset(pReset),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
+        .scan_enable(scan_enable),
         .ccff_tail(ccff_tail),
         .fabric_cout(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_cout),
         .fabric_out(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_out),

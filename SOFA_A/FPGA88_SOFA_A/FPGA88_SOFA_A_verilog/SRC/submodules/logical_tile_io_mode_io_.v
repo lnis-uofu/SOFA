@@ -2,41 +2,41 @@
 //netlist name: FPGA88_SOFA_A
 module logical_tile_io_mode_io_
 (
-    IO_ISOL_N,
     ccff_head,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_IN,
+    gfpga_pad_io_soc_in,
     io_outpad,
-    pReset,
+    isol_n,
     prog_clk,
+    prog_reset,
     ccff_tail,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_DIR,
-    gfpga_pad_EMBEDDED_IO_HD_SOC_OUT,
+    gfpga_pad_io_soc_dir,
+    gfpga_pad_io_soc_out,
     io_inpad
 );
 
-    input IO_ISOL_N;
     input ccff_head;
-    input gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
+    input gfpga_pad_io_soc_in;
     input io_outpad;
-    input pReset;
+    input isol_n;
     input prog_clk;
+    input prog_reset;
     output ccff_tail;
-    output gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
-    output gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
+    output gfpga_pad_io_soc_dir;
+    output gfpga_pad_io_soc_out;
     output io_inpad;
 
-    wire IO_ISOL_N;
     wire ccff_head;
     wire ccff_tail;
     wire direct_interc_1_out;
-    wire gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
-    wire gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
-    wire gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
+    wire gfpga_pad_io_soc_dir;
+    wire gfpga_pad_io_soc_in;
+    wire gfpga_pad_io_soc_out;
     wire io_inpad;
     wire io_outpad;
+    wire isol_n;
     wire logical_tile_io_mode_physical__iopad_0_iopad_inpad;
-    wire pReset;
     wire prog_clk;
+    wire prog_reset;
 
     direct_interc direct_interc_0_
     (
@@ -50,15 +50,15 @@ module logical_tile_io_mode_io_
     );
     logical_tile_io_mode_physical__iopad logical_tile_io_mode_physical__iopad_0
     (
-        .IO_ISOL_N(IO_ISOL_N),
         .ccff_head(ccff_head),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN),
+        .gfpga_pad_io_soc_in(gfpga_pad_io_soc_in),
         .iopad_outpad(direct_interc_1_out),
-        .pReset(pReset),
+        .isol_n(isol_n),
         .prog_clk(prog_clk),
+        .prog_reset(prog_reset),
         .ccff_tail(ccff_tail),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR),
-        .gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT),
+        .gfpga_pad_io_soc_dir(gfpga_pad_io_soc_dir),
+        .gfpga_pad_io_soc_out(gfpga_pad_io_soc_out),
         .iopad_inpad(logical_tile_io_mode_physical__iopad_0_iopad_inpad)
     );
 endmodule
