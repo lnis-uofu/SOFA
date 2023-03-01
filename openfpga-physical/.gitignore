@@ -1,0 +1,132 @@
+# Ignore all
+*
+# Unignore all with extensions
+!*.*
+# Unignore all dirs
+!*/
+# Unignore makefiles
+!Makefile*
+# Ignore direcotries starting with . in from root directory
+/.*/
+# All files starting underscroll
+_*.*
+# Unignore python init_file
+!__init__.py
+
+!.github
+
+# Ignore all the projects
+FPGA**
+
+# # Ignore following files
+# *_PNR/*_task/config/task.conf
+# *_PNR/*_task/latest
+# *_PNR/*_task/run001
+# *_PNR/parser.out
+# *_PNR/parsetab.py
+# *_PNR/release/*/pickle/
+# *_PNR/release/*/TCL/
+# *_PNR/release/*/data/
+# *_PNR/release/*/SVG/
+
+# # Skip some intermidiate verilog source
+# **/*_Verilog/TaskConfigCopy
+# **/*_Verilog/SRCBackup
+# **/*_Verilog/SRCOutline
+# # Unignore required SDC later
+# *_PNR/*_Verilog/SDC/*
+# !*_PNR/*_Verilog/SDC/disable_configure_ports.sdc
+# # Remove following later
+# **/*_Verilog/physical_contraints
+# *_PNR/*_Verilog/TESTBENCH/*/*
+# !*_PNR/*_Verilog/TESTBENCH/*/*.gz
+# *_PNR/*_Verilog/scandef
+# *_PNR/*_Verilog/*/*_tb.v
+# *_PNR/*_Verilog/*/*_formal_verification.v
+
+# Python ignores
+__pycache__/
+*.py[cod]
+*$py.class
+
+# #PnR tool Ignores
+# **/*.ndm/
+# **/*_block.dlib/
+# **/dp/*/block_pg
+# **/dp/*/block_budgets
+# **/dp/*/work
+# **/dp/*/work_dir
+# **/dp/*/write_data_dir
+# **/dp/*/split
+# **/dp/*/logs_icc2
+# **/dp/*/outputs_icc2
+# **/dp/*/rpts_icc2
+# **/dp/*/over_utilization*.tcl
+*command.log
+icc2_*output.txt
+check_workspace.ems
+crte_*.txt
+check_design*.log
+utils/_tempFiles
+utils/LoadTools.*
+
+# #Verification and simulation relates
+# **/Verification/*run/*
+# # !**/Verification/*run/*.vcd
+# # !**/Verification/*run/sim_run.log
+
+# Documentation ignore
+**/_build
+docs/build.log
+
+# # DP Related
+# **/dp/work*
+# **/dp/split
+# **/dp/logs_icc2
+# **/dp/rpts_icc2
+# **/dp/*.log
+
+# # Unignore symbolic links
+# !INIT
+# !*_PNR/Verification/*_tests
+# !CustomModules
+# !sc_verilog
+# !custom_scripts
+# !extra_scripts
+# !rm_icc2_dp_scripts
+# !rm_icc2_pnr_scripts
+# !rm_setup
+# !PrimeTimeScripts
+# !PrimeTimeScripts
+# !rm_setup_common
+# !custom_pnr_scripts
+# !redhawk
+# !voltus_script
+# !Benchmarks
+
+# # PNR Related
+# **/pnr/*.log
+# **/*_PNR/pnr/*__*
+# **_PNR/pnr/grid_clb
+# **_PNR/pnr/fpga_top/*
+# **_PNR/pnr/fpga_top/outputs_icc2
+# !**/pnr/fpga_top/rpts_pt
+
+# # Ignore Verdi tempfiles
+# novas.conf
+# novas.rc
+# Verdi*Log
+# *.svf
+
+# # Release files from DP
+# *_PNR/release/dp/floorplan/*.*
+# *_PNR/release/dp/floorplan/*_*/*
+# !*_PNR/release/dp/floorplan/*_*/floorplan.def
+# !*_PNR/release/dp/floorplan/*_*/*.tcl
+# !*_PNR/release/dp/*/pinConstraints/*_*/pinFixUps.txt
+# *_PNR/release/dp/fpga_top/preferred_pin_locations.tcl
+
+# # Release files from PNR
+# *_PNR/release/pnr/fpga_top/*.def
+# !*_PNR/release/pnr/fpga_top/*.def.xz
+# *_PNR/release/pnr/fpga_top/*.sdc

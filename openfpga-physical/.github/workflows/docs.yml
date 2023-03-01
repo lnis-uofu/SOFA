@@ -1,0 +1,88 @@
+name: Documentation
+on:
+  push:
+    branches:
+      - ganesh_dev
+      - main
+
+jobs:
+  build_docs:
+    runs-on: ubuntu-latest
+    env:
+      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+    container: 
+      image: ghcr.io/ganeshgore/gg_documentation_env:latest
+      options: >-
+        -v /var/tmp/OpenFPGA-Physical/docs:/var/tmp/OpenFPGA-Physical/docs
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      # ========================================
+      #           Build Documentation
+      # ========================================
+      - name: Build Documentation
+        shell: bash
+        id: build
+        run: |
+          cat ./.github/build_docs.sh
+          bash ./.github/build_docs.sh
+      - name: Upload regression results
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: docs_build
+          retention-days: 1
+          path: |
+            docs/**/*
+      - name: Deploy documentation
+        if: ${{ (steps.build.outcome == 'success') }}
+        shell: bash
+        run: |
+          BranchDir=$(basename ${GITHUB_REF})
+          echo "Trigger branch ${BranchDir}"
+          rm -rf /var/tmp/OpenFPGA-Physical/docs/${BranchDir}
+          mkdir -p /var/tmp/OpenFPGA-Physical/docs/${BranchDir}
+          cp -rf docs/_build/html /var/tmp/OpenFPGA-Physical/docs/${BranchDir}/
+      - name: Deploy documentation
+        if: ${{ (steps.build.outcome == 'success') }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: docs
+          publish_dir: docs/_build/html
+          destination_dir: docs
+          exclude_assets: "doctrees"
+      - name: Add Head value to HTML
+        if: ${{ steps.build.outcome == 'success' }}
+        shell: bash
+        run: |
+          find docs/_build/html -name "*.html*" -exec sed -i "s/<head>/<head><base href=\"${BRANCH_NAME}\">/" {} \;
+          if [[ ! ${BRANCH_NAME} == "main" ]]; then echo "body{border-top: 20px solid #FF9800;}" > docs/_build/html/_static/custom.css; fi
+      # - name: Create dummy documentation
+      #   shell: bash
+      #   id: build
+      #   run: |
+      #     mkdir -p docs/_build/html
+      #     echo ${BRANCH_NAME}
+      #     echo "This is HTML page " > docs/_build/html/index.html
+      # Not required SCP run is already doing that
+      # - name: Removing previous documentation from server
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     host: ${{ secrets.DOCS_HOST }}
+      #     username: ${{ secrets.DOCS_USERNAME }}
+      #     key: ${{ secrets.DOCS_KEY }}
+      #     script: |
+      #       whoami
+      #       ls ${{ secrets.DOCS_PATH }}
+      #       rm -rf ${{ secrets.DOCS_PATH }}/${{ github.head_ref || github.ref_name }}
+      - name: Copy HTML files to docs server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.DOCS_HOST }}
+          username: ${{ secrets.DOCS_USERNAME }}
+          key: ${{ secrets.DOCS_KEY }}
+          rm: True
+          source: "docs/_build/html"
+          strip_components : 3
+          target: ${{ secrets.DOCS_PATH }}/${{ github.head_ref || github.ref_name }}

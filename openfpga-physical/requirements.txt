@@ -1,0 +1,7 @@
+pandas
+numpy
+envyaml
+matplotlib
+svgwrite
+spydrnet
+git+https://github.com/ganeshgore/spydrnet-physical.git

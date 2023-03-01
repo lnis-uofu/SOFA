@@ -1,0 +1,30 @@
+<!-- Minimal VPR architecture file to demonstrate FPGA render script -->
+<architecture>
+    <tiles>
+        <tile name="io_top" capacity="6" area="0"/>
+        <tile name="io_right" capacity="6" area="0"/>
+        <tile name="io_bottom" capacity="6" area="0"/>
+        <tile name="io_left" capacity="6" area="0"/>
+        <tile name="clb" width="1" height="1" area="0"/>
+        <tile name="dsp" width="1" height="2" area="0"/>
+        <tile name="ram9k" width="2" height="2" area="0"/>
+    </tiles>
+
+    <layout tileable="true" through_channel="true">
+        <fixed_layout name="dp" width="8" height="8">
+            <!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
+            <row type="io_top" starty="H-1" priority="100"/>
+            <row type="io_bottom" starty="0" priority="100"/>
+            <col type="io_left" startx="0" priority="100"/>
+            <col type="io_right" startx="W-1" priority="100"/>
+            <corners type="EMPTY" priority="101"/>
+            <!--Fill with 'clb'-->
+            <fill type="clb" priority="10"/>
+            <!--Row of DSP with 'EMPTY' blocks wherever a DSP does not fit. Vertical offset by 1 for perimeter.-->
+            <row type="dsp" startx="1" starty="3" incrx="2" priority="20"/>
+            <!--Row of RAM9K with 'EMPTY' blocks wherever a RAM9k does not fit. Vertical offset by 1 for perimeter.-->
+            <!-- <row type="ram9k" startx="1" starty="4" repeaty="6" priority="20"/> -->
+            <region type="ram9k" startx="1"  endx="2" starty="1" endy="3" priority="20"/>
+        </fixed_layout>
+    </layout>
+</architecture>

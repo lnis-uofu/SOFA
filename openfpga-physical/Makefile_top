@@ -1,0 +1,163 @@
+#
+# Main Makefile
+# ~~~~~~~~~~~~~
+# This is a main makefile, used to create, sync and update design projects
+#
+
+SHELL				=bash
+PYTHON_EXEC			:=python3.8
+GIT_EXEC 			:=git
+OPTIONS 			=
+PORT 				:=8001
+GITHUB_COM			?=github
+OPENPHY_OWNER		?=ganeshgore
+GIT_OPTIONS  		?=
+
+
+.ONESHELL:
+.SILENT:
+
+define copy_files
+	# Script Files
+	ln -$(1) ../src/generate_top_qlap3.py .
+	ln -$(1) ../src/PostOpenFPGAScript.sh .
+	ln -$(1) ../src/Makefile .
+	ln -$(1) ../src/RestructureNetlist_QLAP3.py .
+	ln -$(1) ../src/generate_scandef_and_case_analysis.sh .
+
+	# Design Planning
+	echo "Linking PnR Scripts in project folder"
+	mkdir -p dp/fpga_top
+	mkdir -p pnr
+	ln -$(1) ../../../src/dp/fpga_top/custom_scripts dp/fpga_top/
+	ln -$(1) ../../../src/dp/fpga_top/extra_scripts dp/fpga_top/
+	ln -$(1) ../../../src/dp/fpga_top/rm_setup dp/fpga_top/
+	ln -$(1) ../../../src/dp/fpga_top/rm_icc2_dp_scripts dp/fpga_top/
+	ln -$(1) ../../../src/dp/fpga_top/Makefile dp/fpga_top/
+
+	# Place and route
+	ln -$(1) ../../src/pnr/custom_pnr_scripts pnr/
+	ln -$(1) ../../src/pnr/PrimeTimeScripts pnr/
+	ln -$(1) ../../src/pnr/rm_icc2_pnr_scripts pnr/
+	ln -$(1) ../../src/pnr/rm_setup_common pnr/
+	echo "PnR Scripts linked in project folder"
+endef
+
+# Put it first so that "make" without argument is like "make help".
+export COMMENT_EXTRACT
+help:
+# Prints help message for this makefile
+	@${PYTHON_EXEC} -c "$$COMMENT_EXTRACT"
+
+docs:
+# Hosts the docs branch of hit repository over python http server
+#
+# Most of the physical design projects are closed source and hosted on
+# the private repository, making hosting documentation on ``readthedocs``
+# or ``Github pages`` challenging. In this framework, as soon as the
+# documentation is updated in the repository, it is compiled using a configured
+# runner, and output HTML is stored in a separate branch named ``docs``.
+#
+# ``make docs`` command allows you to pull the docs branch and host HTMlL pages
+# using a local python webserver.
+#
+	${GIT_EXEC} fetch origin docs
+	${GIT_EXEC} checkout origin/docs -- docs/_build/html
+	git rm -r --cached docs/_build/html
+	echo "Hosting server on $$PORT port"
+	${PYTHON_EXEC} -m http.server ${PORT} --directory docs/_build/html &
+
+create_project: FORCE
+# This command creates design project
+#
+# This command requires mandatory argument ``PROJ_NAME`` which should be in
+# ``FPGA<XX>x<YY>_<name>`` format where ``XX`` and ``YY`` is FPGA grid
+# dimensions and ``name`` is any unique project name for the design
+#
+	[ -z "$$PROJ_NAME" ] && echo "PROJ_NAME variable not provided" && exit
+	[ -d "$${PROJ_NAME}_pnr" ] && echo "Project $$PROJ_NAME already exists" && exit
+	[[ $$PROJ_NAME != FPGA[0-9]*x[0-9]*_* ]] && echo  "Project name format is wrong $$PROJ_NAME " && exit
+	echo -n "Do you want to create project directory $${PROJ_NAME}_pnr (y/n)? "
+	read answer
+	if [ "$$answer" != "$${answer#[Yy]}" ] ;then
+		echo "Creating project directory"
+		mkdir -p $${PROJ_NAME}_pnr && cd $${PROJ_NAME}_pnr
+		# Move and rename example
+		cp -r ../src/Example_OpenFPGA_task .
+		mv Example_OpenFPGA_task $${PROJ_NAME}_task
+		cp ../src/config.sh .
+		sed -i "s/PROJ_NAME=.*\#/PROJ_NAME=$${PROJ_NAME} \#/g" config.sh
+		$(call copy_files,s)
+	else
+		echo "Skipping project initialization"
+	fi
+
+FORCE: ;
+
+pull_openfpga_physical:
+# This target pushes the local changes to openfpga-physical main repository
+#
+# ``BRANCH`` To specify pull from specific branch
+#
+# This target pushes the local changes to openfpga-physical main repository
+#
+# ``BRANCH`` To specify pull from specific branch
+#
+	BRANCH=$${BRANCH:='main'}
+	git config alias.merge merge --no-commit
+	echo "Executing ${GIT_EXEC} subtree pull --prefix=openfpga-physical \
+	git@${GITHUB_COM}.com:${OPENPHY_OWNER}/openfpga-physical.git $${BRANCH} --squash "
+	${GIT_EXEC} subtree --squash --prefix=openfpga-physical pull \
+	git@${GITHUB_COM}.com:${OPENPHY_OWNER}/openfpga-physical.git $${BRANCH} $${GIT_OPTIONS}
+	echo "Pulling new changes to openfpga-physical script"
+	git config -unset alias.merge
+
+push_openfpga_physical:
+# This target pushes the local changes to openfpga-physical main repository
+	BRANCH=$${BRANCH:='main'}
+	if [[ "$${BRANCH}" == "main" ]]; then
+		echo "**** Use make push BRNACH_NAME=<name> ****"
+		echo "subtree push to main branch is not supported "
+		exit
+	fi
+	echo "Trying to push subtree to $${BRANCH}"
+
+	current_dir=$$(pwd)
+	gitroot=$$(git rev-parse --show-toplevel)
+	rel_path=$$(realpath --relative-to=$${gitroot} $$current_dir)
+
+	echo "current_dir $${current_dir}"
+	echo "gitroot     $${gitroot}"
+	echo "rel_path    $${rel_path}"
+
+	${GIT_EXEC} subtree push --prefix=openfpga-physical \
+			git@${GITHUB_COM}.com:${OPENPHY_OWNER}/openfpga-physical.git $${BRANCH} $${GIT_OPTIONS}
+
+#  >>> deprecated pull_openfpga_physical target performs merge wth no commit <<
+#
+# diff_openfpga_physical:
+# # This target shows diff of local subtree with remote repository
+# #
+# 	BRANCH=$${BRANCH:='main'}
+# 	if ! ${GIT_EXEC} remote | grep "openfpga-physical" > /dev/null; then
+# 		echo "[ INFO] Adding openfpga-physical in remote"
+# 		git remote add openfpga-physical git@${GITHUB_COM}.com:${OPENPHY_OWNER}/openfpga-physical.git
+# 	fi
+# 	git fetch --depth 1 openfpga-physical $${BRANCH}
+# 	git diff openfpga-physical/$${BRANCH} HEAD:openfpga-physical --name-only
+
+openfpga_physical_version:
+# This target shows current version of openfpga-physical in the repository
+	echo "TODO"
+	echo "Show version from readme file"
+	echo "Showlast upadated option"
+
+
+define COMMENT_EXTRACT
+import re
+with open ('Makefile', 'r' ) as f:
+    matches = re.finditer('^([a-zA-Z-_]*):.*\n#(.*)', f.read(), flags=re.M)
+    for _, match in enumerate(matches, start=1):
+        header, content = match[1], match[2]
+        print(f"  {header:10} {content}")
+endef
