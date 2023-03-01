@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="140" version="1.1" viewBox="0,-129.5,126,140" width="126">
+    <defs id="id5">
+        <marker id="id1" markerHeight="10" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="30" refY="30" viewBox="0 0 120 120">
+            <path d="M 0 0 L 60 30 L 0 60 z" fill="blue"/>
+        </marker>
+        <marker id="id2" markerHeight="10" markerUnits="strokeWidth" markerWidth="5" orient="auto" viewBox="-15 -15 30 30">
+            <rect fill="green" height="20" width="20" x="-10" y="-10"/>
+            <path d="M 8 0 L -8 8 L -8 -8 z" fill="blue"/>
+        </marker>
+        <marker id="id3" markerHeight="10" markerUnits="strokeWidth" markerWidth="5" orient="auto" viewBox="-15 -15 30 30">
+            <rect fill="green" height="20" width="20" x="-10" y="-10"/>
+            <path d="M 8 0 L -8 8 L -8 -8 z" fill="blue"/>
+        </marker>
+        <marker id="id4" markerHeight="10" markerUnits="strokeWidth" markerWidth="5" orient="auto" viewBox="-15 -15 30 30">
+            <line stroke="red" stroke-width="5px" x1="0" x2="0" y1="-15" y2="15"/>
+        </marker>
+        <style type="text/css"><![CDATA[
+                text{font-family: Lato;}
+                span{text-anchor: "middle"; alignment_baseline: "middle"}
+                .gridLabels{fill: grey;font-style: italic;font-weight: 900}
+                .gridmarker{stroke:red; stroke-width:0.2; opacity: 0.7;}
+                
+                .connection{ opacity: 0.5;
+                            marker-end:url(#id1);
+                            stroke-width:1.2;}
+                .down{stroke-dasharray: 2;
+                    marker-end:url(#id3);}
+                .up{stroke-dasharray: 2;
+                    marker-start:url(#id2);}
+                .top{stroke-dasharray: 2;
+                    marker-start:url(#id4);}
+                .buffer{ filter: hue-rotate(90deg);
+                          stroke-width:2; stroke-dasharray:1;}
+                ]]></style>
+    </defs>
+    <g id="markers" transform="scale(1,-1)">
+        <line class="gridmarker" x1="4" x2="4" y1="4" y2="122"/>
+        <line class="gridmarker" x1="10" x2="10" y1="4" y2="122"/>
+        <line class="gridmarker" x1="18" x2="18" y1="4" y2="122"/>
+        <line class="gridmarker" x1="24" x2="24" y1="4" y2="122"/>
+        <line class="gridmarker" x1="32" x2="32" y1="4" y2="122"/>
+        <line class="gridmarker" x1="38" x2="38" y1="4" y2="122"/>
+        <line class="gridmarker" x1="46" x2="46" y1="4" y2="122"/>
+        <line class="gridmarker" x1="52" x2="52" y1="4" y2="122"/>
+        <line class="gridmarker" x1="60" x2="60" y1="4" y2="122"/>
+        <line class="gridmarker" x1="66" x2="66" y1="4" y2="122"/>
+        <line class="gridmarker" x1="74" x2="74" y1="4" y2="122"/>
+        <line class="gridmarker" x1="80" x2="80" y1="4" y2="122"/>
+        <line class="gridmarker" x1="88" x2="88" y1="4" y2="122"/>
+        <line class="gridmarker" x1="94" x2="94" y1="4" y2="122"/>
+        <line class="gridmarker" x1="102" x2="102" y1="4" y2="122"/>
+        <line class="gridmarker" x1="108" x2="108" y1="4" y2="122"/>
+        <line class="gridmarker" x1="116" x2="116" y1="4" y2="122"/>
+        <line class="gridmarker" x1="122" x2="122" y1="4" y2="122"/>
+        <line class="gridmarker" x1="4" x2="122" y1="4" y2="4"/>
+        <line class="gridmarker" x1="4" x2="122" y1="10" y2="10"/>
+        <line class="gridmarker" x1="4" x2="122" y1="18" y2="18"/>
+        <line class="gridmarker" x1="4" x2="122" y1="24" y2="24"/>
+        <line class="gridmarker" x1="4" x2="122" y1="32" y2="32"/>
+        <line class="gridmarker" x1="4" x2="122" y1="38" y2="38"/>
+        <line class="gridmarker" x1="4" x2="122" y1="46" y2="46"/>
+        <line class="gridmarker" x1="4" x2="122" y1="52" y2="52"/>
+        <line class="gridmarker" x1="4" x2="122" y1="60" y2="60"/>
+        <line class="gridmarker" x1="4" x2="122" y1="66" y2="66"/>
+        <line class="gridmarker" x1="4" x2="122" y1="74" y2="74"/>
+        <line class="gridmarker" x1="4" x2="122" y1="80" y2="80"/>
+        <line class="gridmarker" x1="4" x2="122" y1="88" y2="88"/>
+        <line class="gridmarker" x1="4" x2="122" y1="94" y2="94"/>
+        <line class="gridmarker" x1="4" x2="122" y1="102" y2="102"/>
+        <line class="gridmarker" x1="4" x2="122" y1="108" y2="108"/>
+        <line class="gridmarker" x1="4" x2="122" y1="116" y2="116"/>
+        <line class="gridmarker" x1="4" x2="122" y1="122" y2="122"/>
+    </g>
+    <g id="main" transform="scale(1,-1)">
+        <line class="connection same" stroke="red" x1="63" x2="63" y1="0" y2="7"/>
+        <line class="connection same" stroke="red" x1="63" x2="63" y1="7" y2="14"/>
+        <line class="connection same" stroke="red" x1="63" x2="63" y1="14" y2="21"/>
+        <line class="connection same" stroke="red" x1="63" x2="63" y1="21" y2="28"/>
+        <line class="connection same" stroke="red" x1="63" x2="63" y1="28" y2="35"/>
+        <line class="connection same" stroke="red" x1="63" x2="63" y1="35" y2="42"/>
+        <line class="connection same" stroke="red" x1="63" x2="63" y1="42" y2="49"/>
+        <line class="connection same" stroke="red" x1="63" x2="63" y1="49" y2="56"/>
+        <line class="connection same" stroke="red" x1="63" x2="63" y1="56" y2="63"/>
+        <line class="connection same" stroke="red" x1="63" x2="70" y1="63" y2="63"/>
+        <line class="connection same" stroke="red" x1="70" x2="77" y1="63" y2="63"/>
+        <line class="connection same" stroke="red" x1="77" x2="84" y1="63" y2="63"/>
+        <line class="connection same" stroke="red" x1="84" x2="91" y1="63" y2="63"/>
+        <line class="connection same" stroke="red" x1="91" x2="91" y1="63" y2="70"/>
+        <line class="connection same" stroke="red" x1="91" x2="91" y1="70" y2="77"/>
+        <line class="connection same" stroke="red" x1="91" x2="91" y1="77" y2="84"/>
+        <line class="connection down" stroke="red" x1="91" x2="91" y1="84" y2="91"/>
+        <line class="connection same" stroke="red" x1="91" x2="91" y1="63" y2="56"/>
+        <line class="connection same" stroke="red" x1="91" x2="91" y1="56" y2="49"/>
+        <line class="connection same" stroke="red" x1="91" x2="91" y1="49" y2="42"/>
+        <line class="connection down" stroke="red" x1="91" x2="91" y1="42" y2="35"/>
+        <line class="connection same" stroke="red" x1="63" x2="56" y1="63" y2="63"/>
+        <line class="connection same" stroke="red" x1="56" x2="49" y1="63" y2="63"/>
+        <line class="connection same" stroke="red" x1="49" x2="42" y1="63" y2="63"/>
+        <line class="connection same" stroke="red" x1="42" x2="35" y1="63" y2="63"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="63" y2="70"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="70" y2="77"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="77" y2="84"/>
+        <line class="connection down" stroke="red" x1="35" x2="35" y1="84" y2="91"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="63" y2="56"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="56" y2="49"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="49" y2="42"/>
+        <line class="connection down" stroke="red" x1="35" x2="35" y1="42" y2="35"/>
+        <g id="text">
+            <text alignment-baseline="middle" class="moduleLabel" fill="black" font-size="11.9" text-anchor="middle" transform="scale(1,-1)" x="63.0" y="3.5">FPGA88_SOFA_A</text>
+        </g>
+    </g>
+</svg>
