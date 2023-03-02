@@ -41,22 +41,24 @@ PICKLE_DIR = f"{RELEASE_DIR}/pickle"
 
 
 def main():
+    """
+    Main method to create clock tree
+    """
+    fpga_width = FPGA_SIZE_X+1
+    fpga_height = FPGA_SIZE_Y+1
 
-    fpga_width = FPGA_SIZE_X
-    fpga_height = FPGA_SIZE_Y
-
-    WIDTH = fpga_width*2+1
-    HEIGHT = fpga_height*2+1
+    WIDTH = fpga_width + 1
+    HEIGHT = fpga_height + 1
 
     p_manager = ConnectionPattern(WIDTH, HEIGHT)
     l2_patt = p_manager.connections
-    l2_patt.cursor = (int(WIDTH / 2) + 1, 0)
-    l2_patt.move_y(steps=int(WIDTH / 2) + 1)
+    l2_patt.cursor = (int(WIDTH) + 1, 0)
+    l2_patt.move_y(steps=int(WIDTH) + 1)
     l2_patt.merge(p_manager.get_htree(WIDTH))
     l2_patt.set_color("red")
-    for x in range(2):
-        for y in range(2):
-            l2_patt.push_connection_down((5 + (x * 8), 5 + (y * 8)))
+    # for x in range(2):
+    #     for y in range(2):
+    #         l2_patt.push_connection_down((5 + (x * 8), 5 + (y * 8)))
 
     svg = p_manager.render_pattern(title=PROJ_NAME, scale=7)
 
@@ -65,6 +67,7 @@ def main():
     save_svg_with_background(svg,
                              f"{SVG_DIR}/{PROJ_NAME}_clock0_leve2_tree.svg")
 
+    return
     # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
     #                     level1 connection pattern
     # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =

@@ -70,22 +70,18 @@ def main():
     w = fpga.get_width()
     h = fpga.get_height()
 
-    for y in range(2, h):
+    for y in range(1, h):
         x = 0
-        instances = [f"cby_{x}__{y}_", f"sb_{x}__{y}_",
-                     f"cbx_{x+1}__{y}_", f"clb_{x+1}__{y}_",
-                     f"cby_{x+1}__{y}_", f"sb_{x+1}__{y}_"]
+        instances = [f"cby_{x}__{y}_", f"sb_{x}__{y}_"]
         fpga.merge_symbol(instances, f"sides_merged_at_{x}_{y}")
         x = w
         instances = [f"cby_{x}__{y}_", f"sb_{x}__{y}_",
                      f"cbx_{x}__{y}_", f"clb_{x}__{y}_"]
         fpga.merge_symbol(instances, f"sides_merged_at_{x}_{y}")
 
-    for x in range(2, w):
+    for x in range(1, w):
         y = 0
-        instances = [f"cbx_{x}__{y}_", f"sb_{x}__{y}_",
-                     f"cby_{x}__{y+1}_", f"clb_{x}__{y+1}_",
-                     f"cbx_{x}__{y+1}_", f"sb_{x}__{y+1}_"]
+        instances = [f"cbx_{x}__{y}_", f"sb_{x}__{y}_"]
         fpga.merge_symbol(instances, f"sides_merged_at_{x}_{y}")
         y = h
         instances = [f"cbx_{x}__{y}_", f"sb_{x}__{y}_",
@@ -93,8 +89,8 @@ def main():
         fpga.merge_symbol(instances, f"sides_merged_at_{x}_{y}")
 
     # Main tile
-    for x in range(2, w):
-        for y in  range(2, h):
+    for x in range(1, w):
+        for y in  range(1, h):
             fpga.merge_symbol(
                 [ f"clb_{x}__{y}_", f"sb_{x}__{y}_",
                     f"cbx_{x}__{y}_", f"cby_{x}__{y}_"],
@@ -102,8 +98,7 @@ def main():
 
     # Corner Tiles
     fpga.merge_symbol(
-        [f"cby_0__{h}_", f"sb_0__{h}_", f"cbx_1__{h}_",
-         f"cby_1__{h}_", f"sb_1__{h}_"], "corner_merged_ltop")
+        [f"cby_0__{h}_", f"sb_0__{h}_"], "corner_merged_ltop")
     fpga.merge_symbol(
         [f"cbx_{w}__{h}_", f"cby_{w}__{h}_",
          f"clb_{w}__{h}_", f"sb_{w}__{h}_"], "corner_merged_rtop")
@@ -111,11 +106,7 @@ def main():
         [f"cbx_{w}__0_", f"cbx_{w}__1_",
          f"sb_{w}__0_", f"sb_{w}__1_",
          f"cby_{w}__1_", f"clb_{w}__1_"], "corner_merged_rbottom")
-    fpga.merge_symbol(
-        ["cbx_1__0_", "cbx_1__1_",
-         "sb_0__0_", "sb_0__1_",
-         "sb_1__0_", "sb_1__1_",
-         "cby_1__1_", "clb_1__1_"], "corner_merged_lbottom")
+    fpga.merge_symbol(["sb_0__0_",], "corner_merged_lbottom")
 
     # ====================== END =========================
 
