@@ -13,7 +13,9 @@ jobs:
   generate_netlist:
     name: Arch development
     runs-on: ubuntu-18.04
-    container: ghcr.io/lnis-uofu/openfpga-master:latest
+    container:
+      image: ghcr.io/lnis-uofu/openfpga-master:latest
+      options: --user root
     strategy:
       fail-fast: false
       matrix:
@@ -27,7 +29,7 @@ jobs:
           echo "Cleaning up previous run"
           rm -rf "${{ github.workspace }}"
           mkdir -p "${{ github.workspace }}"
-      - name: Checkout OpenFPGA-ArcticPro3 repo
+      - name: Checkout OpenFPGA-SOFA repo
         uses: actions/checkout@v2
       - name: Detect changes
         uses: technote-space/get-diff-action@v4
