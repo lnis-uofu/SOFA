@@ -10,7 +10,12 @@ module left_tile
     gfpga_pad_io_soc_in,
     isol_n,
     prog_clk,
-    prog_reset,
+    prog_reset_bottom_in,
+    prog_reset_left_in,
+    prog_reset_top_in,
+    reset_bottom_in,
+    reset_right_in,
+    reset_top_in,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_,
@@ -30,6 +35,11 @@ module left_tile
     chany_top_out_0,
     gfpga_pad_io_soc_dir,
     gfpga_pad_io_soc_out,
+    prog_reset_bottom_out,
+    prog_reset_right_out,
+    prog_reset_top_out,
+    reset_bottom_out,
+    reset_top_out,
     right_width_0_height_0_subtile_0__pin_inpad_0_,
     right_width_0_height_0_subtile_1__pin_inpad_0_,
     right_width_0_height_0_subtile_2__pin_inpad_0_,
@@ -44,7 +54,12 @@ module left_tile
     input [3:0]gfpga_pad_io_soc_in;
     input isol_n;
     input prog_clk;
-    input prog_reset;
+    input prog_reset_bottom_in;
+    input prog_reset_left_in;
+    input prog_reset_top_in;
+    input reset_bottom_in;
+    input reset_right_in;
+    input reset_top_in;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_;
@@ -64,6 +79,11 @@ module left_tile
     output [29:0]chany_top_out_0;
     output [3:0]gfpga_pad_io_soc_dir;
     output [3:0]gfpga_pad_io_soc_out;
+    output prog_reset_bottom_out;
+    output prog_reset_right_out;
+    output prog_reset_top_out;
+    output reset_bottom_out;
+    output reset_top_out;
     output right_width_0_height_0_subtile_0__pin_inpad_0_;
     output right_width_0_height_0_subtile_1__pin_inpad_0_;
     output right_width_0_height_0_subtile_2__pin_inpad_0_;
@@ -87,6 +107,17 @@ module left_tile
     wire isol_n;
     wire prog_clk;
     wire prog_reset;
+    wire prog_reset_bottom_in;
+    wire prog_reset_bottom_out;
+    wire prog_reset_left_in;
+    wire prog_reset_right_out;
+    wire prog_reset_top_in;
+    wire prog_reset_top_out;
+    wire reset_bottom_in;
+    wire reset_bottom_out;
+    wire reset_right_in;
+    wire reset_top_in;
+    wire reset_top_out;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_;
@@ -104,6 +135,16 @@ module left_tile
     wire top_left_grid_right_width_0_height_0_subtile_2__pin_inpad_0_;
     wire top_left_grid_right_width_0_height_0_subtile_3__pin_inpad_0_;
 
+assign prog_reset = prog_reset_bottom_in;
+assign prog_reset_top_in = prog_reset_left_in;
+assign prog_reset_right_out = prog_reset;
+assign prog_reset_top_out = prog_reset_right_out;
+assign prog_reset_bottom_in = prog_reset_top_in;
+assign prog_reset_bottom_out = prog_reset_top_out;
+assign reset_top_out = reset_bottom_in;
+assign reset_top_in = reset_right_in;
+assign reset_bottom_in = reset_top_in;
+assign reset_bottom_out = reset_top_out;
     cby_0__1_ cby_0__1_
     (
         .ccff_head_0(ccff_head_0),

@@ -193,6 +193,21 @@ def main():
         filename=f"{RELEASE_DIR}/rpts/pre_pnr/shaping.txt",
     )
 
+    # Signal pins
+    fpga.fix_grid_pin_names(
+        regex=r".*__pin_(reset|prog_reset)_0_", module="grid_*")
+    fpga.fix_grid_pin_names(
+        regex=r".*__pin_(reset|prog_reset)_0_", module="cbx*")
+    # For clock signals
+    fpga.fix_grid_pin_names(
+        regex=r".*__pin_(clk.*)_",
+        module="grid_*",
+        name_map=lambda x: x.replace("_", ""),
+    )
+    fpga.fix_grid_pin_names(
+        regex=r".*__pin_(clk.*)_", module="cb*", name_map=lambda x: x.replace("_", "")
+    )
+
     filename = SVG_DIR + f"{PROJ_NAME}_raw_floorplan.svg"
     save_tiling_floorplan(fpga, filename, STYLE_SHEET=STYLE_SHEET)
 
@@ -218,15 +233,6 @@ def main():
             shapes[module]["PLACEMENT"][1] += 1
 
     fpga.create_placement()
-    # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-    # Feedthrough generation
-    # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-    instance_map = [[0 for _ in range(FPGA_HEIGHT + 1)]
-                    for _ in range(FPGA_WIDTH + 1)]
-    for inst in fpga.top_module.get_instances():
-        _, x, _, y, _ = inst.name.rsplit("_", 4)
-        instance_map[int(x)][int(y)] = inst.name
-    # create_global_feedthrough(fpga, "reset", instance_map)
 
     filename = SVG_DIR + f"{PROJ_NAME}_pre_tile_floorplan.svg"
     save_tiling_floorplan(fpga, filename, STYLE_SHEET=STYLE_SHEET)
@@ -234,8 +240,19 @@ def main():
     # Create tiles
     fpga.register_tile_generator(Tile02)
     fpga.create_tiles()
-    save_netlist(fpga)
 
+    # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+    # Feedthrough generation
+    # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+    instance_map = [[0 for _ in range(FPGA_HEIGHT + 2)]
+                    for _ in range(FPGA_WIDTH + 2)]
+    for inst in fpga.top_module.get_instances():
+        _, x, _, y, _ = inst.name.rsplit("_", 4)
+        instance_map[int(x)][int(y)] = inst.name
+    create_global_feedthrough(fpga, "reset", instance_map)
+    create_global_feedthrough(fpga, "prog_reset", instance_map)
+
+    save_netlist(fpga)
     filename = SVG_DIR + f"{PROJ_NAME}_floorplan.svg"
     save_tiling_floorplan(fpga, filename, STYLE_SHEET=STYLE_SHEET)
     # pickle.dump(

@@ -3,10 +3,10 @@
 module grid_clb
 (
     ccff_head,
-    left_width_0_height_0_subtile_0__pin_clk_0_,
-    left_width_0_height_0_subtile_0__pin_reset_0_,
+    clk0,
     prog_clk,
     prog_reset,
+    reset,
     right_width_0_height_0_subtile_0__pin_I4_0_,
     right_width_0_height_0_subtile_0__pin_I4_1_,
     right_width_0_height_0_subtile_0__pin_I4i_0_,
@@ -66,10 +66,10 @@ module grid_clb
 );
 
     input ccff_head;
-    input left_width_0_height_0_subtile_0__pin_clk_0_;
-    input left_width_0_height_0_subtile_0__pin_reset_0_;
+    input clk0;
     input prog_clk;
     input prog_reset;
+    input reset;
     input right_width_0_height_0_subtile_0__pin_I4_0_;
     input right_width_0_height_0_subtile_0__pin_I4_1_;
     input right_width_0_height_0_subtile_0__pin_I4i_0_;
@@ -132,10 +132,10 @@ module grid_clb
     wire bottom_width_0_height_0_subtile_0__pin_sc_out_0_;
     wire ccff_head;
     wire ccff_tail;
-    wire left_width_0_height_0_subtile_0__pin_clk_0_;
-    wire left_width_0_height_0_subtile_0__pin_reset_0_;
+    wire clk0;
     wire prog_clk;
     wire prog_reset;
+    wire reset;
     wire right_width_0_height_0_subtile_0__pin_I4_0_;
     wire right_width_0_height_0_subtile_0__pin_I4_1_;
     wire right_width_0_height_0_subtile_0__pin_I4i_0_;
@@ -209,9 +209,9 @@ module grid_clb
         .clb_I7({right_width_0_height_0_subtile_0__pin_I7_0_, right_width_0_height_0_subtile_0__pin_I7_1_}),
         .clb_I7i({right_width_0_height_0_subtile_0__pin_I7i_0_, right_width_0_height_0_subtile_0__pin_I7i_1_}),
         .clb_cin(top_width_0_height_0_subtile_0__pin_cin_0_),
-        .clb_clk(left_width_0_height_0_subtile_0__pin_clk_0_),
+        .clb_clk(clk0),
         .clb_reg_in(top_width_0_height_0_subtile_0__pin_reg_in_0_),
-        .clb_reset(left_width_0_height_0_subtile_0__pin_reset_0_),
+        .clb_reset(reset),
         .clb_sc_in(top_width_0_height_0_subtile_0__pin_sc_in_0_),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),

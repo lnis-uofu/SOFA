@@ -7,12 +7,12 @@ module top_tile
     chanx_left_in,
     chanx_right_in_0,
     chany_bottom_in,
+    clk0,
     gfpga_pad_io_soc_in,
     isol_n,
-    left_width_0_height_0_subtile_0__pin_clk_0_,
-    left_width_0_height_0_subtile_0__pin_reset_0_,
     prog_clk,
     prog_reset,
+    reset,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_,
@@ -66,12 +66,12 @@ module top_tile
     input [29:0]chanx_left_in;
     input [29:0]chanx_right_in_0;
     input [29:0]chany_bottom_in;
+    input clk0;
     input [3:0]gfpga_pad_io_soc_in;
     input isol_n;
-    input left_width_0_height_0_subtile_0__pin_clk_0_;
-    input left_width_0_height_0_subtile_0__pin_reset_0_;
     input prog_clk;
     input prog_reset;
+    input reset;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_;
@@ -158,6 +158,7 @@ module top_tile
     wire [29:0]chany_bottom_out;
     wire [29:0]chany_bottom_out_0;
     wire [29:0]chany_top_out;
+    wire clk0;
     wire [3:0]gfpga_pad_io_soc_dir;
     wire [3:0]gfpga_pad_io_soc_in;
     wire [3:0]gfpga_pad_io_soc_out;
@@ -178,10 +179,9 @@ module top_tile
     wire left_grid_right_width_0_height_0_subtile_0__pin_I7_1_;
     wire left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_;
     wire left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_;
-    wire left_width_0_height_0_subtile_0__pin_clk_0_;
-    wire left_width_0_height_0_subtile_0__pin_reset_0_;
     wire prog_clk;
     wire prog_reset;
+    wire reset;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_;
@@ -280,10 +280,10 @@ module top_tile
     grid_clb grid_clb_1__8_
     (
         .ccff_head(ccff_tail_1),
-        .left_width_0_height_0_subtile_0__pin_clk_0_(left_width_0_height_0_subtile_0__pin_clk_0_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(left_width_0_height_0_subtile_0__pin_reset_0_),
+        .clk0(clk0),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
+        .reset(reset),
         .right_width_0_height_0_subtile_0__pin_I4_0_(left_grid_right_width_0_height_0_subtile_0__pin_I4_0_),
         .right_width_0_height_0_subtile_0__pin_I4_1_(left_grid_right_width_0_height_0_subtile_0__pin_I4_1_),
         .right_width_0_height_0_subtile_0__pin_I4i_0_(left_grid_right_width_0_height_0_subtile_0__pin_I4i_0_),

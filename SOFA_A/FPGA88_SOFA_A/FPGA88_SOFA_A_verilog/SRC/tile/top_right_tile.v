@@ -6,13 +6,13 @@ module top_right_tile
     ccff_head_1,
     chanx_left_in,
     chany_bottom_in,
+    clk0,
     gfpga_pad_io_soc_in,
     gfpga_pad_io_soc_in_0,
     isol_n,
-    left_width_0_height_0_subtile_0__pin_clk_0_,
-    left_width_0_height_0_subtile_0__pin_reset_0_,
     prog_clk,
     prog_reset,
+    reset,
     scan_enable,
     top_width_0_height_0_subtile_0__pin_cin_0_,
     top_width_0_height_0_subtile_0__pin_reg_in_0_,
@@ -58,13 +58,13 @@ module top_right_tile
     input ccff_head_1;
     input [29:0]chanx_left_in;
     input [29:0]chany_bottom_in;
+    input clk0;
     input [3:0]gfpga_pad_io_soc_in;
     input [3:0]gfpga_pad_io_soc_in_0;
     input isol_n;
-    input left_width_0_height_0_subtile_0__pin_clk_0_;
-    input left_width_0_height_0_subtile_0__pin_reset_0_;
     input prog_clk;
     input prog_reset;
+    input reset;
     input scan_enable;
     input top_width_0_height_0_subtile_0__pin_cin_0_;
     input top_width_0_height_0_subtile_0__pin_reg_in_0_;
@@ -143,6 +143,7 @@ module top_right_tile
     wire [29:0]chany_bottom_out;
     wire [29:0]chany_bottom_out_0;
     wire [29:0]chany_top_out;
+    wire clk0;
     wire [3:0]gfpga_pad_io_soc_dir;
     wire [3:0]gfpga_pad_io_soc_dir_0;
     wire [3:0]gfpga_pad_io_soc_in;
@@ -166,14 +167,13 @@ module top_right_tile
     wire left_grid_right_width_0_height_0_subtile_0__pin_I7_1_;
     wire left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_;
     wire left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_;
-    wire left_width_0_height_0_subtile_0__pin_clk_0_;
     wire left_width_0_height_0_subtile_0__pin_inpad_0_;
-    wire left_width_0_height_0_subtile_0__pin_reset_0_;
     wire left_width_0_height_0_subtile_1__pin_inpad_0_;
     wire left_width_0_height_0_subtile_2__pin_inpad_0_;
     wire left_width_0_height_0_subtile_3__pin_inpad_0_;
     wire prog_clk;
     wire prog_reset;
+    wire reset;
     wire right_width_0_height_0_subtile_0__pin_O_10_;
     wire right_width_0_height_0_subtile_0__pin_O_11_;
     wire right_width_0_height_0_subtile_0__pin_O_12_;
@@ -270,10 +270,10 @@ module top_right_tile
     grid_clb grid_clb_8__8_
     (
         .ccff_head(ccff_tail_0_0),
-        .left_width_0_height_0_subtile_0__pin_clk_0_(left_width_0_height_0_subtile_0__pin_clk_0_),
-        .left_width_0_height_0_subtile_0__pin_reset_0_(left_width_0_height_0_subtile_0__pin_reset_0_),
+        .clk0(clk0),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
+        .reset(reset),
         .right_width_0_height_0_subtile_0__pin_I4_0_(left_grid_right_width_0_height_0_subtile_0__pin_I4_0_),
         .right_width_0_height_0_subtile_0__pin_I4_1_(left_grid_right_width_0_height_0_subtile_0__pin_I4_1_),
         .right_width_0_height_0_subtile_0__pin_I4i_0_(left_grid_right_width_0_height_0_subtile_0__pin_I4i_0_),
