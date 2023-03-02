@@ -730,11 +730,21 @@ symbol[id*="io_"] * { fill:#f8b155;}
             <text alignment-baseline="middle" text-anchor="middle" transform="scale(1,-1)" x="131.0" y="-117.0">io_right_9__8_</text>
         </g>
     </g>
-    <g id="main" transform="scale(1.02,-1.02) translate(5.2, 5.2)">
-        <line class="connection top" stroke=" black" x1="124" x2="110" y1="69" y2="69"/>
+    <g id="main" transform="scale(1.02,-1.02) translate(-5.2, -5.2)">
+        <line class="connection top" stroke=" black" x1="138" x2="124" y1="69" y2="69"/>
+        <line class="connection same" stroke=" black" x1="124" x2="124" y1="69" y2="83"/>
+        <line class="connection same" stroke=" black" x1="124" x2="124" y1="83" y2="97"/>
+        <line class="connection same" stroke=" black" x1="124" x2="124" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="124" x2="124" y1="110" y2="124"/>
+        <line class="connection same" stroke=" black" x1="124" x2="124" y1="69" y2="55"/>
+        <line class="connection same" stroke=" black" x1="124" x2="124" y1="55" y2="41"/>
+        <line class="connection same" stroke=" black" x1="124" x2="124" y1="41" y2="28"/>
+        <line class="connection same" stroke=" black" x1="124" x2="124" y1="28" y2="14"/>
+        <line class="connection same" stroke=" black" x1="124" x2="110" y1="69" y2="69"/>
         <line class="connection same" stroke=" black" x1="110" x2="110" y1="69" y2="83"/>
         <line class="connection same" stroke=" black" x1="110" x2="110" y1="83" y2="97"/>
         <line class="connection same" stroke=" black" x1="110" x2="110" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="110" x2="110" y1="110" y2="124"/>
         <line class="connection same" stroke=" black" x1="110" x2="110" y1="69" y2="55"/>
         <line class="connection same" stroke=" black" x1="110" x2="110" y1="55" y2="41"/>
         <line class="connection same" stroke=" black" x1="110" x2="110" y1="41" y2="28"/>
@@ -743,6 +753,7 @@ symbol[id*="io_"] * { fill:#f8b155;}
         <line class="connection same" stroke=" black" x1="97" x2="97" y1="69" y2="83"/>
         <line class="connection same" stroke=" black" x1="97" x2="97" y1="83" y2="97"/>
         <line class="connection same" stroke=" black" x1="97" x2="97" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="97" x2="97" y1="110" y2="124"/>
         <line class="connection same" stroke=" black" x1="97" x2="97" y1="69" y2="55"/>
         <line class="connection same" stroke=" black" x1="97" x2="97" y1="55" y2="41"/>
         <line class="connection same" stroke=" black" x1="97" x2="97" y1="41" y2="28"/>
@@ -751,6 +762,7 @@ symbol[id*="io_"] * { fill:#f8b155;}
         <line class="connection same" stroke=" black" x1="83" x2="83" y1="69" y2="83"/>
         <line class="connection same" stroke=" black" x1="83" x2="83" y1="83" y2="97"/>
         <line class="connection same" stroke=" black" x1="83" x2="83" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="83" x2="83" y1="110" y2="124"/>
         <line class="connection same" stroke=" black" x1="83" x2="83" y1="69" y2="55"/>
         <line class="connection same" stroke=" black" x1="83" x2="83" y1="55" y2="41"/>
         <line class="connection same" stroke=" black" x1="83" x2="83" y1="41" y2="28"/>
@@ -759,6 +771,7 @@ symbol[id*="io_"] * { fill:#f8b155;}
         <line class="connection same" stroke=" black" x1="69" x2="69" y1="69" y2="83"/>
         <line class="connection same" stroke=" black" x1="69" x2="69" y1="83" y2="97"/>
         <line class="connection same" stroke=" black" x1="69" x2="69" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="69" x2="69" y1="110" y2="124"/>
         <line class="connection same" stroke=" black" x1="69" x2="69" y1="69" y2="55"/>
         <line class="connection same" stroke=" black" x1="69" x2="69" y1="55" y2="41"/>
         <line class="connection same" stroke=" black" x1="69" x2="69" y1="41" y2="28"/>
@@ -767,6 +780,7 @@ symbol[id*="io_"] * { fill:#f8b155;}
         <line class="connection same" stroke=" black" x1="55" x2="55" y1="69" y2="83"/>
         <line class="connection same" stroke=" black" x1="55" x2="55" y1="83" y2="97"/>
         <line class="connection same" stroke=" black" x1="55" x2="55" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="55" x2="55" y1="110" y2="124"/>
         <line class="connection same" stroke=" black" x1="55" x2="55" y1="69" y2="55"/>
         <line class="connection same" stroke=" black" x1="55" x2="55" y1="55" y2="41"/>
         <line class="connection same" stroke=" black" x1="55" x2="55" y1="41" y2="28"/>
@@ -775,6 +789,7 @@ symbol[id*="io_"] * { fill:#f8b155;}
         <line class="connection same" stroke=" black" x1="41" x2="41" y1="69" y2="83"/>
         <line class="connection same" stroke=" black" x1="41" x2="41" y1="83" y2="97"/>
         <line class="connection same" stroke=" black" x1="41" x2="41" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="41" x2="41" y1="110" y2="124"/>
         <line class="connection same" stroke=" black" x1="41" x2="41" y1="69" y2="55"/>
         <line class="connection same" stroke=" black" x1="41" x2="41" y1="55" y2="41"/>
         <line class="connection same" stroke=" black" x1="41" x2="41" y1="41" y2="28"/>
@@ -783,6 +798,7 @@ symbol[id*="io_"] * { fill:#f8b155;}
         <line class="connection same" stroke=" black" x1="28" x2="28" y1="69" y2="83"/>
         <line class="connection same" stroke=" black" x1="28" x2="28" y1="83" y2="97"/>
         <line class="connection same" stroke=" black" x1="28" x2="28" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="28" x2="28" y1="110" y2="124"/>
         <line class="connection same" stroke=" black" x1="28" x2="28" y1="69" y2="55"/>
         <line class="connection same" stroke=" black" x1="28" x2="28" y1="55" y2="41"/>
         <line class="connection same" stroke=" black" x1="28" x2="28" y1="41" y2="28"/>
@@ -791,33 +807,36 @@ symbol[id*="io_"] * { fill:#f8b155;}
         <line class="connection same" stroke=" black" x1="14" x2="14" y1="69" y2="83"/>
         <line class="connection same" stroke=" black" x1="14" x2="14" y1="83" y2="97"/>
         <line class="connection same" stroke=" black" x1="14" x2="14" y1="97" y2="110"/>
+        <line class="connection same" stroke=" black" x1="14" x2="14" y1="110" y2="124"/>
         <line class="connection same" stroke=" black" x1="14" x2="14" y1="69" y2="55"/>
         <line class="connection same" stroke=" black" x1="14" x2="14" y1="55" y2="41"/>
         <line class="connection same" stroke=" black" x1="14" x2="14" y1="41" y2="28"/>
         <line class="connection same" stroke=" black" x1="14" x2="14" y1="28" y2="14"/>
         <g id="text">
-            <text alignment-baseline="middle" class="moduleLabel" fill="black" font-size="11.040000000000001" text-anchor="middle" transform="scale(1,-1)" x="62.1" y="6.9">8 x 8 FPGA </text>
+            <text alignment-baseline="middle" class="moduleLabel" fill="black" font-size="12.420000000000002" text-anchor="middle" transform="scale(1,-1)" x="69.0" y="6.9">9 x 9 FPGA </text>
         </g>
     </g>
-    <g id="markers" transform="scale(1.02,-1.02) translate(5.2, 5.2)">
-        <line class="gridmarker" x1="7" x2="7" y1="7" y2="117"/>
-        <line class="gridmarker" x1="21" x2="21" y1="7" y2="117"/>
-        <line class="gridmarker" x1="34" x2="34" y1="7" y2="117"/>
-        <line class="gridmarker" x1="48" x2="48" y1="7" y2="117"/>
-        <line class="gridmarker" x1="62" x2="62" y1="7" y2="117"/>
-        <line class="gridmarker" x1="76" x2="76" y1="7" y2="117"/>
-        <line class="gridmarker" x1="90" x2="90" y1="7" y2="117"/>
-        <line class="gridmarker" x1="104" x2="104" y1="7" y2="117"/>
-        <line class="gridmarker" x1="117" x2="117" y1="7" y2="117"/>
-        <line class="gridmarker" x1="7" x2="117" y1="7" y2="7"/>
-        <line class="gridmarker" x1="7" x2="117" y1="21" y2="21"/>
-        <line class="gridmarker" x1="7" x2="117" y1="34" y2="34"/>
-        <line class="gridmarker" x1="7" x2="117" y1="48" y2="48"/>
-        <line class="gridmarker" x1="7" x2="117" y1="62" y2="62"/>
-        <line class="gridmarker" x1="7" x2="117" y1="76" y2="76"/>
-        <line class="gridmarker" x1="7" x2="117" y1="90" y2="90"/>
-        <line class="gridmarker" x1="7" x2="117" y1="104" y2="104"/>
-        <line class="gridmarker" x1="7" x2="117" y1="117" y2="117"/>
+    <g id="markers" transform="scale(1.02,-1.02) translate(-5.2, -5.2)">
+        <line class="gridmarker" x1="7" x2="7" y1="7" y2="131"/>
+        <line class="gridmarker" x1="21" x2="21" y1="7" y2="131"/>
+        <line class="gridmarker" x1="34" x2="34" y1="7" y2="131"/>
+        <line class="gridmarker" x1="48" x2="48" y1="7" y2="131"/>
+        <line class="gridmarker" x1="62" x2="62" y1="7" y2="131"/>
+        <line class="gridmarker" x1="76" x2="76" y1="7" y2="131"/>
+        <line class="gridmarker" x1="90" x2="90" y1="7" y2="131"/>
+        <line class="gridmarker" x1="104" x2="104" y1="7" y2="131"/>
+        <line class="gridmarker" x1="117" x2="117" y1="7" y2="131"/>
+        <line class="gridmarker" x1="131" x2="131" y1="7" y2="131"/>
+        <line class="gridmarker" x1="7" x2="131" y1="7" y2="7"/>
+        <line class="gridmarker" x1="7" x2="131" y1="21" y2="21"/>
+        <line class="gridmarker" x1="7" x2="131" y1="34" y2="34"/>
+        <line class="gridmarker" x1="7" x2="131" y1="48" y2="48"/>
+        <line class="gridmarker" x1="7" x2="131" y1="62" y2="62"/>
+        <line class="gridmarker" x1="7" x2="131" y1="76" y2="76"/>
+        <line class="gridmarker" x1="7" x2="131" y1="90" y2="90"/>
+        <line class="gridmarker" x1="7" x2="131" y1="104" y2="104"/>
+        <line class="gridmarker" x1="7" x2="131" y1="117" y2="117"/>
+        <line class="gridmarker" x1="7" x2="131" y1="131" y2="131"/>
     </g>
     <marker id="id1" markerHeight="10" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="30" refY="30" viewBox="0 0 120 120">
         <path d="M 0 0 L 60 30 L 0 60 z" fill="blue"/>

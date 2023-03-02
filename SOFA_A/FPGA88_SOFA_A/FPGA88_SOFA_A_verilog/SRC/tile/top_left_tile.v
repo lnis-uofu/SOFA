@@ -9,7 +9,8 @@ module top_left_tile
     gfpga_pad_io_soc_in,
     isol_n,
     prog_clk,
-    prog_reset,
+    prog_reset_bottom_in,
+    reset_bottom_in,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_,
@@ -22,6 +23,7 @@ module top_left_tile
     right_top_grid_bottom_width_0_height_0_subtile_1__pin_inpad_0_,
     right_top_grid_bottom_width_0_height_0_subtile_2__pin_inpad_0_,
     right_top_grid_bottom_width_0_height_0_subtile_3__pin_inpad_0_,
+    test_enable_bottom_in,
     ccff_tail,
     ccff_tail_0,
     chanx_right_out,
@@ -41,7 +43,8 @@ module top_left_tile
     input [3:0]gfpga_pad_io_soc_in;
     input isol_n;
     input prog_clk;
-    input prog_reset;
+    input prog_reset_bottom_in;
+    input reset_bottom_in;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_;
@@ -54,6 +57,7 @@ module top_left_tile
     input right_top_grid_bottom_width_0_height_0_subtile_1__pin_inpad_0_;
     input right_top_grid_bottom_width_0_height_0_subtile_2__pin_inpad_0_;
     input right_top_grid_bottom_width_0_height_0_subtile_3__pin_inpad_0_;
+    input test_enable_bottom_in;
     output ccff_tail;
     output ccff_tail_0;
     output [29:0]chanx_right_out;
@@ -81,6 +85,8 @@ module top_left_tile
     wire isol_n;
     wire prog_clk;
     wire prog_reset;
+    wire prog_reset_bottom_in;
+    wire reset_bottom_in;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_0_;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_1_;
     wire right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_2_;
@@ -97,7 +103,9 @@ module top_left_tile
     wire right_width_0_height_0_subtile_1__pin_inpad_0_;
     wire right_width_0_height_0_subtile_2__pin_inpad_0_;
     wire right_width_0_height_0_subtile_3__pin_inpad_0_;
+    wire test_enable_bottom_in;
 
+assign prog_reset = prog_reset_bottom_in;
     cby_0__1_ cby_0__8_
     (
         .ccff_head_0(ccff_head_0),

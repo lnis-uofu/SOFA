@@ -27,6 +27,7 @@ def save_svg_with_background(svg, filename, show_markers=False):
     scalex, scaley = 1.02, 1.02
     tx, ty = -7.5, -7.3
     tx, ty = 5.2, 5.2
+    tx, ty = -5.2, -5.2
     # Add main group
     main_group = [e for e in svg.elements if e.get_id() == "main"][0]
     main_group["transform"] = f"scale({scalex},-{scaley}) translate({tx}, {ty})"
@@ -48,8 +49,8 @@ def main():
     """
     Main method to generate connection patterns
     """
-    GRID_W = FPGA_SIZE_X
-    GRID_H = FPGA_SIZE_Y
+    GRID_W = FPGA_SIZE_X + 1
+    GRID_H = FPGA_SIZE_Y + 1
 
     # ==========================================================================
     #              reset and test_enable connection

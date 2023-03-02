@@ -9,7 +9,9 @@ module bottom_right_tile
     gfpga_pad_io_soc_in,
     isol_n,
     prog_clk,
-    prog_reset,
+    prog_reset_top_in,
+    reset_top_in,
+    test_enable_top_in,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_,
@@ -41,7 +43,9 @@ module bottom_right_tile
     input [3:0]gfpga_pad_io_soc_in;
     input isol_n;
     input prog_clk;
-    input prog_reset;
+    input prog_reset_top_in;
+    input reset_top_in;
+    input test_enable_top_in;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_;
@@ -82,6 +86,9 @@ module bottom_right_tile
     wire isol_n;
     wire prog_clk;
     wire prog_reset;
+    wire prog_reset_top_in;
+    wire reset_top_in;
+    wire test_enable_top_in;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_;
@@ -99,6 +106,7 @@ module bottom_right_tile
     wire top_width_0_height_0_subtile_2__pin_inpad_0_;
     wire top_width_0_height_0_subtile_3__pin_inpad_0_;
 
+assign prog_reset = prog_reset_top_in;
     cbx_1__0_ cbx_8__0_
     (
         .ccff_head(ccff_head),
