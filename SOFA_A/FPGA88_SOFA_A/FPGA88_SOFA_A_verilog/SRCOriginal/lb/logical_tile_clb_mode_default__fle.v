@@ -14,7 +14,7 @@
 // ----- Verilog module for logical_tile_clb_mode_default__fle -----
 module logical_tile_clb_mode_default__fle(prog_reset,
                                           prog_clk,
-                                          scan_enable,
+                                          test_enable,
                                           fle_in,
                                           fle_reg_in,
                                           fle_sc_in,
@@ -32,7 +32,7 @@ input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GLOBAL PORTS -----
-input [0:0] scan_enable;
+input [0:0] test_enable;
 //----- INPUT PORTS -----
 input [0:3] fle_in;
 //----- INPUT PORTS -----
@@ -98,7 +98,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_sc_
 	logical_tile_clb_mode_default__fle_mode_physical__fabric logical_tile_clb_mode_default__fle_mode_physical__fabric_0 (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.fabric_in({direct_interc_5_out, direct_interc_6_out, direct_interc_7_out, direct_interc_8_out}),
 		.fabric_reg_in(direct_interc_9_out),
 		.fabric_sc_in(direct_interc_10_out),

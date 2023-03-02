@@ -6,7 +6,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff
     ff_DI,
     ff_clk,
     ff_reset,
-    scan_enable,
+    test_enable,
     ff_Q
 );
 
@@ -14,7 +14,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff
     input ff_DI;
     input ff_clk;
     input ff_reset;
-    input scan_enable;
+    input test_enable;
     output ff_Q;
 
     wire ff_D;
@@ -22,7 +22,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff
     wire ff_Q;
     wire ff_clk;
     wire ff_reset;
-    wire scan_enable;
+    wire test_enable;
 
     sky130_fd_sc_hd__sdfrtp_1 sky130_fd_sc_hd__sdfrtp_1_0_
     (
@@ -30,7 +30,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff
         .D(ff_D),
         .RESET_B(ff_reset),
         .SCD(ff_DI),
-        .SCE(scan_enable),
+        .SCE(test_enable),
         .Q(ff_Q)
     );
 endmodule

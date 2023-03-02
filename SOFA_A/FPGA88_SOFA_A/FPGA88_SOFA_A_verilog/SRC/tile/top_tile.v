@@ -25,7 +25,7 @@ module top_tile
     right_top_grid_bottom_width_0_height_0_subtile_1__pin_inpad_0_,
     right_top_grid_bottom_width_0_height_0_subtile_2__pin_inpad_0_,
     right_top_grid_bottom_width_0_height_0_subtile_3__pin_inpad_0_,
-    scan_enable,
+    test_enable,
     top_width_0_height_0_subtile_0__pin_cin_0_,
     top_width_0_height_0_subtile_0__pin_reg_in_0_,
     top_width_0_height_0_subtile_0__pin_sc_in_0_,
@@ -84,7 +84,7 @@ module top_tile
     input right_top_grid_bottom_width_0_height_0_subtile_1__pin_inpad_0_;
     input right_top_grid_bottom_width_0_height_0_subtile_2__pin_inpad_0_;
     input right_top_grid_bottom_width_0_height_0_subtile_3__pin_inpad_0_;
-    input scan_enable;
+    input test_enable;
     input top_width_0_height_0_subtile_0__pin_cin_0_;
     input top_width_0_height_0_subtile_0__pin_reg_in_0_;
     input top_width_0_height_0_subtile_0__pin_sc_in_0_;
@@ -202,7 +202,7 @@ module top_tile
     wire right_width_0_height_0_subtile_0__pin_O_15_;
     wire right_width_0_height_0_subtile_0__pin_O_8_;
     wire right_width_0_height_0_subtile_0__pin_O_9_;
-    wire scan_enable;
+    wire test_enable;
     wire top_width_0_height_0_subtile_0__pin_O_0_;
     wire top_width_0_height_0_subtile_0__pin_O_1_;
     wire top_width_0_height_0_subtile_0__pin_O_2_;
@@ -300,7 +300,7 @@ module top_tile
         .right_width_0_height_0_subtile_0__pin_I7_1_(left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),

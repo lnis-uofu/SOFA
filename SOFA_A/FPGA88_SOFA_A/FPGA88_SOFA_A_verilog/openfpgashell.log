@@ -268,11 +268,11 @@ Logic Element (fle) detailed count:
   LEs used for logic only             : 1
   LEs used for registers only         : 0
 
-Incr Slack updates 1 in 2.584e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.735e-06 sec
+Incr Slack updates 1 in 2.224e-06 sec
+Full Max Req/Worst Slack updates 1 in 2.152e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.882e-06 sec
+Full Criticality updates 1 in 1.857e-06 sec
 Warning 27: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
 Warning 28: Ambiguous block type specification at grid location (0,9). Existing block type 'io_top' at (0,9) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
 Warning 29: Ambiguous block type specification at grid location (9,0). Existing block type 'io_bottom' at (9,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
@@ -507,11 +507,11 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
    1    0.0     0.0    0     226       3       3       0 ( 0.000%)      27 ( 0.3%)   13.980     -13.98    -13.980      0.000      0.000      N/A
-Incr Slack updates 4 in 1.2947e-05 sec
-Full Max Req/Worst Slack updates 1 in 3.948e-06 sec
-Incr Max Req/Worst Slack updates 3 in 6.005e-06 sec
-Incr Criticality updates 3 in 6.601e-06 sec
-Full Criticality updates 1 in 2.382e-06 sec
+Incr Slack updates 4 in 1.9664e-05 sec
+Full Max Req/Worst Slack updates 1 in 2.711e-06 sec
+Incr Max Req/Worst Slack updates 3 in 1.4906e-05 sec
+Incr Criticality updates 3 in 1.5953e-05 sec
+Full Criticality updates 1 in 2.375e-06 sec
 Restoring best routing
 Critical path: 13.98 ns
 Successfully routed after 1 routing iterations.
@@ -658,11 +658,11 @@ Final setup slack histogram:
 Final geomean non-virtual intra-domain period: nan ns (nan MHz)
 Final fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
 
-Incr Slack updates 1 in 6.046e-06 sec
-Full Max Req/Worst Slack updates 1 in 4.007e-06 sec
+Incr Slack updates 1 in 7.13e-06 sec
+Full Max Req/Worst Slack updates 1 in 5.927e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 3.533e-06 sec
+Full Criticality updates 1 in 5.366e-06 sec
 --line removed--
 VPR suceeded
 --line removed--
@@ -992,11 +992,11 @@ Building annotation for post-routing and clustering synchornization results...Do
 Building annotation for mapped blocks on grid locations...Done
 User specified the operating clock frequency to use VPR results
 Use VPR critical path delay 1.6776e-17 [ns] with a 20 [%] slack in OpenFPGA.
-Incr Slack updates 1 in 6.177e-06 sec
-Full Max Req/Worst Slack updates 1 in 5.086e-06 sec
+Incr Slack updates 1 in 5.809e-06 sec
+Full Max Req/Worst Slack updates 1 in 3.941e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 5.057e-06 sec
+Full Criticality updates 1 in 3.894e-06 sec
 Will apply operating clock frequency 59.609 [MHz] to simulations
 User specified the number of operating clock cycles to be inferred from signal activities
 Average net density: 0.42
@@ -1314,9 +1314,9 @@ Finish execution with 0 errors
 --line removed--
 
 Thank you for using OpenFPGA!
-Incr Slack updates 2 in 2.3068e-05 sec
-Full Max Req/Worst Slack updates 1 in 4.469e-06 sec
-Incr Max Req/Worst Slack updates 1 in 5.627e-06 sec
+Incr Slack updates 2 in 1.3494e-05 sec
+Full Max Req/Worst Slack updates 1 in 5.371e-06 sec
+Incr Max Req/Worst Slack updates 1 in 6.386e-06 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 2 in 1.1276e-05 sec
+Full Criticality updates 2 in 1.2969e-05 sec
 0

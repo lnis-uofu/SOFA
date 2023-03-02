@@ -16,7 +16,7 @@ module fpga_top(clk,
                 isol_n,
                 prog_reset,
                 prog_clk,
-                scan_enable,
+                test_enable,
                 gfpga_pad_io_soc_in,
                 gfpga_pad_io_soc_out,
                 gfpga_pad_io_soc_dir,
@@ -33,7 +33,7 @@ input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GLOBAL PORTS -----
-input [0:0] scan_enable;
+input [0:0] test_enable;
 //----- GPIN PORTS -----
 input [0:127] gfpga_pad_io_soc_in;
 //----- GPOUT PORTS -----
@@ -5246,7 +5246,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_1__1_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5309,7 +5309,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_1__2_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5372,7 +5372,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_1__3_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5435,7 +5435,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_1__4_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5498,7 +5498,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_1__5_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5561,7 +5561,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_1__6_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5624,7 +5624,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_1__7_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5687,7 +5687,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_1__8_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__0_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5750,7 +5750,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_2__1_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5813,7 +5813,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_2__2_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__8_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__8_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__8_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5876,7 +5876,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_2__3_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__9_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__9_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__9_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -5939,7 +5939,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_2__4_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__10_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__10_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__10_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6002,7 +6002,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_2__5_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__11_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__11_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__11_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6065,7 +6065,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_2__6_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__12_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__12_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__12_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6128,7 +6128,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_2__7_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__13_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__13_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__13_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6191,7 +6191,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_2__8_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__1_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6254,7 +6254,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_3__1_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__14_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__14_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__14_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6317,7 +6317,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_3__2_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__15_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__15_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__15_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6380,7 +6380,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_3__3_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__16_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__16_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__16_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6443,7 +6443,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_3__4_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__17_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__17_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__17_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6506,7 +6506,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_3__5_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__18_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__18_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__18_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6569,7 +6569,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_3__6_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__19_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__19_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__19_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6632,7 +6632,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_3__7_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__20_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__20_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__20_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6695,7 +6695,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_3__8_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__2_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6758,7 +6758,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_4__1_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__21_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__21_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__21_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6821,7 +6821,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_4__2_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__22_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__22_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__22_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6884,7 +6884,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_4__3_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__23_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__23_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__23_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -6947,7 +6947,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_4__4_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__24_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__24_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__24_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7010,7 +7010,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_4__5_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__25_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__25_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__25_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7073,7 +7073,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_4__6_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__26_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__26_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__26_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7136,7 +7136,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_4__7_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__27_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__27_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__27_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7199,7 +7199,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_4__8_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__3_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7262,7 +7262,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_5__1_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__28_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__28_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__28_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7325,7 +7325,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_5__2_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__29_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__29_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__29_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7388,7 +7388,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_5__3_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__30_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__30_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__30_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7451,7 +7451,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_5__4_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__31_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__31_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__31_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7514,7 +7514,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_5__5_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__32_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__32_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__32_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7577,7 +7577,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_5__6_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__33_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__33_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__33_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7640,7 +7640,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_5__7_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__34_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__34_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__34_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7703,7 +7703,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_5__8_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__4_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7766,7 +7766,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_6__1_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__35_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__35_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__35_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7829,7 +7829,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_6__2_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__36_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__36_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__36_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7892,7 +7892,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_6__3_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__37_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__37_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__37_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -7955,7 +7955,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_6__4_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__38_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__38_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__38_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8018,7 +8018,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_6__5_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__39_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__39_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__39_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8081,7 +8081,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_6__6_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__40_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__40_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__40_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8144,7 +8144,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_6__7_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__41_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__41_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__41_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8207,7 +8207,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_6__8_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__5_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8270,7 +8270,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_7__1_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__42_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__42_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__42_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8333,7 +8333,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_7__2_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__43_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__43_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__43_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8396,7 +8396,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_7__3_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__44_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__44_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__44_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8459,7 +8459,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_7__4_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__45_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__45_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__45_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8522,7 +8522,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_7__5_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__46_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__46_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__46_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8585,7 +8585,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_7__6_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__47_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__47_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__47_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8648,7 +8648,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_7__7_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__48_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__48_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__48_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8711,7 +8711,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_7__8_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__6_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8774,7 +8774,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_8__1_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__49_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__49_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__49_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8837,7 +8837,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_8__2_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__50_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__50_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__50_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8900,7 +8900,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_8__3_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__51_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__51_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__51_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -8963,7 +8963,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_8__4_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__52_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__52_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__52_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -9026,7 +9026,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_8__5_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__53_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__53_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__53_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -9089,7 +9089,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_8__6_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__54_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__54_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__54_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -9152,7 +9152,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_8__7_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__1__55_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__1__55_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__1__55_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),
@@ -9215,7 +9215,7 @@ wire [0:29] sb_8__8__0_chany_bottom_out;
 	grid_clb grid_clb_8__8_ (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.top_width_0_height_0_subtile_0__pin_I0_0_(cbx_1__8__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
 		.top_width_0_height_0_subtile_0__pin_I0_1_(cbx_1__8__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
 		.top_width_0_height_0_subtile_0__pin_I0i_0_(cbx_1__8__7_bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),

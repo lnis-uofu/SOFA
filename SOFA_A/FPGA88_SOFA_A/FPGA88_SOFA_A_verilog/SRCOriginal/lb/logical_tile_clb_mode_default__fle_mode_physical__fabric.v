@@ -14,7 +14,7 @@
 // ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric -----
 module logical_tile_clb_mode_default__fle_mode_physical__fabric(prog_reset,
                                                                 prog_clk,
-                                                                scan_enable,
+                                                                test_enable,
                                                                 fabric_in,
                                                                 fabric_reg_in,
                                                                 fabric_sc_in,
@@ -32,7 +32,7 @@ input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GLOBAL PORTS -----
-input [0:0] scan_enable;
+input [0:0] test_enable;
 //----- INPUT PORTS -----
 input [0:3] fabric_in;
 //----- INPUT PORTS -----
@@ -122,7 +122,7 @@ wire [0:0] mux_tree_size2_mem_2_ccff_tail;
 		.ccff_tail(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail));
 
 	logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0 (
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.ff_D(mux_tree_size2_2_out),
 		.ff_DI(direct_interc_8_out),
 		.ff_reset(direct_interc_9_out),
@@ -130,7 +130,7 @@ wire [0:0] mux_tree_size2_mem_2_ccff_tail;
 		.ff_clk(direct_interc_10_out));
 
 	logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1 (
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.ff_D(mux_tree_size2_3_out),
 		.ff_DI(direct_interc_11_out),
 		.ff_reset(direct_interc_12_out),

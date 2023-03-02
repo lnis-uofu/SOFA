@@ -4,7 +4,7 @@ module grid_clb
 (
     prog_reset,
     prog_clk,
-    scan_enable,
+    test_enable,
     top_width_0_height_0_subtile_0__pin_I0_0_,
     top_width_0_height_0_subtile_0__pin_I0_1_,
     top_width_0_height_0_subtile_0__pin_I0i_0_,
@@ -67,7 +67,7 @@ module grid_clb
 
     input prog_reset;
     input prog_clk;
-    input scan_enable;
+    input test_enable;
     input top_width_0_height_0_subtile_0__pin_I0_0_;
     input top_width_0_height_0_subtile_0__pin_I0_1_;
     input top_width_0_height_0_subtile_0__pin_I0i_0_;
@@ -129,7 +129,7 @@ module grid_clb
 
     wire prog_reset;
     wire prog_clk;
-    wire scan_enable;
+    wire test_enable;
     wire top_width_0_height_0_subtile_0__pin_I0_0_;
     wire top_width_0_height_0_subtile_0__pin_I0_1_;
     wire top_width_0_height_0_subtile_0__pin_I0i_0_;
@@ -193,7 +193,7 @@ module grid_clb
     (
         .prog_reset(prog_reset),
         .prog_clk(prog_clk),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .clb_I0({top_width_0_height_0_subtile_0__pin_I0_0_, top_width_0_height_0_subtile_0__pin_I0_1_}),
         .clb_I0i({top_width_0_height_0_subtile_0__pin_I0i_0_, top_width_0_height_0_subtile_0__pin_I0i_1_}),
         .clb_I1({top_width_0_height_0_subtile_0__pin_I1_0_, top_width_0_height_0_subtile_0__pin_I1_1_}),

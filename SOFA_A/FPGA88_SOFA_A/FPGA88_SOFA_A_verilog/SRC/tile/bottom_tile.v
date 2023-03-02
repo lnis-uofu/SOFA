@@ -16,6 +16,7 @@ module bottom_tile
     right_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_,
     right_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_,
     right_bottom_grid_top_width_0_height_0_subtile_3__pin_inpad_0_,
+    test_enable_top_in,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_,
@@ -51,6 +52,7 @@ module bottom_tile
     input right_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_;
     input right_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_;
     input right_bottom_grid_top_width_0_height_0_subtile_3__pin_inpad_0_;
+    input test_enable_top_in;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_;
@@ -96,6 +98,7 @@ module bottom_tile
     wire right_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_;
     wire right_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_;
     wire right_bottom_grid_top_width_0_height_0_subtile_3__pin_inpad_0_;
+    wire test_enable_top_in;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_;

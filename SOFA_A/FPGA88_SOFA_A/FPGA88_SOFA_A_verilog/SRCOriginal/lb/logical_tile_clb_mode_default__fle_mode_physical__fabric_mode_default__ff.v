@@ -11,14 +11,14 @@
 `default_nettype none
 
 // ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff -----
-module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff(scan_enable,
+module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff(test_enable,
                                                                                  ff_D,
                                                                                  ff_DI,
                                                                                  ff_reset,
                                                                                  ff_Q,
                                                                                  ff_clk);
 //----- GLOBAL PORTS -----
-input [0:0] scan_enable;
+input [0:0] test_enable;
 //----- INPUT PORTS -----
 input [0:0] ff_D;
 //----- INPUT PORTS -----
@@ -50,7 +50,7 @@ wire [0:0] ff_clk;
 // ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__sdfrtp_1 sky130_fd_sc_hd__sdfrtp_1_0_ (
-		.SCE(scan_enable),
+		.SCE(test_enable),
 		.D(ff_D),
 		.SCD(ff_DI),
 		.RESET_B(ff_reset),

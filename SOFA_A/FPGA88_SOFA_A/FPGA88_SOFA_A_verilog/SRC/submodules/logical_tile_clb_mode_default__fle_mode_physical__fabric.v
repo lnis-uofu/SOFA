@@ -11,7 +11,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
     fabric_sc_in,
     prog_clk,
     prog_reset,
-    scan_enable,
+    test_enable,
     ccff_tail,
     fabric_cout,
     fabric_out,
@@ -28,7 +28,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
     input fabric_sc_in;
     input prog_clk;
     input prog_reset;
-    input scan_enable;
+    input test_enable;
     output ccff_tail;
     output fabric_cout;
     output [0:1]fabric_out;
@@ -78,7 +78,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
     wire mux_tree_size2_mem_2_ccff_tail;
     wire prog_clk;
     wire prog_reset;
-    wire scan_enable;
+    wire test_enable;
 
     direct_interc direct_interc_0_
     (
@@ -156,7 +156,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
         .ff_DI(direct_interc_8_out),
         .ff_clk(direct_interc_10_out),
         .ff_reset(direct_interc_9_out),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ff_Q(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q)
     );
     logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1
@@ -165,7 +165,7 @@ module logical_tile_clb_mode_default__fle_mode_physical__fabric
         .ff_DI(direct_interc_11_out),
         .ff_clk(direct_interc_13_out),
         .ff_reset(direct_interc_12_out),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ff_Q(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1_ff_Q)
     );
     logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0

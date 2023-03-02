@@ -14,7 +14,7 @@ module right_tile
     prog_clk,
     prog_reset,
     reset,
-    scan_enable,
+    test_enable,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_,
@@ -75,7 +75,7 @@ module right_tile
     input prog_clk;
     input prog_reset;
     input reset;
-    input scan_enable;
+    input test_enable;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_;
@@ -196,7 +196,7 @@ module right_tile
     wire right_width_0_height_0_subtile_0__pin_O_15_;
     wire right_width_0_height_0_subtile_0__pin_O_8_;
     wire right_width_0_height_0_subtile_0__pin_O_9_;
-    wire scan_enable;
+    wire test_enable;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_;
@@ -308,7 +308,7 @@ module right_tile
         .right_width_0_height_0_subtile_0__pin_I7_1_(left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),

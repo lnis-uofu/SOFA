@@ -14,7 +14,7 @@
 // ----- Verilog module for logical_tile_clb_mode_clb_ -----
 module logical_tile_clb_mode_clb_(prog_reset,
                                   prog_clk,
-                                  scan_enable,
+                                  test_enable,
                                   clb_I0,
                                   clb_I0i,
                                   clb_I1,
@@ -47,7 +47,7 @@ input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GLOBAL PORTS -----
-input [0:0] scan_enable;
+input [0:0] test_enable;
 //----- INPUT PORTS -----
 input [0:1] clb_I0;
 //----- INPUT PORTS -----
@@ -256,7 +256,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_0 (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.fle_in({direct_interc_19_out, direct_interc_20_out, direct_interc_21_out, direct_interc_22_out}),
 		.fle_reg_in(direct_interc_23_out),
 		.fle_sc_in(direct_interc_24_out),
@@ -273,7 +273,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_1 (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.fle_in({direct_interc_28_out, direct_interc_29_out, direct_interc_30_out, direct_interc_31_out}),
 		.fle_reg_in(direct_interc_32_out),
 		.fle_sc_in(direct_interc_33_out),
@@ -290,7 +290,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_2 (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.fle_in({direct_interc_37_out, direct_interc_38_out, direct_interc_39_out, direct_interc_40_out}),
 		.fle_reg_in(direct_interc_41_out),
 		.fle_sc_in(direct_interc_42_out),
@@ -307,7 +307,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_3 (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.fle_in({direct_interc_46_out, direct_interc_47_out, direct_interc_48_out, direct_interc_49_out}),
 		.fle_reg_in(direct_interc_50_out),
 		.fle_sc_in(direct_interc_51_out),
@@ -324,7 +324,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_4 (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.fle_in({direct_interc_55_out, direct_interc_56_out, direct_interc_57_out, direct_interc_58_out}),
 		.fle_reg_in(direct_interc_59_out),
 		.fle_sc_in(direct_interc_60_out),
@@ -341,7 +341,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_5 (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.fle_in({direct_interc_64_out, direct_interc_65_out, direct_interc_66_out, direct_interc_67_out}),
 		.fle_reg_in(direct_interc_68_out),
 		.fle_sc_in(direct_interc_69_out),
@@ -358,7 +358,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_6 (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.fle_in({direct_interc_73_out, direct_interc_74_out, direct_interc_75_out, direct_interc_76_out}),
 		.fle_reg_in(direct_interc_77_out),
 		.fle_sc_in(direct_interc_78_out),
@@ -375,7 +375,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_7_fle_sc_out;
 	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_7 (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.fle_in({direct_interc_82_out, direct_interc_83_out, direct_interc_84_out, direct_interc_85_out}),
 		.fle_reg_in(direct_interc_86_out),
 		.fle_sc_in(direct_interc_87_out),

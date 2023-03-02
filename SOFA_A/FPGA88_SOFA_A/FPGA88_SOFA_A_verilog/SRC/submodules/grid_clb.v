@@ -23,7 +23,7 @@ module grid_clb
     right_width_0_height_0_subtile_0__pin_I7_1_,
     right_width_0_height_0_subtile_0__pin_I7i_0_,
     right_width_0_height_0_subtile_0__pin_I7i_1_,
-    scan_enable,
+    test_enable,
     top_width_0_height_0_subtile_0__pin_I0_0_,
     top_width_0_height_0_subtile_0__pin_I0_1_,
     top_width_0_height_0_subtile_0__pin_I0i_0_,
@@ -86,7 +86,7 @@ module grid_clb
     input right_width_0_height_0_subtile_0__pin_I7_1_;
     input right_width_0_height_0_subtile_0__pin_I7i_0_;
     input right_width_0_height_0_subtile_0__pin_I7i_1_;
-    input scan_enable;
+    input test_enable;
     input top_width_0_height_0_subtile_0__pin_I0_0_;
     input top_width_0_height_0_subtile_0__pin_I0_1_;
     input top_width_0_height_0_subtile_0__pin_I0i_0_;
@@ -160,7 +160,7 @@ module grid_clb
     wire right_width_0_height_0_subtile_0__pin_O_15_;
     wire right_width_0_height_0_subtile_0__pin_O_8_;
     wire right_width_0_height_0_subtile_0__pin_O_9_;
-    wire scan_enable;
+    wire test_enable;
     wire top_width_0_height_0_subtile_0__pin_I0_0_;
     wire top_width_0_height_0_subtile_0__pin_I0_1_;
     wire top_width_0_height_0_subtile_0__pin_I0i_0_;
@@ -215,7 +215,7 @@ module grid_clb
         .clb_sc_in(top_width_0_height_0_subtile_0__pin_sc_in_0_),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ccff_tail(ccff_tail),
         .clb_O({top_width_0_height_0_subtile_0__pin_O_0_, top_width_0_height_0_subtile_0__pin_O_1_, top_width_0_height_0_subtile_0__pin_O_2_, top_width_0_height_0_subtile_0__pin_O_3_, top_width_0_height_0_subtile_0__pin_O_4_, top_width_0_height_0_subtile_0__pin_O_5_, top_width_0_height_0_subtile_0__pin_O_6_, top_width_0_height_0_subtile_0__pin_O_7_, right_width_0_height_0_subtile_0__pin_O_8_, right_width_0_height_0_subtile_0__pin_O_9_, right_width_0_height_0_subtile_0__pin_O_10_, right_width_0_height_0_subtile_0__pin_O_11_, right_width_0_height_0_subtile_0__pin_O_12_, right_width_0_height_0_subtile_0__pin_O_13_, right_width_0_height_0_subtile_0__pin_O_14_, right_width_0_height_0_subtile_0__pin_O_15_}),
         .clb_cout(bottom_width_0_height_0_subtile_0__pin_cout_0_),

@@ -24,7 +24,9 @@ module tile
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_5_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_6_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_7_,
-    scan_enable,
+    test_enable_bottom_in,
+    test_enable_right_in,
+    test_enable_top_in,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_,
     top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_,
@@ -59,6 +61,9 @@ module tile
     right_width_0_height_0_subtile_0__pin_O_15_,
     right_width_0_height_0_subtile_0__pin_O_8_,
     right_width_0_height_0_subtile_0__pin_O_9_,
+    test_enable_bottom_out,
+    test_enable_left_out,
+    test_enable_top_out,
     top_width_0_height_0_subtile_0__pin_O_0_,
     top_width_0_height_0_subtile_0__pin_O_1_,
     top_width_0_height_0_subtile_0__pin_O_2_,
@@ -91,7 +96,9 @@ module tile
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_5_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_6_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_7_;
-    input scan_enable;
+    input test_enable_bottom_in;
+    input test_enable_right_in;
+    input test_enable_top_in;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_;
@@ -126,6 +133,9 @@ module tile
     output right_width_0_height_0_subtile_0__pin_O_15_;
     output right_width_0_height_0_subtile_0__pin_O_8_;
     output right_width_0_height_0_subtile_0__pin_O_9_;
+    output test_enable_bottom_out;
+    output test_enable_left_out;
+    output test_enable_top_out;
     output top_width_0_height_0_subtile_0__pin_O_0_;
     output top_width_0_height_0_subtile_0__pin_O_1_;
     output top_width_0_height_0_subtile_0__pin_O_2_;
@@ -220,7 +230,13 @@ module tile
     wire right_width_0_height_0_subtile_0__pin_O_15_;
     wire right_width_0_height_0_subtile_0__pin_O_8_;
     wire right_width_0_height_0_subtile_0__pin_O_9_;
-    wire scan_enable;
+    wire test_enable;
+    wire test_enable_bottom_in;
+    wire test_enable_bottom_out;
+    wire test_enable_left_out;
+    wire test_enable_right_in;
+    wire test_enable_top_in;
+    wire test_enable_top_out;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_10_;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_11_;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_O_12_;
@@ -253,6 +269,12 @@ assign reset_left_out = reset;
 assign reset_top_in = reset_right_in;
 assign reset_bottom_in = reset_top_in;
 assign reset_bottom_out = reset_top_out;
+assign test_enable = test_enable_bottom_in;
+assign test_enable_top_out = test_enable_left_out;
+assign test_enable_top_in = test_enable_right_in;
+assign test_enable_left_out = test_enable;
+assign test_enable_bottom_in = test_enable_top_in;
+assign test_enable_bottom_out = test_enable_top_out;
     cbx_1__1_ cbx_1__1_
     (
         .ccff_head(ccff_tail_2),
@@ -330,7 +352,7 @@ assign reset_bottom_out = reset_top_out;
         .right_width_0_height_0_subtile_0__pin_I7_1_(left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
         .top_width_0_height_0_subtile_0__pin_I0i_0_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0i_0_),

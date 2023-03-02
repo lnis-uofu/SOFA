@@ -1,0 +1,8 @@
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+Module                    |       In        |       Out      
+Module                    |   L   R   T   B |   L   R   T   B
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+bottom_left_tile          |   -   -   1   - |   -   -   -   -
+bottom_tile               |   -   -   7   - |   -   -   -   -
+left_tile                 |   -   1   3   3 |   -   -   3   4
+tile                      |   -   7  21  21 |   7   -  21  28

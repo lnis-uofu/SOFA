@@ -24,6 +24,9 @@ module left_tile
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_5_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_6_,
     right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_7_,
+    test_enable_bottom_in,
+    test_enable_right_in,
+    test_enable_top_in,
     top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_,
     top_left_grid_right_width_0_height_0_subtile_1__pin_inpad_0_,
     top_left_grid_right_width_0_height_0_subtile_2__pin_inpad_0_,
@@ -43,7 +46,9 @@ module left_tile
     right_width_0_height_0_subtile_0__pin_inpad_0_,
     right_width_0_height_0_subtile_1__pin_inpad_0_,
     right_width_0_height_0_subtile_2__pin_inpad_0_,
-    right_width_0_height_0_subtile_3__pin_inpad_0_
+    right_width_0_height_0_subtile_3__pin_inpad_0_,
+    test_enable_bottom_out,
+    test_enable_top_out
 );
 
     input ccff_head;
@@ -68,6 +73,9 @@ module left_tile
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_5_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_6_;
     input right_bottom_grid_top_width_0_height_0_subtile_0__pin_O_7_;
+    input test_enable_bottom_in;
+    input test_enable_right_in;
+    input test_enable_top_in;
     input top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_;
     input top_left_grid_right_width_0_height_0_subtile_1__pin_inpad_0_;
     input top_left_grid_right_width_0_height_0_subtile_2__pin_inpad_0_;
@@ -88,6 +96,8 @@ module left_tile
     output right_width_0_height_0_subtile_1__pin_inpad_0_;
     output right_width_0_height_0_subtile_2__pin_inpad_0_;
     output right_width_0_height_0_subtile_3__pin_inpad_0_;
+    output test_enable_bottom_out;
+    output test_enable_top_out;
 
     wire ccff_head;
     wire ccff_head_0;
@@ -130,6 +140,11 @@ module left_tile
     wire right_width_0_height_0_subtile_1__pin_inpad_0_;
     wire right_width_0_height_0_subtile_2__pin_inpad_0_;
     wire right_width_0_height_0_subtile_3__pin_inpad_0_;
+    wire test_enable_bottom_in;
+    wire test_enable_bottom_out;
+    wire test_enable_right_in;
+    wire test_enable_top_in;
+    wire test_enable_top_out;
     wire top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_;
     wire top_left_grid_right_width_0_height_0_subtile_1__pin_inpad_0_;
     wire top_left_grid_right_width_0_height_0_subtile_2__pin_inpad_0_;
@@ -145,6 +160,10 @@ assign reset_top_out = reset_bottom_in;
 assign reset_top_in = reset_right_in;
 assign reset_bottom_in = reset_top_in;
 assign reset_bottom_out = reset_top_out;
+assign test_enable_top_out = test_enable_bottom_in;
+assign test_enable_top_in = test_enable_right_in;
+assign test_enable_bottom_in = test_enable_top_in;
+assign test_enable_bottom_out = test_enable_top_out;
     cby_0__1_ cby_0__1_
     (
         .ccff_head_0(ccff_head_0),

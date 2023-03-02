@@ -11,7 +11,7 @@ module logical_tile_clb_mode_default__fle
     fle_sc_in,
     prog_clk,
     prog_reset,
-    scan_enable,
+    test_enable,
     ccff_tail,
     fle_cout,
     fle_out,
@@ -28,7 +28,7 @@ module logical_tile_clb_mode_default__fle
     input fle_sc_in;
     input prog_clk;
     input prog_reset;
-    input scan_enable;
+    input test_enable;
     output ccff_tail;
     output fle_cout;
     output [0:1]fle_out;
@@ -62,7 +62,7 @@ module logical_tile_clb_mode_default__fle
     wire logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_sc_out;
     wire prog_clk;
     wire prog_reset;
-    wire scan_enable;
+    wire test_enable;
 
     direct_interc direct_interc_0_
     (
@@ -145,7 +145,7 @@ module logical_tile_clb_mode_default__fle
         .fabric_sc_in(direct_interc_10_out),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ccff_tail(ccff_tail),
         .fabric_cout(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_cout),
         .fabric_out(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_out),

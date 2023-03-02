@@ -251,6 +251,7 @@ def main():
         instance_map[int(x)][int(y)] = inst.name
     create_global_feedthrough(fpga, "reset", instance_map)
     create_global_feedthrough(fpga, "prog_reset", instance_map)
+    create_global_feedthrough(fpga, "test_enable", instance_map)
 
     save_netlist(fpga)
     filename = SVG_DIR + f"{PROJ_NAME}_floorplan.svg"

@@ -14,7 +14,7 @@
 // ----- Verilog module for grid_clb -----
 module grid_clb(prog_reset,
                 prog_clk,
-                scan_enable,
+                test_enable,
                 top_width_0_height_0_subtile_0__pin_I0_0_,
                 top_width_0_height_0_subtile_0__pin_I0_1_,
                 top_width_0_height_0_subtile_0__pin_I0i_0_,
@@ -78,7 +78,7 @@ input [0:0] prog_reset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- GLOBAL PORTS -----
-input [0:0] scan_enable;
+input [0:0] test_enable;
 //----- INPUT PORTS -----
 input [0:0] top_width_0_height_0_subtile_0__pin_I0_0_;
 //----- INPUT PORTS -----
@@ -213,7 +213,7 @@ output [0:0] ccff_tail;
 	logical_tile_clb_mode_clb_ logical_tile_clb_mode_clb__0 (
 		.prog_reset(prog_reset),
 		.prog_clk(prog_clk),
-		.scan_enable(scan_enable),
+		.test_enable(test_enable),
 		.clb_I0({top_width_0_height_0_subtile_0__pin_I0_0_, top_width_0_height_0_subtile_0__pin_I0_1_}),
 		.clb_I0i({top_width_0_height_0_subtile_0__pin_I0i_0_, top_width_0_height_0_subtile_0__pin_I0i_1_}),
 		.clb_I1({top_width_0_height_0_subtile_0__pin_I1_0_, top_width_0_height_0_subtile_0__pin_I1_1_}),

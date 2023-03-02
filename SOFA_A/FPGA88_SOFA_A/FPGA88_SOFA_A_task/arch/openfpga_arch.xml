@@ -154,7 +154,7 @@
       <output_buffer exist="true" circuit_model_name="sky130_fd_sc_hd__inv_1"/>
       <port type="input" prefix="D" size="1"/>
       <port type="input" prefix="DI" lib_name="SCD" size="1"/>
-      <port type="input" prefix="scan_enable" lib_name="SCE" size="1" is_global="true" default_val="0"/>
+      <port type="input" prefix="test_enable" lib_name="SCE" size="1" is_global="true" default_val="0"/>
       <port type="input" prefix="reset" lib_name="RESET_B" size="1" default_val="1"/>
       <port type="output" prefix="Q" size="1"/>
       <port type="clock" prefix="clk" lib_name="CLK" size="1" is_global="false" default_val="0" />

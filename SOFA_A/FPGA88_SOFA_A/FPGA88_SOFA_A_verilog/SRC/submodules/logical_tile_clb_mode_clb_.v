@@ -26,7 +26,7 @@ module logical_tile_clb_mode_clb_
     clb_sc_in,
     prog_clk,
     prog_reset,
-    scan_enable,
+    test_enable,
     ccff_tail,
     clb_O,
     clb_cout,
@@ -58,7 +58,7 @@ module logical_tile_clb_mode_clb_
     input clb_sc_in;
     input prog_clk;
     input prog_reset;
-    input scan_enable;
+    input test_enable;
     output ccff_tail;
     output [0:15]clb_O;
     output clb_cout;
@@ -205,7 +205,7 @@ module logical_tile_clb_mode_clb_
     wire logical_tile_clb_mode_default__fle_7_fle_sc_out;
     wire prog_clk;
     wire prog_reset;
-    wire scan_enable;
+    wire test_enable;
 
     direct_interc direct_interc_0_
     (
@@ -673,7 +673,7 @@ module logical_tile_clb_mode_clb_
         .fle_sc_in(direct_interc_24_out),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ccff_tail(logical_tile_clb_mode_default__fle_0_ccff_tail),
         .fle_cout(logical_tile_clb_mode_default__fle_0_fle_cout),
         .fle_out(logical_tile_clb_mode_default__fle_0_fle_out),
@@ -691,7 +691,7 @@ module logical_tile_clb_mode_clb_
         .fle_sc_in(direct_interc_33_out),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ccff_tail(logical_tile_clb_mode_default__fle_1_ccff_tail),
         .fle_cout(logical_tile_clb_mode_default__fle_1_fle_cout),
         .fle_out(logical_tile_clb_mode_default__fle_1_fle_out),
@@ -709,7 +709,7 @@ module logical_tile_clb_mode_clb_
         .fle_sc_in(direct_interc_42_out),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ccff_tail(logical_tile_clb_mode_default__fle_2_ccff_tail),
         .fle_cout(logical_tile_clb_mode_default__fle_2_fle_cout),
         .fle_out(logical_tile_clb_mode_default__fle_2_fle_out),
@@ -727,7 +727,7 @@ module logical_tile_clb_mode_clb_
         .fle_sc_in(direct_interc_51_out),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ccff_tail(logical_tile_clb_mode_default__fle_3_ccff_tail),
         .fle_cout(logical_tile_clb_mode_default__fle_3_fle_cout),
         .fle_out(logical_tile_clb_mode_default__fle_3_fle_out),
@@ -745,7 +745,7 @@ module logical_tile_clb_mode_clb_
         .fle_sc_in(direct_interc_60_out),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ccff_tail(logical_tile_clb_mode_default__fle_4_ccff_tail),
         .fle_cout(logical_tile_clb_mode_default__fle_4_fle_cout),
         .fle_out(logical_tile_clb_mode_default__fle_4_fle_out),
@@ -763,7 +763,7 @@ module logical_tile_clb_mode_clb_
         .fle_sc_in(direct_interc_69_out),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ccff_tail(logical_tile_clb_mode_default__fle_5_ccff_tail),
         .fle_cout(logical_tile_clb_mode_default__fle_5_fle_cout),
         .fle_out(logical_tile_clb_mode_default__fle_5_fle_out),
@@ -781,7 +781,7 @@ module logical_tile_clb_mode_clb_
         .fle_sc_in(direct_interc_78_out),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ccff_tail(logical_tile_clb_mode_default__fle_6_ccff_tail),
         .fle_cout(logical_tile_clb_mode_default__fle_6_fle_cout),
         .fle_out(logical_tile_clb_mode_default__fle_6_fle_out),
@@ -799,7 +799,7 @@ module logical_tile_clb_mode_clb_
         .fle_sc_in(direct_interc_87_out),
         .prog_clk(prog_clk),
         .prog_reset(prog_reset),
-        .scan_enable(scan_enable),
+        .test_enable(test_enable),
         .ccff_tail(ccff_tail),
         .fle_cout(logical_tile_clb_mode_default__fle_7_fle_cout),
         .fle_out(logical_tile_clb_mode_default__fle_7_fle_out),

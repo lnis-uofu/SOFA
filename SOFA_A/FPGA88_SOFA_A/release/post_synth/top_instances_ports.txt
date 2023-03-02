@@ -387,7 +387,7 @@
         "0001_Direction.IN,right_width_0_height_0_subtile_0__pin_I7_1_",
         "0001_Direction.IN,right_width_0_height_0_subtile_0__pin_I7i_0_",
         "0001_Direction.IN,right_width_0_height_0_subtile_0__pin_I7i_1_",
-        "0001_Direction.IN,scan_enable",
+        "0001_Direction.IN,test_enable",
         "0001_Direction.IN,top_width_0_height_0_subtile_0__pin_I0_0_",
         "0001_Direction.IN,top_width_0_height_0_subtile_0__pin_I0_1_",
         "0001_Direction.IN,top_width_0_height_0_subtile_0__pin_I0i_0_",
