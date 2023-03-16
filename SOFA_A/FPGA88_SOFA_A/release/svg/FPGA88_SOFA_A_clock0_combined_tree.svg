@@ -83,76 +83,112 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
         <symbol id="sb10" x="-0.0" y="-0.0">
             <path d="M 0.0 0 v 0.0 h -0.0 v 4 h 0.0 v 0.0 h 4 v -0.0 h 0.0 v -4 h -0.0 v -0.0 z"/>
         </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_2" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
+        <symbol height="14.0" id="sides_merged_at_0_1" viewBox="0.0 0.0 4.0 14.0" width="4.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 4 v 14 h -4 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="sides_merged_at_8_1" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="sides_merged_at_0_2" viewBox="0.0 0.0 4.0 14.0" width="4.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 4 v 14 h -4 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_8_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_3" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
+        <symbol height="14.0" id="sides_merged_at_0_3" viewBox="0.0 0.0 4.0 14.0" width="4.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 4 v 14 h -4 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_8_3" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_4" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
+        <symbol height="14.0" id="sides_merged_at_0_4" viewBox="0.0 0.0 4.0 14.0" width="4.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 4 v 14 h -4 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_8_4" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_5" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
+        <symbol height="14.0" id="sides_merged_at_0_5" viewBox="0.0 0.0 4.0 14.0" width="4.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 4 v 14 h -4 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_8_5" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_6" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
+        <symbol height="14.0" id="sides_merged_at_0_6" viewBox="0.0 0.0 4.0 14.0" width="4.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 4 v 14 h -4 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_8_6" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="14.0" id="sides_merged_at_0_7" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
+        <symbol height="14.0" id="sides_merged_at_0_7" viewBox="0.0 0.0 4.0 14.0" width="4.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 4 v 14 h -4 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_8_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="18.0" id="sides_merged_at_2_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
+        <symbol height="4.0" id="sides_merged_at_1_0" viewBox="0.0 0.0 14.0 4.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 4 h -14 v -4  z"/>
+        </symbol>
+        <symbol height="14.0" id="sides_merged_at_1_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="4.0" id="sides_merged_at_2_0" viewBox="0.0 0.0 14.0 4.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 4 h -14 v -4  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_2_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="18.0" id="sides_merged_at_3_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
+        <symbol height="4.0" id="sides_merged_at_3_0" viewBox="0.0 0.0 14.0 4.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 4 h -14 v -4  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_3_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="18.0" id="sides_merged_at_4_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
+        <symbol height="4.0" id="sides_merged_at_4_0" viewBox="0.0 0.0 14.0 4.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 4 h -14 v -4  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_4_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="18.0" id="sides_merged_at_5_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
+        <symbol height="4.0" id="sides_merged_at_5_0" viewBox="0.0 0.0 14.0 4.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 4 h -14 v -4  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_5_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="18.0" id="sides_merged_at_6_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
+        <symbol height="4.0" id="sides_merged_at_6_0" viewBox="0.0 0.0 14.0 4.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 4 h -14 v -4  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_6_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="18.0" id="sides_merged_at_7_0" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
+        <symbol height="4.0" id="sides_merged_at_7_0" viewBox="0.0 0.0 14.0 4.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 4 h -14 v -4  z"/>
         </symbol>
         <symbol height="14.0" id="sides_merged_at_7_8" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="main_tile_merged_1_1" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="main_tile_merged_1_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="main_tile_merged_1_3" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="main_tile_merged_1_4" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="main_tile_merged_1_5" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="main_tile_merged_1_6" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="main_tile_merged_1_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="main_tile_merged_2_1" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="main_tile_merged_2_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
@@ -173,6 +209,9 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
         <symbol height="14.0" id="main_tile_merged_2_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
+        <symbol height="14.0" id="main_tile_merged_3_1" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
         <symbol height="14.0" id="main_tile_merged_3_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
@@ -189,6 +228,9 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="main_tile_merged_3_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="main_tile_merged_4_1" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="main_tile_merged_4_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
@@ -209,6 +251,9 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
         <symbol height="14.0" id="main_tile_merged_4_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
+        <symbol height="14.0" id="main_tile_merged_5_1" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
         <symbol height="14.0" id="main_tile_merged_5_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
@@ -225,6 +270,9 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="main_tile_merged_5_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
+        <symbol height="14.0" id="main_tile_merged_6_1" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="main_tile_merged_6_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
@@ -245,6 +293,9 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
         <symbol height="14.0" id="main_tile_merged_6_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
+        <symbol height="14.0" id="main_tile_merged_7_1" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
+        </symbol>
         <symbol height="14.0" id="main_tile_merged_7_2" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
@@ -263,8 +314,8 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
         <symbol height="14.0" id="main_tile_merged_7_7" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
         </symbol>
-        <symbol height="14.0" id="corner_merged_ltop" viewBox="0.0 0.0 18.0 14.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 14 h -18 v -14  z"/>
+        <symbol height="14.0" id="corner_merged_ltop" viewBox="0.0 0.0 4.0 14.0" width="4.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 4 v 14 h -4 v -14  z"/>
         </symbol>
         <symbol height="14.0" id="corner_merged_rtop" viewBox="0.0 0.0 14.0 14.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 14 h -14 v -14  z"/>
@@ -272,8 +323,8 @@ symbol[id*='merged'] * { stroke:white; stroke-width:1px;}
         <symbol height="18.0" id="corner_merged_rbottom" viewBox="0.0 0.0 14.0 18.0" width="14.0" x="0.0" y="0.0">
             <path d="M 0 0 h 14 v 18 h -14 v -18  z"/>
         </symbol>
-        <symbol height="18.0" id="corner_merged_lbottom" viewBox="0.0 0.0 18.0 18.0" width="18.0" x="0.0" y="0.0">
-            <path d="M 0 0 h 18 v 18 h -18 v -18  z"/>
+        <symbol height="4.0" id="corner_merged_lbottom" viewBox="0.0 0.0 4.0 4.0" width="4.0" x="0.0" y="0.0">
+            <path d="M 0 0 h 4 v 4 h -4 v -4  z"/>
         </symbol>
         <style type="text/css"><![CDATA[
 text{display:none;}
@@ -572,6 +623,8 @@ text{display:none;}
             <use id="sb_8__7_" x="122" xlink:href="#sb06" y="108"/>
             <use id="cby_8__8_" x="122" xlink:href="#cby" y="112.0"/>
             <use id="sb_8__8_" x="122" xlink:href="#sb05" y="122"/>
+            <use x="10" xlink:href="#sides_merged_at_0_1" y="14.0"/>
+            <use x="112.0" xlink:href="#sides_merged_at_8_1" y="14.0"/>
             <use x="10" xlink:href="#sides_merged_at_0_2" y="28.0"/>
             <use x="112.0" xlink:href="#sides_merged_at_8_2" y="28.0"/>
             <use x="10" xlink:href="#sides_merged_at_0_3" y="42.0"/>
@@ -584,6 +637,8 @@ text{display:none;}
             <use x="112.0" xlink:href="#sides_merged_at_8_6" y="84.0"/>
             <use x="10" xlink:href="#sides_merged_at_0_7" y="98.0"/>
             <use x="112.0" xlink:href="#sides_merged_at_8_7" y="98.0"/>
+            <use x="14.0" xlink:href="#sides_merged_at_1_0" y="10"/>
+            <use x="14.0" xlink:href="#sides_merged_at_1_8" y="112.0"/>
             <use x="28.0" xlink:href="#sides_merged_at_2_0" y="10"/>
             <use x="28.0" xlink:href="#sides_merged_at_2_8" y="112.0"/>
             <use x="42.0" xlink:href="#sides_merged_at_3_0" y="10"/>
@@ -596,36 +651,49 @@ text{display:none;}
             <use x="84.0" xlink:href="#sides_merged_at_6_8" y="112.0"/>
             <use x="98.0" xlink:href="#sides_merged_at_7_0" y="10"/>
             <use x="98.0" xlink:href="#sides_merged_at_7_8" y="112.0"/>
+            <use x="14.0" xlink:href="#main_tile_merged_1_1" y="14.0"/>
+            <use x="14.0" xlink:href="#main_tile_merged_1_2" y="28.0"/>
+            <use x="14.0" xlink:href="#main_tile_merged_1_3" y="42.0"/>
+            <use x="14.0" xlink:href="#main_tile_merged_1_4" y="56.0"/>
+            <use x="14.0" xlink:href="#main_tile_merged_1_5" y="70.0"/>
+            <use x="14.0" xlink:href="#main_tile_merged_1_6" y="84.0"/>
+            <use x="14.0" xlink:href="#main_tile_merged_1_7" y="98.0"/>
+            <use x="28.0" xlink:href="#main_tile_merged_2_1" y="14.0"/>
             <use x="28.0" xlink:href="#main_tile_merged_2_2" y="28.0"/>
             <use x="28.0" xlink:href="#main_tile_merged_2_3" y="42.0"/>
             <use x="28.0" xlink:href="#main_tile_merged_2_4" y="56.0"/>
             <use x="28.0" xlink:href="#main_tile_merged_2_5" y="70.0"/>
             <use x="28.0" xlink:href="#main_tile_merged_2_6" y="84.0"/>
             <use x="28.0" xlink:href="#main_tile_merged_2_7" y="98.0"/>
+            <use x="42.0" xlink:href="#main_tile_merged_3_1" y="14.0"/>
             <use x="42.0" xlink:href="#main_tile_merged_3_2" y="28.0"/>
             <use x="42.0" xlink:href="#main_tile_merged_3_3" y="42.0"/>
             <use x="42.0" xlink:href="#main_tile_merged_3_4" y="56.0"/>
             <use x="42.0" xlink:href="#main_tile_merged_3_5" y="70.0"/>
             <use x="42.0" xlink:href="#main_tile_merged_3_6" y="84.0"/>
             <use x="42.0" xlink:href="#main_tile_merged_3_7" y="98.0"/>
+            <use x="56.0" xlink:href="#main_tile_merged_4_1" y="14.0"/>
             <use x="56.0" xlink:href="#main_tile_merged_4_2" y="28.0"/>
             <use x="56.0" xlink:href="#main_tile_merged_4_3" y="42.0"/>
             <use x="56.0" xlink:href="#main_tile_merged_4_4" y="56.0"/>
             <use x="56.0" xlink:href="#main_tile_merged_4_5" y="70.0"/>
             <use x="56.0" xlink:href="#main_tile_merged_4_6" y="84.0"/>
             <use x="56.0" xlink:href="#main_tile_merged_4_7" y="98.0"/>
+            <use x="70.0" xlink:href="#main_tile_merged_5_1" y="14.0"/>
             <use x="70.0" xlink:href="#main_tile_merged_5_2" y="28.0"/>
             <use x="70.0" xlink:href="#main_tile_merged_5_3" y="42.0"/>
             <use x="70.0" xlink:href="#main_tile_merged_5_4" y="56.0"/>
             <use x="70.0" xlink:href="#main_tile_merged_5_5" y="70.0"/>
             <use x="70.0" xlink:href="#main_tile_merged_5_6" y="84.0"/>
             <use x="70.0" xlink:href="#main_tile_merged_5_7" y="98.0"/>
+            <use x="84.0" xlink:href="#main_tile_merged_6_1" y="14.0"/>
             <use x="84.0" xlink:href="#main_tile_merged_6_2" y="28.0"/>
             <use x="84.0" xlink:href="#main_tile_merged_6_3" y="42.0"/>
             <use x="84.0" xlink:href="#main_tile_merged_6_4" y="56.0"/>
             <use x="84.0" xlink:href="#main_tile_merged_6_5" y="70.0"/>
             <use x="84.0" xlink:href="#main_tile_merged_6_6" y="84.0"/>
             <use x="84.0" xlink:href="#main_tile_merged_6_7" y="98.0"/>
+            <use x="98.0" xlink:href="#main_tile_merged_7_1" y="14.0"/>
             <use x="98.0" xlink:href="#main_tile_merged_7_2" y="28.0"/>
             <use x="98.0" xlink:href="#main_tile_merged_7_3" y="42.0"/>
             <use x="98.0" xlink:href="#main_tile_merged_7_4" y="56.0"/>
@@ -930,201 +998,85 @@ text{display:none;}
         </g>
     </g>
     <g id="connection" transform="scale(1,-1) translate(-2, -2)">
-        <line class="connection same" stroke="grey" x1="21" x2="28" y1="21" y2="21"/>
-        <line class="connection same" stroke="grey" x1="28" x2="28" y1="21" y2="28"/>
-        <line class="connection same" stroke="grey" x1="28" x2="28" y1="21" y2="14"/>
-        <line class="connection same" stroke="grey" x1="21" x2="14" y1="21" y2="21"/>
-        <line class="connection same" stroke="grey" x1="14" x2="14" y1="21" y2="28"/>
-        <line class="connection same" stroke="grey" x1="14" x2="14" y1="21" y2="14"/>
-        <line class="connection same" stroke="grey" x1="49" x2="56" y1="21" y2="21"/>
-        <line class="connection same" stroke="grey" x1="56" x2="56" y1="21" y2="28"/>
-        <line class="connection same" stroke="grey" x1="56" x2="56" y1="21" y2="14"/>
-        <line class="connection same" stroke="grey" x1="49" x2="42" y1="21" y2="21"/>
-        <line class="connection same" stroke="grey" x1="42" x2="42" y1="21" y2="28"/>
-        <line class="connection same" stroke="grey" x1="42" x2="42" y1="21" y2="14"/>
-        <line class="connection same" stroke="grey" x1="49" x2="56" y1="49" y2="49"/>
-        <line class="connection same" stroke="grey" x1="56" x2="56" y1="49" y2="56"/>
-        <line class="connection same" stroke="grey" x1="56" x2="56" y1="49" y2="42"/>
-        <line class="connection same" stroke="grey" x1="49" x2="42" y1="49" y2="49"/>
-        <line class="connection same" stroke="grey" x1="42" x2="42" y1="49" y2="56"/>
-        <line class="connection same" stroke="grey" x1="42" x2="42" y1="49" y2="42"/>
-        <line class="connection same" stroke="grey" x1="21" x2="28" y1="49" y2="49"/>
-        <line class="connection same" stroke="grey" x1="28" x2="28" y1="49" y2="56"/>
-        <line class="connection same" stroke="grey" x1="28" x2="28" y1="49" y2="42"/>
-        <line class="connection same" stroke="grey" x1="21" x2="14" y1="49" y2="49"/>
-        <line class="connection same" stroke="grey" x1="14" x2="14" y1="49" y2="56"/>
-        <line class="connection same" stroke="grey" x1="14" x2="14" y1="49" y2="42"/>
-        <line class="connection same" stroke="grey" x1="21" x2="28" y1="77" y2="77"/>
-        <line class="connection same" stroke="grey" x1="28" x2="28" y1="77" y2="84"/>
-        <line class="connection same" stroke="grey" x1="28" x2="28" y1="77" y2="70"/>
-        <line class="connection same" stroke="grey" x1="21" x2="14" y1="77" y2="77"/>
-        <line class="connection same" stroke="grey" x1="14" x2="14" y1="77" y2="84"/>
-        <line class="connection same" stroke="grey" x1="14" x2="14" y1="77" y2="70"/>
-        <line class="connection same" stroke="grey" x1="49" x2="56" y1="77" y2="77"/>
-        <line class="connection same" stroke="grey" x1="56" x2="56" y1="77" y2="84"/>
-        <line class="connection same" stroke="grey" x1="56" x2="56" y1="77" y2="70"/>
-        <line class="connection same" stroke="grey" x1="49" x2="42" y1="77" y2="77"/>
-        <line class="connection same" stroke="grey" x1="42" x2="42" y1="77" y2="84"/>
-        <line class="connection same" stroke="grey" x1="42" x2="42" y1="77" y2="70"/>
-        <line class="connection same" stroke="grey" x1="49" x2="56" y1="105" y2="105"/>
-        <line class="connection same" stroke="grey" x1="56" x2="56" y1="105" y2="112"/>
-        <line class="connection same" stroke="grey" x1="56" x2="56" y1="105" y2="98"/>
-        <line class="connection same" stroke="grey" x1="49" x2="42" y1="105" y2="105"/>
-        <line class="connection same" stroke="grey" x1="42" x2="42" y1="105" y2="112"/>
-        <line class="connection same" stroke="grey" x1="42" x2="42" y1="105" y2="98"/>
-        <line class="connection same" stroke="grey" x1="21" x2="28" y1="105" y2="105"/>
-        <line class="connection same" stroke="grey" x1="28" x2="28" y1="105" y2="112"/>
-        <line class="connection same" stroke="grey" x1="28" x2="28" y1="105" y2="98"/>
-        <line class="connection same" stroke="grey" x1="21" x2="14" y1="105" y2="105"/>
-        <line class="connection same" stroke="grey" x1="14" x2="14" y1="105" y2="112"/>
-        <line class="connection same" stroke="grey" x1="14" x2="14" y1="105" y2="98"/>
-        <line class="connection same" stroke="grey" x1="77" x2="84" y1="21" y2="21"/>
-        <line class="connection same" stroke="grey" x1="84" x2="84" y1="21" y2="28"/>
-        <line class="connection same" stroke="grey" x1="84" x2="84" y1="21" y2="14"/>
-        <line class="connection same" stroke="grey" x1="77" x2="70" y1="21" y2="21"/>
-        <line class="connection same" stroke="grey" x1="70" x2="70" y1="21" y2="28"/>
-        <line class="connection same" stroke="grey" x1="70" x2="70" y1="21" y2="14"/>
-        <line class="connection same" stroke="grey" x1="105" x2="112" y1="21" y2="21"/>
-        <line class="connection same" stroke="grey" x1="112" x2="112" y1="21" y2="28"/>
-        <line class="connection same" stroke="grey" x1="112" x2="112" y1="21" y2="14"/>
-        <line class="connection same" stroke="grey" x1="105" x2="98" y1="21" y2="21"/>
-        <line class="connection same" stroke="grey" x1="98" x2="98" y1="21" y2="28"/>
-        <line class="connection same" stroke="grey" x1="98" x2="98" y1="21" y2="14"/>
-        <line class="connection same" stroke="grey" x1="105" x2="112" y1="49" y2="49"/>
-        <line class="connection same" stroke="grey" x1="112" x2="112" y1="49" y2="56"/>
-        <line class="connection same" stroke="grey" x1="112" x2="112" y1="49" y2="42"/>
-        <line class="connection same" stroke="grey" x1="105" x2="98" y1="49" y2="49"/>
-        <line class="connection same" stroke="grey" x1="98" x2="98" y1="49" y2="56"/>
-        <line class="connection same" stroke="grey" x1="98" x2="98" y1="49" y2="42"/>
-        <line class="connection same" stroke="grey" x1="77" x2="84" y1="49" y2="49"/>
-        <line class="connection same" stroke="grey" x1="84" x2="84" y1="49" y2="56"/>
-        <line class="connection same" stroke="grey" x1="84" x2="84" y1="49" y2="42"/>
-        <line class="connection same" stroke="grey" x1="77" x2="70" y1="49" y2="49"/>
-        <line class="connection same" stroke="grey" x1="70" x2="70" y1="49" y2="56"/>
-        <line class="connection same" stroke="grey" x1="70" x2="70" y1="49" y2="42"/>
-        <line class="connection same" stroke="grey" x1="77" x2="84" y1="77" y2="77"/>
-        <line class="connection same" stroke="grey" x1="84" x2="84" y1="77" y2="84"/>
-        <line class="connection same" stroke="grey" x1="84" x2="84" y1="77" y2="70"/>
-        <line class="connection same" stroke="grey" x1="77" x2="70" y1="77" y2="77"/>
-        <line class="connection same" stroke="grey" x1="70" x2="70" y1="77" y2="84"/>
-        <line class="connection same" stroke="grey" x1="70" x2="70" y1="77" y2="70"/>
-        <line class="connection same" stroke="grey" x1="105" x2="112" y1="77" y2="77"/>
-        <line class="connection same" stroke="grey" x1="112" x2="112" y1="77" y2="84"/>
-        <line class="connection same" stroke="grey" x1="112" x2="112" y1="77" y2="70"/>
-        <line class="connection same" stroke="grey" x1="105" x2="98" y1="77" y2="77"/>
-        <line class="connection same" stroke="grey" x1="98" x2="98" y1="77" y2="84"/>
-        <line class="connection same" stroke="grey" x1="98" x2="98" y1="77" y2="70"/>
-        <line class="connection same" stroke="grey" x1="105" x2="112" y1="105" y2="105"/>
-        <line class="connection same" stroke="grey" x1="112" x2="112" y1="105" y2="112"/>
-        <line class="connection same" stroke="grey" x1="112" x2="112" y1="105" y2="98"/>
-        <line class="connection same" stroke="grey" x1="105" x2="98" y1="105" y2="105"/>
-        <line class="connection same" stroke="grey" x1="98" x2="98" y1="105" y2="112"/>
-        <line class="connection same" stroke="grey" x1="98" x2="98" y1="105" y2="98"/>
-        <line class="connection same" stroke="grey" x1="77" x2="84" y1="105" y2="105"/>
-        <line class="connection same" stroke="grey" x1="84" x2="84" y1="105" y2="112"/>
-        <line class="connection same" stroke="grey" x1="84" x2="84" y1="105" y2="98"/>
-        <line class="connection same" stroke="grey" x1="77" x2="70" y1="105" y2="105"/>
-        <line class="connection same" stroke="grey" x1="70" x2="70" y1="105" y2="112"/>
-        <line class="connection same" stroke="grey" x1="70" x2="70" y1="105" y2="98"/>
-        <line class="connection up" stroke="grey" x1="21" x2="21" y1="28" y2="21"/>
-        <line class="connection up" stroke="grey" x1="21" x2="21" y1="42" y2="49"/>
-        <line class="connection up" stroke="grey" x1="21" x2="21" y1="84" y2="77"/>
-        <line class="connection up" stroke="grey" x1="21" x2="21" y1="98" y2="105"/>
-        <line class="connection up" stroke="grey" x1="49" x2="49" y1="28" y2="21"/>
-        <line class="connection up" stroke="grey" x1="49" x2="49" y1="42" y2="49"/>
-        <line class="connection up" stroke="grey" x1="49" x2="49" y1="84" y2="77"/>
-        <line class="connection up" stroke="grey" x1="49" x2="49" y1="98" y2="105"/>
-        <line class="connection up" stroke="grey" x1="77" x2="77" y1="28" y2="21"/>
-        <line class="connection up" stroke="grey" x1="77" x2="77" y1="42" y2="49"/>
-        <line class="connection up" stroke="grey" x1="77" x2="77" y1="84" y2="77"/>
-        <line class="connection up" stroke="grey" x1="77" x2="77" y1="98" y2="105"/>
-        <line class="connection up" stroke="grey" x1="105" x2="105" y1="28" y2="21"/>
-        <line class="connection up" stroke="grey" x1="105" x2="105" y1="42" y2="49"/>
-        <line class="connection up" stroke="grey" x1="105" x2="105" y1="84" y2="77"/>
-        <line class="connection up" stroke="grey" x1="105" x2="105" y1="98" y2="105"/>
-        <line class="connection same" stroke="blue" x1="35" x2="42" y1="35" y2="35"/>
-        <line class="connection same" stroke="blue" x1="42" x2="49" y1="35" y2="35"/>
-        <line class="connection same" stroke="blue" x1="49" x2="49" y1="35" y2="42"/>
-        <line class="connection down" stroke="blue" x1="49" x2="49" y1="42" y2="49"/>
-        <line class="connection same" stroke="blue" x1="49" x2="49" y1="35" y2="28"/>
-        <line class="connection down" stroke="blue" x1="49" x2="49" y1="28" y2="21"/>
-        <line class="connection same" stroke="blue" x1="35" x2="28" y1="35" y2="35"/>
-        <line class="connection same" stroke="blue" x1="28" x2="21" y1="35" y2="35"/>
-        <line class="connection same" stroke="blue" x1="21" x2="21" y1="35" y2="42"/>
-        <line class="connection down" stroke="blue" x1="21" x2="21" y1="42" y2="49"/>
-        <line class="connection same" stroke="blue" x1="21" x2="21" y1="35" y2="28"/>
-        <line class="connection down" stroke="blue" x1="21" x2="21" y1="28" y2="21"/>
-        <line class="connection same" stroke="blue" x1="35" x2="42" y1="91" y2="91"/>
-        <line class="connection same" stroke="blue" x1="42" x2="49" y1="91" y2="91"/>
-        <line class="connection same" stroke="blue" x1="49" x2="49" y1="91" y2="98"/>
-        <line class="connection down" stroke="blue" x1="49" x2="49" y1="98" y2="105"/>
-        <line class="connection same" stroke="blue" x1="49" x2="49" y1="91" y2="84"/>
-        <line class="connection down" stroke="blue" x1="49" x2="49" y1="84" y2="77"/>
-        <line class="connection same" stroke="blue" x1="35" x2="28" y1="91" y2="91"/>
-        <line class="connection same" stroke="blue" x1="28" x2="21" y1="91" y2="91"/>
-        <line class="connection same" stroke="blue" x1="21" x2="21" y1="91" y2="98"/>
-        <line class="connection down" stroke="blue" x1="21" x2="21" y1="98" y2="105"/>
-        <line class="connection same" stroke="blue" x1="21" x2="21" y1="91" y2="84"/>
-        <line class="connection down" stroke="blue" x1="21" x2="21" y1="84" y2="77"/>
-        <line class="connection same" stroke="blue" x1="91" x2="98" y1="35" y2="35"/>
-        <line class="connection same" stroke="blue" x1="98" x2="105" y1="35" y2="35"/>
-        <line class="connection same" stroke="blue" x1="105" x2="105" y1="35" y2="42"/>
-        <line class="connection down" stroke="blue" x1="105" x2="105" y1="42" y2="49"/>
-        <line class="connection same" stroke="blue" x1="105" x2="105" y1="35" y2="28"/>
-        <line class="connection down" stroke="blue" x1="105" x2="105" y1="28" y2="21"/>
-        <line class="connection same" stroke="blue" x1="91" x2="84" y1="35" y2="35"/>
-        <line class="connection same" stroke="blue" x1="84" x2="77" y1="35" y2="35"/>
-        <line class="connection same" stroke="blue" x1="77" x2="77" y1="35" y2="42"/>
-        <line class="connection down" stroke="blue" x1="77" x2="77" y1="42" y2="49"/>
-        <line class="connection same" stroke="blue" x1="77" x2="77" y1="35" y2="28"/>
-        <line class="connection down" stroke="blue" x1="77" x2="77" y1="28" y2="21"/>
-        <line class="connection same" stroke="blue" x1="91" x2="98" y1="91" y2="91"/>
-        <line class="connection same" stroke="blue" x1="98" x2="105" y1="91" y2="91"/>
-        <line class="connection same" stroke="blue" x1="105" x2="105" y1="91" y2="98"/>
-        <line class="connection down" stroke="blue" x1="105" x2="105" y1="98" y2="105"/>
-        <line class="connection same" stroke="blue" x1="105" x2="105" y1="91" y2="84"/>
-        <line class="connection down" stroke="blue" x1="105" x2="105" y1="84" y2="77"/>
-        <line class="connection same" stroke="blue" x1="91" x2="84" y1="91" y2="91"/>
-        <line class="connection same" stroke="blue" x1="84" x2="77" y1="91" y2="91"/>
-        <line class="connection same" stroke="blue" x1="77" x2="77" y1="91" y2="98"/>
-        <line class="connection down" stroke="blue" x1="77" x2="77" y1="98" y2="105"/>
-        <line class="connection same" stroke="blue" x1="77" x2="77" y1="91" y2="84"/>
-        <line class="connection down" stroke="blue" x1="77" x2="77" y1="84" y2="77"/>
-        <line class="connection same" stroke="red" x1="63" x2="63" y1="0" y2="7"/>
-        <line class="connection same" stroke="red" x1="63" x2="63" y1="7" y2="14"/>
-        <line class="connection same" stroke="red" x1="63" x2="63" y1="14" y2="21"/>
-        <line class="connection same" stroke="red" x1="63" x2="63" y1="21" y2="28"/>
-        <line class="connection same" stroke="red" x1="63" x2="63" y1="28" y2="35"/>
-        <line class="connection same" stroke="red" x1="63" x2="63" y1="35" y2="42"/>
-        <line class="connection same" stroke="red" x1="63" x2="63" y1="42" y2="49"/>
-        <line class="connection same" stroke="red" x1="63" x2="63" y1="49" y2="56"/>
-        <line class="connection same" stroke="red" x1="63" x2="63" y1="56" y2="63"/>
-        <line class="connection same" stroke="red" x1="63" x2="70" y1="63" y2="63"/>
-        <line class="connection same" stroke="red" x1="70" x2="77" y1="63" y2="63"/>
-        <line class="connection same" stroke="red" x1="77" x2="84" y1="63" y2="63"/>
-        <line class="connection same" stroke="red" x1="84" x2="91" y1="63" y2="63"/>
-        <line class="connection same" stroke="red" x1="91" x2="91" y1="63" y2="70"/>
-        <line class="connection same" stroke="red" x1="91" x2="91" y1="70" y2="77"/>
-        <line class="connection same" stroke="red" x1="91" x2="91" y1="77" y2="84"/>
-        <line class="connection down" stroke="red" x1="91" x2="91" y1="84" y2="91"/>
-        <line class="connection same" stroke="red" x1="91" x2="91" y1="63" y2="56"/>
-        <line class="connection same" stroke="red" x1="91" x2="91" y1="56" y2="49"/>
-        <line class="connection same" stroke="red" x1="91" x2="91" y1="49" y2="42"/>
-        <line class="connection down" stroke="red" x1="91" x2="91" y1="42" y2="35"/>
-        <line class="connection same" stroke="red" x1="63" x2="56" y1="63" y2="63"/>
-        <line class="connection same" stroke="red" x1="56" x2="49" y1="63" y2="63"/>
-        <line class="connection same" stroke="red" x1="49" x2="42" y1="63" y2="63"/>
-        <line class="connection same" stroke="red" x1="42" x2="35" y1="63" y2="63"/>
-        <line class="connection same" stroke="red" x1="35" x2="35" y1="63" y2="70"/>
-        <line class="connection same" stroke="red" x1="35" x2="35" y1="70" y2="77"/>
-        <line class="connection same" stroke="red" x1="35" x2="35" y1="77" y2="84"/>
-        <line class="connection down" stroke="red" x1="35" x2="35" y1="84" y2="91"/>
-        <line class="connection same" stroke="red" x1="35" x2="35" y1="63" y2="56"/>
-        <line class="connection same" stroke="red" x1="35" x2="35" y1="56" y2="49"/>
-        <line class="connection same" stroke="red" x1="35" x2="35" y1="49" y2="42"/>
-        <line class="connection down" stroke="red" x1="35" x2="35" y1="42" y2="35"/>
+        <line class="connection same" stroke="blue" x1="21" x2="28" y1="21" y2="21"/>
+        <line class="connection same" stroke="blue" x1="28" x2="28" y1="21" y2="28"/>
+        <line class="connection same" stroke="blue" x1="28" x2="28" y1="28" y2="35"/>
+        <line class="connection same" stroke="blue" x1="28" x2="28" y1="21" y2="14"/>
+        <line class="connection same" stroke="blue" x1="28" x2="35" y1="21" y2="21"/>
+        <line class="connection same" stroke="blue" x1="35" x2="35" y1="21" y2="28"/>
+        <line class="connection same" stroke="blue" x1="35" x2="35" y1="28" y2="35"/>
+        <line class="connection same" stroke="blue" x1="35" x2="35" y1="21" y2="14"/>
+        <line class="connection same" stroke="blue" x1="21" x2="14" y1="21" y2="21"/>
+        <line class="connection same" stroke="blue" x1="14" x2="14" y1="21" y2="28"/>
+        <line class="connection same" stroke="blue" x1="14" x2="14" y1="28" y2="35"/>
+        <line class="connection same" stroke="blue" x1="14" x2="14" y1="21" y2="14"/>
+        <line class="connection same" stroke="blue" x1="21" x2="21" y1="21" y2="28"/>
+        <line class="connection same" stroke="blue" x1="21" x2="21" y1="28" y2="35"/>
+        <line class="connection same" stroke="blue" x1="21" x2="21" y1="21" y2="14"/>
+        <line class="connection same" stroke="blue" x1="21" x2="28" y1="56" y2="56"/>
+        <line class="connection same" stroke="blue" x1="28" x2="28" y1="56" y2="63"/>
+        <line class="connection same" stroke="blue" x1="28" x2="28" y1="56" y2="49"/>
+        <line class="connection same" stroke="blue" x1="28" x2="28" y1="49" y2="42"/>
+        <line class="connection same" stroke="blue" x1="28" x2="35" y1="56" y2="56"/>
+        <line class="connection same" stroke="blue" x1="35" x2="35" y1="56" y2="63"/>
+        <line class="connection same" stroke="blue" x1="35" x2="35" y1="56" y2="49"/>
+        <line class="connection same" stroke="blue" x1="35" x2="35" y1="49" y2="42"/>
+        <line class="connection same" stroke="blue" x1="21" x2="14" y1="56" y2="56"/>
+        <line class="connection same" stroke="blue" x1="14" x2="14" y1="56" y2="63"/>
+        <line class="connection same" stroke="blue" x1="14" x2="14" y1="56" y2="49"/>
+        <line class="connection same" stroke="blue" x1="14" x2="14" y1="49" y2="42"/>
+        <line class="connection same" stroke="blue" x1="21" x2="21" y1="56" y2="63"/>
+        <line class="connection same" stroke="blue" x1="21" x2="21" y1="56" y2="49"/>
+        <line class="connection same" stroke="blue" x1="21" x2="21" y1="49" y2="42"/>
+        <line class="connection same" stroke="blue" x1="49" x2="56" y1="21" y2="21"/>
+        <line class="connection same" stroke="blue" x1="56" x2="56" y1="21" y2="28"/>
+        <line class="connection same" stroke="blue" x1="56" x2="56" y1="28" y2="35"/>
+        <line class="connection same" stroke="blue" x1="56" x2="56" y1="21" y2="14"/>
+        <line class="connection same" stroke="blue" x1="56" x2="63" y1="21" y2="21"/>
+        <line class="connection same" stroke="blue" x1="63" x2="63" y1="21" y2="28"/>
+        <line class="connection same" stroke="blue" x1="63" x2="63" y1="28" y2="35"/>
+        <line class="connection same" stroke="blue" x1="63" x2="63" y1="21" y2="14"/>
+        <line class="connection same" stroke="blue" x1="49" x2="42" y1="21" y2="21"/>
+        <line class="connection same" stroke="blue" x1="42" x2="42" y1="21" y2="28"/>
+        <line class="connection same" stroke="blue" x1="42" x2="42" y1="28" y2="35"/>
+        <line class="connection same" stroke="blue" x1="42" x2="42" y1="21" y2="14"/>
+        <line class="connection same" stroke="blue" x1="49" x2="49" y1="21" y2="28"/>
+        <line class="connection same" stroke="blue" x1="49" x2="49" y1="28" y2="35"/>
+        <line class="connection same" stroke="blue" x1="49" x2="49" y1="21" y2="14"/>
+        <line class="connection same" stroke="blue" x1="49" x2="56" y1="56" y2="56"/>
+        <line class="connection same" stroke="blue" x1="56" x2="56" y1="56" y2="63"/>
+        <line class="connection same" stroke="blue" x1="56" x2="56" y1="56" y2="49"/>
+        <line class="connection same" stroke="blue" x1="56" x2="56" y1="49" y2="42"/>
+        <line class="connection same" stroke="blue" x1="56" x2="63" y1="56" y2="56"/>
+        <line class="connection same" stroke="blue" x1="63" x2="63" y1="56" y2="63"/>
+        <line class="connection same" stroke="blue" x1="63" x2="63" y1="56" y2="49"/>
+        <line class="connection same" stroke="blue" x1="63" x2="63" y1="49" y2="42"/>
+        <line class="connection same" stroke="blue" x1="49" x2="42" y1="56" y2="56"/>
+        <line class="connection same" stroke="blue" x1="42" x2="42" y1="56" y2="63"/>
+        <line class="connection same" stroke="blue" x1="42" x2="42" y1="56" y2="49"/>
+        <line class="connection same" stroke="blue" x1="42" x2="42" y1="49" y2="42"/>
+        <line class="connection same" stroke="blue" x1="49" x2="49" y1="56" y2="63"/>
+        <line class="connection same" stroke="blue" x1="49" x2="49" y1="56" y2="49"/>
+        <line class="connection same" stroke="blue" x1="49" x2="49" y1="49" y2="42"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="0" y2="7"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="7" y2="14"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="14" y2="21"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="21" y2="28"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="28" y2="35"/>
+        <line class="connection same" stroke="red" x1="35" x2="42" y1="35" y2="35"/>
+        <line class="connection same" stroke="red" x1="42" x2="49" y1="35" y2="35"/>
+        <line class="connection same" stroke="red" x1="49" x2="49" y1="35" y2="42"/>
+        <line class="connection down" stroke="red" x1="49" x2="49" y1="42" y2="49"/>
+        <line class="connection same" stroke="red" x1="49" x2="49" y1="35" y2="28"/>
+        <line class="connection down" stroke="red" x1="49" x2="49" y1="28" y2="21"/>
+        <line class="connection same" stroke="red" x1="35" x2="28" y1="35" y2="35"/>
+        <line class="connection same" stroke="red" x1="28" x2="21" y1="35" y2="35"/>
+        <line class="connection same" stroke="red" x1="21" x2="21" y1="35" y2="42"/>
+        <line class="connection down" stroke="red" x1="21" x2="21" y1="42" y2="49"/>
+        <line class="connection same" stroke="red" x1="21" x2="21" y1="35" y2="28"/>
+        <line class="connection down" stroke="red" x1="21" x2="21" y1="28" y2="21"/>
         <g id="text">
-            <text alignment-baseline="middle" class="moduleLabel" fill="black" font-size="11.9" text-anchor="middle" transform="scale(1,-1)" x="63.0" y="3.5">Combined Pattern</text>
+            <text alignment-baseline="middle" class="moduleLabel" fill="black" font-size="6.300000000000001" text-anchor="middle" transform="scale(1,-1)" x="35.0" y="3.5">Combined Pattern</text>
         </g>
     </g>
 </svg>

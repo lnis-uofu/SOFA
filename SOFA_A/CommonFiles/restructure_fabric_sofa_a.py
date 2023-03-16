@@ -190,7 +190,7 @@ def main():
     fpga.save_shaping_data(
         "*",
         scale=1 / GLOBAL_SCALE,
-        filename=f"{RELEASE_DIR}/rpts/pre_pnr/shaping.txt",
+        filename=f"{RELEASE_DIR}/rpts/pre_pnr/pre-tile-shaping.txt",
     )
 
     # Signal pins
@@ -260,6 +260,11 @@ def main():
     #     dwg, open(f"{PICKLE_DIR}/{PROJ_NAME}_floorplaned.pickle", "wb"))
     logger.info("Saved floorplan in %s", filename)
     # save_netlist_outline(fpga)
+    fpga.save_shaping_data(
+        "*",
+        scale=1 / GLOBAL_SCALE,
+        filename=f"{RELEASE_DIR}/rpts/pre_pnr/shaping.txt",
+    )
 
 
 def create_global_feedthrough(

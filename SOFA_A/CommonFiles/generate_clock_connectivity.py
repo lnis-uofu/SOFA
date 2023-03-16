@@ -44,21 +44,21 @@ def main():
     """
     Main method to create clock tree
     """
-    fpga_width = FPGA_SIZE_X+1
-    fpga_height = FPGA_SIZE_Y+1
+    fpga_width = FPGA_SIZE_X
+    fpga_height = FPGA_SIZE_Y
 
     WIDTH = fpga_width + 1
     HEIGHT = fpga_height + 1
 
     p_manager = ConnectionPattern(WIDTH, HEIGHT)
     l2_patt = p_manager.connections
-    l2_patt.cursor = (int(WIDTH) + 1, 0)
-    l2_patt.move_y(steps=int(WIDTH) + 1)
-    l2_patt.merge(p_manager.get_htree(WIDTH))
+    l2_patt.cursor = (int(WIDTH/2) + 1, 0)
+    l2_patt.move_y(steps=int(WIDTH/2) + 1)
+    l2_patt.merge(p_manager.get_htree(WIDTH).translate(0, 0))
     l2_patt.set_color("red")
-    # for x in range(2):
-    #     for y in range(2):
-    #         l2_patt.push_connection_down((5 + (x * 8), 5 + (y * 8)))
+    for x in range(2):
+        for y in range(2):
+            l2_patt.push_connection_down((3 + (x * 4), 3 + (y * 4)))
 
     svg = p_manager.render_pattern(title=PROJ_NAME, scale=7)
 
@@ -67,7 +67,6 @@ def main():
     save_svg_with_background(svg,
                              f"{SVG_DIR}/{PROJ_NAME}_clock0_leve2_tree.svg")
 
-    return
     # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
     #                     level1 connection pattern
     # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -75,52 +74,41 @@ def main():
     l1_patt = p_manager.connections
     for x in range(2):
         for y in range(2):
-            xx, yy = 1 + (x * 8), 1 + (y * 8)
-            l1_patt.merge(p_manager.get_htree(8).translate(xx, yy))
-            l1_patt.push_connection_down((xx+2, yy+2))
-            l1_patt.push_connection_down((xx+2, yy+6))
-            l1_patt.push_connection_down((xx+6, yy+2))
-            l1_patt.push_connection_down((xx+6, yy+6))
+            xx, yy = 1 + (x * 4), 1 + (y * 5)
+            pattern = p_manager.get_htree(4, repeat=2, side=1)
+            pattern.points.remove(pattern.search_to_point((0, 0)))
+            pattern.points.remove(pattern.search_to_point((0, 1)))
+            pattern.points.remove(pattern.search_to_point((0, 2)))
+            pattern.points.remove(pattern.search_to_point((0, 3)))
+            pattern.points.remove(pattern.search_to_point((0, 4)))
+            pattern.set_cursor(2,2)
+            pattern.hold_cursor()
+            pattern.move_y(steps=2-y)
+            pattern.move_y(value=-1,steps=1+y)
+            l1_patt.merge(pattern.translate(xx, yy))
     l1_patt.set_color("blue")
+
+    l1_patt.trim_borders()
+    l1_patt.translate(0, -1)
+    l1_patt.trim_borders()
+    l1_patt.translate(0, 1)
     svg = p_manager.render_pattern(title="L1 Pattern", scale=7)
+    svg.saveas(f"{SVG_DIR}/{PROJ_NAME}_clock0_leve1_clear_tree.svg",
+               pretty=True, indent=4)
     save_svg_with_background(
         svg, f"{SVG_DIR}/{PROJ_NAME}_clock0_leve1_tree.svg")
-
-    # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-    #                     level2 connection pattern
-    # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-    p_manager = ConnectionPattern(WIDTH, HEIGHT)
-    l0_patt = p_manager.connections
-
-    for x in range(2):
-        for y in range(2):
-            xx, yy = 5 + (x * 8), 5 + (y * 8)
-            l0_patt.merge(p_manager.get_htree(4).translate(xx-4, yy-4))
-            l0_patt.merge(p_manager.get_htree(4).translate(xx, yy-4))
-            l0_patt.merge(p_manager.get_htree(4).translate(xx, yy))
-            l0_patt.merge(p_manager.get_htree(4).translate(xx-4, yy))
-
-    for x in range(4):
-        for y in range(4):
-            ydir = -1 if y % 2 else 1
-            pt = ConnectPoint(3 + (x * 4), 3 + (y * 4) +
-                              ydir, 3 + (x * 4), 3 + (y * 4))
-            l0_patt.add_connect_point(pt)
-            l0_patt.pull_connection_up(pt)
-    l0_patt.set_color("grey")
-    svg = p_manager.render_pattern(title="L0 Pattern", scale=7)
-    save_svg_with_background(
-        svg, f"{SVG_DIR}/{PROJ_NAME}_clock0_leve0_tree.svg")
 
     # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
     #                  Combined all patterns
     # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
     p_manager = ConnectionPattern(WIDTH, HEIGHT)
     combine_pattern = p_manager.connections
-    combine_pattern.merge(l0_patt)
+    # combine_pattern.merge(l0_patt)
     combine_pattern.merge(l1_patt)
     combine_pattern.merge(l2_patt)
     svg = p_manager.render_pattern(title="Combined Pattern", scale=7)
+    svg.saveas(f"{SVG_DIR}/{PROJ_NAME}_clock0_combined_clear_tree.svg",
+               pretty=True, indent=4)
     save_svg_with_background(
         svg, f"{SVG_DIR}/{PROJ_NAME}_clock0_combined_tree.svg")
 

@@ -998,31 +998,25 @@ text{display:none;}
         </g>
     </g>
     <g id="connection" transform="scale(1,-1) translate(-2, -2)">
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="0" y2="7"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="7" y2="14"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="14" y2="21"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="21" y2="28"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="28" y2="35"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="35" y2="42"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="42" y2="49"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="49" y2="56"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="56" y2="63"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="63" y2="70"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="70" y2="77"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="0" y2="7"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="7" y2="14"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="14" y2="21"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="21" y2="28"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="28" y2="35"/>
         <line class="connection same" stroke="red" x1="35" x2="42" y1="35" y2="35"/>
         <line class="connection same" stroke="red" x1="42" x2="49" y1="35" y2="35"/>
         <line class="connection same" stroke="red" x1="49" x2="49" y1="35" y2="42"/>
-        <line class="connection same" stroke="red" x1="49" x2="49" y1="42" y2="49"/>
+        <line class="connection down" stroke="red" x1="49" x2="49" y1="42" y2="49"/>
         <line class="connection same" stroke="red" x1="49" x2="49" y1="35" y2="28"/>
-        <line class="connection same" stroke="red" x1="49" x2="49" y1="28" y2="21"/>
+        <line class="connection down" stroke="red" x1="49" x2="49" y1="28" y2="21"/>
         <line class="connection same" stroke="red" x1="35" x2="28" y1="35" y2="35"/>
         <line class="connection same" stroke="red" x1="28" x2="21" y1="35" y2="35"/>
         <line class="connection same" stroke="red" x1="21" x2="21" y1="35" y2="42"/>
-        <line class="connection same" stroke="red" x1="21" x2="21" y1="42" y2="49"/>
+        <line class="connection down" stroke="red" x1="21" x2="21" y1="42" y2="49"/>
         <line class="connection same" stroke="red" x1="21" x2="21" y1="35" y2="28"/>
-        <line class="connection same" stroke="red" x1="21" x2="21" y1="28" y2="21"/>
+        <line class="connection down" stroke="red" x1="21" x2="21" y1="28" y2="21"/>
         <g id="text">
-            <text alignment-baseline="middle" class="moduleLabel" fill="black" font-size="7.0" text-anchor="middle" transform="scale(1,-1)" x="38.5" y="3.5">FPGA88_SOFA_A</text>
+            <text alignment-baseline="middle" class="moduleLabel" fill="black" font-size="6.300000000000001" text-anchor="middle" transform="scale(1,-1)" x="35.0" y="3.5">FPGA88_SOFA_A</text>
         </g>
     </g>
 </svg>

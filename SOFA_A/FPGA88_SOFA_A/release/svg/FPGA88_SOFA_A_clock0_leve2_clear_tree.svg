@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="91" version="1.1" viewBox="0,-80.5,77,91" width="77">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="84" version="1.1" viewBox="0,-73.5,70,84" width="70">
     <defs id="id5">
         <marker id="id1" markerHeight="10" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="30" refY="30" viewBox="0 0 120 120">
             <path d="M 0 0 L 60 30 L 0 60 z" fill="blue"/>
@@ -35,55 +35,47 @@
                 ]]></style>
     </defs>
     <g id="markers" transform="scale(1,-1)">
-        <line class="gridmarker" x1="4" x2="4" y1="4" y2="74"/>
-        <line class="gridmarker" x1="10" x2="10" y1="4" y2="74"/>
-        <line class="gridmarker" x1="18" x2="18" y1="4" y2="74"/>
-        <line class="gridmarker" x1="24" x2="24" y1="4" y2="74"/>
-        <line class="gridmarker" x1="32" x2="32" y1="4" y2="74"/>
-        <line class="gridmarker" x1="38" x2="38" y1="4" y2="74"/>
-        <line class="gridmarker" x1="46" x2="46" y1="4" y2="74"/>
-        <line class="gridmarker" x1="52" x2="52" y1="4" y2="74"/>
-        <line class="gridmarker" x1="60" x2="60" y1="4" y2="74"/>
-        <line class="gridmarker" x1="66" x2="66" y1="4" y2="74"/>
-        <line class="gridmarker" x1="74" x2="74" y1="4" y2="74"/>
-        <line class="gridmarker" x1="4" x2="74" y1="4" y2="4"/>
-        <line class="gridmarker" x1="4" x2="74" y1="10" y2="10"/>
-        <line class="gridmarker" x1="4" x2="74" y1="18" y2="18"/>
-        <line class="gridmarker" x1="4" x2="74" y1="24" y2="24"/>
-        <line class="gridmarker" x1="4" x2="74" y1="32" y2="32"/>
-        <line class="gridmarker" x1="4" x2="74" y1="38" y2="38"/>
-        <line class="gridmarker" x1="4" x2="74" y1="46" y2="46"/>
-        <line class="gridmarker" x1="4" x2="74" y1="52" y2="52"/>
-        <line class="gridmarker" x1="4" x2="74" y1="60" y2="60"/>
-        <line class="gridmarker" x1="4" x2="74" y1="66" y2="66"/>
-        <line class="gridmarker" x1="4" x2="74" y1="74" y2="74"/>
+        <line class="gridmarker" x1="4" x2="4" y1="4" y2="66"/>
+        <line class="gridmarker" x1="10" x2="10" y1="4" y2="66"/>
+        <line class="gridmarker" x1="18" x2="18" y1="4" y2="66"/>
+        <line class="gridmarker" x1="24" x2="24" y1="4" y2="66"/>
+        <line class="gridmarker" x1="32" x2="32" y1="4" y2="66"/>
+        <line class="gridmarker" x1="38" x2="38" y1="4" y2="66"/>
+        <line class="gridmarker" x1="46" x2="46" y1="4" y2="66"/>
+        <line class="gridmarker" x1="52" x2="52" y1="4" y2="66"/>
+        <line class="gridmarker" x1="60" x2="60" y1="4" y2="66"/>
+        <line class="gridmarker" x1="66" x2="66" y1="4" y2="66"/>
+        <line class="gridmarker" x1="4" x2="66" y1="4" y2="4"/>
+        <line class="gridmarker" x1="4" x2="66" y1="10" y2="10"/>
+        <line class="gridmarker" x1="4" x2="66" y1="18" y2="18"/>
+        <line class="gridmarker" x1="4" x2="66" y1="24" y2="24"/>
+        <line class="gridmarker" x1="4" x2="66" y1="32" y2="32"/>
+        <line class="gridmarker" x1="4" x2="66" y1="38" y2="38"/>
+        <line class="gridmarker" x1="4" x2="66" y1="46" y2="46"/>
+        <line class="gridmarker" x1="4" x2="66" y1="52" y2="52"/>
+        <line class="gridmarker" x1="4" x2="66" y1="60" y2="60"/>
+        <line class="gridmarker" x1="4" x2="66" y1="66" y2="66"/>
     </g>
     <g id="main" transform="scale(1,-1)">
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="0" y2="7"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="7" y2="14"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="14" y2="21"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="21" y2="28"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="28" y2="35"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="35" y2="42"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="42" y2="49"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="49" y2="56"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="56" y2="63"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="63" y2="70"/>
-        <line class="connection same" stroke="red" x1="77" x2="77" y1="70" y2="77"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="0" y2="7"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="7" y2="14"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="14" y2="21"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="21" y2="28"/>
+        <line class="connection same" stroke="red" x1="35" x2="35" y1="28" y2="35"/>
         <line class="connection same" stroke="red" x1="35" x2="42" y1="35" y2="35"/>
         <line class="connection same" stroke="red" x1="42" x2="49" y1="35" y2="35"/>
         <line class="connection same" stroke="red" x1="49" x2="49" y1="35" y2="42"/>
-        <line class="connection same" stroke="red" x1="49" x2="49" y1="42" y2="49"/>
+        <line class="connection down" stroke="red" x1="49" x2="49" y1="42" y2="49"/>
         <line class="connection same" stroke="red" x1="49" x2="49" y1="35" y2="28"/>
-        <line class="connection same" stroke="red" x1="49" x2="49" y1="28" y2="21"/>
+        <line class="connection down" stroke="red" x1="49" x2="49" y1="28" y2="21"/>
         <line class="connection same" stroke="red" x1="35" x2="28" y1="35" y2="35"/>
         <line class="connection same" stroke="red" x1="28" x2="21" y1="35" y2="35"/>
         <line class="connection same" stroke="red" x1="21" x2="21" y1="35" y2="42"/>
-        <line class="connection same" stroke="red" x1="21" x2="21" y1="42" y2="49"/>
+        <line class="connection down" stroke="red" x1="21" x2="21" y1="42" y2="49"/>
         <line class="connection same" stroke="red" x1="21" x2="21" y1="35" y2="28"/>
-        <line class="connection same" stroke="red" x1="21" x2="21" y1="28" y2="21"/>
+        <line class="connection down" stroke="red" x1="21" x2="21" y1="28" y2="21"/>
         <g id="text">
-            <text alignment-baseline="middle" class="moduleLabel" fill="black" font-size="7.0" text-anchor="middle" transform="scale(1,-1)" x="38.5" y="3.5">FPGA88_SOFA_A</text>
+            <text alignment-baseline="middle" class="moduleLabel" fill="black" font-size="6.300000000000001" text-anchor="middle" transform="scale(1,-1)" x="35.0" y="3.5">FPGA88_SOFA_A</text>
         </g>
     </g>
 </svg>
