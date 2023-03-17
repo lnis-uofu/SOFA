@@ -395,6 +395,7 @@ run_openfpga_sim:
 	(cd ./$${TASK_DIR_NAME}/config && rm -f task.conf && cp ${CONF}.conf task.conf)
 
 # =====================  Generate Netlist  =================================
+	rm -rf $${TASK_DIR_NAME}/run**
 	(currDir=$${PWD} && cd $$OPENFPGA_PATH && source openfpga.sh && cd $$currDir &&
 	run-task $${TASK_DIR_NAME} --remove_run_dir all &&
 	run-task $${TASK_DIR_NAME} ${OPTIONS})

@@ -32,6 +32,9 @@ lut_truth_table_fixup
 #  - Enable pin duplication on grid modules
 build_fabric --compress_routing #--verbose
 
+# Output I/O coordinate information
+write_fabric_io_info --file ${OPENFPGA_IO_COORDINATE_FILE} --no_time_stamp
+
 # Write the fabric hierarchy of module graph to a file
 # This is used by hierarchical PnR flows
 write_fabric_hierarchy --file ./fabric_hierarchy.txt

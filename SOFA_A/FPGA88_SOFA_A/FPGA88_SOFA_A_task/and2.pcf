@@ -1,0 +1,3 @@
+set_io a gfpga_pad_io_soc_in[0]
+set_io b gfpga_pad_io_soc_in[1]
+set_io c gfpga_pad_io_soc_out[6]
