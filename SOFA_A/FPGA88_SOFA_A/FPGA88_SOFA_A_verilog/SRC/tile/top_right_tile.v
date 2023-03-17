@@ -13,14 +13,13 @@ module top_right_tile
     prog_clk,
     prog_reset_bottom_in,
     reset_bottom_in,
+    sc_in,
     test_enable_bottom_in,
     top_width_0_height_0_subtile_0__pin_cin_0_,
     top_width_0_height_0_subtile_0__pin_reg_in_0_,
-    top_width_0_height_0_subtile_0__pin_sc_in_0_,
     bottom_width_0_height_0_subtile_0__pin_cout_0_,
     bottom_width_0_height_0_subtile_0__pin_inpad_0_,
     bottom_width_0_height_0_subtile_0__pin_reg_out_0_,
-    bottom_width_0_height_0_subtile_0__pin_sc_out_0_,
     bottom_width_0_height_0_subtile_1__pin_inpad_0_,
     bottom_width_0_height_0_subtile_2__pin_inpad_0_,
     bottom_width_0_height_0_subtile_3__pin_inpad_0_,
@@ -44,6 +43,7 @@ module top_right_tile
     right_width_0_height_0_subtile_0__pin_O_15_,
     right_width_0_height_0_subtile_0__pin_O_8_,
     right_width_0_height_0_subtile_0__pin_O_9_,
+    sc_out,
     top_width_0_height_0_subtile_0__pin_O_0_,
     top_width_0_height_0_subtile_0__pin_O_1_,
     top_width_0_height_0_subtile_0__pin_O_2_,
@@ -65,14 +65,13 @@ module top_right_tile
     input prog_clk;
     input prog_reset_bottom_in;
     input reset_bottom_in;
+    input sc_in;
     input test_enable_bottom_in;
     input top_width_0_height_0_subtile_0__pin_cin_0_;
     input top_width_0_height_0_subtile_0__pin_reg_in_0_;
-    input top_width_0_height_0_subtile_0__pin_sc_in_0_;
     output bottom_width_0_height_0_subtile_0__pin_cout_0_;
     output bottom_width_0_height_0_subtile_0__pin_inpad_0_;
     output bottom_width_0_height_0_subtile_0__pin_reg_out_0_;
-    output bottom_width_0_height_0_subtile_0__pin_sc_out_0_;
     output bottom_width_0_height_0_subtile_1__pin_inpad_0_;
     output bottom_width_0_height_0_subtile_2__pin_inpad_0_;
     output bottom_width_0_height_0_subtile_3__pin_inpad_0_;
@@ -96,6 +95,7 @@ module top_right_tile
     output right_width_0_height_0_subtile_0__pin_O_15_;
     output right_width_0_height_0_subtile_0__pin_O_8_;
     output right_width_0_height_0_subtile_0__pin_O_9_;
+    output sc_out;
     output top_width_0_height_0_subtile_0__pin_O_0_;
     output top_width_0_height_0_subtile_0__pin_O_1_;
     output top_width_0_height_0_subtile_0__pin_O_2_;
@@ -124,7 +124,6 @@ module top_right_tile
     wire bottom_width_0_height_0_subtile_0__pin_cout_0_;
     wire bottom_width_0_height_0_subtile_0__pin_inpad_0_;
     wire bottom_width_0_height_0_subtile_0__pin_reg_out_0_;
-    wire bottom_width_0_height_0_subtile_0__pin_sc_out_0_;
     wire bottom_width_0_height_0_subtile_1__pin_inpad_0_;
     wire bottom_width_0_height_0_subtile_2__pin_inpad_0_;
     wire bottom_width_0_height_0_subtile_3__pin_inpad_0_;
@@ -184,6 +183,8 @@ module top_right_tile
     wire right_width_0_height_0_subtile_0__pin_O_15_;
     wire right_width_0_height_0_subtile_0__pin_O_8_;
     wire right_width_0_height_0_subtile_0__pin_O_9_;
+    wire sc_in;
+    wire sc_out;
     wire test_enable;
     wire test_enable_bottom_in;
     wire top_width_0_height_0_subtile_0__pin_O_0_;
@@ -196,7 +197,6 @@ module top_right_tile
     wire top_width_0_height_0_subtile_0__pin_O_7_;
     wire top_width_0_height_0_subtile_0__pin_cin_0_;
     wire top_width_0_height_0_subtile_0__pin_reg_in_0_;
-    wire top_width_0_height_0_subtile_0__pin_sc_in_0_;
 
 assign prog_reset = prog_reset_bottom_in;
 assign reset = reset_bottom_in;
@@ -296,6 +296,7 @@ assign test_enable = test_enable_bottom_in;
         .right_width_0_height_0_subtile_0__pin_I7_1_(left_grid_right_width_0_height_0_subtile_0__pin_I7_1_),
         .right_width_0_height_0_subtile_0__pin_I7i_0_(left_grid_right_width_0_height_0_subtile_0__pin_I7i_0_),
         .right_width_0_height_0_subtile_0__pin_I7i_1_(left_grid_right_width_0_height_0_subtile_0__pin_I7i_1_),
+        .sc_in(sc_in),
         .test_enable(test_enable),
         .top_width_0_height_0_subtile_0__pin_I0_0_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0_0_),
         .top_width_0_height_0_subtile_0__pin_I0_1_(bottom_grid_top_width_0_height_0_subtile_0__pin_I0_1_),
@@ -315,10 +316,8 @@ assign test_enable = test_enable_bottom_in;
         .top_width_0_height_0_subtile_0__pin_I3i_1_(bottom_grid_top_width_0_height_0_subtile_0__pin_I3i_1_),
         .top_width_0_height_0_subtile_0__pin_cin_0_(top_width_0_height_0_subtile_0__pin_cin_0_),
         .top_width_0_height_0_subtile_0__pin_reg_in_0_(top_width_0_height_0_subtile_0__pin_reg_in_0_),
-        .top_width_0_height_0_subtile_0__pin_sc_in_0_(top_width_0_height_0_subtile_0__pin_sc_in_0_),
         .bottom_width_0_height_0_subtile_0__pin_cout_0_(bottom_width_0_height_0_subtile_0__pin_cout_0_),
         .bottom_width_0_height_0_subtile_0__pin_reg_out_0_(bottom_width_0_height_0_subtile_0__pin_reg_out_0_),
-        .bottom_width_0_height_0_subtile_0__pin_sc_out_0_(bottom_width_0_height_0_subtile_0__pin_sc_out_0_),
         .ccff_tail(ccff_tail),
         .right_width_0_height_0_subtile_0__pin_O_10_(right_width_0_height_0_subtile_0__pin_O_10_),
         .right_width_0_height_0_subtile_0__pin_O_11_(right_width_0_height_0_subtile_0__pin_O_11_),
@@ -328,6 +327,7 @@ assign test_enable = test_enable_bottom_in;
         .right_width_0_height_0_subtile_0__pin_O_15_(right_width_0_height_0_subtile_0__pin_O_15_),
         .right_width_0_height_0_subtile_0__pin_O_8_(right_width_0_height_0_subtile_0__pin_O_8_),
         .right_width_0_height_0_subtile_0__pin_O_9_(right_width_0_height_0_subtile_0__pin_O_9_),
+        .sc_out(sc_out),
         .top_width_0_height_0_subtile_0__pin_O_0_(top_width_0_height_0_subtile_0__pin_O_0_),
         .top_width_0_height_0_subtile_0__pin_O_1_(top_width_0_height_0_subtile_0__pin_O_1_),
         .top_width_0_height_0_subtile_0__pin_O_2_(top_width_0_height_0_subtile_0__pin_O_2_),

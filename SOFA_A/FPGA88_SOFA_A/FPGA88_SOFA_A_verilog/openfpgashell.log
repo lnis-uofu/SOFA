@@ -268,11 +268,11 @@ Logic Element (fle) detailed count:
   LEs used for logic only             : 1
   LEs used for registers only         : 0
 
-Incr Slack updates 1 in 2.269e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.885e-06 sec
+Incr Slack updates 1 in 2.486e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.884e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.959e-06 sec
+Full Criticality updates 1 in 2.219e-06 sec
 Warning 27: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
 Warning 28: Ambiguous block type specification at grid location (0,9). Existing block type 'io_top' at (0,9) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
 Warning 29: Ambiguous block type specification at grid location (9,0). Existing block type 'io_bottom' at (9,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
@@ -507,11 +507,11 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
    1    0.0     0.0    0     226       3       3       0 ( 0.000%)      27 ( 0.3%)   13.980     -13.98    -13.980      0.000      0.000      N/A
-Incr Slack updates 4 in 1.9618e-05 sec
-Full Max Req/Worst Slack updates 1 in 5.491e-06 sec
-Incr Max Req/Worst Slack updates 3 in 1.0638e-05 sec
-Incr Criticality updates 3 in 1.0959e-05 sec
-Full Criticality updates 1 in 5.516e-06 sec
+Incr Slack updates 4 in 1.7263e-05 sec
+Full Max Req/Worst Slack updates 1 in 3.428e-06 sec
+Incr Max Req/Worst Slack updates 3 in 1.1135e-05 sec
+Incr Criticality updates 3 in 1.1479e-05 sec
+Full Criticality updates 1 in 2.542e-06 sec
 Restoring best routing
 Critical path: 13.98 ns
 Successfully routed after 1 routing iterations.
@@ -658,11 +658,11 @@ Final setup slack histogram:
 Final geomean non-virtual intra-domain period: nan ns (nan MHz)
 Final fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
 
-Incr Slack updates 1 in 4.1293e-05 sec
-Full Max Req/Worst Slack updates 1 in 4.863e-06 sec
+Incr Slack updates 1 in 2.4791e-05 sec
+Full Max Req/Worst Slack updates 1 in 7.129e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 4.307e-06 sec
+Full Criticality updates 1 in 6.058e-06 sec
 --line removed--
 VPR suceeded
 --line removed--
@@ -992,11 +992,11 @@ Building annotation for post-routing and clustering synchornization results...Do
 Building annotation for mapped blocks on grid locations...Done
 User specified the operating clock frequency to use VPR results
 Use VPR critical path delay 1.6776e-17 [ns] with a 20 [%] slack in OpenFPGA.
-Incr Slack updates 1 in 1.3184e-05 sec
-Full Max Req/Worst Slack updates 1 in 4.953e-06 sec
+Incr Slack updates 1 in 6.81e-06 sec
+Full Max Req/Worst Slack updates 1 in 4.271e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 4.313e-06 sec
+Full Criticality updates 1 in 4.56e-06 sec
 Will apply operating clock frequency 59.609 [MHz] to simulations
 User specified the number of operating clock cycles to be inferred from signal activities
 Average net density: 0.42
@@ -1153,13 +1153,23 @@ Create I/O location mapping for top module
 Create global port info for top module
 --line removed--
 
+Command line to execute: write_fabric_io_info --file --line removed-- --no_time_stamp
+
+Confirm selected options when call command 'write_fabric_io_info':
+--file, -f: --line removed--
+--no_time_stamp: on
+--verbose: off
+Warning 56: Directory '/research/ece/lnis/USERS/DARPA_ERI/Tapeout/SOFA/SOFA_A/FPGA88_SOFA_A/FPGA88_SOFA_A_task' already exists. Will overwrite contents
+Write fabric I--line removed--'
+--line removed--
+
 Command line to execute: write_fabric_hierarchy --file ./fabric_hierarchy.txt
 
 Confirm selected options when call command 'write_fabric_hierarchy':
 --file, -f: ./fabric_hierarchy.txt
 --depth: off
 --verbose: off
-Warning 56: Directory '.' already exists. Will overwrite contents
+Warning 57: Directory '.' already exists. Will overwrite contents
 Write fabric hierarchy to plain-text file './fabric_hierarchy.txt'
 --line removed--
 
@@ -1208,7 +1218,7 @@ Decoded 35888 configuration bits into 12283 blocks
 
 Build fabric-independent bitstream for implementation 'top'
 --line removed--
-Warning 57: Directory path is empty and nothing will be created.
+Warning 58: Directory path is empty and nothing will be created.
 Write 35888 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml'
 --line removed--
 
@@ -1233,7 +1243,7 @@ Confirm selected options when call command 'write_fabric_bitstream':
 --keep_dont_care_bits: off
 --no_time_stamp: off
 --verbose: off
-Warning 58: Directory path is empty and nothing will be created.
+Warning 59: Directory path is empty and nothing will be created.
 Write 35888 fabric bitstream into plain text file 'fabric_bitstream.bit'
 --line removed--
 
@@ -1314,9 +1324,9 @@ Finish execution with 0 errors
 --line removed--
 
 Thank you for using OpenFPGA!
-Incr Slack updates 2 in 1.3959e-05 sec
-Full Max Req/Worst Slack updates 1 in 5.036e-06 sec
-Incr Max Req/Worst Slack updates 1 in 6.307e-06 sec
+Incr Slack updates 2 in 1.0449e-05 sec
+Full Max Req/Worst Slack updates 1 in 3.365e-06 sec
+Incr Max Req/Worst Slack updates 1 in 4.4e-06 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 2 in 2.5362e-05 sec
+Full Criticality updates 2 in 7.422e-06 sec
 0

@@ -195,7 +195,7 @@ def main():
 
     # Signal pins
     fpga.fix_grid_pin_names(
-        regex=r".*__pin_(reset|prog_reset)_0_", module="grid_*")
+        regex=r".*__pin_(reset|prog_reset|sc_in|sc_out)_0_", module="grid_*")
     fpga.fix_grid_pin_names(
         regex=r".*__pin_(reset|prog_reset)_0_", module="cbx*")
     # For clock signals
@@ -207,6 +207,8 @@ def main():
     fpga.fix_grid_pin_names(
         regex=r".*__pin_(clk.*)_", module="cb*", name_map=lambda x: x.replace("_", "")
     )
+
+    connect_scan_chain(fpga)
 
     filename = SVG_DIR + f"{PROJ_NAME}_raw_floorplan.svg"
     save_tiling_floorplan(fpga, filename, STYLE_SHEET=STYLE_SHEET)
@@ -265,6 +267,34 @@ def main():
         scale=1 / GLOBAL_SCALE,
         filename=f"{RELEASE_DIR}/rpts/pre_pnr/shaping.txt",
     )
+
+
+def connect_scan_chain(fpga: OpenFPGA):
+    """
+    Adds scan chain port
+    """
+    # .........creating ports and cables on FPGA TOP............#
+    sc_head_port = fpga.top_module.create_port("sc_head", direction=sdn.IN, pins=1)
+    sc_head_cable = fpga.top_module.create_cable("sc_head", wires=1)
+    sc_tail_port = fpga.top_module.create_port("sc_tail", direction=sdn.OUT, pins=1)
+    sc_tail_cable = fpga.top_module.create_cable("sc_tail", wires=1)
+
+    sc_head_cable.wires[0].connect_pin(sc_head_port.pins[0])
+    sc_tail_cable.wires[0].connect_pin(sc_tail_port.pins[0])
+
+    grid_clb = next(fpga.top_module.get_definitions("grid_clb"))
+    grid_clb_sc_in_pin = next(grid_clb.get_ports("sc_in")).pins[0]
+    grid_clb_sc_out_pin = next(grid_clb.get_ports("sc_out")).pins[0]
+
+    grid_clb_1__8_sc_in = next(fpga.top_module.get_instances(
+        "grid_clb_1__8_")).pins[grid_clb_sc_in_pin]
+    grid_clb_8__8_sc_out = next(fpga.top_module.get_instances(
+        "grid_clb_8__8_")).pins[grid_clb_sc_out_pin]
+
+    grid_clb_1__8_sc_in.wire.disconnect_pin(grid_clb_1__8_sc_in)
+    grid_clb_8__8_sc_out.wire.disconnect_pin(grid_clb_8__8_sc_out)
+    sc_head_cable.wires[0].connect_pin(grid_clb_1__8_sc_in)
+    sc_tail_cable.wires[0].connect_pin(grid_clb_8__8_sc_out)
 
 
 def create_global_feedthrough(
