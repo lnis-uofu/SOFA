@@ -1,6 +1,6 @@
 //Generated from netlist by SpyDrNet
 //netlist name: FPGA88_SOFA_A
-module fpga_top
+module fpga_core
 (
     ccff_head,
     clk,

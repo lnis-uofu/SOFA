@@ -255,6 +255,9 @@ def main():
     create_global_feedthrough(fpga, "prog_reset", instance_map)
     create_global_feedthrough(fpga, "test_enable", instance_map)
 
+    # Change top module name
+    fpga.top_module.name = "fpga_core"
+
     save_netlist(fpga)
     filename = SVG_DIR + f"{PROJ_NAME}_floorplan.svg"
     save_tiling_floorplan(fpga, filename, STYLE_SHEET=STYLE_SHEET)

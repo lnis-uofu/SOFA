@@ -1,4 +1,4 @@
-`include "./SRC/fpga_top.v"
+`include "./SRC/fpga_core.v"
 `include "./SRC/submodules/cbx_1__0_.v"
 `include "./SRC/submodules/cbx_1__0__old.v"
 `include "./SRC/submodules/cbx_1__1_.v"

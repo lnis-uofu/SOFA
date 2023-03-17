@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" viewBox="-50,-333572,252548,333572" width="100%">
     <defs>
-        <symbol id="fpga_top">
-            <rect class="module_boundary fpga_top" fill="url(#id3)" height="333471" width="252447" x="1" y="1"/>
+        <symbol id="fpga_core">
+            <rect class="module_boundary fpga_core" fill="url(#id3)" height="333471" width="252447" x="1" y="1"/>
         </symbol>
         <symbol id="bottom_left_tile">
             <rect class="module_boundary bottom_left_tile" fill="#f4f0e6" height="13327" width="15455" x="1" y="1"/>
@@ -79,7 +79,7 @@
     </g>
     <g id="mainframe">
         <g id="mainShapes" transform="scale(1,-1)">
-            <use class="topModule" x="0" xlink:href="#fpga_top" y="0"/>
+            <use class="topModule" x="0" xlink:href="#fpga_core" y="0"/>
             <use class="tile_1__1_" x="920" xlink:href="#bottom_left_tile" y="544"/>
             <use class="tile_1__2_" x="920" xlink:href="#left_tile" y="14144"/>
             <use class="tile_1__3_" x="920" xlink:href="#left_tile" y="52768"/>
@@ -163,7 +163,7 @@
             <use class="tile_9__9_" x="215418" xlink:href="#top_right_tile" y="284512"/>
         </g>
         <g id="mainText" transform="scale(1,-1)">
-            <text alignment-baseline="middle" fill="black" text-anchor="middle" transform="scale(1,-1)" x="126224.0" y="-33347.200000000004">fpga_top</text>
+            <text alignment-baseline="middle" fill="black" text-anchor="middle" transform="scale(1,-1)" x="126224.0" y="-33347.200000000004">fpga_core</text>
             <text alignment-baseline="middle" fill="black" text-anchor="middle" transform="scale(1,-1)" x="8648.0" y="-7208.0">
                 tile_1__1_
                 <tspan dy="1.2em" x="8648.0" y="-7208.0">[bottom_left_tile]</tspan>
