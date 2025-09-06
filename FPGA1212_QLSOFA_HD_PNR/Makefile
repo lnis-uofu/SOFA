@@ -15,10 +15,10 @@ runOpenFPGA:
 	SECONDS=0
 	source config.sh
 	# =====================  Check Tools  =====================
-	which python3.8 > /dev/null
-	if [ $$? -eq 1 ]; then
-		echo "xxxxxxxx Python version 3.8 is required xxxxxxxx"; exit;
-	fi
+	# which python3.8 > /dev/null
+	# if [ $$? -eq 1 ]; then
+	# 	echo "xxxxxxxx Python version 3.8 is required xxxxxxxx"; exit;
+	# fi
 
 	# ===================  Clean Previous Run  =================================
 	rm -f $${OPENFPGA_PATH}/openfpga_flow/tasks/$${TASK_DIR_NAME}

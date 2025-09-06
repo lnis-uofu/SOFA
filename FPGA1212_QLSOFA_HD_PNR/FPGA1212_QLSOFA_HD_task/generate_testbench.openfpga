@@ -31,6 +31,7 @@ lut_truth_table_fixup
 #  - Enabled compression on routing architecture modules
 #  - Enable pin duplication on grid modules
 build_fabric --compress_routing --duplicate_grid_pin --load_fabric_key ${EXTERNAL_FABRIC_KEY_FILE} #--verbose
+#build_fabric --compress_routing --duplicate_grid_pin --write_fabric_key ./fabric_key_new.xml --generate_random_fabric_key
 
 # Repack the netlist to physical pbs
 # This must be done before bitstream generator and testbench generation
